@@ -57,12 +57,13 @@ function processData(input) {
   let regionPos = 0;
   for (let regionName of REGIONS) {
     let region = input[regionName];
-    result.regions.push(regionName);
     
     let firstAbove = region.findIndex(value => value.confirmed >= 200);
     if (firstAbove == -1 || firstAbove == 0) {
       continue;
     }
+
+    result.regions.push(regionName);
 
     let lastBelow = firstAbove - 1;
 
