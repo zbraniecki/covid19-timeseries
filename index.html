@@ -12,7 +12,7 @@
       <div id="main">
         <table id="legend" cellspacing="0" cellpadding="0">
           <tr>
-            <td style="background-color: #ddddff">{{ data.legend.min }}</td>
+            <td style="background-color: rgb(221, 238, 255)">{{ data.legend.min }}</td>
             <td style="background-color: #ccffcc">Today</td>
             <td>
               |
@@ -50,7 +50,7 @@
                 <td
                   class="value"
                   v-bind:class="{ below: sample.min, quarantine: sample.quarantine }"
-                  v-bind:style="{ backgroundColor: sample.color }">
+                  v-bind:style="sample.min ? {} : { backgroundColor: sample.color }">
                   {{ sample.value }}
                 </td>
               </template>

@@ -26,8 +26,7 @@ table#legend {
 
 table#legend td {
   font-size: 0.7em;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 3px 5px;
 }
 
 table#data thead td {
@@ -54,7 +53,7 @@ table#data td.value {
 }
 
 table#data td.below {
-  background-color: #ddddff;
+  background-color: rgb(221, 238, 255);
 }
 
 table#data td.today {
