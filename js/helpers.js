@@ -1,3 +1,25 @@
+function calculateValue(value, selectedType) {
+  if (selectedType == "recovered") {
+    return value["recovered"] / value["confirmed"];
+  }
+  if (selectedType == "active") {
+    return value["confirmed"] - value["deaths"] - value["recovered"];
+  }
+  return value[selectedType];
+}
+
+function formatValue(value, selectedType, input = null) {
+  if (input === null) {
+    input = calculateValue(value, selectedType);
+  }
+
+  if (selectedType == "recovered") {
+    return input.toLocaleString(undefined, { style: "percent" });
+  }
+
+  return input;
+}
+
 // Parse a string like "2020-1-19" to a date
 function parseDate(input) {
   let year;

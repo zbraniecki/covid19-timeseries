@@ -7,8 +7,13 @@ const TYPES = [
   },
   {
     "name": "deaths",
-    "max": 3000,
+    "max": 4000,
     "min": 30,
+  },
+  {
+    "name": "active",
+    "max": 50000,
+    "min": 200,
   },
 ];
 
@@ -30,7 +35,7 @@ function processMainData(input, regions, selectedItems, selectedType) {
 
     let region = input[regionName];
     
-    let firstAbove = region.findIndex(value => value[selectedType] >= type.min);
+    let firstAbove = region.findIndex(value => calculateValue(value, selectedType) >= type.min);
     if (firstAbove == -1 || firstAbove == 0) {
       continue;
     }
@@ -61,9 +66,9 @@ function processMainData(input, regions, selectedItems, selectedType) {
       result.days[relDayNum].values.push({
         "region": region.region,
         "date": parseDate(value.date),
-        "value": value[selectedType],
-        "min": value[selectedType] < type.min,
-        "color": interpolateColor([255, 255, 255], [255, 0, 0], value[selectedType] / type.max),
+        "value": formatValue(value, selectedType),
+        "min": calculateValue(value, selectedType) < type.min,
+        "color": interpolateColor([255, 255, 255], [255, 0, 0], calculateValue(value, selectedType) / type.max),
         "isToday": isToday(parseDate(value.date)),
         "quarantine": false,
       });
@@ -100,7 +105,13 @@ function processData(input, selectedItems, selectedType) {
     "main": processMainData(input, regions, selectedItems, selectedType),
     "select": {
       "types": TYPES.map(type => type.name),
-      regions,
+      regions: regions.map(region => {
+        let x = {
+          region: region.region,
+          value: formatValue(undefined, selectedType, region.value)
+        };
+        return x;
+      }),
     }
   };
   return result;

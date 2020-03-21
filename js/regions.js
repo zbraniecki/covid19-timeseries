@@ -3,7 +3,7 @@ function getCurrentValuesForRegion(data, type) {
 
   for (let regionName in data) {
     let region = data[regionName];
-    let last = region[region.length - 1][type];
+    let last = calculateValue(region[region.length - 1], type);
     result.push({
       region: regionName,
       value: last,
