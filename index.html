@@ -3,50 +3,65 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="./style/index.css" >
     <script src="./js/helpers.js"></script>
+    <script src="./js/regions.js"></script>
     <script src="https://vuejs.org/js/vue.min.js"></script>
     <script src="./js/index.js"></script>
   </head>
   <body>
-    <div id="main" style="display: none">
-      <table id="legend" cellspacing="0" cellpadding="0">
-        <tr>
-          <td style="background-color: #ddddff">Last day below 200 cases</td>
-          <td style="background-color: #ccffcc">Today</td>
-          <td>
-            <a href="https://github.com/pomber/covid19">Data source</a> / Inspired by <a href="https://twitter.com/Nathan510edge">@Nathan510edge</a>
-          </td>
-        </tr>
-      </table>
-      <table id="data" cellspacing="0" cellpadding="0">
-        <thead>
-          <td class="relDay">Day</td>
-          <td class="value" v-for="item in data.regions" :key="item" colspan="2">
-            {{ item }}
-          </td>
-        </thead>
-        <tr v-for="item in data.days">
-          <td class="relDay">{{ item.day }}</td>
-          <template v-for="sample in item.values">
-            <template v-if="sample">
-              <td
-                class="day"
-                v-bind:class="{ below: sample.below200, today: sample.isToday, quarantine: sample.quarantine }">
-                {{ sample.date.toLocaleDateString(undefined, { month: "numeric", day: "numeric" }) }}
-              </td>
-              <td
-                class="value"
-                v-bind:class="{ below: sample.below200, quarantine: sample.quarantine }"
-                v-bind:style="{ backgroundColor: sample.color }">
-                {{ sample.value }}
-              </td>
+    <div id="app" style="display: none">
+      <div id="main">
+        <table id="legend" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: #ddddff">Last day below 200 cases</td>
+            <td style="background-color: #ccffcc">Today</td>
+            <td>
+              <a href="https://github.com/pomber/covid19">Data source</a> / Inspired by <a href="https://twitter.com/Nathan510edge">@Nathan510edge</a>
+            </td>
+          </tr>
+        </table>
+        <table id="data" cellspacing="0" cellpadding="0">
+          <thead>
+            <td class="relDay">Day</td>
+            <td class="value" v-for="item in data.main.regions" :key="item" colspan="2">
+              {{ item }}
+            </td>
+          </thead>
+          <tr v-for="item in data.main.days">
+            <td class="relDay">{{ item.day }}</td>
+            <template v-for="sample in item.values">
+              <template v-if="sample">
+                <td
+                  class="day"
+                  v-bind:class="{ below: sample.below200, today: sample.isToday, quarantine: sample.quarantine }">
+                  {{ sample.date.toLocaleDateString(undefined, { month: "numeric", day: "numeric" }) }}
+                </td>
+                <td
+                  class="value"
+                  v-bind:class="{ below: sample.below200, quarantine: sample.quarantine }"
+                  v-bind:style="{ backgroundColor: sample.color }">
+                  {{ sample.value }}
+                </td>
+              </template>
+              <template v-else>
+                <td class="day">&nbsp;</td>
+                <td class="value"></td>
+              </template>
             </template>
-            <template v-else>
-              <td class="day">&nbsp;</td>
-              <td class="value"></td>
-            </template>
-          </template>
-        </tr>
-      </table>
+          </tr>
+        </table>
+      </div>
+      <div id="sidebar">
+        <p>Regions</p>
+        <select multiple id="regionSelect">
+          <option
+            v-for="item in data.select"
+            v-bind:selected="data.main.regions.includes(item.region)"
+            v-bind:value="item.region"
+            :key="item" colspan="2">
+          {{ item.region }} ({{ item.value }})
+          </option>
+        </select>
+      </div>
     </div>
   </body>
 </html>

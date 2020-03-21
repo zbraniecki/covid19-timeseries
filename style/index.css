@@ -1,5 +1,22 @@
 body {
   font-family: Inter,X-LocaleSpecific,sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+#main {
+  grid-column: 1;
+  grid-row: 1;
+  overflow: scroll;
 }
 
 table#legend {
@@ -49,3 +66,14 @@ table#data td.value.quarantine {
   border-top: 2px solid orange;
   border-bottom: 2px solid orange;
 }
+
+#sidebar {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#sidebar select {
+  width: 100%;
+  height: 50%;
+}
+

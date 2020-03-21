@@ -1,14 +1,19 @@
 const MAX_NUM = 50000;
-const REGIONS = ["China", "Italy", "Spain", "Germany", "Iran", "US", "France", "Korea, South", "Switzerland", "United Kingdom", "Japan", "Poland"];
 
-function processData(input) {
+function processMainData(input, regions, selectedItems) {
   let result = {
     "regions": [],
     "days": [],
   };
 
   let regionPos = 0;
-  for (let regionName of REGIONS) {
+  for (let item of regions) {
+    let regionName = item.region;
+
+    if (!selectedItems.includes(regionName)) {
+      continue;
+    }
+
     let region = input[regionName];
     
     let firstAbove = region.findIndex(value => value.confirmed >= 200);
@@ -17,6 +22,7 @@ function processData(input) {
     }
 
     result.regions.push(regionName);
+
 
     let lastBelow = firstAbove - 1;
 
@@ -63,16 +69,52 @@ function processData(input) {
   return result;
 }
 
+function processData(input, selectedItems = null) {
+  let regions = getSortedRegions(input);
+
+  if (selectedItems === null) {
+    selectedItems = regions.map(item => item.region).slice(0, 10);
+  }
+  console.log(selectedItems);
+
+  let result = {
+    "main": processMainData(input, regions, selectedItems),
+    "select": regions,
+  };
+  console.log(result);
+  return result;
+}
+
 
 async function main() {
-  let data = await fetch("./data/timeseries.json").then((response) => response.json());
+  let inputData = await fetch("./data/timeseries.json").then((response) => response.json());
+
+  let selectedItems = null;
+  let items = localStorage.getItem("selectedRegions");
+  if (items) {
+    selectedItems = JSON.parse(items);
+  }
+  data = processData(inputData, selectedItems);
+
   const v = new Vue({
-    el: '#main',
+    el: '#app',
     data: {
-      data: processData(data)
+      data
     }
   });
-  document.getElementById("main").style.display = "block";
+  document.getElementById("app").style.display = "grid";
+
+  document.getElementById("regionSelect").addEventListener("change", function () {
+    let selected = [];
+    for (let i = 0; i < this.options.length; i++) {
+      if (this.options[i].selected) {
+        selected.push(this.options[i].value);
+      }
+    }
+    let regions = getSortedRegions(inputData);
+    v.data.main = processMainData(inputData, regions, selected);
+    localStorage.setItem("selectedRegions", JSON.stringify(selected));
+  });
 }
 
 main();
