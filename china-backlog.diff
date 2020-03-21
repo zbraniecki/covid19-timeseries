@@ -1,0 +1,36 @@
+diff --git a/data/timeseries.json b/data/timeseries.json
+index adbe228..cdd61e6 100644
+--- a/data/timeseries.json
++++ b/data/timeseries.json
+@@ -33108,6 +33108,24 @@
+     }
+   ],
+   "China": [
++    {
++      "date": "2020-1-19",
++      "confirmed": 170,
++      "deaths": 3,
++      "recovered": 0
++    },
++    {
++      "date": "2020-1-20",
++      "confirmed": 291,
++      "deaths": 6,
++      "recovered": 0
++     },
++     {
++      "date": "2020-1-21",
++      "confirmed": 440,
++      "deaths": 9,
++      "recovered": 0
++     },
+     {
+       "date": "2020-1-22",
+       "confirmed": 548,
+@@ -57671,4 +57689,4 @@
+       "recovered": 0
+     }
+   ]
+-}
+\ No newline at end of file
++}

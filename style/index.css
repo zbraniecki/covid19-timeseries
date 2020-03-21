@@ -1,6 +1,7 @@
 body {
   font-family: Inter,X-LocaleSpecific,sans-serif;
   padding: 0;
+  padding-left: 5px;
   margin: 0;
 }
 
@@ -36,7 +37,7 @@ table#data thead td {
 table#data td {
   font-size: 0.9em;
   padding: 3px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #dddddd;
 }
 
 table#data thead td.value {
@@ -46,6 +47,7 @@ table#data thead td.value {
 
 table#data td.relDay {
   border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 table#data td.value {
