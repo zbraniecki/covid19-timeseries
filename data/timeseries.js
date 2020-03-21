@@ -32551,10 +32551,22 @@ const DATA = {
   ],
   "China": [
     {
+      "date": "2020-1-19",
+      "confirmed": 170,
+      "deaths": 3,
+      "recovered": 0
+    },
+    {
+      "date": "2020-1-20",
+      "confirmed": 291,
+      "deaths": 6,
+      "recovered": 0
+    },
+    {
       "date": "2020-1-21",
-      "confirmed": 198,
-      "deaths": 12,
-      "recovered": 20
+      "confirmed": 440,
+      "deaths": 9,
+      "recovered": 0
     },
     {
       "date": "2020-1-22",
