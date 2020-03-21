@@ -145,6 +145,8 @@ async function main() {
   document.getElementById("typeSelect").addEventListener("change", function () {
     v.data.selectedType = this.value;
     let regions = getSortedRegions(inputData, v.data.selectedType);
+    let type = getType(TYPES, v.data.selectedType);
+    v.data.legend.min = `Last day below ${type.min} ${type.name}.`,
     v.data.main = processMainData(inputData, regions, v.data.main.regions, v.data.selectedType);
     v.data.select.regions = regions;
     localStorage.setItem("selectedType", v.data.selectedType);
