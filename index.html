@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style/index.css" >
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./data/timeseries.js"></script>
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <div id="example">
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <td class="relDay">Day</td>
+          <td class="value" v-for="item in data.regions" :key="item" colspan="2">
+            {{ item }}
+          </td>
+        </thead>
+        <tr v-for="item in data.days">
+          <td class="relDay">{{ item.day }}</td>
+          <template v-for="sample in item.values">
+            <template v-if="sample">
+              <td
+                class="day"
+                v-bind:class="{ below: sample.below200, today: sample.isToday, quarantine: sample.quarantine }">
+                {{ sample.date.toLocaleDateString(undefined, { month: "numeric", day: "numeric" }) }}
+              </td>
+              <td
+                class="value"
+                v-bind:class="{ below: sample.below200, today: sample.isToday, quarantine: sample.quarantine }"
+                v-bind:style="{ backgroundColor: sample.color }">
+                {{ sample.value }}
+              </td>
+            </template>
+            <template v-else>
+              <td class="day">&nbsp;</td>
+              <td class="value"></td>
+            </template>
+          </template>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

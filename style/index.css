@@ -1,0 +1,32 @@
+td {
+  font-size: 0.8em;
+  padding: 3px;
+  border-bottom: 1px solid #cccccc;
+}
+
+td.relDay {
+  border-right: 1px solid black;
+}
+
+td.value {
+  border-right: 1px solid black;
+}
+
+td.below {
+  background-color: #ddddff;
+}
+
+td.today {
+  background-color: #ccffcc !important;
+}
+
+td.day.quarantine {
+  border-left: 2px solid orange;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+}
+td.value.quarantine {
+  border-right: 2px solid orange;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+}
