@@ -12,7 +12,7 @@
       <div id="main">
         <table id="legend" cellspacing="0" cellpadding="0">
           <tr>
-            <td style="background-color: #ddddff">Last day below 200 cases</td>
+            <td style="background-color: #ddddff">{{ data.legend.min }}</td>
             <td style="background-color: #ccffcc">Today</td>
             <td>
               <a href="https://github.com/pomber/covid19">Data source</a> / Inspired by <a href="https://twitter.com/Nathan510edge">@Nathan510edge</a>
@@ -32,12 +32,12 @@
               <template v-if="sample">
                 <td
                   class="day"
-                  v-bind:class="{ below: sample.below200, today: sample.isToday, quarantine: sample.quarantine }">
+                  v-bind:class="{ below: sample.min, today: sample.isToday, quarantine: sample.quarantine }">
                   {{ sample.date.toLocaleDateString(undefined, { month: "numeric", day: "numeric" }) }}
                 </td>
                 <td
                   class="value"
-                  v-bind:class="{ below: sample.below200, quarantine: sample.quarantine }"
+                  v-bind:class="{ below: sample.min, quarantine: sample.quarantine }"
                   v-bind:style="{ backgroundColor: sample.color }">
                   {{ sample.value }}
                 </td>
@@ -51,13 +51,23 @@
         </table>
       </div>
       <div id="sidebar">
+        <p>Type</p>
+        <select id="typeSelect">
+          <option
+            v-for="item in data.select.types"
+            v-bind:selected="data.selectedType === item"
+            v-bind:value="item"
+            :key="item">
+          {{ item }}
+          </option>
+        </select>
         <p>Regions</p>
         <select multiple id="regionSelect">
           <option
-            v-for="item in data.select"
+            v-for="item in data.select.regions"
             v-bind:selected="data.main.regions.includes(item.region)"
             v-bind:value="item.region"
-            :key="item" colspan="2">
+            :key="item">
           {{ item.region }} ({{ item.value }})
           </option>
         </select>

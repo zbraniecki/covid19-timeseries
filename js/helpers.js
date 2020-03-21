@@ -50,3 +50,12 @@ const isToday = (someDate) => {
   return isSameDay(today, someDate);
 }
 
+
+function getType(types, selectedType) {
+  for (let item of types) {
+    if (item.name === selectedType) {
+      return item;
+    }
+  }
+  return null;
+}

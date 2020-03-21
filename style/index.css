@@ -74,6 +74,9 @@ table#data td.value.quarantine {
 
 #sidebar select {
   width: 100%;
+}
+
+#sidebar select#regionSelect {
   height: 50%;
 }
 

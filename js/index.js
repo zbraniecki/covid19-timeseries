@@ -1,10 +1,24 @@
 const MAX_NUM = 50000;
+const TYPES = [
+  {
+    "name": "confirmed",
+    "max": 50000,
+    "min": 200,
+  },
+  {
+    "name": "deaths",
+    "max": 3000,
+    "min": 30,
+  },
+];
 
-function processMainData(input, regions, selectedItems) {
+function processMainData(input, regions, selectedItems, selectedType) {
   let result = {
     "regions": [],
     "days": [],
   };
+
+  let type = getType(TYPES, selectedType);
 
   let regionPos = 0;
   for (let item of regions) {
@@ -16,7 +30,7 @@ function processMainData(input, regions, selectedItems) {
 
     let region = input[regionName];
     
-    let firstAbove = region.findIndex(value => value.confirmed >= 200);
+    let firstAbove = region.findIndex(value => value[selectedType] >= type.min);
     if (firstAbove == -1 || firstAbove == 0) {
       continue;
     }
@@ -47,9 +61,9 @@ function processMainData(input, regions, selectedItems) {
       result.days[relDayNum].values.push({
         "region": region.region,
         "date": parseDate(value.date),
-        "value": value.confirmed,
-        "below200": value.confirmed < 200,
-        "color": interpolateColor([255, 255, 255], [255, 0, 0], value.confirmed / MAX_NUM),
+        "value": value[selectedType],
+        "min": value[selectedType] < type.min,
+        "color": interpolateColor([255, 255, 255], [255, 0, 0], value[selectedType] / type.max),
         "isToday": isToday(parseDate(value.date)),
         "quarantine": false,
       });
@@ -69,19 +83,26 @@ function processMainData(input, regions, selectedItems) {
   return result;
 }
 
-function processData(input, selectedItems = null) {
-  let regions = getSortedRegions(input);
+function processData(input, selectedItems, selectedType) {
+  let regions = getSortedRegions(input, selectedType);
 
   if (selectedItems === null) {
     selectedItems = regions.map(item => item.region).slice(0, 10);
   }
-  console.log(selectedItems);
+
+  let type = getType(TYPES, selectedType);
 
   let result = {
-    "main": processMainData(input, regions, selectedItems),
-    "select": regions,
+    "legend": {
+      "min": `Last day below ${type.min} ${type.name}.`,
+    },
+    "selectedType": selectedType,
+    "main": processMainData(input, regions, selectedItems, selectedType),
+    "select": {
+      "types": TYPES.map(type => type.name),
+      regions,
+    }
   };
-  console.log(result);
   return result;
 }
 
@@ -90,11 +111,16 @@ async function main() {
   let inputData = await fetch("./data/timeseries.json").then((response) => response.json());
 
   let selectedItems = null;
+  let selectedType = "confirmed";
   let items = localStorage.getItem("selectedRegions");
   if (items) {
     selectedItems = JSON.parse(items);
   }
-  data = processData(inputData, selectedItems);
+  let type = localStorage.getItem("selectedType");
+  if (type) {
+    selectedType = type;
+  }
+  data = processData(inputData, selectedItems, selectedType);
 
   const v = new Vue({
     el: '#app',
@@ -111,9 +137,17 @@ async function main() {
         selected.push(this.options[i].value);
       }
     }
-    let regions = getSortedRegions(inputData);
-    v.data.main = processMainData(inputData, regions, selected);
+    let regions = getSortedRegions(inputData, v.data.selectedType);
+    v.data.main = processMainData(inputData, regions, selected, v.data.selectedType);
     localStorage.setItem("selectedRegions", JSON.stringify(selected));
+  });
+
+  document.getElementById("typeSelect").addEventListener("change", function () {
+    v.data.selectedType = this.value;
+    let regions = getSortedRegions(inputData, v.data.selectedType);
+    v.data.main = processMainData(inputData, regions, v.data.main.regions, v.data.selectedType);
+    v.data.select.regions = regions;
+    localStorage.setItem("selectedType", v.data.selectedType);
   });
 }
 
