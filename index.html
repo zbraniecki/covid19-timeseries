@@ -26,11 +26,18 @@
         </table>
         <table id="data" cellspacing="0" cellpadding="0">
           <thead>
-            <td class="relDay">Day</td>
+            <td class="relDay" style="font-size: 0.7em">Δ Day</td>
             <td class="value" v-for="item in data.main.regions" :key="item" colspan="2">
               {{ item }}
             </td>
           </thead>
+          <tr>
+            <td class="relDay"></td>
+            <template v-for="sample in data.main.regions">
+              <td class="day">Date</td>
+              <td class="value">#</td>
+            </template>
+          </tr>
           <tr v-for="item in data.main.days">
             <td class="relDay">{{ item.day }}</td>
             <template v-for="sample in item.values">

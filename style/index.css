@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 85% 15%;
 }
 
 #main {
@@ -61,6 +61,19 @@ table#data td.day.quarantine {
   border-top: 2px solid orange;
   border-bottom: 2px solid orange;
 }
+
+table#data td.day {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #555555;
+  text-align: right;
+}
+
+table#data td.value {
+  padding: 0 10px;
+  text-align: right;
+}
+
 table#data td.value.quarantine {
   border-right: 2px solid orange;
   border-top: 2px solid orange;
