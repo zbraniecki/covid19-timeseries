@@ -40,6 +40,7 @@ const isSameDay = (date1, date2) => {
 }
 const isToday = (someDate) => {
   const today = new Date()
+  today.setDate(today.getDate() - 1);
   return isSameDay(today, someDate);
 }
 
@@ -108,9 +109,17 @@ function processData(input) {
   return result;
 }
 
-const v = new Vue({
-  el: '#example',
-  data: {
-    data: processData(DATA)
-  }
-});
+
+async function main() {
+  let data = await fetch("./data/timeseries.json").then((response) => response.json());
+  const v = new Vue({
+    el: '#main',
+    data: {
+      data: processData(data)
+    }
+  });
+  document.getElementById("main").style.display = "block";
+}
+
+main();
+
