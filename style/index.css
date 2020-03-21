@@ -1,8 +1,14 @@
-table#legend {
-  border: 1px solid #333333;
+body {
+  font-family: Inter,X-LocaleSpecific,sans-serif;
 }
 
-table#legend td.color {
+table#legend {
+  border: 1px solid #333333;
+  margin-bottom: 10px;
+}
+
+table#legend td {
+  font-size: 0.7em;
   padding-left: 5px;
   padding-right: 5px;
 }
