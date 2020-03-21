@@ -1,31 +1,44 @@
-td {
-  font-size: 0.8em;
+table#legend {
+  border: 1px solid #333333;
+}
+
+table#legend td.color {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table#data thead td {
+  font-weight: bold;
+}
+
+table#data td {
+  font-size: 0.9em;
   padding: 3px;
   border-bottom: 1px solid #cccccc;
 }
 
-td.relDay {
+table#data td.relDay {
   border-right: 1px solid black;
 }
 
-td.value {
+table#data td.value {
   border-right: 1px solid black;
 }
 
-td.below {
+table#data td.below {
   background-color: #ddddff;
 }
 
-td.today {
+table#data td.today {
   background-color: #ccffcc !important;
 }
 
-td.day.quarantine {
+table#data td.day.quarantine {
   border-left: 2px solid orange;
   border-top: 2px solid orange;
   border-bottom: 2px solid orange;
 }
-td.value.quarantine {
+table#data td.value.quarantine {
   border-right: 2px solid orange;
   border-top: 2px solid orange;
   border-bottom: 2px solid orange;

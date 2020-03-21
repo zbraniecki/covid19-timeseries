@@ -8,7 +8,13 @@
   </head>
   <body>
     <div id="example">
-      <table cellspacing="0" cellpadding="0">
+      <table id="legend" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="color" style="background-color: #ddddff">Last day below 200 cases</td>
+          <td class="color" style="background-color: #ccffcc">Today</td>
+        </tr>
+      </table>
+      <table id="data" cellspacing="0" cellpadding="0">
         <thead>
           <td class="relDay">Day</td>
           <td class="value" v-for="item in data.regions" :key="item" colspan="2">
@@ -26,7 +32,7 @@
               </td>
               <td
                 class="value"
-                v-bind:class="{ below: sample.below200, today: sample.isToday, quarantine: sample.quarantine }"
+                v-bind:class="{ below: sample.below200, quarantine: sample.quarantine }"
                 v-bind:style="{ backgroundColor: sample.color }">
                 {{ sample.value }}
               </td>

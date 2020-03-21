@@ -45,7 +45,7 @@ const isToday = (someDate) => {
 
 
 const MAX_NUM = 50000;
-const REGIONS = ["China", "Italy", "Korea, South", "Japan", "France", "Spain", "US", "United Kingdom", "Poland"];
+const REGIONS = ["China", "Italy", "Spain", "Iran", "Germany", "US", "France", "Korea, South", "Switzerland", "United Kingdom", "Japan", "Poland"];
 
 function processData(input) {
   let result = {

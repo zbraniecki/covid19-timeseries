@@ -697,6 +697,12 @@ const DATA = {
       "confirmed": 924,
       "deaths": 29,
       "recovered": 150
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 963,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Singapore": [
@@ -3497,6 +3503,12 @@ const DATA = {
       "confirmed": 15320,
       "deaths": 44,
       "recovered": 113
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 18361,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Finland": [
@@ -5247,6 +5259,12 @@ const DATA = {
       "confirmed": 41035,
       "deaths": 3405,
       "recovered": 4440
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 47021,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Sweden": [
@@ -5947,6 +5965,12 @@ const DATA = {
       "confirmed": 17963,
       "deaths": 830,
       "recovered": 1107
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 19980,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Belgium": [
@@ -9797,6 +9821,12 @@ const DATA = {
       "confirmed": 4075,
       "deaths": 41,
       "recovered": 15
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 4840,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Austria": [
@@ -23447,6 +23477,12 @@ const DATA = {
       "confirmed": 355,
       "deaths": 5,
       "recovered": 1
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 425,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Tunisia": [
@@ -31147,6 +31183,12 @@ const DATA = {
       "confirmed": 13677,
       "deaths": 200,
       "recovered": 0
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 14247,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Burkina Faso": [
@@ -32915,6 +32957,12 @@ const DATA = {
       "confirmed": 81156,
       "deaths": 3249,
       "recovered": 70535
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 81249,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Iran": [
@@ -33265,6 +33313,12 @@ const DATA = {
       "confirmed": 18407,
       "deaths": 1284,
       "recovered": 5710
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 19644,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Korea, South": [
@@ -33615,6 +33669,12 @@ const DATA = {
       "confirmed": 8565,
       "deaths": 91,
       "recovered": 1540
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 8652,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "France": [
@@ -33965,6 +34025,12 @@ const DATA = {
       "confirmed": 10947,
       "deaths": 243,
       "recovered": 12
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 12630,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Cruise Ship": [
@@ -37465,6 +37531,12 @@ const DATA = {
       "confirmed": 2716,
       "deaths": 138,
       "recovered": 67
+    },
+    {
+      "date": "2020-3-20",
+      "confirmed": 3293,
+      "deaths": 0,
+      "recovered": 0
     }
   ],
   "Congo (Kinshasa)": [
