@@ -40,6 +40,11 @@ table#data td {
   border-bottom: 1px solid #cccccc;
 }
 
+table#data thead td.value {
+  padding: 0 5px;
+  text-align: center;
+}
+
 table#data td.relDay {
   border-right: 1px solid black;
 }
