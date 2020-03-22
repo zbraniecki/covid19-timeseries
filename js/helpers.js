@@ -17,7 +17,7 @@ function getUserPreferences() {
 function normalizeDataSet(sortedDataSet, userPreferences) {
   let type = getType(TYPES, userPreferences.selectedType);
 
-  let normalizedType = type.id == "confirmed_delta" ? getType(TYPES, "confirmed") : type;
+  let normalizedType = getNormalizedType(TYPES, type);
 
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
@@ -55,6 +55,16 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
   }
 }
 
+function getNormalizedType(types, type) {
+  if (type.id == "confirmed_delta") {
+    return getType(types, "confirmed");
+  }
+  if (type.id == "active_delta") {
+    return getType(types, "active");
+  }
+  return type;
+}
+
 function calculateValue(daysSet, idx, type) {
   let day = daysSet[idx];
   if (!day) {
@@ -65,8 +75,16 @@ function calculateValue(daysSet, idx, type) {
     return day["confirmed"] - day["deaths"] - day["recovered"];
   }
   if (type == "confirmed_delta") {
-    let value = day["confirmed"];
-    let valuePrev = daysSet[idx - 1] ? daysSet[idx - 1]["confirmed"] : null;
+    let value = calculateValue(daysSet, idx, "confirmed");
+    let valuePrev = calculateValue(daysSet, idx - 1, "confirmed");
+    if (valuePrev === null) {
+      return 0;
+    }
+    return (value / valuePrev) - 1;
+  }
+  if (type == "active_delta") {
+    let value = calculateValue(daysSet, idx, "active");
+    let valuePrev = calculateValue(daysSet, idx - 1, "active");
     if (valuePrev === null) {
       return 0;
     }
@@ -94,6 +112,7 @@ function narrowDataSet(sortedDataSet, userPreferences) {
 function formatValue(value, userPreferences) {
   if (userPreferences.selectedType == "recovered"
       || userPreferences.selectedType == "confirmed_delta"
+      || userPreferences.selectedType == "active_delta"
   ) {
     return value.toLocaleString(undefined, { style: "percent" });
   }

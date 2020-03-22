@@ -9,7 +9,7 @@ function sortDataSet(dataSet, userPreferences) {
     });
   }
 
-  let normalizedType = type.id == "confirmed_delta" ? getType(TYPES, "confirmed") : type;
+  let normalizedType = getNormalizedType(TYPES, type);
 
   return result.sort((a, b) => {
     let valueA = calculateValue(a.days, a.days.length - 1, normalizedType.id);

@@ -24,6 +24,12 @@ const TYPES = [
     "max": 50000,
     "min": 200,
   },
+  {
+    "id": "active_delta",
+    "name": "active Δ",
+    "max": 0.5,
+    "min": 0.0,
+  },
 ];
 
 function processMainData(dataSet, userPreferences) {
@@ -77,7 +83,8 @@ function processData(sortedDataSet, userPreferences) {
   };
 
   let type = getType(TYPES, userPreferences.selectedType);
-  result.legend.min = `Last day below ${type.min} ${type.name}.`;
+  let normalizedType = getNormalizedType(TYPES, type);
+  result.legend.min = `Last day below ${normalizedType.min} ${normalizedType.name}.`;
 
   let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
   normalizeDataSet(selectedDataSet, userPreferences);
