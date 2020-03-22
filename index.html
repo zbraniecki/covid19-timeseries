@@ -41,7 +41,7 @@
             </template>
           </tr>
           <tr v-for="item in data.main.days">
-            <td class="relDay">{{ item.day }}</td>
+            <td class="relDay">{{ item.num }}</td>
             <template v-for="sample in item.values">
               <template v-if="sample">
                 <td
@@ -57,8 +57,8 @@
                 </td>
               </template>
               <template v-else>
-                <td class="day">&nbsp;</td>
-                <td class="value"></td>
+                <td class="day empty"></td>
+                <td class="value empty"></td>
               </template>
             </template>
           </tr>
@@ -79,10 +79,10 @@
         <select multiple id="regionSelect">
           <option
             v-for="item in data.select.regions"
-            v-bind:selected="data.main.regions.includes(item.region)"
-            v-bind:value="item.region"
+            v-bind:selected="data.main.regions.includes(item.name)"
+            v-bind:value="item.name"
             :key="item">
-          {{ item.region }} ({{ item.value }})
+          {{ item.name }}  -- {{ item.value }}
           </option>
         </select>
       </div>

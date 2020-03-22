@@ -1,137 +1,108 @@
 const MAX_NUM = 50000;
 const TYPES = [
   {
+    "id": "confirmed",
     "name": "confirmed",
     "max": 50000,
     "min": 200,
   },
+  // {
+  //   "id": "confirmed_delta",
+  //   "name": "confirmed Δ",
+  //   "max": 0.2,
+  //   "min": 200,
+  // },
   {
+    "id": "deaths",
     "name": "deaths",
     "max": 4000,
     "min": 30,
   },
   {
+    "id": "active",
     "name": "active",
     "max": 50000,
     "min": 200,
   },
 ];
 
-function processMainData(input, regions, selectedItems, selectedType) {
+function processMainData(dataSet, userPreferences) {
   let result = {
     "regions": [],
     "days": [],
   };
 
-  let type = getType(TYPES, selectedType);
+  let type = getType(TYPES, userPreferences.selectedType);
 
-  let regionPos = 0;
-  for (let item of regions) {
-    let regionName = item.region;
+  for (let i in dataSet) {
+    let region = dataSet[i];
+    result.regions.push(region.name);
 
-    if (!selectedItems.includes(regionName)) {
-      continue;
-    }
+    for (let idx in region.days) {
+      let day = region.days[idx];
 
-    let region = input[regionName];
-    
-    let firstAbove = region.findIndex(value => calculateValue(value, selectedType) >= type.min);
-    if (firstAbove == -1 || firstAbove == 0) {
-      continue;
-    }
-
-    result.regions.push(regionName);
-
-
-    let lastBelow = firstAbove - 1;
-
-    let dayNum = 0;
-    for (let value of region) {
-      if (dayNum < lastBelow) {
-        dayNum += 1;
-        continue;
-      }
-      let relDayNum = dayNum - lastBelow;
-      if (!result.days[relDayNum]) {
-        result.days[relDayNum] = {
-          "day": relDayNum,
-          "values": [],
-        };
+      if (!result.days[idx]) {
+        result.days[idx] = {
+          "num": idx,
+          "values": new Array(dataSet.length).fill(null),
+        }
       }
 
-      while (result.days[relDayNum].values.length < regionPos) {
-        result.days[relDayNum].values.push(undefined);
-      }
-
-      result.days[relDayNum].values.push({
-        "region": region.region,
-        "date": parseDate(value.date),
-        "value": formatValue(value, selectedType),
-        "min": calculateValue(value, selectedType) < type.min,
-        "color": interpolateColor([255, 255, 255], [255, 0, 0], calculateValue(value, selectedType) / type.max),
-        "isToday": isToday(parseDate(value.date)),
-        "quarantine": false,
-      });
-      dayNum += 1;
+      let value = calculateValue(region.days, idx, type.id);
+      let date = parseDate(day.date);
+      result.days[idx].values[i] = {
+        "region": region.name,
+        "date": date,
+        "value": formatValue(value, userPreferences),
+        "min": value < type.min,
+        "color": interpolateColor([255, 255, 255], [255, 0, 0], value / type.max),
+        "isToday": isToday(date),
+      };
     }
-
-    // for (let value of region.events) {
-    //   for (let day of result.days) {
-    //     let item = day.values[day.values.length - 1];
-    //     if (isSameDay(item.date, value.date)) {
-    //       item.quarantine = true;
-    //     }
-    //   }
-    // }
-    regionPos += 1;
   }
   return result;
 }
 
-function processData(input, selectedItems, selectedType) {
-  let regions = getSortedRegions(input, selectedType);
-
-  if (selectedItems === null) {
-    selectedItems = regions.map(item => item.region).slice(0, 10);
-  }
-
-  let type = getType(TYPES, selectedType);
-
+function processData(sortedDataSet, userPreferences) {
   let result = {
     "legend": {
-      "min": `Last day below ${type.min} ${type.name}.`,
+      "min": null,
     },
-    "selectedType": selectedType,
-    "main": processMainData(input, regions, selectedItems, selectedType),
+    "selectedType": userPreferences.selectedType,
+    "main": null,
     "select": {
-      "types": TYPES.map(type => type.name),
-      regions: regions.map(region => {
-        let x = {
-          region: region.region,
-          value: formatValue(undefined, selectedType, region.value)
-        };
-        return x;
-      }),
+      "types": null,
+      "regions": null
     }
   };
+
+  let type = getType(TYPES, userPreferences.selectedType);
+  result.legend.min = `Last day below ${type.min} ${type.name}.`;
+
+  let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
+  result.main = processMainData(selectedDataSet, userPreferences);
+
+  result.select.types = TYPES.map(type => type.name);
+  result.select.regions = sortedDataSet.map(region => {
+    let value = calculateValue(region.days, region.days.length - 1, type.id);
+    return {
+      "name": region.name,
+      "value": formatValue(value, userPreferences),
+    };
+  });
   return result;
 }
 
 
 async function main() {
-  let inputData = await fetch("./data/timeseries.json").then((response) => response.json());
+  let dataSet = await fetch("./data/timeseries.json").then((response) => response.json());
 
-  let selectedItems = null;
-  let selectedType = "confirmed";
-  let items = localStorage.getItem("selectedRegions");
-  if (items) {
-    selectedItems = JSON.parse(items);
-  }
-  let type = localStorage.getItem("selectedType");
-  if (type) {
-    selectedType = type;
-  }
-  data = processData(inputData, selectedItems, selectedType);
+  let userPreferences = getUserPreferences();
+
+  let sortedDataSet = sortDataSet(dataSet, userPreferences);
+  normalizeDataSet(sortedDataSet, userPreferences);
+
+  let data = processData(sortedDataSet, userPreferences);
 
   const v = new Vue({
     el: '#app',
@@ -148,19 +119,18 @@ async function main() {
         selected.push(this.options[i].value);
       }
     }
-    let regions = getSortedRegions(inputData, v.data.selectedType);
-    v.data.main = processMainData(inputData, regions, selected, v.data.selectedType);
+    userPreferences.selectedRegions = selected;
+    let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
+    v.data.main = processMainData(selectedDataSet, userPreferences);
     localStorage.setItem("selectedRegions", JSON.stringify(selected));
   });
 
   document.getElementById("typeSelect").addEventListener("change", function () {
-    v.data.selectedType = this.value;
-    let regions = getSortedRegions(inputData, v.data.selectedType);
-    let type = getType(TYPES, v.data.selectedType);
-    v.data.legend.min = `Last day below ${type.min} ${type.name}.`,
-    v.data.main = processMainData(inputData, regions, v.data.main.regions, v.data.selectedType);
-    v.data.select.regions = regions;
-    localStorage.setItem("selectedType", v.data.selectedType);
+    userPreferences.selectedType = this.value;
+    sortedDataSet = sortDataSet(dataSet, userPreferences);
+    normalizeDataSet(sortedDataSet, userPreferences);
+    v.data = processData(sortedDataSet, userPreferences);
+    localStorage.setItem("selectedType", userPreferences.selectedType);
   });
 }
 

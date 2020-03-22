@@ -1,20 +1,17 @@
-function getCurrentValuesForRegion(data, type) {
+function sortDataSet(dataSet, userPreferences) {
+  let type = getType(TYPES, userPreferences.selectedType);
   let result = [];
 
-  for (let regionName in data) {
-    let region = data[regionName];
-    let last = calculateValue(region[region.length - 1], type);
+  for (let regionName in dataSet) {
     result.push({
-      region: regionName,
-      value: last,
+      "name": regionName,
+      "days": dataSet[regionName]
     });
   }
 
-  return result;
-}
-
-function getSortedRegions(data, type) {
-  let result = getCurrentValuesForRegion(data, type);
-
-  return result.sort((a, b) => a.value - b.value).reverse();
+  return result.sort((a, b) => {
+    let valueA = calculateValue(a.days, a.days.length - 1, type.id);
+    let valueB = calculateValue(b.days, b.days.length - 1, type.id);
+    return valueB - valueA;
+  });
 }

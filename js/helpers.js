@@ -1,24 +1,85 @@
-function calculateValue(value, selectedType) {
-  if (selectedType == "recovered") {
-    return value["recovered"] / value["confirmed"];
+function getUserPreferences() {
+  let result = {
+    selectedType: "confirmed",
+    selectedRegions: null,
+  };
+  let type = localStorage.getItem("selectedType");
+  if (type) {
+    result.selectedType = type;
   }
-  if (selectedType == "active") {
-    return value["confirmed"] - value["deaths"] - value["recovered"];
+  let items = localStorage.getItem("selectedRegions");
+  if (items) {
+    result.selectedRegions = JSON.parse(items);
   }
-  return value[selectedType];
+  return result;
 }
 
-function formatValue(value, selectedType, input = null) {
-  if (input === null) {
-    input = calculateValue(value, selectedType);
-  }
+function normalizeDataSet(sortedDataSet, userPreferences) {
+  let type = getType(TYPES, userPreferences.selectedType);
 
-  if (selectedType == "recovered") {
-    return input.toLocaleString(undefined, { style: "percent" });
-  }
+  for (let idx in sortedDataSet) {
+    let region = sortedDataSet[idx];
 
-  return input;
+    let start = null;
+    for (let i = 0; i < region.days.length; i++) {
+      let value = calculateValue(region.days, i, type.id);
+      let nextValue = calculateValue(region.days, i + 1, type.id);
+      if (nextValue > type.min) {
+        start = i;
+        break;
+      }
+    }
+    if (!start) {
+      for (let i = 0; i < region.days.length; i++) {
+        let value = calculateValue(region.days, i, type.id);
+        if (value > 0) {
+          start = i;
+          break;
+        }
+      }
+    }
+    if (start) {
+      region.days = region.days.slice(start);
+    }
+  }
 }
+
+function calculateValue(daysSet, idx, type) {
+  let day = daysSet[idx];
+  if (!day) {
+    return null;
+  }
+
+  if (type == "active") {
+    return day["confirmed"] - day["deaths"] - day["recovered"];
+  }
+  return day[type];
+}
+
+function narrowDataSet(sortedDataSet, userPreferences) {
+  let result = [];
+
+  for (let i in sortedDataSet) {
+    let region = sortedDataSet[i];
+    if (
+      (userPreferences.selectedRegions === null && result.length < 10) ||
+      (userPreferences.selectedRegions !== null && userPreferences.selectedRegions.includes(region.name))
+    ) {
+      result.push(region);
+    }
+  }
+
+  return result;
+}
+
+function formatValue(value, userPreferences) {
+  if (userPreferences.selectedType == "recovered") {
+    return value.toLocaleString(undefined, { style: "percent" });
+  }
+
+  return value;
+}
+
 
 // Parse a string like "2020-1-19" to a date
 function parseDate(input) {
@@ -72,12 +133,11 @@ const isToday = (someDate) => {
   return isSameDay(today, someDate);
 }
 
-
 function getType(types, selectedType) {
   for (let item of types) {
-    if (item.name === selectedType) {
+    if (item.id === selectedType) {
       return item;
     }
   }
-  return null;
+  throw new Error(`Unknown type: ${selectedType}`);
 }

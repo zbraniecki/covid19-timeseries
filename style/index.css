@@ -40,6 +40,11 @@ table#data td {
   border-bottom: 1px solid #dddddd;
 }
 
+table#data td.empty {
+  border: none !important;
+}
+
+
 table#data thead td.value {
   padding: 0 5px;
   text-align: center;
