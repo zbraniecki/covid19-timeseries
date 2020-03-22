@@ -1,11 +1,17 @@
 diff --git a/data/timeseries.json b/data/timeseries.json
-index adbe228..cdd61e6 100644
+index a6b4bc9..232c871 100644
 --- a/data/timeseries.json
 +++ b/data/timeseries.json
-@@ -33108,6 +33108,24 @@
+@@ -33666,6 +33666,30 @@
      }
    ],
    "China": [
++    {
++      "date": "2020-1-18",
++      "confirmed": 94,
++      "deaths": 3,
++      "recovered": 0
++    },
 +    {
 +      "date": "2020-1-19",
 +      "confirmed": 170,
@@ -27,7 +33,7 @@ index adbe228..cdd61e6 100644
      {
        "date": "2020-1-22",
        "confirmed": 548,
-@@ -57671,4 +57689,4 @@
+@@ -60091,4 +60115,4 @@
        "recovered": 0
      }
    ]
