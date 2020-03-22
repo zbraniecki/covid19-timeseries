@@ -33667,6 +33667,12 @@
   ],
   "China": [
     {
+      "date": "2020-1-18",
+      "confirmed": 94,
+      "deaths": 3,
+      "recovered": 0
+    },
+    {
       "date": "2020-1-19",
       "confirmed": 170,
       "deaths": 3,

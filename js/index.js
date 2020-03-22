@@ -6,12 +6,12 @@ const TYPES = [
     "max": 50000,
     "min": 200,
   },
-  // {
-  //   "id": "confirmed_delta",
-  //   "name": "confirmed Δ",
-  //   "max": 0.2,
-  //   "min": 200,
-  // },
+  {
+    "id": "confirmed_delta",
+    "name": "confirmed Δ",
+    "max": 0.5,
+    "min": 0.0,
+  },
   {
     "id": "deaths",
     "name": "deaths",
@@ -80,9 +80,10 @@ function processData(sortedDataSet, userPreferences) {
   result.legend.min = `Last day below ${type.min} ${type.name}.`;
 
   let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
+  normalizeDataSet(selectedDataSet, userPreferences);
   result.main = processMainData(selectedDataSet, userPreferences);
 
-  result.select.types = TYPES.map(type => type.name);
+  result.select.types = TYPES;
   result.select.regions = sortedDataSet.map(region => {
     let value = calculateValue(region.days, region.days.length - 1, type.id);
     return {
@@ -100,7 +101,6 @@ async function main() {
   let userPreferences = getUserPreferences();
 
   let sortedDataSet = sortDataSet(dataSet, userPreferences);
-  normalizeDataSet(sortedDataSet, userPreferences);
 
   let data = processData(sortedDataSet, userPreferences);
 
@@ -121,6 +121,7 @@ async function main() {
     }
     userPreferences.selectedRegions = selected;
     let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
+    normalizeDataSet(selectedDataSet, userPreferences);
     v.data.main = processMainData(selectedDataSet, userPreferences);
     localStorage.setItem("selectedRegions", JSON.stringify(selected));
   });
@@ -128,7 +129,6 @@ async function main() {
   document.getElementById("typeSelect").addEventListener("change", function () {
     userPreferences.selectedType = this.value;
     sortedDataSet = sortDataSet(dataSet, userPreferences);
-    normalizeDataSet(sortedDataSet, userPreferences);
     v.data = processData(sortedDataSet, userPreferences);
     localStorage.setItem("selectedType", userPreferences.selectedType);
   });

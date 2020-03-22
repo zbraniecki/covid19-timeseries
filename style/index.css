@@ -41,7 +41,7 @@ table#data td {
 }
 
 table#data td.empty {
-  border: none !important;
+  border-bottom: none !important;
 }
 
 
@@ -56,7 +56,7 @@ table#data td.relDay {
 }
 
 table#data td.value {
-  border-right: 1px solid black;
+  border-right: 1px solid #999999;
 }
 
 table#data td.below {

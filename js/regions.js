@@ -9,9 +9,11 @@ function sortDataSet(dataSet, userPreferences) {
     });
   }
 
+  let normalizedType = type.id == "confirmed_delta" ? getType(TYPES, "confirmed") : type;
+
   return result.sort((a, b) => {
-    let valueA = calculateValue(a.days, a.days.length - 1, type.id);
-    let valueB = calculateValue(b.days, b.days.length - 1, type.id);
+    let valueA = calculateValue(a.days, a.days.length - 1, normalizedType.id);
+    let valueB = calculateValue(b.days, b.days.length - 1, normalizedType.id);
     return valueB - valueA;
   });
 }

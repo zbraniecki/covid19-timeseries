@@ -69,10 +69,10 @@
         <select id="typeSelect">
           <option
             v-for="item in data.select.types"
-            v-bind:selected="data.selectedType === item"
-            v-bind:value="item"
-            :key="item">
-          {{ item }}
+            v-bind:selected="data.selectedType === item.id"
+            v-bind:value="item.id"
+            :key="item.id">
+          {{ item.name }}
           </option>
         </select>
         <p>Regions</p>

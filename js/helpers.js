@@ -17,21 +17,23 @@ function getUserPreferences() {
 function normalizeDataSet(sortedDataSet, userPreferences) {
   let type = getType(TYPES, userPreferences.selectedType);
 
+  let normalizedType = type.id == "confirmed_delta" ? getType(TYPES, "confirmed") : type;
+
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
 
     let start = null;
     for (let i = 0; i < region.days.length; i++) {
-      let value = calculateValue(region.days, i, type.id);
-      let nextValue = calculateValue(region.days, i + 1, type.id);
-      if (nextValue > type.min) {
+      let value = calculateValue(region.days, i, normalizedType.id);
+      let nextValue = calculateValue(region.days, i + 1, normalizedType.id);
+      if (nextValue > normalizedType.min) {
         start = i;
         break;
       }
     }
     if (!start) {
       for (let i = 0; i < region.days.length; i++) {
-        let value = calculateValue(region.days, i, type.id);
+        let value = calculateValue(region.days, i, normalizedType.id);
         if (value > 0) {
           start = i;
           break;
@@ -39,7 +41,16 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
       }
     }
     if (start) {
+      // Trick to get the -1 value after normalization
+      // for relative cases.
+      let minusOne = null;
+      if (start > 0) {
+        minusOne = region.days[start - 1];
+      }
       region.days = region.days.slice(start);
+      if (minusOne !== null) {
+        region.days[-1] = minusOne;
+      }
     }
   }
 }
@@ -52,6 +63,14 @@ function calculateValue(daysSet, idx, type) {
 
   if (type == "active") {
     return day["confirmed"] - day["deaths"] - day["recovered"];
+  }
+  if (type == "confirmed_delta") {
+    let value = day["confirmed"];
+    let valuePrev = daysSet[idx - 1] ? daysSet[idx - 1]["confirmed"] : null;
+    if (valuePrev === null) {
+      return 0;
+    }
+    return (value / valuePrev) - 1;
   }
   return day[type];
 }
@@ -73,7 +92,9 @@ function narrowDataSet(sortedDataSet, userPreferences) {
 }
 
 function formatValue(value, userPreferences) {
-  if (userPreferences.selectedType == "recovered") {
+  if (userPreferences.selectedType == "recovered"
+      || userPreferences.selectedType == "confirmed_delta"
+  ) {
     return value.toLocaleString(undefined, { style: "percent" });
   }
 
