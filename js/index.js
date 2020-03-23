@@ -8,7 +8,7 @@ const TYPES = [
   },
   {
     "id": "confirmed_trend",
-    "name": "confirmed_trend",
+    "name": "confirmed trend",
     "max": 30,
     "min": 0,
   },
