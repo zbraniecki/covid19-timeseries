@@ -13,6 +13,12 @@ const TYPES = [
     "min": 0.0,
   },
   {
+    "id": "growth_rate",
+    "name": "growth rate",
+    "max": 2.0,
+    "min": 1.0,
+  },
+  {
     "id": "deaths",
     "name": "deaths",
     "max": 4000,

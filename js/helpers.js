@@ -56,7 +56,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
 }
 
 function getNormalizedType(types, type) {
-  if (type.id == "confirmed_delta") {
+  if (type.id == "confirmed_delta" || type.id == "growth_rate") {
     return getType(types, "confirmed");
   }
   if (type.id == "active_delta") {
@@ -90,6 +90,14 @@ function calculateValue(daysSet, idx, type) {
     }
     return (value / valuePrev) - 1;
   }
+  if (type == "growth_rate") {
+    let value = calculateValue(daysSet, idx, "confirmed_delta");
+    let valuePrev = calculateValue(daysSet, idx - 1, "confirmed_delta");
+    if (valuePrev === 0) {
+      return 0;
+    }
+    return value / valuePrev;
+  }
   return day[type];
 }
 
@@ -115,6 +123,10 @@ function formatValue(value, userPreferences) {
       || userPreferences.selectedType == "active_delta"
   ) {
     return value.toLocaleString(undefined, { style: "percent" });
+  }
+
+  if (userPreferences.selectedType == "growth_rate") {
+    return value.toLocaleString(undefined, { maximumFractionDigits: 2 })
   }
 
   return value;
