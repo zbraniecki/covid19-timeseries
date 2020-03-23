@@ -52,6 +52,16 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
         region.days[-1] = minusOne;
       }
     }
+
+    // calc confirmed EMAs
+    const confirmed = region.days.map(a => a.confirmed)
+    const confirmed3EMA = calculateEMA(confirmed, 3)
+    const confirmed7EMA = calculateEMA(confirmed, 7)
+    for(let i = 0; i < region.days.length; i++) {
+      region.days[i].confirmed3EMA = confirmed3EMA[i]
+      region.days[i].confirmed7EMA = confirmed7EMA[i]
+      region.days[i].confirmedEMAdelta = Math.round(100 * (confirmed3EMA[i] - confirmed7EMA[i]) / confirmed[i])
+    }
   }
 }
 
@@ -73,6 +83,9 @@ function calculateValue(daysSet, idx, type) {
 
   if (type == "active") {
     return day["confirmed"] - day["deaths"] - day["recovered"];
+  }
+  if (type == "confirmed_trend") {
+    return day["confirmedEMAdelta"]
   }
   if (type == "confirmed_delta") {
     let value = calculateValue(daysSet, idx, "confirmed");
@@ -180,4 +193,9 @@ function getType(types, selectedType) {
     }
   }
   throw new Error(`Unknown type: ${selectedType}`);
+}
+
+function calculateEMA(data, range) {
+  // from https://stackoverflow.com/questions/40057020/calculating-exponential-moving-average-ema-using-javascript
+  return data.reduce((p,n,i) => i ? p.concat(2*n/(range+1) + p[p.length-1]*(range-1)/(range+1)) : p, [data[0]])
 }

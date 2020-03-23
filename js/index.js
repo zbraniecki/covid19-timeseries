@@ -7,6 +7,12 @@ const TYPES = [
     "min": 200,
   },
   {
+    "id": "confirmed_trend",
+    "name": "confirmed_trend",
+    "max": 30,
+    "min": 0,
+  },
+  {
     "id": "confirmed_delta",
     "name": "confirmed Δ",
     "max": 0.5,
