@@ -56,11 +56,8 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
 }
 
 function getNormalizedType(types, type) {
-  if (type.id == "confirmed_delta") {
-    return getType(types, "confirmed");
-  }
-  if (type.id == "active_delta") {
-    return getType(types, "active");
+  if (type.base !== null) {
+    return getType(types, type.base);
   }
   return type;
 }
@@ -110,14 +107,9 @@ function narrowDataSet(sortedDataSet, userPreferences) {
 }
 
 function formatValue(value, userPreferences) {
-  if (userPreferences.selectedType == "recovered"
-      || userPreferences.selectedType == "confirmed_delta"
-      || userPreferences.selectedType == "active_delta"
-  ) {
-    return value.toLocaleString(undefined, { style: "percent" });
-  }
-
-  return value;
+  let type = getType(TYPES, userPreferences.selectedType);
+  
+  return value.toLocaleString(undefined, { style: type.style });
 }
 
 
