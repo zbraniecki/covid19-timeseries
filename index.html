@@ -40,7 +40,7 @@
               <td class="value">#</td>
             </template>
           </tr>
-          <tr v-for="item in data.main.days">
+          <tr v-for="item in data.main.dates">
             <td class="relDay">{{ item.num }}</td>
             <template v-for="sample in item.values">
               <template v-if="sample">
@@ -65,16 +65,32 @@
         </table>
       </div>
       <div id="sidebar">
-        <p>Type</p>
-        <select id="typeSelect">
-          <option
-            v-for="item in data.select.types"
-            v-bind:selected="data.selectedType === item.id"
-            v-bind:value="item.id"
-            :key="item.id">
-          {{ item.name }}
-          </option>
-        </select>
+        <dl>
+          <dt>Type</dt>
+          <dd>
+            <select id="typeSelect">
+              <option
+                v-for="item in data.select.types"
+                v-bind:selected="data.selectedType === item.id"
+                v-bind:value="item.id"
+                :key="item.id">
+              {{ item.name }}
+              </option>
+            </select>
+          </dd>
+          <dt>View</dt>
+          <dd>
+            <select id="viewSelect">
+              <option
+                v-for="item in data.select.views"
+                v-bind:selected="data.selectedView === item.id"
+                v-bind:value="item.id"
+                :key="item.id">
+              {{ item.name }}
+              </option>
+            </select>
+          </dd>
+        </dl>
         <p>Regions</p>
         <select multiple id="regionSelect">
           <option

@@ -1,19 +1,17 @@
 function sortDataSet(dataSet, userPreferences) {
-  let type = getType(TYPES, userPreferences.selectedType);
+  let {type} = getTypeAndView(SETTINGS, userPreferences);
   let result = [];
 
   for (let regionName in dataSet) {
     result.push({
       "name": regionName,
-      "days": dataSet[regionName]
+      "dates": dataSet[regionName]
     });
   }
 
-  let normalizedType = getNormalizedType(TYPES, type);
-
   return result.sort((a, b) => {
-    let valueA = calculateValue(a.days, a.days.length - 1, normalizedType.id);
-    let valueB = calculateValue(b.days, b.days.length - 1, normalizedType.id);
+    let valueA = calculateValue(a.dates, a.dates.length - 1, type, getView(SETTINGS, "total"));
+    let valueB = calculateValue(b.dates, b.dates.length - 1, type, getView(SETTINGS, "total"));
     return valueB - valueA;
   });
 }

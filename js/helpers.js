@@ -1,39 +1,46 @@
 function getUserPreferences() {
   let result = {
-    selectedType: "confirmed",
-    selectedRegions: null,
+    type: "cases",
+    view: "total",
+    regions: null,
   };
   let type = localStorage.getItem("selectedType");
   if (type) {
-    result.selectedType = type;
+    if (SETTINGS.types.find(t => t.id == type)) {
+      result.type = type;
+    }
+  }
+  let view = localStorage.getItem("selectedView");
+  if (view) {
+    if (SETTINGS.views.find(t => t.id == view)) {
+      result.view = view;
+    }
   }
   let items = localStorage.getItem("selectedRegions");
   if (items) {
-    result.selectedRegions = JSON.parse(items);
+    result.regions = JSON.parse(items);
   }
   return result;
 }
 
 function normalizeDataSet(sortedDataSet, userPreferences) {
-  let type = getType(TYPES, userPreferences.selectedType);
-
-  let normalizedType = getNormalizedType(TYPES, type);
+  let {type} = getTypeAndView(SETTINGS, userPreferences);
 
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
 
     let start = null;
-    for (let i = 0; i < region.days.length; i++) {
-      let value = calculateValue(region.days, i, normalizedType.id);
-      let nextValue = calculateValue(region.days, i + 1, normalizedType.id);
-      if (nextValue > normalizedType.min) {
+    for (let i = 0; i < region.dates.length; i++) {
+      let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
+      let nextValue = calculateValue(region.dates, i + 1, type, getView(SETTINGS, "total"));
+      if (nextValue > type.views["total"].min) {
         start = i;
         break;
       }
     }
     if (!start) {
-      for (let i = 0; i < region.days.length; i++) {
-        let value = calculateValue(region.days, i, normalizedType.id);
+      for (let i = 0; i < region.dates.length; i++) {
+        let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
         if (value > 0) {
           start = i;
           break;
@@ -45,11 +52,11 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
       // for relative cases.
       let minusOne = null;
       if (start > 0) {
-        minusOne = region.days[start - 1];
+        minusOne = region.dates[start - 1];
       }
-      region.days = region.days.slice(start);
+      region.dates = region.dates.slice(start);
       if (minusOne !== null) {
-        region.days[-1] = minusOne;
+        region.dates[-1] = minusOne;
       }
     }
   }
@@ -62,32 +69,29 @@ function getNormalizedType(types, type) {
   return type;
 }
 
-function calculateValue(daysSet, idx, type) {
-  let day = daysSet[idx];
+function calculateValue(datesSet, idx, type, view) {
+  let day = datesSet[idx];
   if (!day) {
     return null;
   }
 
-  if (type == "active") {
+  if (view.id === "delta") {
+    let value = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
+    let valuePrev = calculateValue(datesSet, idx - 1, type, getView(SETTINGS, "total"));
+    if (valuePrev === null) {
+      return 0;
+    }
+    return (value / valuePrev) - 1;
+  }
+
+  if (type.id == "active") {
     return day["confirmed"] - day["deaths"] - day["recovered"];
   }
-  if (type == "confirmed_delta") {
-    let value = calculateValue(daysSet, idx, "confirmed");
-    let valuePrev = calculateValue(daysSet, idx - 1, "confirmed");
-    if (valuePrev === null) {
-      return 0;
-    }
-    return (value / valuePrev) - 1;
+  if (type.id == "cases") {
+    return day["confirmed"];
   }
-  if (type == "active_delta") {
-    let value = calculateValue(daysSet, idx, "active");
-    let valuePrev = calculateValue(daysSet, idx - 1, "active");
-    if (valuePrev === null) {
-      return 0;
-    }
-    return (value / valuePrev) - 1;
-  }
-  return day[type];
+
+  return day[type.id];
 }
 
 function narrowDataSet(sortedDataSet, userPreferences) {
@@ -96,8 +100,8 @@ function narrowDataSet(sortedDataSet, userPreferences) {
   for (let i in sortedDataSet) {
     let region = sortedDataSet[i];
     if (
-      (userPreferences.selectedRegions === null && result.length < 10) ||
-      (userPreferences.selectedRegions !== null && userPreferences.selectedRegions.includes(region.name))
+      (userPreferences.regions === null && result.length < 10) ||
+      (userPreferences.regions !== null && userPreferences.regions.includes(region.name))
     ) {
       result.push(region);
     }
@@ -107,9 +111,9 @@ function narrowDataSet(sortedDataSet, userPreferences) {
 }
 
 function formatValue(value, userPreferences) {
-  let type = getType(TYPES, userPreferences.selectedType);
+  let {view} = getTypeAndView(SETTINGS, userPreferences);
   
-  return value.toLocaleString(undefined, { style: type.style });
+  return value.toLocaleString(undefined, { style: view.style });
 }
 
 
@@ -165,11 +169,31 @@ const isToday = (someDate) => {
   return isSameDay(today, someDate);
 }
 
-function getType(types, selectedType) {
-  for (let item of types) {
-    if (item.id === selectedType) {
+function getTypeAndView(settings, userPreferences) {
+  let result = {
+    type: undefined,
+    view: undefined,
+  };
+  for (let item of settings.types) {
+    if (item.id === userPreferences.type) {
+      result.type = item;
+      break;
+    }
+  }
+  for (let item of settings.views) {
+    if (item.id === userPreferences.view) {
+      result.view = item;
+      break;
+    }
+  }
+  return result;
+}
+
+function getView(settings, id) {
+  for (let item of settings.views) {
+    if (item.id === id) {
       return item;
     }
   }
-  throw new Error(`Unknown type: ${selectedType}`);
+  return undefined;
 }

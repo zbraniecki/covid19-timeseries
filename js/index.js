@@ -1,77 +1,92 @@
-const MAX_NUM = 50000;
-const TYPES = [
-  {
-    "id": "confirmed",
-    "name": "confirmed",
-    "base": null,
-    "style": "decimal",
-    "max": 50000,
-    "min": 200,
-  },
-  {
-    "id": "confirmed_delta",
-    "name": "confirmed Δ",
-    "base": "confirmed",
-    "style": "percent",
-    "max": 0.5,
-    "min": 0.0,
-  },
-  {
-    "id": "deaths",
-    "name": "deaths",
-    "base": null,
-    "style": "decimal",
-    "max": 4000,
-    "min": 30,
-  },
-  {
-    "id": "active",
-    "name": "active",
-    "base": null,
-    "style": "decimal",
-    "max": 50000,
-    "min": 200,
-  },
-  {
-    "id": "active_delta",
-    "name": "active Δ",
-    "base": "active",
-    "style": "percent",
-    "max": 0.5,
-    "min": 0.0,
-  },
-];
+const SETTINGS = {
+  views: [
+    {
+      "id": "total",
+      "name": "total",
+      "style": "decimal",
+    },
+    {
+      "id": "delta",
+      "name": "delta",
+      "style": "percent",
+    },
+  ],
+  types: [
+    {
+      "id": "cases",
+      "name": "cases",
+      "views": {
+        "total": {
+          "max": 50000,
+          "min": 500,
+        },
+        "delta": {
+          "max": 0.5,
+          "min": 0.0,
+        },
+      },
+    },
+    {
+      "id": "deaths",
+      "name": "deaths",
+      "views": {
+        "total": {
+          "max": 4000,
+          "min": 30,
+        },
+        "delta": {
+          "max": 0.2,
+          "min": 0.01,
+        },
+      },
+    },
+    {
+      "id": "active",
+      "name": "active",
+      "views": {
+        "total": {
+          "max": 50000,
+          "min": 500,
+        },
+        "delta": {
+          "max": 0.5,
+          "min": 0.0,
+        },
+      },
+    },
+  ],
+};
 
 function processMainData(dataSet, userPreferences) {
   let result = {
     "regions": [],
-    "days": [],
+    "dates": [],
   };
 
-  let type = getType(TYPES, userPreferences.selectedType);
+  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
 
   for (let i in dataSet) {
     let region = dataSet[i];
     result.regions.push(region.name);
 
-    for (let idx in region.days) {
-      let day = region.days[idx];
+    for (let idx in region.dates) {
+      let day = region.dates[idx];
 
-      if (!result.days[idx]) {
-        result.days[idx] = {
+      if (!result.dates[idx]) {
+        result.dates[idx] = {
           "num": idx,
           "values": new Array(dataSet.length).fill(null),
         }
       }
 
-      let value = calculateValue(region.days, idx, type.id);
+      let value = calculateValue(region.dates, idx, type, view);
       let date = parseDate(day.date);
-      result.days[idx].values[i] = {
+      result.dates[idx].values[i] = {
         "region": region.name,
         "date": date,
         "value": formatValue(value, userPreferences),
-        "min": value < type.min,
-        "color": interpolateColor([255, 255, 255], [255, 0, 0], value / type.max),
+        "min": value <= type.views[view.id].min,
+        "color": interpolateColor([255, 255, 255], [255, 0, 0], value / type.views[view.id].max),
         "isToday": isToday(date),
       };
     }
@@ -84,25 +99,27 @@ function processData(sortedDataSet, userPreferences) {
     "legend": {
       "min": null,
     },
-    "selectedType": userPreferences.selectedType,
+    "selectedType": userPreferences.type,
+    "selectedView": userPreferences.view,
     "main": null,
     "select": {
       "types": null,
+      "views": null,
       "regions": null
     }
   };
 
-  let type = getType(TYPES, userPreferences.selectedType);
-  let normalizedType = getNormalizedType(TYPES, type);
-  result.legend.min = `Last day below ${normalizedType.min} ${normalizedType.name}.`;
+  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
+  result.legend.min = `Last day below ${type.views["total"].min} ${type.name}.`;
 
   let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
   normalizeDataSet(selectedDataSet, userPreferences);
   result.main = processMainData(selectedDataSet, userPreferences);
 
-  result.select.types = TYPES;
+  result.select.types = SETTINGS.types;
+  result.select.views = SETTINGS.views;
   result.select.regions = sortedDataSet.map(region => {
-    let value = calculateValue(region.days, region.days.length - 1, type.id);
+    let value = calculateValue(region.dates, region.dates.length - 1, type, view);
     return {
       "name": region.name,
       "value": formatValue(value, userPreferences),
@@ -136,7 +153,7 @@ async function main() {
         selected.push(this.options[i].value);
       }
     }
-    userPreferences.selectedRegions = selected;
+    userPreferences.regions = selected;
     let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
     normalizeDataSet(selectedDataSet, userPreferences);
     v.data.main = processMainData(selectedDataSet, userPreferences);
@@ -144,10 +161,17 @@ async function main() {
   });
 
   document.getElementById("typeSelect").addEventListener("change", function () {
-    userPreferences.selectedType = this.value;
+    userPreferences.type = this.value;
     sortedDataSet = sortDataSet(dataSet, userPreferences);
     v.data = processData(sortedDataSet, userPreferences);
-    localStorage.setItem("selectedType", userPreferences.selectedType);
+    localStorage.setItem("selectedType", userPreferences.type);
+  });
+
+  document.getElementById("viewSelect").addEventListener("change", function () {
+    userPreferences.view = this.value;
+    sortedDataSet = sortDataSet(dataSet, userPreferences);
+    v.data = processData(sortedDataSet, userPreferences);
+    localStorage.setItem("selectedView", userPreferences.view);
   });
 }
 
