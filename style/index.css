@@ -34,6 +34,10 @@ table#data thead td {
   font-weight: bold;
 }
 
+table#data tbody tr:nth-child(2) td {
+  background-color: rgb(221, 238, 255) !important;
+}
+
 table#data td {
   font-size: 0.9em;
   padding: 3px;
@@ -59,12 +63,8 @@ table#data td.value {
   border-right: 1px solid #999999;
 }
 
-table#data td.below {
-  background-color: rgb(221, 238, 255);
-}
-
 table#data td.today {
-  background-color: #ccffcc !important;
+  background-color: #ffffcc !important;
 }
 
 table#data td.day.quarantine {

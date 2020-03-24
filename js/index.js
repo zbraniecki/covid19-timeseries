@@ -15,6 +15,7 @@ const SETTINGS = {
     {
       "id": "cases",
       "name": "cases",
+      "sentiment": "negative",
       "views": {
         "total": {
           "max": 50000,
@@ -29,6 +30,7 @@ const SETTINGS = {
     {
       "id": "deaths",
       "name": "deaths",
+      "sentiment": "negative",
       "views": {
         "total": {
           "max": 4000,
@@ -43,6 +45,7 @@ const SETTINGS = {
     {
       "id": "active",
       "name": "active",
+      "sentiment": "negative",
       "views": {
         "total": {
           "max": 50000,
@@ -81,12 +84,15 @@ function processMainData(dataSet, userPreferences) {
 
       let value = calculateValue(region.dates, idx, type, view);
       let date = parseDate(day.date);
+
+      let maxColor =
+        (type.sentiment == "positive" && value > 0) || (type.sentiment == "negative" && value < 0) ? [0, 255, 0] : [255, 0, 0];
+      let colorVector = value > 0 ? 1 : -1;
       result.dates[idx].values[i] = {
         "region": region.name,
         "date": date,
         "value": formatValue(value, userPreferences),
-        "min": value <= type.views[view.id].min,
-        "color": interpolateColor([255, 255, 255], [255, 0, 0], value / type.views[view.id].max),
+        "color": interpolateColor([255, 255, 255], maxColor, (value / type.views[view.id].max) * colorVector),
         "isToday": isToday(date),
       };
     }

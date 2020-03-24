@@ -15,7 +15,7 @@
         <table id="legend" cellspacing="0" cellpadding="0">
           <tr>
             <td style="background-color: rgb(221, 238, 255)">{{ data.legend.min }}</td>
-            <td style="background-color: #ccffcc">Today</td>
+            <td style="background-color: #ffffcc">Today</td>
             <td>
               |
               <a href="https://github.com/zbraniecki/covid19-timeseries">Github repo<a/>
@@ -46,12 +46,12 @@
               <template v-if="sample">
                 <td
                   class="day"
-                  v-bind:class="{ below: sample.min, today: sample.isToday, quarantine: sample.quarantine }">
+                  v-bind:class="{ today: sample.isToday, quarantine: sample.quarantine }">
                   {{ sample.date.toLocaleDateString(undefined, { month: "numeric", day: "numeric" }) }}
                 </td>
                 <td
                   class="value"
-                  v-bind:class="{ below: sample.min, quarantine: sample.quarantine }"
+                  v-bind:class="{ quarantine: sample.quarantine }"
                   v-bind:style="sample.min ? {} : { backgroundColor: sample.color }">
                   {{ sample.value }}
                 </td>
