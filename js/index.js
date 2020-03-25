@@ -79,7 +79,12 @@ const SETTINGS = {
 
 function processMainData(dataSet, userPreferences) {
   let result = {
-    "showPopulation": false,
+    "rows": {
+      "population": false,
+      "country": false,
+      "state": false,
+      "county": false,
+    },
     "regions": [],
     "dates": [],
   };

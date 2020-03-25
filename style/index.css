@@ -25,6 +25,13 @@ table#data {
   height: 100px;
 }
 
+a.target {
+  display: block;
+  position: relative;
+  top: -48px;
+  visibility: hidden;
+}
+
 table#data thead {
   background-color: white;
   position: sticky;
@@ -34,26 +41,22 @@ table#data thead {
 
 table#data thead tr:nth-child(1) th {
   padding-top: 10px;
+  font-size: 1.4em;
+  color: black;
 }
 
-a.target {
-  display: block;
-  position: relative;
-  top: -48px; 
-  visibility: hidden;
+table#data thead tr:nth-child(1) th.value {
+  text-align: center;
 }
 
-table#data thead tr:nth-child(2) th {
+table#data thead tr th {
+  padding: 0 5px;
+  text-align: center;
   border-bottom: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
 }
-table#data thead tr:nth-child(2) th {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
 
-table#data thead tr:nth-child(2),
-table#data thead tr:nth-child(3) {
+table#data thead tr {
   font-size: 0.7em;
   color: #999999;
 }
@@ -72,11 +75,6 @@ table#data td.empty {
   border-bottom: none !important;
 }
 
-
-table#data thead th {
-  padding: 0 5px;
-  text-align: center;
-}
 
 table#data td:nth-child(1), table#data th:nth-child(1) {
   text-align: center;
@@ -103,10 +101,6 @@ table#data td.day {
   font-weight: bold;
   color: #555555;
   text-align: right;
-}
-
-table#data thead tr:nth-child(1) th.value {
-  text-align: center;
 }
 
 table#data td.value,
