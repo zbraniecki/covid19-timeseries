@@ -3,6 +3,7 @@ function getUserPreferences() {
     type: "cases",
     view: "total",
     regions: null,
+    filter: ["country", "state"],
   };
   let params = getSearchParams();
 
@@ -30,37 +31,32 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
 
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
-    let normalized = false;
+    let normalized = {
+      "status": "none",
+      "value": null,
+    };
 
-    let start = null;
     for (let i = 0; i < region.dates.length; i++) {
       let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
       let nextValue = calculateValue(region.dates, i + 1, type, getView(SETTINGS, "total"));
-      if (nextValue > type.views["total"].min) {
-        start = i;
-        normalized = true;
+      if (nextValue >= type.views["total"].min) {
+        normalized = {
+          "status": "normalized",
+          "value": i,
+        };
         break;
       }
     }
-    if (!start) {
+    if (normalized["status"] === "none") {
       for (let i = 0; i < region.dates.length; i++) {
         let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
         if (value > 0) {
-          start = i;
+          normalized = {
+            "status": "firstValue",
+            "value": i,
+          }
           break;
         }
-      }
-    }
-    if (start) {
-      // Trick to get the -1 value after normalization
-      // for relative cases.
-      let minusOne = null;
-      if (start > 0) {
-        minusOne = region.dates[start - 1];
-      }
-      region.dates = region.dates.slice(start);
-      if (minusOne !== null) {
-        region.dates[-1] = minusOne;
       }
     }
     region.normalized = normalized;
@@ -77,15 +73,15 @@ function getNormalizedType(types, type) {
 function calculateValue(datesSet, idx, type, view) {
   let day = datesSet[idx];
   if (!day) {
-    return null;
+    return undefined;
   }
 
   if (view.id === "delta") {
+    if (idx == 0) {
+      return 1;
+    }
     let value = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
     let valuePrev = calculateValue(datesSet, idx - 1, type, getView(SETTINGS, "total"));
-    if (valuePrev === null) {
-      return 0;
-    }
     return (value / valuePrev) - 1;
   }
   if (view.id === "ema") {
@@ -95,18 +91,11 @@ function calculateValue(datesSet, idx, type, view) {
     return (total3EMA - total7EMA) / total;
   }
 
-  if (type.id == "active") {
-    if (day["recovered"]) {
-      return day["confirmed"] - day["deaths"] - day["recovered"];
-    } else {
-      return 0;
-    }
-  }
-  if (type.id == "cases") {
-    return day["confirmed"];
+  if (type.id === "active" && !day.value.hasOwnProperty("active")) {
+    return day.value["cases"] - day.value["deaths"] - day.value["recovered"];
   }
 
-  return day[type.id];
+  return day.value[type.id];
 }
 
 function narrowDataSet(sortedDataSet, userPreferences) {
@@ -126,6 +115,9 @@ function narrowDataSet(sortedDataSet, userPreferences) {
 }
 
 function formatValue(value, userPreferences) {
+  if (value === undefined) {
+    return NaN;
+  }
   let {view} = getTypeAndView(SETTINGS, userPreferences);
   
   return value.toLocaleString(undefined, { style: view.style });
@@ -215,7 +207,7 @@ function getView(settings, id) {
 
 function calculateEMA(daysSet, idx, range, type) {
   let total =  calculateValue(daysSet, idx, type, getView(SETTINGS, "total"));
-  if (idx < 0) {
+  if (idx < 1) {
     return total;
   }
   let prevTotal =  calculateEMA(daysSet, idx - 1, range, type);
