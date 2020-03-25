@@ -94,7 +94,11 @@ function calculateValue(datesSet, idx, type, view) {
   }
 
   if (type.id == "active") {
-    return day["confirmed"] - day["deaths"] - day["recovered"];
+    if (day["recovered"]) {
+      return day["confirmed"] - day["deaths"] - day["recovered"];
+    } else {
+      return 0;
+    }
   }
   if (type.id == "cases") {
     return day["confirmed"];
