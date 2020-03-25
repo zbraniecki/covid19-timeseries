@@ -4,21 +4,23 @@ function getUserPreferences() {
     view: "total",
     regions: null,
   };
-  let type = localStorage.getItem("selectedType");
+  let params = getSearchParams();
+
+  let type = params.get("type");
   if (type) {
     if (SETTINGS.types.find(t => t.id == type)) {
       result.type = type;
     }
   }
-  let view = localStorage.getItem("selectedView");
+  let view = params.get("view");
   if (view) {
     if (SETTINGS.views.find(t => t.id == view)) {
       result.view = view;
     }
   }
-  let items = localStorage.getItem("selectedRegions");
-  if (items) {
-    result.regions = JSON.parse(items);
+  let regions = params.getAll("region");
+  if (regions) {
+    result.regions = regions;
   }
   return result;
 }
@@ -220,4 +222,13 @@ function calculateEMA(daysSet, idx, range, type) {
 
   var k = 2/(range + 1);
   return total * k + prevTotal * (1 - k);
+}
+
+function getSearchParams() {
+  return new URLSearchParams(document.location.search);
+}
+
+function setURL(params) {
+  window.history.replaceState({}, '', `${document.location.pathname}?${params}`);
+
 }

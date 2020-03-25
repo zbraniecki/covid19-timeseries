@@ -208,20 +208,31 @@ async function main() {
     let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
     normalizeDataSet(selectedDataSet, userPreferences);
     v.data.main = processMainData(selectedDataSet, userPreferences);
-    localStorage.setItem("selectedRegions", JSON.stringify(selected));
+
+    let params = getSearchParams();
+    params.delete("region");
+    for (let id of selected) {
+      params.append("region", id);
+    }
+    setURL(params);
   });
 
   document.getElementById("typeSelect").addEventListener("change", function () {
     userPreferences.type = this.value;
     sortedDataSet = sortDataSet(dataSet, userPreferences);
     v.data = processData(sortedDataSet, userPreferences);
-    localStorage.setItem("selectedType", userPreferences.type);
+
+    let params = getSearchParams();
+    params.set("type", userPreferences.type);
+    setURL(params);
   });
 
   document.getElementById("viewSelect").addEventListener("change", function () {
     userPreferences.view = this.value;
     v.data = processData(sortedDataSet, userPreferences);
-    localStorage.setItem("selectedView", userPreferences.view);
+    let params = getSearchParams();
+    params.set("view", userPreferences.view);
+    setURL(params);
   });
 
   document.getElementById("regionFilter").addEventListener("input", function () {
