@@ -105,7 +105,8 @@ table#data td.day {
   text-align: right;
 }
 
-table#data td.value {
+table#data td.value,
+table#data th.value {
   padding: 0 10px;
   text-align: right;
 }

@@ -122,6 +122,23 @@ function processMainData(dataSet, userPreferences) {
   return result;
 }
 
+function processRegionData(sortedDataSet, userPreferences) {
+  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
+  let filterElement = document.getElementById("regionFilter");
+
+  let filter = filterElement.value;
+
+  return sortedDataSet.filter(region => {
+    return filter.length == 0 || region.id.toLowerCase().includes(filter.toLowerCase());
+  }).map(region => {
+    let value = calculateValue(region.dates, region.dates.length - 1, type, view);
+    return {
+      "id": region.id,
+      "value": formatValue(value, userPreferences),
+    };
+  });
+}
+
 function processData(sortedDataSet, userPreferences) {
   let result = {
     "legend": {
@@ -146,13 +163,7 @@ function processData(sortedDataSet, userPreferences) {
 
   result.select.types = SETTINGS.types;
   result.select.views = SETTINGS.views;
-  result.select.regions = sortedDataSet.map(region => {
-    let value = calculateValue(region.dates, region.dates.length - 1, type, view);
-    return {
-      "id": region.id,
-      "value": formatValue(value, userPreferences),
-    };
-  });
+  result.select.regions = processRegionData(sortedDataSet, userPreferences);
   return result;
 }
 
@@ -175,12 +186,19 @@ async function main() {
   document.getElementById("app").style.display = "grid";
 
   document.getElementById("regionSelect").addEventListener("change", function () {
-    let selected = [];
+    let filterElement = document.getElementById("regionFilter");
+    let filter = filterElement.value;
+
+    let selected = filter.length > 0 ? userPreferences.regions : [];
+
     for (let i = 0; i < this.options.length; i++) {
       if (this.options[i].selected) {
         selected.push(this.options[i].value);
+      } else if (filter.length > 0) {
+        selected = selected.filter(item => item != this.options[i].value);
       }
     }
+
     userPreferences.regions = selected;
     let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
     normalizeDataSet(selectedDataSet, userPreferences);
@@ -197,9 +215,12 @@ async function main() {
 
   document.getElementById("viewSelect").addEventListener("change", function () {
     userPreferences.view = this.value;
-    sortedDataSet = sortDataSet(dataSet, userPreferences);
     v.data = processData(sortedDataSet, userPreferences);
     localStorage.setItem("selectedView", userPreferences.view);
+  });
+
+  document.getElementById("regionFilter").addEventListener("input", function () {
+    v.data.select.regions = processRegionData(sortedDataSet, userPreferences);
   });
 }
 
