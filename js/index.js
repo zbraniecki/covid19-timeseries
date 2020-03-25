@@ -80,7 +80,7 @@ const SETTINGS = {
 function processMainData(dataSet, userPreferences) {
   let result = {
     "rows": {
-      "population": false,
+      "population": true,
       "country": false,
       "state": false,
       "county": false,
@@ -96,7 +96,7 @@ function processMainData(dataSet, userPreferences) {
     result.regions.push({
       "id": region.id,
       "name": region.meta.country.shortName,
-      "population": region.meta.population,
+      "population": nFormatter(region.meta.population, 2),
     });
 
     let startIdx = 0;
