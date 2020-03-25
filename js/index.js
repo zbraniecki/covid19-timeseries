@@ -62,7 +62,7 @@ const SETTINGS = {
       "views": {
         "total": {
           "max": 50000,
-          "min": 500,
+          "min": 200,
         },
         "delta": {
           "max": 0.5,
@@ -95,15 +95,23 @@ function processMainData(dataSet, userPreferences) {
     let region = dataSet[i];
     result.regions.push({
       "id": region.id,
-      "population": 400000,
+      "name": region.meta.country.shortName,
+      "population": region.meta.population,
     });
 
-    for (let idx in region.dates) {
+    let startIdx = 0;
+    if (region.normalized["status"] !== "none") {
+      startIdx = region.normalized.value;
+    }
+
+    for (let idx = startIdx; idx < region.dates.length; idx++) {
       let day = region.dates[idx];
 
-      if (!result.dates[idx]) {
-        result.dates[idx] = {
-          "num": idx,
+      let relIdx = idx - startIdx;
+
+      if (!result.dates[relIdx]) {
+        result.dates[relIdx] = {
+          "num": relIdx,
           "values": new Array(dataSet.length).fill(null),
         }
       }
@@ -114,11 +122,11 @@ function processMainData(dataSet, userPreferences) {
       let maxColor =
         (type.sentiment == "positive" && value > 0) || (type.sentiment == "negative" && value < 0) ? [0, 255, 0] : [255, 0, 0];
       let colorVector = value > 0 ? 1 : -1;
-      result.dates[idx].values[i] = {
+      result.dates[relIdx].values[i] = {
         "region": region.id,
         "date": date,
         "value": formatValue(value, userPreferences),
-        "normalized": region.normalized,
+        "normalized": region.normalized["status"] === "normalized",
         "color": interpolateColor([255, 255, 255], maxColor, (value / type.views[view.id].max) * colorVector),
         "isToday": isToday(date),
       };
@@ -131,14 +139,32 @@ function processRegionData(sortedDataSet, userPreferences) {
   let {type, view} = getTypeAndView(SETTINGS, userPreferences);
   let filterElement = document.getElementById("regionFilter");
 
-  let filter = filterElement.value;
+  let filterText = filterElement.value;
+
+  let typeFilter = userPreferences.filter;
 
   return sortedDataSet.filter(region => {
-    return filter.length == 0 || region.id.toLowerCase().includes(filter.toLowerCase());
+    if (region.meta.city.id && !typeFilter.includes("city")) {
+      return false;
+    }
+    if (region.meta.county.id && !typeFilter.includes("county")) {
+      return false;
+    }
+    if (region.meta.state.id && !typeFilter.includes("state")) {
+      return false;
+    }
+    if (region.meta.country.id && !typeFilter.includes("country")) {
+      return false;
+    }
+    return filterText.length == 0 || region.id.toLowerCase().includes(filterText.toLowerCase());
   }).map(region => {
     let value = calculateValue(region.dates, region.dates.length - 1, type, view);
     return {
       "id": region.id,
+      "name": region.meta.country.shortName,
+      "country": region.meta.country,
+      "state": region.meta.state,
+      "county": region.meta.county,
       "value": formatValue(value, userPreferences),
     };
   });
@@ -174,7 +200,7 @@ function processData(sortedDataSet, userPreferences) {
 
 
 async function main() {
-  let dataSet = await fetch("./data/timeseries.json").then((response) => response.json());
+  let dataSet = await fetch("./data/timeseries-converted.json").then((response) => response.json());
 
   let userPreferences = getUserPreferences();
 

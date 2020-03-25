@@ -17,7 +17,7 @@
             <tr class="name">
               <th></th>
               <th class="value" v-for="item in data.main.regions" :key="item.id" colspan="2">
-                {{ item.id }}
+                {{ item.name }}
               </th>
             </tr>
             <tr class="country" v-bind:style="data.main.rows.country ? '' : 'display: none'">
@@ -135,7 +135,7 @@
             v-bind:selected="data.main.regions.find(r => r.id == item.id)"
             v-bind:value="item.id"
             :key="item.id">
-          {{ item.id }}  -- {{ item.value }}
+          {{ item.name }}  -- {{ item.value }}
           </option>
         </select>
       </div>
