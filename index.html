@@ -12,7 +12,7 @@
   <body>
     <div id="app" style="display: none">
       <div id="main">
-        <table id="data" cellspacing="0" cellpadding="0">
+        <table id="data" cellspacing="0" cellpadding="0" v-bind:class="data.selectedView == 'total' ? 'total' : ''">
           <thead>
             <tr>
               <th class="relDay" style="font-size: 0.7em">Δ Day</th>
@@ -37,12 +37,12 @@
               <template v-if="sample">
                 <td
                   class="day"
-                  v-bind:class="{ today: sample.isToday, quarantine: sample.quarantine }">
+                  v-bind:class="{ today: sample.isToday, quarantine: sample.quarantine, normalized: sample.normalized }">
                   {{ sample.date.toLocaleDateString(undefined, { month: "numeric", day: "numeric" }) }}
                 </td>
                 <td
                   class="value"
-                  v-bind:class="{ quarantine: sample.quarantine }"
+                  v-bind:class="{ quarantine: sample.quarantine, normalized: sample.normalized }"
                   v-bind:style="sample.min ? {} : { backgroundColor: sample.color }">
                   {{ sample.value }}
                 </td>

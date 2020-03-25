@@ -48,7 +48,7 @@ table#data thead tr:nth-child(2) {
   color: #555555;
 }
 
-table#data tbody tr:nth-child(1) td {
+table#data.total tbody tr:nth-child(1) td.normalized {
   background-color: rgb(221, 238, 255) !important;
 }
 

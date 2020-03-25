@@ -28,6 +28,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
 
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
+    let normalized = false;
 
     let start = null;
     for (let i = 0; i < region.dates.length; i++) {
@@ -35,6 +36,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
       let nextValue = calculateValue(region.dates, i + 1, type, getView(SETTINGS, "total"));
       if (nextValue > type.views["total"].min) {
         start = i;
+        normalized = true;
         break;
       }
     }
@@ -59,6 +61,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
         region.dates[-1] = minusOne;
       }
     }
+    region.normalized = normalized;
   }
 }
 

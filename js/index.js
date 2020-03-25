@@ -92,6 +92,7 @@ function processMainData(dataSet, userPreferences) {
         "region": region.name,
         "date": date,
         "value": formatValue(value, userPreferences),
+        "normalized": region.normalized,
         "color": interpolateColor([255, 255, 255], maxColor, (value / type.views[view.id].max) * colorVector),
         "isToday": isToday(date),
       };
