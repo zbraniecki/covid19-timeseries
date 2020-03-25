@@ -19,7 +19,7 @@ function getUserPreferences() {
     }
   }
   let regions = params.getAll("region");
-  if (regions) {
+  if (regions.length > 0) {
     result.regions = regions;
   }
   return result;
