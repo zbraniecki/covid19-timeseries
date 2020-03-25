@@ -86,6 +86,12 @@ function calculateValue(datesSet, idx, type, view) {
     }
     return (value / valuePrev) - 1;
   }
+  if (view.id === "ema") {
+    let total = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
+    const total3EMA = calculateEMA(datesSet, idx, 3, type);
+    const total7EMA = calculateEMA(datesSet, idx, 7, type);
+    return (total3EMA - total7EMA) / total;
+  }
 
   if (type.id == "active") {
     return day["confirmed"] - day["deaths"] - day["recovered"];
@@ -199,4 +205,15 @@ function getView(settings, id) {
     }
   }
   return undefined;
+}
+
+function calculateEMA(daysSet, idx, range, type) {
+  let total =  calculateValue(daysSet, idx, type, getView(SETTINGS, "total"));
+  if (idx < 0) {
+    return total;
+  }
+  let prevTotal =  calculateEMA(daysSet, idx - 1, range, type);
+
+  var k = 2/(range + 1);
+  return total * k + prevTotal * (1 - k);
 }

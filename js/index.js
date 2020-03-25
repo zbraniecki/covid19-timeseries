@@ -10,6 +10,11 @@ const SETTINGS = {
       "name": "delta",
       "style": "percent",
     },
+    {
+      "id": "ema",
+      "name": "EMA",
+      "style": "percent",
+    },
   ],
   types: [
     {
@@ -23,6 +28,10 @@ const SETTINGS = {
         },
         "delta": {
           "max": 0.5,
+          "min": 0.0,
+        },
+        "ema": {
+          "max": 0.3,
           "min": 0.0,
         },
       },
@@ -40,6 +49,10 @@ const SETTINGS = {
           "max": 0.2,
           "min": 0.01,
         },
+        "ema": {
+          "max": 0.3,
+          "min": 0.0,
+        },
       },
     },
     {
@@ -53,6 +66,10 @@ const SETTINGS = {
         },
         "delta": {
           "max": 0.5,
+          "min": 0.0,
+        },
+        "ema": {
+          "max": 0.3,
           "min": 0.0,
         },
       },
