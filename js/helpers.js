@@ -39,7 +39,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     for (let i = 0; i < region.dates.length; i++) {
       let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
       let nextValue = calculateValue(region.dates, i + 1, type, getView(SETTINGS, "total"));
-      if (nextValue >= type.views["total"].min) {
+      if (nextValue >= type.views["total"].min && value !== undefined) {
         normalized = {
           "status": "normalized",
           "value": i,
@@ -50,7 +50,19 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     if (normalized["status"] === "none") {
       for (let i = 0; i < region.dates.length; i++) {
         let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
-        if (value > 0) {
+        if (value !== undefined && value > 0) {
+          normalized = {
+            "status": "firstNonZero",
+            "value": i,
+          }
+          break;
+        }
+      }
+    }
+    if (normalized["status"] === "none") {
+      for (let i = 0; i < region.dates.length; i++) {
+        let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
+        if (value !== undefined) {
           normalized = {
             "status": "firstValue",
             "value": i,
@@ -77,15 +89,18 @@ function calculateValue(datesSet, idx, type, view) {
   }
 
   if (view.id === "delta") {
-    if (idx == 0) {
-      return 1;
-    }
     let value = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
     let valuePrev = calculateValue(datesSet, idx - 1, type, getView(SETTINGS, "total"));
+    if (valuePrev === undefined) {
+      return undefined;
+    }
     return (value / valuePrev) - 1;
   }
   if (view.id === "ema") {
     let total = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
+    if (total === undefined) {
+      return undefined;
+    }
     const total3EMA = calculateEMA(datesSet, idx, 3, type);
     const total7EMA = calculateEMA(datesSet, idx, 7, type);
     return (total3EMA - total7EMA) / total;
@@ -116,7 +131,7 @@ function narrowDataSet(sortedDataSet, userPreferences) {
 
 function formatValue(value, userPreferences) {
   if (value === undefined) {
-    return NaN;
+    return "?";
   }
   let {view} = getTypeAndView(SETTINGS, userPreferences);
   
@@ -211,6 +226,9 @@ function calculateEMA(daysSet, idx, range, type) {
     return total;
   }
   let prevTotal =  calculateEMA(daysSet, idx - 1, range, type);
+  if (!prevTotal) {
+    return total;
+  }
 
   var k = 2/(range + 1);
   return total * k + prevTotal * (1 - k);

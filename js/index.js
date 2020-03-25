@@ -74,6 +74,25 @@ const SETTINGS = {
         },
       },
     },
+    {
+      "id": "tested",
+      "name": "tested",
+      "sentiment": "positive",
+      "views": {
+        "total": {
+          "max": 50000,
+          "min": 100,
+        },
+        "delta": {
+          "max": 0.5,
+          "min": 0.0,
+        },
+        "ema": {
+          "max": 0.3,
+          "min": 0.0,
+        },
+      },
+    },
   ],
 };
 
@@ -99,10 +118,10 @@ function processMainData(dataSet, userPreferences) {
       "population": nFormatter(region.meta.population, 2),
     });
 
-    let startIdx = 0;
-    if (region.normalized["status"] !== "none") {
-      startIdx = region.normalized.value;
+    if (region.normalized["status"] === "none") {
+      continue;
     }
+    let startIdx = region.normalized.value;
 
     for (let idx = startIdx; idx < region.dates.length; idx++) {
       let day = region.dates[idx];
