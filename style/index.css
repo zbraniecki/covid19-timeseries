@@ -105,6 +105,10 @@ table#data td.day {
   text-align: right;
 }
 
+table#data thead tr:nth-child(1) th.value {
+  text-align: center;
+}
+
 table#data td.value,
 table#data th.value {
   padding: 0 10px;
