@@ -2,17 +2,17 @@ const SETTINGS = {
   views: [
     {
       "id": "total",
-      "name": "total",
+      "name": "Total",
       "style": "decimal",
     },
     {
       "id": "delta",
-      "name": "delta",
+      "name": "Delta",
       "style": "percent",
     },
     {
       "id": "ema",
-      "name": "EMA",
+      "name": "Expotential Moving Average",
       "style": "percent",
     },
   ],
