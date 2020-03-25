@@ -20,21 +20,35 @@ body {
   overflow: scroll;
 }
 
-table#legend {
-  border: 1px solid #333333;
-  margin-bottom: 10px;
+table#data {
+  overflow: auto;
+  height: 100px;
 }
 
-table#legend td {
+table#data thead {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-right: 1px solid #999999;
+}
+
+table#data thead tr:nth-child(1) th {
+  padding-top: 10px;
+}
+
+a.target {
+  display: block;
+  position: relative;
+  top: -48px; 
+  visibility: hidden;
+}
+
+table#data thead tr:nth-child(2) {
   font-size: 0.7em;
-  padding: 3px 5px;
+  color: #555555;
 }
 
-table#data thead td {
-  font-weight: bold;
-}
-
-table#data tbody tr:nth-child(2) td {
+table#data tbody tr:nth-child(1) td {
   background-color: rgb(221, 238, 255) !important;
 }
 
@@ -49,17 +63,17 @@ table#data td.empty {
 }
 
 
-table#data thead td.value {
+table#data thead th {
   padding: 0 5px;
   text-align: center;
 }
 
-table#data td.relDay {
+table#data td.relDay, table#data th.relDay {
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
 
-table#data td.value {
+table#data td.value, table#data th.value {
   border-right: 1px solid #999999;
 }
 
@@ -102,5 +116,17 @@ table#data td.value.quarantine {
 
 #sidebar select#regionSelect {
   height: 50%;
+}
+
+table#legend {
+  border: 1px solid #333333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+table#legend td {
+  font-size: 0.7em;
+  padding: 3px 5px;
 }
 

@@ -12,36 +12,27 @@
   <body>
     <div id="app" style="display: none">
       <div id="main">
-        <table id="legend" cellspacing="0" cellpadding="0">
-          <tr>
-            <td style="background-color: rgb(221, 238, 255)">{{ data.legend.min }}</td>
-            <td style="background-color: #ffffcc">Today</td>
-            <td>
-              |
-              <a href="https://github.com/zbraniecki/covid19-timeseries">Github repo<a/>
-              |
-            </td>
-            <td>
-              <a href="https://github.com/pomber/covid19">Data source</a> / Inspired by <a href="https://twitter.com/Nathan510edge">@Nathan510edge</a>
-            </td>
-          </tr>
-        </table>
         <table id="data" cellspacing="0" cellpadding="0">
           <thead>
-            <td class="relDay" style="font-size: 0.7em">Δ Day</td>
-            <td class="value" v-for="item in data.main.regions" :key="item" colspan="2">
-              {{ item }}
-            </td>
+            <tr>
+              <th class="relDay" style="font-size: 0.7em">Δ Day</th>
+              <th class="value" v-for="item in data.main.regions" :key="item" colspan="2">
+                {{ item }}
+              </th>
+            </tr>
+            <tr>
+              <th class="relDay"></th>
+              <template v-for="sample in data.main.regions">
+                <th class="day">Date</th>
+                <th class="value">#</th>
+              </template>
+            </tr>
           </thead>
-          <tr>
-            <td class="relDay"></td>
-            <template v-for="sample in data.main.regions">
-              <td class="day">Date</td>
-              <td class="value">#</td>
-            </template>
-          </tr>
           <tr v-for="item in data.main.dates">
-            <td class="relDay">{{ item.num }}</td>
+            <td class="relDay">
+              <a v-bind:name="'day' + item.num" class="target"></a>
+              {{ item.num }}
+            </td>
             <template v-for="sample in item.values">
               <template v-if="sample">
                 <td
@@ -65,6 +56,27 @@
         </table>
       </div>
       <div id="sidebar">
+        <table id="legend" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: rgb(221, 238, 255)">{{ data.legend.min }}</td>
+            <td style="background-color: #ffffcc">Today</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <a href="https://github.com/zbraniecki/covid19-timeseries">Github repo<a/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <a href="https://github.com/pomber/covid19">Data source</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Inspired by <a href="https://twitter.com/Nathan510edge">@Nathan510edge</a>
+            </td>
+          </tr>
+        </table>
         <dl>
           <dt>Type</dt>
           <dd>
