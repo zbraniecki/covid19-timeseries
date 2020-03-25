@@ -79,6 +79,7 @@ const SETTINGS = {
 
 function processMainData(dataSet, userPreferences) {
   let result = {
+    "showPopulation": false,
     "regions": [],
     "dates": [],
   };
@@ -87,7 +88,10 @@ function processMainData(dataSet, userPreferences) {
 
   for (let i in dataSet) {
     let region = dataSet[i];
-    result.regions.push(region.name);
+    result.regions.push({
+      "id": region.id,
+      "population": 400000,
+    });
 
     for (let idx in region.dates) {
       let day = region.dates[idx];
@@ -106,7 +110,7 @@ function processMainData(dataSet, userPreferences) {
         (type.sentiment == "positive" && value > 0) || (type.sentiment == "negative" && value < 0) ? [0, 255, 0] : [255, 0, 0];
       let colorVector = value > 0 ? 1 : -1;
       result.dates[idx].values[i] = {
-        "region": region.name,
+        "region": region.id,
         "date": date,
         "value": formatValue(value, userPreferences),
         "normalized": region.normalized,
@@ -145,7 +149,7 @@ function processData(sortedDataSet, userPreferences) {
   result.select.regions = sortedDataSet.map(region => {
     let value = calculateValue(region.dates, region.dates.length - 1, type, view);
     return {
-      "name": region.name,
+      "id": region.id,
       "value": formatValue(value, userPreferences),
     };
   });

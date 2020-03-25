@@ -110,7 +110,7 @@ function narrowDataSet(sortedDataSet, userPreferences) {
     let region = sortedDataSet[i];
     if (
       (userPreferences.regions === null && result.length < 10) ||
-      (userPreferences.regions !== null && userPreferences.regions.includes(region.name))
+      (userPreferences.regions !== null && userPreferences.regions.includes(region.id))
     ) {
       result.push(region);
     }

@@ -4,7 +4,7 @@ function sortDataSet(dataSet, userPreferences) {
 
   for (let regionName in dataSet) {
     result.push({
-      "name": regionName,
+      "id": regionName,
       "dates": dataSet[regionName]
     });
   }

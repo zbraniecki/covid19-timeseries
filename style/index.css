@@ -43,9 +43,19 @@ a.target {
   visibility: hidden;
 }
 
-table#data thead tr:nth-child(2) {
+table#data thead tr:nth-child(2) th {
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+}
+table#data thead tr:nth-child(2) th {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+table#data thead tr:nth-child(2),
+table#data thead tr:nth-child(3) {
   font-size: 0.7em;
-  color: #555555;
+  color: #999999;
 }
 
 table#data.total tbody tr:nth-child(1) td.normalized {
@@ -68,7 +78,8 @@ table#data thead th {
   text-align: center;
 }
 
-table#data td.relDay, table#data th.relDay {
+table#data td:nth-child(1), table#data th:nth-child(1) {
+  text-align: center;
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
@@ -88,7 +99,7 @@ table#data td.day.quarantine {
 }
 
 table#data td.day {
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-weight: bold;
   color: #555555;
   text-align: right;
