@@ -12,7 +12,7 @@ const SETTINGS = {
     },
     {
       "id": "ema",
-      "name": "Expotential Moving Average",
+      "name": "Exponential Moving Average",
       "style": "percent",
     },
   ],
