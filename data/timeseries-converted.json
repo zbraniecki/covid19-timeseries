@@ -663,6 +663,16 @@
           "growthFactor": 1.0000147492625369,
           "recovered": 72814
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 81220,
+          "deaths": 3281,
+          "growthFactor": 1,
+          "recovered": 72814,
+          "active": 5125
+        }
       }
     ],
     "meta": {
@@ -1305,7 +1315,18 @@
           "cases": 827,
           "deaths": 4,
           "active": 823,
-          "growthFactor": 1.3806343906510852
+          "growthFactor": 1.3806343906510852,
+          "recovered": 44
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 934,
+          "deaths": 4,
+          "growthFactor": 1.1293833131801694,
+          "recovered": 44,
+          "active": 823
         }
       }
     ],
@@ -1954,7 +1975,18 @@
           "cases": 1193,
           "deaths": 43,
           "active": 1150,
-          "growthFactor": 1.098526703499079
+          "growthFactor": 1.098526703499079,
+          "recovered": 235
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1307,
+          "deaths": 45,
+          "growthFactor": 1.0955574182732606,
+          "recovered": 235,
+          "active": 1150
         }
       }
     ],
@@ -2603,7 +2635,18 @@
           "cases": 558,
           "deaths": 2,
           "active": 556,
-          "growthFactor": 1.2263736263736265
+          "growthFactor": 1.2263736263736265,
+          "recovered": 144
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 631,
+          "deaths": 2,
+          "growthFactor": 1.1308243727598566,
+          "recovered": 144,
+          "active": 556
         }
       }
     ],
@@ -3252,7 +3295,18 @@
           "cases": 2,
           "deaths": 0,
           "active": 2,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1.5,
+          "recovered": 1,
+          "active": 2
         }
       }
     ],
@@ -3901,7 +3955,18 @@
           "cases": 1624,
           "deaths": 16,
           "active": 1608,
-          "growthFactor": 1.2434915773353752
+          "growthFactor": 1.2434915773353752,
+          "recovered": 139
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1796,
+          "deaths": 20,
+          "growthFactor": 1.1059113300492611,
+          "recovered": 139,
+          "active": 1608
         }
       }
     ],
@@ -4538,6 +4603,15 @@
           "active": 1029,
           "tested": 68177,
           "growthFactor": 1.2579462102689487
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1219,
+          "tested": 74006,
+          "growthFactor": 1.184645286686103,
+          "active": 1029
         }
       }
     ],
@@ -5176,6 +5250,14 @@
           "active": 466,
           "growthFactor": 1.1338199513381995
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 466,
+          "growthFactor": 1,
+          "active": 466
+        }
       }
     ],
     "meta": {
@@ -5812,6 +5894,14 @@
           "cases": 397,
           "active": 397,
           "growthFactor": 1.244514106583072
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 25,
+          "growthFactor": 0.06297229219143577,
+          "active": 397
         }
       }
     ],
@@ -6463,7 +6553,18 @@
           "cases": 91,
           "deaths": 0,
           "active": 91,
-          "growthFactor": 1.0833333333333333
+          "growthFactor": 1.0833333333333333,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 96,
+          "deaths": 0,
+          "growthFactor": 1.054945054945055,
+          "recovered": 1,
+          "active": 91
         }
       }
     ],
@@ -7112,7 +7213,18 @@
           "cases": 102,
           "deaths": 0,
           "active": 102,
-          "growthFactor": 1.2439024390243902
+          "growthFactor": 1.2439024390243902,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 102,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 3,
+          "active": 102
         }
       }
     ],
@@ -7761,7 +7873,18 @@
           "cases": 32986,
           "deaths": 157,
           "active": 32829,
-          "growthFactor": 1.3261769790535922
+          "growthFactor": 1.3261769790535922,
+          "recovered": 266
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 37323,
+          "deaths": 206,
+          "growthFactor": 1.131480021827442,
+          "recovered": 266,
+          "active": 32829
         }
       }
     ],
@@ -8410,7 +8533,18 @@
           "cases": 792,
           "deaths": 1,
           "active": 791,
-          "growthFactor": 1.2651757188498403
+          "growthFactor": 1.2651757188498403,
+          "recovered": 10
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 880,
+          "deaths": 3,
+          "growthFactor": 1.1111111111111112,
+          "recovered": 10,
+          "active": 791
         }
       }
     ],
@@ -9059,7 +9193,18 @@
           "cases": 248,
           "deaths": 2,
           "active": 246,
-          "growthFactor": 1.6209150326797386
+          "growthFactor": 1.6209150326797386,
+          "recovered": 38
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 333,
+          "deaths": 2,
+          "growthFactor": 1.342741935483871,
+          "recovered": 38,
+          "active": 246
         }
       }
     ],
@@ -9708,7 +9853,18 @@
           "cases": 552,
           "deaths": 35,
           "active": 517,
-          "growthFactor": 1.4526315789473685
+          "growthFactor": 1.4526315789473685,
+          "recovered": 17
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 636,
+          "deaths": 38,
+          "growthFactor": 1.1521739130434783,
+          "recovered": 17,
+          "active": 517
         }
       }
     ],
@@ -10357,7 +10513,18 @@
           "cases": 536,
           "deaths": 10,
           "active": 526,
-          "growthFactor": 1.3535353535353536
+          "growthFactor": 1.3535353535353536,
+          "recovered": 27
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 657,
+          "deaths": 12,
+          "growthFactor": 1.2257462686567164,
+          "recovered": 27,
+          "active": 526
         }
       }
     ],
@@ -11006,7 +11173,18 @@
           "cases": 2286,
           "deaths": 36,
           "active": 2250,
-          "growthFactor": 1.1820062047569804
+          "growthFactor": 1.1820062047569804,
+          "recovered": 16
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2526,
+          "deaths": 62,
+          "growthFactor": 1.10498687664042,
+          "recovered": 16,
+          "active": 2250
         }
       }
     ],
@@ -11658,6 +11836,16 @@
           "active": 33206,
           "growthFactor": 1.209690206122698
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 47610,
+          "deaths": 3434,
+          "recovered": 5367,
+          "active": 38809,
+          "growthFactor": 1.200060494542888
+        }
       }
     ],
     "meta": {
@@ -12291,6 +12479,14 @@
           "cases": 170,
           "active": 170,
           "growthFactor": 1.2686567164179106
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 197,
+          "growthFactor": 1.1588235294117648,
+          "active": 170
         }
       }
     ],
@@ -12942,7 +13138,18 @@
           "cases": 4269,
           "deaths": 122,
           "active": 4147,
-          "growthFactor": 1.2552190532196412
+          "growthFactor": 1.2552190532196412,
+          "recovered": 263
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4937,
+          "deaths": 178,
+          "growthFactor": 1.1564769266807216,
+          "recovered": 263,
+          "active": 4147
         }
       }
     ],
@@ -13591,7 +13798,18 @@
           "cases": 402,
           "deaths": 20,
           "active": 382,
-          "growthFactor": 1.2293577981651376
+          "growthFactor": 1.2293577981651376,
+          "recovered": 56
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 456,
+          "deaths": 21,
+          "growthFactor": 1.1343283582089552,
+          "recovered": 56,
+          "active": 382
         }
       }
     ],
@@ -14240,7 +14458,18 @@
           "cases": 318,
           "deaths": 4,
           "active": 314,
-          "growthFactor": 1.282258064516129
+          "growthFactor": 1.282258064516129,
+          "recovered": 8
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 333,
+          "deaths": 6,
+          "growthFactor": 1.0471698113207548,
+          "recovered": 8,
+          "active": 314
         }
       }
     ],
@@ -14889,7 +15118,18 @@
           "cases": 316,
           "deaths": 27,
           "active": 289,
-          "growthFactor": 1.3562231759656653
+          "growthFactor": 1.3562231759656653,
+          "recovered": 57
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 346,
+          "deaths": 29,
+          "growthFactor": 1.0949367088607596,
+          "recovered": 57,
+          "active": 289
         }
       }
     ],
@@ -15538,7 +15778,18 @@
           "cases": 84,
           "deaths": 0,
           "active": 84,
-          "growthFactor": 1.5272727272727273
+          "growthFactor": 1.5272727272727273,
+          "recovered": 17
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 99,
+          "deaths": 0,
+          "growthFactor": 1.1785714285714286,
+          "recovered": 17,
+          "active": 84
         }
       }
     ],
@@ -16187,7 +16438,18 @@
           "cases": 74,
           "deaths": 1,
           "active": 73,
-          "growthFactor": 1.85
+          "growthFactor": 1.85,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 84,
+          "deaths": 2,
+          "growthFactor": 1.135135135135135,
+          "recovered": 1,
+          "active": 73
         }
       }
     ],
@@ -16836,7 +17098,18 @@
           "cases": 392,
           "deaths": 3,
           "active": 389,
-          "growthFactor": 1.180722891566265
+          "growthFactor": 1.180722891566265,
+          "recovered": 149
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 419,
+          "deaths": 4,
+          "growthFactor": 1.0688775510204083,
+          "recovered": 149,
+          "active": 389
         }
       }
     ],
@@ -17485,7 +17758,18 @@
           "cases": 191,
           "deaths": 0,
           "active": 191,
-          "growthFactor": 1.0159574468085106
+          "growthFactor": 1.0159574468085106,
+          "recovered": 27
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 195,
+          "deaths": 0,
+          "growthFactor": 1.0209424083769634,
+          "recovered": 27,
+          "active": 191
         }
       }
     ],
@@ -18134,7 +18418,18 @@
           "cases": 264,
           "deaths": 19,
           "active": 245,
-          "growthFactor": 1.3134328358208955
+          "growthFactor": 1.3134328358208955,
+          "recovered": 65
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 302,
+          "deaths": 21,
+          "growthFactor": 1.143939393939394,
+          "recovered": 65,
+          "active": 245
         }
       }
     ],
@@ -18783,7 +19078,18 @@
           "cases": 382,
           "deaths": 1,
           "active": 381,
-          "growthFactor": 1.5039370078740157
+          "growthFactor": 1.5039370078740157,
+          "recovered": 5
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 442,
+          "deaths": 1,
+          "growthFactor": 1.1570680628272252,
+          "recovered": 5,
+          "active": 381
         }
       }
     ],
@@ -19432,7 +19738,18 @@
           "cases": 7630,
           "deaths": 131,
           "active": 7499,
-          "growthFactor": 0.815345159222056
+          "growthFactor": 0.815345159222056,
+          "recovered": 131
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 8319,
+          "deaths": 153,
+          "growthFactor": 0.8252157524055154,
+          "recovered": 131,
+          "active": 7499
         }
       }
     ],
@@ -20081,7 +20398,18 @@
           "cases": 5283,
           "deaths": 28,
           "active": 5255,
-          "growthFactor": 1.628545006165228
+          "growthFactor": 1.628545006165228,
+          "recovered": 9
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5588,
+          "deaths": 30,
+          "growthFactor": 1.0577323490441037,
+          "recovered": 9,
+          "active": 5255
         }
       }
     ],
@@ -20730,7 +21058,18 @@
           "cases": 1930,
           "deaths": 3,
           "active": 1927,
-          "growthFactor": 1.8020541549953315
+          "growthFactor": 1.8020541549953315,
+          "recovered": 37
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2369,
+          "deaths": 5,
+          "growthFactor": 1.9135702746365104,
+          "recovered": 37,
+          "active": 1927
         }
       }
     ],
@@ -21379,7 +21718,18 @@
           "cases": 972,
           "deaths": 7,
           "active": 965,
-          "growthFactor": 1.2525773195876289
+          "growthFactor": 1.2525773195876289,
+          "recovered": 5
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1063,
+          "deaths": 8,
+          "growthFactor": 1.0936213991769548,
+          "recovered": 5,
+          "active": 965
         }
       }
     ],
@@ -22028,7 +22378,18 @@
           "cases": 2247,
           "deaths": 46,
           "active": 2201,
-          "growthFactor": 1.4105461393596987
+          "growthFactor": 1.4105461393596987,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2554,
+          "deaths": 59,
+          "growthFactor": 1.1366266132621272,
+          "recovered": 2,
+          "active": 2201
         }
       }
     ],
@@ -22677,7 +23038,18 @@
           "cases": 70,
           "deaths": 0,
           "active": 70,
-          "growthFactor": 1.2962962962962963
+          "growthFactor": 1.2962962962962963,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 75,
+          "deaths": 0,
+          "growthFactor": 1.0714285714285714,
+          "recovered": 3,
+          "active": 70
         }
       }
     ],
@@ -23326,7 +23698,18 @@
           "cases": 743,
           "deaths": 20,
           "active": 723,
-          "growthFactor": 1.1907051282051282
+          "growthFactor": 1.1907051282051282,
+          "recovered": 19
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 821,
+          "deaths": 22,
+          "growthFactor": 1.1049798115746972,
+          "recovered": 19,
+          "active": 723
         }
       }
     ],
@@ -23975,7 +24358,18 @@
           "cases": 148,
           "deaths": 2,
           "active": 146,
-          "growthFactor": 1.2982456140350878
+          "growthFactor": 1.2982456140350878,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 177,
+          "deaths": 3,
+          "growthFactor": 1.195945945945946,
+          "recovered": 1,
+          "active": 146
         }
       }
     ],
@@ -24624,7 +25018,18 @@
           "cases": 2863,
           "deaths": 12,
           "active": 2851,
-          "growthFactor": 1.2014267729752413
+          "growthFactor": 1.2014267729752413,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3084,
+          "deaths": 14,
+          "growthFactor": 1.0771917568983584,
+          "recovered": 1,
+          "active": 2851
         }
       }
     ],
@@ -25273,7 +25678,18 @@
           "cases": 794,
           "deaths": 11,
           "active": 783,
-          "growthFactor": 1.833718244803695
+          "growthFactor": 1.833718244803695,
+          "recovered": 64
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 906,
+          "deaths": 17,
+          "growthFactor": 1.141057934508816,
+          "recovered": 64,
+          "active": 783
         }
       }
     ],
@@ -25922,7 +26338,18 @@
           "cases": 369,
           "deaths": 0,
           "active": 369,
-          "growthFactor": 1.1319018404907975
+          "growthFactor": 1.1319018404907975,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 404,
+          "deaths": 1,
+          "growthFactor": 1.094850948509485,
+          "recovered": 2,
+          "active": 369
         }
       }
     ],
@@ -26571,7 +26998,18 @@
           "cases": 5560,
           "deaths": 276,
           "active": 5284,
-          "growthFactor": 1.3225499524262607
+          "growthFactor": 1.3225499524262607,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6412,
+          "deaths": 356,
+          "growthFactor": 1.1532374100719425,
+          "recovered": 2,
+          "active": 5284
         }
       }
     ],
@@ -27220,7 +27658,18 @@
           "cases": 187,
           "deaths": 21,
           "active": 166,
-          "growthFactor": 1.16875
+          "growthFactor": 1.16875,
+          "recovered": 4
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 208,
+          "deaths": 21,
+          "growthFactor": 1.1122994652406417,
+          "recovered": 4,
+          "active": 166
         }
       }
     ],
@@ -27869,7 +28318,18 @@
           "cases": 81,
           "deaths": 0,
           "active": 81,
-          "growthFactor": 1.0657894736842106
+          "growthFactor": 1.0657894736842106,
+          "recovered": 15
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 86,
+          "deaths": 0,
+          "growthFactor": 1.0617283950617284,
+          "recovered": 15,
+          "active": 81
         }
       }
     ],
@@ -28518,7 +28978,18 @@
           "cases": 648,
           "deaths": 2,
           "active": 646,
-          "growthFactor": 1.1408450704225352
+          "growthFactor": 1.1408450704225352,
+          "recovered": 36
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 737,
+          "deaths": 2,
+          "growthFactor": 1.1373456790123457,
+          "recovered": 36,
+          "active": 646
         }
       }
     ],
@@ -29167,7 +29638,18 @@
           "cases": 209,
           "deaths": 2,
           "active": 207,
-          "growthFactor": 1.5954198473282444
+          "growthFactor": 1.5954198473282444,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 274,
+          "deaths": 4,
+          "growthFactor": 1.3110047846889952,
+          "recovered": 1,
+          "active": 207
         }
       }
     ],
@@ -29816,7 +30298,18 @@
           "cases": 367,
           "deaths": 4,
           "active": 363,
-          "growthFactor": 1.4621513944223108
+          "growthFactor": 1.4621513944223108,
+          "recovered": 4
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 405,
+          "deaths": 5,
+          "growthFactor": 1.103542234332425,
+          "recovered": 4,
+          "active": 363
         }
       }
     ],
@@ -30465,7 +30958,18 @@
           "cases": 155,
           "deaths": 0,
           "active": 155,
-          "growthFactor": 2.3484848484848486
+          "growthFactor": 2.3484848484848486,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 205,
+          "deaths": 0,
+          "growthFactor": 1.3225806451612903,
+          "recovered": 0,
+          "active": 155
         }
       }
     ],
@@ -31114,7 +31618,18 @@
           "cases": 44,
           "deaths": 1,
           "active": 43,
-          "growthFactor": 1.4666666666666666
+          "growthFactor": 1.4666666666666666,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 51,
+          "deaths": 1,
+          "growthFactor": 1.1590909090909092,
+          "recovered": 2,
+          "active": 43
         }
       }
     ],
@@ -31749,6 +32264,14 @@
           "cases": 175,
           "active": 175,
           "growthFactor": 1.25
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 205,
+          "growthFactor": 1.1714285714285715,
+          "active": 175
         }
       }
     ],
@@ -32400,7 +32923,18 @@
           "cases": 1329,
           "deaths": 7,
           "active": 1322,
-          "growthFactor": 1.466887417218543
+          "growthFactor": 1.466887417218543,
+          "recovered": 5
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1564,
+          "deaths": 9,
+          "growthFactor": 1.1768246802106848,
+          "recovered": 5,
+          "active": 1322
         }
       }
     ],
@@ -33049,7 +33583,18 @@
           "cases": 1099,
           "deaths": 8,
           "active": 1091,
-          "growthFactor": 1.3771929824561404
+          "growthFactor": 1.3771929824561404,
+          "recovered": 6
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1333,
+          "deaths": 8,
+          "growthFactor": 1.2129208371246587,
+          "recovered": 6,
+          "active": 1091
         }
       }
     ],
@@ -33698,7 +34243,18 @@
           "cases": 23,
           "deaths": 0,
           "active": 23,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 31,
+          "deaths": 0,
+          "growthFactor": 1.3478260869565217,
+          "recovered": 1,
+          "active": 23
         }
       }
     ],
@@ -34347,7 +34903,18 @@
           "cases": 526,
           "deaths": 0,
           "active": 526,
-          "growthFactor": 1.0647773279352226
+          "growthFactor": 1.0647773279352226,
+          "recovered": 33
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 537,
+          "deaths": 0,
+          "growthFactor": 1.020912547528517,
+          "recovered": 33,
+          "active": 526
         }
       }
     ],
@@ -34996,7 +35563,18 @@
           "cases": 1082,
           "deaths": 27,
           "active": 1055,
-          "growthFactor": 1.3713561470215463
+          "growthFactor": 1.3713561470215463,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1173,
+          "deaths": 28,
+          "growthFactor": 1.0841035120147875,
+          "recovered": 3,
+          "active": 1055
         }
       }
     ],
@@ -35645,7 +36223,18 @@
           "cases": 87,
           "deaths": 1,
           "active": 86,
-          "growthFactor": 1.3384615384615384
+          "growthFactor": 1.3384615384615384,
+          "recovered": 10
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 93,
+          "deaths": 2,
+          "growthFactor": 1.0689655172413792,
+          "recovered": 10,
+          "active": 86
         }
       }
     ],
@@ -36294,7 +36883,18 @@
           "cases": 249,
           "deaths": 0,
           "active": 249,
-          "growthFactor": 1.2835051546391754
+          "growthFactor": 1.2835051546391754,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 265,
+          "deaths": 0,
+          "growthFactor": 1.0642570281124497,
+          "recovered": 2,
+          "active": 249
         }
       }
     ],
@@ -36943,7 +37543,18 @@
           "cases": 312,
           "deaths": 6,
           "active": 306,
-          "growthFactor": 1.5445544554455446
+          "growthFactor": 1.5445544554455446,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 392,
+          "deaths": 10,
+          "growthFactor": 1.2564102564102564,
+          "recovered": 0,
+          "active": 306
         }
       }
     ],
@@ -37592,7 +38203,18 @@
           "cases": 686,
           "deaths": 55,
           "active": 631,
-          "growthFactor": 1.3346303501945525
+          "growthFactor": 1.3346303501945525,
+          "recovered": 29
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 790,
+          "deaths": 58,
+          "growthFactor": 1.151603498542274,
+          "recovered": 29,
+          "active": 631
         }
       }
     ],
@@ -38241,7 +38863,18 @@
           "cases": 2362,
           "deaths": 33,
           "active": 2329,
-          "growthFactor": 1.47625
+          "growthFactor": 1.47625,
+          "recovered": 5
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2995,
+          "deaths": 43,
+          "growthFactor": 1.2679932260795936,
+          "recovered": 5,
+          "active": 2329
         }
       }
     ],
@@ -38890,7 +39523,18 @@
           "cases": 164,
           "deaths": 1,
           "active": 163,
-          "growthFactor": 1.4513274336283186
+          "growthFactor": 1.4513274336283186,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 188,
+          "deaths": 1,
+          "growthFactor": 1.146341463414634,
+          "recovered": 1,
+          "active": 163
         }
       }
     ],
@@ -39525,6 +40169,14 @@
           "cases": 26,
           "active": 26,
           "growthFactor": 1.2380952380952381
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 34,
+          "growthFactor": 1.3076923076923077,
+          "active": 26
         }
       }
     ],
@@ -40176,7 +40828,18 @@
           "cases": 197,
           "deaths": 0,
           "active": 197,
-          "growthFactor": 1.4172661870503598
+          "growthFactor": 1.4172661870503598,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 221,
+          "deaths": 0,
+          "growthFactor": 1.1218274111675126,
+          "recovered": 1,
+          "active": 197
         }
       }
     ],
@@ -40825,7 +41488,18 @@
           "cases": 170,
           "deaths": 5,
           "active": 165,
-          "growthFactor": 1.4782608695652173
+          "growthFactor": 1.4782608695652173,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 225,
+          "deaths": 6,
+          "growthFactor": 1.3235294117647058,
+          "recovered": 3,
+          "active": 165
         }
       }
     ],
@@ -41474,7 +42148,18 @@
           "cases": 767,
           "deaths": 1,
           "active": 766,
-          "growthFactor": 1.5009784735812133
+          "growthFactor": 1.5009784735812133,
+          "recovered": 16
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 900,
+          "deaths": 2,
+          "growthFactor": 1.1734028683181226,
+          "recovered": 16,
+          "active": 766
         }
       }
     ],
@@ -42123,7 +42808,18 @@
           "cases": 86,
           "deaths": 0,
           "active": 86,
-          "growthFactor": 1.2835820895522387
+          "growthFactor": 1.2835820895522387,
+          "recovered": 5
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 99,
+          "deaths": 0,
+          "growthFactor": 1.1511627906976745,
+          "recovered": 5,
+          "active": 86
         }
       }
     ],
@@ -42772,7 +43468,18 @@
           "cases": 387,
           "deaths": 6,
           "active": 381,
-          "growthFactor": 1.72
+          "growthFactor": 1.72,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 387,
+          "deaths": 8,
+          "growthFactor": 1,
+          "recovered": 3,
+          "active": 381
         }
       }
     ],
@@ -43421,7 +44128,18 @@
           "cases": 922,
           "deaths": 2,
           "active": 920,
-          "growthFactor": 1.4588607594936709
+          "growthFactor": 1.4588607594936709,
+          "recovered": 8
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1142,
+          "deaths": 3,
+          "growthFactor": 1.2386117136659436,
+          "recovered": 8,
+          "active": 920
         }
       }
     ],
@@ -44070,7 +44788,18 @@
           "cases": 154,
           "deaths": 0,
           "active": 154,
-          "growthFactor": 1.375
+          "growthFactor": 1.375,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 172,
+          "deaths": 0,
+          "growthFactor": 1.1168831168831168,
+          "recovered": 1,
+          "active": 154
         }
       }
     ],
@@ -44719,7 +45448,18 @@
           "cases": 97,
           "deaths": 3,
           "active": 94,
-          "growthFactor": 1.3287671232876712
+          "growthFactor": 1.3287671232876712,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 145,
+          "deaths": 5,
+          "growthFactor": 1.4948453608247423,
+          "recovered": 1,
+          "active": 94
         }
       }
     ],
@@ -45368,7 +46108,18 @@
           "cases": 187,
           "deaths": 9,
           "active": 178,
-          "growthFactor": 1.4274809160305344
+          "growthFactor": 1.4274809160305344,
+          "recovered": 16
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 226,
+          "deaths": 10,
+          "growthFactor": 1.2085561497326203,
+          "recovered": 16,
+          "active": 178
         }
       }
     ],
@@ -46003,6 +46754,14 @@
           "cases": 6,
           "active": 6,
           "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 8,
+          "growthFactor": 1.3333333333333333,
+          "active": 6
         }
       }
     ],
@@ -46654,7 +47413,18 @@
           "cases": 51,
           "deaths": 0,
           "active": 51,
-          "growthFactor": 1.3783783783783783
+          "growthFactor": 1.3783783783783783,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 51,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 51
         }
       }
     ],
@@ -47303,7 +48073,18 @@
           "cases": 901,
           "deaths": 10,
           "active": 891,
-          "growthFactor": 1.4211356466876972
+          "growthFactor": 1.4211356466876972,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1051,
+          "deaths": 14,
+          "growthFactor": 1.1664816870144283,
+          "recovered": 1,
+          "active": 891
         }
       }
     ],
@@ -47952,7 +48733,18 @@
           "cases": 114,
           "deaths": 4,
           "active": 110,
-          "growthFactor": 1.52
+          "growthFactor": 1.52,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 173,
+          "deaths": 5,
+          "growthFactor": 1.5175438596491229,
+          "recovered": 1,
+          "active": 110
         }
       }
     ],
@@ -48601,7 +49393,18 @@
           "cases": 166,
           "deaths": 3,
           "active": 163,
-          "growthFactor": 1.3174603174603174
+          "growthFactor": 1.3174603174603174,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 176,
+          "deaths": 3,
+          "growthFactor": 1.0602409638554218,
+          "recovered": 2,
+          "active": 163
         }
       }
     ],
@@ -49250,7 +50053,18 @@
           "cases": 480,
           "deaths": 4,
           "active": 476,
-          "growthFactor": 1.1594202898550725
+          "growthFactor": 1.1594202898550725,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 528,
+          "deaths": 5,
+          "growthFactor": 1.1,
+          "recovered": 0,
+          "active": 476
         }
       }
     ],
@@ -49899,7 +50713,18 @@
           "cases": 554,
           "deaths": 0,
           "active": 554,
-          "growthFactor": 2.021897810218978
+          "growthFactor": 2.021897810218978,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 709,
+          "deaths": 0,
+          "growthFactor": 1.279783393501805,
+          "recovered": 0,
+          "active": 554
         }
       }
     ],
@@ -50548,7 +51373,18 @@
           "cases": 2,
           "deaths": 0,
           "active": 2,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -51197,7 +52033,18 @@
           "cases": 66,
           "deaths": 0,
           "active": 66,
-          "growthFactor": 1.65
+          "growthFactor": 1.65,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 75,
+          "deaths": 1,
+          "growthFactor": 1.1363636363636365,
+          "recovered": 0,
+          "active": 66
         }
       }
     ],
@@ -51846,7 +52693,18 @@
           "cases": 378,
           "deaths": 3,
           "active": 375,
-          "growthFactor": 1.6363636363636365
+          "growthFactor": 1.6363636363636365,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 470,
+          "deaths": 4,
+          "growthFactor": 1.2433862433862435,
+          "recovered": 3,
+          "active": 375
         }
       }
     ],
@@ -52495,7 +53353,18 @@
           "cases": 177,
           "deaths": 2,
           "active": 175,
-          "growthFactor": 1.3208955223880596
+          "growthFactor": 1.3208955223880596,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 201,
+          "deaths": 2,
+          "growthFactor": 1.1355932203389831,
+          "recovered": 2,
+          "active": 175
         }
       }
     ],
@@ -53144,7 +54013,18 @@
           "cases": 416,
           "deaths": 7,
           "active": 409,
-          "growthFactor": 1.1460055096418733
+          "growthFactor": 1.1460055096418733,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 480,
+          "deaths": 9,
+          "growthFactor": 1.1538461538461537,
+          "recovered": 1,
+          "active": 409
         }
       }
     ],
@@ -53793,7 +54673,18 @@
           "cases": 303,
           "deaths": 3,
           "active": 300,
-          "growthFactor": 1.364864864864865
+          "growthFactor": 1.364864864864865,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 384,
+          "deaths": 4,
+          "growthFactor": 1.2673267326732673,
+          "recovered": 1,
+          "active": 300
         }
       }
     ],
@@ -54442,7 +55333,18 @@
           "cases": 204,
           "deaths": 0,
           "active": 204,
-          "growthFactor": 1.1027027027027028
+          "growthFactor": 1.1027027027027028,
+          "recovered": 7
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 216,
+          "deaths": 0,
+          "growthFactor": 1.0588235294117647,
+          "recovered": 7,
+          "active": 204
         }
       }
     ],
@@ -55091,7 +55993,18 @@
           "cases": 20,
           "deaths": 0,
           "active": 20,
-          "growthFactor": 1.25
+          "growthFactor": 1.25,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 23,
+          "deaths": 0,
+          "growthFactor": 1.15,
+          "recovered": 1,
+          "active": 20
         }
       }
     ],
@@ -56376,7 +57289,18 @@
           "cases": 110,
           "deaths": 0,
           "active": 110,
-          "growthFactor": 1.2222222222222223
+          "growthFactor": 1.2222222222222223,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 129,
+          "deaths": 0,
+          "growthFactor": 1.1727272727272726,
+          "recovered": 2,
+          "active": 110
         }
       }
     ],
@@ -57661,7 +58585,18 @@
           "cases": 218,
           "deaths": 3,
           "active": 215,
-          "growthFactor": 1.1657754010695187
+          "growthFactor": 1.1657754010695187,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 242,
+          "deaths": 3,
+          "growthFactor": 1.110091743119266,
+          "recovered": 3,
+          "active": 215
         }
       }
     ],
@@ -58310,7 +59245,18 @@
           "cases": 13,
           "deaths": 0,
           "active": 13,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 13,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 13
         }
       }
     ],
@@ -58959,7 +59905,18 @@
           "cases": 39,
           "deaths": 4,
           "active": 35,
-          "growthFactor": 1.4444444444444444
+          "growthFactor": 1.4444444444444444,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 39,
+          "deaths": 5,
+          "growthFactor": 1,
+          "recovered": 3,
+          "active": 35
         }
       }
     ],
@@ -59608,7 +60565,18 @@
           "cases": 27,
           "deaths": 2,
           "active": 25,
-          "growthFactor": 1.2272727272727273
+          "growthFactor": 1.2272727272727273,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 37,
+          "deaths": 3,
+          "growthFactor": 1.3703703703703705,
+          "recovered": 0,
+          "active": 25
         }
       }
     ],
@@ -60257,7 +61225,18 @@
           "cases": 123,
           "deaths": 5,
           "active": 118,
-          "growthFactor": 1.3820224719101124
+          "growthFactor": 1.3820224719101124,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 146,
+          "deaths": 5,
+          "growthFactor": 1.1869918699186992,
+          "recovered": 2,
+          "active": 118
         }
       }
     ],
@@ -60906,7 +61885,18 @@
           "cases": 124,
           "deaths": 3,
           "active": 121,
-          "growthFactor": 1.305263157894737
+          "growthFactor": 1.305263157894737,
+          "recovered": 3
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 132,
+          "deaths": 3,
+          "growthFactor": 1.064516129032258,
+          "recovered": 3,
+          "active": 121
         }
       }
     ],
@@ -61555,7 +62545,18 @@
           "cases": 104,
           "deaths": 0,
           "active": 104,
-          "growthFactor": 1.1818181818181819
+          "growthFactor": 1.1818181818181819,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 109,
+          "deaths": 0,
+          "growthFactor": 1.0480769230769231,
+          "recovered": 2,
+          "active": 104
         }
       }
     ],
@@ -62197,6 +63198,15 @@
           "active": 2346,
           "tested": 34181,
           "growthFactor": 1.2369739478957915
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2580,
+          "deaths": 123,
+          "growthFactor": 1.0449574726609963,
+          "active": 2346
         }
       }
     ],
@@ -62850,6 +63860,15 @@
           "active": 25455,
           "tested": 91270,
           "growthFactor": 1.2294610778443114
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 30811,
+          "growthFactor": 1.2006000857265324,
+          "deaths": 210,
+          "active": 25455
         }
       }
     ],
@@ -63510,6 +64529,17 @@
           "tested": 5422,
           "growthFactor": 1.1882998171846435
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3082,
+          "deaths": 67,
+          "recovered": 13,
+          "active": 3002,
+          "tested": 6374,
+          "growthFactor": 1.1853846153846155
+        }
       }
     ],
     "meta": {
@@ -64149,6 +65179,15 @@
           "active": 1148,
           "tested": 13749,
           "growthFactor": 1.4916344916344917
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1838,
+          "deaths": 5,
+          "growthFactor": 1.5858498705780846,
+          "active": 1148
         }
       }
     ],
@@ -64803,6 +65842,15 @@
           "tested": 5555,
           "growthFactor": 1.4209844559585492
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1387,
+          "growthFactor": 1.2643573381950775,
+          "deaths": 38,
+          "active": 1059
+        }
       }
     ],
     "meta": {
@@ -65430,6 +66478,14 @@
           "cases": 894,
           "active": 894,
           "growthFactor": 1.2503496503496503
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1068,
+          "growthFactor": 1.1946308724832215,
+          "active": 894
         }
       }
     ],
@@ -66072,6 +67128,16 @@
           "active": 1447,
           "tested": 16046,
           "growthFactor": 1.19559902200489
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1977,
+          "deaths": 23,
+          "tested": 23723,
+          "growthFactor": 1.3476482617586911,
+          "active": 1447
         }
       }
     ],
@@ -66720,6 +67786,15 @@
           "tested": 12045,
           "growthFactor": 1.2921940928270041
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3469,
+          "growthFactor": 5.471608832807571,
+          "deaths": 44,
+          "active": 3631
+        }
       }
     ],
     "meta": {
@@ -67360,6 +68435,16 @@
           "tested": 4559,
           "growthFactor": 1.094240837696335
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 266,
+          "deaths": 10,
+          "tested": 5742,
+          "growthFactor": 1.2727272727272727,
+          "active": 201
+        }
       }
     ],
     "meta": {
@@ -67997,6 +69082,15 @@
           "active": 704,
           "tested": 13235,
           "growthFactor": 2.03125
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 974,
+          "growthFactor": 1.3622377622377622,
+          "deaths": 11,
+          "active": 704
         }
       }
     ],
@@ -68637,7 +69731,17 @@
         "value": {
           "cases": 753,
           "active": 753,
-          "growthFactor": 0.5859922178988327
+          "growthFactor": 0.5859922178988327,
+          "deaths": 12
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 950,
+          "growthFactor": 1.2616201859229748,
+          "deaths": 12,
+          "active": 753
         }
       }
     ],
@@ -69281,6 +70385,16 @@
           "tested": 9494,
           "growthFactor": 1.3214285714285714
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 11,
+          "deaths": 11,
+          "tested": 11193,
+          "growthFactor": 1.5714285714285714,
+          "active": 844
+        }
       }
     ],
     "meta": {
@@ -69912,6 +71026,14 @@
           "active": 124,
           "tested": 2439,
           "growthFactor": 1.180952380952381
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 145,
+          "growthFactor": 1.1693548387096775,
+          "active": 124
         }
       }
     ],
@@ -70562,6 +71684,15 @@
           "tested": 443,
           "growthFactor": 1.2118055555555556
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 349,
+          "growthFactor": 1,
+          "deaths": 3,
+          "active": 346
+        }
       }
     ],
     "meta": {
@@ -71202,6 +72333,15 @@
           "active": 398,
           "tested": 8539,
           "growthFactor": 1.34006734006734
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 504,
+          "growthFactor": 1.2663316582914572,
+          "deaths": 0,
+          "active": 398
         }
       }
     ],
@@ -71856,6 +72996,15 @@
           "tested": 2470,
           "growthFactor": 1.1438127090301002
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 342,
+          "deaths": 7,
+          "growthFactor": 1,
+          "active": 335
+        }
       }
     ],
     "meta": {
@@ -72491,6 +73640,15 @@
           "active": 665,
           "tested": 11184,
           "growthFactor": 1.0845528455284552
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 784,
+          "growthFactor": 1.1754122938530736,
+          "deaths": 2,
+          "active": 665
         }
       }
     ],
@@ -73145,6 +74303,15 @@
           "tested": 702,
           "growthFactor": 1.3849056603773584
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 401,
+          "growthFactor": 1.2300613496932515,
+          "deaths": 5,
+          "active": 362
+        }
       }
     ],
     "meta": {
@@ -73782,6 +74949,15 @@
           "deaths": 12,
           "active": 353,
           "growthFactor": 1.4092664092664093
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 477,
+          "deaths": 14,
+          "growthFactor": 1.3068493150684932,
+          "active": 353
         }
       }
     ],
@@ -74436,6 +75612,16 @@
           "active": 149,
           "growthFactor": 1.3135593220338984
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 195,
+          "deaths": 5,
+          "recovered": 3,
+          "active": 187,
+          "growthFactor": 1.2580645161290323
+        }
       }
     ],
     "meta": {
@@ -75082,6 +76268,16 @@
           "active": 181,
           "tested": 1609,
           "growthFactor": 1.5775862068965518
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 231,
+          "tested": 1858,
+          "growthFactor": 1.2622950819672132,
+          "deaths": 2,
+          "active": 181
         }
       }
     ],
@@ -75736,6 +76932,16 @@
           "tested": 4232,
           "growthFactor": 1.1346938775510205
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 321,
+          "deaths": 6,
+          "tested": 4572,
+          "growthFactor": 1.1546762589928057,
+          "active": 274
+        }
       }
     ],
     "meta": {
@@ -76383,6 +77589,15 @@
           "active": 107,
           "tested": 2530,
           "growthFactor": 1.3846153846153846
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 137,
+          "growthFactor": 1.2685185185185186,
+          "deaths": 1,
+          "active": 107
         }
       }
     ],
@@ -77035,6 +78250,15 @@
           "tested": 5812,
           "growthFactor": 1.1148936170212767
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 287,
+          "growthFactor": 1.0954198473282444,
+          "deaths": 1,
+          "active": 261
+        }
       }
     ],
     "meta": {
@@ -77684,7 +78908,17 @@
         "value": {
           "cases": 62,
           "active": 62,
-          "growthFactor": 1.24
+          "growthFactor": 1.24,
+          "deaths": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 65,
+          "growthFactor": null,
+          "deaths": 0,
+          "active": 62
         }
       }
     ],
@@ -78327,6 +79561,15 @@
           "active": 556,
           "tested": 704,
           "growthFactor": 1.2760180995475112
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 704,
+          "growthFactor": 1.24822695035461,
+          "deaths": 8,
+          "active": 556
         }
       }
     ],
@@ -78973,6 +80216,14 @@
           "active": 66,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 66,
+          "growthFactor": 1,
+          "active": 66
+        }
       }
     ],
     "meta": {
@@ -79614,6 +80865,16 @@
           "active": 452,
           "tested": 8694,
           "growthFactor": 1.0985576923076923
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 585,
+          "tested": 10674,
+          "growthFactor": 1.2800875273522976,
+          "deaths": 5,
+          "active": 452
         }
       }
     ],
@@ -80268,6 +81529,15 @@
           "tested": 5300,
           "growthFactor": 1.489156626506024
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 875,
+          "deaths": 19,
+          "growthFactor": 1.4158576051779934,
+          "active": 606
+        }
       }
     ],
     "meta": {
@@ -80914,6 +82184,15 @@
           "deaths": 1,
           "active": 69,
           "growthFactor": 0.9722222222222222
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 76,
+          "deaths": 0,
+          "growthFactor": 1.0857142857142856,
+          "active": 69
         }
       }
     ],
@@ -81568,6 +82847,15 @@
           "tested": 841,
           "growthFactor": 1.308641975308642
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 164,
+          "growthFactor": 1.5471698113207548,
+          "deaths": 3,
+          "active": 103
+        }
       }
     ],
     "meta": {
@@ -82207,6 +83495,16 @@
           "active": 298,
           "tested": 5823,
           "growthFactor": 1.1634241245136188
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 346,
+          "tested": 6837,
+          "growthFactor": 1.1610738255033557,
+          "deaths": 1,
+          "active": 298
         }
       }
     ],
@@ -82858,7 +84156,18 @@
           "cases": 114,
           "deaths": 4,
           "active": 110,
-          "growthFactor": 1.52
+          "growthFactor": 1.52,
+          "recovered": 5
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 146,
+          "deaths": 4,
+          "growthFactor": 1.280701754385965,
+          "recovered": 5,
+          "active": 110
         }
       }
     ],
@@ -83507,7 +84816,18 @@
           "cases": 4,
           "deaths": 0,
           "active": 4,
-          "growthFactor": 4
+          "growthFactor": 4,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 4
         }
       }
     ],
@@ -84156,7 +85476,18 @@
           "cases": 10,
           "deaths": 0,
           "active": 10,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 10,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 10
         }
       }
     ],
@@ -84805,7 +86136,18 @@
           "cases": 345,
           "deaths": 6,
           "active": 339,
-          "growthFactor": 1.4081632653061225
+          "growthFactor": 1.4081632653061225,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 443,
+          "deaths": 8,
+          "growthFactor": 1.2840579710144928,
+          "recovered": 0,
+          "active": 339
         }
       }
     ],
@@ -85457,6 +86799,15 @@
           "tested": 2184,
           "growthFactor": 1.1951219512195121
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 126,
+          "growthFactor": 1.3846153846153846,
+          "deaths": 2,
+          "active": 96
+        }
       }
     ],
     "meta": {
@@ -86097,6 +87448,15 @@
           "active": 1342,
           "tested": 8603,
           "growthFactor": 1.1843003412969284
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1795,
+          "deaths": 65,
+          "growthFactor": 1.293227665706052,
+          "active": 1342
         }
       }
     ],
@@ -86751,6 +88111,15 @@
           "tested": 624,
           "growthFactor": 1.3934426229508197
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 356,
+          "growthFactor": 1.396078431372549,
+          "deaths": 5,
+          "active": 250
+        }
       }
     ],
     "meta": {
@@ -87403,6 +88772,16 @@
           "tested": 1535,
           "growthFactor": 1.2666666666666666
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 123,
+          "deaths": 8,
+          "tested": 1712,
+          "growthFactor": 1.2947368421052632,
+          "active": 88
+        }
       }
     ],
     "meta": {
@@ -88050,6 +89429,15 @@
           "active": 41,
           "tested": 1733,
           "growthFactor": 1.9090909090909092
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 31,
+          "growthFactor": 0.7380952380952381,
+          "deaths": 1,
+          "active": 41
         }
       }
     ],
@@ -88701,6 +90089,17 @@
           "tested": 1230,
           "growthFactor": 1.3333333333333333
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 308,
+          "deaths": 2,
+          "recovered": 12,
+          "active": 294,
+          "tested": 1777,
+          "growthFactor": 1.3275862068965518
+        }
       }
     ],
     "meta": {
@@ -89341,6 +90740,15 @@
           "active": 104,
           "tested": 140,
           "growthFactor": 1.5294117647058822
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 119,
+          "growthFactor": 1.1442307692307692,
+          "deaths": 0,
+          "active": 104
         }
       }
     ],
@@ -89992,6 +91400,15 @@
           "tested": 1960,
           "growthFactor": 1.553191489361702
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 123,
+          "growthFactor": 1.6849315068493151,
+          "deaths": 0,
+          "active": 73
+        }
       }
     ],
     "meta": {
@@ -90638,6 +92055,15 @@
           "active": 125,
           "tested": 3139,
           "growthFactor": 1.1682242990654206
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 142,
+          "recovered": 7,
+          "growthFactor": 1.2033898305084745,
+          "active": 125
         }
       }
     ],
@@ -91292,6 +92718,15 @@
           "tested": 3860,
           "growthFactor": 1.348644578313253
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2292,
+          "deaths": 43,
+          "growthFactor": 1.2797319932998326,
+          "active": 1767
+        }
       }
     ],
     "meta": {
@@ -91928,6 +93363,15 @@
           "active": 319,
           "tested": 1872,
           "growthFactor": 1.285140562248996
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 377,
+          "deaths": 5,
+          "growthFactor": 1.178125,
+          "active": 319
         }
       }
     ],
@@ -92576,6 +94020,14 @@
           "tested": 1694,
           "growthFactor": 1.5
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 65,
+          "growthFactor": 1.2745098039215685,
+          "active": 51
+        }
       }
     ],
     "meta": {
@@ -93222,6 +94674,15 @@
           "active": 100,
           "tested": 6842,
           "growthFactor": 1.5384615384615385
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 112,
+          "deaths": 1,
+          "growthFactor": 1.12,
+          "active": 100
         }
       }
     ],
@@ -93876,6 +95337,16 @@
           "tested": 1602,
           "growthFactor": 1.2
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 39,
+          "deaths": 0,
+          "tested": 1773,
+          "growthFactor": 1.0833333333333333,
+          "active": 36
+        }
       }
     ],
     "meta": {
@@ -94518,6 +95989,15 @@
           "active": 29,
           "tested": 1088,
           "growthFactor": 1.0714285714285714
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 41,
+          "growthFactor": 1.3666666666666667,
+          "deaths": 1,
+          "active": 29
         }
       }
     ],
@@ -95172,6 +96652,15 @@
           "tested": 804,
           "growthFactor": 2.4375
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 52,
+          "growthFactor": 1.3333333333333333,
+          "deaths": 0,
+          "active": 39
+        }
       }
     ],
     "meta": {
@@ -95818,6 +97307,14 @@
           "active": 33,
           "tested": 743,
           "growthFactor": 1.2692307692307692
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 49,
+          "growthFactor": 1.3243243243243243,
+          "active": 33
         }
       }
     ],
@@ -96468,8 +97965,19 @@
         "value": {
           "cases": 67801,
           "deaths": 3160,
-          "active": 64641,
-          "growthFactor": 1.0000147492625369
+          "active": 4762,
+          "growthFactor": 1.0000147492625369,
+          "recovered": 59879
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 67801,
+          "deaths": 3163,
+          "growthFactor": 1,
+          "recovered": 59879,
+          "active": 4759
         }
       }
     ],
@@ -97121,7 +98629,18 @@
           "cases": 24811,
           "deaths": 1934,
           "active": 22877,
-          "growthFactor": 1.146640170071171
+          "growthFactor": 1.146640170071171,
+          "recovered": 7931
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 27017,
+          "deaths": 2077,
+          "growthFactor": 1.088912176050945,
+          "recovered": 7931,
+          "active": 22877
         }
       }
     ],
@@ -97770,7 +99289,18 @@
           "cases": 9037,
           "deaths": 120,
           "active": 8917,
-          "growthFactor": 1.01573564122738
+          "growthFactor": 1.01573564122738,
+          "recovered": 2909
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9137,
+          "deaths": 126,
+          "growthFactor": 1.0110656191213898,
+          "recovered": 2909,
+          "active": 8917
         }
       }
     ],
@@ -98422,6 +99952,16 @@
           "active": 17919,
           "growthFactor": 1.1230862207896857
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 25233,
+          "deaths": 1331,
+          "growthFactor": 1.1315246636771301,
+          "recovered": 3281,
+          "active": 17919
+        }
       }
     ],
     "meta": {
@@ -99068,8 +100608,19 @@
         "value": {
           "cases": 1428,
           "deaths": 8,
-          "active": 1420,
-          "growthFactor": 1.010615711252654
+          "active": 88,
+          "growthFactor": 1.010615711252654,
+          "recovered": 1332
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1433,
+          "deaths": 8,
+          "growthFactor": 1.003501400560224,
+          "recovered": 1332,
+          "active": 93
         }
       }
     ],
@@ -99720,8 +101271,19 @@
         "value": {
           "cases": 1274,
           "deaths": 22,
-          "active": 1252,
-          "growthFactor": 1
+          "active": 2,
+          "growthFactor": 1,
+          "recovered": 1250
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1274,
+          "deaths": 22,
+          "growthFactor": 1,
+          "recovered": 1250,
+          "active": 2
         }
       }
     ],
@@ -100372,8 +101934,19 @@
         "value": {
           "cases": 1240,
           "deaths": 1,
-          "active": 1239,
-          "growthFactor": 1.001615508885299
+          "active": 18,
+          "growthFactor": 1.001615508885299,
+          "recovered": 1221
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1241,
+          "deaths": 1,
+          "growthFactor": 1.0008064516129032,
+          "recovered": 1221,
+          "active": 19
         }
       }
     ],
@@ -101024,8 +102597,19 @@
         "value": {
           "cases": 1018,
           "deaths": 4,
-          "active": 1014,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 1014
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1018,
+          "deaths": 4,
+          "growthFactor": 1,
+          "recovered": 1014,
+          "active": 0
         }
       }
     ],
@@ -101676,8 +103260,19 @@
         "value": {
           "cases": 990,
           "deaths": 6,
-          "active": 984,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 984
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 990,
+          "deaths": 6,
+          "growthFactor": 1,
+          "recovered": 984,
+          "active": 0
         }
       }
     ],
@@ -102328,8 +103923,19 @@
         "value": {
           "cases": 936,
           "deaths": 1,
-          "active": 935,
-          "growthFactor": 1
+          "active": 1,
+          "growthFactor": 1,
+          "recovered": 934
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 936,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 934,
+          "active": 1
         }
       }
     ],
@@ -102980,8 +104586,19 @@
         "value": {
           "cases": 768,
           "deaths": 7,
-          "active": 761,
-          "growthFactor": 1.001303780964798
+          "active": 10,
+          "growthFactor": 1.001303780964798,
+          "recovered": 751
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 769,
+          "deaths": 7,
+          "growthFactor": 1.0013020833333333,
+          "recovered": 751,
+          "active": 11
         }
       }
     ],
@@ -103632,8 +105249,19 @@
         "value": {
           "cases": 636,
           "deaths": 0,
-          "active": 636,
-          "growthFactor": 1.004739336492891
+          "active": 5,
+          "growthFactor": 1.004739336492891,
+          "recovered": 631
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 638,
+          "deaths": 0,
+          "growthFactor": 1.0031446540880504,
+          "recovered": 631,
+          "active": 7
         }
       }
     ],
@@ -104284,8 +105912,19 @@
         "value": {
           "cases": 578,
           "deaths": 6,
-          "active": 572,
-          "growthFactor": 1.001733102253033
+          "active": 2,
+          "growthFactor": 1.001733102253033,
+          "recovered": 570
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 578,
+          "deaths": 6,
+          "growthFactor": 1,
+          "recovered": 570,
+          "active": 2
         }
       }
     ],
@@ -104936,8 +106575,19 @@
         "value": {
           "cases": 545,
           "deaths": 3,
-          "active": 542,
-          "growthFactor": 1.003683241252302
+          "active": 6,
+          "growthFactor": 1.003683241252302,
+          "recovered": 536
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 547,
+          "deaths": 3,
+          "growthFactor": 1.003669724770642,
+          "recovered": 536,
+          "active": 8
         }
       }
     ],
@@ -105588,8 +107238,19 @@
         "value": {
           "cases": 484,
           "deaths": 13,
-          "active": 471,
-          "growthFactor": 1
+          "active": 6,
+          "growthFactor": 1,
+          "recovered": 465
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 484,
+          "deaths": 13,
+          "growthFactor": 1,
+          "recovered": 465,
+          "active": 6
         }
       }
     ],
@@ -106760,7 +108421,18 @@
           "cases": 1591,
           "deaths": 32,
           "active": 1559,
-          "growthFactor": 1.1405017921146954
+          "growthFactor": 1.1405017921146954,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1724,
+          "deaths": 34,
+          "growthFactor": 1.083595223130107,
+          "recovered": 1,
+          "active": 1559
         }
       }
     ],
@@ -107408,8 +109080,19 @@
         "value": {
           "cases": 558,
           "deaths": 8,
-          "active": 550,
-          "growthFactor": 1.0689655172413792
+          "active": 150,
+          "growthFactor": 1.0689655172413792,
+          "recovered": 400
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 561,
+          "deaths": 8,
+          "growthFactor": 1.0053763440860215,
+          "recovered": 400,
+          "active": 153
         }
       }
     ],
@@ -108060,8 +109743,19 @@
         "value": {
           "cases": 414,
           "deaths": 4,
-          "active": 410,
-          "growthFactor": 1.0247524752475248
+          "active": 81,
+          "growthFactor": 1.0247524752475248,
+          "recovered": 329
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 433,
+          "deaths": 5,
+          "growthFactor": 1.0458937198067633,
+          "recovered": 329,
+          "active": 99
         }
       }
     ],
@@ -108712,8 +110406,19 @@
         "value": {
           "cases": 319,
           "deaths": 6,
-          "active": 313,
-          "growthFactor": 1
+          "active": 3,
+          "growthFactor": 1,
+          "recovered": 310
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 319,
+          "deaths": 6,
+          "growthFactor": 1,
+          "recovered": 310,
+          "active": 3
         }
       }
     ],
@@ -109364,8 +111069,19 @@
         "value": {
           "cases": 318,
           "deaths": 1,
-          "active": 317,
-          "growthFactor": 1.0159744408945688
+          "active": 22,
+          "growthFactor": 1.0159744408945688,
+          "recovered": 295
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 322,
+          "deaths": 1,
+          "growthFactor": 1.0125786163522013,
+          "recovered": 295,
+          "active": 26
         }
       }
     ],
@@ -110016,8 +111732,19 @@
         "value": {
           "cases": 254,
           "deaths": 2,
-          "active": 252,
-          "growthFactor": 1
+          "active": 2,
+          "growthFactor": 1,
+          "recovered": 250
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 254,
+          "deaths": 2,
+          "growthFactor": 1,
+          "recovered": 250,
+          "active": 2
         }
       }
     ],
@@ -110668,8 +112395,19 @@
         "value": {
           "cases": 249,
           "deaths": 3,
-          "active": 246,
-          "growthFactor": 1.0040322580645162
+          "active": 7,
+          "growthFactor": 1.0040322580645162,
+          "recovered": 239
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 250,
+          "deaths": 3,
+          "growthFactor": 1.0040160642570282,
+          "recovered": 239,
+          "active": 8
         }
       }
     ],
@@ -111320,8 +113058,19 @@
         "value": {
           "cases": 176,
           "deaths": 2,
-          "active": 174,
-          "growthFactor": 1
+          "active": 2,
+          "growthFactor": 1,
+          "recovered": 172
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 176,
+          "deaths": 2,
+          "growthFactor": 1,
+          "recovered": 172,
+          "active": 2
         }
       }
     ],
@@ -111972,8 +113721,19 @@
         "value": {
           "cases": 168,
           "deaths": 6,
-          "active": 162,
-          "growthFactor": 1
+          "active": 1,
+          "growthFactor": 1,
+          "recovered": 161
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 168,
+          "deaths": 6,
+          "growthFactor": 1,
+          "recovered": 161,
+          "active": 1
         }
       }
     ],
@@ -112624,8 +114384,19 @@
         "value": {
           "cases": 146,
           "deaths": 2,
-          "active": 144,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 144
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 146,
+          "deaths": 2,
+          "growthFactor": 1,
+          "recovered": 144,
+          "active": 0
         }
       }
     ],
@@ -113276,8 +115047,19 @@
         "value": {
           "cases": 145,
           "deaths": 3,
-          "active": 142,
-          "growthFactor": 1.0283687943262412
+          "active": 9,
+          "growthFactor": 1.0283687943262412,
+          "recovered": 133
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 145,
+          "deaths": 3,
+          "growthFactor": 1,
+          "recovered": 133,
+          "active": 9
         }
       }
     ],
@@ -113928,8 +115710,19 @@
         "value": {
           "cases": 134,
           "deaths": 0,
-          "active": 134,
-          "growthFactor": 1.0075187969924813
+          "active": 1,
+          "growthFactor": 1.0075187969924813,
+          "recovered": 133
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 134,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 133,
+          "active": 1
         }
       }
     ],
@@ -114580,8 +116373,19 @@
         "value": {
           "cases": 136,
           "deaths": 2,
-          "active": 134,
-          "growthFactor": 1
+          "active": 20,
+          "growthFactor": 1,
+          "recovered": 114
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 136,
+          "deaths": 2,
+          "growthFactor": 1,
+          "recovered": 114,
+          "active": 20
         }
       }
     ],
@@ -115871,8 +117675,19 @@
         "value": {
           "cases": 127,
           "deaths": 2,
-          "active": 125,
-          "growthFactor": 1
+          "active": 1,
+          "growthFactor": 1,
+          "recovered": 124
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 127,
+          "deaths": 2,
+          "growthFactor": 1,
+          "recovered": 124,
+          "active": 1
         }
       }
     ],
@@ -116523,8 +118338,19 @@
         "value": {
           "cases": 93,
           "deaths": 1,
-          "active": 92,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 92
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 94,
+          "deaths": 1,
+          "growthFactor": 1.010752688172043,
+          "recovered": 92,
+          "active": 1
         }
       }
     ],
@@ -117176,7 +119002,18 @@
           "cases": 1394,
           "deaths": 3,
           "active": 1391,
-          "growthFactor": 1.2446428571428572
+          "growthFactor": 1.2446428571428572,
+          "recovered": 6
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1654,
+          "deaths": 6,
+          "growthFactor": 1.1865136298421808,
+          "recovered": 6,
+          "active": 1391
         }
       }
     ],
@@ -117824,8 +119661,19 @@
         "value": {
           "cases": 76,
           "deaths": 3,
-          "active": 73,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 73
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 76,
+          "deaths": 3,
+          "growthFactor": 1,
+          "recovered": 73,
+          "active": 0
         }
       }
     ],
@@ -118477,8 +120325,19 @@
         "value": {
           "cases": 75,
           "deaths": 1,
-          "active": 74,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 74
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 77,
+          "deaths": 1,
+          "growthFactor": 1.0266666666666666,
+          "recovered": 74,
+          "active": 2
         }
       }
     ],
@@ -119129,8 +120988,19 @@
         "value": {
           "cases": 75,
           "deaths": 0,
-          "active": 75,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 75
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 75,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 75,
+          "active": 0
         }
       }
     ],
@@ -119782,7 +121652,18 @@
           "cases": 215,
           "deaths": 2,
           "active": 213,
-          "growthFactor": 1.272189349112426
+          "growthFactor": 1.272189349112426,
+          "recovered": 28
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 235,
+          "deaths": 2,
+          "growthFactor": 1.0930232558139534,
+          "recovered": 28,
+          "active": 213
         }
       }
     ],
@@ -120431,7 +122312,18 @@
           "cases": 134,
           "deaths": 0,
           "active": 134,
-          "growthFactor": 1.1858407079646018
+          "growthFactor": 1.1858407079646018,
+          "recovered": 17
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 141,
+          "deaths": 0,
+          "growthFactor": 1.0522388059701493,
+          "recovered": 17,
+          "active": 134
         }
       }
     ],
@@ -121080,7 +122972,18 @@
           "cases": 495,
           "deaths": 1,
           "active": 494,
-          "growthFactor": 1.348773841961853
+          "growthFactor": 1.348773841961853,
+          "recovered": 16
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 658,
+          "deaths": 3,
+          "growthFactor": 1.3292929292929292,
+          "recovered": 16,
+          "active": 494
         }
       }
     ],
@@ -121728,8 +123631,19 @@
         "value": {
           "cases": 18,
           "deaths": 0,
-          "active": 18,
-          "growthFactor": 1
+          "active": 0,
+          "growthFactor": 1,
+          "recovered": 18
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 18,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 18,
+          "active": 0
         }
       }
     ],
@@ -123020,7 +124934,18 @@
           "cases": 125,
           "deaths": 1,
           "active": 124,
-          "growthFactor": 1.3297872340425532
+          "growthFactor": 1.3297872340425532,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 149,
+          "deaths": 1,
+          "growthFactor": 1.192,
+          "recovered": 1,
+          "active": 124
         }
       }
     ],
@@ -123669,7 +125594,18 @@
           "cases": 29,
           "deaths": 0,
           "active": 29,
-          "growthFactor": 1.2083333333333333
+          "growthFactor": 1.2083333333333333,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 32,
+          "deaths": 0,
+          "growthFactor": 1.103448275862069,
+          "recovered": 0,
+          "active": 29
         }
       }
     ],
@@ -124957,7 +126893,18 @@
           "cases": 8,
           "deaths": 0,
           "active": 8,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 11,
+          "deaths": 0,
+          "growthFactor": 1.375,
+          "recovered": 0,
+          "active": 8
         }
       }
     ],
@@ -125608,7 +127555,18 @@
           "cases": 30,
           "deaths": 0,
           "active": 30,
-          "growthFactor": 1.1538461538461537
+          "growthFactor": 1.1538461538461537,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 36,
+          "deaths": 0,
+          "growthFactor": 1.2,
+          "recovered": 0,
+          "active": 30
         }
       }
     ],
@@ -126257,7 +128215,18 @@
           "cases": 36,
           "deaths": 0,
           "active": 36,
-          "growthFactor": 1.125
+          "growthFactor": 1.125,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 46,
+          "deaths": 0,
+          "growthFactor": 1.2777777777777777,
+          "recovered": 0,
+          "active": 36
         }
       }
     ],
@@ -126905,7 +128874,18 @@
           "cases": 45,
           "deaths": 2,
           "active": 43,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 48,
+          "deaths": 2,
+          "growthFactor": 1.0666666666666667,
+          "recovered": 0,
+          "active": 43
         }
       }
     ],
@@ -127554,7 +129534,18 @@
           "cases": 73,
           "deaths": 0,
           "active": 73,
-          "growthFactor": 5.214285714285714
+          "growthFactor": 5.214285714285714,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 80,
+          "deaths": 0,
+          "growthFactor": 1.095890410958904,
+          "recovered": 1,
+          "active": 73
         }
       }
     ],
@@ -128203,7 +130194,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -128855,7 +130857,18 @@
           "cases": 21,
           "deaths": 1,
           "active": 20,
-          "growthFactor": 1.3125
+          "growthFactor": 1.3125,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 26,
+          "deaths": 1,
+          "growthFactor": 1.2380952380952381,
+          "recovered": 2,
+          "active": 20
         }
       }
     ],
@@ -130140,7 +132153,18 @@
           "cases": 1872,
           "deaths": 44,
           "active": 1828,
-          "growthFactor": 1.5145631067961165
+          "growthFactor": 1.5145631067961165,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2433,
+          "deaths": 59,
+          "growthFactor": 1.2996794871794872,
+          "recovered": 0,
+          "active": 1828
         }
       }
     ],
@@ -130789,7 +132813,18 @@
           "cases": 15,
           "deaths": 0,
           "active": 15,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 26,
+          "deaths": 0,
+          "growthFactor": 1.7333333333333334,
+          "recovered": 2,
+          "active": 15
         }
       }
     ],
@@ -131444,6 +133479,16 @@
           "active": 54030,
           "growthFactor": 1.0821092808985249
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 74386,
+          "deaths": 7503,
+          "recovered": 9362,
+          "active": 57521,
+          "growthFactor": 1.0753151381982191
+        }
       }
     ],
     "meta": {
@@ -131922,6 +133967,15 @@
           "active": 283,
           "tested": 4470,
           "growthFactor": 1.141732283464567
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 391,
+          "deaths": 9,
+          "growthFactor": 1.3482758620689654,
+          "active": 283
         }
       }
     ],
@@ -132610,6 +134664,16 @@
           "active": 712,
           "growthFactor": 1.1671597633136095
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 912,
+          "growthFactor": 1.155893536121673,
+          "deaths": 14,
+          "recovered": 63,
+          "active": 712
+        }
       }
     ],
     "meta": {
@@ -133005,6 +135069,16 @@
           "active": 622,
           "growthFactor": 1.0392156862745099
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 813,
+          "deaths": 52,
+          "recovered": 23,
+          "active": 738,
+          "growthFactor": 1.1799709724238026
+        }
       }
     ],
     "meta": {
@@ -133327,6 +135401,16 @@
           "recovered": 0,
           "active": 91,
           "growthFactor": 1.0222222222222221
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 113,
+          "deaths": 1,
+          "recovered": 0,
+          "active": 112,
+          "growthFactor": 1.2282608695652173
         }
       }
     ],
@@ -133651,6 +135735,16 @@
           "active": 699,
           "growthFactor": 1.078729281767956
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 858,
+          "deaths": 43,
+          "recovered": 67,
+          "active": 748,
+          "growthFactor": 1.0985915492957747
+        }
       }
     ],
     "meta": {
@@ -133973,6 +136067,16 @@
           "recovered": 5,
           "active": 304,
           "growthFactor": 1.0924657534246576
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 351,
+          "deaths": 11,
+          "recovered": 7,
+          "active": 333,
+          "growthFactor": 1.1003134796238245
         }
       }
     ],
@@ -134297,6 +136401,16 @@
           "active": 992,
           "growthFactor": 1.0730994152046784
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1199,
+          "deaths": 74,
+          "recovered": 53,
+          "active": 1072,
+          "growthFactor": 1.0890099909173478
+        }
       }
     ],
     "meta": {
@@ -134619,6 +136733,16 @@
           "recovered": 558,
           "active": 7711,
           "growthFactor": 1.084241359109549
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 10054,
+          "deaths": 1077,
+          "recovered": 721,
+          "active": 8256,
+          "growthFactor": 1.0864491030905554
         }
       }
     ],
@@ -134943,6 +137067,16 @@
           "active": 848,
           "growthFactor": 1.0666666666666667
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1139,
+          "deaths": 70,
+          "recovered": 158,
+          "active": 911,
+          "growthFactor": 1.1481854838709677
+        }
       }
     ],
     "meta": {
@@ -135265,6 +137399,16 @@
           "recovered": 103,
           "active": 1545,
           "growthFactor": 1.122077922077922
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1901,
+          "deaths": 95,
+          "recovered": 131,
+          "active": 1675,
+          "growthFactor": 1.1001157407407407
         }
       }
     ],
@@ -135589,6 +137733,16 @@
           "active": 1692,
           "growthFactor": 1.0997920997920998
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2305,
+          "deaths": 254,
+          "recovered": 225,
+          "active": 1826,
+          "growthFactor": 1.089319470699433
+        }
       }
     ],
     "meta": {
@@ -135911,6 +138065,16 @@
           "recovered": 6657,
           "active": 19868,
           "growthFactor": 1.067521991585828
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 32346,
+          "deaths": 4474,
+          "recovered": 7281,
+          "active": 20591,
+          "growthFactor": 1.0535126860567372
         }
       }
     ],
@@ -136235,6 +138399,16 @@
           "active": 2497,
           "growthFactor": 1.0650058388478008
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2934,
+          "deaths": 287,
+          "recovered": 8,
+          "active": 2639,
+          "growthFactor": 1.0723684210526316
+        }
       }
     ],
     "meta": {
@@ -136557,6 +138731,16 @@
           "recovered": 10,
           "active": 55,
           "growthFactor": 1.0895522388059702
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 73,
+          "deaths": 8,
+          "recovered": 12,
+          "active": 53,
+          "growthFactor": 1
         }
       }
     ],
@@ -136881,6 +139065,16 @@
           "active": 5124,
           "growthFactor": 1.1345402180621271
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6024,
+          "deaths": 449,
+          "recovered": 19,
+          "active": 5556,
+          "growthFactor": 1.0922937443336356
+        }
       }
     ],
     "meta": {
@@ -137203,6 +139397,16 @@
           "recovered": 21,
           "active": 940,
           "growthFactor": 1.109271523178808
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1093,
+          "deaths": 48,
+          "recovered": 22,
+          "active": 1023,
+          "growthFactor": 1.0875621890547265
         }
       }
     ],
@@ -137527,6 +139731,16 @@
           "active": 395,
           "growthFactor": 1.1727019498607243
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 442,
+          "deaths": 18,
+          "recovered": 12,
+          "active": 412,
+          "growthFactor": 1.0498812351543942
+        }
       }
     ],
     "meta": {
@@ -137849,6 +140063,16 @@
           "recovered": 27,
           "active": 799,
           "growthFactor": 1.1733703190013869
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 994,
+          "deaths": 25,
+          "recovered": 33,
+          "active": 936,
+          "growthFactor": 1.1749408983451537
         }
       }
     ],
@@ -138173,6 +140397,16 @@
           "active": 2519,
           "growthFactor": 1.0967086550182852
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2972,
+          "deaths": 142,
+          "recovered": 54,
+          "active": 2776,
+          "growthFactor": 1.1011485735457578
+        }
       }
     ],
     "meta": {
@@ -138495,6 +140729,16 @@
           "recovered": 79,
           "active": 975,
           "growthFactor": 1.0850439882697946
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1222,
+          "deaths": 74,
+          "recovered": 90,
+          "active": 1058,
+          "growthFactor": 1.100900900900901
         }
       }
     ],
@@ -138819,6 +141063,16 @@
           "active": 624,
           "growthFactor": 1.123050259965338
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 710,
+          "deaths": 19,
+          "recovered": 5,
+          "active": 686,
+          "growthFactor": 1.095679012345679
+        }
       }
     ],
     "meta": {
@@ -139141,6 +141395,16 @@
           "recovered": 2,
           "active": 379,
           "growthFactor": 1.0178117048346056
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 401,
+          "deaths": 24,
+          "recovered": 2,
+          "active": 375,
+          "growthFactor": 1.0025
         }
       }
     ],
@@ -139465,6 +141729,16 @@
           "active": 5351,
           "growthFactor": 1.08047229791099
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6442,
+          "deaths": 258,
+          "recovered": 439,
+          "active": 5745,
+          "growthFactor": 1.0830531271015467
+        }
       }
     ],
     "meta": {
@@ -139724,7 +141998,18 @@
           "cases": 1510,
           "deaths": 86,
           "active": 1424,
-          "growthFactor": 1.1210096510764662
+          "growthFactor": 1.1210096510764662,
+          "recovered": 198
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1569,
+          "deaths": 102,
+          "recovered": 340,
+          "active": 1127,
+          "growthFactor": 1.0390728476821192
         }
       }
     ],
@@ -139957,7 +142242,19 @@
         "value": {
           "cases": 1532,
           "active": 1532,
-          "growthFactor": 1.2072498029944838
+          "growthFactor": 1.2072498029944838,
+          "deaths": 86,
+          "recovered": 201
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1753,
+          "growthFactor": 1.1442558746736293,
+          "deaths": 86,
+          "recovered": 201,
+          "active": 1532
         }
       }
     ],
@@ -140409,6 +142706,16 @@
           "active": 1447,
           "growthFactor": 1.0734104046242774
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2093,
+          "growthFactor": 1.1270866989768444,
+          "deaths": 86,
+          "recovered": 324,
+          "active": 1447
+        }
       }
     ],
     "meta": {
@@ -140625,7 +142932,19 @@
         "value": {
           "cases": 450,
           "active": 450,
-          "growthFactor": 1.2465373961218837
+          "growthFactor": 1.2465373961218837,
+          "deaths": 8,
+          "recovered": 15
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 561,
+          "deaths": 13,
+          "growthFactor": 1.2466666666666666,
+          "recovered": 15,
+          "active": 450
         }
       }
     ],
@@ -140861,7 +143180,19 @@
         "value": {
           "cases": 586,
           "active": 586,
-          "growthFactor": 1.1467710371819961
+          "growthFactor": 1.1467710371819961,
+          "deaths": 9,
+          "recovered": 24
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 688,
+          "deaths": 19,
+          "recovered": 49,
+          "active": 620,
+          "growthFactor": 1.174061433447099
         }
       }
     ],
@@ -141089,6 +143420,16 @@
           "recovered": 95,
           "active": 234,
           "growthFactor": 1.1706484641638226
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 368,
+          "deaths": 17,
+          "recovered": 106,
+          "active": 245,
+          "growthFactor": 1.0728862973760933
         }
       }
     ],
@@ -141325,6 +143666,16 @@
           "active": 417,
           "growthFactor": 1.073469387755102
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 603,
+          "growthFactor": 1.1463878326996197,
+          "deaths": 25,
+          "recovered": 84,
+          "active": 417
+        }
       }
     ],
     "meta": {
@@ -141551,7 +143902,19 @@
         "value": {
           "cases": 900,
           "active": 900,
-          "growthFactor": 1.1734028683181226
+          "growthFactor": 1.1734028683181226,
+          "deaths": 32,
+          "recovered": 117
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1082,
+          "growthFactor": 1.2022222222222223,
+          "deaths": 32,
+          "recovered": 117,
+          "active": 900
         }
       }
     ],
@@ -141966,7 +144329,18 @@
           "cases": 217,
           "deaths": 12,
           "active": 205,
-          "growthFactor": 1.1185567010309279
+          "growthFactor": 1.1185567010309279,
+          "recovered": 45
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 225,
+          "deaths": 15,
+          "growthFactor": 1.0368663594470047,
+          "recovered": 45,
+          "active": 205
         }
       }
     ],
@@ -142176,7 +144550,18 @@
           "cases": 73,
           "deaths": 1,
           "active": 72,
-          "growthFactor": 1.1774193548387097
+          "growthFactor": 1.1774193548387097,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 76,
+          "deaths": 1,
+          "growthFactor": 1.0410958904109588,
+          "recovered": 0,
+          "active": 72
         }
       }
     ],
@@ -142386,7 +144771,18 @@
           "cases": 57,
           "deaths": 0,
           "active": 57,
-          "growthFactor": 1.0754716981132075
+          "growthFactor": 1.0754716981132075,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 66,
+          "deaths": 0,
+          "recovered": 2,
+          "active": 64,
+          "growthFactor": 1.1578947368421053
         }
       }
     ],
@@ -142605,6 +145001,16 @@
           "active": 17,
           "growthFactor": 1.15
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 28,
+          "growthFactor": 1.2173913043478262,
+          "deaths": 0,
+          "recovered": 6,
+          "active": 17
+        }
       }
     ],
     "meta": {
@@ -142802,6 +145208,14 @@
           "cases": 94,
           "active": 94,
           "growthFactor": 1.2533333333333334
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 94,
+          "growthFactor": 1.1325301204819278,
+          "active": 94
         }
       }
     ],
@@ -143009,7 +145423,19 @@
         "value": {
           "cases": 30,
           "active": 30,
-          "growthFactor": 1.25
+          "growthFactor": 1.25,
+          "deaths": 0,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 35,
+          "growthFactor": 1.1666666666666667,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 30
         }
       }
     ],
@@ -143213,6 +145639,14 @@
           "active": 3,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "growthFactor": 1,
+          "active": 3
+        }
       }
     ],
     "meta": {
@@ -143412,7 +145846,17 @@
         "value": {
           "cases": 8,
           "active": 8,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 11,
+          "growthFactor": 1.375,
+          "recovered": 2,
+          "active": 8
         }
       }
     ],
@@ -143588,6 +146032,15 @@
           "active": 264,
           "growthFactor": 1.103734439834025
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 319,
+          "deaths": 2,
+          "growthFactor": 1.199248120300752,
+          "active": 264
+        }
       }
     ],
     "meta": {
@@ -143759,6 +146212,13 @@
           "cases": 8,
           "active": 8,
           "growthFactor": 2
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "growthFactor": null,
+          "active": 8
         }
       }
     ],
@@ -143935,6 +146395,15 @@
           "deaths": 2,
           "active": 31,
           "growthFactor": 1.1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 34,
+          "deaths": 2,
+          "growthFactor": 1.0303030303030303,
+          "active": 31
         }
       }
     ],
@@ -144124,6 +146593,15 @@
           "active": 526,
           "growthFactor": 1.1319148936170214
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 624,
+          "deaths": 6,
+          "growthFactor": 1.1729323308270676,
+          "active": 526
+        }
       }
     ],
     "meta": {
@@ -144303,6 +146781,15 @@
           "deaths": 4,
           "active": 302,
           "growthFactor": 1.0132450331125828
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 341,
+          "deaths": 5,
+          "growthFactor": 1.1143790849673203,
+          "active": 302
         }
       }
     ],
@@ -144488,6 +146975,15 @@
           "active": 409,
           "growthFactor": 1.101063829787234
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 466,
+          "deaths": 8,
+          "growthFactor": 1.1256038647342994,
+          "active": 409
+        }
       }
     ],
     "meta": {
@@ -144665,6 +147161,14 @@
           "deaths": 1,
           "active": 218,
           "growthFactor": 1.1587301587301588
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "deaths": 1,
+          "growthFactor": null,
+          "active": 218
         }
       }
     ],
@@ -144860,6 +147364,15 @@
           "active": 1498,
           "growthFactor": 1.0006626905235254
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1604,
+          "deaths": 15,
+          "growthFactor": 1.0037546933667083,
+          "active": 1498
+        }
       }
     ],
     "meta": {
@@ -145031,6 +147544,14 @@
           "cases": 33,
           "active": 33,
           "growthFactor": 1.064516129032258
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 40,
+          "growthFactor": 1.2121212121212122,
+          "active": 33
         }
       }
     ],
@@ -145209,6 +147730,15 @@
           "active": 270,
           "growthFactor": 1.037593984962406
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 322,
+          "deaths": 6,
+          "growthFactor": 1.1666666666666667,
+          "active": 270
+        }
       }
     ],
     "meta": {
@@ -145382,6 +147912,14 @@
           "active": 66,
           "growthFactor": 1.1578947368421053
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 78,
+          "growthFactor": 1.1818181818181819,
+          "active": 66
+        }
       }
     ],
     "meta": {
@@ -145554,6 +148092,15 @@
           "cases": 205,
           "active": 205,
           "growthFactor": 1.314102564102564
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 228,
+          "deaths": 1,
+          "growthFactor": 1.1121951219512196,
+          "active": 205
         }
       }
     ],
@@ -145733,6 +148280,15 @@
           "active": 228,
           "growthFactor": 1.1274509803921569
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 256,
+          "deaths": 2,
+          "growthFactor": 1.1130434782608696,
+          "active": 228
+        }
       }
     ],
     "meta": {
@@ -145907,6 +148463,14 @@
           "active": 42,
           "growthFactor": 1.0769230769230769
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 44,
+          "growthFactor": 1.0476190476190477,
+          "active": 42
+        }
       }
     ],
     "meta": {
@@ -146078,6 +148642,14 @@
           "cases": 25,
           "active": 25,
           "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 27,
+          "growthFactor": 1.08,
+          "active": 25
         }
       }
     ],
@@ -146254,6 +148826,15 @@
           "active": 202,
           "growthFactor": 1.015
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 228,
+          "deaths": 1,
+          "growthFactor": 1.1231527093596059,
+          "active": 202
+        }
       }
     ],
     "meta": {
@@ -146425,6 +149006,14 @@
           "cases": 32,
           "active": 32,
           "growthFactor": 1.0666666666666667
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 34,
+          "growthFactor": 1.0625,
+          "active": 32
         }
       }
     ],
@@ -146598,6 +149187,14 @@
           "cases": 80,
           "active": 80,
           "growthFactor": 1.095890410958904
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 99,
+          "growthFactor": 1.2375,
+          "active": 80
         }
       }
     ],
@@ -146773,6 +149370,15 @@
           "deaths": 1,
           "active": 86,
           "growthFactor": 1.0740740740740742
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 96,
+          "deaths": 1,
+          "growthFactor": 1.103448275862069,
+          "active": 86
         }
       }
     ],
@@ -146958,6 +149564,15 @@
           "active": 1158,
           "growthFactor": 1.0394849785407725
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1354,
+          "deaths": 60,
+          "growthFactor": 1.1180842279108174,
+          "active": 1158
+        }
       }
     ],
     "meta": {
@@ -147129,6 +149744,14 @@
           "cases": 25,
           "active": 25,
           "growthFactor": 1.1363636363636365
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 31,
+          "growthFactor": 1.24,
+          "active": 25
         }
       }
     ],
@@ -147315,6 +149938,15 @@
           "active": 531,
           "growthFactor": 1.1056910569105691
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 651,
+          "deaths": 14,
+          "growthFactor": 1.1966911764705883,
+          "active": 531
+        }
       }
     ],
     "meta": {
@@ -147484,6 +150116,14 @@
           "cases": 72,
           "active": 72,
           "growthFactor": 1.1612903225806452
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 80,
+          "growthFactor": 1.1111111111111112,
+          "active": 72
         }
       }
     ],
@@ -147672,6 +150312,15 @@
           "deaths": 5,
           "active": 1206,
           "growthFactor": 1.1338951310861423
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1363,
+          "deaths": 7,
+          "growthFactor": 1.1255161023947151,
+          "active": 1206
         }
       }
     ],
@@ -147957,6 +150606,15 @@
           "active": 465,
           "growthFactor": 1.2103896103896103
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 516,
+          "deaths": 1,
+          "growthFactor": 1.1072961373390557,
+          "active": 465
+        }
       }
     ],
     "meta": {
@@ -148105,6 +150763,15 @@
           "deaths": 3,
           "active": 1422,
           "growthFactor": 1.1689909762100081
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1425,
+          "deaths": 3,
+          "growthFactor": 1,
+          "active": 1422
         }
       }
     ],
@@ -148255,6 +150922,15 @@
           "active": 6444,
           "growthFactor": 1.2143258953684606
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7285,
+          "deaths": 42,
+          "growthFactor": 1.124922791846819,
+          "active": 6444
+        }
       }
     ],
     "meta": {
@@ -148403,6 +151079,15 @@
           "deaths": 32,
           "active": 6634,
           "growthFactor": 1.1655883895785977
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7921,
+          "deaths": 38,
+          "growthFactor": 1.1882688268826882,
+          "active": 6634
         }
       }
     ],
@@ -148553,6 +151238,15 @@
           "active": 186,
           "growthFactor": 1.062857142857143
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 203,
+          "deaths": 0,
+          "growthFactor": 1.0913978494623655,
+          "active": 186
+        }
       }
     ],
     "meta": {
@@ -148701,6 +151395,15 @@
           "deaths": 4,
           "active": 1678,
           "growthFactor": 1.2440828402366864
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1941,
+          "deaths": 7,
+          "growthFactor": 1.1539833531510106,
+          "active": 1678
         }
       }
     ],
@@ -148851,6 +151554,15 @@
           "active": 1236,
           "growthFactor": 1.2507583417593529
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1450,
+          "deaths": 1,
+          "growthFactor": 1.1721907841552142,
+          "active": 1236
+        }
       }
     ],
     "meta": {
@@ -148999,6 +151711,15 @@
           "deaths": 0,
           "active": 219,
           "growthFactor": 1.0895522388059702
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 227,
+          "deaths": 0,
+          "growthFactor": 1.0365296803652968,
+          "active": 219
         }
       }
     ],
@@ -149149,6 +151870,15 @@
           "active": 2104,
           "growthFactor": 1.1860595840359753
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2373,
+          "deaths": 8,
+          "growthFactor": 1.124644549763033,
+          "active": 2104
+        }
       }
     ],
     "meta": {
@@ -149297,6 +152027,15 @@
           "deaths": 53,
           "active": 8928,
           "growthFactor": 1.0920476653696498
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9734,
+          "deaths": 66,
+          "growthFactor": 1.0838436699699365,
+          "active": 8928
         }
       }
     ],
@@ -149447,6 +152186,15 @@
           "active": 1634,
           "growthFactor": 1.2762645914396886
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1814,
+          "deaths": 5,
+          "growthFactor": 1.1060975609756099,
+          "active": 1634
+        }
       }
     ],
     "meta": {
@@ -149595,6 +152343,15 @@
           "deaths": 2,
           "active": 550,
           "growthFactor": 1.1820128479657388
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 611,
+          "deaths": 2,
+          "growthFactor": 1.1068840579710144,
+          "active": 550
         }
       }
     ],
@@ -149745,6 +152502,15 @@
           "active": 401,
           "growthFactor": 1.0496083550913837
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 437,
+          "deaths": 3,
+          "growthFactor": 1.0870646766169154,
+          "active": 401
+        }
       }
     ],
     "meta": {
@@ -149893,6 +152659,15 @@
           "deaths": 1,
           "active": 1035,
           "growthFactor": 1.1976878612716764
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1128,
+          "deaths": 3,
+          "growthFactor": 1.0888030888030888,
+          "active": 1035
         }
       }
     ],
@@ -150043,6 +152818,15 @@
           "active": 364,
           "growthFactor": 1.2046204620462047
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 418,
+          "deaths": 1,
+          "growthFactor": 1.1452054794520548,
+          "active": 364
+        }
       }
     ],
     "meta": {
@@ -150191,6 +152975,15 @@
           "deaths": 1,
           "active": 412,
           "growthFactor": 1.570342205323194
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 466,
+          "deaths": 1,
+          "growthFactor": 1.1283292978208233,
+          "active": 412
         }
       }
     ],
@@ -150742,7 +153535,18 @@
           "cases": 48,
           "deaths": 1,
           "active": 47,
-          "growthFactor": 1.3714285714285714
+          "growthFactor": 1.3714285714285714,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 57,
+          "deaths": 1,
+          "growthFactor": 1.1875,
+          "recovered": 0,
+          "active": 47
         }
       }
     ],
@@ -151291,7 +154095,18 @@
           "cases": 5,
           "deaths": 1,
           "active": 4,
-          "growthFactor": 0.7142857142857143
+          "growthFactor": 0.7142857142857143,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 4
         }
       }
     ],
@@ -151431,6 +154246,15 @@
           "active": 44,
           "tested": 3008,
           "growthFactor": 1.1282051282051282
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 0,
+          "tested": 0,
+          "growthFactor": 0,
+          "active": 44
         }
       }
     ],
@@ -151982,7 +154806,18 @@
           "cases": 8077,
           "deaths": 422,
           "active": 7655,
-          "growthFactor": 1.421256378673236
+          "growthFactor": 1.421256378673236,
+          "recovered": 65
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9529,
+          "deaths": 465,
+          "growthFactor": 1.1797697164788907,
+          "recovered": 65,
+          "active": 7655
         }
       }
     ],
@@ -152531,7 +155366,18 @@
           "cases": 72,
           "deaths": 0,
           "active": 72,
-          "growthFactor": 1.2
+          "growthFactor": 1.2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 81,
+          "deaths": 0,
+          "growthFactor": 1.125,
+          "recovered": 0,
+          "active": 72
         }
       }
     ],
@@ -152680,7 +155526,18 @@
           "cases": 25,
           "deaths": 0,
           "active": 25,
-          "growthFactor": 1.6666666666666667
+          "growthFactor": 1.6666666666666667,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 25,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 25
         }
       }
     ],
@@ -153228,7 +156085,18 @@
           "cases": 12,
           "deaths": 0,
           "active": 12,
-          "growthFactor": 1.0909090909090908
+          "growthFactor": 1.0909090909090908,
+          "recovered": 4
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 12,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 4,
+          "active": 12
         }
       }
     ],
@@ -153777,7 +156645,18 @@
           "cases": 3,
           "deaths": 1,
           "active": 2,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -154326,7 +157205,18 @@
           "cases": 4,
           "deaths": 0,
           "active": 4,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 4
         }
       }
     ],
@@ -154875,7 +157765,18 @@
           "cases": 25,
           "deaths": 0,
           "active": 25,
-          "growthFactor": 1.6666666666666667
+          "growthFactor": 1.6666666666666667,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 28,
+          "deaths": 0,
+          "growthFactor": 1.12,
+          "recovered": 0,
+          "active": 25
         }
       }
     ],
@@ -155424,7 +158325,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -155973,7 +158885,18 @@
           "cases": 162,
           "deaths": 0,
           "active": 162,
-          "growthFactor": 1.2
+          "growthFactor": 1.2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 189,
+          "deaths": 0,
+          "growthFactor": 1.1666666666666667,
+          "recovered": 0,
+          "active": 162
         }
       }
     ],
@@ -156522,7 +159445,18 @@
           "cases": 53,
           "deaths": 2,
           "active": 51,
-          "growthFactor": 2.2083333333333335
+          "growthFactor": 2.2083333333333335,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 93,
+          "deaths": 4,
+          "growthFactor": 1.7547169811320755,
+          "recovered": 0,
+          "active": 51
         }
       }
     ],
@@ -156669,6 +159603,16 @@
           "active": 37,
           "tested": 349,
           "growthFactor": 1.2580645161290323
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 51,
+          "deaths": 2,
+          "tested": 438,
+          "growthFactor": 1.3076923076923077,
+          "active": 37
         }
       }
     ],
@@ -157217,7 +160161,18 @@
           "cases": 7,
           "deaths": 0,
           "active": 7,
-          "growthFactor": 2.3333333333333335
+          "growthFactor": 2.3333333333333335,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 7
         }
       }
     ],
@@ -157766,7 +160721,18 @@
           "cases": 7,
           "deaths": 0,
           "active": 7,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 7
         }
       }
     ],
@@ -158315,7 +161281,18 @@
           "cases": 57,
           "deaths": 0,
           "active": 57,
-          "growthFactor": 1.14
+          "growthFactor": 1.14,
+          "recovered": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 60,
+          "deaths": 1,
+          "growthFactor": 1.0526315789473684,
+          "recovered": 1,
+          "active": 57
         }
       }
     ],
@@ -158864,7 +161841,18 @@
           "cases": 84,
           "deaths": 0,
           "active": 84,
-          "growthFactor": 1.2
+          "growthFactor": 1.2,
+          "recovered": 15
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 91,
+          "deaths": 0,
+          "growthFactor": 1.0833333333333333,
+          "recovered": 15,
+          "active": 84
         }
       }
     ],
@@ -159413,7 +162401,18 @@
           "cases": 4,
           "deaths": 0,
           "active": 4,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 4
         }
       }
     ],
@@ -159962,7 +162961,18 @@
           "cases": 6,
           "deaths": 1,
           "active": 5,
-          "growthFactor": 1.2
+          "growthFactor": 1.2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 5
         }
       }
     ],
@@ -160511,7 +163521,18 @@
           "cases": 21,
           "deaths": 1,
           "active": 20,
-          "growthFactor": 1.105263157894737
+          "growthFactor": 1.105263157894737,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 24,
+          "deaths": 1,
+          "growthFactor": 1.1428571428571428,
+          "recovered": 0,
+          "active": 20
         }
       }
     ],
@@ -161060,7 +164081,18 @@
           "cases": 2,
           "deaths": 0,
           "active": 2,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -161609,7 +164641,18 @@
           "cases": 40,
           "deaths": 0,
           "active": 40,
-          "growthFactor": 2.1052631578947367
+          "growthFactor": 2.1052631578947367,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 41,
+          "deaths": 0,
+          "growthFactor": 1.025,
+          "recovered": 0,
+          "active": 40
         }
       }
     ],
@@ -162158,7 +165201,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -162707,7 +165761,18 @@
           "cases": 7,
           "deaths": 0,
           "active": 7,
-          "growthFactor": 1.4
+          "growthFactor": 1.4,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 8,
+          "deaths": 0,
+          "growthFactor": 1.1428571428571428,
+          "recovered": 0,
+          "active": 7
         }
       }
     ],
@@ -162856,7 +165921,18 @@
           "cases": 23,
           "deaths": 0,
           "active": 23,
-          "growthFactor": null
+          "growthFactor": null,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 28,
+          "deaths": 0,
+          "growthFactor": 1.2173913043478262,
+          "recovered": 0,
+          "active": 23
         }
       }
     ],
@@ -163006,6 +166082,15 @@
           "active": 31,
           "tested": 233,
           "growthFactor": 1.103448275862069
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 37,
+          "deaths": 1,
+          "growthFactor": 1.15625,
+          "active": 31
         }
       }
     ],
@@ -163553,7 +166638,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -164102,7 +167198,18 @@
           "cases": 4,
           "deaths": 0,
           "active": 4,
-          "growthFactor": 1.3333333333333333
+          "growthFactor": 1.3333333333333333,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 4
         }
       }
     ],
@@ -164651,7 +167758,18 @@
           "cases": 9,
           "deaths": 0,
           "active": 9,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 9
         }
       }
     ],
@@ -165200,7 +168318,18 @@
           "cases": 50,
           "deaths": 0,
           "active": 50,
-          "growthFactor": 1.1627906976744187
+          "growthFactor": 1.1627906976744187,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 60,
+          "deaths": 0,
+          "growthFactor": 1.2,
+          "recovered": 0,
+          "active": 50
         }
       }
     ],
@@ -165749,7 +168878,18 @@
           "cases": 6,
           "deaths": 0,
           "active": 6,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 6
         }
       }
     ],
@@ -166298,7 +169438,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -166447,7 +169598,18 @@
           "cases": 6,
           "deaths": 1,
           "active": 5,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 5
         }
       }
     ],
@@ -166998,7 +170160,18 @@
           "cases": 12,
           "deaths": 0,
           "active": 12,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 12,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 12
         }
       }
     ],
@@ -167150,6 +170323,16 @@
           "tested": 74,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 17,
+          "deaths": 0,
+          "tested": 74,
+          "growthFactor": 1,
+          "active": 17
+        }
       }
     ],
     "meta": {
@@ -167296,7 +170479,18 @@
           "cases": 6,
           "deaths": 1,
           "active": 5,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 8,
+          "deaths": 1,
+          "growthFactor": 1.3333333333333333,
+          "recovered": 0,
+          "active": 5
         }
       }
     ],
@@ -167447,7 +170641,18 @@
           "cases": 94,
           "deaths": 0,
           "active": 94,
-          "growthFactor": null
+          "growthFactor": null,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 111,
+          "deaths": 0,
+          "growthFactor": 1.1808510638297873,
+          "recovered": 0,
+          "active": 94
         }
       }
     ],
@@ -167995,7 +171200,18 @@
           "cases": 18,
           "deaths": 0,
           "active": 18,
-          "growthFactor": 1.2857142857142858
+          "growthFactor": 1.2857142857142858,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 18,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 18
         }
       }
     ],
@@ -168544,7 +171760,18 @@
           "cases": 47,
           "deaths": 1,
           "active": 46,
-          "growthFactor": 2.238095238095238
+          "growthFactor": 2.238095238095238,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 52,
+          "deaths": 1,
+          "growthFactor": 1.1063829787234043,
+          "recovered": 0,
+          "active": 46
         }
       }
     ],
@@ -169093,7 +172320,18 @@
           "cases": 42,
           "deaths": 0,
           "active": 42,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 44,
+          "deaths": 0,
+          "growthFactor": 1.0476190476190477,
+          "recovered": 0,
+          "active": 42
         }
       }
     ],
@@ -169642,7 +172880,18 @@
           "cases": 42,
           "deaths": 2,
           "active": 40,
-          "growthFactor": 2.3333333333333335
+          "growthFactor": 2.3333333333333335,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 48,
+          "deaths": 2,
+          "growthFactor": 1.1428571428571428,
+          "recovered": 0,
+          "active": 40
         }
       }
     ],
@@ -169791,7 +173040,18 @@
           "cases": 12,
           "deaths": 0,
           "active": 12,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 17,
+          "deaths": 0,
+          "growthFactor": 1.4166666666666667,
+          "recovered": 0,
+          "active": 12
         }
       }
     ],
@@ -170339,7 +173599,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 12,
+          "deaths": 0,
+          "growthFactor": 4,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -170888,7 +174159,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 11,
+          "deaths": 0,
+          "growthFactor": 3.6666666666666665,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -171437,7 +174719,18 @@
           "cases": 3,
           "deaths": 1,
           "active": 2,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -171586,7 +174879,18 @@
           "cases": 5,
           "deaths": 0,
           "active": 5,
-          "growthFactor": 1.25
+          "growthFactor": 1.25,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 6,
+          "deaths": 0,
+          "growthFactor": 1.2,
+          "recovered": 0,
+          "active": 5
         }
       }
     ],
@@ -171737,7 +175041,18 @@
           "cases": 10,
           "deaths": 0,
           "active": 10,
-          "growthFactor": 2.5
+          "growthFactor": 2.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 14,
+          "deaths": 0,
+          "growthFactor": 1.4,
+          "recovered": 0,
+          "active": 10
         }
       }
     ],
@@ -171885,7 +175200,18 @@
           "cases": 6,
           "deaths": 0,
           "active": 6,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 0,
+          "growthFactor": 1.1666666666666667,
+          "recovered": 0,
+          "active": 6
         }
       }
     ],
@@ -172436,7 +175762,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -172985,7 +176322,18 @@
           "cases": 5,
           "deaths": 0,
           "active": 5,
-          "growthFactor": 1.6666666666666667
+          "growthFactor": 1.6666666666666667,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9,
+          "deaths": 0,
+          "growthFactor": 1.8,
+          "recovered": 0,
+          "active": 5
         }
       }
     ],
@@ -173534,7 +176882,18 @@
           "cases": 4,
           "deaths": 0,
           "active": 4,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5,
+          "deaths": 0,
+          "growthFactor": 1.25,
+          "recovered": 0,
+          "active": 4
         }
       }
     ],
@@ -174083,7 +177442,18 @@
           "cases": 2,
           "deaths": 0,
           "active": 2,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -174632,7 +178002,18 @@
           "cases": 17,
           "deaths": 0,
           "active": 17,
-          "growthFactor": 5.666666666666667
+          "growthFactor": 5.666666666666667,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 19,
+          "deaths": 0,
+          "growthFactor": 1.1176470588235294,
+          "recovered": 0,
+          "active": 17
         }
       }
     ],
@@ -175181,7 +178562,18 @@
           "cases": 7,
           "deaths": 0,
           "active": 7,
-          "growthFactor": 3.5
+          "growthFactor": 3.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 8,
+          "deaths": 0,
+          "growthFactor": 1.1428571428571428,
+          "recovered": 0,
+          "active": 7
         }
       }
     ],
@@ -175730,7 +179122,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -176279,7 +179682,18 @@
           "cases": 3,
           "deaths": 1,
           "active": 2,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4,
+          "deaths": 1,
+          "growthFactor": 1.3333333333333333,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -176428,7 +179842,18 @@
           "cases": 2,
           "deaths": 0,
           "active": 2,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "growthFactor": 1.5,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -176979,7 +180404,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 1.5
+          "growthFactor": 1.5,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 1,
+          "growthFactor": 2.3333333333333335,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -177128,7 +180564,18 @@
           "cases": 23,
           "deaths": 0,
           "active": 23,
-          "growthFactor": 4.6
+          "growthFactor": 4.6,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 23,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 23
         }
       }
     ],
@@ -177679,7 +181126,18 @@
           "cases": 3,
           "deaths": 1,
           "active": 2,
-          "growthFactor": 1
+          "growthFactor": 1,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "deaths": 1,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -178228,7 +181686,18 @@
           "cases": 9,
           "deaths": 0,
           "active": 9,
-          "growthFactor": 9
+          "growthFactor": 9,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 14,
+          "deaths": 0,
+          "growthFactor": 1.5555555555555556,
+          "recovered": 0,
+          "active": 9
         }
       }
     ],
@@ -178777,7 +182246,18 @@
           "cases": 2,
           "deaths": 0,
           "active": 2,
-          "growthFactor": 2
+          "growthFactor": 2,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 0,
+          "growthFactor": 3.5,
+          "recovered": 0,
+          "active": 2
         }
       }
     ],
@@ -179326,7 +182806,18 @@
           "cases": 3,
           "deaths": 0,
           "active": 3,
-          "growthFactor": 3
+          "growthFactor": 3,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5,
+          "deaths": 0,
+          "growthFactor": 1.6666666666666667,
+          "recovered": 0,
+          "active": 3
         }
       }
     ],
@@ -180147,7 +183638,18 @@
           "cases": 5,
           "deaths": 0,
           "active": 5,
-          "growthFactor": null
+          "growthFactor": null,
+          "recovered": 0
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5,
+          "deaths": 0,
+          "growthFactor": 1,
+          "recovered": 0,
+          "active": 5
         }
       }
     ],
@@ -180283,6 +183785,15 @@
           "tested": 2348,
           "growthFactor": 1.4491017964071857
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 386,
+          "growthFactor": 1.5950413223140496,
+          "deaths": 0,
+          "active": 242
+        }
       }
     ],
     "meta": {
@@ -180401,6 +183912,14 @@
           "cases": 617,
           "active": 617,
           "growthFactor": 1.3072033898305084
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 659,
+          "growthFactor": 1.06807131280389,
+          "active": 617
         }
       }
     ],
@@ -180521,6 +184040,14 @@
           "active": 358,
           "growthFactor": 1.1893687707641196
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 419,
+          "growthFactor": 1.170391061452514,
+          "active": 358
+        }
       }
     ],
     "meta": {
@@ -180639,6 +184166,14 @@
           "cases": 72,
           "active": 72,
           "growthFactor": 1.1076923076923078
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 86,
+          "growthFactor": 1.1944444444444444,
+          "active": 72
         }
       }
     ],
@@ -180759,6 +184294,14 @@
           "active": 11,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 11,
+          "growthFactor": 1,
+          "active": 11
+        }
       }
     ],
     "meta": {
@@ -180877,6 +184420,14 @@
           "cases": 588,
           "active": 588,
           "growthFactor": 1.168986083499006
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 688,
+          "growthFactor": 1.1700680272108843,
+          "active": 588
         }
       }
     ],
@@ -180997,6 +184548,14 @@
           "active": 221,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1339,
+          "growthFactor": 6.0588235294117645,
+          "active": 221
+        }
       }
     ],
     "meta": {
@@ -181116,6 +184675,14 @@
           "active": 18,
           "growthFactor": 2
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 26,
+          "growthFactor": 1.4444444444444444,
+          "active": 18
+        }
       }
     ],
     "meta": {
@@ -181227,6 +184794,14 @@
           "active": 3,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5,
+          "growthFactor": 1.6666666666666667,
+          "active": 3
+        }
       }
     ],
     "meta": {
@@ -181330,6 +184905,14 @@
           "active": 4,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 67,
+          "growthFactor": 16.75,
+          "active": 4
+        }
       }
     ],
     "meta": {
@@ -181432,6 +185015,14 @@
           "cases": 51,
           "active": 51,
           "growthFactor": 1.2439024390243902
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 68,
+          "growthFactor": 1.3333333333333333,
+          "active": 51
         }
       }
     ],
@@ -181546,6 +185137,16 @@
           "active": 2318,
           "growthFactor": 1.2600713921468638
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3010,
+          "deaths": 113,
+          "recovered": 71,
+          "active": 2826,
+          "growthFactor": 1.2181303116147308
+        }
       }
     ],
     "meta": {
@@ -181657,6 +185258,16 @@
           "recovered": 3,
           "active": 718,
           "growthFactor": 1.188087774294671
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 907,
+          "deaths": 40,
+          "recovered": 4,
+          "active": 863,
+          "growthFactor": 1.1965699208443272
         }
       }
     ],
@@ -181988,6 +185599,16 @@
           "active": 533,
           "growthFactor": 1.158004158004158
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 657,
+          "deaths": 21,
+          "recovered": 15,
+          "active": 621,
+          "growthFactor": 1.1795332136445242
+        }
       }
     ],
     "meta": {
@@ -182096,6 +185717,16 @@
           "recovered": 12,
           "active": 404,
           "growthFactor": 1.2247838616714697
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 510,
+          "deaths": 14,
+          "recovered": 12,
+          "active": 484,
+          "growthFactor": 1.2
         }
       }
     ],
@@ -182209,6 +185840,16 @@
           "active": 2219,
           "growthFactor": 1.197080291970803
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2940,
+          "deaths": 165,
+          "recovered": 213,
+          "active": 2562,
+          "growthFactor": 1.1951219512195121
+        }
       }
     ],
     "meta": {
@@ -182321,6 +185962,16 @@
           "active": 2196,
           "growthFactor": 1.1862367661212705
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2780,
+          "deaths": 263,
+          "recovered": 71,
+          "active": 2446,
+          "growthFactor": 1.127789046653144
+        }
       }
     ],
     "meta": {
@@ -182432,6 +186083,16 @@
           "recovered": 728,
           "active": 6854,
           "growthFactor": 1.3272573839662447
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9937,
+          "deaths": 516,
+          "recovered": 1274,
+          "active": 8147,
+          "growthFactor": 1.2636063072227874
         }
       }
     ],
@@ -182604,6 +186265,16 @@
           "active": 602,
           "growthFactor": 1.2900608519269776
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 742,
+          "deaths": 39,
+          "recovered": 8,
+          "active": 695,
+          "growthFactor": 1.1666666666666667
+        }
       }
     ],
     "meta": {
@@ -182715,6 +186386,16 @@
           "recovered": 19,
           "active": 1376,
           "growthFactor": 1.546448087431694
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1653,
+          "deaths": 27,
+          "recovered": 25,
+          "active": 1601,
+          "growthFactor": 1.1681978798586572
         }
       }
     ],
@@ -183155,6 +186836,16 @@
           "active": 2251,
           "growthFactor": 1.1268071045022718
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3271,
+          "deaths": 155,
+          "recovered": 466,
+          "active": 2650,
+          "growthFactor": 1.1990469208211143
+        }
       }
     ],
     "meta": {
@@ -183266,6 +186957,16 @@
           "recovered": 24,
           "active": 748,
           "growthFactor": 1.073627844712182
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 928,
+          "deaths": 37,
+          "recovered": 43,
+          "active": 848,
+          "growthFactor": 1.1571072319201996
         }
       }
     ],
@@ -183379,6 +187080,16 @@
           "active": 6,
           "growthFactor": 1
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 9,
+          "growthFactor": 1.5
+        }
       }
     ],
     "meta": {
@@ -183490,6 +187201,16 @@
           "recovered": 0,
           "active": 28,
           "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 38,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 38,
+          "growthFactor": 1.3571428571428572
         }
       }
     ],
@@ -184030,7 +187751,18 @@
           "cases": 2252,
           "active": 2252,
           "growthFactor": 1.2353263850795393,
-          "deaths": 8
+          "deaths": 8,
+          "recovered": 88
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 2423,
+          "growthFactor": 1.0759325044404973,
+          "deaths": 8,
+          "recovered": 88,
+          "active": 2252
         }
       }
     ],
@@ -184170,6 +187902,13 @@
           "active": 5353,
           "growthFactor": 1.1756577702063222
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7660,
+          "growthFactor": 1.1268020005884083
+        }
       }
     ],
     "meta": {
@@ -184249,6 +187988,13 @@
           "recovered": 470,
           "active": 3459,
           "growthFactor": 1.2536082474226804
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 5479,
+          "growthFactor": 1.113165379926859
         }
       }
     ],
@@ -184330,6 +188076,13 @@
           "active": 1113,
           "growthFactor": 1.1005830903790088
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 1927,
+          "growthFactor": 1.2081504702194357
+        }
       }
     ],
     "meta": {
@@ -184397,6 +188150,13 @@
           "cases": 2,
           "active": 2,
           "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3,
+          "growthFactor": 1.5
         }
       }
     ],
@@ -184940,7 +188700,19 @@
           "deaths": 709,
           "active": 52483,
           "tested": 367710,
-          "growthFactor": 1.2615501375581064
+          "growthFactor": 1.2615501375581064,
+          "recovered": 178
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 64180,
+          "deaths": 900,
+          "tested": 472820,
+          "growthFactor": 1.2065724169047978,
+          "recovered": 178,
+          "active": 52483
         }
       }
     ],
@@ -185001,6 +188773,13 @@
           "cases": 1959,
           "active": 1959,
           "growthFactor": 1.1901579586877278
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 3385,
+          "growthFactor": 1.7279224093925472
         }
       }
     ],
@@ -185110,6 +188889,16 @@
           "active": 9,
           "growthFactor": 1.2857142857142858
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9,
+          "deaths": 0,
+          "recovered": 1,
+          "active": 8,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185153,6 +188942,16 @@
           "active": 2,
           "growthFactor": 1.5
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 4,
+          "deaths": 1,
+          "recovered": 0,
+          "active": 3,
+          "growthFactor": 1.3333333333333333
+        }
       }
     ],
     "meta": {
@@ -185189,6 +188988,16 @@
       },
       {
         "date": "2020-3-24",
+        "value": {
+          "cases": 30,
+          "deaths": 1,
+          "recovered": 6,
+          "active": 23,
+          "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
         "value": {
           "cases": 30,
           "deaths": 1,
@@ -185239,6 +189048,16 @@
           "active": 31,
           "growthFactor": 1.103448275862069
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 37,
+          "deaths": 1,
+          "recovered": 0,
+          "active": 36,
+          "growthFactor": 1.15625
+        }
       }
     ],
     "meta": {
@@ -185282,6 +189101,16 @@
           "active": 3,
           "growthFactor": 1.1666666666666667
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 14,
+          "deaths": 0,
+          "recovered": 11,
+          "active": 3,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185318,6 +189147,16 @@
       },
       {
         "date": "2020-3-24",
+        "value": {
+          "cases": 3,
+          "deaths": 1,
+          "recovered": 0,
+          "active": 2,
+          "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
         "value": {
           "cases": 3,
           "deaths": 1,
@@ -185368,6 +189207,16 @@
           "active": 37,
           "growthFactor": 1.1081081081081081
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 41,
+          "deaths": 1,
+          "recovered": 3,
+          "active": 37,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185410,6 +189259,16 @@
           "recovered": 4,
           "active": 97,
           "growthFactor": 1.160919540229885
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 101,
+          "deaths": 0,
+          "recovered": 4,
+          "active": 97,
+          "growthFactor": 1
         }
       }
     ],
@@ -185454,6 +189313,16 @@
           "active": 9,
           "growthFactor": 1.2857142857142858
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 14,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 14,
+          "growthFactor": 1.5555555555555556
+        }
       }
     ],
     "meta": {
@@ -185497,6 +189366,16 @@
           "active": 96,
           "growthFactor": 1.1666666666666667
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 125,
+          "deaths": 3,
+          "recovered": 1,
+          "active": 121,
+          "growthFactor": 1.2755102040816326
+        }
       }
     ],
     "meta": {
@@ -185533,6 +189412,16 @@
       },
       {
         "date": "2020-3-24",
+        "value": {
+          "cases": 2,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 2,
+          "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
         "value": {
           "cases": 2,
           "deaths": 0,
@@ -185583,6 +189472,16 @@
           "active": 28,
           "growthFactor": 1.380952380952381
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 29,
+          "deaths": 1,
+          "recovered": 0,
+          "active": 28,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185625,6 +189524,16 @@
           "recovered": 3,
           "active": 27,
           "growthFactor": 0.967741935483871
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 34,
+          "deaths": 0,
+          "recovered": 3,
+          "active": 31,
+          "growthFactor": 1.1333333333333333
         }
       }
     ],
@@ -185669,6 +189578,16 @@
           "active": 15,
           "growthFactor": 1.6
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 16,
+          "deaths": 0,
+          "recovered": 1,
+          "active": 15,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185712,6 +189631,16 @@
           "active": 24,
           "growthFactor": 1.1363636363636365
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 25,
+          "deaths": 0,
+          "recovered": 1,
+          "active": 24,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185751,6 +189680,16 @@
           "recovered": 0,
           "active": 7,
           "growthFactor": 1.1666666666666667
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 7,
+          "growthFactor": 1
         }
       }
     ],
@@ -185795,6 +189734,16 @@
           "active": 6,
           "growthFactor": 1.75
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 7,
+          "deaths": 0,
+          "recovered": 1,
+          "active": 6,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185831,6 +189780,16 @@
       },
       {
         "date": "2020-3-24",
+        "value": {
+          "cases": 13,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 13,
+          "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
         "value": {
           "cases": 13,
           "deaths": 0,
@@ -185878,6 +189837,16 @@
           "active": 23,
           "growthFactor": 1.0625
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 36,
+          "deaths": 0,
+          "recovered": 11,
+          "active": 25,
+          "growthFactor": 1.0588235294117647
+        }
       }
     ],
     "meta": {
@@ -185914,6 +189883,16 @@
       },
       {
         "date": "2020-3-24",
+        "value": {
+          "cases": 3,
+          "deaths": 0,
+          "recovered": 0,
+          "active": 3,
+          "growthFactor": 1
+        }
+      },
+      {
+        "date": "2020-3-25",
         "value": {
           "cases": 3,
           "deaths": 0,
@@ -185964,6 +189943,16 @@
           "active": 8,
           "growthFactor": 1.2857142857142858
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 9,
+          "deaths": 1,
+          "recovered": 0,
+          "active": 8,
+          "growthFactor": 1
+        }
       }
     ],
     "meta": {
@@ -185996,6 +189985,13 @@
           "deaths": 4,
           "active": 382
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 410,
+          "deaths": 4
+        }
       }
     ],
     "meta": {
@@ -186025,6 +190021,13 @@
           "deaths": 0,
           "active": 25
         }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 30,
+          "deaths": 0
+        }
       }
     ],
     "meta": {
@@ -186053,6 +190056,13 @@
           "cases": 122,
           "deaths": 0,
           "active": 122
+        }
+      },
+      {
+        "date": "2020-3-25",
+        "value": {
+          "cases": 132,
+          "deaths": 0
         }
       }
     ],

@@ -260,9 +260,11 @@ let oldNames = {
   "GBR": "United Kingdom",
   "COD": "Congo (Kinshasa)",
   "COG": "Congo (Brazzaville)",
+  "SYR": "Syria",
+  "LAO": "Laos",
 };
 // Those regions don't have data in old timeseries.
-let knownSkipped = ["MTQ", "REU", "GLP", "HKG", "MAC", "FRO", "GUF", "MYT", "GRL", "GUM", "GGY", "JEY", "PRI", ];
+let knownSkipped = ["MTQ", "REU", "GLP", "HKG", "MAC", "FRO", "GUF", "MYT", "GRL", "GUM", "GGY", "JEY", "PRI", "GNB", "MLI", "KNA" ];
 
 function getOldName(region) {
   if (oldNames[region.id]) {
@@ -314,7 +316,6 @@ function backFill(output, oldSource) {
       region.dates.splice(0, 0, ...oldEntries);
     }
 
-
     // Now, let's find all matching data and extend from old timeseries
     // onto the new one.
     let newIndex = null;
@@ -328,8 +329,13 @@ function backFill(output, oldSource) {
       for (let i = 0; i < oldRegion.length; i++) {
         let oldEntry = oldRegion[i];
         let newEntry = region.dates[newIndex];
+        // while (oldEntry.date != newEntry.date) {
+        //   console.log(`Missing data for ${region.id}`);
+        //   i += 1;
+        //   oldEntry = oldRegion[i];
+        // }
         if (oldEntry.date != newEntry.date) {
-          throw new Error(`Error when matching date ${oldEntry.date} to ${newEntry.date}!`);
+          throw new Error(`Error when matching date ${oldEntry.date} to ${newEntry.date} for ${region.id}!`);
         }
         for (let type in oldEntry) {
           if (type === "date") {
@@ -354,15 +360,67 @@ function backFill(output, oldSource) {
 
 function fixData(output) {
   for (let region of output) {
-    if (region.id !== "CHN") {
+    for (let idx = 9; idx < region.dates.length; idx++) {
+      let date = region.dates[idx];
+      if (date.date < "2020-3-23") {
+        continue;
+      }
+      let nextDate = region.dates[idx + 1];
+      if (!nextDate) {
+        continue;
+      }
+      if (date.value.hasOwnProperty("deaths") && !nextDate.value.hasOwnProperty("deaths")) {
+        nextDate.value["deaths"] = date.value["deaths"];
+      }
+      if (date.value.hasOwnProperty("recovered") && !nextDate.value.hasOwnProperty("recovered")) {
+        nextDate.value["recovered"] = date.value["recovered"];
+        if (region.meta.country.code == "CHN") {
+          nextDate.value["active"] = date.value["active"] + (nextDate.value["cases"] - date.value["cases"]) - (nextDate.value["deaths"] - date.value["deaths"]);
+        }
+      }
+      if (!nextDate.value.hasOwnProperty("active") || nextDate.value["active"] == null) {
+        nextDate.value["active"] = date.value["active"];
+      }
+    }
+  }
+}
+
+function addNewData(output, futureData) {
+  let newRegions = [];
+  for (let id in futureData) {
+    let futureRegion = futureData[id];
+    let code = getRegionCode(futureRegion);
+    newRegions[code] = futureRegion;
+  }
+
+  let china = null;
+
+  for (let region of output) {
+    if (region.id === "CHN") {
+      china = region;
+    }
+  }
+
+  for (let region of output) {
+    let newRegion = newRegions[region.id];
+    if (!newRegion) {
+      console.warn(`The region from current data is missing in future data: ${region.id}.`);
       continue;
     }
-    let lastDay = region.dates[region.dates.length - 1];
-    if (!lastDay.value["recovered"]) {
-      let oneButLastDay = region.dates[region.dates.length - 2];
-      lastDay.value["recovered"] = oneButLastDay.value["recovered"];
-      lastDay.value["active"] = oneButLastDay.value["active"] + (lastDay.value["cases"] - oneButLastDay.value["cases"]) - (lastDay.value["deaths"] - oneButLastDay.value["deaths"]);
+    let value = newRegion.dates["2020-3-25"];
+    if (!value) {
+      console.warn(`New data doesn't have value for 2020-3-25 for ${region.id}`);
+      continue;
     }
+    region.dates.push({
+      date: "2020-3-25",
+      "value": value,
+    });
+    let newRegionSubslice = JSON.parse(JSON.stringify(newRegion));
+    newRegionSubslice.dates = {
+      "2020-3-25": newRegion.dates["2020-3-25"]
+    };
+    maybeAddToChina(china, newRegionSubslice);
   }
 }
 
@@ -373,6 +431,10 @@ let output = convert(source, iso3166, stateNames);
 
 let oldSource = readJSONFile("./data/timeseries.json");
 backFill(output, oldSource);
+
+let futureData = readJSONFile("./data/timeseries-byLocation-future.json");
+addNewData(output, futureData);
+
 fixData(output);
 
 writeJSON("./data/timeseries-converted.json", output);
