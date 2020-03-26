@@ -63,49 +63,6 @@ function hasMoreThanXCases(dates, x) {
   return lastDate.value.cases > x;
 }
 
-function maybeAddToChina(china, region) {
-  if (region.country !== "CHN" &&
-    region.country !== "MAC" &&
-    region.country !== "HKG") {
-    return;
-  }
-  if (!region.state || region.county || region.city) {
-    return;
-  }
-
-  let dates = intoDatesArray(region.dates, region.state);
-  for (let idx in dates) {
-    let date = dates[idx];
-    let found = false;
-    for (let chinaDate of china.dates) {
-      if (chinaDate.date == date.date) {
-        for (let type in date.value) {
-          if (type == "growthFactor") {
-            continue;
-          }
-          if (chinaDate.value[type]) {
-            chinaDate.value[type] += date.value[type];
-          } else {
-            chinaDate.value[type] = date.value[type];
-          }
-        }
-        found = true;
-        break;
-      }
-    }
-    if (!found) {
-      let d = {
-        date: date.date,
-        value: {},
-      };
-      for (let type in date.value) {
-        d.value[type] = date.value[type];
-      }
-      china.dates.push(d);
-    }
-  }
-}
-
 let shortNames = {
   "GBR": "Great Britain",
   "USA": "USA",
@@ -174,30 +131,8 @@ function getStateName(stateCode, countryCode, stateNames) {
 function convert(input, iso3166, stateNames) {
   let result = [];
 
-  let china = {
-    "id": "CHN",
-    "displayName": "China",
-    "dates": [],
-    "meta": {
-      "country": {
-        "code": "CHN",
-        "name": "China",
-        "shortName": "China",
-      },
-      "state": {},
-      "county": {},
-      "city": {},
-      "rating": undefined,
-      "tz": undefined,
-      "population": 1427647786,
-    },
-  };
-  result.push(china);
-
   for (let regionCode in input) {
     let region = input[regionCode];
-
-    maybeAddToChina(china, region);
 
     if (!isCountry(region) && !isState(region)) {
       continue;
@@ -245,8 +180,6 @@ function convert(input, iso3166, stateNames) {
     entry.displayName = getDisplayName(entry);
     result.push(entry);
   }
-
-  china.dates = china.dates.sort((a, b) => a.date - b.date);
 
   return result;
 }
@@ -385,45 +318,6 @@ function fixData(output) {
   }
 }
 
-function addNewData(output, futureData) {
-  let newRegions = [];
-  for (let id in futureData) {
-    let futureRegion = futureData[id];
-    let code = getRegionCode(futureRegion);
-    newRegions[code] = futureRegion;
-  }
-
-  let china = null;
-
-  for (let region of output) {
-    if (region.id === "CHN") {
-      china = region;
-    }
-  }
-
-  for (let region of output) {
-    let newRegion = newRegions[region.id];
-    if (!newRegion) {
-      console.warn(`The region from current data is missing in future data: ${region.id}.`);
-      continue;
-    }
-    let value = newRegion.dates["2020-3-25"];
-    if (!value) {
-      console.warn(`New data doesn't have value for 2020-3-25 for ${region.id}`);
-      continue;
-    }
-    region.dates.push({
-      date: "2020-3-25",
-      "value": value,
-    });
-    let newRegionSubslice = JSON.parse(JSON.stringify(newRegion));
-    newRegionSubslice.dates = {
-      "2020-3-25": newRegion.dates["2020-3-25"]
-    };
-    maybeAddToChina(china, newRegionSubslice);
-  }
-}
-
 let source = readJSONFile("./data/timeseries-byLocation.json");
 let iso3166 = readJSONFile("./data/iso3166.json");
 let stateNames = getStateNames();
@@ -431,9 +325,6 @@ let output = convert(source, iso3166, stateNames);
 
 let oldSource = readJSONFile("./data/timeseries.json");
 backFill(output, oldSource);
-
-let futureData = readJSONFile("./data/timeseries-byLocation-future.json");
-addNewData(output, futureData);
 
 fixData(output);
 
