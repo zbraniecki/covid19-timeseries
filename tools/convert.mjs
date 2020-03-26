@@ -69,7 +69,7 @@ function maybeAddToChina(china, region) {
     region.country !== "HKG") {
     return;
   }
-  if (region.county || region.city) {
+  if (!region.state || region.county || region.city) {
     return;
   }
 
@@ -80,18 +80,28 @@ function maybeAddToChina(china, region) {
     for (let chinaDate of china.dates) {
       if (chinaDate.date == date.date) {
         for (let type in date.value) {
+          if (type == "growthFactor") {
+            continue;
+          }
           if (chinaDate.value[type]) {
             chinaDate.value[type] += date.value[type];
           } else {
             chinaDate.value[type] = date.value[type];
           }
-          found = true;
-          break;
         }
+        found = true;
+        break;
       }
     }
     if (!found) {
-      china.dates.push(date);
+      let d = {
+        date: date.date,
+        value: {},
+      };
+      for (let type in date.value) {
+        d.value[type] = date.value[type];
+      }
+      china.dates.push(d);
     }
   }
 }
