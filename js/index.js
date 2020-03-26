@@ -200,13 +200,17 @@ function processRegionData(sortedDataSet, userPreferences) {
 
   }).map(region => {
     let value = calculateValue(region.dates, region.dates.length - 1, type, view);
+    let search = `${region.meta.country.code.toLowerCase()} ${region.meta.country.shortName.toLowerCase()} ${region.meta.country.name.toLowerCase()}`;
+    if (region.meta.state.code) {
+      search += ` ${region.meta.state.code.toLowerCase()} ${region.meta.state.name.toLowerCase()}`;
+    }
     return {
       "id": region.id,
       "name": region.displayName,
       "country": region.meta.country,
       "state": region.meta.state,
       "county": region.meta.county,
-      "search": `${region.meta.country.code.toLowerCase()} ${region.meta.country.shortName.toLowerCase()} ${region.meta.country.name.toLowerCase()}`,
+      "search": search,
       "visible": true,
       "value": formatValue(value, userPreferences),
     };
