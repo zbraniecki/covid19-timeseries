@@ -345,6 +345,12 @@ async function main() {
         userPreferences.selectedTaxonomies = userPreferences.selectedTaxonomies.filter(item => item !== value);
       }
       v.data = processData(sortedDataSet, userPreferences);
+      let params = getSearchParams();
+      params.delete("tax");
+      for (let tax of userPreferences.selectedTaxonomies) {
+        params.append("tax", tax);
+      }
+      setURL(params);
     });
   });
 }

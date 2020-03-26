@@ -23,6 +23,11 @@ function getUserPreferences() {
   if (regions.length > 0) {
     result.regions = regions;
   }
+
+  let taxonomies = params.getAll("tax");
+  if (taxonomies.length > 0) {
+    result.selectedTaxonomies = taxonomies;
+  }
   return result;
 }
 
