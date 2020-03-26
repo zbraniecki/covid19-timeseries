@@ -183,22 +183,8 @@ function processRegionData(sortedDataSet, userPreferences) {
   let {type, view} = getTypeAndView(SETTINGS, userPreferences);
   let typeFilter = userPreferences.selectedTaxonomies;
 
-  return sortedDataSet.filter(region => {
-    if (region.meta.city.code) {
-      return typeFilter.includes("city");
-    }
-    if (region.meta.county.code) {
-      return typeFilter.includes("county");
-    }
-    if (region.meta.state.code) {
-      return typeFilter.includes("state");
-    }
-    if (region.meta.country.code) {
-      return typeFilter.includes("country");
-    }
-    return false;
-
-  }).map(region => {
+  return sortedDataSet.filter(region => isRegionInUserPreferences(region, userPreferences))
+  .map(region => {
     let value = calculateValue(region.dates, region.dates.length - 1, type, view);
     let search = `${region.meta.country.code.toLowerCase()} ${region.meta.country.shortName.toLowerCase()} ${region.meta.country.name.toLowerCase()}`;
     if (region.meta.state.code) {

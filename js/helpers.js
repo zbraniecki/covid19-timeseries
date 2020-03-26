@@ -96,8 +96,8 @@ function calculateValue(datesSet, idx, type, view) {
   if (view.id === "delta") {
     let value = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
     let valuePrev = calculateValue(datesSet, idx - 1, type, getView(SETTINGS, "total"));
-    if (valuePrev === undefined) {
-      return undefined;
+    if (!valuePrev) {
+      return 0;
     }
     return (value / valuePrev) - 1;
   }
@@ -118,11 +118,31 @@ function calculateValue(datesSet, idx, type, view) {
   return day.value[type.id];
 }
 
+function isRegionInUserPreferences(region, userPreferences) {
+  let typeFilter = userPreferences.selectedTaxonomies;
+    if (region.meta.city.code) {
+      return typeFilter.includes("city");
+    }
+    if (region.meta.county.code) {
+      return typeFilter.includes("county");
+    }
+    if (region.meta.state.code) {
+      return typeFilter.includes("state");
+    }
+    if (region.meta.country.code) {
+      return typeFilter.includes("country");
+    }
+    return false;
+}
+
 function narrowDataSet(sortedDataSet, userPreferences) {
   let result = [];
 
   for (let i in sortedDataSet) {
     let region = sortedDataSet[i];
+    if (!isRegionInUserPreferences(region, userPreferences)) {
+      continue;
+    }
     if (
       (userPreferences.regions.length === 0 && result.length < 10) ||
       (userPreferences.regions.length > 0 && userPreferences.regions.includes(region.id))

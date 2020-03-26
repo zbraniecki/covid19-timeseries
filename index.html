@@ -6,6 +6,7 @@
     <script src="./js/helpers.js"></script>
     <script src="./js/regions.js"></script>
     <script src="./vendor/vue.min.js"></script>
+    <!-- <script src="https://vuejs.org/js/vue.js"></script> -->
     <script src="./js/index.js"></script>
     <title>COVID-19 Regional Relative Timeseries</title>
   </head>
@@ -22,25 +23,25 @@
             </tr>
             <tr class="country" v-bind:style="data.main.rows.country ? '' : 'display: none'">
               <th>Country:</th>
-              <th class="value" v-for="item in data.main.regions" :key="item.country" colspan="2">
+              <th class="value" v-for="item in data.main.regions" colspan="2">
                 {{ item.country }}
               </th>
             </tr>
             <tr class="state" v-bind:style="data.main.rows.state ? '' : 'display: none'">
               <th>State:</th>
-              <th class="value" v-for="item in data.main.regions" :key="item.state" colspan="2">
+              <th class="value" v-for="item in data.main.regions" colspan="2">
                 {{ item.state }}
               </th>
             </tr>
             <tr class="county" v-bind:style="data.main.rows.county ? '' : 'display: none'">
               <th>County:</th>
-              <th class="value" v-for="item in data.main.regions" :key="item.state" colspan="2">
+              <th class="value" v-for="item in data.main.regions" colspan="2">
                 {{ item.state }}
               </th>
             </tr>
             <tr class="population" v-bind:style="data.main.rows.population ? '' : 'display: none'">
               <th>Popul.:</th>
-              <th class="value" v-for="item in data.main.regions" :key="item.population" colspan="2">
+              <th class="value" v-for="item in data.main.regions" colspan="2">
                 {{ item.population }}
               </th>
             </tr>
