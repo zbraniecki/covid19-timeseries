@@ -124,8 +124,8 @@ function narrowDataSet(sortedDataSet, userPreferences) {
   for (let i in sortedDataSet) {
     let region = sortedDataSet[i];
     if (
-      (userPreferences.regions === null && result.length < 10) ||
-      (userPreferences.regions !== null && userPreferences.regions.includes(region.id))
+      (userPreferences.regions.length === 0 && result.length < 10) ||
+      (userPreferences.regions.length > 0 && userPreferences.regions.includes(region.id))
     ) {
       result.push(region);
     }
