@@ -124,9 +124,22 @@ table#data td.value.quarantine {
   width: 100%;
 }
 
+#sidebar input#regionFilter {
+  width: 70%;
+}
+
+#sidebar input#regionFilterClear {
+  width: 20%;
+}
+
 #sidebar select#regionSelect {
   height: 50%;
 }
+
+#sidebar select#regionSelect option.filteredOut {
+  display: none;
+}
+
 
 table#legend {
   border: 1px solid #333333;

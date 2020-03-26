@@ -129,10 +129,12 @@
         </dl>
         <p>Regions</p>
         <input id="regionFilter" type="text" placeholder="Search..."/>
+        <input id="regionFilterClear" type="button" value="x"/>
         <select multiple id="regionSelect">
           <option
             v-for="item in data.select.regions"
             v-bind:selected="data.main.regions.find(r => r.id == item.id)"
+            v-bind:class="{ filteredOut: !item.visible }"
             v-bind:value="item.id"
             :key="item.id">
           {{ item.name }}  -- {{ item.value }}

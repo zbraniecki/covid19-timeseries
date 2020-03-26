@@ -156,10 +156,6 @@ function processMainData(dataSet, userPreferences) {
 
 function processRegionData(sortedDataSet, userPreferences) {
   let {type, view} = getTypeAndView(SETTINGS, userPreferences);
-  let filterElement = document.getElementById("regionFilter");
-
-  let filterText = filterElement.value;
-
   let typeFilter = userPreferences.filter;
 
   return sortedDataSet.filter(region => {
@@ -175,7 +171,8 @@ function processRegionData(sortedDataSet, userPreferences) {
     if (region.meta.country.id && !typeFilter.includes("country")) {
       return false;
     }
-    return filterText.length == 0 || region.id.toLowerCase().includes(filterText.toLowerCase());
+    return true;
+
   }).map(region => {
     let value = calculateValue(region.dates, region.dates.length - 1, type, view);
     return {
@@ -184,9 +181,21 @@ function processRegionData(sortedDataSet, userPreferences) {
       "country": region.meta.country,
       "state": region.meta.state,
       "county": region.meta.county,
+      "search": `${region.meta.country.code.toLowerCase()} ${region.meta.country.shortName.toLowerCase()} ${region.meta.country.name.toLowerCase()}`,
+      "visible": true,
       "value": formatValue(value, userPreferences),
     };
   });
+}
+
+function filterByNeedle(regions, needle) {
+  for (let region of regions) {
+    if (!needle || region.search.includes(needle)) {
+      region.visible = true;
+    } else {
+      region.visible = false;
+    }
+  }
 }
 
 function processData(sortedDataSet, userPreferences) {
@@ -242,6 +251,9 @@ async function main() {
     let selected = filter.length > 0 ? userPreferences.regions : [];
 
     for (let i = 0; i < this.options.length; i++) {
+      if (this.options[i].classList.contains("filteredOut")) {
+        continue;
+      }
       if (this.options[i].selected) {
         selected.push(this.options[i].value);
       } else if (filter.length > 0) {
@@ -281,7 +293,16 @@ async function main() {
   });
 
   document.getElementById("regionFilter").addEventListener("input", function () {
-    v.data.select.regions = processRegionData(sortedDataSet, userPreferences);
+    let filterElement = document.getElementById("regionFilter");
+    let filterText = filterElement.value;
+    let needle = filterText.toLowerCase();
+
+    filterByNeedle(v.data.select.regions, needle);
+  });
+
+  document.getElementById("regionFilterClear").addEventListener("click", function () {
+    document.getElementById("regionFilter").value = "";
+    filterByNeedle(v.data.select.regions, null);
   });
 }
 
