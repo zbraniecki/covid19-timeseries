@@ -157,10 +157,14 @@ table#data td.value.quarantine {
 
 
 table#legend {
+  width: 90%;
   border: 1px solid #333333;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 3px;
+  margin: 10px;
+}
+
+table#legend tr.color {
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 table#legend td {
