@@ -2,8 +2,8 @@ function getUserPreferences() {
   let result = {
     type: "cases",
     view: "total",
-    regions: null,
-    filter: ["country", "state"],
+    regions: [],
+    selectedTaxonomies: ["country"],
   };
   let params = getSearchParams();
 
@@ -244,6 +244,9 @@ function setURL(params) {
 }
 
 function nFormatter(num, digits) {
+  if (!num) {
+    return "";
+  }
   const si = [
     { value: 1, symbol: "" },
     { value: 1E3, symbol: " k" },

@@ -94,12 +94,22 @@ const SETTINGS = {
       },
     },
   ],
+  "taxonomies": [
+    {
+      "id": "country",
+      "name": "Country",
+    },
+    {
+      "id": "state",
+      "name": "State",
+    },
+  ],
 };
 
 function processMainData(dataSet, userPreferences) {
   let result = {
     "rows": {
-      "population": true,
+      "population": false,
       "country": false,
       "state": false,
       "county": false,
@@ -112,11 +122,26 @@ function processMainData(dataSet, userPreferences) {
 
   for (let i in dataSet) {
     let region = dataSet[i];
-    result.regions.push({
-      "id": region.id,
-      "name": region.meta.country.shortName,
-      "population": nFormatter(region.meta.population, 2),
-    });
+
+    {
+      let name = region.meta.country.shortName;
+      let country = undefined;
+      if (region.meta.state.code) {
+        name = region.meta.state.name;
+        country = region.meta.country.shortName;
+        result.rows.country = true;
+      }
+      if (region.meta.population) {
+        result.rows.population = true;
+      }
+      let entry = {
+        "id": region.id,
+        "name": name,
+        "country": country,
+        "population": nFormatter(region.meta.population, 2),
+      };
+      result.regions.push(entry);
+    }
 
     if (region.normalized["status"] === "none") {
       continue;
@@ -156,28 +181,28 @@ function processMainData(dataSet, userPreferences) {
 
 function processRegionData(sortedDataSet, userPreferences) {
   let {type, view} = getTypeAndView(SETTINGS, userPreferences);
-  let typeFilter = userPreferences.filter;
+  let typeFilter = userPreferences.selectedTaxonomies;
 
   return sortedDataSet.filter(region => {
-    if (region.meta.city.id && !typeFilter.includes("city")) {
-      return false;
+    if (region.meta.city.code) {
+      return typeFilter.includes("city");
     }
-    if (region.meta.county.id && !typeFilter.includes("county")) {
-      return false;
+    if (region.meta.county.code) {
+      return typeFilter.includes("county");
     }
-    if (region.meta.state.id && !typeFilter.includes("state")) {
-      return false;
+    if (region.meta.state.code) {
+      return typeFilter.includes("state");
     }
-    if (region.meta.country.id && !typeFilter.includes("country")) {
-      return false;
+    if (region.meta.country.code) {
+      return typeFilter.includes("country");
     }
-    return true;
+    return false;
 
   }).map(region => {
     let value = calculateValue(region.dates, region.dates.length - 1, type, view);
     return {
       "id": region.id,
-      "name": region.meta.country.shortName,
+      "name": region.displayName,
       "country": region.meta.country,
       "state": region.meta.state,
       "county": region.meta.county,
@@ -205,11 +230,13 @@ function processData(sortedDataSet, userPreferences) {
     },
     "selectedType": userPreferences.type,
     "selectedView": userPreferences.view,
+    "selectedTaxonomies": userPreferences.selectedTaxonomies,
     "main": null,
     "select": {
       "types": null,
       "views": null,
-      "regions": null
+      "regions": null,
+      "taxonomies": SETTINGS.taxonomies,
     }
   };
 
@@ -303,6 +330,18 @@ async function main() {
   document.getElementById("regionFilterClear").addEventListener("click", function () {
     document.getElementById("regionFilter").value = "";
     filterByNeedle(v.data.select.regions, null);
+  });
+
+  document.querySelectorAll("#sidebar .taxonomyCheckbox").forEach(elem => {
+    elem.addEventListener("click", function () {
+      let value = this.value;
+      if (this.checked && !userPreferences.selectedTaxonomies.includes(value)) {
+        userPreferences.selectedTaxonomies.push(value);
+      } else if (!this.checked && userPreferences.selectedTaxonomies.includes(value)) {
+        userPreferences.selectedTaxonomies = userPreferences.selectedTaxonomies.filter(item => item !== value);
+      }
+      v.data = processData(sortedDataSet, userPreferences);
+    });
   });
 }
 

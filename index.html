@@ -114,6 +114,8 @@
               </option>
             </select>
           </dd>
+        </dl>
+        <dl>
           <dt>View</dt>
           <dd>
             <select id="viewSelect">
@@ -140,6 +142,19 @@
           {{ item.name }}  -- {{ item.value }}
           </option>
         </select>
+        <dl
+            v-for="tax in data.select.taxonomies"
+          >
+          <dt><label v-bind:for="'taxonomy' + tax.id">{{ tax.name }}</label></dt>
+          <dd>
+            <input
+              v-bind:id="'taxonomy' + tax.id"
+              class="taxonomyCheckbox"
+              v-bind:checked="data.selectedTaxonomies.includes(tax.id)"
+              v-bind:value="tax.id"
+              type="checkbox"/>
+          </dd>
+        </dl>
       </div>
     </div>
   </body>

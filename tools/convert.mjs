@@ -13,6 +13,14 @@ function writeJSON(path, json) {
   fs.writeFileSync(path, string);
 }
 
+function getStateNames() {
+  let result = {};
+  
+  result["USA"] = readJSONFile("./data/usa_states.json");
+
+  return result;
+}
+
 function intoDatesArray(dates, regionId) {
   let result = [];
   let prev = 0;
@@ -40,6 +48,10 @@ function getISOEntryForAlpha3(iso3166, alpha3) {
 
 function isCountry(region) {
   return !region.state && !region.city && !region.county;
+}
+
+function isState(region) {
+  return region.state && !region.city && !region.county;
 }
 
 function isAlpha3Country(region) {
@@ -110,11 +122,51 @@ function getShortName(iso3166Entry) {
   return name;
 }
 
-function convert(input) {
+function getDisplayName(entry) {
+  if (!entry.meta.state.code && !entry.meta.county.code && !entry.meta.city.code) {
+    return entry.meta.country.shortName;
+  }
+  if (!entry.meta.county.code && !entry.meta.city.code) {
+    return `${entry.meta.state.name} (${entry.meta.country.shortName})`;
+  }
+  return entry.id;
+}
+
+function getRegionCode(region) {
+  let result = [];
+  if (region.country) {
+    result.push(region.country);
+  }
+  if (region.state) {
+    result.push(region.state);
+  }
+  if (region.county) {
+    result.push(region.county);
+  }
+  if (region.city) {
+    result.push(region.city);
+  }
+  return result.join("_");
+}
+
+function getStateName(stateCode, countryCode, stateNames) {
+  let countryCodes = stateNames[countryCode];
+  if (!countryCodes) {
+    return stateCode;
+  }
+  let stateName = countryCodes[stateCode];
+  if (!stateName) {
+    return stateCode;
+  }
+  return stateName;
+}
+
+function convert(input, iso3166, stateNames) {
   let result = [];
 
   let china = {
     "id": "CHN",
+    "displayName": "China",
     "dates": [],
     "meta": {
       "country": {
@@ -137,7 +189,7 @@ function convert(input) {
 
     maybeAddToChina(china, region);
 
-    if (!isCountry(region)) {
+    if (!isCountry(region) && !isState(region)) {
       continue;
     }
 
@@ -146,14 +198,18 @@ function convert(input) {
     }
 
     let dates = intoDatesArray(region.dates, regionCode);
-    if (!hasMoreThanXCases(dates, 20)) {
+    if (!hasMoreThanXCases(dates, 1)) {
       continue;
     }
 
     let isoEntry = getISOEntryForAlpha3(iso3166, region.country);
+    if (!isoEntry) {
+      console.warn(`No ISO entry for country ${region.country}, skipping.`);
+      continue;
+    }
 
-    result.push({
-      "id": regionCode,
+    let entry = {
+      "id": getRegionCode(region),
       "dates": dates,
       "meta": {
         "country": {
@@ -163,6 +219,7 @@ function convert(input) {
         },
         "state": {
           "code": region.state,
+          "name": getStateName(region.state, region.country, stateNames),
         },
         "county": {
           "code": region.county,
@@ -174,7 +231,9 @@ function convert(input) {
         "tz": region.tz,
         "population": region.population,
       },
-    });
+    };
+    entry.displayName = getDisplayName(entry);
+    result.push(entry);
   }
 
   china.dates = china.dates.sort((a, b) => a.date - b.date);
@@ -189,9 +248,11 @@ let oldNames = {
   "VNM": "Vietnam",
   "CIV": "Cote d'Ivoire",
   "GBR": "United Kingdom",
+  "COD": "Congo (Kinshasa)",
+  "COG": "Congo (Brazzaville)",
 };
 // Those regions don't have data in old timeseries.
-let knownSkipped = ["COD", "MTQ", "REU", "GLP", "HKG", "MAC", "FRO", ];
+let knownSkipped = ["MTQ", "REU", "GLP", "HKG", "MAC", "FRO", "GUF", "MYT", "GRL", "GUM", "GGY", "JEY", "PRI", ];
 
 function getOldName(region) {
   if (oldNames[region.id]) {
@@ -202,6 +263,9 @@ function getOldName(region) {
 
 function backFill(output, oldSource) {
   for (let region of output) {
+    if (region.meta.state.code || region.meta.county.code || region.meta.city.code) {
+      continue;
+    }
     if (knownSkipped.includes(region.id)) {
       continue;
     }
@@ -294,7 +358,8 @@ function fixData(output) {
 
 let source = readJSONFile("./data/timeseries-byLocation.json");
 let iso3166 = readJSONFile("./data/iso3166.json");
-let output = convert(source, iso3166);
+let stateNames = getStateNames();
+let output = convert(source, iso3166, stateNames);
 
 let oldSource = readJSONFile("./data/timeseries.json");
 backFill(output, oldSource);
