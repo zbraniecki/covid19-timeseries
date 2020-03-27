@@ -122,7 +122,7 @@ table#data td.value.quarantine {
   padding-right: 5px;
 }
 
-#sidebar select {
+#sidebar select#regionSelect {
   width: 100%;
 }
 
@@ -143,23 +143,28 @@ table#data td.value.quarantine {
 }
 
 #sidebar dl {
-  display: table-row;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0;
 }
 
 #sidebar dt {
-  padding-right: 10px;
 }
 
-#sidebar dt,
 #sidebar dd {
-  display: table-cell;
+  margin: 0;
+}
+
+#sidebar dl select,
+#sidebar dl input {
+  width: 100%;
 }
 
 
 table#legend {
-  width: 90%;
+  width: 95%;
   border: 1px solid #333333;
-  margin: 10px;
+  margin: 2%;
 }
 
 table#legend tr.color {

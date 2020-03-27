@@ -2,6 +2,7 @@ function getUserPreferences() {
   let result = {
     type: "cases",
     view: "total",
+    normalize: null,
     regions: [],
     selectedTaxonomies: ["country"],
   };
@@ -19,6 +20,10 @@ function getUserPreferences() {
       result.view = view;
     }
   }
+  let normalize = params.get("normalize");
+  if (normalize !== undefined) {
+    result.normalize = normalize;
+  }
   let regions = params.getAll("region");
   if (regions.length > 0) {
     result.regions = regions;
@@ -31,6 +36,14 @@ function getUserPreferences() {
   return result;
 }
 
+function getValueForNormalization(type, userPreferences) {
+  if (userPreferences.normalize !== null) {
+    return userPreferences.normalize;
+  }
+
+  return type.normalize;
+}
+
 function getTaxonomyName(tax) {
   if (tax.shortName) {
     return tax.shortName;
@@ -40,6 +53,7 @@ function getTaxonomyName(tax) {
 
 function normalizeDataSet(sortedDataSet, userPreferences) {
   let {type} = getTypeAndView(SETTINGS, userPreferences);
+  let normalizedValue = getValueForNormalization(type, userPreferences);
 
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
@@ -51,7 +65,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     for (let i = 0; i < region.dates.length; i++) {
       let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
       let nextValue = calculateValue(region.dates, i + 1, type, getView(SETTINGS, "total"));
-      if (nextValue >= type.views["total"].min && value !== undefined) {
+      if (nextValue >= normalizedValue && value !== undefined) {
         normalized = {
           "status": "normalized",
           "value": i,
@@ -85,13 +99,6 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     }
     region.normalized = normalized;
   }
-}
-
-function getNormalizedType(types, type) {
-  if (type.base !== null) {
-    return getType(types, type.base);
-  }
-  return type;
 }
 
 function calculateValue(datesSet, idx, type, view) {

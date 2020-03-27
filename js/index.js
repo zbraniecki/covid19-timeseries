@@ -21,18 +21,16 @@ const SETTINGS = {
       "id": "cases",
       "name": "cases",
       "sentiment": "negative",
+      "normalize": 500,
       "views": {
         "total": {
           "max": 50000,
-          "min": 500,
         },
         "delta": {
           "max": 0.5,
-          "min": 0.0,
         },
         "ema": {
           "max": 0.3,
-          "min": 0.0,
         },
       },
     },
@@ -40,18 +38,16 @@ const SETTINGS = {
       "id": "deaths",
       "name": "deaths",
       "sentiment": "negative",
+      "normalize": 30,
       "views": {
         "total": {
           "max": 4000,
-          "min": 30,
         },
         "delta": {
           "max": 0.2,
-          "min": 0.01,
         },
         "ema": {
           "max": 0.3,
-          "min": 0.0,
         },
       },
     },
@@ -59,18 +55,16 @@ const SETTINGS = {
       "id": "active",
       "name": "active",
       "sentiment": "negative",
+      "normalize": 200,
       "views": {
         "total": {
           "max": 50000,
-          "min": 200,
         },
         "delta": {
           "max": 0.5,
-          "min": 0.0,
         },
         "ema": {
           "max": 0.3,
-          "min": 0.0,
         },
       },
     },
@@ -78,18 +72,16 @@ const SETTINGS = {
       "id": "tested",
       "name": "tested",
       "sentiment": "positive",
+      "normalize": 100,
       "views": {
         "total": {
           "max": 50000,
-          "min": 100,
         },
         "delta": {
           "max": 0.5,
-          "min": 0.0,
         },
         "ema": {
           "max": 0.3,
-          "min": 0.0,
         },
       },
     },
@@ -219,12 +211,14 @@ function filterByNeedle(regions, needle) {
 }
 
 function processData(sortedDataSet, userPreferences) {
+  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
   let result = {
     "legend": {
       "min": null,
     },
     "selectedType": userPreferences.type,
     "selectedView": userPreferences.view,
+    "selectedNormalize": getValueForNormalization(type, userPreferences),
     "selectedTaxonomies": userPreferences.selectedTaxonomies,
     "main": null,
     "select": {
@@ -235,8 +229,7 @@ function processData(sortedDataSet, userPreferences) {
     }
   };
 
-  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
-  result.legend.min = `Last day below ${type.views["total"].min} ${type.name}.`;
+  result.legend.min = `Last day below ${getValueForNormalization(type, userPreferences)} ${type.name}.`;
 
   let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
   normalizeDataSet(selectedDataSet, userPreferences);
@@ -298,11 +291,13 @@ async function main() {
 
   document.getElementById("typeSelect").addEventListener("change", function () {
     userPreferences.type = this.value;
+    userPreferences.normalize = null;
     sortedDataSet = sortDataSet(dataSet, userPreferences);
     v.data = processData(sortedDataSet, userPreferences);
 
     let params = getSearchParams();
     params.set("type", userPreferences.type);
+    params.delete("normalize");
     setURL(params);
   });
 
@@ -311,6 +306,22 @@ async function main() {
     v.data = processData(sortedDataSet, userPreferences);
     let params = getSearchParams();
     params.set("view", userPreferences.view);
+    setURL(params);
+  });
+
+  document.getElementById("normalizeSelect").addEventListener("change", function () {
+    if (this.value.length > 0 && !isNaN(parseInt(this.value))) {
+      userPreferences.normalize = parseInt(this.value);
+    } else {
+      userPreferences.normalize = null;
+    }
+    v.data = processData(sortedDataSet, userPreferences);
+    let params = getSearchParams();
+    if (userPreferences.normalize == null) {
+      params.delete("normalize");
+    } else {
+      params.set("normalize", userPreferences.normalize);
+    }
     setURL(params);
   });
 
