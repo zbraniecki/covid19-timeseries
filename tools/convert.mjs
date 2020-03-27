@@ -86,17 +86,30 @@ function getShortName(iso3166Entry) {
   if (bracket != -1) {
     return name.substr(0, bracket - 1);
   }
-  return name;
+  return undefined;
+}
+
+function getTaxonomyName(tax) {
+  if (tax.shortName) {
+    return tax.shortName;
+  }
+  return tax.name;
+}
+
+function getRegionTaxonomy(region) {
+  if (region.state) {
+    return "state";
+  }
+  return "country";
 }
 
 function getDisplayName(entry) {
-  if (!entry.meta.state.code && !entry.meta.county.code && !entry.meta.city.code) {
-    return entry.meta.country.shortName;
+  let countryName = getTaxonomyName(entry.meta.country);
+  if (entry.meta.taxonomy == "country") {
+    return countryName;
   }
-  if (!entry.meta.county.code && !entry.meta.city.code) {
-    return `${entry.meta.state.name} (${entry.meta.country.shortName})`;
-  }
-  return entry.id;
+  let stateName = getTaxonomyName(entry.meta.state);
+  return `${stateName} (${countryName})`;
 }
 
 function getRegionCode(region) {
@@ -175,6 +188,7 @@ function convert(input, iso3166, stateNames) {
         "rating": region.rating,
         "tz": region.tz,
         "population": region.population,
+        "taxonomy": getRegionTaxonomy(region),
       },
     };
     entry.displayName = getDisplayName(entry);
@@ -203,7 +217,7 @@ function getOldName(region) {
   if (oldNames[region.id]) {
     return oldNames[region.id];
   }
-  return region.meta.country.shortName;
+  return getTaxonomyName(region.meta.country);
 }
 
 function backFill(output, oldSource) {

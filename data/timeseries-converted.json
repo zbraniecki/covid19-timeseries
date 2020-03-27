@@ -655,8 +655,7 @@
     "meta": {
       "country": {
         "code": "THA",
-        "name": "Thailand",
-        "shortName": "Thailand"
+        "name": "Thailand"
       },
       "state": {},
       "county": {},
@@ -665,7 +664,8 @@
       "tz": [
         "Asia/Bangkok"
       ],
-      "population": 68414135
+      "population": 68414135,
+      "taxonomy": "country"
     },
     "displayName": "Thailand"
   },
@@ -1325,8 +1325,7 @@
     "meta": {
       "country": {
         "code": "JPN",
-        "name": "Japan",
-        "shortName": "Japan"
+        "name": "Japan"
       },
       "state": {},
       "county": {},
@@ -1335,7 +1334,8 @@
       "tz": [
         "Asia/Tokyo"
       ],
-      "population": 126451398
+      "population": 126451398,
+      "taxonomy": "country"
     },
     "displayName": "Japan"
   },
@@ -1995,8 +1995,7 @@
     "meta": {
       "country": {
         "code": "SGP",
-        "name": "Singapore",
-        "shortName": "Singapore"
+        "name": "Singapore"
       },
       "state": {},
       "county": {},
@@ -2005,7 +2004,8 @@
       "tz": [
         "Asia/Singapore"
       ],
-      "population": 5888926
+      "population": 5888926,
+      "taxonomy": "country"
     },
     "displayName": "Singapore"
   },
@@ -2665,8 +2665,7 @@
     "meta": {
       "country": {
         "code": "NPL",
-        "name": "Nepal",
-        "shortName": "Nepal"
+        "name": "Nepal"
       },
       "state": {},
       "county": {},
@@ -2675,7 +2674,8 @@
       "tz": [
         "Asia/Kathmandu"
       ],
-      "population": 29384297
+      "population": 29384297,
+      "taxonomy": "country"
     },
     "displayName": "Nepal"
   },
@@ -3335,8 +3335,7 @@
     "meta": {
       "country": {
         "code": "MYS",
-        "name": "Malaysia",
-        "shortName": "Malaysia"
+        "name": "Malaysia"
       },
       "state": {},
       "county": {},
@@ -3345,7 +3344,8 @@
       "tz": [
         "Etc/GMT-7"
       ],
-      "population": 31381992
+      "population": 31381992,
+      "taxonomy": "country"
     },
     "displayName": "Malaysia"
   },
@@ -3979,8 +3979,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "New South Wales",
@@ -3992,7 +3991,8 @@
       "tz": [
         "Australia/Sydney"
       ],
-      "population": 8089526
+      "population": 8089526,
+      "taxonomy": "state"
     },
     "displayName": "New South Wales (Australia)"
   },
@@ -4559,8 +4559,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "Victoria",
@@ -4572,7 +4571,8 @@
       "tz": [
         "Australia/Melbourne"
       ],
-      "population": 6594804
+      "population": 6594804,
+      "taxonomy": "state"
     },
     "displayName": "Victoria (Australia)"
   },
@@ -5201,8 +5201,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "Queensland",
@@ -5214,7 +5213,8 @@
       "tz": [
         "Australia/Brisbane"
       ],
-      "population": 5095100
+      "population": 5095100,
+      "taxonomy": "state"
     },
     "displayName": "Queensland (Australia)"
   },
@@ -5874,8 +5874,7 @@
     "meta": {
       "country": {
         "code": "KHM",
-        "name": "Cambodia",
-        "shortName": "Cambodia"
+        "name": "Cambodia"
       },
       "state": {},
       "county": {},
@@ -5884,7 +5883,8 @@
       "tz": [
         "Asia/Phnom_Penh"
       ],
-      "population": 16204486
+      "population": 16204486,
+      "taxonomy": "country"
     },
     "displayName": "Cambodia"
   },
@@ -6544,8 +6544,7 @@
     "meta": {
       "country": {
         "code": "LKA",
-        "name": "Sri Lanka",
-        "shortName": "Sri Lanka"
+        "name": "Sri Lanka"
       },
       "state": {},
       "county": {},
@@ -6554,7 +6553,8 @@
       "tz": [
         "Asia/Colombo"
       ],
-      "population": 22409381
+      "population": 22409381,
+      "taxonomy": "country"
     },
     "displayName": "Sri Lanka"
   },
@@ -7214,8 +7214,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {},
       "county": {},
@@ -7224,7 +7223,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 80594017
+      "population": 80594017,
+      "taxonomy": "country"
     },
     "displayName": "Germany"
   },
@@ -7884,8 +7884,7 @@
     "meta": {
       "country": {
         "code": "FIN",
-        "name": "Finland",
-        "shortName": "Finland"
+        "name": "Finland"
       },
       "state": {},
       "county": {},
@@ -7894,7 +7893,8 @@
       "tz": [
         "Europe/Helsinki"
       ],
-      "population": 5491218
+      "population": 5491218,
+      "taxonomy": "country"
     },
     "displayName": "Finland"
   },
@@ -8554,8 +8554,7 @@
     "meta": {
       "country": {
         "code": "ARE",
-        "name": "United Arab Emirates",
-        "shortName": "United Arab Emirates"
+        "name": "United Arab Emirates"
       },
       "state": {},
       "county": {},
@@ -8564,7 +8563,8 @@
       "tz": [
         "Asia/Dubai"
       ],
-      "population": 6072475
+      "population": 6072475,
+      "taxonomy": "country"
     },
     "displayName": "United Arab Emirates"
   },
@@ -9224,8 +9224,7 @@
     "meta": {
       "country": {
         "code": "PHL",
-        "name": "Philippines",
-        "shortName": "Philippines"
+        "name": "Philippines"
       },
       "state": {},
       "county": {},
@@ -9234,7 +9233,8 @@
       "tz": [
         "Asia/Manila"
       ],
-      "population": 104256076
+      "population": 104256076,
+      "taxonomy": "country"
     },
     "displayName": "Philippines"
   },
@@ -9894,8 +9894,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {},
       "county": {},
@@ -9904,7 +9903,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 1281935911
+      "population": 1281935911,
+      "taxonomy": "country"
     },
     "displayName": "India"
   },
@@ -10564,8 +10564,7 @@
     "meta": {
       "country": {
         "code": "SWE",
-        "name": "Sweden",
-        "shortName": "Sweden"
+        "name": "Sweden"
       },
       "state": {},
       "county": {},
@@ -10574,7 +10573,8 @@
       "tz": [
         "Europe/Stockholm"
       ],
-      "population": 9960487
+      "population": 9960487,
+      "taxonomy": "country"
     },
     "displayName": "Sweden"
   },
@@ -11216,8 +11216,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {},
       "county": {},
@@ -11226,7 +11225,8 @@
       "tz": [
         "Etc/GMT"
       ],
-      "population": 48958159
+      "population": 48958159,
+      "taxonomy": "country"
     },
     "displayName": "Spain"
   },
@@ -11856,8 +11856,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "South Australia",
@@ -11869,7 +11868,8 @@
       "tz": [
         "Australia/Adelaide"
       ],
-      "population": 1751693
+      "population": 1751693,
+      "taxonomy": "state"
     },
     "displayName": "South Australia (Australia)"
   },
@@ -12529,8 +12529,7 @@
     "meta": {
       "country": {
         "code": "BEL",
-        "name": "Belgium",
-        "shortName": "Belgium"
+        "name": "Belgium"
       },
       "state": {},
       "county": {},
@@ -12539,7 +12538,8 @@
       "tz": [
         "Europe/Brussels"
       ],
-      "population": 11491346
+      "population": 11491346,
+      "taxonomy": "country"
     },
     "displayName": "Belgium"
   },
@@ -13199,8 +13199,7 @@
     "meta": {
       "country": {
         "code": "EGY",
-        "name": "Egypt",
-        "shortName": "Egypt"
+        "name": "Egypt"
       },
       "state": {},
       "county": {},
@@ -13209,7 +13208,8 @@
       "tz": [
         "Africa/Cairo"
       ],
-      "population": 97041072
+      "population": 97041072,
+      "taxonomy": "country"
     },
     "displayName": "Egypt"
   },
@@ -13869,8 +13869,7 @@
     "meta": {
       "country": {
         "code": "LBN",
-        "name": "Lebanon",
-        "shortName": "Lebanon"
+        "name": "Lebanon"
       },
       "state": {},
       "county": {},
@@ -13879,7 +13878,8 @@
       "tz": [
         "Asia/Beirut"
       ],
-      "population": 6229794
+      "population": 6229794,
+      "taxonomy": "country"
     },
     "displayName": "Lebanon"
   },
@@ -14539,8 +14539,7 @@
     "meta": {
       "country": {
         "code": "IRQ",
-        "name": "Iraq",
-        "shortName": "Iraq"
+        "name": "Iraq"
       },
       "state": {},
       "county": {},
@@ -14549,7 +14548,8 @@
       "tz": [
         "Asia/Baghdad"
       ],
-      "population": 39192111
+      "population": 39192111,
+      "taxonomy": "country"
     },
     "displayName": "Iraq"
   },
@@ -15209,8 +15209,7 @@
     "meta": {
       "country": {
         "code": "OMN",
-        "name": "Oman",
-        "shortName": "Oman"
+        "name": "Oman"
       },
       "state": {},
       "county": {},
@@ -15219,7 +15218,8 @@
       "tz": [
         "Asia/Muscat"
       ],
-      "population": 3424386
+      "population": 3424386,
+      "taxonomy": "country"
     },
     "displayName": "Oman"
   },
@@ -15879,8 +15879,7 @@
     "meta": {
       "country": {
         "code": "AFG",
-        "name": "Afghanistan",
-        "shortName": "Afghanistan"
+        "name": "Afghanistan"
       },
       "state": {},
       "county": {},
@@ -15889,7 +15888,8 @@
       "tz": [
         "Asia/Kabul"
       ],
-      "population": 34124811
+      "population": 34124811,
+      "taxonomy": "country"
     },
     "displayName": "Afghanistan"
   },
@@ -16549,8 +16549,7 @@
     "meta": {
       "country": {
         "code": "BHR",
-        "name": "Bahrain",
-        "shortName": "Bahrain"
+        "name": "Bahrain"
       },
       "state": {},
       "county": {},
@@ -16559,7 +16558,8 @@
       "tz": [
         "Asia/Bahrain"
       ],
-      "population": 1410942
+      "population": 1410942,
+      "taxonomy": "country"
     },
     "displayName": "Bahrain"
   },
@@ -17219,8 +17219,7 @@
     "meta": {
       "country": {
         "code": "KWT",
-        "name": "Kuwait",
-        "shortName": "Kuwait"
+        "name": "Kuwait"
       },
       "state": {},
       "county": {},
@@ -17229,7 +17228,8 @@
       "tz": [
         "Asia/Kuwait"
       ],
-      "population": 2875422
+      "population": 2875422,
+      "taxonomy": "country"
     },
     "displayName": "Kuwait"
   },
@@ -17889,8 +17889,7 @@
     "meta": {
       "country": {
         "code": "DZA",
-        "name": "Algeria",
-        "shortName": "Algeria"
+        "name": "Algeria"
       },
       "state": {},
       "county": {},
@@ -17899,7 +17898,8 @@
       "tz": [
         "Africa/Algiers"
       ],
-      "population": 40969443
+      "population": 40969443,
+      "taxonomy": "country"
     },
     "displayName": "Algeria"
   },
@@ -18559,8 +18559,7 @@
     "meta": {
       "country": {
         "code": "HRV",
-        "name": "Croatia",
-        "shortName": "Croatia"
+        "name": "Croatia"
       },
       "state": {},
       "county": {},
@@ -18569,7 +18568,8 @@
       "tz": [
         "Europe/Sarajevo"
       ],
-      "population": 4292095
+      "population": 4292095,
+      "taxonomy": "country"
     },
     "displayName": "Croatia"
   },
@@ -19213,8 +19213,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {},
       "county": {},
@@ -19223,7 +19222,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 8236303
+      "population": 8236303,
+      "taxonomy": "country"
     },
     "displayName": "Switzerland"
   },
@@ -19883,8 +19883,7 @@
     "meta": {
       "country": {
         "code": "AUT",
-        "name": "Austria",
-        "shortName": "Austria"
+        "name": "Austria"
       },
       "state": {},
       "county": {},
@@ -19893,7 +19892,8 @@
       "tz": [
         "Europe/Vienna"
       ],
-      "population": 8754413
+      "population": 8754413,
+      "taxonomy": "country"
     },
     "displayName": "Austria"
   },
@@ -20553,8 +20553,7 @@
     "meta": {
       "country": {
         "code": "ISR",
-        "name": "Israel",
-        "shortName": "Israel"
+        "name": "Israel"
       },
       "state": {},
       "county": {},
@@ -20563,7 +20562,8 @@
       "tz": [
         "Asia/Hebron"
       ],
-      "population": 8299706
+      "population": 8299706,
+      "taxonomy": "country"
     },
     "displayName": "Israel"
   },
@@ -21223,8 +21223,7 @@
     "meta": {
       "country": {
         "code": "PAK",
-        "name": "Pakistan",
-        "shortName": "Pakistan"
+        "name": "Pakistan"
       },
       "state": {},
       "county": {},
@@ -21233,7 +21232,8 @@
       "tz": [
         "Asia/Karachi"
       ],
-      "population": 204924861
+      "population": 204924861,
+      "taxonomy": "country"
     },
     "displayName": "Pakistan"
   },
@@ -21893,8 +21893,7 @@
     "meta": {
       "country": {
         "code": "BRA",
-        "name": "Brazil",
-        "shortName": "Brazil"
+        "name": "Brazil"
       },
       "state": {},
       "county": {},
@@ -21903,7 +21902,8 @@
       "tz": [
         "America/Cuiaba"
       ],
-      "population": 207353391
+      "population": 207353391,
+      "taxonomy": "country"
     },
     "displayName": "Brazil"
   },
@@ -22563,8 +22563,7 @@
     "meta": {
       "country": {
         "code": "GEO",
-        "name": "Georgia",
-        "shortName": "Georgia"
+        "name": "Georgia"
       },
       "state": {},
       "county": {},
@@ -22573,7 +22572,8 @@
       "tz": [
         "Asia/Tbilisi"
       ],
-      "population": 4926330
+      "population": 4926330,
+      "taxonomy": "country"
     },
     "displayName": "Georgia"
   },
@@ -23233,8 +23233,7 @@
     "meta": {
       "country": {
         "code": "GRC",
-        "name": "Greece",
-        "shortName": "Greece"
+        "name": "Greece"
       },
       "state": {},
       "county": {},
@@ -23243,7 +23242,8 @@
       "tz": [
         "Europe/Athens"
       ],
-      "population": 10768477
+      "population": 10768477,
+      "taxonomy": "country"
     },
     "displayName": "Greece"
   },
@@ -23903,8 +23903,7 @@
     "meta": {
       "country": {
         "code": "MKD",
-        "name": "North Macedonia",
-        "shortName": "North Macedonia"
+        "name": "North Macedonia"
       },
       "state": {},
       "county": {},
@@ -23913,7 +23912,8 @@
       "tz": [
         "Europe/Skopje"
       ],
-      "population": 2103721
+      "population": 2103721,
+      "taxonomy": "country"
     },
     "displayName": "North Macedonia"
   },
@@ -24573,8 +24573,7 @@
     "meta": {
       "country": {
         "code": "NOR",
-        "name": "Norway",
-        "shortName": "Norway"
+        "name": "Norway"
       },
       "state": {},
       "county": {},
@@ -24583,7 +24582,8 @@
       "tz": [
         "Europe/Oslo"
       ],
-      "population": 5320045
+      "population": 5320045,
+      "taxonomy": "country"
     },
     "displayName": "Norway"
   },
@@ -25243,8 +25243,7 @@
     "meta": {
       "country": {
         "code": "ROU",
-        "name": "Romania",
-        "shortName": "Romania"
+        "name": "Romania"
       },
       "state": {},
       "county": {},
@@ -25253,7 +25252,8 @@
       "tz": [
         "Europe/Bucharest"
       ],
-      "population": 21529967
+      "population": 21529967,
+      "taxonomy": "country"
     },
     "displayName": "Romania"
   },
@@ -25913,8 +25913,7 @@
     "meta": {
       "country": {
         "code": "EST",
-        "name": "Estonia",
-        "shortName": "Estonia"
+        "name": "Estonia"
       },
       "state": {},
       "county": {},
@@ -25923,7 +25922,8 @@
       "tz": [
         "Europe/Tallinn"
       ],
-      "population": 1251581
+      "population": 1251581,
+      "taxonomy": "country"
     },
     "displayName": "Estonia"
   },
@@ -26583,8 +26583,7 @@
     "meta": {
       "country": {
         "code": "NLD",
-        "name": "Netherlands",
-        "shortName": "Netherlands"
+        "name": "Netherlands"
       },
       "state": {},
       "county": {},
@@ -26593,7 +26592,8 @@
       "tz": [
         "Europe/Amsterdam"
       ],
-      "population": 17084719
+      "population": 17084719,
+      "taxonomy": "country"
     },
     "displayName": "Netherlands"
   },
@@ -27253,8 +27253,7 @@
     "meta": {
       "country": {
         "code": "SMR",
-        "name": "San Marino",
-        "shortName": "San Marino"
+        "name": "San Marino"
       },
       "state": {},
       "county": {},
@@ -27263,7 +27262,8 @@
       "tz": [
         "Europe/San_Marino"
       ],
-      "population": 33537
+      "population": 33537,
+      "taxonomy": "country"
     },
     "displayName": "San Marino"
   },
@@ -27923,8 +27923,7 @@
     "meta": {
       "country": {
         "code": "BLR",
-        "name": "Belarus",
-        "shortName": "Belarus"
+        "name": "Belarus"
       },
       "state": {},
       "county": {},
@@ -27933,7 +27932,8 @@
       "tz": [
         "Europe/Minsk"
       ],
-      "population": 9549747
+      "population": 9549747,
+      "taxonomy": "country"
     },
     "displayName": "Belarus"
   },
@@ -28593,8 +28593,7 @@
     "meta": {
       "country": {
         "code": "ISL",
-        "name": "Iceland",
-        "shortName": "Iceland"
+        "name": "Iceland"
       },
       "state": {},
       "county": {},
@@ -28603,7 +28602,8 @@
       "tz": [
         "Atlantic/Reykjavik"
       ],
-      "population": 339747
+      "population": 339747,
+      "taxonomy": "country"
     },
     "displayName": "Iceland"
   },
@@ -29263,8 +29263,7 @@
     "meta": {
       "country": {
         "code": "LTU",
-        "name": "Lithuania",
-        "shortName": "Lithuania"
+        "name": "Lithuania"
       },
       "state": {},
       "county": {},
@@ -29273,7 +29272,8 @@
       "tz": [
         "Europe/Vilnius"
       ],
-      "population": 2823859
+      "population": 2823859,
+      "taxonomy": "country"
     },
     "displayName": "Lithuania"
   },
@@ -29933,8 +29933,7 @@
     "meta": {
       "country": {
         "code": "MEX",
-        "name": "Mexico",
-        "shortName": "Mexico"
+        "name": "Mexico"
       },
       "state": {},
       "county": {},
@@ -29943,7 +29942,8 @@
       "tz": [
         "America/Mexico_City"
       ],
-      "population": 124574795
+      "population": 124574795,
+      "taxonomy": "country"
     },
     "displayName": "Mexico"
   },
@@ -30603,8 +30603,7 @@
     "meta": {
       "country": {
         "code": "NZL",
-        "name": "New Zealand",
-        "shortName": "New Zealand"
+        "name": "New Zealand"
       },
       "state": {},
       "county": {},
@@ -30613,7 +30612,8 @@
       "tz": [
         "Pacific/Auckland"
       ],
-      "population": 4510327
+      "population": 4510327,
+      "taxonomy": "country"
     },
     "displayName": "New Zealand"
   },
@@ -31273,8 +31273,7 @@
     "meta": {
       "country": {
         "code": "NGA",
-        "name": "Nigeria",
-        "shortName": "Nigeria"
+        "name": "Nigeria"
       },
       "state": {},
       "county": {},
@@ -31283,7 +31282,8 @@
       "tz": [
         "Africa/Lagos"
       ],
-      "population": 190632261
+      "population": 190632261,
+      "taxonomy": "country"
     },
     "displayName": "Nigeria"
   },
@@ -31913,8 +31913,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "Western Australia",
@@ -31926,7 +31925,8 @@
       "tz": [
         "Australia/Perth"
       ],
-      "population": 2621680
+      "population": 2621680,
+      "taxonomy": "state"
     },
     "displayName": "Western Australia (Australia)"
   },
@@ -32586,8 +32586,7 @@
     "meta": {
       "country": {
         "code": "IRL",
-        "name": "Ireland",
-        "shortName": "Ireland"
+        "name": "Ireland"
       },
       "state": {},
       "county": {},
@@ -32596,7 +32595,8 @@
       "tz": [
         "Europe/Dublin"
       ],
-      "population": 5011102
+      "population": 5011102,
+      "taxonomy": "country"
     },
     "displayName": "Ireland"
   },
@@ -33256,8 +33256,7 @@
     "meta": {
       "country": {
         "code": "LUX",
-        "name": "Luxembourg",
-        "shortName": "Luxembourg"
+        "name": "Luxembourg"
       },
       "state": {},
       "county": {},
@@ -33266,7 +33265,8 @@
       "tz": [
         "Europe/Luxembourg"
       ],
-      "population": 594130
+      "population": 594130,
+      "taxonomy": "country"
     },
     "displayName": "Luxembourg"
   },
@@ -33926,8 +33926,7 @@
     "meta": {
       "country": {
         "code": "MCO",
-        "name": "Monaco",
-        "shortName": "Monaco"
+        "name": "Monaco"
       },
       "state": {},
       "county": {},
@@ -33936,7 +33935,8 @@
       "tz": [
         "Europe/Paris"
       ],
-      "population": 30645
+      "population": 30645,
+      "taxonomy": "country"
     },
     "displayName": "Monaco"
   },
@@ -34596,8 +34596,7 @@
     "meta": {
       "country": {
         "code": "QAT",
-        "name": "Qatar",
-        "shortName": "Qatar"
+        "name": "Qatar"
       },
       "state": {},
       "county": {},
@@ -34606,7 +34605,8 @@
       "tz": [
         "Asia/Qatar"
       ],
-      "population": 2314307
+      "population": 2314307,
+      "taxonomy": "country"
     },
     "displayName": "Qatar"
   },
@@ -35266,8 +35266,7 @@
     "meta": {
       "country": {
         "code": "ECU",
-        "name": "Ecuador",
-        "shortName": "Ecuador"
+        "name": "Ecuador"
       },
       "state": {},
       "county": {},
@@ -35276,7 +35275,8 @@
       "tz": [
         "Etc/GMT+6"
       ],
-      "population": 16290913
+      "population": 16290913,
+      "taxonomy": "country"
     },
     "displayName": "Ecuador"
   },
@@ -35936,8 +35936,7 @@
     "meta": {
       "country": {
         "code": "AZE",
-        "name": "Azerbaijan",
-        "shortName": "Azerbaijan"
+        "name": "Azerbaijan"
       },
       "state": {},
       "county": {},
@@ -35946,7 +35945,8 @@
       "tz": [
         "Asia/Baku"
       ],
-      "population": 9961396
+      "population": 9961396,
+      "taxonomy": "country"
     },
     "displayName": "Azerbaijan"
   },
@@ -36606,8 +36606,7 @@
     "meta": {
       "country": {
         "code": "ARM",
-        "name": "Armenia",
-        "shortName": "Armenia"
+        "name": "Armenia"
       },
       "state": {},
       "county": {},
@@ -36616,7 +36615,8 @@
       "tz": [
         "Asia/Yerevan"
       ],
-      "population": 3045191
+      "population": 3045191,
+      "taxonomy": "country"
     },
     "displayName": "Armenia"
   },
@@ -37276,8 +37276,7 @@
     "meta": {
       "country": {
         "code": "DOM",
-        "name": "Dominican Republic",
-        "shortName": "Dominican Republic"
+        "name": "Dominican Republic"
       },
       "state": {},
       "county": {},
@@ -37286,7 +37285,8 @@
       "tz": [
         "America/Santo_Domingo"
       ],
-      "population": 10734247
+      "population": 10734247,
+      "taxonomy": "country"
     },
     "displayName": "Dominican Republic"
   },
@@ -37946,8 +37946,7 @@
     "meta": {
       "country": {
         "code": "IDN",
-        "name": "Indonesia",
-        "shortName": "Indonesia"
+        "name": "Indonesia"
       },
       "state": {},
       "county": {},
@@ -37956,7 +37955,8 @@
       "tz": [
         "Asia/Makassar"
       ],
-      "population": 260580739
+      "population": 260580739,
+      "taxonomy": "country"
     },
     "displayName": "Indonesia"
   },
@@ -38616,8 +38616,7 @@
     "meta": {
       "country": {
         "code": "PRT",
-        "name": "Portugal",
-        "shortName": "Portugal"
+        "name": "Portugal"
       },
       "state": {},
       "county": {},
@@ -38626,7 +38625,8 @@
       "tz": [
         "Etc/GMT+1"
       ],
-      "population": 10839514
+      "population": 10839514,
+      "taxonomy": "country"
     },
     "displayName": "Portugal"
   },
@@ -39286,8 +39286,7 @@
     "meta": {
       "country": {
         "code": "AND",
-        "name": "Andorra",
-        "shortName": "Andorra"
+        "name": "Andorra"
       },
       "state": {},
       "county": {},
@@ -39296,7 +39295,8 @@
       "tz": [
         "Europe/Andorra"
       ],
-      "population": 85702
+      "population": 85702,
+      "taxonomy": "country"
     },
     "displayName": "Andorra"
   },
@@ -39926,8 +39926,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "Tasmania",
@@ -39939,7 +39938,8 @@
       "tz": [
         "Australia/Hobart"
       ],
-      "population": 534281
+      "population": 534281,
+      "taxonomy": "state"
     },
     "displayName": "Tasmania (Australia)"
   },
@@ -40599,8 +40599,7 @@
     "meta": {
       "country": {
         "code": "LVA",
-        "name": "Latvia",
-        "shortName": "Latvia"
+        "name": "Latvia"
       },
       "state": {},
       "county": {},
@@ -40609,7 +40608,8 @@
       "tz": [
         "Europe/Riga"
       ],
-      "population": 1944643
+      "population": 1944643,
+      "taxonomy": "country"
     },
     "displayName": "Latvia"
   },
@@ -41269,8 +41269,7 @@
     "meta": {
       "country": {
         "code": "MAR",
-        "name": "Morocco",
-        "shortName": "Morocco"
+        "name": "Morocco"
       },
       "state": {},
       "county": {},
@@ -41279,7 +41278,8 @@
       "tz": [
         "Africa/Casablanca"
       ],
-      "population": 33986655
+      "population": 33986655,
+      "taxonomy": "country"
     },
     "displayName": "Morocco"
   },
@@ -41939,8 +41939,7 @@
     "meta": {
       "country": {
         "code": "SAU",
-        "name": "Saudi Arabia",
-        "shortName": "Saudi Arabia"
+        "name": "Saudi Arabia"
       },
       "state": {},
       "county": {},
@@ -41949,7 +41948,8 @@
       "tz": [
         "Asia/Riyadh"
       ],
-      "population": 28571770
+      "population": 28571770,
+      "taxonomy": "country"
     },
     "displayName": "Saudi Arabia"
   },
@@ -42609,8 +42609,7 @@
     "meta": {
       "country": {
         "code": "SEN",
-        "name": "Senegal",
-        "shortName": "Senegal"
+        "name": "Senegal"
       },
       "state": {},
       "county": {},
@@ -42619,7 +42618,8 @@
       "tz": [
         "Africa/Dakar"
       ],
-      "population": 14668522
+      "population": 14668522,
+      "taxonomy": "country"
     },
     "displayName": "Senegal"
   },
@@ -43279,8 +43279,7 @@
     "meta": {
       "country": {
         "code": "ARG",
-        "name": "Argentina",
-        "shortName": "Argentina"
+        "name": "Argentina"
       },
       "state": {},
       "county": {},
@@ -43289,7 +43288,8 @@
       "tz": [
         "America/Argentina/Salta"
       ],
-      "population": 44293293
+      "population": 44293293,
+      "taxonomy": "country"
     },
     "displayName": "Argentina"
   },
@@ -43949,8 +43949,7 @@
     "meta": {
       "country": {
         "code": "CHL",
-        "name": "Chile",
-        "shortName": "Chile"
+        "name": "Chile"
       },
       "state": {},
       "county": {},
@@ -43959,7 +43958,8 @@
       "tz": [
         "America/Santiago"
       ],
-      "population": 17789267
+      "population": 17789267,
+      "taxonomy": "country"
     },
     "displayName": "Chile"
   },
@@ -44619,8 +44619,7 @@
     "meta": {
       "country": {
         "code": "JOR",
-        "name": "Jordan",
-        "shortName": "Jordan"
+        "name": "Jordan"
       },
       "state": {},
       "county": {},
@@ -44629,7 +44628,8 @@
       "tz": [
         "Asia/Amman"
       ],
-      "population": 10248069
+      "population": 10248069,
+      "taxonomy": "country"
     },
     "displayName": "Jordan"
   },
@@ -45289,8 +45289,7 @@
     "meta": {
       "country": {
         "code": "UKR",
-        "name": "Ukraine",
-        "shortName": "Ukraine"
+        "name": "Ukraine"
       },
       "state": {},
       "county": {},
@@ -45299,7 +45298,8 @@
       "tz": [
         "Europe/Kiev"
       ],
-      "population": 44033874
+      "population": 44033874,
+      "taxonomy": "country"
     },
     "displayName": "Ukraine"
   },
@@ -45959,8 +45959,7 @@
     "meta": {
       "country": {
         "code": "HUN",
-        "name": "Hungary",
-        "shortName": "Hungary"
+        "name": "Hungary"
       },
       "state": {},
       "county": {},
@@ -45969,7 +45968,8 @@
       "tz": [
         "Europe/Budapest"
       ],
-      "population": 9850845
+      "population": 9850845,
+      "taxonomy": "country"
     },
     "displayName": "Hungary"
   },
@@ -46599,8 +46599,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {
         "code": "Northern Territory",
@@ -46612,7 +46611,8 @@
       "tz": [
         "Australia/Darwin"
       ],
-      "population": 245869
+      "population": 245869,
+      "taxonomy": "state"
     },
     "displayName": "Northern Territory (Australia)"
   },
@@ -47272,8 +47272,7 @@
     "meta": {
       "country": {
         "code": "LIE",
-        "name": "Liechtenstein",
-        "shortName": "Liechtenstein"
+        "name": "Liechtenstein"
       },
       "state": {},
       "county": {},
@@ -47282,7 +47281,8 @@
       "tz": [
         "Europe/Vaduz"
       ],
-      "population": 38244
+      "population": 38244,
+      "taxonomy": "country"
     },
     "displayName": "Liechtenstein"
   },
@@ -47942,8 +47942,7 @@
     "meta": {
       "country": {
         "code": "POL",
-        "name": "Poland",
-        "shortName": "Poland"
+        "name": "Poland"
       },
       "state": {},
       "county": {},
@@ -47952,7 +47951,8 @@
       "tz": [
         "Europe/Warsaw"
       ],
-      "population": 38476269
+      "population": 38476269,
+      "taxonomy": "country"
     },
     "displayName": "Poland"
   },
@@ -48612,8 +48612,7 @@
     "meta": {
       "country": {
         "code": "TUN",
-        "name": "Tunisia",
-        "shortName": "Tunisia"
+        "name": "Tunisia"
       },
       "state": {},
       "county": {},
@@ -48622,7 +48621,8 @@
       "tz": [
         "Africa/Tunis"
       ],
-      "population": 11403800
+      "population": 11403800,
+      "taxonomy": "country"
     },
     "displayName": "Tunisia"
   },
@@ -49282,8 +49282,7 @@
     "meta": {
       "country": {
         "code": "BIH",
-        "name": "Bosnia and Herzegovina",
-        "shortName": "Bosnia and Herzegovina"
+        "name": "Bosnia and Herzegovina"
       },
       "state": {},
       "county": {},
@@ -49292,7 +49291,8 @@
       "tz": [
         "Europe/Sarajevo"
       ],
-      "population": 3856181
+      "population": 3856181,
+      "taxonomy": "country"
     },
     "displayName": "Bosnia and Herzegovina"
   },
@@ -49952,8 +49952,7 @@
     "meta": {
       "country": {
         "code": "SVN",
-        "name": "Slovenia",
-        "shortName": "Slovenia"
+        "name": "Slovenia"
       },
       "state": {},
       "county": {},
@@ -49962,7 +49961,8 @@
       "tz": [
         "Europe/Ljubljana"
       ],
-      "population": 1972126
+      "population": 1972126,
+      "taxonomy": "country"
     },
     "displayName": "Slovenia"
   },
@@ -50622,8 +50622,7 @@
     "meta": {
       "country": {
         "code": "ZAF",
-        "name": "South Africa",
-        "shortName": "South Africa"
+        "name": "South Africa"
       },
       "state": {},
       "county": {},
@@ -50632,7 +50631,8 @@
       "tz": [
         "Africa/Johannesburg"
       ],
-      "population": 54841552
+      "population": 54841552,
+      "taxonomy": "country"
     },
     "displayName": "South Africa"
   },
@@ -51292,8 +51292,7 @@
     "meta": {
       "country": {
         "code": "BTN",
-        "name": "Bhutan",
-        "shortName": "Bhutan"
+        "name": "Bhutan"
       },
       "state": {},
       "county": {},
@@ -51302,7 +51301,8 @@
       "tz": [
         "Asia/Thimphu"
       ],
-      "population": 758288
+      "population": 758288,
+      "taxonomy": "country"
     },
     "displayName": "Bhutan"
   },
@@ -51962,8 +51962,7 @@
     "meta": {
       "country": {
         "code": "CMR",
-        "name": "Cameroon",
-        "shortName": "Cameroon"
+        "name": "Cameroon"
       },
       "state": {},
       "county": {},
@@ -51972,7 +51971,8 @@
       "tz": [
         "Africa/Douala"
       ],
-      "population": 24994885
+      "population": 24994885,
+      "taxonomy": "country"
     },
     "displayName": "Cameroon"
   },
@@ -52632,8 +52632,7 @@
     "meta": {
       "country": {
         "code": "COL",
-        "name": "Colombia",
-        "shortName": "Colombia"
+        "name": "Colombia"
       },
       "state": {},
       "county": {},
@@ -52642,7 +52641,8 @@
       "tz": [
         "America/Bogota"
       ],
-      "population": 47698524
+      "population": 47698524,
+      "taxonomy": "country"
     },
     "displayName": "Colombia"
   },
@@ -53302,8 +53302,7 @@
     "meta": {
       "country": {
         "code": "CRI",
-        "name": "Costa Rica",
-        "shortName": "Costa Rica"
+        "name": "Costa Rica"
       },
       "state": {},
       "county": {},
@@ -53312,7 +53311,8 @@
       "tz": [
         "America/Costa_Rica"
       ],
-      "population": 4930258
+      "population": 4930258,
+      "taxonomy": "country"
     },
     "displayName": "Costa Rica"
   },
@@ -53972,8 +53972,7 @@
     "meta": {
       "country": {
         "code": "PER",
-        "name": "Peru",
-        "shortName": "Peru"
+        "name": "Peru"
       },
       "state": {},
       "county": {},
@@ -53982,7 +53981,8 @@
       "tz": [
         "America/Lima"
       ],
-      "population": 31036656
+      "population": 31036656,
+      "taxonomy": "country"
     },
     "displayName": "Peru"
   },
@@ -54642,8 +54642,7 @@
     "meta": {
       "country": {
         "code": "SRB",
-        "name": "Serbia",
-        "shortName": "Serbia"
+        "name": "Serbia"
       },
       "state": {},
       "county": {},
@@ -54652,7 +54651,8 @@
       "tz": [
         "Europe/Belgrade"
       ],
-      "population": 7111024
+      "population": 7111024,
+      "taxonomy": "country"
     },
     "displayName": "Serbia"
   },
@@ -55312,8 +55312,7 @@
     "meta": {
       "country": {
         "code": "SVK",
-        "name": "Slovakia",
-        "shortName": "Slovakia"
+        "name": "Slovakia"
       },
       "state": {},
       "county": {},
@@ -55322,7 +55321,8 @@
       "tz": [
         "Europe/Bratislava"
       ],
-      "population": 5445829
+      "population": 5445829,
+      "taxonomy": "country"
     },
     "displayName": "Slovakia"
   },
@@ -55982,8 +55982,7 @@
     "meta": {
       "country": {
         "code": "TGO",
-        "name": "Togo",
-        "shortName": "Togo"
+        "name": "Togo"
       },
       "state": {},
       "county": {},
@@ -55992,7 +55991,8 @@
       "tz": [
         "Africa/Lome"
       ],
-      "population": 7965055
+      "population": 7965055,
+      "taxonomy": "country"
     },
     "displayName": "Togo"
   },
@@ -56622,13 +56622,13 @@
     "meta": {
       "country": {
         "code": "GUF",
-        "name": "French Guiana",
-        "shortName": "French Guiana"
+        "name": "French Guiana"
       },
       "state": {},
       "county": {},
       "city": {},
-      "rating": 0.5490196078431373
+      "rating": 0.5490196078431373,
+      "taxonomy": "country"
     },
     "displayName": "French Guiana"
   },
@@ -57288,8 +57288,7 @@
     "meta": {
       "country": {
         "code": "MLT",
-        "name": "Malta",
-        "shortName": "Malta"
+        "name": "Malta"
       },
       "state": {},
       "county": {},
@@ -57298,7 +57297,8 @@
       "tz": [
         "Europe/Malta"
       ],
-      "population": 416338
+      "population": 416338,
+      "taxonomy": "country"
     },
     "displayName": "Malta"
   },
@@ -57928,13 +57928,13 @@
     "meta": {
       "country": {
         "code": "MTQ",
-        "name": "Martinique",
-        "shortName": "Martinique"
+        "name": "Martinique"
       },
       "state": {},
       "county": {},
       "city": {},
-      "rating": 0.5490196078431373
+      "rating": 0.5490196078431373,
+      "taxonomy": "country"
     },
     "displayName": "Martinique"
   },
@@ -58594,8 +58594,7 @@
     "meta": {
       "country": {
         "code": "BGR",
-        "name": "Bulgaria",
-        "shortName": "Bulgaria"
+        "name": "Bulgaria"
       },
       "state": {},
       "county": {},
@@ -58604,7 +58603,8 @@
       "tz": [
         "Europe/Sofia"
       ],
-      "population": 7101510
+      "population": 7101510,
+      "taxonomy": "country"
     },
     "displayName": "Bulgaria"
   },
@@ -59264,8 +59264,7 @@
     "meta": {
       "country": {
         "code": "MDV",
-        "name": "Maldives",
-        "shortName": "Maldives"
+        "name": "Maldives"
       },
       "state": {},
       "county": {},
@@ -59274,7 +59273,8 @@
       "tz": [
         "Indian/Maldives"
       ],
-      "population": 392709
+      "population": 392709,
+      "taxonomy": "country"
     },
     "displayName": "Maldives"
   },
@@ -59934,8 +59934,7 @@
     "meta": {
       "country": {
         "code": "BGD",
-        "name": "Bangladesh",
-        "shortName": "Bangladesh"
+        "name": "Bangladesh"
       },
       "state": {},
       "county": {},
@@ -59944,7 +59943,8 @@
       "tz": [
         "Asia/Dhaka"
       ],
-      "population": 157826578
+      "population": 157826578,
+      "taxonomy": "country"
     },
     "displayName": "Bangladesh"
   },
@@ -60604,8 +60604,7 @@
     "meta": {
       "country": {
         "code": "PRY",
-        "name": "Paraguay",
-        "shortName": "Paraguay"
+        "name": "Paraguay"
       },
       "state": {},
       "county": {},
@@ -60614,7 +60613,8 @@
       "tz": [
         "America/Asuncion"
       ],
-      "population": 6943739
+      "population": 6943739,
+      "taxonomy": "country"
     },
     "displayName": "Paraguay"
   },
@@ -61274,8 +61274,7 @@
     "meta": {
       "country": {
         "code": "ALB",
-        "name": "Albania",
-        "shortName": "Albania"
+        "name": "Albania"
       },
       "state": {},
       "county": {},
@@ -61284,7 +61283,8 @@
       "tz": [
         "Europe/Tirane"
       ],
-      "population": 3047987
+      "population": 3047987,
+      "taxonomy": "country"
     },
     "displayName": "Albania"
   },
@@ -61944,8 +61944,7 @@
     "meta": {
       "country": {
         "code": "CYP",
-        "name": "Cyprus",
-        "shortName": "Cyprus"
+        "name": "Cyprus"
       },
       "state": {},
       "county": {},
@@ -61954,7 +61953,8 @@
       "tz": [
         "Asia/Nicosia"
       ],
-      "population": 1221549
+      "population": 1221549,
+      "taxonomy": "country"
     },
     "displayName": "Cyprus"
   },
@@ -62624,7 +62624,8 @@
       "tz": [
         "Asia/Brunei"
       ],
-      "population": 443593
+      "population": 443593,
+      "taxonomy": "country"
     },
     "displayName": "Brunei"
   },
@@ -63265,7 +63266,8 @@
       "tz": [
         "America/Los_Angeles"
       ],
-      "population": 7614893
+      "population": 7614893,
+      "taxonomy": "state"
     },
     "displayName": "Washington (USA)"
   },
@@ -63892,7 +63894,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 19453561
+      "population": 19453561,
+      "taxonomy": "state"
     },
     "displayName": "New York (USA)"
   },
@@ -64573,7 +64576,8 @@
       "tz": [
         "America/Los_Angeles"
       ],
-      "population": 39512223
+      "population": 39512223,
+      "taxonomy": "state"
     },
     "displayName": "California (USA)"
   },
@@ -65212,7 +65216,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 6892503
+      "population": 6892503,
+      "taxonomy": "state"
     },
     "displayName": "Massachusetts (USA)"
   },
@@ -65863,7 +65868,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 10617423
+      "population": 10617423,
+      "taxonomy": "state"
     },
     "displayName": "Georgia (USA)"
   },
@@ -66492,7 +66498,8 @@
       "tz": [
         "America/Denver"
       ],
-      "population": 5695430
+      "population": 5695430,
+      "taxonomy": "state"
     },
     "displayName": "Colorado (USA)"
   },
@@ -67142,7 +67149,8 @@
       "tz": [
         "Etc/GMT+6"
       ],
-      "population": 21477737
+      "population": 21477737,
+      "taxonomy": "state"
     },
     "displayName": "Florida (USA)"
   },
@@ -67779,7 +67787,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 8882190
+      "population": 8882190,
+      "taxonomy": "state"
     },
     "displayName": "New Jersey (USA)"
   },
@@ -68424,7 +68433,8 @@
       "tz": [
         "America/Los_Angeles"
       ],
-      "population": 4217737
+      "population": 4217737,
+      "taxonomy": "state"
     },
     "displayName": "Oregon (USA)"
   },
@@ -69051,7 +69061,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 28995881
+      "population": 28995881,
+      "taxonomy": "state"
     },
     "displayName": "Texas (USA)"
   },
@@ -69701,7 +69712,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 12671821
+      "population": 12671821,
+      "taxonomy": "state"
     },
     "displayName": "Illinois (USA)"
   },
@@ -70349,7 +70361,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 12801989
+      "population": 12801989,
+      "taxonomy": "state"
     },
     "displayName": "Pennsylvania (USA)"
   },
@@ -70978,7 +70991,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 3155070
+      "population": 3155070,
+      "taxonomy": "state"
     },
     "displayName": "Iowa (USA)"
   },
@@ -71621,7 +71635,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 6045680
+      "population": 6045680,
+      "taxonomy": "state"
     },
     "displayName": "Maryland (USA)"
   },
@@ -72253,7 +72268,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 10488084
+      "population": 10488084,
+      "taxonomy": "state"
     },
     "displayName": "North Carolina (USA)"
   },
@@ -72912,7 +72928,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 5148714
+      "population": 5148714,
+      "taxonomy": "state"
     },
     "displayName": "South Carolina (USA)"
   },
@@ -73542,7 +73559,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 6829174
+      "population": 6829174,
+      "taxonomy": "state"
     },
     "displayName": "Tennessee (USA)"
   },
@@ -74193,7 +74211,8 @@
       "tz": [
         "America/Phoenix"
       ],
-      "population": 7278717
+      "population": 7278717,
+      "taxonomy": "state"
     },
     "displayName": "Arizona (USA)"
   },
@@ -74835,7 +74854,8 @@
       "tz": [
         "America/Indiana/Indianapolis"
       ],
-      "population": 6732219
+      "population": 6732219,
+      "taxonomy": "state"
     },
     "displayName": "Indiana (USA)"
   },
@@ -75506,7 +75526,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 4467673
+      "population": 4467673,
+      "taxonomy": "state"
     },
     "displayName": "Kentucky (USA)"
   },
@@ -76151,7 +76172,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 705749
+      "population": 705749,
+      "taxonomy": "state"
     },
     "displayName": "District Of Columbia (USA)"
   },
@@ -76816,7 +76838,8 @@
       "tz": [
         "America/Los_Angeles"
       ],
-      "population": 3080156
+      "population": 3080156,
+      "taxonomy": "state"
     },
     "displayName": "Nevada (USA)"
   },
@@ -77468,7 +77491,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 1359711
+      "population": 1359711,
+      "taxonomy": "state"
     },
     "displayName": "New Hampshire (USA)"
   },
@@ -78119,7 +78143,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 5639632
+      "population": 5639632,
+      "taxonomy": "state"
     },
     "displayName": "Minnesota (USA)"
   },
@@ -78780,7 +78805,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 1934408
+      "population": 1934408,
+      "taxonomy": "state"
     },
     "displayName": "Nebraska (USA)"
   },
@@ -79416,7 +79442,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 11689100
+      "population": 11689100,
+      "taxonomy": "state"
     },
     "displayName": "Ohio (USA)"
   },
@@ -80070,7 +80097,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 1059361
+      "population": 1059361,
+      "taxonomy": "state"
     },
     "displayName": "Rhode Island (USA)"
   },
@@ -80711,7 +80739,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 5822434
+      "population": 5822434,
+      "taxonomy": "state"
     },
     "displayName": "Wisconsin (USA)"
   },
@@ -81369,7 +81398,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 3565287
+      "population": 3565287,
+      "taxonomy": "state"
     },
     "displayName": "Connecticut (USA)"
   },
@@ -82020,7 +82050,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 3956971
+      "population": 3956971,
+      "taxonomy": "state"
     },
     "displayName": "Oklahoma (USA)"
   },
@@ -82658,7 +82689,8 @@
       "tz": [
         "America/Denver"
       ],
-      "population": 3205958
+      "population": 3205958,
+      "taxonomy": "state"
     },
     "displayName": "Utah (USA)"
   },
@@ -83318,8 +83350,7 @@
     "meta": {
       "country": {
         "code": "BFA",
-        "name": "Burkina Faso",
-        "shortName": "Burkina Faso"
+        "name": "Burkina Faso"
       },
       "state": {},
       "county": {},
@@ -83328,7 +83359,8 @@
       "tz": [
         "Africa/Ouagadougou"
       ],
-      "population": 20107509
+      "population": 20107509,
+      "taxonomy": "country"
     },
     "displayName": "Burkina Faso"
   },
@@ -83988,8 +84020,7 @@
     "meta": {
       "country": {
         "code": "VAT",
-        "name": "Holy See",
-        "shortName": "Holy See"
+        "name": "Holy See"
       },
       "state": {},
       "county": {},
@@ -83998,7 +84029,8 @@
       "tz": [
         "Europe/Vatican"
       ],
-      "population": 1000
+      "population": 1000,
+      "taxonomy": "country"
     },
     "displayName": "Holy See"
   },
@@ -84658,8 +84690,7 @@
     "meta": {
       "country": {
         "code": "MNG",
-        "name": "Mongolia",
-        "shortName": "Mongolia"
+        "name": "Mongolia"
       },
       "state": {},
       "county": {},
@@ -84668,7 +84699,8 @@
       "tz": [
         "Asia/Ulaanbaatar"
       ],
-      "population": 3068243
+      "population": 3068243,
+      "taxonomy": "country"
     },
     "displayName": "Mongolia"
   },
@@ -85328,8 +85360,7 @@
     "meta": {
       "country": {
         "code": "PAN",
-        "name": "Panama",
-        "shortName": "Panama"
+        "name": "Panama"
       },
       "state": {},
       "county": {},
@@ -85338,7 +85369,8 @@
       "tz": [
         "America/Panama"
       ],
-      "population": 3753142
+      "population": 3753142,
+      "taxonomy": "country"
     },
     "displayName": "Panama"
   },
@@ -85995,7 +86027,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 2913314
+      "population": 2913314,
+      "taxonomy": "state"
     },
     "displayName": "Kansas (USA)"
   },
@@ -86633,7 +86666,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 4648794
+      "population": 4648794,
+      "taxonomy": "state"
     },
     "displayName": "Louisiana (USA)"
   },
@@ -87284,7 +87318,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 6137428
+      "population": 6137428,
+      "taxonomy": "state"
     },
     "displayName": "Missouri (USA)"
   },
@@ -87948,7 +87983,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 623989
+      "population": 623989,
+      "taxonomy": "state"
     },
     "displayName": "Vermont (USA)"
   },
@@ -88600,7 +88636,8 @@
       "tz": [
         "Etc/GMT"
       ],
-      "population": 731545
+      "population": 731545,
+      "taxonomy": "state"
     },
     "displayName": "Alaska (USA)"
   },
@@ -89268,7 +89305,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 3017804
+      "population": 3017804,
+      "taxonomy": "state"
     },
     "displayName": "Arkansas (USA)"
   },
@@ -89899,7 +89937,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 973764
+      "population": 973764,
+      "taxonomy": "state"
     },
     "displayName": "Delaware (USA)"
   },
@@ -90551,7 +90590,8 @@
       "tz": [
         "America/Boise"
       ],
-      "population": 1787065
+      "population": 1787065,
+      "taxonomy": "state"
     },
     "displayName": "Idaho (USA)"
   },
@@ -91208,7 +91248,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 1344212
+      "population": 1344212,
+      "taxonomy": "state"
     },
     "displayName": "Maine (USA)"
   },
@@ -91867,7 +91908,8 @@
       "tz": [
         "America/Detroit"
       ],
-      "population": 9986857
+      "population": 9986857,
+      "taxonomy": "state"
     },
     "displayName": "Michigan (USA)"
   },
@@ -92501,7 +92543,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 2976149
+      "population": 2976149,
+      "taxonomy": "state"
     },
     "displayName": "Mississippi (USA)"
   },
@@ -93152,7 +93195,8 @@
       "tz": [
         "America/Denver"
       ],
-      "population": 1068778
+      "population": 1068778,
+      "taxonomy": "state"
     },
     "displayName": "Montana (USA)"
   },
@@ -93806,7 +93850,8 @@
       "tz": [
         "America/Denver"
       ],
-      "population": 2096829
+      "population": 2096829,
+      "taxonomy": "state"
     },
     "displayName": "New Mexico (USA)"
   },
@@ -94471,7 +94516,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 762062
+      "population": 762062,
+      "taxonomy": "state"
     },
     "displayName": "North Dakota (USA)"
   },
@@ -95105,7 +95151,8 @@
       "tz": [
         "America/Chicago"
       ],
-      "population": 884659
+      "population": 884659,
+      "taxonomy": "state"
     },
     "displayName": "South Dakota (USA)"
   },
@@ -95758,7 +95805,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 1792147
+      "population": 1792147,
+      "taxonomy": "state"
     },
     "displayName": "West Virginia (USA)"
   },
@@ -96407,7 +96455,8 @@
       "tz": [
         "America/Denver"
       ],
-      "population": 578759
+      "population": 578759,
+      "taxonomy": "state"
     },
     "displayName": "Wyoming (USA)"
   },
@@ -97067,8 +97116,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Hubei",
@@ -97080,7 +97128,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 59170000
+      "population": 59170000,
+      "taxonomy": "state"
     },
     "displayName": "Hubei (China)"
   },
@@ -97750,7 +97799,8 @@
       "tz": [
         "Asia/Tehran"
       ],
-      "population": 82021564
+      "population": 82021564,
+      "taxonomy": "country"
     },
     "displayName": "Iran"
   },
@@ -98420,7 +98470,8 @@
       "tz": [
         "Asia/Seoul"
       ],
-      "population": 51181299
+      "population": 51181299,
+      "taxonomy": "country"
     },
     "displayName": "South Korea"
   },
@@ -99065,8 +99116,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {},
       "county": {},
@@ -99075,7 +99125,8 @@
       "tz": [
         "Africa/Bamako"
       ],
-      "population": 67106161
+      "population": 67106161,
+      "taxonomy": "country"
     },
     "displayName": "France"
   },
@@ -99735,8 +99786,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Guangdong",
@@ -99748,7 +99798,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 113460000
+      "population": 113460000,
+      "taxonomy": "state"
     },
     "displayName": "Guangdong (China)"
   },
@@ -100408,8 +100459,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Henan",
@@ -100421,7 +100471,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 96050000
+      "population": 96050000,
+      "taxonomy": "state"
     },
     "displayName": "Henan (China)"
   },
@@ -101081,8 +101132,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Zhejiang",
@@ -101094,7 +101144,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 57370000
+      "population": 57370000,
+      "taxonomy": "state"
     },
     "displayName": "Zhejiang (China)"
   },
@@ -101754,8 +101805,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Hunan",
@@ -101767,7 +101817,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 68990000
+      "population": 68990000,
+      "taxonomy": "state"
     },
     "displayName": "Hunan (China)"
   },
@@ -102427,8 +102478,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Anhui",
@@ -102440,7 +102490,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 63240000
+      "population": 63240000,
+      "taxonomy": "state"
     },
     "displayName": "Anhui (China)"
   },
@@ -103100,8 +103151,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Jiangxi",
@@ -103113,7 +103163,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 46480000
+      "population": 46480000,
+      "taxonomy": "state"
     },
     "displayName": "Jiangxi (China)"
   },
@@ -103773,8 +103824,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Shandong",
@@ -103786,7 +103836,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 100470000
+      "population": 100470000,
+      "taxonomy": "state"
     },
     "displayName": "Shandong (China)"
   },
@@ -104446,8 +104497,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Jiangsu",
@@ -104459,7 +104509,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 80510000
+      "population": 80510000,
+      "taxonomy": "state"
     },
     "displayName": "Jiangsu (China)"
   },
@@ -105119,8 +105170,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Chongqing",
@@ -105132,7 +105182,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 31020000
+      "population": 31020000,
+      "taxonomy": "state"
     },
     "displayName": "Chongqing (China)"
   },
@@ -105792,8 +105843,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Sichuan",
@@ -105805,7 +105855,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 83410000
+      "population": 83410000,
+      "taxonomy": "state"
     },
     "displayName": "Sichuan (China)"
   },
@@ -106465,8 +106516,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Heilongjiang",
@@ -106478,7 +106528,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 37730000
+      "population": 37730000,
+      "taxonomy": "state"
     },
     "displayName": "Heilongjiang (China)"
   },
@@ -106997,7 +107048,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5882352941176471
+      "rating": 0.5882352941176471,
+      "taxonomy": "state"
     },
     "displayName": "UK (Great Britain)"
   },
@@ -107657,8 +107709,7 @@
     "meta": {
       "country": {
         "code": "DNK",
-        "name": "Denmark",
-        "shortName": "Denmark"
+        "name": "Denmark"
       },
       "state": {},
       "county": {},
@@ -107667,7 +107718,8 @@
       "tz": [
         "Europe/Copenhagen"
       ],
-      "population": 5605948
+      "population": 5605948,
+      "taxonomy": "country"
     },
     "displayName": "Denmark"
   },
@@ -108327,8 +108379,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Beijing",
@@ -108340,7 +108391,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 21540000
+      "population": 21540000,
+      "taxonomy": "state"
     },
     "displayName": "Beijing (China)"
   },
@@ -109000,8 +109052,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Shanghai",
@@ -109013,7 +109064,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 24240000
+      "population": 24240000,
+      "taxonomy": "state"
     },
     "displayName": "Shanghai (China)"
   },
@@ -109673,8 +109725,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Hebei",
@@ -109686,7 +109737,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 75560000
+      "population": 75560000,
+      "taxonomy": "state"
     },
     "displayName": "Hebei (China)"
   },
@@ -110346,8 +110398,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Fujian",
@@ -110359,7 +110410,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 39410000
+      "population": 39410000,
+      "taxonomy": "state"
     },
     "displayName": "Fujian (China)"
   },
@@ -111019,8 +111071,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Guangxi",
@@ -111032,7 +111083,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 49260000
+      "population": 49260000,
+      "taxonomy": "state"
     },
     "displayName": "Guangxi (China)"
   },
@@ -111692,8 +111744,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Shaanxi",
@@ -111705,7 +111756,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 38640000
+      "population": 38640000,
+      "taxonomy": "state"
     },
     "displayName": "Shaanxi (China)"
   },
@@ -112365,8 +112417,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Yunnan",
@@ -112378,7 +112429,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 48300000
+      "population": 48300000,
+      "taxonomy": "state"
     },
     "displayName": "Yunnan (China)"
   },
@@ -113038,8 +113090,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Hainan",
@@ -113051,7 +113102,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 9340000
+      "population": 9340000,
+      "taxonomy": "state"
     },
     "displayName": "Hainan (China)"
   },
@@ -113711,8 +113763,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Guizhou",
@@ -113724,7 +113775,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 36000000
+      "population": 36000000,
+      "taxonomy": "state"
     },
     "displayName": "Guizhou (China)"
   },
@@ -114384,8 +114436,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Tianjin",
@@ -114397,7 +114448,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 15600000
+      "population": 15600000,
+      "taxonomy": "state"
     },
     "displayName": "Tianjin (China)"
   },
@@ -115057,8 +115109,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Shanxi",
@@ -115070,7 +115121,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 37180000
+      "population": 37180000,
+      "taxonomy": "state"
     },
     "displayName": "Shanxi (China)"
   },
@@ -115730,8 +115782,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Gansu",
@@ -115743,7 +115794,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 26370000
+      "population": 26370000,
+      "taxonomy": "state"
     },
     "displayName": "Gansu (China)"
   },
@@ -116393,8 +116445,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Hong Kong",
@@ -116402,7 +116453,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "Hong Kong (China)"
   },
@@ -117062,8 +117114,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Liaoning",
@@ -117075,7 +117126,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 43590000
+      "population": 43590000,
+      "taxonomy": "state"
     },
     "displayName": "Liaoning (China)"
   },
@@ -117735,8 +117787,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Jilin",
@@ -117748,7 +117799,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 27040000
+      "population": 27040000,
+      "taxonomy": "state"
     },
     "displayName": "Jilin (China)"
   },
@@ -118408,8 +118460,7 @@
     "meta": {
       "country": {
         "code": "CZE",
-        "name": "Czechia",
-        "shortName": "Czechia"
+        "name": "Czechia"
       },
       "state": {},
       "county": {},
@@ -118418,7 +118469,8 @@
       "tz": [
         "Europe/Prague"
       ],
-      "population": 10674723
+      "population": 10674723,
+      "taxonomy": "country"
     },
     "displayName": "Czechia"
   },
@@ -119078,8 +119130,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Xinjiang",
@@ -119092,7 +119143,8 @@
         "Asia/Urumqi",
         "Asia/Shanghai"
       ],
-      "population": 24870000
+      "population": 24870000,
+      "taxonomy": "state"
     },
     "displayName": "Xinjiang (China)"
   },
@@ -119752,8 +119804,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Inner Mongolia",
@@ -119765,7 +119816,8 @@
       "tz": [
         "Asia/Ulaanbaatar"
       ],
-      "population": 25000034
+      "population": 25000034,
+      "taxonomy": "state"
     },
     "displayName": "Inner Mongolia (China)"
   },
@@ -120425,8 +120477,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Ningxia",
@@ -120438,7 +120489,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 6880000
+      "population": 6880000,
+      "taxonomy": "state"
     },
     "displayName": "Ningxia (China)"
   },
@@ -121108,7 +121160,8 @@
       "tz": [
         "Asia/Taipei"
       ],
-      "population": 23508428
+      "population": 23508428,
+      "taxonomy": "country"
     },
     "displayName": "Taiwan"
   },
@@ -121768,8 +121821,7 @@
     "meta": {
       "country": {
         "code": "VNM",
-        "name": "Viet Nam",
-        "shortName": "Viet Nam"
+        "name": "Viet Nam"
       },
       "state": {},
       "county": {},
@@ -121778,7 +121830,8 @@
       "tz": [
         "Asia/Vientiane"
       ],
-      "population": 96160163
+      "population": 96160163,
+      "taxonomy": "country"
     },
     "displayName": "Viet Nam"
   },
@@ -122448,7 +122501,8 @@
       "tz": [
         "Etc/GMT"
       ],
-      "population": 142257519
+      "population": 142257519,
+      "taxonomy": "country"
     },
     "displayName": "Russia"
   },
@@ -123108,8 +123162,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Qinghai",
@@ -123121,7 +123174,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 6030000
+      "population": 6030000,
+      "taxonomy": "state"
     },
     "displayName": "Qinghai (China)"
   },
@@ -123771,8 +123825,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {
         "code": "Macau",
@@ -123780,7 +123833,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "Macau (China)"
   },
@@ -124450,7 +124504,8 @@
       "tz": [
         "Europe/Chisinau"
       ],
-      "population": 3474121
+      "population": 3474121,
+      "taxonomy": "country"
     },
     "displayName": "Moldova"
   },
@@ -125120,7 +125175,8 @@
       "tz": [
         "America/La_Paz"
       ],
-      "population": 11138234
+      "population": 11138234,
+      "taxonomy": "country"
     },
     "displayName": "Bolivia"
   },
@@ -125770,8 +125826,7 @@
     "meta": {
       "country": {
         "code": "DNK",
-        "name": "Denmark",
-        "shortName": "Denmark"
+        "name": "Denmark"
       },
       "state": {
         "code": "Faroe Islands",
@@ -125779,7 +125834,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "Faroe Islands (Denmark)"
   },
@@ -126439,8 +126495,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "St Martin",
@@ -126451,7 +126506,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Marigot"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "St Martin (France)"
   },
@@ -127111,8 +127167,7 @@
     "meta": {
       "country": {
         "code": "HND",
-        "name": "Honduras",
-        "shortName": "Honduras"
+        "name": "Honduras"
       },
       "state": {},
       "county": {},
@@ -127121,7 +127176,8 @@
       "tz": [
         "America/Tegucigalpa"
       ],
-      "population": 9038741
+      "population": 9038741,
+      "taxonomy": "country"
     },
     "displayName": "Honduras"
   },
@@ -127790,7 +127846,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "Channel Islands (Great Britain)"
   },
@@ -128460,7 +128517,8 @@
       "tz": [
         "Africa/Lubumbashi"
       ],
-      "population": 83301151
+      "population": 83301151,
+      "taxonomy": "country"
     },
     "displayName": "Congo"
   },
@@ -129120,8 +129178,7 @@
     "meta": {
       "country": {
         "code": "CIV",
-        "name": "Côte d'Ivoire",
-        "shortName": "Côte d'Ivoire"
+        "name": "Côte d'Ivoire"
       },
       "state": {},
       "county": {},
@@ -129130,7 +129187,8 @@
       "tz": [
         "Africa/Abidjan"
       ],
-      "population": 24184810
+      "population": 24184810,
+      "taxonomy": "country"
     },
     "displayName": "Côte d'Ivoire"
   },
@@ -129790,8 +129848,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Saint Barthelemy",
@@ -129803,7 +129860,8 @@
       "tz": [
         "America/St_Barthelemy"
       ],
-      "population": 9793
+      "population": 9793,
+      "taxonomy": "state"
     },
     "displayName": "Saint Barthelemy (France)"
   },
@@ -130463,8 +130521,7 @@
     "meta": {
       "country": {
         "code": "JAM",
-        "name": "Jamaica",
-        "shortName": "Jamaica"
+        "name": "Jamaica"
       },
       "state": {},
       "county": {},
@@ -130473,7 +130530,8 @@
       "tz": [
         "America/Jamaica"
       ],
-      "population": 2990561
+      "population": 2990561,
+      "taxonomy": "country"
     },
     "displayName": "Jamaica"
   },
@@ -131103,13 +131161,13 @@
     "meta": {
       "country": {
         "code": "REU",
-        "name": "Réunion",
-        "shortName": "Réunion"
+        "name": "Réunion"
       },
       "state": {},
       "county": {},
       "city": {},
-      "rating": 0.5490196078431373
+      "rating": 0.5490196078431373,
+      "taxonomy": "country"
     },
     "displayName": "Réunion"
   },
@@ -131769,8 +131827,7 @@
     "meta": {
       "country": {
         "code": "TUR",
-        "name": "Turkey",
-        "shortName": "Turkey"
+        "name": "Turkey"
       },
       "state": {},
       "county": {},
@@ -131779,7 +131836,8 @@
       "tz": [
         "Europe/Istanbul"
       ],
-      "population": 80845215
+      "population": 80845215,
+      "taxonomy": "country"
     },
     "displayName": "Turkey"
   },
@@ -132452,7 +132510,8 @@
       "tz": [
         "Europe/Gibraltar"
       ],
-      "population": 32194
+      "population": 32194,
+      "taxonomy": "state"
     },
     "displayName": "Gibraltar (Great Britain)"
   },
@@ -133063,8 +133122,7 @@
     "meta": {
       "country": {
         "code": "AUS",
-        "name": "Australia",
-        "shortName": "Australia"
+        "name": "Australia"
       },
       "state": {},
       "county": {},
@@ -133073,7 +133131,8 @@
       "tz": [
         "Australia/Adelaide"
       ],
-      "population": 23232413
+      "population": 23232413,
+      "taxonomy": "country"
     },
     "displayName": "Australia"
   },
@@ -133704,7 +133763,8 @@
       "tz": [
         "Europe/Paris"
       ],
-      "population": 326625791
+      "population": 326625791,
+      "taxonomy": "country"
     },
     "displayName": "USA"
   },
@@ -134396,8 +134456,7 @@
     "meta": {
       "country": {
         "code": "CHN",
-        "name": "China",
-        "shortName": "China"
+        "name": "China"
       },
       "state": {},
       "county": {},
@@ -134406,7 +134465,8 @@
       "tz": [
         "Asia/Shanghai"
       ],
-      "population": 1379302771
+      "population": 1379302771,
+      "taxonomy": "country"
     },
     "displayName": "China"
   },
@@ -135033,7 +135093,8 @@
       "tz": [
         "Europe/London"
       ],
-      "population": 64769452
+      "population": 64769452,
+      "taxonomy": "country"
     },
     "displayName": "Great Britain"
   },
@@ -135660,8 +135721,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {},
       "county": {},
@@ -135670,7 +135730,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 62137802
+      "population": 62137802,
+      "taxonomy": "country"
     },
     "displayName": "Italy"
   },
@@ -136092,7 +136153,8 @@
       "tz": [
         "America/New_York"
       ],
-      "population": 8535519
+      "population": 8535519,
+      "taxonomy": "state"
     },
     "displayName": "Virginia (USA)"
   },
@@ -136422,8 +136484,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Abruzzo",
@@ -136435,7 +136496,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1311580
+      "population": 1311580,
+      "taxonomy": "state"
     },
     "displayName": "Abruzzo (Italy)"
   },
@@ -136765,8 +136827,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Basilicata",
@@ -136778,7 +136839,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 562869
+      "population": 562869,
+      "taxonomy": "state"
     },
     "displayName": "Basilicata (Italy)"
   },
@@ -137108,8 +137170,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "P.A. Bolzano",
@@ -137121,7 +137182,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 107436
+      "population": 107436,
+      "taxonomy": "state"
     },
     "displayName": "P.A. Bolzano (Italy)"
   },
@@ -137451,8 +137513,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Calabria",
@@ -137464,7 +137525,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1947131
+      "population": 1947131,
+      "taxonomy": "state"
     },
     "displayName": "Calabria (Italy)"
   },
@@ -137794,8 +137856,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Campania",
@@ -137807,7 +137868,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 5801692
+      "population": 5801692,
+      "taxonomy": "state"
     },
     "displayName": "Campania (Italy)"
   },
@@ -138137,8 +138199,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Emilia Romagna",
@@ -138150,7 +138211,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 4459477
+      "population": 4459477,
+      "taxonomy": "state"
     },
     "displayName": "Emilia Romagna (Italy)"
   },
@@ -138480,8 +138542,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Friuli Venezia Giulia",
@@ -138493,7 +138554,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1215220
+      "population": 1215220,
+      "taxonomy": "state"
     },
     "displayName": "Friuli Venezia Giulia (Italy)"
   },
@@ -138823,8 +138885,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Lazio",
@@ -138836,7 +138897,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 5879082
+      "population": 5879082,
+      "taxonomy": "state"
     },
     "displayName": "Lazio (Italy)"
   },
@@ -139166,8 +139228,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Liguria",
@@ -139179,7 +139240,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1550640
+      "population": 1550640,
+      "taxonomy": "state"
     },
     "displayName": "Liguria (Italy)"
   },
@@ -139509,8 +139571,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Lombardia",
@@ -139522,7 +139583,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 10060574
+      "population": 10060574,
+      "taxonomy": "state"
     },
     "displayName": "Lombardia (Italy)"
   },
@@ -139852,8 +139914,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Marche",
@@ -139865,7 +139926,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1525271
+      "population": 1525271,
+      "taxonomy": "state"
     },
     "displayName": "Marche (Italy)"
   },
@@ -140195,8 +140257,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Molise",
@@ -140208,7 +140269,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 305617
+      "population": 305617,
+      "taxonomy": "state"
     },
     "displayName": "Molise (Italy)"
   },
@@ -140538,8 +140600,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Piemonte",
@@ -140551,7 +140612,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 4356406
+      "population": 4356406,
+      "taxonomy": "state"
     },
     "displayName": "Piemonte (Italy)"
   },
@@ -140881,8 +140943,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Puglia",
@@ -140894,7 +140955,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 4029053
+      "population": 4029053,
+      "taxonomy": "state"
     },
     "displayName": "Puglia (Italy)"
   },
@@ -141224,8 +141286,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Sardegna",
@@ -141237,7 +141298,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1639591
+      "population": 1639591,
+      "taxonomy": "state"
     },
     "displayName": "Sardegna (Italy)"
   },
@@ -141567,8 +141629,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Sicilia",
@@ -141580,7 +141641,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 4999891
+      "population": 4999891,
+      "taxonomy": "state"
     },
     "displayName": "Sicilia (Italy)"
   },
@@ -141910,8 +141972,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Toscana",
@@ -141923,7 +141984,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 3729641
+      "population": 3729641,
+      "taxonomy": "state"
     },
     "displayName": "Toscana (Italy)"
   },
@@ -142253,8 +142315,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "P.A. Trento",
@@ -142266,7 +142327,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 1072276
+      "population": 1072276,
+      "taxonomy": "state"
     },
     "displayName": "P.A. Trento (Italy)"
   },
@@ -142596,8 +142658,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Umbria",
@@ -142609,7 +142670,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 882015
+      "population": 882015,
+      "taxonomy": "state"
     },
     "displayName": "Umbria (Italy)"
   },
@@ -142939,8 +143001,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Valle d'Aosta",
@@ -142952,7 +143013,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 125666
+      "population": 125666,
+      "taxonomy": "state"
     },
     "displayName": "Valle d'Aosta (Italy)"
   },
@@ -143282,8 +143344,7 @@
     "meta": {
       "country": {
         "code": "ITA",
-        "name": "Italy",
-        "shortName": "Italy"
+        "name": "Italy"
       },
       "state": {
         "code": "Veneto",
@@ -143295,7 +143356,8 @@
       "tz": [
         "Europe/Rome"
       ],
-      "population": 4905854
+      "population": 4905854,
+      "taxonomy": "state"
     },
     "displayName": "Veneto (Italy)"
   },
@@ -143595,8 +143657,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Andalucía",
@@ -143608,7 +143669,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 8446561
+      "population": 8446561,
+      "taxonomy": "state"
     },
     "displayName": "Andalucía (Spain)"
   },
@@ -143908,8 +143970,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Aragón",
@@ -143921,7 +143982,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 1324397
+      "population": 1324397,
+      "taxonomy": "state"
     },
     "displayName": "Aragón (Spain)"
   },
@@ -144221,8 +144283,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Asturias",
@@ -144234,7 +144295,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 1019993
+      "population": 1019993,
+      "taxonomy": "state"
     },
     "displayName": "Asturias (Spain)"
   },
@@ -144534,8 +144596,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Baleares",
@@ -144547,7 +144608,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 1198576
+      "population": 1198576,
+      "taxonomy": "state"
     },
     "displayName": "Baleares (Spain)"
   },
@@ -144847,8 +144909,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Canarias",
@@ -144860,7 +144921,8 @@
       "tz": [
         "Etc/GMT+1"
       ],
-      "population": 2220270
+      "population": 2220270,
+      "taxonomy": "state"
     },
     "displayName": "Canarias (Spain)"
   },
@@ -145160,8 +145222,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Cantabria",
@@ -145173,7 +145234,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 581949
+      "population": 581949,
+      "taxonomy": "state"
     },
     "displayName": "Cantabria (Spain)"
   },
@@ -145473,8 +145535,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Castilla-La Mancha",
@@ -145486,7 +145547,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 2038440
+      "population": 2038440,
+      "taxonomy": "state"
     },
     "displayName": "Castilla-La Mancha (Spain)"
   },
@@ -145786,8 +145848,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Castilla y León",
@@ -145799,7 +145860,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 2402877
+      "population": 2402877,
+      "taxonomy": "state"
     },
     "displayName": "Castilla y León (Spain)"
   },
@@ -146099,8 +146161,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Cataluña",
@@ -146112,7 +146173,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 7609499
+      "population": 7609499,
+      "taxonomy": "state"
     },
     "displayName": "Cataluña (Spain)"
   },
@@ -146412,8 +146474,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Ceuta",
@@ -146425,7 +146486,8 @@
       "tz": [
         "Africa/Casablanca"
       ],
-      "population": 84434
+      "population": 84434,
+      "taxonomy": "state"
     },
     "displayName": "Ceuta (Spain)"
   },
@@ -146725,8 +146787,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "C. Valenciana",
@@ -146738,7 +146799,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 4998711
+      "population": 4998711,
+      "taxonomy": "state"
     },
     "displayName": "C. Valenciana (Spain)"
   },
@@ -147038,8 +147100,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Extremadura",
@@ -147051,7 +147112,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 1062797
+      "population": 1062797,
+      "taxonomy": "state"
     },
     "displayName": "Extremadura (Spain)"
   },
@@ -147351,8 +147413,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Galicia",
@@ -147364,7 +147425,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 2698764
+      "population": 2698764,
+      "taxonomy": "state"
     },
     "displayName": "Galicia (Spain)"
   },
@@ -147664,8 +147726,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Madrid",
@@ -147677,7 +147738,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 6685471
+      "population": 6685471,
+      "taxonomy": "state"
     },
     "displayName": "Madrid (Spain)"
   },
@@ -147977,8 +148039,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Melilla",
@@ -147990,7 +148051,8 @@
       "tz": [
         "Africa/Ceuta"
       ],
-      "population": 84286
+      "population": 84286,
+      "taxonomy": "state"
     },
     "displayName": "Melilla (Spain)"
   },
@@ -148290,8 +148352,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Murcia",
@@ -148303,7 +148364,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 1494442
+      "population": 1494442,
+      "taxonomy": "state"
     },
     "displayName": "Murcia (Spain)"
   },
@@ -148603,8 +148665,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "Navarra",
@@ -148616,7 +148677,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 652526
+      "population": 652526,
+      "taxonomy": "state"
     },
     "displayName": "Navarra (Spain)"
   },
@@ -148916,8 +148978,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "País Vasco",
@@ -148929,7 +148990,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 2181919
+      "population": 2181919,
+      "taxonomy": "state"
     },
     "displayName": "País Vasco (Spain)"
   },
@@ -149229,8 +149291,7 @@
     "meta": {
       "country": {
         "code": "ESP",
-        "name": "Spain",
-        "shortName": "Spain"
+        "name": "Spain"
       },
       "state": {
         "code": "La Rioja",
@@ -149242,7 +149303,8 @@
       "tz": [
         "Europe/Madrid"
       ],
-      "population": 314487
+      "population": 314487,
+      "taxonomy": "state"
     },
     "displayName": "La Rioja (Spain)"
   },
@@ -149481,8 +149543,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Corse",
@@ -149494,7 +149555,8 @@
       "tz": [
         "Europe/Paris"
       ],
-      "population": 337796
+      "population": 337796,
+      "taxonomy": "state"
     },
     "displayName": "Corse (France)"
   },
@@ -149697,8 +149759,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Mayotte",
@@ -149710,7 +149771,8 @@
       "tz": [
         "Indian/Mayotte"
       ],
-      "population": 270372
+      "population": 270372,
+      "taxonomy": "state"
     },
     "displayName": "Mayotte (France)"
   },
@@ -149889,8 +149951,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Saint-Barthélemy",
@@ -149898,7 +149959,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.39215686274509803
+      "rating": 0.39215686274509803,
+      "taxonomy": "state"
     },
     "displayName": "Saint-Barthélemy (France)"
   },
@@ -150078,8 +150140,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Saint-Martin",
@@ -150087,7 +150148,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.39215686274509803
+      "rating": 0.39215686274509803,
+      "taxonomy": "state"
     },
     "displayName": "Saint-Martin (France)"
   },
@@ -150249,8 +150311,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "AG",
@@ -150262,7 +150323,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 678207
+      "population": 678207,
+      "taxonomy": "state"
     },
     "displayName": "AG (Switzerland)"
   },
@@ -150416,8 +150478,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "AI",
@@ -150429,7 +150490,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 16145
+      "population": 16145,
+      "taxonomy": "state"
     },
     "displayName": "AI (Switzerland)"
   },
@@ -150589,8 +150651,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "AR",
@@ -150602,7 +150663,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 55234
+      "population": 55234,
+      "taxonomy": "state"
     },
     "displayName": "AR (Switzerland)"
   },
@@ -150774,8 +150836,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "BE",
@@ -150787,7 +150848,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 1034977
+      "population": 1034977,
+      "taxonomy": "state"
     },
     "displayName": "BE (Switzerland)"
   },
@@ -150951,8 +151013,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "BL",
@@ -150964,7 +151025,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 288132
+      "population": 288132,
+      "taxonomy": "state"
     },
     "displayName": "BL (Switzerland)"
   },
@@ -151132,8 +151194,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "BS",
@@ -151145,7 +151206,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 194766
+      "population": 194766,
+      "taxonomy": "state"
     },
     "displayName": "BS (Switzerland)"
   },
@@ -151310,8 +151372,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "FR",
@@ -151323,7 +151384,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 318714
+      "population": 318714,
+      "taxonomy": "state"
     },
     "displayName": "FR (Switzerland)"
   },
@@ -151501,8 +151563,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "GE",
@@ -151514,7 +151575,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 495249
+      "population": 495249,
+      "taxonomy": "state"
     },
     "displayName": "GE (Switzerland)"
   },
@@ -151668,8 +151730,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "GL",
@@ -151681,7 +151742,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 40403
+      "population": 40403,
+      "taxonomy": "state"
     },
     "displayName": "GL (Switzerland)"
   },
@@ -151842,8 +151904,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "GR",
@@ -151855,7 +151916,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 198379
+      "population": 198379,
+      "taxonomy": "state"
     },
     "displayName": "GR (Switzerland)"
   },
@@ -152010,8 +152072,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "JU",
@@ -152023,7 +152084,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 73419
+      "population": 73419,
+      "taxonomy": "state"
     },
     "displayName": "JU (Switzerland)"
   },
@@ -152184,8 +152246,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "LU",
@@ -152197,7 +152258,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 409557
+      "population": 409557,
+      "taxonomy": "state"
     },
     "displayName": "LU (Switzerland)"
   },
@@ -152359,8 +152421,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "NE",
@@ -152372,7 +152433,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 177964
+      "population": 177964,
+      "taxonomy": "state"
     },
     "displayName": "NE (Switzerland)"
   },
@@ -152529,8 +152591,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "NW",
@@ -152542,7 +152603,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 43223
+      "population": 43223,
+      "taxonomy": "state"
     },
     "displayName": "NW (Switzerland)"
   },
@@ -152701,8 +152763,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "SG",
@@ -152714,7 +152775,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 507697
+      "population": 507697,
+      "taxonomy": "state"
     },
     "displayName": "SG (Switzerland)"
   },
@@ -152868,8 +152930,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "SH",
@@ -152881,7 +152942,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 81991
+      "population": 81991,
+      "taxonomy": "state"
     },
     "displayName": "SH (Switzerland)"
   },
@@ -153040,8 +153102,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "TG",
@@ -153053,7 +153114,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 276472
+      "population": 276472,
+      "taxonomy": "state"
     },
     "displayName": "TG (Switzerland)"
   },
@@ -153221,8 +153283,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "TI",
@@ -153234,7 +153295,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 353343
+      "population": 353343,
+      "taxonomy": "state"
     },
     "displayName": "TI (Switzerland)"
   },
@@ -153388,8 +153450,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "UR",
@@ -153401,7 +153462,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 36433
+      "population": 36433,
+      "taxonomy": "state"
     },
     "displayName": "UR (Switzerland)"
   },
@@ -153570,8 +153632,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "VS",
@@ -153583,7 +153644,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 343955
+      "population": 343955,
+      "taxonomy": "state"
     },
     "displayName": "VS (Switzerland)"
   },
@@ -153735,8 +153797,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "ZG",
@@ -153748,7 +153809,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 126837
+      "population": 126837,
+      "taxonomy": "state"
     },
     "displayName": "ZG (Switzerland)"
   },
@@ -153920,8 +153982,7 @@
     "meta": {
       "country": {
         "code": "CHE",
-        "name": "Switzerland",
-        "shortName": "Switzerland"
+        "name": "Switzerland"
       },
       "state": {
         "code": "ZH",
@@ -153933,7 +153994,8 @@
       "tz": [
         "Europe/Zurich"
       ],
-      "population": 1520968
+      "population": 1520968,
+      "taxonomy": "state"
     },
     "displayName": "ZH (Switzerland)"
   },
@@ -154062,8 +154124,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Polynésie française",
@@ -154071,7 +154132,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.19607843137254902
+      "rating": 0.19607843137254902,
+      "taxonomy": "state"
     },
     "displayName": "Polynésie française (France)"
   },
@@ -154209,8 +154271,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-BB",
@@ -154222,7 +154283,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 3740000
+      "population": 3740000,
+      "taxonomy": "state"
     },
     "displayName": "DE-BB (Germany)"
   },
@@ -154360,8 +154422,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-BE",
@@ -154373,7 +154434,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 3740000
+      "population": 3740000,
+      "taxonomy": "state"
     },
     "displayName": "DE-BE (Germany)"
   },
@@ -154511,8 +154573,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-BW",
@@ -154524,7 +154585,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 11020000
+      "population": 11020000,
+      "taxonomy": "state"
     },
     "displayName": "DE-BW (Germany)"
   },
@@ -154662,8 +154724,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-BY",
@@ -154675,7 +154736,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 13000000
+      "population": 13000000,
+      "taxonomy": "state"
     },
     "displayName": "DE-BY (Germany)"
   },
@@ -154813,8 +154875,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-HB",
@@ -154826,7 +154887,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 548000
+      "population": 548000,
+      "taxonomy": "state"
     },
     "displayName": "DE-HB (Germany)"
   },
@@ -154964,8 +155026,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-HE",
@@ -154977,7 +155038,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 6240000
+      "population": 6240000,
+      "taxonomy": "state"
     },
     "displayName": "DE-HE (Germany)"
   },
@@ -155115,8 +155177,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-HH",
@@ -155128,7 +155189,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 1822000
+      "population": 1822000,
+      "taxonomy": "state"
     },
     "displayName": "DE-HH (Germany)"
   },
@@ -155266,8 +155328,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-MV",
@@ -155279,7 +155340,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 1635000
+      "population": 1635000,
+      "taxonomy": "state"
     },
     "displayName": "DE-MV (Germany)"
   },
@@ -155417,8 +155479,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-NI",
@@ -155430,7 +155491,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 7960000
+      "population": 7960000,
+      "taxonomy": "state"
     },
     "displayName": "DE-NI (Germany)"
   },
@@ -155568,8 +155630,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-NW",
@@ -155581,7 +155642,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 17910000
+      "population": 17910000,
+      "taxonomy": "state"
     },
     "displayName": "DE-NW (Germany)"
   },
@@ -155719,8 +155781,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-SH",
@@ -155732,7 +155793,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 2890000
+      "population": 2890000,
+      "taxonomy": "state"
     },
     "displayName": "DE-SH (Germany)"
   },
@@ -155870,8 +155932,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-RP",
@@ -155883,7 +155944,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 4070000.0000000005
+      "population": 4070000.0000000005,
+      "taxonomy": "state"
     },
     "displayName": "DE-RP (Germany)"
   },
@@ -156021,8 +156083,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-SL",
@@ -156034,7 +156095,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 990000
+      "population": 990000,
+      "taxonomy": "state"
     },
     "displayName": "DE-SL (Germany)"
   },
@@ -156172,8 +156234,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-SN",
@@ -156185,7 +156246,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 4080000
+      "population": 4080000,
+      "taxonomy": "state"
     },
     "displayName": "DE-SN (Germany)"
   },
@@ -156323,8 +156385,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-ST",
@@ -156336,7 +156397,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 2280000
+      "population": 2280000,
+      "taxonomy": "state"
     },
     "displayName": "DE-ST (Germany)"
   },
@@ -156474,8 +156536,7 @@
     "meta": {
       "country": {
         "code": "DEU",
-        "name": "Germany",
-        "shortName": "Germany"
+        "name": "Germany"
       },
       "state": {
         "code": "DE-TH",
@@ -156487,7 +156548,8 @@
       "tz": [
         "Europe/Berlin"
       ],
-      "population": 2140000
+      "population": 2140000,
+      "taxonomy": "state"
     },
     "displayName": "DE-TH (Germany)"
   },
@@ -157047,8 +157109,7 @@
     "meta": {
       "country": {
         "code": "CUB",
-        "name": "Cuba",
-        "shortName": "Cuba"
+        "name": "Cuba"
       },
       "state": {},
       "county": {},
@@ -157057,7 +157118,8 @@
       "tz": [
         "America/Havana"
       ],
-      "population": 11147407
+      "population": 11147407,
+      "taxonomy": "country"
     },
     "displayName": "Cuba"
   },
@@ -157617,8 +157679,7 @@
     "meta": {
       "country": {
         "code": "GUY",
-        "name": "Guyana",
-        "shortName": "Guyana"
+        "name": "Guyana"
       },
       "state": {},
       "county": {},
@@ -157627,7 +157688,8 @@
       "tz": [
         "America/Guyana"
       ],
-      "population": 737718
+      "population": 737718,
+      "taxonomy": "country"
     },
     "displayName": "Guyana"
   },
@@ -158187,8 +158249,7 @@
     "meta": {
       "country": {
         "code": "KAZ",
-        "name": "Kazakhstan",
-        "shortName": "Kazakhstan"
+        "name": "Kazakhstan"
       },
       "state": {},
       "county": {},
@@ -158197,7 +158258,8 @@
       "tz": [
         "Asia/Almaty"
       ],
-      "population": 18556698
+      "population": 18556698,
+      "taxonomy": "country"
     },
     "displayName": "Kazakhstan"
   },
@@ -158357,8 +158419,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "French Polynesia",
@@ -158366,7 +158427,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "French Polynesia (France)"
   },
@@ -158926,8 +158988,7 @@
     "meta": {
       "country": {
         "code": "ETH",
-        "name": "Ethiopia",
-        "shortName": "Ethiopia"
+        "name": "Ethiopia"
       },
       "state": {},
       "county": {},
@@ -158936,7 +158997,8 @@
       "tz": [
         "Africa/Addis_Ababa"
       ],
-      "population": 105350020
+      "population": 105350020,
+      "taxonomy": "country"
     },
     "displayName": "Ethiopia"
   },
@@ -159496,8 +159558,7 @@
     "meta": {
       "country": {
         "code": "SDN",
-        "name": "Sudan",
-        "shortName": "Sudan"
+        "name": "Sudan"
       },
       "state": {},
       "county": {},
@@ -159506,7 +159567,8 @@
       "tz": [
         "Africa/Khartoum"
       ],
-      "population": 37345935
+      "population": 37345935,
+      "taxonomy": "country"
     },
     "displayName": "Sudan"
   },
@@ -160066,8 +160128,7 @@
     "meta": {
       "country": {
         "code": "GIN",
-        "name": "Guinea",
-        "shortName": "Guinea"
+        "name": "Guinea"
       },
       "state": {},
       "county": {},
@@ -160076,7 +160137,8 @@
       "tz": [
         "Africa/Freetown"
       ],
-      "population": 12413867
+      "population": 12413867,
+      "taxonomy": "country"
     },
     "displayName": "Guinea"
   },
@@ -160636,8 +160698,7 @@
     "meta": {
       "country": {
         "code": "KEN",
-        "name": "Kenya",
-        "shortName": "Kenya"
+        "name": "Kenya"
       },
       "state": {},
       "county": {},
@@ -160646,7 +160707,8 @@
       "tz": [
         "Africa/Nairobi"
       ],
-      "population": 47615739
+      "population": 47615739,
+      "taxonomy": "country"
     },
     "displayName": "Kenya"
   },
@@ -161206,8 +161268,7 @@
     "meta": {
       "country": {
         "code": "ATG",
-        "name": "Antigua and Barbuda",
-        "shortName": "Antigua and Barbuda"
+        "name": "Antigua and Barbuda"
       },
       "state": {},
       "county": {},
@@ -161216,7 +161277,8 @@
       "tz": [
         "America/Antigua"
       ],
-      "population": 94731
+      "population": 94731,
+      "taxonomy": "country"
     },
     "displayName": "Antigua and Barbuda"
   },
@@ -161776,8 +161838,7 @@
     "meta": {
       "country": {
         "code": "URY",
-        "name": "Uruguay",
-        "shortName": "Uruguay"
+        "name": "Uruguay"
       },
       "state": {},
       "county": {},
@@ -161786,7 +161847,8 @@
       "tz": [
         "America/Montevideo"
       ],
-      "population": 3360148
+      "population": 3360148,
+      "taxonomy": "country"
     },
     "displayName": "Uruguay"
   },
@@ -162346,8 +162408,7 @@
     "meta": {
       "country": {
         "code": "GHA",
-        "name": "Ghana",
-        "shortName": "Ghana"
+        "name": "Ghana"
       },
       "state": {},
       "county": {},
@@ -162356,7 +162417,8 @@
       "tz": [
         "Africa/Accra"
       ],
-      "population": 27499924
+      "population": 27499924,
+      "taxonomy": "country"
     },
     "displayName": "Ghana"
   },
@@ -162514,7 +162576,8 @@
       "county": {},
       "city": {},
       "rating": 0.49019607843137253,
-      "population": 3193694
+      "population": 3193694,
+      "taxonomy": "state"
     },
     "displayName": "Puerto Rico (USA)"
   },
@@ -163074,8 +163137,7 @@
     "meta": {
       "country": {
         "code": "NAM",
-        "name": "Namibia",
-        "shortName": "Namibia"
+        "name": "Namibia"
       },
       "state": {},
       "county": {},
@@ -163084,7 +163146,8 @@
       "tz": [
         "Africa/Windhoek"
       ],
-      "population": 2484780
+      "population": 2484780,
+      "taxonomy": "country"
     },
     "displayName": "Namibia"
   },
@@ -163644,8 +163707,7 @@
     "meta": {
       "country": {
         "code": "SYC",
-        "name": "Seychelles",
-        "shortName": "Seychelles"
+        "name": "Seychelles"
       },
       "state": {},
       "county": {},
@@ -163654,7 +163716,8 @@
       "tz": [
         "Indian/Mahe"
       ],
-      "population": 93920
+      "population": 93920,
+      "taxonomy": "country"
     },
     "displayName": "Seychelles"
   },
@@ -164214,8 +164277,7 @@
     "meta": {
       "country": {
         "code": "TTO",
-        "name": "Trinidad and Tobago",
-        "shortName": "Trinidad and Tobago"
+        "name": "Trinidad and Tobago"
       },
       "state": {},
       "county": {},
@@ -164224,7 +164286,8 @@
       "tz": [
         "America/Port_of_Spain"
       ],
-      "population": 1218208
+      "population": 1218208,
+      "taxonomy": "country"
     },
     "displayName": "Trinidad and Tobago"
   },
@@ -164794,7 +164857,8 @@
       "tz": [
         "America/Caracas"
       ],
-      "population": 31304016
+      "population": 31304016,
+      "taxonomy": "country"
     },
     "displayName": "Venezuela"
   },
@@ -165354,8 +165418,7 @@
     "meta": {
       "country": {
         "code": "SWZ",
-        "name": "Eswatini",
-        "shortName": "Eswatini"
+        "name": "Eswatini"
       },
       "state": {},
       "county": {},
@@ -165364,7 +165427,8 @@
       "tz": [
         "Africa/Mbabane"
       ],
-      "population": 1467152
+      "population": 1467152,
+      "taxonomy": "country"
     },
     "displayName": "Eswatini"
   },
@@ -165924,8 +165988,7 @@
     "meta": {
       "country": {
         "code": "GAB",
-        "name": "Gabon",
-        "shortName": "Gabon"
+        "name": "Gabon"
       },
       "state": {},
       "county": {},
@@ -165934,7 +165997,8 @@
       "tz": [
         "Africa/Libreville"
       ],
-      "population": 1772255
+      "population": 1772255,
+      "taxonomy": "country"
     },
     "displayName": "Gabon"
   },
@@ -166494,8 +166558,7 @@
     "meta": {
       "country": {
         "code": "GTM",
-        "name": "Guatemala",
-        "shortName": "Guatemala"
+        "name": "Guatemala"
       },
       "state": {},
       "county": {},
@@ -166504,7 +166567,8 @@
       "tz": [
         "America/Guatemala"
       ],
-      "population": 15460732
+      "population": 15460732,
+      "taxonomy": "country"
     },
     "displayName": "Guatemala"
   },
@@ -167064,8 +167128,7 @@
     "meta": {
       "country": {
         "code": "MRT",
-        "name": "Mauritania",
-        "shortName": "Mauritania"
+        "name": "Mauritania"
       },
       "state": {},
       "county": {},
@@ -167074,7 +167137,8 @@
       "tz": [
         "Africa/Niamey"
       ],
-      "population": 19245344
+      "population": 19245344,
+      "taxonomy": "country"
     },
     "displayName": "Mauritania"
   },
@@ -167634,8 +167698,7 @@
     "meta": {
       "country": {
         "code": "RWA",
-        "name": "Rwanda",
-        "shortName": "Rwanda"
+        "name": "Rwanda"
       },
       "state": {},
       "county": {},
@@ -167644,7 +167707,8 @@
       "tz": [
         "Africa/Kigali"
       ],
-      "population": 11901484
+      "population": 11901484,
+      "taxonomy": "country"
     },
     "displayName": "Rwanda"
   },
@@ -168204,8 +168268,7 @@
     "meta": {
       "country": {
         "code": "LCA",
-        "name": "Saint Lucia",
-        "shortName": "Saint Lucia"
+        "name": "Saint Lucia"
       },
       "state": {},
       "county": {},
@@ -168214,7 +168277,8 @@
       "tz": [
         "America/St_Lucia"
       ],
-      "population": 164994
+      "population": 164994,
+      "taxonomy": "country"
     },
     "displayName": "Saint Lucia"
   },
@@ -168774,8 +168838,7 @@
     "meta": {
       "country": {
         "code": "SUR",
-        "name": "Suriname",
-        "shortName": "Suriname"
+        "name": "Suriname"
       },
       "state": {},
       "county": {},
@@ -168784,7 +168847,8 @@
       "tz": [
         "America/Paramaribo"
       ],
-      "population": 591919
+      "population": 591919,
+      "taxonomy": "country"
     },
     "displayName": "Suriname"
   },
@@ -168944,8 +169008,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "French Guiana",
@@ -168956,7 +169019,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Cayenne"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "French Guiana (France)"
   },
@@ -169113,7 +169177,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.49019607843137253
+      "rating": 0.49019607843137253,
+      "taxonomy": "state"
     },
     "displayName": "Guam (USA)"
   },
@@ -169673,8 +169738,7 @@
     "meta": {
       "country": {
         "code": "CAF",
-        "name": "Central African Republic",
-        "shortName": "Central African Republic"
+        "name": "Central African Republic"
       },
       "state": {},
       "county": {},
@@ -169683,7 +169747,8 @@
       "tz": [
         "Africa/Bangui"
       ],
-      "population": 5625118
+      "population": 5625118,
+      "taxonomy": "country"
     },
     "displayName": "Central African Republic"
   },
@@ -170243,8 +170308,7 @@
     "meta": {
       "country": {
         "code": "COG",
-        "name": "Congo",
-        "shortName": "Congo"
+        "name": "Congo"
       },
       "state": {},
       "county": {},
@@ -170253,7 +170317,8 @@
       "tz": [
         "Africa/Brazzaville"
       ],
-      "population": 4954674
+      "population": 4954674,
+      "taxonomy": "country"
     },
     "displayName": "Congo"
   },
@@ -170813,8 +170878,7 @@
     "meta": {
       "country": {
         "code": "GNQ",
-        "name": "Equatorial Guinea",
-        "shortName": "Equatorial Guinea"
+        "name": "Equatorial Guinea"
       },
       "state": {},
       "county": {},
@@ -170823,7 +170887,8 @@
       "tz": [
         "Africa/Douala"
       ],
-      "population": 778358
+      "population": 778358,
+      "taxonomy": "country"
     },
     "displayName": "Equatorial Guinea"
   },
@@ -171383,8 +171448,7 @@
     "meta": {
       "country": {
         "code": "UZB",
-        "name": "Uzbekistan",
-        "shortName": "Uzbekistan"
+        "name": "Uzbekistan"
       },
       "state": {},
       "county": {},
@@ -171393,7 +171457,8 @@
       "tz": [
         "Asia/Samarkand"
       ],
-      "population": 29748859
+      "population": 29748859,
+      "taxonomy": "country"
     },
     "displayName": "Uzbekistan"
   },
@@ -171953,8 +172018,7 @@
     "meta": {
       "country": {
         "code": "BEN",
-        "name": "Benin",
-        "shortName": "Benin"
+        "name": "Benin"
       },
       "state": {},
       "county": {},
@@ -171963,7 +172027,8 @@
       "tz": [
         "Africa/Porto-Novo"
       ],
-      "population": 11038805
+      "population": 11038805,
+      "taxonomy": "country"
     },
     "displayName": "Benin"
   },
@@ -172523,8 +172588,7 @@
     "meta": {
       "country": {
         "code": "LBR",
-        "name": "Liberia",
-        "shortName": "Liberia"
+        "name": "Liberia"
       },
       "state": {},
       "county": {},
@@ -172533,7 +172597,8 @@
       "tz": [
         "Africa/Monrovia"
       ],
-      "population": 4689021
+      "population": 4689021,
+      "taxonomy": "country"
     },
     "displayName": "Liberia"
   },
@@ -172693,8 +172758,7 @@
     "meta": {
       "country": {
         "code": "NLD",
-        "name": "Netherlands",
-        "shortName": "Netherlands"
+        "name": "Netherlands"
       },
       "state": {
         "code": "Curacao",
@@ -172705,7 +172769,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Curacao"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Curacao (Netherlands)"
   },
@@ -173265,8 +173330,7 @@
     "meta": {
       "country": {
         "code": "SOM",
-        "name": "Somalia",
-        "shortName": "Somalia"
+        "name": "Somalia"
       },
       "state": {},
       "county": {},
@@ -173275,7 +173339,8 @@
       "tz": [
         "Africa/Mogadishu"
       ],
-      "population": 7531386
+      "population": 7531386,
+      "taxonomy": "country"
     },
     "displayName": "Somalia"
   },
@@ -173845,7 +173910,8 @@
       "tz": [
         "Africa/Dar_es_Salaam"
       ],
-      "population": 53950935
+      "population": 53950935,
+      "taxonomy": "country"
     },
     "displayName": "Tanzania"
   },
@@ -174006,7 +174072,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.49019607843137253
+      "rating": 0.49019607843137253,
+      "taxonomy": "state"
     },
     "displayName": "Virgin Islands (USA)"
   },
@@ -174178,7 +174245,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Cayman"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Cayman Islands (Great Britain)"
   },
@@ -174338,8 +174406,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Reunion",
@@ -174347,7 +174414,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "Reunion (France)"
   },
@@ -174907,8 +174975,7 @@
     "meta": {
       "country": {
         "code": "BRB",
-        "name": "Barbados",
-        "shortName": "Barbados"
+        "name": "Barbados"
       },
       "state": {},
       "county": {},
@@ -174917,7 +174984,8 @@
       "tz": [
         "America/Barbados"
       ],
-      "population": 292336
+      "population": 292336,
+      "taxonomy": "country"
     },
     "displayName": "Barbados"
   },
@@ -175477,8 +175545,7 @@
     "meta": {
       "country": {
         "code": "MNE",
-        "name": "Montenegro",
-        "shortName": "Montenegro"
+        "name": "Montenegro"
       },
       "state": {},
       "county": {},
@@ -175487,7 +175554,8 @@
       "tz": [
         "Europe/Podgorica"
       ],
-      "population": 642550
+      "population": 642550,
+      "taxonomy": "country"
     },
     "displayName": "Montenegro"
   },
@@ -176047,8 +176115,7 @@
     "meta": {
       "country": {
         "code": "KGZ",
-        "name": "Kyrgyzstan",
-        "shortName": "Kyrgyzstan"
+        "name": "Kyrgyzstan"
       },
       "state": {},
       "county": {},
@@ -176057,7 +176124,8 @@
       "tz": [
         "Asia/Bishkek"
       ],
-      "population": 5789122
+      "population": 5789122,
+      "taxonomy": "country"
     },
     "displayName": "Kyrgyzstan"
   },
@@ -176617,8 +176685,7 @@
     "meta": {
       "country": {
         "code": "MUS",
-        "name": "Mauritius",
-        "shortName": "Mauritius"
+        "name": "Mauritius"
       },
       "state": {},
       "county": {},
@@ -176627,7 +176694,8 @@
       "tz": [
         "Indian/Mauritius"
       ],
-      "population": 1356388
+      "population": 1356388,
+      "taxonomy": "country"
     },
     "displayName": "Mauritius"
   },
@@ -176787,8 +176855,7 @@
     "meta": {
       "country": {
         "code": "NLD",
-        "name": "Netherlands",
-        "shortName": "Netherlands"
+        "name": "Netherlands"
       },
       "state": {
         "code": "Aruba",
@@ -176796,7 +176863,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "Aruba (Netherlands)"
   },
@@ -177356,8 +177424,7 @@
     "meta": {
       "country": {
         "code": "ZMB",
-        "name": "Zambia",
-        "shortName": "Zambia"
+        "name": "Zambia"
       },
       "state": {},
       "county": {},
@@ -177366,7 +177433,8 @@
       "tz": [
         "Africa/Lusaka"
       ],
-      "population": 15972000
+      "population": 15972000,
+      "taxonomy": "country"
     },
     "displayName": "Zambia"
   },
@@ -177926,8 +177994,7 @@
     "meta": {
       "country": {
         "code": "DJI",
-        "name": "Djibouti",
-        "shortName": "Djibouti"
+        "name": "Djibouti"
       },
       "state": {},
       "county": {},
@@ -177936,7 +178003,8 @@
       "tz": [
         "Africa/Djibouti"
       ],
-      "population": 865267
+      "population": 865267,
+      "taxonomy": "country"
     },
     "displayName": "Djibouti"
   },
@@ -178496,8 +178564,7 @@
     "meta": {
       "country": {
         "code": "GMB",
-        "name": "Gambia",
-        "shortName": "Gambia"
+        "name": "Gambia"
       },
       "state": {},
       "county": {},
@@ -178506,7 +178573,8 @@
       "tz": [
         "Africa/Banjul"
       ],
-      "population": 2051363
+      "population": 2051363,
+      "taxonomy": "country"
     },
     "displayName": "Gambia"
   },
@@ -178678,7 +178746,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Montserrat"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Montserrat (Great Britain)"
   },
@@ -179238,8 +179307,7 @@
     "meta": {
       "country": {
         "code": "BHS",
-        "name": "Bahamas",
-        "shortName": "Bahamas"
+        "name": "Bahamas"
       },
       "state": {},
       "county": {},
@@ -179248,7 +179316,8 @@
       "tz": [
         "America/Nassau"
       ],
-      "population": 329988
+      "population": 329988,
+      "taxonomy": "country"
     },
     "displayName": "Bahamas"
   },
@@ -179408,8 +179477,7 @@
     "meta": {
       "country": {
         "code": "DNK",
-        "name": "Denmark",
-        "shortName": "Denmark"
+        "name": "Denmark"
       },
       "state": {
         "code": "Greenland",
@@ -179420,7 +179488,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Godthab"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Greenland (Denmark)"
   },
@@ -179580,8 +179649,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "New Caledonia",
@@ -179589,7 +179657,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.5098039215686274
+      "rating": 0.5098039215686274,
+      "taxonomy": "state"
     },
     "displayName": "New Caledonia (France)"
   },
@@ -179761,7 +179830,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "Atlantic/Bermuda"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Bermuda (Great Britain)"
   },
@@ -180321,8 +180391,7 @@
     "meta": {
       "country": {
         "code": "TCD",
-        "name": "Chad",
-        "shortName": "Chad"
+        "name": "Chad"
       },
       "state": {},
       "county": {},
@@ -180331,7 +180400,8 @@
       "tz": [
         "Africa/Ndjamena"
       ],
-      "population": 12075985
+      "population": 12075985,
+      "taxonomy": "country"
     },
     "displayName": "Chad"
   },
@@ -180891,8 +180961,7 @@
     "meta": {
       "country": {
         "code": "SLV",
-        "name": "El Salvador",
-        "shortName": "El Salvador"
+        "name": "El Salvador"
       },
       "state": {},
       "county": {},
@@ -180901,7 +180970,8 @@
       "tz": [
         "America/El_Salvador"
       ],
-      "population": 6172011
+      "population": 6172011,
+      "taxonomy": "country"
     },
     "displayName": "El Salvador"
   },
@@ -181461,8 +181531,7 @@
     "meta": {
       "country": {
         "code": "FJI",
-        "name": "Fiji",
-        "shortName": "Fiji"
+        "name": "Fiji"
       },
       "state": {},
       "county": {},
@@ -181471,7 +181540,8 @@
       "tz": [
         "Pacific/Fiji"
       ],
-      "population": 920938
+      "population": 920938,
+      "taxonomy": "country"
     },
     "displayName": "Fiji"
   },
@@ -182031,8 +182101,7 @@
     "meta": {
       "country": {
         "code": "NIC",
-        "name": "Nicaragua",
-        "shortName": "Nicaragua"
+        "name": "Nicaragua"
       },
       "state": {},
       "county": {},
@@ -182041,7 +182110,8 @@
       "tz": [
         "America/Managua"
       ],
-      "population": 6025951
+      "population": 6025951,
+      "taxonomy": "country"
     },
     "displayName": "Nicaragua"
   },
@@ -182601,8 +182671,7 @@
     "meta": {
       "country": {
         "code": "MDG",
-        "name": "Madagascar",
-        "shortName": "Madagascar"
+        "name": "Madagascar"
       },
       "state": {},
       "county": {},
@@ -182611,7 +182680,8 @@
       "tz": [
         "Indian/Antananarivo"
       ],
-      "population": 25054161
+      "population": 25054161,
+      "taxonomy": "country"
     },
     "displayName": "Madagascar"
   },
@@ -183171,8 +183241,7 @@
     "meta": {
       "country": {
         "code": "HTI",
-        "name": "Haiti",
-        "shortName": "Haiti"
+        "name": "Haiti"
       },
       "state": {},
       "county": {},
@@ -183181,7 +183250,8 @@
       "tz": [
         "America/Port-au-Prince"
       ],
-      "population": 10646714
+      "population": 10646714,
+      "taxonomy": "country"
     },
     "displayName": "Haiti"
   },
@@ -183741,8 +183811,7 @@
     "meta": {
       "country": {
         "code": "AGO",
-        "name": "Angola",
-        "shortName": "Angola"
+        "name": "Angola"
       },
       "state": {},
       "county": {},
@@ -183751,7 +183820,8 @@
       "tz": [
         "Africa/Luanda"
       ],
-      "population": 29310273
+      "population": 29310273,
+      "taxonomy": "country"
     },
     "displayName": "Angola"
   },
@@ -184311,8 +184381,7 @@
     "meta": {
       "country": {
         "code": "CPV",
-        "name": "Cabo Verde",
-        "shortName": "Cabo Verde"
+        "name": "Cabo Verde"
       },
       "state": {},
       "county": {},
@@ -184321,7 +184390,8 @@
       "tz": [
         "Atlantic/Cape_Verde"
       ],
-      "population": 560899
+      "population": 560899,
+      "taxonomy": "country"
     },
     "displayName": "Cabo Verde"
   },
@@ -184481,8 +184551,7 @@
     "meta": {
       "country": {
         "code": "NLD",
-        "name": "Netherlands",
-        "shortName": "Netherlands"
+        "name": "Netherlands"
       },
       "state": {
         "code": "Sint Maarten",
@@ -184493,7 +184562,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "America/Lower_Princes"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Sint Maarten (Netherlands)"
   },
@@ -185053,8 +185123,7 @@
     "meta": {
       "country": {
         "code": "NER",
-        "name": "Niger",
-        "shortName": "Niger"
+        "name": "Niger"
       },
       "state": {},
       "county": {},
@@ -185063,7 +185132,8 @@
       "tz": [
         "Africa/Niamey"
       ],
-      "population": 19245344
+      "population": 19245344,
+      "taxonomy": "country"
     },
     "displayName": "Niger"
   },
@@ -185235,7 +185305,8 @@
       "rating": 0.5098039215686274,
       "tz": [
         "Europe/Isle_of_Man"
-      ]
+      ],
+      "taxonomy": "state"
     },
     "displayName": "Isle of Man (Great Britain)"
   },
@@ -185795,8 +185866,7 @@
     "meta": {
       "country": {
         "code": "ZWE",
-        "name": "Zimbabwe",
-        "shortName": "Zimbabwe"
+        "name": "Zimbabwe"
       },
       "state": {},
       "county": {},
@@ -185805,7 +185875,8 @@
       "tz": [
         "Africa/Harare"
       ],
-      "population": 13805084
+      "population": 13805084,
+      "taxonomy": "country"
     },
     "displayName": "Zimbabwe"
   },
@@ -186365,8 +186436,7 @@
     "meta": {
       "country": {
         "code": "ERI",
-        "name": "Eritrea",
-        "shortName": "Eritrea"
+        "name": "Eritrea"
       },
       "state": {},
       "county": {},
@@ -186375,7 +186445,8 @@
       "tz": [
         "Africa/Asmara"
       ],
-      "population": 5918919
+      "population": 5918919,
+      "taxonomy": "country"
     },
     "displayName": "Eritrea"
   },
@@ -186935,8 +187006,7 @@
     "meta": {
       "country": {
         "code": "UGA",
-        "name": "Uganda",
-        "shortName": "Uganda"
+        "name": "Uganda"
       },
       "state": {},
       "county": {},
@@ -186945,7 +187015,8 @@
       "tz": [
         "Africa/Kampala"
       ],
-      "population": 39570125
+      "population": 39570125,
+      "taxonomy": "country"
     },
     "displayName": "Uganda"
   },
@@ -187505,8 +187576,7 @@
     "meta": {
       "country": {
         "code": "DMA",
-        "name": "Dominica",
-        "shortName": "Dominica"
+        "name": "Dominica"
       },
       "state": {},
       "county": {},
@@ -187515,7 +187585,8 @@
       "tz": [
         "America/Dominica"
       ],
-      "population": 73897
+      "population": 73897,
+      "taxonomy": "country"
     },
     "displayName": "Dominica"
   },
@@ -188075,8 +188146,7 @@
     "meta": {
       "country": {
         "code": "GRD",
-        "name": "Grenada",
-        "shortName": "Grenada"
+        "name": "Grenada"
       },
       "state": {},
       "county": {},
@@ -188085,7 +188155,8 @@
       "tz": [
         "America/Grenada"
       ],
-      "population": 111724
+      "population": 111724,
+      "taxonomy": "country"
     },
     "displayName": "Grenada"
   },
@@ -188645,8 +188716,7 @@
     "meta": {
       "country": {
         "code": "MOZ",
-        "name": "Mozambique",
-        "shortName": "Mozambique"
+        "name": "Mozambique"
       },
       "state": {},
       "county": {},
@@ -188655,7 +188725,8 @@
       "tz": [
         "Africa/Maputo"
       ],
-      "population": 26573706
+      "population": 26573706,
+      "taxonomy": "country"
     },
     "displayName": "Mozambique"
   },
@@ -189215,8 +189286,7 @@
     "meta": {
       "country": {
         "code": "SYR",
-        "name": "Syrian Arab Republic",
-        "shortName": "Syrian Arab Republic"
+        "name": "Syrian Arab Republic"
       },
       "state": {},
       "county": {},
@@ -189225,7 +189295,8 @@
       "tz": [
         "Asia/Damascus"
       ],
-      "population": 18028549
+      "population": 18028549,
+      "taxonomy": "country"
     },
     "displayName": "Syrian Arab Republic"
   },
@@ -189355,13 +189426,13 @@
     "meta": {
       "country": {
         "code": "GLP",
-        "name": "Guadeloupe",
-        "shortName": "Guadeloupe"
+        "name": "Guadeloupe"
       },
       "state": {},
       "county": {},
       "city": {},
-      "rating": 0.5490196078431373
+      "rating": 0.5490196078431373,
+      "taxonomy": "country"
     },
     "displayName": "Guadeloupe"
   },
@@ -189491,13 +189562,13 @@
     "meta": {
       "country": {
         "code": "MYT",
-        "name": "Mayotte",
-        "shortName": "Mayotte"
+        "name": "Mayotte"
       },
       "state": {},
       "county": {},
       "city": {},
-      "rating": 0.5490196078431373
+      "rating": 0.5490196078431373,
+      "taxonomy": "country"
     },
     "displayName": "Mayotte"
   },
@@ -189605,8 +189676,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "British Columbia",
@@ -189618,7 +189688,8 @@
       "tz": [
         "America/Vancouver"
       ],
-      "population": 5071000
+      "population": 5071000,
+      "taxonomy": "state"
     },
     "displayName": "British Columbia (Canada)"
   },
@@ -189726,8 +189797,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Alberta",
@@ -189739,7 +189809,8 @@
       "tz": [
         "America/Edmonton"
       ],
-      "population": 4067175
+      "population": 4067175,
+      "taxonomy": "state"
     },
     "displayName": "Alberta (Canada)"
   },
@@ -189847,8 +189918,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Saskatchewan",
@@ -189860,7 +189930,8 @@
       "tz": [
         "America/Regina"
       ],
-      "population": 1098352
+      "population": 1098352,
+      "taxonomy": "state"
     },
     "displayName": "Saskatchewan (Canada)"
   },
@@ -189968,8 +190039,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Manitoba",
@@ -189981,7 +190051,8 @@
       "tz": [
         "America/Winnipeg"
       ],
-      "population": 1278365
+      "population": 1278365,
+      "taxonomy": "state"
     },
     "displayName": "Manitoba (Canada)"
   },
@@ -190089,8 +190160,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Ontario",
@@ -190102,7 +190172,8 @@
       "tz": [
         "America/Toronto"
       ],
-      "population": 13448494
+      "population": 13448494,
+      "taxonomy": "state"
     },
     "displayName": "Ontario (Canada)"
   },
@@ -190210,8 +190281,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Quebec",
@@ -190223,7 +190293,8 @@
       "tz": [
         "America/Toronto"
       ],
-      "population": 8164361
+      "population": 8164361,
+      "taxonomy": "state"
     },
     "displayName": "Quebec (Canada)"
   },
@@ -190331,8 +190402,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "New Brunswick",
@@ -190344,7 +190414,8 @@
       "tz": [
         "America/Moncton"
       ],
-      "population": 747101
+      "population": 747101,
+      "taxonomy": "state"
     },
     "displayName": "New Brunswick (Canada)"
   },
@@ -190445,8 +190516,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Prince Edward Island",
@@ -190458,7 +190528,8 @@
       "tz": [
         "America/Halifax"
       ],
-      "population": 142907
+      "population": 142907,
+      "taxonomy": "state"
     },
     "displayName": "Prince Edward Island (Canada)"
   },
@@ -190552,8 +190623,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Newfoundland and Labrador",
@@ -190565,7 +190635,8 @@
       "tz": [
         "America/Goose_Bay"
       ],
-      "population": 519716
+      "population": 519716,
+      "taxonomy": "state"
     },
     "displayName": "Newfoundland and Labrador (Canada)"
   },
@@ -190659,8 +190730,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Nova Scotia",
@@ -190672,7 +190742,8 @@
       "tz": [
         "America/Halifax"
       ],
-      "population": 923598
+      "population": 923598,
+      "taxonomy": "state"
     },
     "displayName": "Nova Scotia (Canada)"
   },
@@ -190730,8 +190801,7 @@
     "meta": {
       "country": {
         "code": "FRA",
-        "name": "France",
-        "shortName": "France"
+        "name": "France"
       },
       "state": {
         "code": "Nouvelle-Calédonie",
@@ -190739,7 +190809,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.11764705882352941
+      "rating": 0.11764705882352941,
+      "taxonomy": "state"
     },
     "displayName": "Nouvelle-Calédonie (France)"
   },
@@ -190805,8 +190876,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Yukon",
@@ -190818,7 +190888,8 @@
       "tz": [
         "America/Yellowknife"
       ],
-      "population": 35874
+      "population": 35874,
+      "taxonomy": "state"
     },
     "displayName": "Yukon (Canada)"
   },
@@ -190877,8 +190948,7 @@
     "meta": {
       "country": {
         "code": "CAN",
-        "name": "Canada",
-        "shortName": "Canada"
+        "name": "Canada"
       },
       "state": {
         "code": "Total",
@@ -190886,7 +190956,8 @@
       },
       "county": {},
       "city": {},
-      "rating": 0.3137254901960784
+      "rating": 0.3137254901960784,
+      "taxonomy": "state"
     },
     "displayName": "Total (Canada)"
   },
@@ -190936,8 +191007,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Andhra Pradesh",
@@ -190949,7 +191019,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 49577103
+      "population": 49577103,
+      "taxonomy": "state"
     },
     "displayName": "Andhra Pradesh (India)"
   },
@@ -190999,8 +191070,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Bihar",
@@ -191012,7 +191082,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 104099452
+      "population": 104099452,
+      "taxonomy": "state"
     },
     "displayName": "Bihar (India)"
   },
@@ -191062,8 +191133,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Chhattisgarh",
@@ -191075,7 +191145,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 25545198
+      "population": 25545198,
+      "taxonomy": "state"
     },
     "displayName": "Chhattisgarh (India)"
   },
@@ -191125,8 +191196,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Delhi",
@@ -191138,7 +191208,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 16787941
+      "population": 16787941,
+      "taxonomy": "state"
     },
     "displayName": "Delhi (India)"
   },
@@ -191188,8 +191259,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Gujarat",
@@ -191201,7 +191271,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 60439692
+      "population": 60439692,
+      "taxonomy": "state"
     },
     "displayName": "Gujarat (India)"
   },
@@ -191251,8 +191322,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Haryana",
@@ -191264,7 +191334,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 25351462
+      "population": 25351462,
+      "taxonomy": "state"
     },
     "displayName": "Haryana (India)"
   },
@@ -191314,8 +191385,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Himachal Pradesh",
@@ -191327,7 +191397,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 6864602
+      "population": 6864602,
+      "taxonomy": "state"
     },
     "displayName": "Himachal Pradesh (India)"
   },
@@ -191377,8 +191448,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Karnataka",
@@ -191390,7 +191460,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 61095297
+      "population": 61095297,
+      "taxonomy": "state"
     },
     "displayName": "Karnataka (India)"
   },
@@ -191440,8 +191511,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Kerala",
@@ -191453,7 +191523,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 33406061
+      "population": 33406061,
+      "taxonomy": "state"
     },
     "displayName": "Kerala (India)"
   },
@@ -191503,8 +191574,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Madhya Pradesh",
@@ -191516,7 +191586,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 72626809
+      "population": 72626809,
+      "taxonomy": "state"
     },
     "displayName": "Madhya Pradesh (India)"
   },
@@ -191566,8 +191637,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Maharashtra",
@@ -191579,7 +191649,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 112374333
+      "population": 112374333,
+      "taxonomy": "state"
     },
     "displayName": "Maharashtra (India)"
   },
@@ -191629,8 +191700,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Odisha",
@@ -191642,7 +191712,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 41974218
+      "population": 41974218,
+      "taxonomy": "state"
     },
     "displayName": "Odisha (India)"
   },
@@ -191692,8 +191763,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Punjab",
@@ -191705,7 +191775,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 27743338
+      "population": 27743338,
+      "taxonomy": "state"
     },
     "displayName": "Punjab (India)"
   },
@@ -191755,8 +191826,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Rajasthan",
@@ -191768,7 +191838,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 68548437
+      "population": 68548437,
+      "taxonomy": "state"
     },
     "displayName": "Rajasthan (India)"
   },
@@ -191818,8 +191889,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Tamil Nadu",
@@ -191831,7 +191901,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 72147030
+      "population": 72147030,
+      "taxonomy": "state"
     },
     "displayName": "Tamil Nadu (India)"
   },
@@ -191881,8 +191952,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Telengana",
@@ -191891,7 +191961,8 @@
       "county": {},
       "city": {},
       "rating": 0.47058823529411764,
-      "population": 35003674
+      "population": 35003674,
+      "taxonomy": "state"
     },
     "displayName": "Telengana (India)"
   },
@@ -191941,8 +192012,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Chandigarh",
@@ -191954,7 +192024,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 1147494
+      "population": 1147494,
+      "taxonomy": "state"
     },
     "displayName": "Chandigarh (India)"
   },
@@ -192004,8 +192075,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Jammu and Kashmir",
@@ -192017,7 +192087,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 12267032
+      "population": 12267032,
+      "taxonomy": "state"
     },
     "displayName": "Jammu and Kashmir (India)"
   },
@@ -192067,8 +192138,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Ladakh",
@@ -192077,7 +192147,8 @@
       "county": {},
       "city": {},
       "rating": 0.47058823529411764,
-      "population": 274000
+      "population": 274000,
+      "taxonomy": "state"
     },
     "displayName": "Ladakh (India)"
   },
@@ -192127,8 +192198,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Uttar Pradesh",
@@ -192140,7 +192210,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 199812341
+      "population": 199812341,
+      "taxonomy": "state"
     },
     "displayName": "Uttar Pradesh (India)"
   },
@@ -192190,8 +192261,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Uttarakhand",
@@ -192203,7 +192273,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 10086292
+      "population": 10086292,
+      "taxonomy": "state"
     },
     "displayName": "Uttarakhand (India)"
   },
@@ -192253,8 +192324,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "West Bengal",
@@ -192266,7 +192336,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 91276115
+      "population": 91276115,
+      "taxonomy": "state"
     },
     "displayName": "West Bengal (India)"
   },
@@ -192799,8 +192870,7 @@
     "meta": {
       "country": {
         "code": "BLZ",
-        "name": "Belize",
-        "shortName": "Belize"
+        "name": "Belize"
       },
       "state": {},
       "county": {},
@@ -192809,7 +192879,8 @@
       "tz": [
         "America/Belize"
       ],
-      "population": 360346
+      "population": 360346,
+      "taxonomy": "country"
     },
     "displayName": "Belize"
   },
@@ -193342,8 +193413,7 @@
     "meta": {
       "country": {
         "code": "LAO",
-        "name": "Lao People's Democratic Republic",
-        "shortName": "Lao People's Democratic Republic"
+        "name": "Lao People's Democratic Republic"
       },
       "state": {},
       "county": {},
@@ -193352,7 +193422,8 @@
       "tz": [
         "Asia/Bangkok"
       ],
-      "population": 7126706
+      "population": 7126706,
+      "taxonomy": "country"
     },
     "displayName": "Lao People's Democratic Republic"
   },
@@ -193386,8 +193457,7 @@
     "meta": {
       "country": {
         "code": "GNB",
-        "name": "Guinea-Bissau",
-        "shortName": "Guinea-Bissau"
+        "name": "Guinea-Bissau"
       },
       "state": {},
       "county": {},
@@ -193396,7 +193466,8 @@
       "tz": [
         "Africa/Bissau"
       ],
-      "population": 1792338
+      "population": 1792338,
+      "taxonomy": "country"
     },
     "displayName": "Guinea-Bissau"
   },
@@ -193430,8 +193501,7 @@
     "meta": {
       "country": {
         "code": "MLI",
-        "name": "Mali",
-        "shortName": "Mali"
+        "name": "Mali"
       },
       "state": {},
       "county": {},
@@ -193440,7 +193510,8 @@
       "tz": [
         "Africa/Bamako"
       ],
-      "population": 17885245
+      "population": 17885245,
+      "taxonomy": "country"
     },
     "displayName": "Mali"
   },
@@ -193474,8 +193545,7 @@
     "meta": {
       "country": {
         "code": "KNA",
-        "name": "Saint Kitts and Nevis",
-        "shortName": "Saint Kitts and Nevis"
+        "name": "Saint Kitts and Nevis"
       },
       "state": {},
       "county": {},
@@ -193484,7 +193554,8 @@
       "tz": [
         "America/St_Kitts"
       ],
-      "population": 52715
+      "population": 52715,
+      "taxonomy": "country"
     },
     "displayName": "Saint Kitts and Nevis"
   },
@@ -193502,8 +193573,7 @@
     "meta": {
       "country": {
         "code": "HKG",
-        "name": "Hong Kong",
-        "shortName": "Hong Kong"
+        "name": "Hong Kong"
       },
       "state": {},
       "county": {},
@@ -193512,7 +193582,8 @@
       "tz": [
         "Asia/Hong_Kong"
       ],
-      "population": 7191503
+      "population": 7191503,
+      "taxonomy": "country"
     },
     "displayName": "Hong Kong"
   },
@@ -193530,8 +193601,7 @@
     "meta": {
       "country": {
         "code": "MAC",
-        "name": "Macao",
-        "shortName": "Macao"
+        "name": "Macao"
       },
       "state": {},
       "county": {},
@@ -193540,7 +193610,8 @@
       "tz": [
         "Asia/Macau"
       ],
-      "population": 601969
+      "population": 601969,
+      "taxonomy": "country"
     },
     "displayName": "Macao"
   },
@@ -193558,8 +193629,7 @@
     "meta": {
       "country": {
         "code": "FRO",
-        "name": "Faroe Islands",
-        "shortName": "Faroe Islands"
+        "name": "Faroe Islands"
       },
       "state": {},
       "county": {},
@@ -193568,7 +193638,8 @@
       "tz": [
         "Atlantic/Faroe"
       ],
-      "population": 50730
+      "population": 50730,
+      "taxonomy": "country"
     },
     "displayName": "Faroe Islands"
   },
@@ -193588,8 +193659,7 @@
     "meta": {
       "country": {
         "code": "IND",
-        "name": "India",
-        "shortName": "India"
+        "name": "India"
       },
       "state": {
         "code": "Goa",
@@ -193601,7 +193671,8 @@
       "tz": [
         "Asia/Kolkata"
       ],
-      "population": 1500000
+      "population": 1500000,
+      "taxonomy": "state"
     },
     "displayName": "Goa (India)"
   },
@@ -193634,7 +193705,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 12692466
+      "population": 12692466,
+      "taxonomy": "state"
     },
     "displayName": "Москва (Russia)"
   },
@@ -193667,7 +193739,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 7687647
+      "population": 7687647,
+      "taxonomy": "state"
     },
     "displayName": "Московская область (Russia)"
   },
@@ -193700,7 +193773,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 5392992
+      "population": 5392992,
+      "taxonomy": "state"
     },
     "displayName": "Санкт-Петербург (Russia)"
   },
@@ -193733,7 +193807,8 @@
       "tz": [
         "Europe/Samara"
       ],
-      "population": 3179026
+      "population": 3179026,
+      "taxonomy": "state"
     },
     "displayName": "Самарская область (Russia)"
   },
@@ -193766,7 +193841,8 @@
       "tz": [
         "Asia/Vladivostok"
       ],
-      "population": 970105
+      "population": 970105,
+      "taxonomy": "state"
     },
     "displayName": "Республика Саха (Якутия) (Russia)"
   },
@@ -193799,7 +193875,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 4310861
+      "population": 4310861,
+      "taxonomy": "state"
     },
     "displayName": "Свердловская область (Russia)"
   },
@@ -193832,7 +193909,8 @@
       "tz": [
         "Europe/Kaliningrad"
       ],
-      "population": 1012253
+      "population": 1012253,
+      "taxonomy": "state"
     },
     "displayName": "Калининградская область (Russia)"
   },
@@ -193865,7 +193943,8 @@
       "tz": [
         "Europe/Kirov"
       ],
-      "population": 1262549
+      "population": 1262549,
+      "taxonomy": "state"
     },
     "displayName": "Кировская область (Russia)"
   },
@@ -193898,7 +193977,8 @@
       "tz": [
         "Asia/Novosibirsk"
       ],
-      "population": 2798251
+      "population": 2798251,
+      "taxonomy": "state"
     },
     "displayName": "Новосибирская область (Russia)"
   },
@@ -193931,7 +194011,8 @@
       "tz": [
         "Asia/Krasnoyarsk"
       ],
-      "population": 2867875
+      "population": 2867875,
+      "taxonomy": "state"
     },
     "displayName": "Красноярский край (Russia)"
   },
@@ -193964,7 +194045,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1006962
+      "population": 1006962,
+      "taxonomy": "state"
     },
     "displayName": "Тамбовская область (Russia)"
   },
@@ -193997,7 +194079,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1139492
+      "population": 1139492,
+      "taxonomy": "state"
     },
     "displayName": "Липецкая область (Russia)"
   },
@@ -194030,7 +194113,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1260345
+      "population": 1260345,
+      "taxonomy": "state"
     },
     "displayName": "Тверская область (Russia)"
   },
@@ -194063,7 +194147,8 @@
       "tz": [
         "Etc/GMT-9"
       ],
-      "population": 1315310
+      "population": 1315310,
+      "taxonomy": "state"
     },
     "displayName": "Хабаровский край (Russia)"
   },
@@ -194096,7 +194181,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 1537684
+      "population": 1537684,
+      "taxonomy": "state"
     },
     "displayName": "Тюменская область (Russia)"
   },
@@ -194129,7 +194215,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1466025
+      "population": 1466025,
+      "taxonomy": "state"
     },
     "displayName": "Тульская область (Russia)"
   },
@@ -194162,7 +194249,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 2599301
+      "population": 2599301,
+      "taxonomy": "state"
     },
     "displayName": "Пермский край (Russia)"
   },
@@ -194195,7 +194283,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 3203818
+      "population": 3203818,
+      "taxonomy": "state"
     },
     "displayName": "Нижегородская область (Russia)"
   },
@@ -194228,7 +194317,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 5677786
+      "population": 5677786,
+      "taxonomy": "state"
     },
     "displayName": "Краснодарский край (Russia)"
   },
@@ -194261,7 +194351,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 2323657
+      "population": 2323657,
+      "taxonomy": "state"
     },
     "displayName": "Воронежская область (Russia)"
   },
@@ -194294,7 +194385,8 @@
       "tz": [
         "Asia/Novokuznetsk"
       ],
-      "population": 2657758
+      "population": 2657758,
+      "taxonomy": "state"
     },
     "displayName": "Кемеровская область (Russia)"
   },
@@ -194327,7 +194419,8 @@
       "tz": [
         "Asia/Krasnoyarsk"
       ],
-      "population": 534186
+      "population": 534186,
+      "taxonomy": "state"
     },
     "displayName": "Республика Хакасия (Russia)"
   },
@@ -194360,7 +194453,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 820171
+      "population": 820171,
+      "taxonomy": "state"
     },
     "displayName": "Республика Коми (Russia)"
   },
@@ -194393,7 +194487,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1000070
+      "population": 1000070,
+      "taxonomy": "state"
     },
     "displayName": "Калужская область (Russia)"
   },
@@ -194426,7 +194521,8 @@
       "tz": [
         "Asia/Tomsk"
       ],
-      "population": 1079051
+      "population": 1079051,
+      "taxonomy": "state"
     },
     "displayName": "Томская область (Russia)"
   },
@@ -194459,7 +194555,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1092277
+      "population": 1092277,
+      "taxonomy": "state"
     },
     "displayName": "Архангельская область (Russia)"
   },
@@ -194492,7 +194589,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1108924
+      "population": 1108924,
+      "taxonomy": "state"
     },
     "displayName": "Рязанская область (Russia)"
   },
@@ -194525,7 +194623,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1304825
+      "population": 1304825,
+      "taxonomy": "state"
     },
     "displayName": "Пензенская область (Russia)"
   },
@@ -194558,7 +194657,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 1674086
+      "population": 1674086,
+      "taxonomy": "state"
     },
     "displayName": "Ханты-Мансийский АО (Russia)"
   },
@@ -194591,7 +194691,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1876392
+      "population": 1876392,
+      "taxonomy": "state"
     },
     "displayName": "Ленинградская область (Russia)"
   },
@@ -194624,7 +194725,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 1956256
+      "population": 1956256,
+      "taxonomy": "state"
     },
     "displayName": "Оренбургская область (Russia)"
   },
@@ -194657,7 +194759,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 3902642
+      "population": 3902642,
+      "taxonomy": "state"
     },
     "displayName": "Республика Татарстан (Russia)"
   },
@@ -194690,7 +194793,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 868174
+      "population": 868174,
+      "taxonomy": "state"
     },
     "displayName": "Кабардино-Балкарская Республика (Russia)"
   },
@@ -194723,7 +194827,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 3466960
+      "population": 3466960,
+      "taxonomy": "state"
     },
     "displayName": "Челябинская область (Russia)"
   },
@@ -194756,7 +194861,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 2803021
+      "population": 2803021,
+      "taxonomy": "state"
     },
     "displayName": "Ставропольский край (Russia)"
   },
@@ -194789,7 +194895,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 1192570
+      "population": 1192570,
+      "taxonomy": "state"
     },
     "displayName": "Брянская область (Russia)"
   },
@@ -194822,7 +194929,8 @@
       "tz": [
         "Europe/Samara"
       ],
-      "population": 1501005
+      "population": 1501005,
+      "taxonomy": "state"
     },
     "displayName": "Удмуртская Республика (Russia)"
   },
@@ -194855,7 +194963,8 @@
       "tz": [
         "Europe/Simferopol"
       ],
-      "population": 1912025
+      "population": 1912025,
+      "taxonomy": "state"
     },
     "displayName": "Республика Крым (Russia)"
   },
@@ -194888,7 +194997,8 @@
       "tz": [
         "Asia/Yekaterinburg"
       ],
-      "population": 4037811
+      "population": 4037811,
+      "taxonomy": "state"
     },
     "displayName": "Республика Башкортостан (Russia)"
   },
@@ -194921,7 +195031,8 @@
       "tz": [
         "Asia/Vladivostok"
       ],
-      "population": 1895305
+      "population": 1895305,
+      "taxonomy": "state"
     },
     "displayName": "Приморский край (Russia)"
   },
@@ -194954,7 +195065,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 733682
+      "population": 733682,
+      "taxonomy": "state"
     },
     "displayName": "Орловская область (Russia)"
   },
@@ -194987,7 +195099,8 @@
       "tz": [
         "Europe/Moscow"
       ],
-      "population": 626046
+      "population": 626046,
+      "taxonomy": "state"
     },
     "displayName": "Псковская область (Russia)"
   },
@@ -195020,7 +195133,8 @@
       "tz": [
         "Asia/Irkutsk"
       ],
-      "population": 986109
+      "population": 986109,
+      "taxonomy": "state"
     },
     "displayName": "Республика Бурятия (Russia)"
   }

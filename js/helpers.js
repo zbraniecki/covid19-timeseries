@@ -31,6 +31,13 @@ function getUserPreferences() {
   return result;
 }
 
+function getTaxonomyName(tax) {
+  if (tax.shortName) {
+    return tax.shortName;
+  }
+  return tax.name;
+}
+
 function normalizeDataSet(sortedDataSet, userPreferences) {
   let {type} = getTypeAndView(SETTINGS, userPreferences);
 
