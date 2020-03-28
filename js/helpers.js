@@ -101,6 +101,13 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
   }
 }
 
+function calculateLatestValue(datesSet, latest, type, view) {
+  if (!latest.hasOwnProperty(type.id)) {
+    return undefined;
+  }
+  return calculateValue(datesSet, latest[type.id], type, view);
+}
+
 function calculateValue(datesSet, idx, type, view) {
   let day = datesSet[idx];
   if (!day) {
@@ -109,9 +116,12 @@ function calculateValue(datesSet, idx, type, view) {
 
   if (view.id === "delta") {
     let value = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
+    if (value === undefined) {
+      return undefined;
+    }
     let valuePrev = calculateValue(datesSet, idx - 1, type, getView(SETTINGS, "total"));
     if (!valuePrev) {
-      return 0;
+      return undefined;
     }
     return (value / valuePrev) - 1;
   }
@@ -125,7 +135,7 @@ function calculateValue(datesSet, idx, type, view) {
     return (total3EMA - total7EMA) / total;
   }
 
-  if (type.id === "active" && !day.value.hasOwnProperty("active")) {
+  if (type.id === "active" && !day.value.hasOwnProperty("active") && day.value.hasOwnProperty("recovered")) {
     return day.value["cases"] - day.value["deaths"] - day.value["recovered"];
   }
 

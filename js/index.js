@@ -163,12 +163,13 @@ function processMainData(dataSet, userPreferences) {
       let maxColor =
         (type.sentiment == "positive" && value > 0) || (type.sentiment == "negative" && value < 0) ? [0, 255, 0] : [255, 0, 0];
       let colorVector = value > 0 ? 1 : -1;
+      let colorValue = value === undefined ? 0 : (value / type.views[view.id].max) * colorVector;
       result.dates[relIdx].values[i] = {
         "region": region.id,
         "date": date,
         "value": formatValue(value, userPreferences),
         "normalized": region.normalized["status"] === "normalized",
-        "color": interpolateColor([255, 255, 255], maxColor, (value / type.views[view.id].max) * colorVector),
+        "color": interpolateColor([255, 255, 255], maxColor, colorValue),
         "isToday": isToday(date),
       };
     }
@@ -182,7 +183,7 @@ function processRegionData(sortedDataSet, userPreferences) {
 
   return sortedDataSet.filter(region => isRegionInUserPreferences(region, userPreferences))
   .map(region => {
-    let value = calculateValue(region.dates, region.dates.length - 1, type, view);
+    let value = calculateLatestValue(region.dates, region.latest, type, view);
     let search = `${region.meta.country.code.toLowerCase()} ${getTaxonomyName(region.meta.country).toLowerCase()}`;
     if (region.meta.taxonomy == "state") {
       search += `${region.meta.state.code.toLowerCase()} ${getTaxonomyName(region.meta.state).toLowerCase()}`;

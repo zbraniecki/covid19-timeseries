@@ -22,14 +22,23 @@ function getStateNames() {
 }
 
 function intoDatesArray(dates, regionId) {
-  let result = [];
+  let result = {
+    dates: [],
+    latest: {},
+  };
   let prev = 0;
   for (let date in dates) {
     if (dates[date]["cases"] < prev) {
       console.warn(`Number of cases for ${regionId} dropped from ${prev} to ${dates[date]["cases"]}`);
     }
     prev = dates[date]["cases"];
-    result.push({
+    for (let type in dates[date]) {
+      if (type == "growthFactor") {
+        continue;
+      }
+      result.latest[type] = result.dates.length;
+    }
+    result.dates.push({
       date,
       value: dates[date]
     });
@@ -155,7 +164,7 @@ function convert(input, iso3166, stateNames) {
       continue;
     }
 
-    let dates = intoDatesArray(region.dates, regionCode);
+    let {dates, latest} = intoDatesArray(region.dates, regionCode);
     if (!hasMoreThanXCases(dates, 1)) {
       continue;
     }
@@ -169,6 +178,7 @@ function convert(input, iso3166, stateNames) {
     let entry = {
       "id": getRegionCode(region),
       "dates": dates,
+      "latest": latest,
       "meta": {
         "country": {
           "code": region.country,
@@ -220,91 +230,6 @@ function getOldName(region) {
   return getTaxonomyName(region.meta.country);
 }
 
-function backFill(output, oldSource) {
-  for (let region of output) {
-    if (region.meta.state.code || region.meta.county.code || region.meta.city.code) {
-      continue;
-    }
-    if (knownSkipped.includes(region.id)) {
-      continue;
-    }
-    let oldRegion = oldSource[getOldName(region)];
-    if (!oldRegion) {
-      throw new Error(`Missing region for ${region.id}.`);
-    }
-
-    // First, let's find the chunk of data that only
-    // exists in old timeseries and add it.
-    let firstNewEntry = region.dates[0];
-    let matchingOldEntry = null;
-    for (let idx in oldRegion) {
-      if (oldRegion[idx].date == firstNewEntry.date) {
-        matchingOldEntry = idx;
-      }
-    }
-    if (matchingOldEntry) {
-      let oldEntries = oldRegion.slice(0, matchingOldEntry).map(entry => {
-        let value = {};
-        for (let type in entry) {
-          if (type == "date") {
-            continue;
-          }
-          if (type == "confirmed") {
-            value["cases"] = entry[type];
-          } else {
-            value[type] = entry[type];
-          }
-        }
-        return {
-          date: entry.date,
-          value,
-        };
-      });
-      region.dates.splice(0, 0, ...oldEntries);
-    }
-
-    // Now, let's find all matching data and extend from old timeseries
-    // onto the new one.
-    let newIndex = null;
-    for (let i = 0; i < region.dates.length; i++) {
-      if (oldRegion[0].date == region.dates[i].date) {
-        newIndex = i;
-        break;
-      }
-    }
-    if (newIndex !== null) {
-      for (let i = 0; i < oldRegion.length; i++) {
-        let oldEntry = oldRegion[i];
-        let newEntry = region.dates[newIndex];
-        // while (oldEntry.date != newEntry.date) {
-        //   console.log(`Missing data for ${region.id}`);
-        //   i += 1;
-        //   oldEntry = oldRegion[i];
-        // }
-        if (oldEntry.date != newEntry.date) {
-          throw new Error(`Error when matching date ${oldEntry.date} to ${newEntry.date} for ${region.id}!`);
-        }
-        for (let type in oldEntry) {
-          if (type === "date") {
-            continue;
-          }
-          if (type === "confirmed") {
-            type = "cases";
-          }
-          if (!newEntry.value.hasOwnProperty(type)) {
-            if (type == "cases") {
-              newEntry.value[type] = oldEntry["confirmed"];
-            } else {
-              newEntry.value[type] = oldEntry[type];
-            }
-          }
-        }
-        newIndex += 1;
-      }
-    }
-  }
-}
-
 function fixData(output) {
   for (let region of output) {
     for (let idx = 9; idx < region.dates.length; idx++) {
@@ -336,9 +261,6 @@ let source = readJSONFile("./data/timeseries-byLocation.json");
 let iso3166 = readJSONFile("./data/iso3166.json");
 let stateNames = getStateNames();
 let output = convert(source, iso3166, stateNames);
-
-let oldSource = readJSONFile("./data/timeseries.json");
-backFill(output, oldSource);
 
 fixData(output);
 
