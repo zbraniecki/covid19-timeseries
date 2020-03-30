@@ -86,6 +86,13 @@ const SETTINGS = {
       },
     },
   ],
+  "perTypes": [
+    {
+      "id": "population",
+      "name": "Million people",
+      "max": 2000,
+    },
+  ],
   "taxonomies": [
     {
       "id": "country",
@@ -110,7 +117,7 @@ function processMainData(dataSet, userPreferences) {
     "dates": [],
   };
 
-  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
+  let {types, view} = getTypesAndView(SETTINGS, userPreferences);
 
   for (let i in dataSet) {
     let region = dataSet[i];
@@ -157,13 +164,14 @@ function processMainData(dataSet, userPreferences) {
         }
       }
 
-      let value = calculateValue(region.dates, idx, type, view);
+      let value = calculateValue(region, idx, types, view);
       let date = parseDate(day.date);
 
       let maxColor =
-        (type.sentiment == "positive" && value > 0) || (type.sentiment == "negative" && value < 0) ? [0, 255, 0] : [255, 0, 0];
+        (types[0].sentiment == "positive" && value > 0) || (types[0].sentiment == "negative" && value < 0) ? [0, 255, 0] : [255, 0, 0];
       let colorVector = value > 0 ? 1 : -1;
-      let colorValue = value === undefined ? 0 : (value / type.views[view.id].max) * colorVector;
+      let maxValue = getMaxValue(types, view);
+      let colorValue = value === undefined ? 0 : (value / maxValue) * colorVector;
       result.dates[relIdx].values[i] = {
         "region": region.id,
         "date": date,
@@ -178,12 +186,12 @@ function processMainData(dataSet, userPreferences) {
 }
 
 function processRegionData(sortedDataSet, userPreferences) {
-  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
+  let {types, view} = getTypesAndView(SETTINGS, userPreferences);
   let typeFilter = userPreferences.selectedTaxonomies;
 
   return sortedDataSet.filter(region => isRegionInUserPreferences(region, userPreferences))
   .map(region => {
-    let value = calculateLatestValue(region.dates, region.latest, type, view);
+    let value = calculateLatestValue(region, region.latest, types, view);
     let search = `${region.meta.country.code.toLowerCase()} ${getTaxonomyName(region.meta.country).toLowerCase()}`;
     if (region.meta.taxonomy == "state") {
       search += `${region.meta.state.code.toLowerCase()} ${getTaxonomyName(region.meta.state).toLowerCase()}`;
@@ -212,31 +220,39 @@ function filterByNeedle(regions, needle) {
 }
 
 function processData(sortedDataSet, userPreferences) {
-  let {type, view} = getTypeAndView(SETTINGS, userPreferences);
+  let {types, view} = getTypesAndView(SETTINGS, userPreferences);
   let result = {
     "legend": {
       "min": null,
     },
-    "selectedType": userPreferences.type,
+    "selectedTypes": userPreferences.types,
     "selectedView": userPreferences.view,
-    "selectedNormalize": getValueForNormalization(type, userPreferences),
+    "selectedNormalize": getValueForNormalization(types, userPreferences),
     "selectedTaxonomies": userPreferences.selectedTaxonomies,
     "main": null,
     "select": {
       "types": null,
+      "perTypes": [],
       "views": null,
       "regions": null,
       "taxonomies": SETTINGS.taxonomies,
     }
   };
 
-  result.legend.min = `Last day below ${getValueForNormalization(type, userPreferences)} ${type.name}.`;
+  result.legend.min = `Last day below ${getValueForNormalization(types, userPreferences)} ${types[0].name}.`;
 
   let selectedDataSet = narrowDataSet(sortedDataSet, userPreferences);
   normalizeDataSet(selectedDataSet, userPreferences);
   result.main = processMainData(selectedDataSet, userPreferences);
 
   result.select.types = SETTINGS.types;
+  result.select.perTypes.push({
+    "id": "none",
+    "name": "",
+  });
+  for (let perType of SETTINGS.perTypes) {
+    result.select.perTypes.push(perType);
+  }
   result.select.views = SETTINGS.views;
   result.select.regions = processRegionData(sortedDataSet, userPreferences);
   return result;
@@ -291,16 +307,43 @@ async function main() {
   });
 
   document.getElementById("typeSelect").addEventListener("change", function () {
-    userPreferences.type = this.value;
+    userPreferences.types[0] = this.value;
     userPreferences.normalize = null;
     sortedDataSet = sortDataSet(dataSet, userPreferences);
     v.data = processData(sortedDataSet, userPreferences);
 
     let params = getSearchParams();
-    params.set("type", userPreferences.type);
+    let types = params.getAll("type");
+    params.delete("type");
+    params.append("type", userPreferences.types[0]);
+    if (userPreferences.types.length > 1) {
+      params.append("type", userPreferences.types[1]);
+    }
     params.delete("normalize");
     setURL(params);
   });
+
+  document.getElementById("perTypeSelect").addEventListener("change", function () {
+    if (this.value == "none") {
+      userPreferences.types = [userPreferences.types[0]];
+    } else {
+      userPreferences.types[1] = this.value;
+    }
+    userPreferences.normalize = null;
+    sortedDataSet = sortDataSet(dataSet, userPreferences);
+    v.data = processData(sortedDataSet, userPreferences);
+
+    let params = getSearchParams();
+    let types = params.getAll("type");
+    params.delete("type");
+    params.append("type", userPreferences.types[0]);
+    if (userPreferences.types.length > 1) {
+      params.append("type", userPreferences.types[1]);
+    }
+    params.delete("normalize");
+    setURL(params);
+  });
+
 
   document.getElementById("viewSelect").addEventListener("change", function () {
     userPreferences.view = this.value;

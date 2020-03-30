@@ -110,7 +110,21 @@
             <select id="typeSelect">
               <option
                 v-for="item in data.select.types"
-                v-bind:selected="data.selectedType === item.id"
+                v-bind:selected="data.selectedTypes[0] === item.id"
+                v-bind:value="item.id"
+                :key="item.id">
+              {{ item.name }}
+              </option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Per</dt>
+          <dd>
+            <select id="perTypeSelect">
+              <option
+                v-for="item in data.select.perTypes"
+                v-bind:selected="data.selectedTypes[1] === item.id"
                 v-bind:value="item.id"
                 :key="item.id">
               {{ item.name }}

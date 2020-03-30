@@ -1,9 +1,9 @@
 function sortDataSet(dataSet, userPreferences) {
-  let {type} = getTypeAndView(SETTINGS, userPreferences);
+  let {types} = getTypesAndView(SETTINGS, userPreferences);
 
   return dataSet.sort((a, b) => {
-    let valueA = calculateLatestValue(a.dates, a.latest, type, getView(SETTINGS, "total"));
-    let valueB = calculateLatestValue(b.dates, b.latest, type, getView(SETTINGS, "total"));
+    let valueA = calculateLatestValue(a, a.latest, types, getView(SETTINGS, "total"));
+    let valueB = calculateLatestValue(b, b.latest, types, getView(SETTINGS, "total"));
     if (isNaN(valueA) && !isNaN(valueB)) {
       return 1;
     }

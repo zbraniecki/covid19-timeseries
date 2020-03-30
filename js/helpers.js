@@ -1,6 +1,6 @@
 function getUserPreferences() {
   let result = {
-    type: "cases",
+    types: ["cases"],
     view: "total",
     normalize: null,
     regions: [],
@@ -8,10 +8,13 @@ function getUserPreferences() {
   };
   let params = getSearchParams();
 
-  let type = params.get("type");
-  if (type) {
-    if (SETTINGS.types.find(t => t.id == type)) {
-      result.type = type;
+  let types = params.getAll("type");
+  if (types.length > 0) {
+    result.types = [];
+    for (let type of types) {
+      if (SETTINGS.types.find(t => t.id == type) || SETTINGS.perTypes.find(t => t.id == type)) {
+        result.types.push(type);
+      }
     }
   }
   let view = params.get("view");
@@ -36,12 +39,22 @@ function getUserPreferences() {
   return result;
 }
 
-function getValueForNormalization(type, userPreferences) {
+function getValueForNormalization(types, userPreferences) {
   if (userPreferences.normalize !== null) {
     return userPreferences.normalize;
   }
 
-  return type.normalize;
+  return types[0].normalize;
+}
+
+function getMaxValue(types, view) {
+  if (view.id !== "total") {
+    return types[0].views[view.id].max;
+  }
+  if (types.length > 1 && types[1].max) {
+    return types[1].max;
+  }
+  return types[0].views[view.id].max;
 }
 
 function getTaxonomyName(tax) {
@@ -52,8 +65,8 @@ function getTaxonomyName(tax) {
 }
 
 function normalizeDataSet(sortedDataSet, userPreferences) {
-  let {type} = getTypeAndView(SETTINGS, userPreferences);
-  let normalizedValue = getValueForNormalization(type, userPreferences);
+  let {types} = getTypesAndView(SETTINGS, userPreferences);
+  let normalizedValue = getValueForNormalization(types, userPreferences);
 
   for (let idx in sortedDataSet) {
     let region = sortedDataSet[idx];
@@ -63,8 +76,8 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     };
 
     for (let i = 0; i < region.dates.length; i++) {
-      let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
-      let nextValue = calculateValue(region.dates, i + 1, type, getView(SETTINGS, "total"));
+      let value = calculateValue(region, i, types, getView(SETTINGS, "total"));
+      let nextValue = calculateValue(region, i + 1, types, getView(SETTINGS, "total"));
       if (nextValue >= normalizedValue && value !== undefined) {
         normalized = {
           "status": "normalized",
@@ -75,7 +88,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     }
     if (normalized["status"] === "none") {
       for (let i = 0; i < region.dates.length; i++) {
-        let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
+        let value = calculateValue(region, i, types, getView(SETTINGS, "total"));
         if (value !== undefined && value > 0) {
           normalized = {
             "status": "firstNonZero",
@@ -87,7 +100,7 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
     }
     if (normalized["status"] === "none") {
       for (let i = 0; i < region.dates.length; i++) {
-        let value = calculateValue(region.dates, i, type, getView(SETTINGS, "total"));
+        let value = calculateValue(region, i, types, getView(SETTINGS, "total"));
         if (value !== undefined) {
           normalized = {
             "status": "firstValue",
@@ -101,45 +114,66 @@ function normalizeDataSet(sortedDataSet, userPreferences) {
   }
 }
 
-function calculateLatestValue(datesSet, latest, type, view) {
-  if (!latest.hasOwnProperty(type.id)) {
+function calculateLatestValue(region, latest, types, view) {
+  if (!latest.hasOwnProperty(types[0].id)) {
     return undefined;
   }
-  return calculateValue(datesSet, latest[type.id], type, view);
+  return calculateValue(region, latest[types[0].id], types, view);
 }
 
-function calculateValue(datesSet, idx, type, view) {
-  let day = datesSet[idx];
+function calculateValue(region, idx, types, view) {
+  let day = region.dates[idx];
   if (!day) {
     return undefined;
   }
 
   if (view.id === "delta") {
-    let value = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
+    let value = calculateValue(region, idx, types, getView(SETTINGS, "total"));
     if (value === undefined) {
       return undefined;
     }
-    let valuePrev = calculateValue(datesSet, idx - 1, type, getView(SETTINGS, "total"));
-    if (!valuePrev) {
+    let valuePrev = calculateValue(region, idx - 1, types, getView(SETTINGS, "total"));
+    if (valuePrev === undefined) {
       return undefined;
+    }
+    if (valuePrev === value) {
+      return 0;
+    }
+    if (valuePrev === 0) {
+      return 1;
     }
     return (value / valuePrev) - 1;
   }
   if (view.id === "ema") {
-    let total = calculateValue(datesSet, idx, type, getView(SETTINGS, "total"));
+    let total = calculateValue(region, idx, types, getView(SETTINGS, "total"));
     if (total === undefined) {
       return undefined;
     }
-    const total3EMA = calculateEMA(datesSet, idx, 3, type);
-    const total7EMA = calculateEMA(datesSet, idx, 7, type);
+    const total3EMA = calculateEMA(region, idx, 3, types);
+    const total7EMA = calculateEMA(region, idx, 7, types);
     return (total3EMA - total7EMA) / total;
   }
 
-  if (type.id === "active" && !day.value.hasOwnProperty("active") && day.value.hasOwnProperty("recovered")) {
-    return day.value["cases"] - day.value["deaths"] - day.value["recovered"];
+  let result;
+  if (types[0].id === "active" && !day.value.hasOwnProperty("active") && day.value.hasOwnProperty("recovered")) {
+    result = day.value["cases"] - day.value["deaths"] - day.value["recovered"];
+  } else {
+    result = day.value[types[0].id];
   }
 
-  return day.value[type.id];
+  if (result == undefined) {
+    return result;
+  }
+
+  if (types.length == 1) {
+    return result;
+  } else {
+    if (region.meta.population) {
+      return Math.round(result / (region.meta.population / 1000000));
+    } else {
+      return result;
+    }
+  }
 }
 
 function isRegionInUserPreferences(region, userPreferences) {
@@ -182,8 +216,8 @@ function formatValue(value, userPreferences) {
   if (value === undefined) {
     return "?";
   }
-  let {view} = getTypeAndView(SETTINGS, userPreferences);
-  
+  let {view, types} = getTypesAndView(SETTINGS, userPreferences);
+
   return value.toLocaleString(undefined, { style: view.style });
 }
 
@@ -240,14 +274,20 @@ const isToday = (someDate) => {
   return isSameDay(today, someDate);
 }
 
-function getTypeAndView(settings, userPreferences) {
+function getTypesAndView(settings, userPreferences) {
   let result = {
-    type: undefined,
+    types: [],
     view: undefined,
   };
   for (let item of settings.types) {
-    if (item.id === userPreferences.type) {
-      result.type = item;
+    if (userPreferences.types.includes(item.id)) {
+      result.types.push(item);
+      break;
+    }
+  }
+  for (let item of settings.perTypes) {
+    if (userPreferences.types.includes(item.id)) {
+      result.types.push(item);
       break;
     }
   }
@@ -269,12 +309,12 @@ function getView(settings, id) {
   return undefined;
 }
 
-function calculateEMA(daysSet, idx, range, type) {
-  let total =  calculateValue(daysSet, idx, type, getView(SETTINGS, "total"));
+function calculateEMA(region, idx, range, types) {
+  let total =  calculateValue(region, idx, types, getView(SETTINGS, "total"));
   if (idx < 1) {
     return total;
   }
-  let prevTotal =  calculateEMA(daysSet, idx - 1, range, type);
+  let prevTotal =  calculateEMA(region, idx - 1, range, types);
   if (!prevTotal) {
     return total;
   }
