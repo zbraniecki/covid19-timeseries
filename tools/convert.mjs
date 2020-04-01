@@ -55,16 +55,18 @@ function getISOEntryForAlpha3(iso3166, alpha3) {
   return undefined;
 }
 
-function isCountry(region) {
-  return !region.state && !region.city && !region.county;
-}
-
-function isState(region) {
-  return region.state && !region.city && !region.county;
-}
-
-function isAlpha3Country(region) {
-  return region.country.length === 3;
+// Workaround some US states getting `aggregate: "county"`
+function getRegionTaxonomy(region) {
+  if (region.city) {
+    return "city";
+  }
+  if (region.county) {
+    return "county";
+  }
+  if (region.state) {
+    return "state";
+  }
+  return "country";
 }
 
 function hasMoreThanXCases(dates, x) {
@@ -105,20 +107,16 @@ function getTaxonomyName(tax) {
   return tax.name;
 }
 
-function getRegionTaxonomy(region) {
-  if (region.state) {
-    return "state";
-  }
-  return "country";
-}
-
 function getDisplayName(entry) {
   let countryName = getTaxonomyName(entry.meta.country);
   if (entry.meta.taxonomy == "country") {
     return countryName;
   }
   let stateName = getTaxonomyName(entry.meta.state);
-  return `${stateName} (${countryName})`;
+  if (entry.meta.taxonomy == "state") {
+    return `${stateName} (${countryName})`;
+  }
+  return `${entry.meta.county.code} (${stateName}, ${countryName})`;
 }
 
 function getRegionCode(region) {
@@ -156,16 +154,13 @@ function convert(input, iso3166, stateNames) {
   for (let regionCode in input) {
     let region = input[regionCode];
 
-    if (!isCountry(region) && !isState(region)) {
-      continue;
-    }
-
-    if (!isAlpha3Country(region)) {
+    let taxonomy = getRegionTaxonomy(region);
+    if (!["country", "state", "county"].includes(taxonomy)) {
       continue;
     }
 
     let {dates, latest} = intoDatesArray(region.dates, regionCode);
-    if (!hasMoreThanXCases(dates, 1)) {
+    if (!hasMoreThanXCases(dates, 200)) {
       continue;
     }
 
@@ -198,7 +193,7 @@ function convert(input, iso3166, stateNames) {
         "rating": region.rating,
         "tz": region.tz,
         "population": region.population,
-        "taxonomy": getRegionTaxonomy(region),
+        "taxonomy": taxonomy,
       },
     };
     entry.displayName = getDisplayName(entry);

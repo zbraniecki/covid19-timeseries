@@ -102,6 +102,10 @@ const SETTINGS = {
       "id": "state",
       "name": "State",
     },
+    {
+      "id": "county",
+      "name": "County",
+    },
   ],
 };
 
@@ -127,12 +131,19 @@ function processMainData(dataSet, userPreferences) {
 
       let name;
       let country;
+      let state;
       if (region.meta.taxonomy == "country") {
         name = countryName;
-      } else {
+      } else if (region.meta.taxonomy == "state") {
         name = getTaxonomyName(region.meta.state);
         country = countryName;
         result.rows.country = true;
+      } else {
+        name = region.meta.county.code;
+        country = countryName;
+        state = getTaxonomyName(region.meta.state);
+        result.rows.country = true;
+        result.rows.state = true;
       }
 
       if (region.meta.population) {
@@ -142,6 +153,7 @@ function processMainData(dataSet, userPreferences) {
         "id": region.id,
         "name": name,
         "country": country,
+        "state": state,
         "population": nFormatter(region.meta.population, 2),
       };
       result.regions.push(entry);
@@ -193,8 +205,11 @@ function processRegionData(sortedDataSet, userPreferences) {
   .map(region => {
     let value = calculateLatestValue(region, region.latest, types, view);
     let search = `${region.meta.country.code.toLowerCase()} ${getTaxonomyName(region.meta.country).toLowerCase()}`;
-    if (region.meta.taxonomy == "state") {
+    if (region.meta.state.code) {
       search += `${region.meta.state.code.toLowerCase()} ${getTaxonomyName(region.meta.state).toLowerCase()}`;
+    }
+    if (region.meta.county.code) {
+      search += `${region.meta.county.code.toLowerCase()}`;
     }
     return {
       "id": region.id,
