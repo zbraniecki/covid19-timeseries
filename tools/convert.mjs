@@ -208,60 +208,9 @@ function convert(input, iso3166, stateNames) {
   return result;
 }
 
-let oldNames = {
-  "USA": "US",
-  "KOR": "Korea, South",
-  "TWN": "Taiwan*",
-  "VNM": "Vietnam",
-  "CIV": "Cote d'Ivoire",
-  "GBR": "United Kingdom",
-  "COD": "Congo (Kinshasa)",
-  "COG": "Congo (Brazzaville)",
-  "SYR": "Syria",
-  "LAO": "Laos",
-};
-// Those regions don't have data in old timeseries.
-let knownSkipped = ["MTQ", "REU", "GLP", "HKG", "MAC", "FRO", "GUF", "MYT", "GRL", "GUM", "GGY", "JEY", "PRI", "GNB", "MLI", "KNA" ];
-
-function getOldName(region) {
-  if (oldNames[region.id]) {
-    return oldNames[region.id];
-  }
-  return getTaxonomyName(region.meta.country);
-}
-
-function fixData(output) {
-  for (let region of output) {
-    for (let idx = 9; idx < region.dates.length; idx++) {
-      let date = region.dates[idx];
-      if (date.date < "2020-3-23") {
-        continue;
-      }
-      let nextDate = region.dates[idx + 1];
-      if (!nextDate) {
-        continue;
-      }
-      if (date.value.hasOwnProperty("deaths") && !nextDate.value.hasOwnProperty("deaths")) {
-        nextDate.value["deaths"] = date.value["deaths"];
-      }
-      if (date.value.hasOwnProperty("recovered") && !nextDate.value.hasOwnProperty("recovered")) {
-        nextDate.value["recovered"] = date.value["recovered"];
-        if (region.meta.country.code == "CHN") {
-          nextDate.value["active"] = date.value["active"] + (nextDate.value["cases"] - date.value["cases"]) - (nextDate.value["deaths"] - date.value["deaths"]);
-        }
-      }
-      if (!nextDate.value.hasOwnProperty("active") || nextDate.value["active"] == null) {
-        nextDate.value["active"] = date.value["active"];
-      }
-    }
-  }
-}
-
 let source = readJSONFile("./data/timeseries-byLocation.json");
 let iso3166 = readJSONFile("./data/iso3166.json");
 let stateNames = getStateNames();
 let output = convert(source, iso3166, stateNames);
-
-fixData(output);
 
 writeJSON("./data/timeseries-converted.json", output);
