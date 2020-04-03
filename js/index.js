@@ -21,7 +21,7 @@ const SETTINGS = {
       "id": "cases",
       "name": "cases",
       "sentiment": "negative",
-      "normalize": 500,
+      "normalize": 1000,
       "views": {
         "total": {
           "max": 50000,
@@ -55,7 +55,7 @@ const SETTINGS = {
       "id": "active",
       "name": "active",
       "sentiment": "negative",
-      "normalize": 200,
+      "normalize": 1000,
       "views": {
         "total": {
           "max": 50000,
