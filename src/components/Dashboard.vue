@@ -49,12 +49,5 @@ aside {
   grid-area: 1 / 2 / 1 / 2;
 }
 
-#dataTable {
-  background-color: red;
-}
-
-#chart {
-  background-color: green;
-}
 </style>
 
