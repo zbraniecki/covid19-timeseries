@@ -28,6 +28,9 @@ function intoDatesArray(dates, regionId) {
   };
   let prev = 0;
   for (let date in dates) {
+    if (date == "2020-4-3") {
+      continue;
+    }
     if (dates[date]["cases"] < prev) {
       console.warn(`Number of cases for ${regionId} dropped from ${prev} to ${dates[date]["cases"]}`);
     }
@@ -47,6 +50,9 @@ function intoDatesArray(dates, regionId) {
 }
 
 function getISOEntryForAlpha3(iso3166, alpha3) {
+  if (alpha3 === "United States") {
+    alpha3 = "USA";
+  }
   for (let entry of iso3166) {
     if (entry["alpha-3"] === alpha3) {
       return entry;
@@ -69,9 +75,8 @@ function getRegionTaxonomy(region) {
   return "country";
 }
 
-function hasMoreThanXCases(dates, x) {
-  let lastDate = dates[dates.length - 1];
-  return lastDate.value.cases > x;
+function hasMoreThanXCases(dataSet, latest, x) {
+  return dataSet[latest.cases].value["cases"] > x;
 }
 
 let shortNames = {
@@ -108,15 +113,27 @@ function getTaxonomyName(tax) {
 }
 
 function getDisplayName(entry) {
+  let parts = [];
+
   let countryName = getTaxonomyName(entry.meta.country);
-  if (entry.meta.taxonomy == "country") {
-    return countryName;
-  }
+  parts.push(countryName);
+
   let stateName = getTaxonomyName(entry.meta.state);
-  if (entry.meta.taxonomy == "state") {
-    return `${stateName} (${countryName})`;
+
+  if (stateName) {
+    parts.push(stateName);
   }
-  return `${entry.meta.county.code} (${stateName}, ${countryName})`;
+
+  if (entry.meta.county.code) {
+    parts.push(entry.meta.county.code);
+  }
+
+  let name = parts.pop();
+
+  if (parts.length == 0) {
+    return name;
+  }
+  return `${name} (${parts.reverse().join(", ")})`;
 }
 
 function getRegionCode(region) {
@@ -153,14 +170,16 @@ function convert(input, iso3166, stateNames) {
 
   for (let regionCode in input) {
     let region = input[regionCode];
-
     let taxonomy = getRegionTaxonomy(region);
     if (!["country", "state", "county"].includes(taxonomy)) {
       continue;
     }
 
     let {dates, latest} = intoDatesArray(region.dates, regionCode);
-    if (!hasMoreThanXCases(dates, 200)) {
+    if (!latest.cases) {
+      continue;
+    }
+    if (!hasMoreThanXCases(dates, latest, 200)) {
       continue;
     }
 
