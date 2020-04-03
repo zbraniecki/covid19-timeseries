@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 84% 15%;
 }
 
 #main {
