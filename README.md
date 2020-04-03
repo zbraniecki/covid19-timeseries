@@ -7,6 +7,14 @@ This is a small project developed over the course of couple days because I reall
 
 I'd love to get help in making the data more useful!
 
+
+# Development
+
+```
+npm i
+npm run serve
+```
+
 # Areas of contribution
 
 * UX - Help make the UI readable and UX intuitive
