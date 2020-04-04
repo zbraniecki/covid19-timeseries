@@ -22,6 +22,11 @@ export default {
     Chart,
     Controls
   },
+  async mounted() {
+    const data = await fetch("/timeseries-converted.json");
+    const json = await data.json();
+    this.$store.commit("setData", json);
+  },
   computed: {
     view() {
       return this.$store.state.ui.view;

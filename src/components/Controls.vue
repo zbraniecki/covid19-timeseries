@@ -1,7 +1,7 @@
 <template>
   <div id="menu">
     <select @change="setView">
-      <option v-for="item of viewList" :key="item" :value="item">
+      <option v-for="item of viewList" :key="item" :value="item" :selected="selectedView == item">
         {{ item }}
       </option>
     </select>
@@ -22,6 +22,9 @@ export default {
     },
     regionList() {
       return this.$store.state.data;
+    },
+    selectedView() {
+      return this.$store.state.ui.view;
     }
   },
   methods: {

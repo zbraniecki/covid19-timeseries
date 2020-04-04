@@ -13,38 +13,17 @@ function updateQueryString(state) {
   for (const id of state.selection.regions) {
     params.append("region", id);
   }
-  window.history.replaceState({}, '', `${document.location.pathname}?${params}`);
+  window.history.replaceState(
+    {},
+    "",
+    `${document.location.pathname}?${params}`
+  );
 }
-
-const data = [
-  {
-    id: "usa",
-    dates: [],
-    displayName: "USA",
-    meta: {
-      country: {
-        id: "usa",
-        name: "United States"
-      }
-    }
-  },
-  {
-    id: "ita",
-    dates: [],
-    displayName: "Italy",
-    meta: {
-      country: {
-        id: "ita",
-        name: "Italy"
-      }
-    }
-  },
-];
 
 export default new Vuex.Store({
   state: {
     ui: {
-      view: Views.Table
+      view: Views.Chart
     },
     controls: {
       views: Object.keys(Views)
@@ -52,7 +31,7 @@ export default new Vuex.Store({
     selection: {
       regions: []
     },
-    data
+    data: []
   },
   mutations: {
     setView(state, view: Views) {
@@ -62,6 +41,17 @@ export default new Vuex.Store({
       state.selection.regions = values;
       updateQueryString(state);
     },
+    setData(state, data) {
+      const filtered = data.filter(region => {
+        return region.meta.taxonomy == "country";
+      });
+      const sorted = filtered.sort((a, b) => {
+        const casesA = a.dates[a.latest["cases"]].value["cases"];
+        const casesB = b.dates[b.latest["cases"]].value["cases"];
+        return casesB - casesA;
+      });
+      state.data = sorted;
+    }
   },
   actions: {},
   modules: {},
