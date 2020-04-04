@@ -40,7 +40,7 @@ export default {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 80% 20%; 
+  grid-template-columns: 80% 20%;
   grid-template-rows: 100%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -53,6 +53,4 @@ main {
 aside {
   grid-area: 1 / 2 / 1 / 2;
 }
-
 </style>
-

@@ -66,11 +66,13 @@ table thead tr {
   color: #999999;
 }
 
-table td.value, table th.value {
+table td.value,
+table th.value {
   border-right: 1px solid #999999;
 }
 
-table td:nth-child(1), table th:nth-child(1) {
+table td:nth-child(1),
+table th:nth-child(1) {
   text-align: center;
   border-right: 1px solid black;
   border-left: 1px solid black;

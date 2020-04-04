@@ -1,7 +1,12 @@
 <template>
   <div id="menu">
     <select @change="setView">
-      <option v-for="item of viewList" :key="item" :value="item" :selected="selectedView == item">
+      <option
+        v-for="item of viewList"
+        :key="item"
+        :value="item"
+        :selected="selectedView == item"
+      >
         {{ item }}
       </option>
     </select>
@@ -29,10 +34,10 @@ export default {
   },
   methods: {
     setView(e) {
-      this.$store.commit("setView", e.target.value)
+      this.$store.commit("setView", e.target.value);
     },
     setSelectedRegions(e) {
-      const values = Array.from(e.target.selectedOptions).map(v=>v.value);
+      const values = Array.from(e.target.selectedOptions).map(v => v.value);
       this.$store.commit("setSelectedRegions", values);
     }
   }
@@ -44,4 +49,3 @@ select {
   width: 100%;
 }
 </style>
-

@@ -8,7 +8,7 @@ enum Views {
   Chart = "Chart"
 }
 
-function updateQueryString(state) {
+function updateQueryString(state: any) {
   const params = new URLSearchParams();
   for (const id of state.selection.regions) {
     params.append("region", id);
@@ -20,8 +20,8 @@ function updateQueryString(state) {
   );
 }
 
-function filterData(state) {
-  const sorted = state.data.sort((a, b) => {
+function filterData(state: any) {
+  const sorted = state.data.sort((a: any, b: any) => {
     const casesA = a.dates[a.latest["cases"]].value["cases"];
     const casesB = b.dates[b.latest["cases"]].value["cases"];
     return casesB - casesA;
@@ -51,10 +51,10 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      state.data = data.filter(region => {
+      state.data = data.filter((region: any) => {
         return region.meta.taxonomy == "country";
       });
-      
+
       filterData(state);
     }
   },
