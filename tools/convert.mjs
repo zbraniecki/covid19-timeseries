@@ -28,7 +28,7 @@ function intoDatesArray(dates, regionId) {
   };
   let prev = 0;
   for (let date in dates) {
-    if (date == "2020-4-3") {
+    if (date == "2020-04-04") {
       continue;
     }
     if (dates[date]["cases"] < prev) {
