@@ -14,6 +14,18 @@ export default {
     },
     ...mapState(["data"])
   },
+  mounted() {
+    let result = null;
+    const selected = this.$store.state.selection.regions;
+    for (const region of this.$store.state.data) {
+      if (region.id == selected[0]) {
+        result = region;
+      }
+    }
+    if (result) {
+      this.draw(result);
+    }
+  },
   watch: {
     selectedRegions(newValue) {
       let result = null;
@@ -22,7 +34,9 @@ export default {
           result = region;
         }
       }
-      this.draw(result);
+      if (result) {
+        this.draw(result);
+      }
     },
     data(newValue) {
       let data = newValue;
@@ -30,7 +44,9 @@ export default {
         return;
       }
       data = data[0];
-      this.draw(data);
+      if (data) {
+        this.draw(data);
+      }
     }
   },
   methods: {

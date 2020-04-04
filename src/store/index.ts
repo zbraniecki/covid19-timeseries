@@ -20,6 +20,15 @@ function updateQueryString(state) {
   );
 }
 
+function filterData(state) {
+  const sorted = state.data.sort((a, b) => {
+    const casesA = a.dates[a.latest["cases"]].value["cases"];
+    const casesB = b.dates[b.latest["cases"]].value["cases"];
+    return casesB - casesA;
+  });
+  state.data = sorted;
+}
+
 export default new Vuex.Store({
   state: {
     ui: {
@@ -42,15 +51,11 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      const filtered = data.filter(region => {
+      state.data = data.filter(region => {
         return region.meta.taxonomy == "country";
       });
-      const sorted = filtered.sort((a, b) => {
-        const casesA = a.dates[a.latest["cases"]].value["cases"];
-        const casesB = b.dates[b.latest["cases"]].value["cases"];
-        return casesB - casesA;
-      });
-      state.data = sorted;
+      
+      filterData(state);
     }
   },
   actions: {},
