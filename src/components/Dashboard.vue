@@ -48,6 +48,7 @@ export default {
 
 main {
   grid-area: 1 / 1 / 1 / 2;
+  overflow: auto;
 }
 
 aside {

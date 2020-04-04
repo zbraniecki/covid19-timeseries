@@ -52,6 +52,8 @@ const metaRows = [
   }
 ];
 
+const dtf = new Intl.DateTimeFormat(undefined, {day: "numeric", month: "numeric"});
+
 function nFormatter(num, digits) {
   if (!num) {
     return "";
@@ -118,7 +120,10 @@ export default {
               dates: new Array(selectedRegions.length)
             };
           }
-          result[idx2].dates[idx] = date;
+          result[idx2].dates[idx] = {
+            date: dtf.format(date.date),
+            value: date.value
+          };
         }
       }
       return result;

@@ -21,6 +21,31 @@ function getStateNames() {
   return result;
 }
 
+// Parse a string like "2020-1-19" to a date
+function parseDate(input) {
+  let year;
+  let month;
+  let day;
+
+  let i = 0;
+  for (let chunk of input.split("-")) {
+    switch (i) {
+      case 0:
+        year = parseInt(chunk);
+        break;
+      case 1:
+        month = parseInt(chunk);
+        break;
+      case 2:
+        day = parseInt(chunk);
+        break;
+    }
+    i += 1;
+  }
+  let date = new Date(year, month - 1, day).valueOf();
+  return date;
+}
+
 function intoDatesArray(dates, regionId) {
   let result = {
     dates: [],
@@ -42,7 +67,7 @@ function intoDatesArray(dates, regionId) {
       result.latest[type] = result.dates.length;
     }
     result.dates.push({
-      date,
+      date: parseDate(date),
       value: dates[date]
     });
   }
@@ -227,4 +252,4 @@ let iso3166 = readJSONFile("./data/iso3166.json");
 let stateNames = getStateNames();
 let output = convert(source, iso3166, stateNames);
 
-writeJSON("./data/timeseries-converted.json", output);
+writeJSON("./public/timeseries-converted.json", output);

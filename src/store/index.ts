@@ -27,13 +27,19 @@ function parseQueryString() {
   };
 }
 
-function filterData(state: any) {
-  const sorted = state.data.sort((a: any, b: any) => {
+function filterData(data) {
+  const sorted = data.sort((a: any, b: any) => {
     const casesA = a.dates[a.latest["cases"]].value["cases"];
     const casesB = b.dates[b.latest["cases"]].value["cases"];
     return casesB - casesA;
   });
-  state.data = sorted;
+  for (let region of sorted) {
+    for (const idx in region.dates) {
+      let date = region.dates[idx];
+      date.date = new Date(date.date);
+    }
+  }
+  return data;
 }
 
 const params = parseQueryString();
@@ -60,11 +66,11 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      state.data = data.filter((region: any) => {
+      let newData = data.filter((region: any) => {
         return region.meta.taxonomy == "country";
       });
 
-      filterData(state);
+      state.data = filterData(newData);
     }
   },
   actions: {},
