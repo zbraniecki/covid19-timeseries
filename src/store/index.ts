@@ -20,6 +20,13 @@ function updateQueryString(state: any) {
   );
 }
 
+function parseQueryString() {
+  const params = new URLSearchParams(document.location.search);
+  return {
+    regions: params.getAll("region")
+  };
+}
+
 function filterData(state: any) {
   const sorted = state.data.sort((a: any, b: any) => {
     const casesA = a.dates[a.latest["cases"]].value["cases"];
@@ -29,16 +36,18 @@ function filterData(state: any) {
   state.data = sorted;
 }
 
+const params = parseQueryString();
+
 export default new Vuex.Store({
   state: {
     ui: {
-      view: Views.Chart
+      view: Views.Table
     },
     controls: {
       views: Object.keys(Views)
     },
     selection: {
-      regions: []
+      regions: params.regions
     },
     data: []
   },

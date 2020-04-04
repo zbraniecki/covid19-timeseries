@@ -1,5 +1,5 @@
 <template>
-  <svg id="chartSvg" />
+  <svg id="chartSvg" width="100%" height="100%" />
 </template>
 
 <script>
