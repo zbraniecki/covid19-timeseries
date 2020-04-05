@@ -37,8 +37,8 @@
             <td class="value">{{ date.value }}</td>
           </template>
           <template v-else>
-            <td></td>
-            <td></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
           </template>
         </template>
       </tr>
@@ -223,7 +223,7 @@ table tbody tr.log {
   display: none;
 }
 
-table tbody td {
+table tbody td:not(.empty) {
   border-bottom: 1px solid #dddddd;
   padding: 3px 10px;
 }
