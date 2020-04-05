@@ -16,7 +16,7 @@ function updateQueryString(state: any) {
   window.history.replaceState(
     {},
     "",
-    `${document.location.pathname}?${params}`
+    `${document.location.pathname}?${params}${document.location.hash}`
   );
 }
 
@@ -33,9 +33,9 @@ function filterData(data) {
     const casesB = b.dates[b.latest["cases"]].value["cases"];
     return casesB - casesA;
   });
-  for (let region of sorted) {
+  for (const region of sorted) {
     for (const idx in region.dates) {
-      let date = region.dates[idx];
+      const date = region.dates[idx];
       date.date = new Date(date.date);
     }
   }
@@ -49,11 +49,17 @@ function getNormalizedIndex(state, region) {
     state.normalization[region.id] = {};
   }
   if (!state.normalization[region.id][type]) {
-    let result = null;
-    for (let idx in region.dates) {
+    const result = {
+      firstValue: null,
+      relativeZero: null
+    };
+    for (let idx = 0; idx < region.dates.length; idx++) {
       const date = region.dates[idx];
+      if (result.firstValue === null && date.value[type]) {
+        result.firstValue = idx;
+      }
       if (date.value[type] > value && idx > 0) {
-        result = idx - 1;
+        result.relativeZero = idx - 1;
         break;
       }
     }
@@ -82,7 +88,7 @@ export default new Vuex.Store({
     normalizedIndexes: (state, getters) => {
       const selectedRegions = getters.selectedRegions;
       const result = {};
-      for (let region of selectedRegions) {
+      for (const region of selectedRegions) {
         result[region.id] = getNormalizedIndex(state, region);
       }
       return result;
@@ -106,7 +112,7 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      let newData = data.filter((region: any) => {
+      const newData = data.filter((region: any) => {
         return region.meta.taxonomy == "country";
       });
 

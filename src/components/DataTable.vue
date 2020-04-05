@@ -22,7 +22,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in dataRows" :key="row.relDay">
+      <tr
+        v-for="row in dataRows"
+        :key="row.relDay"
+        :class="{ log: row.relDay < 0 }"
+      >
         <td class="relDay">
           <a v-bind:name="'day' + row.relDay" class="target"></a>
           {{ row.relDay }}
@@ -58,7 +62,10 @@ const metaRows = [
   }
 ];
 
-const dtf = new Intl.DateTimeFormat(undefined, {day: "numeric", month: "numeric"});
+const dtf = new Intl.DateTimeFormat(undefined, {
+  day: "numeric",
+  month: "numeric"
+});
 const nf = new Intl.NumberFormat(undefined);
 
 function nFormatter(num, digits) {
@@ -118,36 +125,50 @@ export default {
       const normalizedIndexes = this.$store.getters.normalizedIndexes;
 
       let maxDepth = 0;
-      for (let idx in normalizedIndexes) {
-        let index = normalizedIndexes[idx];
-        if (maxDepth < index) {
-          maxDepth = index;
+      let max = 0;
+
+      for (const region of selectedRegions) {
+        const normIndexes = normalizedIndexes[region.id];
+        const relFirstValue = normIndexes.relativeZero - normIndexes.firstValue;
+        if (maxDepth < relFirstValue) {
+          maxDepth = relFirstValue;
+        }
+        const len = region.dates.length - normIndexes.relativeZero;
+        if (len > max) {
+          max = len;
         }
       }
 
       const result = [];
-      for (const idx in selectedRegions) {
-        const region = selectedRegions[idx];
-      console.log(region);
 
-const regionNormIdx = normalizedIndexes[region.id];
-        const resultVect = maxDepth - regionNormIdx;
+      for (let idx = 0; idx < maxDepth + max; idx++) {
+        const relDay = idx - maxDepth;
 
-        for (let idx2 = 0; idx2 < region.dates.length - 1; idx2++) {
-          const relIdx = idx2 - regionNormIdx;
-          const date = region.dates[idx2];
-          if (!result[idx2]) {
-            result[idx2] = {
-              relDay: relIdx,
-              dates: new Array(selectedRegions.length)
-            };
+        const dates = [];
+
+        for (const region of selectedRegions) {
+          const normIndexes = normalizedIndexes[region.id];
+          const relFirstValue =
+            normIndexes.relativeZero - normIndexes.firstValue;
+          const regIdx = normIndexes.relativeZero + relDay;
+          if (relDay + relFirstValue < 0 || regIdx >= region.dates.length) {
+            dates.push(null);
+            continue;
+          } else {
+            const date = region.dates[regIdx];
+            dates.push({
+              date: dtf.format(date.date),
+              value: nf.format(date.value["cases"])
+            });
           }
-          result[idx2].dates[idx] = {
-            date: dtf.format(date.date),
-            value: nf.format(date.value["cases"])
-          };
         }
+
+        result.push({
+          relDay,
+          dates
+        });
       }
+
       return result;
     }
   }
@@ -198,6 +219,10 @@ table tbody td.relDay {
   text-align: center;
 }
 
+table tbody tr.log {
+  display: none;
+}
+
 table tbody td {
   border-bottom: 1px solid #dddddd;
   padding: 3px 10px;
@@ -214,4 +239,10 @@ table tbody td.value {
   text-align: right;
 }
 
+a.target {
+  display: block;
+  position: relative;
+  top: -63px;
+  visibility: hidden;
+}
 </style>
