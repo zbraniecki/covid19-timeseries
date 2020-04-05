@@ -29,8 +29,8 @@
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
-            <td>{{ date.date }}</td>
-            <td>{{ date.value["cases"] }}</td>
+            <td class="date">{{ date.date }}</td>
+            <td class="value">{{ date.value["cases"] }}</td>
           </template>
           <template v-else>
             <td></td>
@@ -141,50 +141,56 @@ export default {
 </script>
 
 <style scoped>
-table thead {
-  background-color: white;
-  position: sticky;
-  top: 0;
-  border-right: 1px solid #999999;
-}
-
-table thead tr:nth-child(1) th {
-  padding-top: 10px;
-  font-size: 1.4em;
-  color: black;
-}
-
-table thead tr:nth-child(1) th.value {
-  text-align: center;
-}
-
-table thead tr th {
-  padding: 0 5px;
-  text-align: center;
-  border-bottom: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-}
-
-table thead tr {
-  font-size: 0.7em;
-  color: #999999;
-}
-
-table td.value,
-table th.value {
-  border-right: 1px solid #999999;
+table {
+  border-left: 1px solid #999999;
+  margin-left: 5px;
 }
 
 table td:nth-child(1),
 table th:nth-child(1) {
-  text-align: center;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border-right: 1px solid #999999;
 }
 
-table td.value,
-table th.value {
+table td:nth-of-type(2n + 1),
+table th:nth-of-type(2n + 1) {
+  border-right: 1px solid #999999;
+}
+
+table th[colspan="2"] {
+  border-right: 1px solid #999999;
+}
+
+table th {
+  border-bottom: 1px solid #999999;
+  font-size: 0.7em;
+  color: #999999;
+  padding: 0 5px;
+}
+
+table thead tr:nth-child(1) th {
+  font-size: 1.0em;
+  color: black;
+  padding: 5px 10px;
+}
+
+table tbody td.relDay {
+  text-align: center;
+}
+
+table tbody td {
+  border-bottom: 1px solid #dddddd;
   padding: 0 10px;
+}
+
+table tbody td.date {
+  color: #999999;
+  font-weight: bold;
+  font-size: 0.7em;
   text-align: right;
 }
+
+table tbody td.value {
+  text-align: right;
+}
+
 </style>
