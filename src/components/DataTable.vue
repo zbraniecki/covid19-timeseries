@@ -30,7 +30,7 @@
         <template v-for="date of row.dates">
           <template v-if="date">
             <td class="date">{{ date.date }}</td>
-            <td class="value">{{ date.value["cases"] }}</td>
+            <td class="value">{{ date.value }}</td>
           </template>
           <template v-else>
             <td></td>
@@ -59,6 +59,7 @@ const metaRows = [
 ];
 
 const dtf = new Intl.DateTimeFormat(undefined, {day: "numeric", month: "numeric"});
+const nf = new Intl.NumberFormat(undefined);
 
 function nFormatter(num, digits) {
   if (!num) {
@@ -116,21 +117,34 @@ export default {
       const selectedRegions = this.$store.getters.selectedRegions;
       const normalizedIndexes = this.$store.getters.normalizedIndexes;
 
+      let maxDepth = 0;
+      for (let idx in normalizedIndexes) {
+        let index = normalizedIndexes[idx];
+        if (maxDepth < index) {
+          maxDepth = index;
+        }
+      }
+
       const result = [];
       for (const idx in selectedRegions) {
         const region = selectedRegions[idx];
-        const resultIdx = normalizedIndexes[region.id];
-        for (let idx2 = resultIdx; idx2 < region.dates.length - 1; idx2++) {
+      console.log(region);
+
+const regionNormIdx = normalizedIndexes[region.id];
+        const resultVect = maxDepth - regionNormIdx;
+
+        for (let idx2 = 0; idx2 < region.dates.length - 1; idx2++) {
+          const relIdx = idx2 - regionNormIdx;
           const date = region.dates[idx2];
-          if (!result[idx2 - resultIdx]) {
-            result[idx2 - resultIdx] = {
-              relDay: idx2 - resultIdx,
+          if (!result[idx2]) {
+            result[idx2] = {
+              relDay: relIdx,
               dates: new Array(selectedRegions.length)
             };
           }
-          result[idx2 - resultIdx].dates[idx] = {
+          result[idx2].dates[idx] = {
             date: dtf.format(date.date),
-            value: date.value
+            value: nf.format(date.value["cases"])
           };
         }
       }
@@ -144,6 +158,7 @@ export default {
 table {
   border-left: 1px solid #999999;
   margin-left: 5px;
+  font-size: 0.9em;
 }
 
 table td:nth-child(1),
@@ -162,13 +177,19 @@ table th[colspan="2"] {
 
 table th {
   border-bottom: 1px solid #999999;
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #999999;
   padding: 0 5px;
 }
 
+table thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 table thead tr:nth-child(1) th {
-  font-size: 1.0em;
+  font-size: 1.1em;
   color: black;
   padding: 5px 10px;
 }
@@ -179,7 +200,7 @@ table tbody td.relDay {
 
 table tbody td {
   border-bottom: 1px solid #dddddd;
-  padding: 0 10px;
+  padding: 3px 10px;
 }
 
 table tbody td.date {
