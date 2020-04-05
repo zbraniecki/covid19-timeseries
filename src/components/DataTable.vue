@@ -22,14 +22,20 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in dataRows">
+      <tr v-for="row in dataRows" :key="row.relDay">
         <td class="relDay">
           <a v-bind:name="'day' + row.relDay" class="target"></a>
           {{ row.relDay }}
         </td>
         <template v-for="date of row.dates">
-          <td>{{ date.date }}</td>
-          <td>{{ date.value["cases"] }}</td>
+          <template v-if="date">
+            <td>{{ date.date }}</td>
+            <td>{{ date.value["cases"] }}</td>
+          </template>
+          <template v-else>
+            <td></td>
+            <td></td>
+          </template>
         </template>
       </tr>
     </tbody>
@@ -78,10 +84,10 @@ export default {
   name: "data-table",
   computed: {
     selectedRegions() {
-      return this.getSelectedRegions();
+      return this.$store.getters.selectedRegions;
     },
     activeMetaRows() {
-      const selectedRegions = this.getSelectedRegions();
+      const selectedRegions = this.$store.getters.selectedRegions;
 
       const values = {};
 
@@ -107,34 +113,25 @@ export default {
       return result;
     },
     dataRows() {
-      const selectedRegions = this.getSelectedRegions();
+      const selectedRegions = this.$store.getters.selectedRegions;
+      const normalizedIndexes = this.$store.getters.normalizedIndexes;
 
       const result = [];
       for (const idx in selectedRegions) {
         const region = selectedRegions[idx];
-        for (const idx2 in region.dates) {
+        const resultIdx = normalizedIndexes[region.id];
+        for (let idx2 = resultIdx; idx2 < region.dates.length - 1; idx2++) {
           const date = region.dates[idx2];
-          if (!result[idx2]) {
-            result[idx2] = {
-              relDay: idx2,
+          if (!result[idx2 - resultIdx]) {
+            result[idx2 - resultIdx] = {
+              relDay: idx2 - resultIdx,
               dates: new Array(selectedRegions.length)
             };
           }
-          result[idx2].dates[idx] = {
+          result[idx2 - resultIdx].dates[idx] = {
             date: dtf.format(date.date),
             value: date.value
           };
-        }
-      }
-      return result;
-    }
-  },
-  methods: {
-    getSelectedRegions() {
-      const result = [];
-      for (const region of this.$store.state.data) {
-        if (this.$store.state.selection.regions.includes(region.id)) {
-          result.push(region);
         }
       }
       return result;

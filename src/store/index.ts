@@ -42,6 +42,26 @@ function filterData(data) {
   return data;
 }
 
+function getNormalizedIndex(state, region) {
+  const type = "cases";
+  const value = 1000;
+  if (!state.normalization[region.id]) {
+    state.normalization[region.id] = {};
+  }
+  if (!state.normalization[region.id][type]) {
+    let result = null;
+    for (let idx in region.dates) {
+      const date = region.dates[idx];
+      if (date.value[type] > value && idx > 0) {
+        result = idx - 1;
+        break;
+      }
+    }
+    state.normalization[region.id][type] = result;
+  }
+  return state.normalization[region.id][type];
+}
+
 const params = parseQueryString();
 
 export default new Vuex.Store({
@@ -55,7 +75,27 @@ export default new Vuex.Store({
     selection: {
       regions: params.regions
     },
-    data: []
+    data: [],
+    normalization: {}
+  },
+  getters: {
+    normalizedIndexes: (state, getters) => {
+      const selectedRegions = getters.selectedRegions;
+      const result = {};
+      for (let region of selectedRegions) {
+        result[region.id] = getNormalizedIndex(state, region);
+      }
+      return result;
+    },
+    selectedRegions: state => {
+      const result = [];
+      for (const region of state.data) {
+        if (state.selection.regions.includes(region.id)) {
+          result.push(region);
+        }
+      }
+      return result;
+    }
   },
   mutations: {
     setView(state, view: Views) {
