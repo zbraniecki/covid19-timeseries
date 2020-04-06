@@ -3,11 +3,15 @@
     <thead>
       <tr class="name">
         <th></th>
-        <th v-for="region in selectedRegions" :key="region.id" colspan="2">{{ region.displayName }}</th>
+        <th v-for="region in selectedRegions" :key="region.id" colspan="2">
+          {{ region.displayName }}
+        </th>
       </tr>
       <tr v-for="item in activeMetaRows" :key="item.id" :class="item.id">
         <th>{{ item.name }}:</th>
-        <th v-for="value in item.values" :key="value" colspan="2">{{ value }}</th>
+        <th v-for="value in item.values" :key="value" colspan="2">
+          {{ value }}
+        </th>
       </tr>
       <tr>
         <th>Δ Day</th>
@@ -18,15 +22,25 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in dataRows" :key="row.relDay" :class="{ log: row.relDay < 0 }">
+      <tr
+        v-for="row in dataRows"
+        :key="row.relDay"
+        :class="{ log: row.relDay < 0 }"
+      >
         <td class="relDay">
-          <a v-bind:name="'day' + row.relDay" class="target" :ref="'day' + row.relDay"></a>
+          <a
+            v-bind:name="'day' + row.relDay"
+            class="target"
+            :ref="'day' + row.relDay"
+          ></a>
           {{ row.relDay }}
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
             <td class="date">{{ date.date }}</td>
-            <td class="value" v-bind:style="{ backgroundColor: date.color }">{{ date.value }}</td>
+            <td class="value" v-bind:style="{ backgroundColor: date.color }">
+              {{ date.value }}
+            </td>
           </template>
           <template v-else>
             <td class="empty"></td>
@@ -79,7 +93,10 @@ export default {
           if (!values["population"]) {
             values["population"] = new Array(selectedRegions.length);
           }
-          values["population"][idx] = helpers.nFormatter(region.meta.population, 2);
+          values["population"][idx] = helpers.nFormatter(
+            region.meta.population,
+            2
+          );
         }
       }
       const result = [];
@@ -116,8 +133,8 @@ export default {
 
       const result = [];
 
-      let maxColor = [255, 0, 0];
-      let maxValue = 100000;
+      const maxColor = [255, 0, 0];
+      const maxValue = 100000;
 
       for (let idx = 0; idx < maxDepth + max; idx++) {
         const relDay = idx - maxDepth;
@@ -134,11 +151,15 @@ export default {
             continue;
           } else {
             const date = region.dates[regIdx];
-            let colorValue = date.value[dataType] / maxValue;
+            const colorValue = date.value[dataType] / maxValue;
             dates.push({
               date: dtf.format(date.date),
               value: nf.format(date.value[dataType]),
-              color: helpers.interpolateColor([255, 255, 255], maxColor, colorValue),
+              color: helpers.interpolateColor(
+                [255, 255, 255],
+                maxColor,
+                colorValue
+              )
             });
           }
         }

@@ -7,7 +7,7 @@ export default {
       { value: 1, symbol: "" },
       { value: 1e3, symbol: " k" },
       { value: 1e6, symbol: " M" },
-      { value: 1e9, symbol: " B" },
+      { value: 1e9, symbol: " B" }
     ];
     const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
     let i;
@@ -18,9 +18,13 @@ export default {
     }
     return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
   },
-  interpolateColor(color1: Array<number>, color2: Array<number>, factor: number) {
-    var result = color1.slice();
-    for (var i = 0; i < 3; i++) {
+  interpolateColor(
+    color1: Array<number>,
+    color2: Array<number>,
+    factor: number
+  ) {
+    const result = color1.slice();
+    for (let i = 0; i < 3; i++) {
       result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
     }
     return `rgb(${result[0]}, ${result[1]}, ${result[2]})`;
@@ -31,7 +35,7 @@ export default {
     let day;
 
     let i = 0;
-    for (let chunk of input.split("-")) {
+    for (const chunk of input.split("-")) {
       switch (i) {
         case 0:
           year = parseInt(chunk);
@@ -48,7 +52,7 @@ export default {
     if (year === undefined || month === undefined || day === undefined) {
       return undefined;
     }
-    let date = new Date(year, month - 1, day);
+    const date = new Date(year, month - 1, day);
     return date;
-  },
+  }
 };

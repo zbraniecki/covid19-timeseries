@@ -6,8 +6,54 @@ Vue.use(Vuex);
 
 enum Views {
   Table = "Table",
-  Chart = "Chart",
+  Chart = "Chart"
 }
+
+interface DataPoint {
+  date: Date;
+  value: {
+    cases: number;
+    deaths: number;
+    active?: number;
+    recovered?: number;
+    tested?: number;
+  };
+}
+
+interface Region {
+  id: string;
+  dates: Array<DataPoint>;
+  latest: {
+    cases: number;
+    deaths: number;
+    active?: number;
+    recovered?: number;
+    tested?: number;
+  };
+  meta: {
+    country: {
+      code?: string;
+      name?: string;
+    };
+    state: {
+      code?: string;
+      name?: string;
+    };
+    county: {
+      code?: string;
+      name?: string;
+    };
+    city: {
+      code?: string;
+      name?: string;
+    };
+    population?: number;
+    taxonomy: "country" | "state" | "county" | "city";
+  };
+  displayName: string;
+}
+
+type DataType = "cases" | "deaths" | "active" | "recovered" | "tested";
 
 function updateQueryString(state: any) {
   const params = new URLSearchParams();
@@ -24,11 +70,11 @@ function updateQueryString(state: any) {
 function parseQueryString() {
   const params = new URLSearchParams(document.location.search);
   return {
-    regions: params.getAll("region"),
+    regions: params.getAll("region")
   };
 }
 
-function parseData(data) {
+function parseData(data: Array<Region>) {
   for (const region of data) {
     for (const idx in region.dates) {
       const date = region.dates[idx];
@@ -38,15 +84,15 @@ function parseData(data) {
   return data;
 }
 
-function getLatestValue(region, dataType: string) {
+function getLatestValue(region: Region, dataType: DataType) {
   if (!region.latest[dataType]) {
     return undefined;
   }
   return region.dates[region.latest[dataType]].value[dataType];
 }
 
-function sortData(data, dataType: string) {
-  data.sort((a: any, b: any) => {
+function sortData(data: Array<Region>, dataType: DataType) {
+  data.sort((a: Region, b: Region) => {
     const valueA = getLatestValue(a, dataType);
     const valueB = getLatestValue(b, dataType);
     if (isNaN(valueA) && !isNaN(valueB)) {
@@ -56,7 +102,7 @@ function sortData(data, dataType: string) {
   });
 }
 
-function getNormalizedIndex(state, region) {
+function getNormalizedIndex(state, region: Region) {
   const dataType = state.selection.dataTypes[0];
   const value = state.selection.normalizationValue;
 
@@ -66,7 +112,7 @@ function getNormalizedIndex(state, region) {
   if (!state.normalization[region.id][dataType]) {
     const result = {
       firstValue: null,
-      relativeZero: null,
+      relativeZero: null
     };
     for (let idx = 0; idx < region.dates.length; idx++) {
       const date = region.dates[idx];
@@ -91,37 +137,37 @@ const params = parseQueryString();
 export default new Vuex.Store({
   state: {
     ui: {
-      view: Views.Table,
+      view: Views.Table
     },
     controls: {
-      views: Object.keys(Views),
+      views: Object.keys(Views)
     },
     selection: {
       regions: params.regions,
       dataTypes: ["cases"],
-      normalizationValue: 1000,
+      normalizationValue: 1000
     },
     data: [],
-    normalization: {},
+    normalization: {}
   },
   getters: {
     normalizedIndexes: (state, getters) => {
       const selectedRegions = getters.selectedRegions;
-      const result = {};
+      const result: {[key: string]: number} = {};
       for (const region of selectedRegions) {
         result[region.id] = getNormalizedIndex(state, region);
       }
       return result;
     },
-    selectedRegions: (state) => {
-      const result = [];
+    selectedRegions: state => {
+      const result: Array<Region> = [];
       for (const region of state.data) {
         if (state.selection.regions.includes(region.id)) {
           result.push(region);
         }
       }
       return result;
-    },
+    }
   },
   mutations: {
     setView(state, view: Views) {
@@ -132,15 +178,15 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      const newData = data.filter((region: any) => {
+      const newData = data.filter((region: Region) => {
         return region.meta.taxonomy == "country";
       });
 
       sortData(newData, state.selection.dataTypes[0]);
       state.data = parseData(newData);
-    },
+    }
   },
   actions: {},
   modules: {},
-  strict: true,
+  strict: true
 });
