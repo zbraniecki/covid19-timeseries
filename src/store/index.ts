@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import helpers from "@/helpers/index.ts";
 
 Vue.use(Vuex);
 
@@ -36,7 +37,7 @@ function filterData(data) {
   for (const region of sorted) {
     for (const idx in region.dates) {
       const date = region.dates[idx];
-      date.date = new Date(date.date);
+      date.date = helpers.parseDate(date.date);
     }
   }
   return data;

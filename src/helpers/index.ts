@@ -7,7 +7,7 @@ export default {
       { value: 1, symbol: "" },
       { value: 1e3, symbol: " k" },
       { value: 1e6, symbol: " M" },
-      { value: 1e9, symbol: " B" }
+      { value: 1e9, symbol: " B" },
     ];
     const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
     let i;
@@ -21,8 +21,31 @@ export default {
   interpolateColor(color1, color2, factor) {
     var result = color1.slice();
     for (var i = 0; i < 3; i++) {
-        result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+      result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
     }
     return `rgb(${result[0]}, ${result[1]}, ${result[2]})`;
-  }
+  },
+  parseDate(input) {
+    let year;
+    let month;
+    let day;
+
+    let i = 0;
+    for (let chunk of input.split("-")) {
+      switch (i) {
+        case 0:
+          year = parseInt(chunk);
+          break;
+        case 1:
+          month = parseInt(chunk);
+          break;
+        case 2:
+          day = parseInt(chunk);
+          break;
+      }
+      i += 1;
+    }
+    let date = new Date(year, month - 1, day);
+    return date;
+  },
 };
