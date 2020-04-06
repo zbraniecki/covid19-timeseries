@@ -6,7 +6,7 @@ Vue.use(Vuex);
 
 enum Views {
   Table = "Table",
-  Chart = "Chart"
+  Chart = "Chart",
 }
 
 function updateQueryString(state: any) {
@@ -24,17 +24,12 @@ function updateQueryString(state: any) {
 function parseQueryString() {
   const params = new URLSearchParams(document.location.search);
   return {
-    regions: params.getAll("region")
+    regions: params.getAll("region"),
   };
 }
 
-function filterData(data) {
-  const sorted = data.sort((a: any, b: any) => {
-    const casesA = a.dates[a.latest["cases"]].value["cases"];
-    const casesB = b.dates[b.latest["cases"]].value["cases"];
-    return casesB - casesA;
-  });
-  for (const region of sorted) {
+function parseData(data) {
+  for (const region of data) {
     for (const idx in region.dates) {
       const date = region.dates[idx];
       date.date = helpers.parseDate(date.date);
@@ -43,23 +38,42 @@ function filterData(data) {
   return data;
 }
 
+function getLatestValue(region, dataType: string) {
+  if (!region.latest[dataType]) {
+    return undefined;
+  }
+  return region.dates[region.latest[dataType]].value[dataType];
+}
+
+function sortData(data, dataType: string) {
+  data.sort((a: any, b: any) => {
+    const valueA = getLatestValue(a, dataType);
+    const valueB = getLatestValue(b, dataType);
+    if (isNaN(valueA) && !isNaN(valueB)) {
+      return 1;
+    }
+    return valueB - valueA;
+  });
+}
+
 function getNormalizedIndex(state, region) {
-  const type = "cases";
-  const value = 1000;
+  const dataType = state.selection.dataTypes[0];
+  const value = state.selection.normalizationValue;
+
   if (!state.normalization[region.id]) {
     state.normalization[region.id] = {};
   }
-  if (!state.normalization[region.id][type]) {
+  if (!state.normalization[region.id][dataType]) {
     const result = {
       firstValue: null,
-      relativeZero: null
+      relativeZero: null,
     };
     for (let idx = 0; idx < region.dates.length; idx++) {
       const date = region.dates[idx];
-      if (result.firstValue === null && date.value[type]) {
+      if (result.firstValue === null && date.value[dataType]) {
         result.firstValue = idx;
       }
-      if (date.value[type] > value && idx > 0) {
+      if (date.value[dataType] > value && idx > 0) {
         result.relativeZero = idx - 1;
         break;
       }
@@ -67,9 +81,9 @@ function getNormalizedIndex(state, region) {
     if (result.relativeZero === null) {
       result.relativeZero = region.dates.length - 1;
     }
-    state.normalization[region.id][type] = result;
+    state.normalization[region.id][dataType] = result;
   }
-  return state.normalization[region.id][type];
+  return state.normalization[region.id][dataType];
 }
 
 const params = parseQueryString();
@@ -77,16 +91,18 @@ const params = parseQueryString();
 export default new Vuex.Store({
   state: {
     ui: {
-      view: Views.Table
+      view: Views.Table,
     },
     controls: {
-      views: Object.keys(Views)
+      views: Object.keys(Views),
     },
     selection: {
-      regions: params.regions
+      regions: params.regions,
+      dataTypes: ["cases"],
+      normalizationValue: 1000,
     },
     data: [],
-    normalization: {}
+    normalization: {},
   },
   getters: {
     normalizedIndexes: (state, getters) => {
@@ -97,7 +113,7 @@ export default new Vuex.Store({
       }
       return result;
     },
-    selectedRegions: state => {
+    selectedRegions: (state) => {
       const result = [];
       for (const region of state.data) {
         if (state.selection.regions.includes(region.id)) {
@@ -105,7 +121,7 @@ export default new Vuex.Store({
         }
       }
       return result;
-    }
+    },
   },
   mutations: {
     setView(state, view: Views) {
@@ -120,10 +136,11 @@ export default new Vuex.Store({
         return region.meta.taxonomy == "country";
       });
 
-      state.data = filterData(newData);
-    }
+      sortData(newData, state.selection.dataTypes[0]);
+      state.data = parseData(newData);
+    },
   },
   actions: {},
   modules: {},
-  strict: true
+  strict: true,
 });

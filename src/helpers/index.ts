@@ -1,6 +1,6 @@
 export default {
-  nFormatter(num, digits) {
-    if (!num) {
+  nFormatter(num: number | undefined, digits: number) {
+    if (num === undefined) {
       return "";
     }
     const si = [
@@ -18,14 +18,14 @@ export default {
     }
     return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
   },
-  interpolateColor(color1, color2, factor) {
+  interpolateColor(color1: Array<number>, color2: Array<number>, factor: number) {
     var result = color1.slice();
     for (var i = 0; i < 3; i++) {
       result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
     }
     return `rgb(${result[0]}, ${result[1]}, ${result[2]})`;
   },
-  parseDate(input) {
+  parseDate(input: string) {
     let year;
     let month;
     let day;
@@ -44,6 +44,9 @@ export default {
           break;
       }
       i += 1;
+    }
+    if (year === undefined || month === undefined || day === undefined) {
+      return undefined;
     }
     let date = new Date(year, month - 1, day);
     return date;

@@ -54,6 +54,7 @@ export default {
       const height = 500;
       const width = 500;
       const margin = { top: 20, right: 30, bottom: 30, left: 60 };
+      let dataType = this.$store.state.selection.dataTypes[0];
 
       const svg = d3.select("#chart");
       svg.selectAll("*").remove();
@@ -65,7 +66,7 @@ export default {
         .range([margin.left, width - margin.right]);
       const y = d3
         .scaleLinear()
-        .domain([0, d3.max(region.dates, d => d.value["cases"])])
+        .domain([0, d3.max(region.dates, d => d.value[dataType])])
         .nice()
         .range([height - margin.bottom, margin.top]);
 
@@ -83,9 +84,9 @@ export default {
           .call(g => g.select(".domain").remove());
       const line = d3
         .line()
-        .defined(d => !isNaN(d.value["cases"]))
+        .defined(d => !isNaN(d.value[dataType]))
         .x(d => x(new Date(d.date)))
-        .y(d => y(d.value["cases"]));
+        .y(d => y(d.value[dataType]));
       svg.append("g").call(xAxis);
       svg.append("g").call(yAxis);
       svg

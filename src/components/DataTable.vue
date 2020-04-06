@@ -97,6 +97,7 @@ export default {
     dataRows() {
       const selectedRegions = this.$store.getters.selectedRegions;
       const normalizedIndexes = this.$store.getters.normalizedIndexes;
+      const dataType = this.$store.state.selection.dataTypes[0];
 
       let maxDepth = 0;
       let max = 0;
@@ -133,10 +134,10 @@ export default {
             continue;
           } else {
             const date = region.dates[regIdx];
-            let colorValue = date.value["cases"] / maxValue;
+            let colorValue = date.value[dataType] / maxValue;
             dates.push({
               date: dtf.format(date.date),
-              value: nf.format(date.value["cases"]),
+              value: nf.format(date.value[dataType]),
               color: helpers.interpolateColor([255, 255, 255], maxColor, colorValue),
             });
           }
