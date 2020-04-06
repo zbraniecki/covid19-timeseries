@@ -63,6 +63,9 @@ function getNormalizedIndex(state, region) {
         break;
       }
     }
+    if (result.relativeZero === null) {
+      result.relativeZero = region.dates.length - 1;
+    }
     state.normalization[region.id][type] = result;
   }
   return state.normalization[region.id][type];

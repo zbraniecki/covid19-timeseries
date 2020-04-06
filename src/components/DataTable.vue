@@ -3,15 +3,11 @@
     <thead>
       <tr class="name">
         <th></th>
-        <th v-for="region in selectedRegions" :key="region.id" colspan="2">
-          {{ region.displayName }}
-        </th>
+        <th v-for="region in selectedRegions" :key="region.id" colspan="2">{{ region.displayName }}</th>
       </tr>
       <tr v-for="item in activeMetaRows" :key="item.id" :class="item.id">
         <th>{{ item.name }}:</th>
-        <th v-for="value in item.values" :key="value" colspan="2">
-          {{ value }}
-        </th>
+        <th v-for="value in item.values" :key="value" colspan="2">{{ value }}</th>
       </tr>
       <tr>
         <th>Δ Day</th>
@@ -22,13 +18,9 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="row in dataRows"
-        :key="row.relDay"
-        :class="{ log: row.relDay < 0 }"
-      >
+      <tr v-for="row in dataRows" :key="row.relDay" :class="{ log: row.relDay < 0 }">
         <td class="relDay">
-          <a v-bind:name="'day' + row.relDay" class="target"></a>
+          <a v-bind:name="'day' + row.relDay" class="target" :ref="'day' + row.relDay"></a>
           {{ row.relDay }}
         </td>
         <template v-for="date of row.dates">
@@ -171,6 +163,20 @@ export default {
 
       return result;
     }
+  },
+  updated: function() {
+    this.$nextTick(function() {
+      if (this.$refs["day0"] && this.$refs["day0"][0]) {
+        this.$refs["day0"][0].scrollIntoView();
+      }
+    });
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      if (this.$refs["day0"] && this.$refs["day0"][0]) {
+        this.$refs["day0"][0].scrollIntoView();
+      }
+    });
   }
 };
 </script>
@@ -180,6 +186,7 @@ table {
   border-left: 1px solid #999999;
   margin-left: 5px;
   font-size: 0.9em;
+  margin-bottom: 800px;
 }
 
 table td:nth-child(1),
@@ -207,6 +214,7 @@ table thead {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 10;
 }
 
 table thead tr:nth-child(1) th {
@@ -220,7 +228,7 @@ table tbody td.relDay {
 }
 
 table tbody tr.log {
-  display: none;
+  opacity: 0.5;
 }
 
 table tbody td:not(.empty) {

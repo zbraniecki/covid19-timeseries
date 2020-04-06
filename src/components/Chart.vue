@@ -61,7 +61,7 @@ export default {
 
       const x = d3
         .scaleUtc()
-        .domain(d3.extent(region.dates, d => d3.utcParse("%Y-%m-%d")(d.date)))
+        .domain(d3.extent(region.dates, d => new Date(d.date)))
         .range([margin.left, width - margin.right]);
       const y = d3
         .scaleLinear()
@@ -84,7 +84,7 @@ export default {
       const line = d3
         .line()
         .defined(d => !isNaN(d.value["cases"]))
-        .x(d => x(d3.utcParse("%Y-%m-%d")(d.date)))
+        .x(d => x(new Date(d.date)))
         .y(d => y(d.value["cases"]));
       svg.append("g").call(xAxis);
       svg.append("g").call(yAxis);

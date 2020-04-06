@@ -10,8 +10,8 @@
         {{ item }}
       </option>
     </select>
-    <select multiple @change="setSelectedRegions">
-      <option v-for="region of regionList" :key="region.id" :value="region.id">
+    <select multiple @change="setSelectedRegions" class="regions">
+      <option v-for="region of regionList" :key="region.id" :value="region.id" :selected="selectedRegions.includes(region.id)">
         {{ region.displayName }}
       </option>
     </select>
@@ -30,6 +30,10 @@ export default {
     },
     selectedView() {
       return this.$store.state.ui.view;
+    },
+    selectedRegions() {
+       const selectedRegions = this.$store.getters.selectedRegions;
+       return selectedRegions.map(region => region.id);
     }
   },
   methods: {
@@ -47,5 +51,9 @@ export default {
 <style scoped>
 select {
   width: 100%;
+}
+
+select.regions {
+  height: 500px;
 }
 </style>
