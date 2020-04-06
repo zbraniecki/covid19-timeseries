@@ -9,6 +9,9 @@ enum Views {
   Chart = "Chart"
 }
 
+type DataType = "cases" | "deaths" | "active" | "recovered" | "tested";
+type TaxonomyType = "country" | "state" | "county" | "city";
+
 interface DataPoint {
   date: Date;
   value: {
@@ -48,12 +51,10 @@ interface Region {
       name?: string;
     };
     population?: number;
-    taxonomy: "country" | "state" | "county" | "city";
+    taxonomy: TaxonomyType;
   };
   displayName: string;
 }
-
-type DataType = "cases" | "deaths" | "active" | "recovered" | "tested";
 
 function updateQueryString(state: any) {
   const params = new URLSearchParams();
@@ -153,7 +154,7 @@ export default new Vuex.Store({
   getters: {
     normalizedIndexes: (state, getters) => {
       const selectedRegions = getters.selectedRegions;
-      const result: {[key: string]: number} = {};
+      const result: { [key: string]: number } = {};
       for (const region of selectedRegions) {
         result[region.id] = getNormalizedIndex(state, region);
       }
@@ -184,6 +185,9 @@ export default new Vuex.Store({
 
       sortData(newData, state.selection.dataTypes[0]);
       state.data = parseData(newData);
+    },
+    setDataTypes(state, dataTypes: Array<DataType>) {
+      state.selection.dataTypes = dataTypes;
     }
   },
   actions: {},
