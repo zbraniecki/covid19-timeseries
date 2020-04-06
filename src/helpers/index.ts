@@ -17,5 +17,12 @@ export default {
       }
     }
     return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
+  },
+  interpolateColor(color1, color2, factor) {
+    var result = color1.slice();
+    for (var i = 0; i < 3; i++) {
+        result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+    }
+    return `rgb(${result[0]}, ${result[1]}, ${result[2]})`;
   }
 };

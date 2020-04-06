@@ -26,7 +26,7 @@
         <template v-for="date of row.dates">
           <template v-if="date">
             <td class="date">{{ date.date }}</td>
-            <td class="value">{{ date.value }}</td>
+            <td class="value" v-bind:style="{ backgroundColor: date.color }">{{ date.value }}</td>
           </template>
           <template v-else>
             <td class="empty"></td>
@@ -115,6 +115,9 @@ export default {
 
       const result = [];
 
+      let maxColor = [255, 0, 0];
+      let maxValue = 100000;
+
       for (let idx = 0; idx < maxDepth + max; idx++) {
         const relDay = idx - maxDepth;
 
@@ -130,9 +133,11 @@ export default {
             continue;
           } else {
             const date = region.dates[regIdx];
+            let colorValue = date.value["cases"] / maxValue;
             dates.push({
               date: dtf.format(date.date),
-              value: nf.format(date.value["cases"])
+              value: nf.format(date.value["cases"]),
+              color: helpers.interpolateColor([255, 255, 255], maxColor, colorValue),
             });
           }
         }
@@ -168,7 +173,8 @@ table {
   border-left: 1px solid #999999;
   margin-left: 5px;
   font-size: 0.9em;
-  margin-bottom: 100vh;
+  /* Bug in Chrome prevents sticky header from being positioned properly. */
+  /* margin-bottom: 100vh; */
 }
 
 table td:nth-child(1),
