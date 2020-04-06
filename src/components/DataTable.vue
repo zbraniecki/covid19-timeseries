@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import helpers from "@/helpers/index.ts";
+
 const metaRows = [
   {
     id: "state",
@@ -60,26 +62,6 @@ const dtf = new Intl.DateTimeFormat(undefined, {
 });
 const nf = new Intl.NumberFormat(undefined);
 
-function nFormatter(num, digits) {
-  if (!num) {
-    return "";
-  }
-  const si = [
-    { value: 1, symbol: "" },
-    { value: 1e3, symbol: " k" },
-    { value: 1e6, symbol: " M" },
-    { value: 1e9, symbol: " B" }
-  ];
-  const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-  let i;
-  for (i = si.length - 1; i > 0; i--) {
-    if (num >= si[i].value) {
-      break;
-    }
-  }
-  return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
-}
-
 export default {
   name: "data-table",
   computed: {
@@ -97,7 +79,7 @@ export default {
           if (!values["population"]) {
             values["population"] = new Array(selectedRegions.length);
           }
-          values["population"][idx] = nFormatter(region.meta.population, 2);
+          values["population"][idx] = helpers.nFormatter(region.meta.population, 2);
         }
       }
       const result = [];
@@ -186,7 +168,7 @@ table {
   border-left: 1px solid #999999;
   margin-left: 5px;
   font-size: 0.9em;
-  margin-bottom: 800px;
+  margin-bottom: 100vh;
 }
 
 table td:nth-child(1),
@@ -228,6 +210,8 @@ table tbody td.relDay {
 }
 
 table tbody tr.log {
+  /* Bug in Chrome prevents sticky header from being positioned properly. */
+  display: none;
   opacity: 0.5;
 }
 
