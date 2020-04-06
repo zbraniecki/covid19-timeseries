@@ -106,6 +106,10 @@ const SETTINGS = {
       "id": "county",
       "name": "County",
     },
+    {
+      "id": "city",
+      "name": "City",
+    },
   ],
 };
 
@@ -138,8 +142,14 @@ function processMainData(dataSet, userPreferences) {
         name = getTaxonomyName(region.meta.state);
         country = countryName;
         result.rows.country = true;
+      } else if (region.meta.taxonomy == "county") {
+        name = getTaxonomyName(region.meta.county);
+        country = countryName;
+        state = getTaxonomyName(region.meta.state);
+        result.rows.country = true;
+        result.rows.state = true;
       } else {
-        name = region.meta.county.code;
+        name = getTaxonomyName(region.meta.city);
         country = countryName;
         state = getTaxonomyName(region.meta.state);
         result.rows.country = true;
@@ -209,7 +219,10 @@ function processRegionData(sortedDataSet, userPreferences) {
       search += `${region.meta.state.code.toLowerCase()} ${getTaxonomyName(region.meta.state).toLowerCase()}`;
     }
     if (region.meta.county.code) {
-      search += `${region.meta.county.code.toLowerCase()}`;
+      search += `${region.meta.county.code.toLowerCase()} ${getTaxonomyName(region.meta.county).toLowerCase()}`;
+    }
+    if (region.meta.city.name) {
+      search += `${region.meta.city.name.toLowerCase()}`;
     }
     return {
       "id": region.id,

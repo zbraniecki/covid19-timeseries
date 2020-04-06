@@ -8,18 +8,112 @@ function readJSONFile(path) {
   return data;
 }
 
+function getLevelId(region, level) {
+  if (level === "city") {
+    if (region.cityId) {
+      if (!region.cityId.startsWith("iso1:")) {
+        throw new Error(`City id is not iso1: ${region.countryId}.`);
+      }
+      return region.cityId.substr(5);
+    }
+    return region.city;
+  }
+  if (level === "country") {
+    if (!region.countryId.startsWith("iso1:")) {
+      throw new Error(`Country id is not iso1: ${region.countryId}.`);
+    }
+    return region.countryId.substr(5);
+  }
+  if (level === "state") {
+    if (region.stateId) {
+      if (!region.stateId.startsWith("iso2:")) {
+        throw new Error(`State id is not iso2: ${region.stateId}.`);
+      }
+      let stateId = region.stateId.substr(5);
+      let countryId = getLevelId(region, "country");
+      if (!stateId.startsWith(countryId)) {
+        throw new Error(`State id doesn't start with country id: ${stateId}.`);
+      }
+      return stateId.substr(countryId.length + 1);
+    }
+    if (region.state) {
+      return region.state;
+    }
+    return undefined;
+  }
+  if (level === "county") {
+    if (region.countyId) {
+      if (!region.countyId.startsWith("fips:") &&
+          !region.countyId.startsWith("iso2:")) {
+        throw new Error(`County id is not fips/iso2: ${region.countyId}.`);
+      }
+      return region.countyId.substr(5);
+    }
+    if (region.county) {
+      return region.county;
+    }
+    return undefined;
+  }
+  if (level === "feature") {
+    if (!region.featureId) {
+      let city = getLevelId(region, "city");
+      let county = getLevelId(region, "county");
+      let state = getLevelId(region, "state");
+      let country = getLevelId(region, "country");
+      let parts = [country, state, county, city];
+      return parts.filter(part => part).join("_");
+    }
+    if (typeof region.featureId === "number") {
+      return region.featureId.toString();
+    }
+    if (region.featureId.startsWith("iso1:")) {
+      return region.featureId.substr(5);
+    }
+    if (region.featureId.startsWith("iso2:")) {
+      return region.featureId.substr(5);
+    }
+    if (region.featureId.startsWith("fips:")) {
+      return region.featureId.substr(5);
+    }
+    throw new Error(`Country id is not a proper code: ${region.featureId}.`);
+  }
+}
+
+let shortNames = {
+  "iso1:US": "USA",
+};
+
+function getRegionName(region, level, shortName) {
+  if (level === "country") {
+    if (shortName === true) {
+      if (shortNames[region.countryId]) {
+        return shortNames[region.countryId];
+      } else {
+        return undefined;
+      }
+    }
+    if (!region.country) {
+      throw new Error(`Country doesn't have a name: ${region.featureId}.`);
+    }
+    return region.country;
+  }
+  if (level === "state") {
+    return region.state;
+  }
+  if (level === "county") {
+    return region.county;
+  }
+  if (level === "city") {
+    return region.city;
+  }
+}
+
 function writeJSON(path, json) {
   let string = JSON.stringify(json, null, 2);
   fs.writeFileSync(path, string);
 }
 
-function getStateNames() {
-  let result = {};
-  
-  result["USA"] = readJSONFile("./data/usa_states.json");
-
-  return result;
-}
+const TYPES = ["cases", "deaths", "active", "recovered", "tested"];
 
 function intoDatesArray(dates, regionId) {
   let result = {
@@ -28,150 +122,82 @@ function intoDatesArray(dates, regionId) {
   };
   let prev = 0;
   for (let date in dates) {
-    if (date == "2020-04-05") {
-      continue;
-    }
     if (dates[date]["cases"] < prev) {
       console.warn(`Number of cases for ${regionId} dropped from ${prev} to ${dates[date]["cases"]}`);
     }
     prev = dates[date]["cases"];
+
+    let value = {};
+
     for (let type in dates[date]) {
-      if (type == "growthFactor") {
+      if (!TYPES.includes(type)) {
         continue;
       }
       result.latest[type] = result.dates.length;
+      value[type] = dates[date][type];
     }
     result.dates.push({
       date,
-      value: dates[date]
+      value
     });
   }
   return result;
 }
 
-function getISOEntryForAlpha3(iso3166, alpha3) {
-  if (alpha3 === "United States") {
-    alpha3 = "USA";
-  }
-  for (let entry of iso3166) {
-    if (entry["alpha-3"] === alpha3) {
-      return entry;
-    }
-  }
-  return undefined;
-}
-
 // Workaround some US states getting `aggregate: "county"`
 function getRegionTaxonomy(region) {
-  if (region.city) {
-    return "city";
+  if (!region.level) {
+    throw new Error(`Unknown level for region: ${region.name}.`);
   }
-  if (region.county) {
-    return "county";
-  }
-  if (region.state) {
-    return "state";
-  }
-  return "country";
+  return region.level;
 }
 
 function hasMoreThanXCases(dataSet, latest, x) {
   return dataSet[latest.cases].value["cases"] > x;
 }
 
-let shortNames = {
-  "GBR": "Great Britain",
-  "USA": "USA",
-  "RUS": "Russia",
-  "BRN": "Brunei",
-  "KOR": "South Korea",
-};
-
-function getShortName(iso3166Entry) {
-  let name = iso3166Entry.name;
-  
-  if (shortNames[iso3166Entry["alpha-3"]]) {
-    return shortNames[iso3166Entry["alpha-3"]];
+function getDisplayName(region) {
+  let cityName = getRegionName(region, "city");
+  if (cityName) {
+    let stateId = getLevelId(region, "state");
+    let countryId = getLevelId(region, "country");
+    if (stateId) {
+      return `${cityName} (${stateId}, ${countryId})`;
+    } else {
+      return `${cityName} (${countryId})`;
+    }
   }
 
-  let comma = name.indexOf(",");
-  if (comma != -1) {
-    return name.substr(0, comma);
+  let countyName = getRegionName(region, "county");
+  if (countyName) {
+    let countryId = getLevelId(region, "country");
+    let stateId = getLevelId(region, "state");
+    if (stateId) {
+      return `${countyName} (${stateId}, ${countryId})`;
+    } else {
+      return `${countyName} (${countryId})`;
+    }
   }
-  let bracket = name.indexOf("(");
-  if (bracket != -1) {
-    return name.substr(0, bracket - 1);
-  }
-  return undefined;
-}
 
-function getTaxonomyName(tax) {
-  if (tax.shortName) {
-    return tax.shortName;
-  }
-  return tax.name;
-}
-
-function getDisplayName(entry) {
-  let parts = [];
-
-  let countryName = getTaxonomyName(entry.meta.country);
-  parts.push(countryName);
-
-  let stateName = getTaxonomyName(entry.meta.state);
-
+  let stateName = getRegionName(region, "state");
   if (stateName) {
-    parts.push(stateName);
+    let countryId = getLevelId(region, "country");
+    return `${stateName} (${countryId})`;
   }
 
-  if (entry.meta.county.code) {
-    parts.push(entry.meta.county.code);
-  }
-
-  let name = parts.pop();
-
-  if (parts.length == 0) {
-    return name;
-  }
-  return `${name} (${parts.reverse().join(", ")})`;
+  let countryName = getRegionName(region, "country");
+  return countryName;
 }
 
-function getRegionCode(region) {
-  let result = [];
-  if (region.country) {
-    result.push(region.country);
-  }
-  if (region.state) {
-    result.push(region.state);
-  }
-  if (region.county) {
-    result.push(region.county);
-  }
-  if (region.city) {
-    result.push(region.city);
-  }
-  return result.join("_");
-}
+let ids = {};
 
-function getStateName(stateCode, countryCode, stateNames) {
-  let countryCodes = stateNames[countryCode];
-  if (!countryCodes) {
-    return stateCode;
-  }
-  let stateName = countryCodes[stateCode];
-  if (!stateName) {
-    return stateCode;
-  }
-  return stateName;
-}
-
-function convert(input, iso3166, stateNames) {
+function convert(input) {
   let result = [];
 
   for (let regionCode in input) {
     let region = input[regionCode];
     let taxonomy = getRegionTaxonomy(region);
-    if (!["country", "state", "county"].includes(taxonomy)) {
+    if (!["country", "state", "county", "city"].includes(taxonomy)) {
       continue;
     }
 
@@ -183,39 +209,40 @@ function convert(input, iso3166, stateNames) {
       continue;
     }
 
-    let isoEntry = getISOEntryForAlpha3(iso3166, region.country);
-    if (!isoEntry) {
-      console.warn(`No ISO entry for country ${region.country}, skipping.`);
-      continue;
+    let id = getLevelId(region, "feature");
+    if (ids[id]) {
+      throw new Error(`ID already exists: ${id}`);
+    } else {
+      ids[id] = true;
     }
 
     let entry = {
-      "id": getRegionCode(region),
+      "id": getLevelId(region, "feature"),
       "dates": dates,
       "latest": latest,
       "meta": {
         "country": {
-          "code": region.country,
-          "name": isoEntry.name,
-          "shortName": getShortName(isoEntry),
+          "code": getLevelId(region, "country"),
+          "name": getRegionName(region, "country", false),
+          "shortName": getRegionName(region, "country", true),
         },
         "state": {
-          "code": region.state,
-          "name": getStateName(region.state, region.country, stateNames),
+          "code": getLevelId(region, "state"),
+          "name": getRegionName(region, "state"),
         },
         "county": {
-          "code": region.county,
+          "code": getLevelId(region, "county"),
+          "name": getRegionName(region, "county"),
         },
         "city": {
-          "code": region.city,
+          "code": getLevelId(region, "city"),
+          "name": getRegionName(region, "city"),
         },
-        "rating": region.rating,
-        "tz": region.tz,
         "population": region.population,
         "taxonomy": taxonomy,
       },
     };
-    entry.displayName = getDisplayName(entry);
+    entry.displayName = getDisplayName(region);
     result.push(entry);
   }
 
@@ -223,8 +250,6 @@ function convert(input, iso3166, stateNames) {
 }
 
 let source = readJSONFile("./data/timeseries-byLocation.json");
-let iso3166 = readJSONFile("./data/iso3166.json");
-let stateNames = getStateNames();
-let output = convert(source, iso3166, stateNames);
+let output = convert(source);
 
 writeJSON("./data/timeseries-converted.json", output);
