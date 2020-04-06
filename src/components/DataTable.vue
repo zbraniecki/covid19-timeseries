@@ -37,8 +37,8 @@
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
-            <td v-bind:class="{ date, today: date.isToday }">{{ date.date }}</td>
-            <td class="value" v-bind:style="{ backgroundColor: date.color }">
+            <td v-bind:class="{ date, today: date.isToday, normalized: date.normalized }">{{ date.date }}</td>
+            <td class="value" v-bind:style="date.normalized ? {} : { backgroundColor: date.color }" :class="{ normalized: date.normalized }">
               {{ date.value }}
             </td>
           </template>
@@ -161,6 +161,7 @@ export default {
                 colorValue
               ),
               isToday: helpers.isToday(date.date),
+              normalized: relDay == 0,
             });
           }
         }
@@ -258,6 +259,10 @@ table tbody td.date {
 
 table td.today {
   background-color: #ffffcc;
+}
+
+table td.normalized {
+  background-color: rgb(221, 238, 255);
 }
 
 table tbody td.value {
