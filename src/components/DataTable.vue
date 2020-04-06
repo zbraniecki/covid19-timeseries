@@ -37,7 +37,7 @@
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
-            <td class="date">{{ date.date }}</td>
+            <td v-bind:class="{ date, today: date.isToday }">{{ date.date }}</td>
             <td class="value" v-bind:style="{ backgroundColor: date.color }">
               {{ date.value }}
             </td>
@@ -159,7 +159,8 @@ export default {
                 [255, 255, 255],
                 maxColor,
                 colorValue
-              )
+              ),
+              isToday: helpers.isToday(date.date),
             });
           }
         }
@@ -253,6 +254,10 @@ table tbody td.date {
   font-weight: bold;
   font-size: 0.7em;
   text-align: right;
+}
+
+table td.today {
+  background-color: #ffffcc;
 }
 
 table tbody td.value {
