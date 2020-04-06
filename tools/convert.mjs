@@ -185,7 +185,10 @@ function getDisplayName(region) {
     return `${stateName} (${countryId})`;
   }
 
-  let countryName = getRegionName(region, "country");
+  let countryName = getRegionName(region, "country", true);
+  if (!countryName) {
+    countryName = getRegionName(region, "country");
+  }
   return countryName;
 }
 
