@@ -3,44 +3,36 @@
     <thead>
       <tr class="name">
         <th></th>
-        <th v-for="region in selectedRegions" :key="region.id" colspan="2">
-          {{ region.displayName }}
-        </th>
+        <th v-for="region in selectedRegions" :key="region.id" colspan="2">{{ region.displayName }}</th>
       </tr>
       <tr v-for="item in activeMetaRows" :key="item.id" :class="item.id">
         <th>{{ item.name }}:</th>
-        <th v-for="value in item.values" :key="value" colspan="2">
-          {{ value }}
-        </th>
+        <th v-for="value in item.values" :key="value" colspan="2">{{ value }}</th>
       </tr>
       <tr>
         <th>Δ Day</th>
         <template v-for="_ in selectedRegions">
-          <th>Date</th>
-          <th>#</th>
+          <th class="date">Date</th>
+          <th class="value">#</th>
         </template>
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="row in dataRows"
-        :key="row.relDay"
-        :class="{ log: row.relDay < 0 }"
-      >
+      <tr v-for="row in dataRows" :key="row.relDay" :class="{ log: row.relDay < 0 }">
         <td class="relDay">
-          <a
-            v-bind:name="'day' + row.relDay"
-            class="target"
-            :ref="'day' + row.relDay"
-          ></a>
+          <a v-bind:name="'day' + row.relDay" class="target" :ref="'day' + row.relDay"></a>
           {{ row.relDay }}
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
-            <td v-bind:class="{ date, today: date.isToday, normalized: date.normalized }">{{ date.date }}</td>
-            <td class="value" v-bind:style="date.normalized ? {} : { backgroundColor: date.color }" :class="{ normalized: date.normalized }">
-              {{ date.value }}
-            </td>
+            <td
+              v-bind:class="{ date, today: date.isToday, normalized: date.normalized }"
+            >{{ date.date }}</td>
+            <td
+              class="value"
+              v-bind:style="date.normalized ? {} : { backgroundColor: date.color }"
+              :class="{ normalized: date.normalized }"
+            >{{ date.value }}</td>
           </template>
           <template v-else>
             <td class="empty"></td>
@@ -161,7 +153,7 @@ export default {
                 colorValue
               ),
               isToday: helpers.isToday(date.date),
-              normalized: relDay == 0,
+              normalized: relDay == 0
             });
           }
         }
@@ -232,7 +224,8 @@ table thead {
 table thead tr:nth-child(1) th {
   font-size: 1.1em;
   color: black;
-  padding: 5px 10px;
+  padding: 10px 10px;
+  white-space: nowrap;
 }
 
 table tbody td.relDay {
@@ -247,10 +240,18 @@ table tbody tr.log {
 
 table tbody td:not(.empty) {
   border-bottom: 1px solid #dddddd;
+}
+
+table thead th {
+  padding: 1px 10px;
+}
+
+table tbody td {
   padding: 3px 10px;
 }
 
-table tbody td.date {
+table tbody td.date,
+table thead th.date {
   color: #999999;
   font-weight: bold;
   font-size: 0.7em;
@@ -265,14 +266,15 @@ table td.normalized {
   background-color: rgb(221, 238, 255);
 }
 
-table tbody td.value {
+table tbody td.value,
+table thead th.value {
   text-align: right;
 }
 
 a.target {
   display: block;
   position: relative;
-  top: -63px;
+  top: -78px;
   visibility: hidden;
 }
 </style>
