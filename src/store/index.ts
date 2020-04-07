@@ -141,7 +141,8 @@ export default new Vuex.Store({
       view: Views.Table
     },
     controls: {
-      views: Object.keys(Views)
+      views: Object.keys(Views),
+      regionSearchText: ""
     },
     selection: {
       regions: params.regions,
@@ -177,6 +178,9 @@ export default new Vuex.Store({
     setSelectedRegions(state, values) {
       state.selection.regions = values;
       updateQueryString(state);
+    },
+    setRegionSearchText(state, regionSearchText) {
+      state.controls.regionSearchText = regionSearchText;
     },
     setData(state, data) {
       const newData = data.filter((region: Region) => {
