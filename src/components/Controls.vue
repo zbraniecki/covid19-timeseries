@@ -10,6 +10,7 @@
         {{ item }}
       </option>
     </select>
+    <input v-on:input="setRegionSearchText" placeholder="Search..." />
     <select multiple @change="setSelectedRegions" class="regions">
       <option
         v-for="region of regionList"
@@ -31,7 +32,14 @@ export default {
       return Object.values(this.$store.state.controls.views);
     },
     regionList() {
-      return this.$store.state.data;
+      // Could consider performing this filtering elsewhere.
+      return this.$store.state.data.filter(
+        region =>
+          !this.$store.state.controls.regionSearchText ||
+          region.displayName
+            .toLowerCase()
+            .includes(this.$store.state.controls.regionSearchText)
+      );
     },
     selectedView() {
       return this.$store.state.ui.view;
@@ -48,6 +56,10 @@ export default {
     setSelectedRegions(e) {
       const values = Array.from(e.target.selectedOptions).map(v => v.value);
       this.$store.commit("setSelectedRegions", values);
+    },
+    setRegionSearchText(e) {
+      const searchText = e.target.value.toLowerCase();
+      this.$store.commit("setRegionSearchText", searchText);
     }
   }
 };
