@@ -12,13 +12,14 @@
     </select>
     <label>Normalize:</label>
     <input type="text" :value="normalizationValue" v-on:change="setNormalizationValue"></input>
-    <input v-on:input="setRegionSearchText" placeholder="Search..." />
+    <input v-model="regionSearchText" placeholder="Search..." />
     <select multiple @change="setSelectedRegions" class="regions">
       <option
         v-for="region of regionList"
         :key="region.id"
         :value="region.id"
         :selected="selectedRegions.includes(region.id)"
+        :class="{ filtered: region.filtered }"
       >
         {{ region.displayName }}
       </option>
@@ -29,19 +30,35 @@
 <script>
 export default {
   name: "controls",
+  data() {
+    return {
+      regionSearchText: ""
+    }
+  },
   computed: {
     viewList() {
       return Object.values(this.$store.state.controls.views);
     },
     regionList() {
       // Could consider performing this filtering elsewhere.
-      return this.$store.state.data.filter(
-        region =>
-          !this.$store.state.controls.regionSearchText ||
-          region.displayName
-            .toLowerCase()
-            .includes(this.$store.state.controls.regionSearchText)
-      );
+      const result = [];
+      const searchQuery = this.regionSearchText.toLowerCase();
+
+      let included = region => {
+        if (searchQuery.length === 0) {
+          return true;
+        }
+        return region.displayName.toLowerCase().includes(searchQuery);
+      }
+
+      for (let region of this.$store.state.data) {
+        result.push({
+          id: region.id,
+          displayName: region.displayName,
+          filtered: !included(region)
+        });
+      }
+      return result;
     },
     selectedView() {
       return this.$store.state.ui.view;
@@ -69,7 +86,7 @@ export default {
     setNormalizationValue(e) {
       const value = parseInt(e.target.value);
       this.$store.commit("setNormalizationValue", value);
-    }
+    },
   }
 };
 </script>
@@ -80,6 +97,10 @@ select {
 }
 
 select.regions {
-  height: 500px;
+  height: 60vh;
+}
+
+select .filtered {
+  display: none;
 }
 </style>
