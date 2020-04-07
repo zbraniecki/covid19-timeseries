@@ -19,9 +19,9 @@
     </thead>
     <tbody>
       <tr v-for="row in dataRows" :key="row.relDay" :class="{ log: row.relDay < 0 }">
-        <td class="relDay">
+        <td class="relDay" title="Click here to center">
           <a v-bind:name="'day' + row.relDay" class="target" :ref="'day' + row.relDay"></a>
-          {{ row.relDay }}
+          <a :href="'#day' + row.relDay">{{ row.relDay }}</a>
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
@@ -304,5 +304,20 @@ a.target {
   position: relative;
   top: -78px;
   visibility: hidden;
+}
+td.relDay {
+  padding: 0;
+}
+
+td.relDay a[href] {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+td.relDay:hover {
+  text-decoration: underline;
+  background-color: #eeeeee;
 }
 </style>
