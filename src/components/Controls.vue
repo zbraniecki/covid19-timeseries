@@ -10,6 +10,8 @@
         {{ item }}
       </option>
     </select>
+    <label>Normalize:</label>
+    <input type="text" :value="normalizationValue" v-on:change="setNormalizationValue"></input>
     <input v-on:input="setRegionSearchText" placeholder="Search..." />
     <select multiple @change="setSelectedRegions" class="regions">
       <option
@@ -47,6 +49,9 @@ export default {
     selectedRegions() {
       const selectedRegions = this.$store.getters.selectedRegions;
       return selectedRegions.map(region => region.id);
+    },
+    normalizationValue() {
+      return this.$store.state.selection.normalizationValue;
     }
   },
   methods: {
@@ -60,6 +65,10 @@ export default {
     setRegionSearchText(e) {
       const searchText = e.target.value.toLowerCase();
       this.$store.commit("setRegionSearchText", searchText);
+    },
+    setNormalizationValue(e) {
+      const value = parseInt(e.target.value);
+      this.$store.commit("setNormalizationValue", value);
     }
   }
 };

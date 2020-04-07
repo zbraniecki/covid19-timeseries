@@ -6,7 +6,7 @@ Vue.use(Vuex);
 
 enum Views {
   Table = "Table",
-  Chart = "Chart"
+  Chart = "Chart",
 }
 
 type DataType = "cases" | "deaths" | "active" | "recovered" | "tested";
@@ -71,7 +71,7 @@ function updateQueryString(state: any) {
 function parseQueryString() {
   const params = new URLSearchParams(document.location.search);
   return {
-    regions: params.getAll("region")
+    regions: params.getAll("region"),
   };
 }
 
@@ -107,30 +107,24 @@ function getNormalizedIndex(state, region: Region) {
   const dataType = state.selection.dataTypes[0];
   const value = state.selection.normalizationValue;
 
-  if (!state.normalization[region.id]) {
-    state.normalization[region.id] = {};
-  }
-  if (!state.normalization[region.id][dataType]) {
-    const result = {
-      firstValue: null,
-      relativeZero: null
-    };
-    for (let idx = 0; idx < region.dates.length; idx++) {
-      const date = region.dates[idx];
-      if (result.firstValue === null && date.value[dataType]) {
-        result.firstValue = idx;
-      }
-      if (date.value[dataType] > value && idx > 0) {
-        result.relativeZero = idx - 1;
-        break;
-      }
+  const result = {
+    firstValue: null,
+    relativeZero: null,
+  };
+  for (let idx = 0; idx < region.dates.length; idx++) {
+    const date = region.dates[idx];
+    if (result.firstValue === null && date.value[dataType]) {
+      result.firstValue = idx;
     }
-    if (result.relativeZero === null) {
-      result.relativeZero = region.dates.length - 1;
+    if (date.value[dataType] > value && idx > 0) {
+      result.relativeZero = idx - 1;
+      break;
     }
-    state.normalization[region.id][dataType] = result;
   }
-  return state.normalization[region.id][dataType];
+  if (result.relativeZero === null) {
+    result.relativeZero = region.dates.length - 1;
+  }
+  return result;
 }
 
 const params = parseQueryString();
@@ -138,19 +132,18 @@ const params = parseQueryString();
 export default new Vuex.Store({
   state: {
     ui: {
-      view: Views.Table
+      view: Views.Table,
     },
     controls: {
       views: Object.keys(Views),
-      regionSearchText: ""
+      regionSearchText: "",
     },
     selection: {
       regions: params.regions,
       dataTypes: ["cases"],
-      normalizationValue: 1000
+      normalizationValue: 2000,
     },
     data: [],
-    normalization: {}
   },
   getters: {
     normalizedIndexes: (state, getters) => {
@@ -161,7 +154,7 @@ export default new Vuex.Store({
       }
       return result;
     },
-    selectedRegions: state => {
+    selectedRegions: (state) => {
       const result: Array<Region> = [];
       for (const region of state.data) {
         if (state.selection.regions.includes(region.id)) {
@@ -169,7 +162,7 @@ export default new Vuex.Store({
         }
       }
       return result;
-    }
+    },
   },
   mutations: {
     setView(state, view: Views) {
@@ -192,9 +185,12 @@ export default new Vuex.Store({
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
       state.selection.dataTypes = dataTypes;
-    }
+    },
+    setNormalizationValue(state, value) {
+      state.selection.normalizationValue = value;
+    },
   },
   actions: {},
   modules: {},
-  strict: true
+  strict: true,
 });
