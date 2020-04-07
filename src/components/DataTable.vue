@@ -1,5 +1,5 @@
 <template>
-  <table cellspacing="0" cellpadding="0">
+  <table cellspacing="0" cellpadding="0" :class="{ chrome: isChrome }">
     <thead>
       <tr class="name">
         <th></th>
@@ -184,7 +184,10 @@ export default {
       }
 
       return result;
-    }
+    },
+    isChrome() {
+      return navigator.userAgent.includes("Chrome/");
+    },
   },
   updated: function() {
     this.$nextTick(function() {
@@ -208,8 +211,11 @@ table {
   border-left: 1px solid #999999;
   margin-left: 5px;
   font-size: 0.9em;
+}
+
+table:not(.chrome) {
   /* Bug in Chrome prevents sticky header from being positioned properly. */
-  /* margin-bottom: 100vh; */
+  margin-bottom: 100vh;
 }
 
 table td:nth-child(1),
@@ -252,9 +258,12 @@ table tbody td.relDay {
 }
 
 table tbody tr.log {
+  opacity: 0.5;
+}
+
+table.chrome tbody tr.log {
   /* Bug in Chrome prevents sticky header from being positioned properly. */
   display: none;
-  opacity: 0.5;
 }
 
 table tbody td:not(.empty) {
