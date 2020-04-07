@@ -62,6 +62,24 @@ const metaRows = [
   }
 ];
 
+const dataTypeInfo = {
+  "cases": {
+    "sentiment": -1,
+  },
+  "deaths": {
+    "sentiment": -1,
+  },
+  "active": {
+    "sentiment": -1,
+  },
+  "tested": {
+    "sentiment": 1,
+  },
+  "recovered": {
+    "sentiment": 1,
+  },
+}
+
 const dtf = new Intl.DateTimeFormat(undefined, {
   day: "numeric",
   month: "numeric"
@@ -125,7 +143,6 @@ export default {
 
       const result = [];
 
-      const maxColor = [255, 0, 0];
       const maxValue = 100000;
 
       for (let idx = 0; idx < maxDepth + max; idx++) {
@@ -144,6 +161,8 @@ export default {
           } else {
             const date = region.dates[regIdx];
             const colorValue = date.value[dataType] / maxValue;
+            const sentiment = dataTypeInfo[dataType].sentiment == 1 && date.value[dataType] > 0;
+            const maxColor = sentiment ? [0, 255, 0] : [255, 0, 0];
             dates.push({
               date: dtf.format(date.date),
               value: nf.format(date.value[dataType]),
