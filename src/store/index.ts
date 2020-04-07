@@ -54,6 +54,7 @@ interface Region {
     taxonomy: TaxonomyType;
   };
   displayName: string;
+  searchTokens?: string;
 }
 
 function updateQueryString(state: any) {
@@ -81,6 +82,7 @@ function parseData(data: Array<Region>) {
       const date = region.dates[idx];
       date.date = helpers.parseDate(date.date);
     }
+    region.searchTokens = generateSearchTokens(region);
   }
   return data;
 }
@@ -101,6 +103,25 @@ function sortData(data: Array<Region>, dataType: DataType) {
     }
     return valueB - valueA;
   });
+}
+
+function addSearchTokensForLevel(tokens: Set<string>, region: Region, level: TaxonomyType): void {
+  if (region.meta[level].code !== undefined) {
+    tokens.add(region.meta[level].code.toLowerCase());
+    for (const token of region.meta[level].name.toLowerCase().split(" ")) {
+      tokens.add(token);
+    }
+  }
+}
+
+function generateSearchTokens(region): string {
+  let tokens: Set<string> = new Set();
+  addSearchTokensForLevel(tokens, region, "country");
+  addSearchTokensForLevel(tokens, region, "state");
+  addSearchTokensForLevel(tokens, region, "county");
+  addSearchTokensForLevel(tokens, region, "city");
+
+  return Array.from(tokens).join(" ");
 }
 
 function getNormalizedIndex(state, region: Region) {

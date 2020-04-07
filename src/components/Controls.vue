@@ -48,7 +48,7 @@ export default {
         if (searchQuery.length === 0) {
           return true;
         }
-        return region.displayName.toLowerCase().includes(searchQuery);
+        return region.searchTokens.toLowerCase().includes(searchQuery);
       };
 
       for (const region of this.$store.state.data) {
