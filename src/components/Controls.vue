@@ -83,10 +83,6 @@ export default {
       const values = Array.from(e.target.selectedOptions).map(v => v.value);
       this.$store.commit("setSelectedRegions", values);
     },
-    setRegionSearchText(e) {
-      const searchText = e.target.value.toLowerCase();
-      this.$store.commit("setRegionSearchText", searchText);
-    },
     setNormalizationValue(e) {
       const value = parseInt(e.target.value);
       this.$store.commit("setNormalizationValue", value);
