@@ -121,7 +121,7 @@ function generateSearchTokens(region): string {
   addSearchTokensForLevel(tokens, region, "county");
   addSearchTokensForLevel(tokens, region, "city");
 
-  return Array.from(tokens).join(" ");
+  return Array.from(tokens).join(" ").toLowerCase();
 }
 
 function getNormalizedIndex(state, region: Region) {

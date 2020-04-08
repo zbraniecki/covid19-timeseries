@@ -11,7 +11,11 @@
       </option>
     </select>
     <label>Normalize:</label>
-    <input type="text" :value="normalizationValue" v-on:change="setNormalizationValue"></input>
+    <input
+      type="text"
+      :value="normalizationValue"
+      v-on:change="setNormalizationValue"
+    />
     <input v-model="regionSearchText" placeholder="Search..." />
     <select multiple @change="setSelectedRegions" class="regions">
       <option
@@ -33,7 +37,7 @@ export default {
   data() {
     return {
       regionSearchText: ""
-    }
+    };
   },
   computed: {
     viewList() {
@@ -44,14 +48,14 @@ export default {
       const result = [];
       const searchQuery = this.regionSearchText.toLowerCase();
 
-      let included = region => {
+      const included = region => {
         if (searchQuery.length === 0) {
           return true;
         }
-        return region.searchTokens.toLowerCase().includes(searchQuery);
-      }
+        return region.searchTokens.includes(searchQuery);
+      };
 
-      for (let region of this.$store.state.data) {
+      for (const region of this.$store.state.data) {
         result.push({
           id: region.id,
           displayName: region.displayName,
@@ -86,7 +90,7 @@ export default {
     setNormalizationValue(e) {
       const value = parseInt(e.target.value);
       this.$store.commit("setNormalizationValue", value);
-    },
+    }
   }
 };
 </script>
