@@ -44,14 +44,14 @@ export default {
       const result = [];
       const searchQuery = this.regionSearchText.toLowerCase();
 
-      let included = region => {
+      const included = region => {
         if (searchQuery.length === 0) {
           return true;
         }
         return region.displayName.toLowerCase().includes(searchQuery);
-      }
+      };
 
-      for (let region of this.$store.state.data) {
+      for (const region of this.$store.state.data) {
         result.push({
           id: region.id,
           displayName: region.displayName,
@@ -78,10 +78,6 @@ export default {
     setSelectedRegions(e) {
       const values = Array.from(e.target.selectedOptions).map(v => v.value);
       this.$store.commit("setSelectedRegions", values);
-    },
-    setRegionSearchText(e) {
-      const searchText = e.target.value.toLowerCase();
-      this.$store.commit("setRegionSearchText", searchText);
     },
     setNormalizationValue(e) {
       const value = parseInt(e.target.value);
