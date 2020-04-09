@@ -87,11 +87,23 @@ function parseData(data: Array<Region>) {
   return data;
 }
 
-function getLatestValue(region: Region, dataType: DataType) {
-  if (!region.latest[dataType]) {
-    return undefined;
+function getLatestValue(region: Region, dataType: DataType): number | null {
+  const idx = region.latest[dataType];
+  if (!idx) {
+    return null
   }
-  return region.dates[region.latest[dataType]].value[dataType];
+
+  return getValue(region, idx, dataType);
+}
+
+function getValue(region: Region, idx: number, dataType: DataType): number | null {
+  let result = null;
+
+  if (region.dates.length > idx && region.dates[idx].value.hasOwnProperty(dataType)) {
+    result = region.dates[idx].value[dataType];
+  }
+
+  return result;
 }
 
 function sortData(data: Array<Region>, dataType: DataType) {
@@ -105,7 +117,11 @@ function sortData(data: Array<Region>, dataType: DataType) {
   });
 }
 
-function addSearchTokensForLevel(tokens: Set<string>, region: Region, level: TaxonomyType): void {
+function addSearchTokensForLevel(
+  tokens: Set<string>,
+  region: Region,
+  level: TaxonomyType
+): void {
   if (region.meta[level].code !== undefined) {
     tokens.add(region.meta[level].code.toLowerCase());
     for (const token of region.meta[level].name.toLowerCase().split(" ")) {
@@ -121,13 +137,33 @@ function generateSearchTokens(region): string {
   addSearchTokensForLevel(tokens, region, "county");
   addSearchTokensForLevel(tokens, region, "city");
 
-  return Array.from(tokens).join(" ").toLowerCase();
+  return Array.from(tokens)
+    .join(" ")
+    .toLowerCase();
 }
 
-function getNormalizedIndex(state, region: Region) {
-  const dataType = state.selection.dataTypes[0];
-  const value = state.selection.normalizationValue;
+function getEarliestIndexWithinXDays(
+  region: Region,
+  days: number,
+  dataType: DataType
+): number | null {
+  let result = null;
 
+  let len = region.dates.length;
+  let vector = 0;
+  while (vector < len && vector <= days) {
+    result = len - vector;
+    vector++;
+  }
+  return result;
+}
+
+function getNormalizedIndex(
+  state,
+  region: Region,
+  value: number,
+  dataType: DataType
+) {
   const result = {
     firstValue: null,
     relativeZero: null,
@@ -148,6 +184,13 @@ function getNormalizedIndex(state, region: Region) {
   return result;
 }
 
+function getClosestRoundedNumber(input: number): number {
+  const str = parseInt(input).toString();
+  const digits = str.length;
+  const m = Math.pow(10, digits - 1);
+  return Math.floor(input / m) * m;
+}
+
 const params = parseQueryString();
 
 export default new Vuex.Store({
@@ -161,17 +204,53 @@ export default new Vuex.Store({
     selection: {
       regions: params.regions,
       dataTypes: ["cases"],
-      normalizationValue: 2000,
+      normalizationValue: null,
     },
     data: [],
   },
   getters: {
-    normalizedIndexes: (state, getters) => {
+    autoNormalizedValue: (state, getters) => {
       const selectedRegions = getters.selectedRegions;
-      const result: { [key: string]: number } = {};
-      for (const region of selectedRegions) {
-        result[region.id] = getNormalizedIndex(state, region);
+      if (selectedRegions.length == 0) {
+        return null;
       }
+      const dataType = state.selection.dataTypes[0];
+
+      let earliest = [];
+      for (const region of selectedRegions) {
+        let idx = getEarliestIndexWithinXDays(region, 5, dataType);
+        earliest.push(getValue(region, idx, dataType));
+      }
+
+
+      let minValue = null;
+      for (let val of earliest) {
+        if (minValue === null || minValue > val) {
+          minValue = val;
+        }
+      }
+      return getClosestRoundedNumber(minValue);
+    },
+    normalizedIndexes: (state, getters) => {
+      const result: { [key: string]: number } = {};
+
+      const selectedRegions = getters.selectedRegions;
+
+      if (selectedRegions.length == 0) {
+        return result;
+      }
+
+      const dataType = state.selection.dataTypes[0];
+      let value: number | null = state.selection.normalizationValue;
+
+      if (state.selection.normalizationValue === null) {
+        value = getters.autoNormalizedValue;
+      }
+
+      for (const region of selectedRegions) {
+        result[region.id] = getNormalizedIndex(state, region, value, dataType);
+      }
+
       return result;
     },
     selectedRegions: (state) => {
@@ -198,9 +277,11 @@ export default new Vuex.Store({
       });
 
       sortData(newData, state.selection.dataTypes[0]);
+
       if (state.selection.regions.length === 0) {
         state.selection.regions = newData.slice(0, 8).map(region => region.id);
       }
+
       state.data = parseData(newData);
     },
     setDataTypes(state, dataTypes: Array<DataType>) {

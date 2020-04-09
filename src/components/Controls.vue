@@ -15,6 +15,7 @@
       type="text"
       :value="normalizationValue"
       v-on:change="setNormalizationValue"
+      :placeholder="autoNormalizedValue"
     />
     <input v-model="regionSearchText" placeholder="Search..." />
     <select multiple @change="setSelectedRegions" class="regions">
@@ -73,6 +74,9 @@ export default {
     },
     normalizationValue() {
       return this.$store.state.selection.normalizationValue;
+    },
+    autoNormalizedValue() {
+      return this.$store.getters.autoNormalizedValue;
     }
   },
   methods: {
@@ -84,8 +88,12 @@ export default {
       this.$store.commit("setSelectedRegions", values);
     },
     setNormalizationValue(e) {
-      const value = parseInt(e.target.value);
-      this.$store.commit("setNormalizationValue", value);
+      if (e.target.value.length === 0) {
+        this.$store.commit("setNormalizationValue", null);
+      } else {
+        const value = parseInt(e.target.value);
+        this.$store.commit("setNormalizationValue", value);
+      }
     }
   }
 };
