@@ -142,7 +142,7 @@ function generateSearchTokens(region): string {
     .toLowerCase();
 }
 
-function getEarliestIndexWithinXDays(
+function getCountNDaysAgo(
   region: Region,
   days: number,
   dataType: DataType
@@ -155,7 +155,7 @@ function getEarliestIndexWithinXDays(
     result = len - vector;
     vector++;
   }
-  return result;
+  return getValue(region, result, dataType);
 }
 
 function getNormalizedIndex(
@@ -218,8 +218,7 @@ export default new Vuex.Store({
 
       let earliest = [];
       for (const region of selectedRegions) {
-        let idx = getEarliestIndexWithinXDays(region, 5, dataType);
-        earliest.push(getValue(region, idx, dataType));
+        earliest.push(getCountNDaysAgo(region, 5, dataType));
       }
 
 
