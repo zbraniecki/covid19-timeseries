@@ -1,34 +1,43 @@
 <template>
   <div id="menu">
-    <select @change="setView">
-      <option
-        v-for="item of viewList"
-        :key="item"
-        :value="item"
-        :selected="selectedView == item"
-      >
-        {{ item }}
-      </option>
-    </select>
-    <label>Normalize:</label>
-    <input
-      type="text"
-      :value="normalizationValue"
-      v-on:change="setNormalizationValue"
-      :placeholder="autoNormalizedValue"
-    />
-    <input v-model="regionSearchText" placeholder="Search..." />
-    <select multiple @change="setSelectedRegions" class="regions">
-      <option
-        v-for="region of regionList"
-        :key="region.id"
-        :value="region.id"
-        :selected="selectedRegions.includes(region.id)"
-        :class="{ filtered: region.filtered }"
-      >
-        {{ region.displayName }}
-      </option>
-    </select>
+    <div>
+      <label>View:</label>
+      <select @change="setView">
+        <option
+          v-for="item of viewList"
+          :key="item"
+          :value="item"
+          :selected="selectedView == item"
+        >{{ item }}</option>
+      </select>
+    </div>
+    <div>
+      <label>Type:</label>
+      <select v-model="dataType">
+        <option v-for="dataType of dataTypes" :value="dataType.id">{{ dataType.name }}</option>
+      </select>
+    </div>
+    <div>
+      <label>Normalize:</label>
+      <input
+        type="text"
+        :value="normalizationValue"
+        v-on:change="setNormalizationValue"
+        :placeholder="autoNormalizedValue"
+      />
+    </div>
+    <div>
+      <input v-model="regionSearchText" placeholder="Search..." />
+      <select multiple @change="setSelectedRegions" class="regions">
+        <option
+          v-for="region of regionList"
+          :key="region.id"
+          :value="region.id"
+          :selected="selectedRegions.includes(region.id)"
+          :class="{ filtered: region.filtered }"
+        >{{ region.displayName }}</option>
+      </select>
+    </div>
   </div>
 </template>
 
@@ -37,7 +46,25 @@ export default {
   name: "controls",
   data() {
     return {
-      regionSearchText: ""
+      regionSearchText: "",
+      dataTypes: [
+        {
+          id: "cases",
+          name: "Cases"
+        },
+        {
+          id: "deaths",
+          name: "Deaths"
+        },
+        {
+          id: "active",
+          name: "Active"
+        },
+        {
+          id: "tested",
+          name: "Tested"
+        }
+      ]
     };
   },
   computed: {
@@ -77,6 +104,14 @@ export default {
     },
     autoNormalizedValue() {
       return this.$store.getters.autoNormalizedValue;
+    },
+    dataType: {
+      get() {
+        return this.$store.getters.dataTypes[0];
+      },
+      set(value) {
+        this.$store.commit("setDataTypes", [value]);
+      }
     }
   },
   methods: {
@@ -100,7 +135,12 @@ export default {
 </script>
 
 <style scoped>
-select {
+
+#menu {
+  display: flex;
+  flex-direction: column;
+}
+select.regions {
   width: 100%;
 }
 

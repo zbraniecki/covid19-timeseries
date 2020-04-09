@@ -62,6 +62,9 @@ function updateQueryString(state: any) {
   for (const id of state.selection.regions) {
     params.append("region", id);
   }
+  if (state.selection.dataTypes.length) {
+    params.append("dataType", state.selection.dataTypes[0]);
+  }
   window.history.replaceState(
     {},
     "",
@@ -69,10 +72,12 @@ function updateQueryString(state: any) {
   );
 }
 
-function parseQueryString() {
+function getUserPreferences() {
   const params = new URLSearchParams(document.location.search);
+  const dataTypes = params.getAll("dataType");
   return {
     regions: params.getAll("region"),
+    dataTypes,
   };
 }
 
@@ -142,7 +147,7 @@ function generateSearchTokens(region): string {
     .toLowerCase();
 }
 
-function getCountNDaysAgo(
+function getCountNDaysSinceTheLast(
   region: Region,
   days: number,
   dataType: DataType
@@ -150,12 +155,26 @@ function getCountNDaysAgo(
   let result = null;
 
   let len = region.dates.length;
-  let vector = 0;
-  while (vector < len && vector <= days) {
-    result = len - vector;
-    vector++;
+  let lastValueIdx = null;
+
+  for (let idx = len; idx >= 0; idx--) {
+    if (getValue(region, idx, dataType) !== null) {
+      lastValueIdx = idx;
+      break;
+    }
   }
-  return getValue(region, result, dataType);
+  if (lastValueIdx === null) {
+    return null;
+  }
+
+  let vector = lastValueIdx;
+  for (let idx = lastValueIdx; idx >= 0 && lastValueIdx - days < idx; idx--) {
+    if (getValue(region, idx, dataType) !== null) {
+      vector = idx;
+    }
+  }
+
+  return getValue(region, vector, dataType);
 }
 
 function getNormalizedIndex(
@@ -191,7 +210,7 @@ function getClosestRoundedNumber(input: number): number {
   return Math.floor(input / m) * m;
 }
 
-const params = parseQueryString();
+const params = getUserPreferences();
 
 export default new Vuex.Store({
   state: {
@@ -203,7 +222,7 @@ export default new Vuex.Store({
     },
     selection: {
       regions: params.regions,
-      dataTypes: ["cases"],
+      dataTypes: params.dataTypes,
       normalizationValue: null,
     },
     data: [],
@@ -214,20 +233,21 @@ export default new Vuex.Store({
       if (selectedRegions.length == 0) {
         return null;
       }
-      const dataType = state.selection.dataTypes[0];
+      const dataType = getters.dataTypes[0];
 
       let earliest = [];
       for (const region of selectedRegions) {
-        earliest.push(getCountNDaysAgo(region, 5, dataType));
+        earliest.push(getCountNDaysSinceTheLast(region, 5, dataType));
       }
 
 
       let minValue = null;
       for (let val of earliest) {
-        if (minValue === null || minValue > val) {
+        if (val !== null && (minValue === null || minValue > val)) {
           minValue = val;
         }
       }
+
       return getClosestRoundedNumber(minValue);
     },
     normalizedIndexes: (state, getters) => {
@@ -239,7 +259,7 @@ export default new Vuex.Store({
         return result;
       }
 
-      const dataType = state.selection.dataTypes[0];
+      const dataType = getters.dataTypes[0];
       let value: number | null = state.selection.normalizationValue;
 
       if (state.selection.normalizationValue === null) {
@@ -261,6 +281,13 @@ export default new Vuex.Store({
       }
       return result;
     },
+    dataTypes: (state) => {
+      const dataTypes = state.selection.dataTypes;
+      if (dataTypes.length == 0) {
+        return ["cases"];
+      }
+      return dataTypes;
+    },
   },
   mutations: {
     setView(state, view: Views) {
@@ -275,16 +302,19 @@ export default new Vuex.Store({
         return region.meta.taxonomy == "country";
       });
 
-      sortData(newData, state.selection.dataTypes[0]);
-
       if (state.selection.regions.length === 0) {
         state.selection.regions = newData.slice(0, 8).map(region => region.id);
       }
+      let dataType = state.selection.dataTypes[0] || "cases";
+      sortData(newData, dataType);
 
       state.data = parseData(newData);
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
       state.selection.dataTypes = dataTypes;
+      let dataType = state.selection.dataTypes[0] || "cases";
+      sortData(state.data, dataType);
+      updateQueryString(state);
     },
     setNormalizationValue(state, value) {
       state.selection.normalizationValue = value;

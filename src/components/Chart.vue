@@ -54,7 +54,7 @@ export default {
       const height = 500;
       const width = 500;
       const margin = { top: 20, right: 30, bottom: 30, left: 60 };
-      const dataType = this.$store.state.selection.dataTypes[0];
+      const dataType = this.$store.getters.dataTypes[0];
 
       const svg = d3.select("#chart");
       svg.selectAll("*").remove();
