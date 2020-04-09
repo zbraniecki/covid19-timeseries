@@ -198,6 +198,9 @@ export default new Vuex.Store({
       });
 
       sortData(newData, state.selection.dataTypes[0]);
+      if (state.selection.regions.length === 0) {
+        state.selection.regions = newData.slice(0, 8).map(region => region.id);
+      }
       state.data = parseData(newData);
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
