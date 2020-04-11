@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard">
     <main>
-      <data-table id="dataTable" v-if="view == 'Table'"></data-table>
+      <data-table id="dataTable" v-if="presentation == tableKey"></data-table>
       <chart id="chart" v-else></chart>
     </main>
     <aside>
@@ -14,6 +14,7 @@
 import DataTable from "@/components/DataTable.vue";
 import Chart from "@/components/Chart.vue";
 import Controls from "@/components/Controls.vue";
+import { Presentation } from "@/types";
 
 export default {
   name: "dashboard",
@@ -28,8 +29,11 @@ export default {
     this.$store.commit("setData", json);
   },
   computed: {
-    view() {
-      return this.$store.state.ui.view;
+    presentation() {
+      return this.$store.getters.selection.presentation;
+    },
+    tableKey() {
+      return Presentation.Table;
     }
   }
 };

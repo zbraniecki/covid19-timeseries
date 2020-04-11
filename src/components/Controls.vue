@@ -1,26 +1,35 @@
 <template>
   <div id="menu">
     <div>
-      <label>View:</label>
-      <select @change="setView">
+      <label>Presentation:</label>
+      <select v-model="presentation">
         <option
-          v-for="item of viewList"
-          :key="item"
-          :value="item"
-          :selected="selectedView == item"
-        >{{ item }}</option>
+          v-for="presentation of presentations"
+          :value="presentation.id"
+          >{{ presentation.name }}</option
+        >
       </select>
     </div>
     <div>
       <label>Type:</label>
       <select v-model="dataType">
-        <option v-for="dataType of dataTypes" :value="dataType.id">{{ dataType.name }}</option>
+        <option v-for="dataType of dataTypes" :value="dataType.id">{{
+          dataType.name
+        }}</option>
       </select>
     </div>
     <div>
       <label>Per:</label>
       <select v-model="dataType2">
-        <option v-for="dataType of dataTypes2" :value="dataType.id">{{ dataType.name }}</option>
+        <option v-for="dataType of dataTypes2" :value="dataType.id">{{
+          dataType.name
+        }}</option>
+      </select>
+    </div>
+    <div>
+      <label>View:</label>
+      <select v-model="view">
+        <option v-for="view of views" :value="view.id">{{ view.name }}</option>
       </select>
     </div>
     <div>
@@ -41,52 +50,40 @@
           :value="region.id"
           :selected="selectedRegions.includes(region.id)"
           :class="{ filtered: region.filtered }"
-        >{{ region.displayName }}</option>
+          >{{ region.displayName }}</option
+        >
       </select>
     </div>
   </div>
 </template>
 
 <script>
+import helpers from "@/helpers/index.ts";
+import { Presentation, DataType, View } from "@/types";
+
 export default {
   name: "controls",
   data() {
     return {
+      presentations: helpers.enums.entries(Presentation),
       regionSearchText: "",
-      dataTypes: [
-        {
-          id: "cases",
-          name: "Cases"
-        },
-        {
-          id: "deaths",
-          name: "Deaths"
-        },
-        {
-          id: "active",
-          name: "Active"
-        },
-        {
-          id: "tested",
-          name: "Tested"
-        }
-      ],
+      dataTypes: helpers.enums
+        .entries(DataType)
+        .filter(pres => pres.id != "population"),
       dataTypes2: [
         {
           id: "",
-          name: "",
+          name: ""
         },
         {
           id: "population",
-          name: "Population",
+          name: "Population"
         }
-      ]
+      ],
+      views: helpers.enums.entries(View)
     };
   },
   computed: {
-    viewList() {
-      return Object.values(this.$store.state.controls.views);
-    },
     regionList() {
       // Could consider performing this filtering elsewhere.
       const result = [];
@@ -108,9 +105,6 @@ export default {
       }
       return result;
     },
-    selectedView() {
-      return this.$store.state.ui.view;
-    },
     selectedRegions() {
       const selectedRegions = this.$store.getters.selectedRegions;
       return selectedRegions.map(region => region.id);
@@ -123,19 +117,45 @@ export default {
     },
     dataType: {
       get() {
-        return this.$store.getters.dataTypes[0];
+        return this.$store.getters.selection.dataTypes[0];
       },
       set(value) {
-        this.$store.commit("setDataTypes", [value]);
+        const dt = this.$store.getters.selection.dataTypes[1];
+        if (dt) {
+          this.$store.commit("setDataTypes", [value, dt]);
+        } else {
+          this.$store.commit("setDataTypes", [value]);
+        }
       }
     },
     dataType2: {
       get() {
-        return this.$store.getters.dataTypes[1];
+        return this.$store.getters.selection.dataTypes[1];
       },
       set(value) {
-        let dt = this.$store.getters.dataTypes[0];
-        this.$store.commit("setDataTypes", [dt, value]);
+        const dt = this.$store.getters.selection.dataTypes[0];
+
+        if (value) {
+          this.$store.commit("setDataTypes", [dt, value]);
+        } else {
+          this.$store.commit("setDataTypes", [dt]);
+        }
+      }
+    },
+    view: {
+      get() {
+        return this.$store.getters.selection.view;
+      },
+      set(value) {
+        this.$store.commit("setView", value);
+      }
+    },
+    presentation: {
+      get() {
+        return this.$store.getters.selection.presentation;
+      },
+      set(value) {
+        this.$store.commit("setPresentation", value);
       }
     }
   },
@@ -160,7 +180,6 @@ export default {
 </script>
 
 <style scoped>
-
 #menu {
   display: flex;
   flex-direction: column;

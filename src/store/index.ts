@@ -1,61 +1,18 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import helpers from "@/helpers/index.ts";
+import {
+  Selection,
+  Region,
+  Presentation,
+  TaxonomyLevel,
+  DataType,
+  View,
+  State,
+  SelectionInput
+} from "@/types";
 
 Vue.use(Vuex);
-
-enum Views {
-  Table = "Table",
-  Chart = "Chart",
-}
-
-type DataType = "cases" | "deaths" | "active" | "recovered" | "tested";
-type TaxonomyType = "country" | "state" | "county" | "city";
-
-interface DataPoint {
-  date: Date;
-  value: {
-    cases: number;
-    deaths: number;
-    active?: number;
-    recovered?: number;
-    tested?: number;
-  };
-}
-
-interface Region {
-  id: string;
-  dates: Array<DataPoint>;
-  latest: {
-    cases: number;
-    deaths: number;
-    active?: number;
-    recovered?: number;
-    tested?: number;
-  };
-  meta: {
-    country: {
-      code?: string;
-      name?: string;
-    };
-    state: {
-      code?: string;
-      name?: string;
-    };
-    county: {
-      code?: string;
-      name?: string;
-    };
-    city: {
-      code?: string;
-      name?: string;
-    };
-    population?: number;
-    taxonomy: TaxonomyType;
-  };
-  displayName: string;
-  searchTokens?: string;
-}
 
 function updateQueryString(state: any) {
   const params = new URLSearchParams();
@@ -67,6 +24,9 @@ function updateQueryString(state: any) {
       params.append("dataType", dataType);
     }
   }
+  if (state.selection.view) {
+    params.set("view", state.selection.view);
+  }
   window.history.replaceState(
     {},
     "",
@@ -74,175 +34,78 @@ function updateQueryString(state: any) {
   );
 }
 
-function getUserPreferences() {
+function getUserPreferences(): SelectionInput {
   const params = new URLSearchParams(document.location.search);
-  const dataTypes = params.getAll("dataType");
+  const dataTypes = params.getAll("dataType") as Array<DataType>;
+  const view = params.get("view") as View | null;
+  const presentation = params.get("presentation");
   return {
+    presentation: helpers.enums.get(Presentation, presentation),
     regions: params.getAll("region"),
     dataTypes,
+    view,
+    normalizationValue: null
   };
 }
 
-function parseData(data: Array<Region>) {
-  for (const region of data) {
-    for (const idx in region.dates) {
-      const date = region.dates[idx];
-      date.date = helpers.parseDate(date.date);
-    }
-    region.searchTokens = generateSearchTokens(region);
-  }
-  return data;
-}
-
-function getLatestValue(region: Region, dataTypes: Array<DataType>): number | null {
-  const idx = region.latest[dataTypes[0]];
-  if (!idx) {
-    return null;
-  }
-
-  return helpers.getValue(region, idx, dataTypes);
-}
-
-function sortData(data: Array<Region>, dataTypes: Array<DataType>) {
-  data.sort((a: Region, b: Region) => {
-    const valueA = getLatestValue(a, dataTypes);
-    const valueB = getLatestValue(b, dataTypes);
-    if (isNaN(valueA) && !isNaN(valueB)) {
-      return 1;
-    }
-    return valueB - valueA;
-  });
-}
-
-function addSearchTokensForLevel(
-  tokens: Set<string>,
-  region: Region,
-  level: TaxonomyType
-): void {
-  if (region.meta[level].code !== undefined) {
-    tokens.add(region.meta[level].code.toLowerCase());
-    for (const token of region.meta[level].name.toLowerCase().split(" ")) {
-      tokens.add(token);
-    }
-  }
-}
-
-function generateSearchTokens(region): string {
-  let tokens: Set<string> = new Set();
-  addSearchTokensForLevel(tokens, region, "country");
-  addSearchTokensForLevel(tokens, region, "state");
-  addSearchTokensForLevel(tokens, region, "county");
-  addSearchTokensForLevel(tokens, region, "city");
-
-  return Array.from(tokens)
-    .join(" ")
-    .toLowerCase();
-}
-
-function getCountNDaysSinceTheLast(
-  region: Region,
-  days: number,
-  dataTypes: Array<DataType>
-): number | null {
-  let result = null;
-
-  let len = region.dates.length;
-  let lastValueIdx = null;
-
-  for (let idx = len; idx >= 0; idx--) {
-    if (helpers.getValue(region, idx, dataTypes) !== null) {
-      lastValueIdx = idx;
-      break;
-    }
-  }
-  if (lastValueIdx === null) {
-    return null;
-  }
-
-  let vector = lastValueIdx;
-  for (let idx = lastValueIdx; idx >= 0 && lastValueIdx - days < idx; idx--) {
-    if (helpers.getValue(region, idx, dataTypes) !== null) {
-      vector = idx;
-    }
-  }
-
-  return helpers.getValue(region, vector, dataTypes);
-}
-
-function getNormalizedIndex(
-  state,
-  region: Region,
-  value: number,
-  dataTypes: Array<DataType>
-) {
-  const result = {
-    firstValue: null,
-    relativeZero: null,
+function getSelection(state: State): Selection {
+  return {
+    presentation: state.selection.presentation || Presentation.Table,
+    dataTypes:
+      state.selection.dataTypes.length > 0
+        ? state.selection.dataTypes
+        : [DataType.Cases],
+    view: state.selection.view || View.Total,
+    regions: state.selection.regions.length > 0 ? state.selection.regions : [],
+    normalizationValue: state.selection.normalizationValue
   };
-  for (let idx = 0; idx < region.dates.length; idx++) {
-    const date = region.dates[idx];
-    const dtValue = helpers.getValue(region, idx, dataTypes);
-    if (result.firstValue === null && dtValue) {
-      result.firstValue = idx;
-    }
-    if (dtValue > value && idx > 0) {
-      result.relativeZero = idx - 1;
-      break;
-    }
-  }
-  if (result.relativeZero === null) {
-    result.relativeZero = region.dates.length - 1;
-  }
-  return result;
-}
-
-function getClosestRoundedNumber(input: number): number {
-  const str = parseInt(input).toString();
-  const digits = str.length;
-  const m = Math.pow(10, digits - 1);
-  return Math.floor(input / m) * m;
 }
 
 const params = getUserPreferences();
 
 export default new Vuex.Store({
   state: {
-    ui: {
-      view: Views.Table,
-    },
     controls: {
-      views: Object.keys(Views),
+      views: helpers.enums.values(Presentation)
     },
     selection: {
+      presentation: params.presentation,
       regions: params.regions,
       dataTypes: params.dataTypes,
       normalizationValue: null,
+      view: params.view
     },
-    data: [],
+    data: []
   },
   getters: {
-    autoNormalizedValue: (state, getters) => {
+    autoNormalizedValue(state: State, getters): number {
       const selectedRegions = getters.selectedRegions;
       if (selectedRegions.length == 0) {
-        return null;
+        return 0;
       }
 
-      let earliest = [];
+      let selection = helpers.getSelectionForView(getters.selection, View.Total);
+      const earliest = [];
       for (const region of selectedRegions) {
-        earliest.push(getCountNDaysSinceTheLast(region, 5, getters.dataTypes));
+        earliest.push(helpers.getCountNDaysSinceTheLast(region, 5, selection));
       }
 
       let minValue = null;
-      for (let val of earliest) {
+      for (const val of earliest) {
         if (val !== null && (minValue === null || minValue > val)) {
           minValue = val;
         }
       }
 
-      return getClosestRoundedNumber(minValue);
+      return helpers.getClosestRoundedNumber(minValue);
     },
     normalizedIndexes: (state, getters) => {
-      const result: { [key: string]: number } = {};
+      const result: {
+        [key: string]: {
+          firstValue: number | null;
+          relativeZero: number | null;
+        };
+      } = {};
 
       const selectedRegions = getters.selectedRegions;
 
@@ -252,41 +115,45 @@ export default new Vuex.Store({
 
       let value: number | null = state.selection.normalizationValue;
 
-      if (state.selection.normalizationValue === null) {
+      if (value === null) {
         value = getters.autoNormalizedValue;
       }
 
+      let selection = helpers.getSelectionForView(getters.selection, View.Total);
       for (const region of selectedRegions) {
-        result[region.id] = getNormalizedIndex(state, region, value, getters.dataTypes);
+        result[region.id] = helpers.getNormalizedIndex(
+          state,
+          region,
+          value as number,
+          selection,
+        );
       }
 
       return result;
     },
-    selectedRegions: (state) => {
-      if (state.selection.regions.length === 0) {
+    selectedRegions: (state: State, getters) => {
+      const regions = getters.selection.regions;
+      if (regions.length === 0) {
         return state.data.slice(0, 8);
       }
       const result: Array<Region> = [];
 
       for (const region of state.data) {
-        if (state.selection.regions.includes(region.id)) {
+        if (regions.includes(region.id)) {
           result.push(region);
         }
       }
 
       return result;
     },
-    dataTypes: (state) => {
-      const dataTypes = state.selection.dataTypes;
-      if (dataTypes.length == 0) {
-        return ["cases"];
-      }
-      return dataTypes;
-    },
+    selection: state => {
+      const x = getSelection(state);
+      return x;
+    }
   },
   mutations: {
-    setView(state, view: Views) {
-      state.ui.view = view;
+    setPresentation(state, presentation: Presentation) {
+      state.selection.presentation = presentation;
     },
     setSelectedRegions(state, values) {
       state.selection.regions = values;
@@ -297,24 +164,18 @@ export default new Vuex.Store({
         return region.meta.taxonomy == "country";
       });
 
-      let dataTypes = state.selection.dataTypes.slice();
-      if (dataTypes.length == 0) {
-        dataTypes.push("cases");
-      }
+      const selection = getSelection(state);
 
-      sortData(newData, dataTypes);
+      helpers.sortData(newData, selection);
 
-      state.data = parseData(newData);
+      state.data = helpers.parseData(newData);
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
       state.selection.dataTypes = dataTypes;
 
       {
-        let dataTypes = state.selection.dataTypes.slice();
-        if (dataTypes.length == 0) {
-          dataTypes.push("cases");
-        }
-        sortData(state.data, dataTypes);
+        const selection = getSelection(state);
+        helpers.sortData(state.data, selection);
       }
 
       updateQueryString(state);
@@ -322,8 +183,12 @@ export default new Vuex.Store({
     setNormalizationValue(state, value) {
       state.selection.normalizationValue = value;
     },
+    setView(state, value) {
+      state.selection.view = value;
+      updateQueryString(state);
+    }
   },
   actions: {},
   modules: {},
-  strict: true,
+  strict: true
 });

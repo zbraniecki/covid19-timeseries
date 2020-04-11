@@ -3,11 +3,15 @@
     <thead>
       <tr class="name">
         <th></th>
-        <th v-for="region in selectedRegions" :key="region.id" colspan="2">{{ region.displayName }}</th>
+        <th v-for="region in selectedRegions" :key="region.id" colspan="2">
+          {{ region.displayName }}
+        </th>
       </tr>
       <tr v-for="item in activeMetaRows" :key="item.id" :class="item.id">
         <th>{{ item.name }}:</th>
-        <th v-for="value in item.values" :key="value" colspan="2">{{ value }}</th>
+        <th v-for="value in item.values" :key="value" colspan="2">
+          {{ value }}
+        </th>
       </tr>
       <tr>
         <th>Δ Day</th>
@@ -18,21 +22,39 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in dataRows" :key="row.relDay" :class="{ log: row.relDay < 0 }">
+      <tr
+        v-for="row in dataRows"
+        :key="row.relDay"
+        :class="{ log: row.relDay < 0 }"
+      >
         <td class="relDay" title="Click here to center">
-          <a v-bind:name="'day' + row.relDay" class="target" :ref="'day' + row.relDay"></a>
+          <a
+            v-bind:name="'day' + row.relDay"
+            class="target"
+            :ref="'day' + row.relDay"
+          ></a>
           <a :href="'#day' + row.relDay">{{ row.relDay }}</a>
         </td>
         <template v-for="date of row.dates">
           <template v-if="date">
             <td
-              v-bind:class="{ date, today: date.isToday, normalized: date.normalized }"
-            >{{ date.date }}</td>
+              v-bind:class="{
+                date,
+                today: date.isToday,
+                normalized: date.normalized
+              }"
+            >
+              {{ date.date }}
+            </td>
             <td
               class="value"
-              v-bind:style="date.normalized ? {} : { backgroundColor: date.color }"
+              v-bind:style="
+                date.normalized ? {} : { backgroundColor: date.color }
+              "
               :class="{ normalized: date.normalized }"
-            >{{ date.value }}</td>
+            >
+              {{ date.value }}
+            </td>
           </template>
           <template v-else>
             <td class="empty"></td>
@@ -46,6 +68,9 @@
 
 <script>
 import helpers from "@/helpers/index.ts";
+import {
+  View,
+} from "@/types";
 
 const metaRows = [
   {
@@ -63,28 +88,29 @@ const metaRows = [
 ];
 
 const dataTypeInfo = {
-  "cases": {
-    "sentiment": -1,
+  cases: {
+    sentiment: -1
   },
-  "deaths": {
-    "sentiment": -1,
+  deaths: {
+    sentiment: -1
   },
-  "active": {
-    "sentiment": -1,
+  active: {
+    sentiment: -1
   },
-  "tested": {
-    "sentiment": 1,
+  tested: {
+    sentiment: 1
   },
-  "recovered": {
-    "sentiment": 1,
-  },
-}
+  recovered: {
+    sentiment: 1
+  }
+};
 
 const dtf = new Intl.DateTimeFormat(undefined, {
   day: "numeric",
   month: "numeric"
 });
-const nf = new Intl.NumberFormat(undefined);
+const numFormat = new Intl.NumberFormat(undefined);
+const percFormat = new Intl.NumberFormat(undefined, { style: "percent" });
 
 export default {
   name: "data-table",
@@ -124,7 +150,8 @@ export default {
     dataRows() {
       const selectedRegions = this.$store.getters.selectedRegions;
       const normalizedIndexes = this.$store.getters.normalizedIndexes;
-      const dataTypes = this.$store.getters.dataTypes;
+      const selection = this.$store.getters.selection;
+      const mainDataType = selection.dataTypes[0];
 
       let maxDepth = 0;
       let max = 0;
@@ -148,6 +175,8 @@ export default {
 
       const maxValue = 100000;
 
+      const nf = selection.view === View.Total ? numFormat : percFormat;
+
       for (let idx = 0; idx < maxDepth + max; idx++) {
         const relDay = idx - maxDepth;
 
@@ -158,14 +187,19 @@ export default {
           const relFirstValue =
             normIndexes.relativeZero - normIndexes.firstValue;
           const regIdx = normIndexes.relativeZero + relDay;
-          if (relDay + relFirstValue < 0 || regIdx >= region.dates.length || helpers.getValue(region, regIdx, dataTypes) === null) {
+          if (
+            relDay + relFirstValue < 0 ||
+            regIdx >= region.dates.length ||
+            helpers.getValue(region, regIdx, selection) === null
+          ) {
             dates.push(null);
             continue;
           } else {
             const date = region.dates[regIdx].date;
-            const value = helpers.getValue(region, regIdx, dataTypes);
+            const value = helpers.getValue(region, regIdx, selection);
             const colorValue = value / maxValue;
-            const sentiment = dataTypeInfo[dataTypes[0]].sentiment == 1 && value > 0;
+            const sentiment =
+              dataTypeInfo[mainDataType].sentiment == 1 && value > 0;
             const maxColor = sentiment ? [0, 255, 0] : [255, 0, 0];
             dates.push({
               date: dtf.format(date),
@@ -191,7 +225,7 @@ export default {
     },
     isChrome() {
       return navigator.userAgent.includes("Chrome/");
-    },
+    }
   },
   updated: function() {
     this.$nextTick(function() {
