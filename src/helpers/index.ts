@@ -64,5 +64,21 @@ export default {
     const today = new Date()
     today.setDate(today.getDate() - 1);
     return this.isSameDay(today, someDate);
+  },
+  getValue(
+    region: Region,
+    idx: number,
+    dataTypes: Array<DataType>
+  ): number | null {
+    let result = null;
+
+    if (
+      region.dates.length > idx &&
+      region.dates[idx].value.hasOwnProperty(dataTypes[0])
+    ) {
+      result = region.dates[idx].value[dataTypes[0]];
+    }
+
+    return result;
   }
 };

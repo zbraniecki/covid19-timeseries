@@ -18,6 +18,12 @@
       </select>
     </div>
     <div>
+      <label>Per:</label>
+      <select v-model="dataType2">
+        <option v-for="dataType of dataTypes2" :value="dataType.id">{{ dataType.name }}</option>
+      </select>
+    </div>
+    <div>
       <label>Normalize:</label>
       <input
         type="text"
@@ -63,6 +69,16 @@ export default {
         {
           id: "tested",
           name: "Tested"
+        }
+      ],
+      dataTypes2: [
+        {
+          id: "",
+          name: "",
+        },
+        {
+          id: "population",
+          name: "Population",
         }
       ]
     };
@@ -111,6 +127,15 @@ export default {
       },
       set(value) {
         this.$store.commit("setDataTypes", [value]);
+      }
+    },
+    dataType2: {
+      get() {
+        return this.$store.getters.dataTypes[1];
+      },
+      set(value) {
+        let dt = this.$store.getters.dataTypes[0];
+        this.$store.commit("setDataTypes", [dt, value]);
       }
     }
   },

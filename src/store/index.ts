@@ -62,8 +62,10 @@ function updateQueryString(state: any) {
   for (const id of state.selection.regions) {
     params.append("region", id);
   }
-  if (state.selection.dataTypes.length) {
-    params.append("dataType", state.selection.dataTypes[0]);
+  for (const dataType of state.selection.dataTypes) {
+    if (dataType) {
+      params.append("dataType", dataType);
+    }
   }
   window.history.replaceState(
     {},
@@ -92,36 +94,19 @@ function parseData(data: Array<Region>) {
   return data;
 }
 
-function getLatestValue(region: Region, dataType: DataType): number | null {
-  const idx = region.latest[dataType];
+function getLatestValue(region: Region, dataTypes: Array<DataType>): number | null {
+  const idx = region.latest[dataTypes[0]];
   if (!idx) {
     return null;
   }
 
-  return getValue(region, idx, dataType);
+  return helpers.getValue(region, idx, dataTypes);
 }
 
-function getValue(
-  region: Region,
-  idx: number,
-  dataType: DataType
-): number | null {
-  let result = null;
-
-  if (
-    region.dates.length > idx &&
-    region.dates[idx].value.hasOwnProperty(dataType)
-  ) {
-    result = region.dates[idx].value[dataType];
-  }
-
-  return result;
-}
-
-function sortData(data: Array<Region>, dataType: DataType) {
+function sortData(data: Array<Region>, dataTypes: Array<DataType>) {
   data.sort((a: Region, b: Region) => {
-    const valueA = getLatestValue(a, dataType);
-    const valueB = getLatestValue(b, dataType);
+    const valueA = getLatestValue(a, dataTypes);
+    const valueB = getLatestValue(b, dataTypes);
     if (isNaN(valueA) && !isNaN(valueB)) {
       return 1;
     }
@@ -157,7 +142,7 @@ function generateSearchTokens(region): string {
 function getCountNDaysSinceTheLast(
   region: Region,
   days: number,
-  dataType: DataType
+  dataTypes: Array<DataType>
 ): number | null {
   let result = null;
 
@@ -165,7 +150,7 @@ function getCountNDaysSinceTheLast(
   let lastValueIdx = null;
 
   for (let idx = len; idx >= 0; idx--) {
-    if (getValue(region, idx, dataType) !== null) {
+    if (helpers.getValue(region, idx, dataTypes) !== null) {
       lastValueIdx = idx;
       break;
     }
@@ -176,19 +161,19 @@ function getCountNDaysSinceTheLast(
 
   let vector = lastValueIdx;
   for (let idx = lastValueIdx; idx >= 0 && lastValueIdx - days < idx; idx--) {
-    if (getValue(region, idx, dataType) !== null) {
+    if (helpers.getValue(region, idx, dataTypes) !== null) {
       vector = idx;
     }
   }
 
-  return getValue(region, vector, dataType);
+  return helpers.getValue(region, vector, dataTypes);
 }
 
 function getNormalizedIndex(
   state,
   region: Region,
   value: number,
-  dataType: DataType
+  dataTypes: Array<DataType>
 ) {
   const result = {
     firstValue: null,
@@ -196,10 +181,11 @@ function getNormalizedIndex(
   };
   for (let idx = 0; idx < region.dates.length; idx++) {
     const date = region.dates[idx];
-    if (result.firstValue === null && date.value[dataType]) {
+    const dtValue = helpers.getValue(region, idx, dataTypes);
+    if (result.firstValue === null && dtValue) {
       result.firstValue = idx;
     }
-    if (date.value[dataType] > value && idx > 0) {
+    if (dtValue > value && idx > 0) {
       result.relativeZero = idx - 1;
       break;
     }
@@ -240,11 +226,10 @@ export default new Vuex.Store({
       if (selectedRegions.length == 0) {
         return null;
       }
-      const dataType = getters.dataTypes[0];
 
       let earliest = [];
       for (const region of selectedRegions) {
-        earliest.push(getCountNDaysSinceTheLast(region, 5, dataType));
+        earliest.push(getCountNDaysSinceTheLast(region, 5, getters.dataTypes));
       }
 
       let minValue = null;
@@ -265,7 +250,6 @@ export default new Vuex.Store({
         return result;
       }
 
-      const dataType = getters.dataTypes[0];
       let value: number | null = state.selection.normalizationValue;
 
       if (state.selection.normalizationValue === null) {
@@ -273,7 +257,7 @@ export default new Vuex.Store({
       }
 
       for (const region of selectedRegions) {
-        result[region.id] = getNormalizedIndex(state, region, value, dataType);
+        result[region.id] = getNormalizedIndex(state, region, value, getters.dataTypes);
       }
 
       return result;
@@ -313,15 +297,26 @@ export default new Vuex.Store({
         return region.meta.taxonomy == "country";
       });
 
-      let dataType = state.selection.dataTypes[0] || "cases";
-      sortData(newData, dataType);
+      let dataTypes = state.selection.dataTypes.slice();
+      if (dataTypes.length == 0) {
+        dataTypes.push("cases");
+      }
+
+      sortData(newData, dataTypes);
 
       state.data = parseData(newData);
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
       state.selection.dataTypes = dataTypes;
-      let dataType = state.selection.dataTypes[0] || "cases";
-      sortData(state.data, dataType);
+
+      {
+        let dataTypes = state.selection.dataTypes.slice();
+        if (dataTypes.length == 0) {
+          dataTypes.push("cases");
+        }
+        sortData(state.data, dataTypes);
+      }
+
       updateQueryString(state);
     },
     setNormalizationValue(state, value) {

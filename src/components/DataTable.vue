@@ -124,7 +124,7 @@ export default {
     dataRows() {
       const selectedRegions = this.$store.getters.selectedRegions;
       const normalizedIndexes = this.$store.getters.normalizedIndexes;
-      const dataType = this.$store.getters.dataTypes[0];
+      const dataTypes = this.$store.getters.dataTypes;
 
       let maxDepth = 0;
       let max = 0;
@@ -158,14 +158,14 @@ export default {
           const relFirstValue =
             normIndexes.relativeZero - normIndexes.firstValue;
           const regIdx = normIndexes.relativeZero + relDay;
-          if (relDay + relFirstValue < 0 || regIdx >= region.dates.length || region.dates[regIdx].value[dataType] === undefined) {
+          if (relDay + relFirstValue < 0 || regIdx >= region.dates.length || helpers.getValue(region, regIdx, dataTypes) === null) {
             dates.push(null);
             continue;
           } else {
             const date = region.dates[regIdx].date;
-            const value = region.dates[regIdx].value[dataType];
+            const value = helpers.getValue(region, regIdx, dataTypes);
             const colorValue = value / maxValue;
-            const sentiment = dataTypeInfo[dataType].sentiment == 1 && value > 0;
+            const sentiment = dataTypeInfo[dataTypes[0]].sentiment == 1 && value > 0;
             const maxColor = sentiment ? [0, 255, 0] : [255, 0, 0];
             dates.push({
               date: dtf.format(date),
