@@ -95,16 +95,23 @@ function parseData(data: Array<Region>) {
 function getLatestValue(region: Region, dataType: DataType): number | null {
   const idx = region.latest[dataType];
   if (!idx) {
-    return null
+    return null;
   }
 
   return getValue(region, idx, dataType);
 }
 
-function getValue(region: Region, idx: number, dataType: DataType): number | null {
+function getValue(
+  region: Region,
+  idx: number,
+  dataType: DataType
+): number | null {
   let result = null;
 
-  if (region.dates.length > idx && region.dates[idx].value.hasOwnProperty(dataType)) {
+  if (
+    region.dates.length > idx &&
+    region.dates[idx].value.hasOwnProperty(dataType)
+  ) {
     result = region.dates[idx].value[dataType];
   }
 
@@ -240,7 +247,6 @@ export default new Vuex.Store({
         earliest.push(getCountNDaysSinceTheLast(region, 5, dataType));
       }
 
-
       let minValue = null;
       for (let val of earliest) {
         if (val !== null && (minValue === null || minValue > val)) {
@@ -273,12 +279,17 @@ export default new Vuex.Store({
       return result;
     },
     selectedRegions: (state) => {
+      if (state.selection.regions.length === 0) {
+        return state.data.slice(0, 8);
+      }
       const result: Array<Region> = [];
+
       for (const region of state.data) {
         if (state.selection.regions.includes(region.id)) {
           result.push(region);
         }
       }
+
       return result;
     },
     dataTypes: (state) => {
@@ -302,9 +313,6 @@ export default new Vuex.Store({
         return region.meta.taxonomy == "country";
       });
 
-      if (state.selection.regions.length === 0) {
-        state.selection.regions = newData.slice(0, 8).map(region => region.id);
-      }
       let dataType = state.selection.dataTypes[0] || "cases";
       sortData(newData, dataType);
 
