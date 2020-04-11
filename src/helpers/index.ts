@@ -72,6 +72,14 @@ export default {
   ): number | null {
     let result = null;
 
+    if (dataTypes.length == 2 && dataTypes[1] == "population") {
+      if (!region.meta.population) {
+        return null;
+      }
+      let mainValue = this.getValue(region, idx, [dataTypes[0]]);
+      return Math.round(mainValue / (region.meta.population / 1000000));
+    }
+
     if (
       region.dates.length > idx &&
       region.dates[idx].value.hasOwnProperty(dataTypes[0])
