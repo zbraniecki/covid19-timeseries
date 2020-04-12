@@ -5,7 +5,6 @@ import {
   Selection,
   Region,
   Presentation,
-  TaxonomyLevel,
   DataType,
   View,
   State,
@@ -84,7 +83,10 @@ export default new Vuex.Store({
         return 0;
       }
 
-      let selection = helpers.getSelectionForView(getters.selection, View.Total);
+      const selection = helpers.getSelectionForView(
+        getters.selection,
+        View.Total
+      );
       const earliest = [];
       for (const region of selectedRegions) {
         earliest.push(helpers.getCountNDaysSinceTheLast(region, 5, selection));
@@ -99,7 +101,7 @@ export default new Vuex.Store({
 
       return helpers.getClosestRoundedNumber(minValue);
     },
-    normalizedIndexes: (state, getters) => {
+    normalizedIndexes(state, getters) {
       const result: {
         [key: string]: {
           firstValue: number | null;
@@ -119,19 +121,22 @@ export default new Vuex.Store({
         value = getters.autoNormalizedValue;
       }
 
-      let selection = helpers.getSelectionForView(getters.selection, View.Total);
+      const selection = helpers.getSelectionForView(
+        getters.selection,
+        View.Total
+      );
       for (const region of selectedRegions) {
         result[region.id] = helpers.getNormalizedIndex(
           state,
           region,
           value as number,
-          selection,
+          selection
         );
       }
 
       return result;
     },
-    selectedRegions: (state: State, getters) => {
+    selectedRegions(state: State, getters): Array<Region> {
       const regions = getters.selection.regions;
       if (regions.length === 0) {
         return state.data.slice(0, 8);
@@ -146,7 +151,7 @@ export default new Vuex.Store({
 
       return result;
     },
-    selection: state => {
+    selection(state) {
       const x = getSelection(state);
       return x;
     }

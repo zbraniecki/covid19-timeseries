@@ -1,7 +1,6 @@
 import {
   Selection,
   Region,
-  Presentation,
   State,
   DataType,
   DataPoint,
@@ -55,19 +54,12 @@ export default {
     const view = selection.view;
 
     if (view === View.Delta) {
-      let value = this.getValue(
-        region,
-        idx,
-        Object.assign({}, selection, { view: View.Total })
-      );
+      const totalSelection = this.getSelectionForView(selection, View.Total);
+      const value = this.getValue(region, idx, totalSelection);
       if (value === null) {
         return value;
       }
-      let prev = this.getValue(
-        region,
-        idx - 1,
-        Object.assign({}, selection, { view: View.Total })
-      );
+      const prev = this.getValue(region, idx - 1, totalSelection);
       if (prev === null) {
         return null;
       } else if (prev === value) {
@@ -78,6 +70,21 @@ export default {
         }
         return value / prev - 1;
       }
+    }
+
+    if (view === View.EMA) {
+      console.log('Calculate EMA!');
+      const totalSelection = this.getSelectionForView(selection, View.Total);
+      let total = this.getValue(region, idx, totalSelection);
+      if (total === null) {
+        return null;
+      }
+      const total3EMA = this.calculateEMA(region, idx, 3, totalSelection);
+      const total7EMA = this.calculateEMA(region, idx, 7, totalSelection);
+      if (total3EMA === null || total7EMA === null) {
+        return null;
+      }
+      return (total3EMA - total7EMA) / total;
     }
 
     if (dataTypes.length == 2 && dataTypes[1] == DataType.Population) {
@@ -125,7 +132,7 @@ export default {
     return Object.assign({}, selection, { view });
   },
   sortData(data: Array<Region>, selection: Selection): void {
-    let totalSelection = this.getSelectionForView(selection, View.Total);
+    const totalSelection = this.getSelectionForView(selection, View.Total);
     data.sort((a: Region, b: Region) => {
       const valueA = this.getLatestValue(a, totalSelection);
       const valueB = this.getLatestValue(b, totalSelection);
@@ -232,7 +239,6 @@ export default {
       relativeZero: null as null | number,
     };
     for (let idx = 0; idx < region.dates.length; idx++) {
-      const date = region.dates[idx];
       const dtValue = this.getValue(region, idx, selection);
       if (result.firstValue === null && dtValue) {
         result.firstValue = idx;
@@ -275,8 +281,6 @@ export default {
     days: number,
     selection: Selection
   ): number | null {
-    const result = null;
-
     const len = region.dates.length;
     let lastValueIdx = null;
 
@@ -307,5 +311,23 @@ export default {
     const digits = str.length;
     const m = Math.pow(10, digits - 1);
     return Math.floor(input / m) * m;
+  },
+  calculateEMA(
+    region: Region,
+    idx: number,
+    range: number,
+    selection: Selection
+  ): number | null {
+    let total = this.getValue(region, idx, selection);
+    if (total === null || idx < 1) {
+      return total;
+    }
+    let prevTotal = this.calculateEMA(region, idx - 1, range, selection);
+    if (!prevTotal) {
+      return total;
+    }
+
+    var k = 2 / (range + 1);
+    return total * k + prevTotal * (1 - k);
   },
 };
