@@ -195,7 +195,7 @@ function getDisplayName(region) {
 let ids = {};
 
 function convert(input) {
-  let result = [];
+  let result = {};
 
   for (let regionCode in input) {
     let region = input[regionCode];
@@ -220,7 +220,7 @@ function convert(input) {
     }
 
     let entry = {
-      "id": getLevelId(region, "feature"),
+      "id": id,
       "dates": dates,
       "latest": latest,
       "meta": {
@@ -246,7 +246,7 @@ function convert(input) {
       },
     };
     entry.displayName = getDisplayName(region);
-    result.push(entry);
+    result[id] = entry;
   }
 
   return result;

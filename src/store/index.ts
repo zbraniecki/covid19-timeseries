@@ -5,12 +5,15 @@ import {
   Selection,
   Region,
   Presentation,
-  TaxonomyLevel,
   DataType,
+  Regions,
+  RegionList,
   View,
   State,
   SelectionInput
 } from "@/types";
+
+let DATASET: Regions = {};
 
 Vue.use(Vuex);
 
@@ -75,7 +78,7 @@ export default new Vuex.Store({
       normalizationValue: null,
       view: params.view
     },
-    data: []
+    regionIds: [],
   },
   getters: {
     autoNormalizedValue(state: State, getters): number {
@@ -84,7 +87,10 @@ export default new Vuex.Store({
         return 0;
       }
 
-      let selection = helpers.getSelectionForView(getters.selection, View.Total);
+      const selection = helpers.getSelectionForView(
+        getters.selection,
+        View.Total
+      );
       const earliest = [];
       for (const region of selectedRegions) {
         earliest.push(helpers.getCountNDaysSinceTheLast(region, 5, selection));
@@ -99,7 +105,7 @@ export default new Vuex.Store({
 
       return helpers.getClosestRoundedNumber(minValue);
     },
-    normalizedIndexes: (state, getters) => {
+    normalizedIndexes(state, getters) {
       const result: {
         [key: string]: {
           firstValue: number | null;
@@ -119,37 +125,53 @@ export default new Vuex.Store({
         value = getters.autoNormalizedValue;
       }
 
-      let selection = helpers.getSelectionForView(getters.selection, View.Total);
+      const selection = helpers.getSelectionForView(
+        getters.selection,
+        View.Total
+      );
       for (const region of selectedRegions) {
         result[region.id] = helpers.getNormalizedIndex(
           state,
           region,
           value as number,
-          selection,
+          selection
         );
       }
 
       return result;
     },
-    selectedRegions: (state: State, getters) => {
-      const regions = getters.selection.regions;
-      if (regions.length === 0) {
-        return state.data.slice(0, 8);
+    selectedRegions(state: State, getters): RegionList {
+      let selectedRegionIds = getters.selection.regions;
+      let allRegionIds = state.regionIds;
+      if (selectedRegionIds.length === 0) {
+        selectedRegionIds = allRegionIds.slice(0, 8);
       }
-      const result: Array<Region> = [];
+      const result: RegionList = [];
 
-      for (const region of state.data) {
-        if (regions.includes(region.id)) {
+      for (const regionId of selectedRegionIds) {
+        let region: Region | undefined = DATASET[regionId];
+        if (region !== undefined) {
           result.push(region);
         }
       }
 
       return result;
     },
-    selection: state => {
-      const x = getSelection(state);
-      return x;
-    }
+    selection(state) {
+      return getSelection(state);
+    },
+    sortedRegions(state: State): RegionList {
+      const result: RegionList = [];
+
+      for (const regionId of state.regionIds) {
+        let region: Region | undefined = DATASET[regionId];
+        if (region !== undefined) {
+          result.push(region);
+        }
+      }
+
+      return result;
+    },
   },
   mutations: {
     setPresentation(state, presentation: Presentation) {
@@ -160,22 +182,26 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      const newData = data.filter((region: Region) => {
-        return region.meta.taxonomy == "country";
-      });
+      DATASET = data;
+      helpers.parseData(DATASET);
+  
+      const regionIds = Object
+        .values(DATASET)
+        .filter((region: Region) => region.meta.taxonomy == "country")
+        .map((region: Region) => region.id);
 
       const selection = getSelection(state);
 
-      helpers.sortData(newData, selection);
+      helpers.sortData(DATASET, regionIds, selection);
 
-      state.data = helpers.parseData(newData);
+      state.regionIds = regionIds;
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
       state.selection.dataTypes = dataTypes;
 
       {
         const selection = getSelection(state);
-        helpers.sortData(state.data, selection);
+        helpers.sortData(DATASET, state.selection.regions, selection);
       }
 
       updateQueryString(state);

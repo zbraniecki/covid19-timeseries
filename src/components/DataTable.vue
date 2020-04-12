@@ -15,7 +15,7 @@
       </tr>
       <tr>
         <th>Δ Day</th>
-        <template v-for="_ in selectedRegions">
+        <template v-for="region in selectedRegions">
           <th class="date">Date</th>
           <th class="value">#</th>
         </template>
@@ -68,9 +68,7 @@
 
 <script>
 import helpers from "@/helpers/index.ts";
-import {
-  View,
-} from "@/types";
+import { View } from "@/types";
 
 const metaRows = [
   {

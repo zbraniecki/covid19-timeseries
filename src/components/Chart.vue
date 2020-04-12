@@ -10,30 +10,21 @@ export default {
   name: "chart",
   computed: {
     selectedRegions() {
-      return this.$store.state.selection.regions;
+      return this.$store.getters.selectedRegions;
     },
     ...mapState(["data"])
   },
   mounted() {
-    let result = null;
-    const selected = this.$store.state.selection.regions;
-    for (const region of this.$store.state.data) {
-      if (region.id == selected[0]) {
-        result = region;
-      }
-    }
+    const selected = this.$store.getters.selectedRegions;
+    let result = selected[0];
     if (result) {
       this.draw(result);
     }
   },
   watch: {
     selectedRegions(newValue) {
-      let result = null;
-      for (const region of this.$store.state.data) {
-        if (region.id == newValue[0]) {
-          result = region;
-        }
-      }
+      const selected = this.$store.getters.selectedRegions;
+      let result = selected[0];
       if (result) {
         this.draw(result);
       }

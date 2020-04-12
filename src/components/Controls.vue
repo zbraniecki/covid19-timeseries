@@ -96,7 +96,7 @@ export default {
         return region.searchTokens.includes(searchQuery);
       };
 
-      for (const region of this.$store.state.data) {
+      for (const region of this.$store.getters.sortedRegions) {
         result.push({
           id: region.id,
           displayName: region.displayName,

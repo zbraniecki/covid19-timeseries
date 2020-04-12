@@ -27,7 +27,7 @@ export enum TaxonomyLevel {
 
 export interface Selection {
   presentation: Presentation | null;
-  regions: Array<string>;
+  regions: RegionIds;
   dataTypes: Array<DataType>;
   normalizationValue: number | null;
   view: View | null;
@@ -79,14 +79,18 @@ export interface State {
     views: Array<Presentation>;
   };
   selection: Selection;
-  data: Array<Region>;
+  regionIds: RegionIds;
 }
+
+export type Regions = { [key: string]: Region; };
+export type RegionList = Array<Region>;
+export type RegionIds = Array<string>;
 
 /* Inputs */
 
 export interface SelectionInput {
   presentation: Presentation | null;
-  regions: Array<string>;
+  regions: RegionIds;
   dataTypes: Array<DataType>;
   normalizationValue: number | null;
   view: View | null;
