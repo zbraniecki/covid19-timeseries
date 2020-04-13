@@ -46,10 +46,12 @@
     </div>
     <div>
       <input v-model="regionSearchText" placeholder="Search..." />
+      <input type="button" value="x" @click="clearSearch"/>
       <select multiple @change="setSelectedRegions" class="regions" ref="regionSelect">
         <option
           v-for="region of regionList"
           :value="region.id"
+          :key="region.id"
           :selected="selectedRegions.includes(region.id)"
           :class="{ filtered: region.filtered }"
         >{{ region.displayName }}</option>
@@ -191,7 +193,10 @@ export default {
         const value = parseInt(e.target.value);
         this.$store.commit("setNormalizationValue", value);
       }
-    }
+    },
+    clearSearch(e) {
+      this.regionSearchText = "";
+    },
   },
   watch: {
     selectedRegions(selectedRegionIds) {
