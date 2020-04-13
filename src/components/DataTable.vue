@@ -172,7 +172,7 @@ export default {
 
       const result = [];
 
-      const maxValue = selection.view !== View.Total ? 0.2 :
+      const maxValue = selection.view !== View.Total ? 0.3 :
         allRegions.length > 0 ? helpers.getHighestValue(allRegions[0], selection) : 0;
 
       const nf = selection.view === View.Total ? numFormat : percFormat;

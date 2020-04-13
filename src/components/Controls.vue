@@ -6,24 +6,27 @@
         <option
           v-for="presentation of presentations"
           :value="presentation.id"
-          >{{ presentation.name }}</option
-        >
+        >{{ presentation.name }}</option>
       </select>
     </div>
     <div>
       <label>Type:</label>
       <select v-model="dataType">
-        <option v-for="dataType of dataTypes" :value="dataType.id">{{
+        <option v-for="dataType of dataTypes" :value="dataType.id">
+          {{
           dataType.name
-        }}</option>
+          }}
+        </option>
       </select>
     </div>
     <div>
       <label>Per:</label>
       <select v-model="dataType2">
-        <option v-for="dataType of dataTypes2" :value="dataType.id">{{
+        <option v-for="dataType of dataTypes2" :value="dataType.id">
+          {{
           dataType.name
-        }}</option>
+          }}
+        </option>
       </select>
     </div>
     <div>
@@ -43,15 +46,13 @@
     </div>
     <div>
       <input v-model="regionSearchText" placeholder="Search..." />
-      <select multiple @change="setSelectedRegions" class="regions">
+      <select multiple @change="setSelectedRegions" class="regions" ref="regionSelect">
         <option
           v-for="region of regionList"
-          :key="region.id"
           :value="region.id"
           :selected="selectedRegions.includes(region.id)"
           :class="{ filtered: region.filtered }"
-          >{{ region.displayName }}</option
-        >
+        >{{ region.displayName }}</option>
       </select>
     </div>
   </div>
@@ -164,24 +165,24 @@ export default {
       this.$store.commit("setView", e.target.value);
     },
     setSelectedRegions(e) {
-      // ???
-      const values = Array.from(e.target.selectedOptions).map(v => v.value);
+      const selectedRegionIds = this.$store.getters.selection.regions;
       const searchQuery = this.regionSearchText.toLowerCase();
+
       if (searchQuery.length) {
-        let options = [];
-        for (let option of e.target.options) {
-          if (!option.classList.contains("filtered")) {
-            options.push(option);
-          }
-        }
-        for (let option of options) {
+        const values = new Set(selectedRegionIds);
+        const visibleOptions = Array.from(e.target.options).filter(option => !option.classList.contains("filtered"));
+        for (const option of visibleOptions) {
           if (option.selected) {
+            values.add(option.value);
           } else {
-            console.log(option.value);
+            values.delete(option.value);
           }
         }
+        this.$store.commit("setSelectedRegions", Array.from(values));
+      } else {
+        const values = Array.from(e.target.selectedOptions).map(v => v.value);
+        this.$store.commit("setSelectedRegions", Array.from(values));
       }
-      this.$store.commit("setSelectedRegions", values);
     },
     setNormalizationValue(e) {
       if (e.target.value.length === 0) {
@@ -191,7 +192,15 @@ export default {
         this.$store.commit("setNormalizationValue", value);
       }
     }
-  }
+  },
+  watch: {
+    selectedRegions(selectedRegionIds) {
+      const select = this.$refs["regionSelect"];
+      for (let option of select.options) {
+        option.selected = selectedRegionIds.includes(option.value);
+      }
+    },
+  },
 };
 </script>
 
