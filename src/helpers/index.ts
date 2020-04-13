@@ -89,18 +89,13 @@ export default {
     }
 
     if (dataTypes.length == 2 && dataTypes[1] == DataType.Population) {
-      if (!region.meta.population) {
-        return null;
-      }
+      const mainSelection = this.getSelectionForDataTypes(selection, [dataTypes[0]]);
       const mainValue = this.getValue(
         region,
         idx,
-        Object.assign({}, selection, { dataTypes: [dataTypes[0]] })
+        mainSelection
       );
-      if (mainValue === null) {
-        return null;
-      }
-      return Math.round(mainValue / (region.meta.population / 1000000));
+      return this.divideByPopulation(region, mainValue);
     }
 
     const dataType = dataTypes[0];
@@ -114,6 +109,12 @@ export default {
     }
     return null;
   },
+  divideByPopulation(region: Region, value: number | null): number | null {
+    if (!region.meta.population || value === null) {
+      return null;
+    }
+    return Math.round(value / (region.meta.population / 1000000));
+  },
   getLatestValue(region: Region, selection: Selection): number | null {
     const mainDataType = selection.dataTypes[0];
     const idx = this.getTypeValue(region.latest, mainDataType);
@@ -122,6 +123,15 @@ export default {
     }
 
     return this.getValue(region, idx, selection);
+  },
+  getHighestValue(region: Region, selection: Selection): number | null {
+    const mainDataType = selection.dataTypes[0];
+    const value = this.getTypeValue(region.highest, mainDataType);
+
+    if (selection.dataTypes.length > 1 && selection.dataTypes[1] === "population") {
+      return this.divideByPopulation(region, value);
+    }
+    return value;
   },
   getSelectionForDataTypes(
     selection: Selection,

@@ -150,6 +150,7 @@ export default {
       const normalizedIndexes = this.$store.getters.normalizedIndexes;
       const selection = this.$store.getters.selection;
       const mainDataType = selection.dataTypes[0];
+      const allRegions = this.$store.getters.sortedRegions;
 
       let maxDepth = 0;
       let max = 0;
@@ -171,7 +172,8 @@ export default {
 
       const result = [];
 
-      const maxValue = 100000;
+      const maxValue = selection.view !== View.Total ? 0.2 :
+        allRegions.length > 0 ? helpers.getHighestValue(allRegions[0], selection) : 0;
 
       const nf = selection.view === View.Total ? numFormat : percFormat;
 

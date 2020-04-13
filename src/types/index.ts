@@ -50,6 +50,7 @@ export interface Region {
   id: string;
   dates: Array<DataPoint>;
   latest: Values;
+  highest: Values;
   meta: {
     country: {
       code?: string;
@@ -79,7 +80,7 @@ export interface State {
     views: Array<Presentation>;
   };
   selection: Selection;
-  regionIds: RegionIds;
+  sortedRegionIds: RegionIds;
 }
 
 export type Regions = { [key: string]: Region; };

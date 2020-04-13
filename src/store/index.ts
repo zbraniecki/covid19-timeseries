@@ -78,7 +78,7 @@ export default new Vuex.Store({
       normalizationValue: null,
       view: params.view
     },
-    regionIds: [],
+    sortedRegionIds: [],
   },
   getters: {
     autoNormalizedValue(state: State, getters): number {
@@ -142,15 +142,15 @@ export default new Vuex.Store({
     },
     selectedRegions(state: State, getters): RegionList {
       let selectedRegionIds = getters.selection.regions;
-      let allRegionIds = state.regionIds;
+      let sortedRegionIds = state.sortedRegionIds;
       if (selectedRegionIds.length === 0) {
-        selectedRegionIds = allRegionIds.slice(0, 8);
+        selectedRegionIds = sortedRegionIds.slice(0, 8);
       }
       const result: RegionList = [];
 
-      for (const regionId of selectedRegionIds) {
-        let region: Region | undefined = DATASET[regionId];
-        if (region !== undefined) {
+      const sortedRegions = getters.sortedRegions;
+      for (const region of sortedRegions) {
+        if (selectedRegionIds.includes(region.id)) {
           result.push(region);
         }
       }
@@ -163,7 +163,9 @@ export default new Vuex.Store({
     sortedRegions(state: State): RegionList {
       const result: RegionList = [];
 
-      for (const regionId of state.regionIds) {
+      let sortedRegionIds = state.sortedRegionIds;
+
+      for (const regionId of sortedRegionIds) {
         let region: Region | undefined = DATASET[regionId];
         if (region !== undefined) {
           result.push(region);
@@ -191,18 +193,14 @@ export default new Vuex.Store({
         .map((region: Region) => region.id);
 
       const selection = getSelection(state);
-
       helpers.sortData(DATASET, regionIds, selection);
-
-      state.regionIds = regionIds;
+      state.sortedRegionIds = regionIds;
     },
     setDataTypes(state, dataTypes: Array<DataType>) {
       state.selection.dataTypes = dataTypes;
 
-      {
-        const selection = getSelection(state);
-        helpers.sortData(DATASET, state.selection.regions, selection);
-      }
+      const selection = getSelection(state);
+      helpers.sortData(DATASET, state.sortedRegionIds, selection);
 
       updateQueryString(state);
     },

@@ -164,7 +164,23 @@ export default {
       this.$store.commit("setView", e.target.value);
     },
     setSelectedRegions(e) {
+      // ???
       const values = Array.from(e.target.selectedOptions).map(v => v.value);
+      const searchQuery = this.regionSearchText.toLowerCase();
+      if (searchQuery.length) {
+        let options = [];
+        for (let option of e.target.options) {
+          if (!option.classList.contains("filtered")) {
+            options.push(option);
+          }
+        }
+        for (let option of options) {
+          if (option.selected) {
+          } else {
+            console.log(option.value);
+          }
+        }
+      }
       this.$store.commit("setSelectedRegions", values);
     },
     setNormalizationValue(e) {

@@ -116,9 +116,10 @@ function writeJSON(path, json) {
 const TYPES = ["cases", "deaths", "active", "recovered", "tested"];
 
 function intoDatesArray(dates, regionId) {
-  let result = {
+  const result = {
     dates: [],
     latest: {},
+    highest: {},
   };
   let prev = 0;
   for (let date in dates) {
@@ -132,6 +133,9 @@ function intoDatesArray(dates, regionId) {
     for (let type in dates[date]) {
       if (!TYPES.includes(type)) {
         continue;
+      }
+      if (result.highest[type] === undefined || result.highest[type] < dates[date][type]) {
+        result.highest[type] = dates[date][type];
       }
       result.latest[type] = result.dates.length;
       value[type] = dates[date][type];
@@ -204,7 +208,7 @@ function convert(input) {
       continue;
     }
 
-    let {dates, latest} = intoDatesArray(region.dates, regionCode);
+    let {dates, latest, highest} = intoDatesArray(region.dates, regionCode);
     if (!latest.cases) {
       continue;
     }
@@ -223,6 +227,7 @@ function convert(input) {
       "id": id,
       "dates": dates,
       "latest": latest,
+      "highest": highest,
       "meta": {
         "country": {
           "code": getLevelId(region, "country"),
