@@ -31,6 +31,7 @@ export interface Selection {
   dataTypes: Array<DataType>;
   normalizationValue: number | null;
   view: View | null;
+  taxonomyLevels: Array<TaxonomyLevel>;
 }
 
 export interface Values {

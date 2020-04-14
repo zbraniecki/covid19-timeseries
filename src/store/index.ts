@@ -10,7 +10,8 @@ import {
   RegionList,
   View,
   State,
-  SelectionInput
+  SelectionInput,
+  TaxonomyLevel
 } from "@/types";
 
 let DATASET: Regions = {};
@@ -60,7 +61,8 @@ function getSelection(state: State): Selection {
         : [DataType.Cases],
     view: state.selection.view || View.Total,
     regions: state.selection.regions.length > 0 ? state.selection.regions : [],
-    normalizationValue: state.selection.normalizationValue
+    normalizationValue: state.selection.normalizationValue,
+    taxonomyLevels: state.selection.taxonomyLevels,
   };
 }
 
@@ -76,7 +78,8 @@ export default new Vuex.Store({
       regions: params.regions,
       dataTypes: params.dataTypes,
       normalizationValue: null,
-      view: params.view
+      view: params.view,
+      taxonomyLevels: [TaxonomyLevel.Country],
     },
     sortedRegionIds: [],
   },
@@ -141,20 +144,25 @@ export default new Vuex.Store({
       return result;
     },
     selectedRegions(state: State, getters): RegionList {
-      let selectedRegionIds = getters.selection.regions;
-      let sortedRegionIds = state.sortedRegionIds;
-      if (selectedRegionIds.length === 0) {
-        selectedRegionIds = sortedRegionIds.slice(0, 8);
-      }
       const result: RegionList = [];
 
+      const selection = getters.selection;
+      let selectedRegionIds = selection.regions;
       const sortedRegions = getters.sortedRegions;
-      for (const region of sortedRegions) {
-        if (selectedRegionIds.includes(region.id)) {
+
+      if (selectedRegionIds.length === 0) {
+
+        const filteredRegions = sortedRegions.filter((region: Region) => helpers.isRegionIncluded(region, selection, "")).slice(0, 8);
+        for (const region of filteredRegions) {
           result.push(region);
         }
+      } else {
+        for (const region of sortedRegions) {
+          if (selectedRegionIds.includes(region.id)) {
+            result.push(region);
+          }
+        }  
       }
-
       return result;
     },
     selection(state) {
@@ -189,7 +197,7 @@ export default new Vuex.Store({
   
       const regionIds = Object
         .values(DATASET)
-        .filter((region: Region) => region.meta.taxonomy == "country")
+        // .filter((region: Region) => region.meta.taxonomy == "country")
         .map((region: Region) => region.id);
 
       const selection = getSelection(state);
@@ -210,6 +218,9 @@ export default new Vuex.Store({
     setView(state, value) {
       state.selection.view = value;
       updateQueryString(state);
+    },
+    setTaxonomyLevels(state, value) {
+      state.selection.taxonomyLevels = value;
     }
   },
   actions: {},

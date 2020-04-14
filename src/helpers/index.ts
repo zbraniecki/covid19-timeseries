@@ -343,4 +343,13 @@ export default {
     var k = 2 / (range + 1);
     return total * k + prevTotal * (1 - k);
   },
+  isRegionIncluded(region: Region, selection: Selection, searchQuery: string): boolean {
+    if (!selection.taxonomyLevels.includes(region.meta.taxonomy)) {
+      return false;
+    }
+    if (searchQuery.length > 0 && region.searchTokens !== undefined && !region.searchTokens.includes(searchQuery)) {
+      return false;
+    }
+    return true;
+  },
 };

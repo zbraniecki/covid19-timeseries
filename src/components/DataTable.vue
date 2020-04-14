@@ -1,17 +1,13 @@
 <template>
-  <table cellspacing="0" cellpadding="0" :class="{ chrome: isChrome }">
+  <table cellspacing="0" cellpadding="0" :class="{ chrome: isChrome }" :style="cssVars">
     <thead>
       <tr class="name">
         <th></th>
-        <th v-for="region in selectedRegions" :key="region.id" colspan="2">
-          {{ region.displayName }}
-        </th>
+        <th v-for="region in nameRow" :key="region.id" colspan="2">{{ region.name }}</th>
       </tr>
       <tr v-for="item in activeMetaRows" :key="item.id" :class="item.id">
         <th>{{ item.name }}:</th>
-        <th v-for="value in item.values" :key="value" colspan="2">
-          {{ value }}
-        </th>
+        <th v-for="value in item.values" colspan="2">{{ value }}</th>
       </tr>
       <tr>
         <th>Δ Day</th>
@@ -22,17 +18,9 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="row in dataRows"
-        :key="row.relDay"
-        :class="{ log: row.relDay < 0 }"
-      >
+      <tr v-for="row in dataRows" :key="row.relDay" :class="{ log: row.relDay < 0 }">
         <td class="relDay" title="Click here to center">
-          <a
-            v-bind:name="'day' + row.relDay"
-            class="target"
-            :ref="'day' + row.relDay"
-          ></a>
+          <a v-bind:name="'day' + row.relDay" class="target" :ref="'day' + row.relDay"></a>
           <a :href="'#day' + row.relDay">{{ row.relDay }}</a>
         </td>
         <template v-for="date of row.dates">
@@ -43,18 +31,14 @@
                 today: date.isToday,
                 normalized: date.normalized
               }"
-            >
-              {{ date.date }}
-            </td>
+            >{{ date.date }}</td>
             <td
               class="value"
               v-bind:style="
                 date.normalized ? {} : { backgroundColor: date.color }
               "
               :class="{ normalized: date.normalized }"
-            >
-              {{ date.value }}
-            </td>
+            >{{ date.value }}</td>
           </template>
           <template v-else>
             <td class="empty"></td>
@@ -68,7 +52,7 @@
 
 <script>
 import helpers from "@/helpers/index.ts";
-import { View } from "@/types";
+import { View, TaxonomyLevel } from "@/types";
 
 const metaRows = [
   {
@@ -112,9 +96,54 @@ const percFormat = new Intl.NumberFormat(undefined, { style: "percent" });
 
 export default {
   name: "data-table",
+  data() {
+    return {
+      metaRowsCount: `78px`,
+    };
+  },
   computed: {
     selectedRegions() {
       return this.$store.getters.selectedRegions;
+    },
+    nameRow() {
+      const selectedRegions = this.$store.getters.selectedRegions;
+      const result = new Array(selectedRegions.length);
+
+      for (const idx in selectedRegions) {
+        const region = selectedRegions[idx];
+        switch (region.meta.taxonomy) {
+          case TaxonomyLevel.Country: {
+            result[idx] = {
+              id: region.id,
+              name: region.meta.country.name,
+            };
+            break;
+          }
+          case TaxonomyLevel.State: {
+            result[idx] = {
+              id: region.id,
+              name: region.meta.state.name,
+            };
+            break;
+          }
+          case TaxonomyLevel.County: {
+            result[idx] = {
+              id: region.id,
+              name: region.meta.county.name,
+            };
+            break;
+          }
+          case TaxonomyLevel.City: {
+            result[idx] = {
+              id: region.id,
+              name: region.meta.city.name,
+            };
+            break;
+          }
+
+        }
+      }
+      return result;
     },
     activeMetaRows() {
       const selectedRegions = this.$store.getters.selectedRegions;
@@ -123,6 +152,40 @@ export default {
 
       for (const idx in selectedRegions) {
         const region = selectedRegions[idx];
+        switch (region.meta.taxonomy) {
+          case TaxonomyLevel.Country: {
+            break;
+          }
+          case TaxonomyLevel.State: {
+            if (!values["country"]) {
+              values["country"] = new Array(selectedRegions.length);
+            }
+            values["country"][idx] = region.meta.country.name;
+            break;
+          }
+          case TaxonomyLevel.County: {
+            if (!values["state"]) {
+              values["state"] = new Array(selectedRegions.length);
+            }
+            values["state"][idx] = region.meta.state.name;
+            if (!values["country"]) {
+              values["country"] = new Array(selectedRegions.length);
+            }
+            values["country"][idx] = region.meta.country.name;
+            break;
+          }
+          case TaxonomyLevel.City: {
+            if (!values["state"]) {
+              values["state"] = new Array(selectedRegions.length);
+            }
+            values["state"][idx] = region.meta.state.name;
+            if (!values["country"]) {
+              values["country"] = new Array(selectedRegions.length);
+            }
+            values["country"][idx] = region.meta.country.name;
+            break;
+          }
+        }
         if (region.meta.population) {
           if (!values["population"]) {
             values["population"] = new Array(selectedRegions.length);
@@ -133,6 +196,12 @@ export default {
           );
         }
       }
+
+      let rowHeight = 19;
+      let rows = Object.keys(values).length + 1;
+      let x = 42 + (rowHeight * rows);
+      this.metaRowsCount = `-${x}px`;
+
       const result = [];
       for (const row of metaRows) {
         if (values[row.id]) {
@@ -225,6 +294,11 @@ export default {
     },
     isChrome() {
       return navigator.userAgent.includes("Chrome/");
+    },
+    cssVars() {
+      return {
+        '--meta-rows': this.metaRowsCount,
+      }
     }
   },
   updated: function() {
@@ -283,6 +357,12 @@ table thead {
   background-color: white;
   z-index: 10;
 }
+table thead tr {
+  height: 18px;
+}
+table thead tr:nth-child(1) {
+  height: 42px;
+}
 
 table thead tr:nth-child(1) th {
   font-size: 1.1em;
@@ -340,7 +420,7 @@ table thead th.value {
 a.target {
   display: block;
   position: relative;
-  top: -78px;
+  top: var(--meta-rows);
   visibility: hidden;
 }
 td.relDay {

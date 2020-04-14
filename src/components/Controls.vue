@@ -46,29 +46,39 @@
     </div>
     <div>
       <input v-model="regionSearchText" placeholder="Search..." />
-      <input type="button" value="x" @click="clearSearch"/>
+      <input type="button" value="x" @click="clearSearch" />
       <select multiple @change="setSelectedRegions" class="regions" ref="regionSelect">
         <option
           v-for="region of regionList"
           :value="region.id"
           :key="region.id"
           :selected="selectedRegions.includes(region.id)"
-          :class="{ filtered: region.filtered }"
         >{{ region.displayName }}</option>
       </select>
+    </div>
+    <div v-for="level in taxonomyLevels" :key="level.id">
+      <label :for="level.id + 'Level'">{{ level.name }}:</label>
+      <input
+        :id="level.id + 'Level'"
+        type="checkbox"
+        :checked="selectedTaxonomyLevels.includes(level.id)"
+        :value="level.id"
+        @change="setTaxonomyLevel"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import helpers from "@/helpers/index.ts";
-import { Presentation, DataType, View } from "@/types";
+import { Presentation, DataType, View, TaxonomyLevel } from "@/types";
 
 export default {
   name: "controls",
   data() {
     return {
       presentations: helpers.enums.entries(Presentation),
+      taxonomyLevels: helpers.enums.entries(TaxonomyLevel),
       regionSearchText: "",
       dataTypes: helpers.enums
         .entries(DataType)
@@ -89,24 +99,9 @@ export default {
   computed: {
     regionList() {
       // Could consider performing this filtering elsewhere.
-      const result = [];
       const searchQuery = this.regionSearchText.toLowerCase();
-
-      const included = region => {
-        if (searchQuery.length === 0) {
-          return true;
-        }
-        return region.searchTokens.includes(searchQuery);
-      };
-
-      for (const region of this.$store.getters.sortedRegions) {
-        result.push({
-          id: region.id,
-          displayName: region.displayName,
-          filtered: !included(region)
-        });
-      }
-      return result;
+      const selection = this.$store.getters.selection;
+      return this.$store.getters.sortedRegions.filter(region => helpers.isRegionIncluded(region, selection, searchQuery));
     },
     selectedRegions() {
       const selectedRegions = this.$store.getters.selectedRegions;
@@ -153,6 +148,9 @@ export default {
         this.$store.commit("setView", value);
       }
     },
+    selectedTaxonomyLevels() {
+      return this.$store.getters.selection.taxonomyLevels;
+    },
     presentation: {
       get() {
         return this.$store.getters.selection.presentation;
@@ -160,7 +158,7 @@ export default {
       set(value) {
         this.$store.commit("setPresentation", value);
       }
-    }
+    },
   },
   methods: {
     setView(e) {
@@ -168,23 +166,17 @@ export default {
     },
     setSelectedRegions(e) {
       const selectedRegionIds = this.$store.getters.selection.regions;
-      const searchQuery = this.regionSearchText.toLowerCase();
 
-      if (searchQuery.length) {
-        const values = new Set(selectedRegionIds);
-        const visibleOptions = Array.from(e.target.options).filter(option => !option.classList.contains("filtered"));
-        for (const option of visibleOptions) {
-          if (option.selected) {
-            values.add(option.value);
-          } else {
-            values.delete(option.value);
-          }
+      const values = new Set(selectedRegionIds);
+      const visibleOptions = Array.from(e.target.options).filter(option => !option.classList.contains("filtered"));
+      for (const option of visibleOptions) {
+        if (option.selected) {
+          values.add(option.value);
+        } else {
+          values.delete(option.value);
         }
-        this.$store.commit("setSelectedRegions", Array.from(values));
-      } else {
-        const values = Array.from(e.target.selectedOptions).map(v => v.value);
-        this.$store.commit("setSelectedRegions", Array.from(values));
       }
+      this.$store.commit("setSelectedRegions", Array.from(values));
     },
     setNormalizationValue(e) {
       if (e.target.value.length === 0) {
@@ -196,6 +188,17 @@ export default {
     },
     clearSearch(e) {
       this.regionSearchText = "";
+    },
+    setTaxonomyLevel(e) {
+      const id = e.target.value;
+      const checked = e.target.checked;
+      const taxonomyLevels = Array.from(this.$store.getters.selection.taxonomyLevels);
+      if (checked) {
+        taxonomyLevels.push(id);
+        this.$store.commit("setTaxonomyLevels", taxonomyLevels);
+      } else {
+        this.$store.commit("setTaxonomyLevels", taxonomyLevels.filter(l => l != id));
+      }
     },
   },
   watch: {
@@ -220,9 +223,5 @@ select.regions {
 
 select.regions {
   height: 60vh;
-}
-
-select .filtered {
-  display: none;
 }
 </style>
