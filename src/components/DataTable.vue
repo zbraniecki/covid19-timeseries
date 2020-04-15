@@ -200,7 +200,7 @@ export default {
 
       let rowHeight = 19;
       let rows = Object.keys(values).length + 1;
-      let x = 42 + (rowHeight * rows);
+      let x = 40 + (rowHeight * rows);
       this.metaRowsCount = `-${x}px`;
 
       const result = [];
@@ -243,7 +243,7 @@ export default {
       const result = [];
 
       const maxValue = selection.view !== View.Total ? 0.3 :
-        allRegions.length > 0 ? helpers.getHighestValue(allRegions[0], selection) : 0;
+        allRegions.length > 0 ? helpers.getHighestValue(selectedRegions[0], selection) : 0;
 
       for (let idx = 0; idx < maxDepth + max; idx++) {
         const relDay = idx - maxDepth;
@@ -360,13 +360,13 @@ table thead tr {
   height: 18px;
 }
 table thead tr:nth-child(1) {
-  height: 42px;
+  height: 40px;
 }
 
 table thead tr:nth-child(1) th {
   font-size: 1.1em;
   color: black;
-  padding: 10px 10px;
+  padding: 5px 10px 0px 10px;
   white-space: nowrap;
 }
 

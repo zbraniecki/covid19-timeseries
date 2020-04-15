@@ -1,63 +1,49 @@
 <template>
   <div id="menu">
-    <div>
-      <label>Presentation:</label>
-      <select v-model="presentation">
-        <option
-          v-for="presentation of presentations"
-          :value="presentation.id"
-        >{{ presentation.name }}</option>
-      </select>
-    </div>
-    <div>
-      <label>Type:</label>
-      <select v-model="dataType">
-        <option v-for="dataType of dataTypes" :value="dataType.id">
-          {{
-          dataType.name
-          }}
-        </option>
-      </select>
-    </div>
-    <div>
-      <label>Per:</label>
-      <select v-model="dataType2">
-        <option v-for="dataType of dataTypes2" :value="dataType.id">
-          {{
-          dataType.name
-          }}
-        </option>
-      </select>
-    </div>
-    <div>
-      <label>View:</label>
-      <select v-model="view">
-        <option v-for="view of views" :value="view.id">{{ view.name }}</option>
-      </select>
-    </div>
-    <div>
-      <label>Normalize:</label>
-      <input
-        type="text"
-        :value="normalizationValue"
-        v-on:change="setNormalizationValue"
-        :placeholder="autoNormalizedValue"
-      />
-    </div>
-    <div>
-      <input v-model="regionSearchText" placeholder="Search..." />
-      <input type="button" value="x" @click="clearSearch" />
-      <select multiple @change="setSelectedRegions" class="regions" ref="regionSelect">
-        <option
-          v-for="region of regionList"
-          :value="region.id"
-          :key="region.id"
-          :selected="selectedRegions.includes(region.id)"
-        >{{ region.nameAndValue }}</option>
-      </select>
-    </div>
-    <div v-for="level in taxonomyLevels" :key="level.id">
-      <label :for="level.id + 'Level'">{{ level.name }}:</label>
+    <label for="presentationSelect">Presentation:</label>
+    <select id="presentationSelect" v-model="presentation">
+      <option v-for="presentation of presentations" :value="presentation.id">{{ presentation.name }}</option>
+    </select>
+    <label for="dataTypeSelect">Type:</label>
+    <select id="dataTypeSelect" v-model="dataType">
+      <option v-for="dataType of dataTypes" :value="dataType.id">
+        {{
+        dataType.name
+        }}
+      </option>
+    </select>
+    <label for="dataType2Select">Per:</label>
+    <select id="dataType2Select" v-model="dataType2">
+      <option v-for="dataType of dataTypes2" :value="dataType.id">
+        {{
+        dataType.name
+        }}
+      </option>
+    </select>
+    <label for="viewSelect">View:</label>
+    <select id="viewSelect" v-model="view">
+      <option v-for="view of views" :value="view.id">{{ view.name }}</option>
+    </select>
+    <label for="normalizeInput">Normalize:</label>
+    <input
+      type="text"
+      :value="normalizationValue"
+      v-on:change="setNormalizationValue"
+      :placeholder="autoNormalizedValue"
+     id="normalizeInput"
+    />
+    <input class="regionSearch" v-model="regionSearchText" placeholder="Search..." />
+    <input class="clearRegionSearch" type="button" value="x" @click="clearSearch" />
+    <select multiple @change="setSelectedRegions" class="regions" ref="regionSelect">
+      <option
+        v-for="region of regionList"
+        :value="region.id"
+        :key="region.id"
+        :selected="selectedRegions.includes(region.id)"
+      >{{ region.nameAndValue }}</option>
+    </select>
+    <template v-for="level in taxonomyLevels">
+          <label :for="level.id + 'Level'">{{ level.name }}:</label>
       <input
         :id="level.id + 'Level'"
         type="checkbox"
@@ -65,7 +51,7 @@
         :value="level.id"
         @change="setTaxonomyLevel"
       />
-    </div>
+    </template>
   </div>
 </template>
 
@@ -103,7 +89,7 @@ export default {
       const selection = this.$store.getters.selection;
       return this.$store.getters.sortedRegions.filter(region => helpers.isRegionIncluded(region, selection, searchQuery)).map(region => {
         let value = helpers.getLatestValue(region, selection);
-        return {nameAndValue: `${region.displayName} - ${helpers.formatValue(value, selection)}`, ...region};
+        return {nameAndValue: `${region.displayName} -- ${helpers.formatValue(value, selection)}`, ...region};
       });
     },
     selectedRegions() {
@@ -217,14 +203,37 @@ export default {
 
 <style scoped>
 #menu {
-  display: flex;
-  flex-direction: column;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 5px;
+  padding: 5px;
 }
-select.regions {
-  width: 100%;
+
+select, input {
+  grid-column: 2 / 4;
+}
+
+input[type=checkbox] {
+  grid-column: 3 / 4;
+}
+
+label {
+  grid-column: 1 / 2;
+}
+
+.regionSearch {
+  grid-column: 1 / 3;
+}
+
+.clearRegionSearch {
+  grid-column: 3 / 4;
 }
 
 select.regions {
+  grid-column: 1 / 4;
   height: 60vh;
 }
 </style>
