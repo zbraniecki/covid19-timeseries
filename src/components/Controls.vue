@@ -1,5 +1,10 @@
 <template>
   <div id="menu">
+    <p class="links">
+      <a href="">Source: <img src="/github.png" class="icon"/></a> |
+      <a href="">Data: <img src="/cds.svg" class="icon"/></a> |
+      <a href="">Idea: <img src="/twitter.webp" class="icon"/>Nathan510edge</a>
+    </p>
     <!-- <label for="presentationSelect">Presentation:</label>
     <select id="presentationSelect" v-model="presentation">
       <option v-for="presentation of presentations" :value="presentation.id">{{ presentation.name }}</option>
@@ -199,12 +204,11 @@ export default {
 
 <style scoped>
 #menu {
-  margin-top: 10px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: auto;
   grid-column-gap: 0px;
-  grid-row-gap: 5px;
+  grid-row-gap: 2px;
   padding: 5px;
 }
 
@@ -231,5 +235,22 @@ label {
 select.regions {
   grid-column: 1 / 4;
   height: 60vh;
+}
+
+p.links {
+  grid-column: 1 / 4;
+  font-size: 0.7em;
+  text-align: center;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 5px;
+}
+
+p.links a {
+  text-decoration: none;
+}
+
+img.icon {
+  height: 14px;
+  vertical-align: middle;
 }
 </style>

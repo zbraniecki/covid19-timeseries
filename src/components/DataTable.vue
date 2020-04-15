@@ -4,10 +4,12 @@
       <tr class="name">
         <th></th>
         <th v-for="region in nameRow" :key="region.id" colspan="2">{{ region.name }}</th>
+        <th class="legend" v-if="legendColumn"></th>
       </tr>
       <tr v-for="item in activeMetaRows" :key="item.id" :class="item.id">
         <th>{{ item.name }}:</th>
         <th v-for="value in item.values" colspan="2">{{ value }}</th>
+        <th class="legend" v-if="legendColumn"></th>
       </tr>
       <tr>
         <th>Δ Day</th>
@@ -15,6 +17,7 @@
           <th class="date">Date</th>
           <th class="value">#</th>
         </template>
+        <th class="legend" v-if="legendColumn"></th>
       </tr>
     </thead>
     <tbody>
@@ -45,6 +48,10 @@
             <td class="empty"></td>
           </template>
         </template>
+        <td
+          class="legend"
+          v-if="legendColumn"
+        >{{ row.relDay == 0 ? "← Normalized relative day" : row.relDay == todayRow ? "← Today" : "" }}</td>
       </tr>
     </tbody>
   </table>
@@ -100,6 +107,8 @@ export default {
   data() {
     return {
       metaRowsCount: `78px`,
+      legendColumn: true,
+      todayRow: 8,
     };
   },
   computed: {
@@ -289,6 +298,15 @@ export default {
         });
       }
 
+      {
+        const lastRegion = selectedRegions[selectedRegions.length - 1];
+        if (lastRegion) {
+          const lastRegionNorm = normalizedIndexes[lastRegion.id].relativeZero;
+          const lastDate = lastRegion.dates[lastRegion.dates.length - 1];
+          this.todayRow = lastRegion.dates.length - lastRegionNorm - 1;
+        }
+      }
+
       return result;
     },
     isChrome() {
@@ -436,5 +454,12 @@ td.relDay a[href] {
 td.relDay:hover {
   text-decoration: underline;
   background-color: #eeeeee;
+}
+
+th.legend,
+td.legend {
+  border: 0 !important;
+  opacity: 0.6;
+  white-space: nowrap;
 }
 </style>
