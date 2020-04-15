@@ -1,9 +1,9 @@
 <template>
   <div id="menu">
     <p class="links">
-      <a href="https://github.com/zbraniecki/covid19-timeseries">Source: <img src="/github.png" class="icon"/></a> |
-      <a href="https://coronadatascraper.com/">Data: <img src="/cds.svg" class="icon"/></a> |
-      <a href="https://twitter.com/Nathan510edge">Idea: <img src="/twitter.webp" class="icon"/>Nathan510edge</a>
+      <a href="https://github.com/zbraniecki/covid19-timeseries">Source: <img src="../assets/github.png" class="icon"/></a> |
+      <a href="https://coronadatascraper.com/">Data: <img src="../assets/cds.svg" class="icon"/></a> |
+      <a href="https://twitter.com/Nathan510edge">Idea: <img src="../assets/twitter.webp" class="icon"/>Nathan510edge</a>
     </p>
     <!-- <label for="presentationSelect">Presentation:</label>
     <select id="presentationSelect" v-model="presentation">
