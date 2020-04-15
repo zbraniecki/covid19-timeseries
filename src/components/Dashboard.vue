@@ -24,7 +24,7 @@ export default {
     Controls
   },
   async mounted() {
-    const data = await fetch("/timeseries-converted.json");
+    const data = await fetch(`${__webpack_public_path__}timeseries-converted.json`);
     const json = await data.json();
     this.$store.commit("setData", json);
   },
