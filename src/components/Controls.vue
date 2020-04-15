@@ -1,23 +1,19 @@
 <template>
   <div id="menu">
-    <label for="presentationSelect">Presentation:</label>
+    <!-- <label for="presentationSelect">Presentation:</label>
     <select id="presentationSelect" v-model="presentation">
       <option v-for="presentation of presentations" :value="presentation.id">{{ presentation.name }}</option>
-    </select>
+    </select> -->
     <label for="dataTypeSelect">Type:</label>
     <select id="dataTypeSelect" v-model="dataType">
       <option v-for="dataType of dataTypes" :value="dataType.id">
-        {{
-        dataType.name
-        }}
+        {{ dataType.name }}
       </option>
     </select>
     <label for="dataType2Select">Per:</label>
     <select id="dataType2Select" v-model="dataType2">
       <option v-for="dataType of dataTypes2" :value="dataType.id">
-        {{
-        dataType.name
-        }}
+        {{ dataType.name }}
       </option>
     </select>
     <label for="viewSelect">View:</label>

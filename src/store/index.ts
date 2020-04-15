@@ -31,6 +31,9 @@ function updateQueryString(state: any) {
   if (state.selection.view) {
     params.set("view", state.selection.view);
   }
+  if (state.selection.normalizationValue) {
+    params.set("normalize", state.selection.normalizationValue);
+  }
   window.history.replaceState(
     {},
     "",
@@ -42,13 +45,14 @@ function getUserPreferences(): SelectionInput {
   const params = new URLSearchParams(document.location.search);
   const dataTypes = params.getAll("dataType") as Array<DataType>;
   const view = params.get("view") as View | null;
+  const normalizationValue = params.get("normalize") as number | null;
   const presentation = params.get("presentation");
   return {
     presentation: helpers.enums.get(Presentation, presentation),
     regions: params.getAll("region"),
     dataTypes,
     view,
-    normalizationValue: null
+    normalizationValue,
   };
 }
 
@@ -77,7 +81,7 @@ export default new Vuex.Store({
       presentation: params.presentation,
       regions: params.regions,
       dataTypes: params.dataTypes,
-      normalizationValue: null,
+      normalizationValue: params.normalizationValue,
       view: params.view,
       taxonomyLevels: [TaxonomyLevel.Country],
     },
@@ -214,6 +218,7 @@ export default new Vuex.Store({
     },
     setNormalizationValue(state, value) {
       state.selection.normalizationValue = value;
+      updateQueryString(state);
     },
     setView(state, value) {
       state.selection.view = value;
