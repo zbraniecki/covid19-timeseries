@@ -11,6 +11,9 @@ import {
   View,
 } from "@/types";
 
+const numFormat = new Intl.NumberFormat(undefined);
+const percFormat = new Intl.NumberFormat(undefined, { style: "percent" });
+
 export default {
   enums: {
     keys<T>(myEnum: T): (keyof T)[] {
@@ -123,6 +126,13 @@ export default {
     }
 
     return this.getValue(region, idx, selection);
+  },
+  formatValue(value: number | null, selection: Selection): string {
+    if (value === null) {
+      return "";
+    }
+    const nf = selection.view === View.Total ? numFormat : percFormat;
+    return nf.format(value);
   },
   getHighestValue(region: Region, selection: Selection): number | null {
     const mainDataType = selection.dataTypes[0];

@@ -53,7 +53,7 @@
           :value="region.id"
           :key="region.id"
           :selected="selectedRegions.includes(region.id)"
-        >{{ region.displayName }}</option>
+        >{{ region.nameAndValue }}</option>
       </select>
     </div>
     <div v-for="level in taxonomyLevels" :key="level.id">
@@ -101,7 +101,10 @@ export default {
       // Could consider performing this filtering elsewhere.
       const searchQuery = this.regionSearchText.toLowerCase();
       const selection = this.$store.getters.selection;
-      return this.$store.getters.sortedRegions.filter(region => helpers.isRegionIncluded(region, selection, searchQuery));
+      return this.$store.getters.sortedRegions.filter(region => helpers.isRegionIncluded(region, selection, searchQuery)).map(region => {
+        let value = helpers.getLatestValue(region, selection);
+        return {nameAndValue: `${region.displayName} - ${helpers.formatValue(value, selection)}`, ...region};
+      });
     },
     selectedRegions() {
       const selectedRegions = this.$store.getters.selectedRegions;

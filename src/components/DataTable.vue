@@ -94,8 +94,6 @@ const dtf = new Intl.DateTimeFormat(undefined, {
   day: "numeric",
   month: "numeric"
 });
-const numFormat = new Intl.NumberFormat(undefined);
-const percFormat = new Intl.NumberFormat(undefined, { style: "percent" });
 
 export default {
   name: "data-table",
@@ -247,8 +245,6 @@ export default {
       const maxValue = selection.view !== View.Total ? 0.3 :
         allRegions.length > 0 ? helpers.getHighestValue(allRegions[0], selection) : 0;
 
-      const nf = selection.view === View.Total ? numFormat : percFormat;
-
       for (let idx = 0; idx < maxDepth + max; idx++) {
         const relDay = idx - maxDepth;
 
@@ -275,7 +271,7 @@ export default {
             const maxColor = sentiment ? [0, 255, 0] : [255, 0, 0];
             dates.push({
               date: dtf.format(date),
-              value: nf.format(value),
+              value: helpers.formatValue(value, selection),
               color: helpers.interpolateColor(
                 [255, 255, 255],
                 maxColor,
