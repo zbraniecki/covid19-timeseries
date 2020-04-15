@@ -113,7 +113,7 @@ function writeJSON(path, json) {
   fs.writeFileSync(path, string);
 }
 
-const TYPES = ["cases", "deaths", "active", "recovered", "tested"];
+const TYPES = ["cases", "deaths", "active", "recovered", "tested", "hospitalized"];
 
 function intoDatesArray(dates, regionId) {
   const result = {

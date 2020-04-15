@@ -84,6 +84,9 @@ const dataTypeInfo = {
   },
   recovered: {
     sentiment: 1
+  },
+  hospitalized: {
+    sentiment: -1
   }
 };
 
