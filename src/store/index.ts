@@ -156,7 +156,7 @@ export default new Vuex.Store({
 
       if (selectedRegionIds.length === 0) {
 
-        const filteredRegions = sortedRegions.filter((region: Region) => helpers.isRegionIncluded(region, selection, "")).slice(0, 8);
+        const filteredRegions = sortedRegions.filter((region: Region) => helpers.isRegionIncluded(region, selection, "")).slice(0, 7);
         for (const region of filteredRegions) {
           result.push(region);
         }
