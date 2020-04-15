@@ -113,12 +113,13 @@ function writeJSON(path, json) {
   fs.writeFileSync(path, string);
 }
 
-const TYPES = ["cases", "deaths", "active", "recovered", "tested"];
+const TYPES = ["cases", "deaths", "active", "recovered", "tested", "hospitalized"];
 
 function intoDatesArray(dates, regionId) {
-  let result = {
+  const result = {
     dates: [],
     latest: {},
+    highest: {},
   };
   let prev = 0;
   for (let date in dates) {
@@ -132,6 +133,9 @@ function intoDatesArray(dates, regionId) {
     for (let type in dates[date]) {
       if (!TYPES.includes(type)) {
         continue;
+      }
+      if (result.highest[type] === undefined || result.highest[type] < dates[date][type]) {
+        result.highest[type] = dates[date][type];
       }
       result.latest[type] = result.dates.length;
       value[type] = dates[date][type];
@@ -185,14 +189,17 @@ function getDisplayName(region) {
     return `${stateName} (${countryId})`;
   }
 
-  let countryName = getRegionName(region, "country");
+  let countryName = getRegionName(region, "country", true);
+  if (!countryName) {
+    countryName = getRegionName(region, "country");
+  }
   return countryName;
 }
 
 let ids = {};
 
 function convert(input) {
-  let result = [];
+  let result = {};
 
   for (let regionCode in input) {
     let region = input[regionCode];
@@ -201,7 +208,7 @@ function convert(input) {
       continue;
     }
 
-    let {dates, latest} = intoDatesArray(region.dates, regionCode);
+    let {dates, latest, highest} = intoDatesArray(region.dates, regionCode);
     if (!latest.cases) {
       continue;
     }
@@ -217,9 +224,10 @@ function convert(input) {
     }
 
     let entry = {
-      "id": getLevelId(region, "feature"),
+      "id": id,
       "dates": dates,
       "latest": latest,
+      "highest": highest,
       "meta": {
         "country": {
           "code": getLevelId(region, "country"),
@@ -243,7 +251,7 @@ function convert(input) {
       },
     };
     entry.displayName = getDisplayName(region);
-    result.push(entry);
+    result[id] = entry;
   }
 
   return result;
@@ -252,4 +260,4 @@ function convert(input) {
 let source = readJSONFile("./data/timeseries-byLocation.json");
 let output = convert(source);
 
-writeJSON("./data/timeseries-converted.json", output);
+writeJSON("./public/timeseries-converted.json", output);
