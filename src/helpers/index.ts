@@ -13,6 +13,7 @@ import {
 
 const numFormat = new Intl.NumberFormat(undefined);
 const percFormat = new Intl.NumberFormat(undefined, { style: "percent" });
+const percFormat2 = new Intl.NumberFormat(undefined, { style: "percent", minimumFractionDigits: 1 });
 
 export default {
   enums: {
@@ -91,14 +92,30 @@ export default {
       return (total3EMA - total7EMA) / total;
     }
 
-    if (dataTypes.length == 2 && dataTypes[1] == DataType.Population) {
-      const mainSelection = this.getSelectionForDataTypes(selection, [dataTypes[0]]);
-      const mainValue = this.getValue(
-        region,
-        idx,
-        mainSelection
-      );
-      return this.divideByPopulation(region, mainValue);
+    if (dataTypes.length == 2) {
+      if (dataTypes[1] == DataType.Population) {
+        const mainSelection = this.getSelectionForDataTypes(selection, [
+          dataTypes[0],
+        ]);
+        const mainValue = this.getValue(region, idx, mainSelection);
+        return this.divideByPopulation(region, mainValue);
+      } else {
+        const mainSelection = this.getSelectionForDataTypes(selection, [
+          dataTypes[0],
+        ]);
+        const mainValue = this.getValue(region, idx, mainSelection);
+        if (mainValue === null) {
+          return null;
+        }
+        const secondarySelection = this.getSelectionForDataTypes(selection, [
+          dataTypes[1],
+        ]);
+        const secondaryValue = this.getValue(region, idx, secondarySelection);
+        if (secondaryValue === null || secondaryValue === 0) {
+          return null;
+        }
+        return mainValue / secondaryValue;
+      }
     }
 
     const dataType = dataTypes[0];
@@ -131,14 +148,36 @@ export default {
     if (value === null) {
       return "";
     }
-    const nf = selection.view === View.Total ? numFormat : percFormat;
-    return nf.format(value);
+    const type = this.valueType(selection);
+    switch (type) {
+      case "percent": {
+        return percFormat.format(value);
+      }
+      case "number": {
+        return numFormat.format(value);
+      }
+      case "percentWithPrecision": {
+        return percFormat2.format(value);
+      }
+    };
+  },
+  valueType(selection: Selection): "percent" | "percentWithPrecision" | "number" {
+    if (selection.view !== View.Total) {
+      return "percent";
+    }
+    if (selection.dataTypes.length == 1 || selection.dataTypes[1] == DataType.Population) {
+      return "number";
+    }
+    return "percentWithPrecision";
   },
   getHighestValue(region: Region, selection: Selection): number | null {
     const mainDataType = selection.dataTypes[0];
     const value = this.getTypeValue(region.highest, mainDataType);
 
-    if (selection.dataTypes.length > 1 && selection.dataTypes[1] === "population") {
+    if (
+      selection.dataTypes.length > 1 &&
+      selection.dataTypes[1] === "population"
+    ) {
       return this.divideByPopulation(region, value);
     }
     return value;
@@ -213,9 +252,7 @@ export default {
     this.addSearchTokensForLevel(tokens, region, TaxonomyLevel.County);
     this.addSearchTokensForLevel(tokens, region, TaxonomyLevel.City);
 
-    return Array.from(tokens)
-      .join(" ")
-      .toLowerCase();
+    return Array.from(tokens).join(" ").toLowerCase();
   },
   addSearchTokensForLevel(
     tokens: Set<string>,
@@ -353,11 +390,19 @@ export default {
     var k = 2 / (range + 1);
     return total * k + prevTotal * (1 - k);
   },
-  isRegionIncluded(region: Region, selection: Selection, searchQuery: string): boolean {
+  isRegionIncluded(
+    region: Region,
+    selection: Selection,
+    searchQuery: string
+  ): boolean {
     if (!selection.taxonomyLevels.includes(region.meta.taxonomy)) {
       return false;
     }
-    if (searchQuery.length > 0 && region.searchTokens !== undefined && !region.searchTokens.includes(searchQuery)) {
+    if (
+      searchQuery.length > 0 &&
+      region.searchTokens !== undefined &&
+      !region.searchTokens.includes(searchQuery)
+    ) {
       return false;
     }
     return true;

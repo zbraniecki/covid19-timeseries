@@ -70,20 +70,21 @@ export default {
       dataTypes: helpers.enums
         .entries(DataType)
         .filter(pres => pres.id != "population"),
-      dataTypes2: [
-        {
-          id: "",
-          name: ""
-        },
-        {
-          id: "population",
-          name: "Population"
-        }
-      ],
       views: helpers.enums.entries(View)
     };
   },
   computed: {
+    dataTypes2() {
+      const selection = this.$store.getters.selection;
+      const mainDataType = selection.dataTypes[0];
+      return [
+        {
+          id: "",
+          name: ""
+        },
+        ...helpers.enums.entries(DataType).filter(pres => pres.id != mainDataType)
+      ];
+    },
     regionList() {
       // Could consider performing this filtering elsewhere.
       const searchQuery = this.regionSearchText.toLowerCase();
