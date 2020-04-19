@@ -1,0 +1,318 @@
+{
+  "US_RI_44007_Pawtucket": {
+    "id": "US_RI_44007_Pawtucket",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 14
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 32
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 86
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 91
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 91
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 99
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 109
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 126
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 133
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 143
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 156
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 156
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 186
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 186
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 186
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 288
+        }
+      }
+    ],
+    "latest": {
+      "cases": 16
+    },
+    "highest": {
+      "cases": 288
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Pawtucket",
+        "name": "Pawtucket"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Pawtucket (RI, US)"
+  },
+  "US_RI_44007_Providence": {
+    "id": "US_RI_44007_Providence",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 63
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 71
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 83
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 96
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 102
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 102
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 151
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 178
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 217
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 283
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 345
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 345
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 504
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 504
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 504
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 766
+        }
+      }
+    ],
+    "latest": {
+      "cases": 16
+    },
+    "highest": {
+      "cases": 766
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Providence",
+        "name": "Providence"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Providence (RI, US)"
+  },
+  "US_MI_26163_Detroit City": {
+    "id": "US_MI_26163_Detroit City",
+    "dates": [
+      {
+        "date": "2020-04-16",
+        "value": {
+          "cases": 7383,
+          "deaths": 546
+        }
+      },
+      {
+        "date": "2020-04-18",
+        "value": {
+          "cases": 7497,
+          "deaths": 589
+        }
+      }
+    ],
+    "latest": {
+      "cases": 1,
+      "deaths": 1
+    },
+    "highest": {
+      "cases": 7497,
+      "deaths": 589
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "MI",
+        "name": "Michigan"
+      },
+      "county": {
+        "code": "26163",
+        "name": "Wayne County"
+      },
+      "city": {
+        "code": "Detroit City",
+        "name": "Detroit City"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Detroit City (MI, US)"
+  }
+}
