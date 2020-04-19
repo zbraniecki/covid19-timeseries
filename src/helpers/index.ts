@@ -13,7 +13,10 @@ import {
 
 const numFormat = new Intl.NumberFormat(undefined);
 const percFormat = new Intl.NumberFormat(undefined, { style: "percent" });
-const percFormat2 = new Intl.NumberFormat(undefined, { style: "percent", minimumFractionDigits: 1 });
+const percFormat2 = new Intl.NumberFormat(undefined, {
+  style: "percent",
+  minimumFractionDigits: 1,
+});
 
 export default {
   enums: {
@@ -159,13 +162,18 @@ export default {
       case "percentWithPrecision": {
         return percFormat2.format(value);
       }
-    };
+    }
   },
-  valueType(selection: Selection): "percent" | "percentWithPrecision" | "number" {
+  valueType(
+    selection: Selection
+  ): "percent" | "percentWithPrecision" | "number" {
     if (selection.view !== View.Total) {
       return "percent";
     }
-    if (selection.dataTypes.length == 1 || selection.dataTypes[1] == DataType.Population) {
+    if (
+      selection.dataTypes.length == 1 ||
+      selection.dataTypes[1] == DataType.Population
+    ) {
       return "number";
     }
     return "percentWithPrecision";
@@ -207,17 +215,14 @@ export default {
       return valueB - valueA;
     });
   },
-  parseData(regions: Regions): void {
-    for (const regionId in regions) {
-      const region = regions[regionId];
-      for (let idx = 0; idx < region.dates.length; idx++) {
-        const date = this.getValuesForDateIdx(region, idx);
-        if (date !== null) {
-          date.date = this.parseDate((date.date as unknown) as string);
-        }
+  parseData(region: Region): void {
+    for (let idx = 0; idx < region.dates.length; idx++) {
+      const date = this.getValuesForDateIdx(region, idx);
+      if (date !== null) {
+        date.date = this.parseDate((date.date as unknown) as string);
       }
-      region.searchTokens = this.generateSearchTokens(region);
     }
+    region.searchTokens = this.generateSearchTokens(region);
   },
   parseDate(input: string): Date {
     let year;

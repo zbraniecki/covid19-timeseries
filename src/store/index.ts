@@ -197,9 +197,10 @@ export default new Vuex.Store({
       updateQueryString(state);
     },
     setData(state, data) {
-      DATASET = data;
-      helpers.parseData(DATASET);
-  
+      for (let id in data) {
+        DATASET[id] = data[id];
+        helpers.parseData(DATASET[id]);
+      }
       const regionIds = Object
         .values(DATASET)
         .map((region: Region) => region.id);
