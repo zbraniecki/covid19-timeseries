@@ -253,7 +253,7 @@ export default {
 
       let valueType = helpers.valueType(selection);
       const maxValue = valueType !== "number" ? 0.3 :
-        allRegions.length > 0 ? helpers.getHighestValue(selectedRegions[0], selection) : 0;
+        selectedRegions.length > 0 ? helpers.getHighestValue(selectedRegions[0], selection) : 0;
 
       for (let idx = 0; idx < maxDepth + max; idx++) {
         const relDay = idx - maxDepth;

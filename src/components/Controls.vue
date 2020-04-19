@@ -186,9 +186,9 @@ export default {
       const taxonomyLevels = Array.from(this.$store.getters.selection.taxonomyLevels);
       if (checked) {
         taxonomyLevels.push(id);
-        this.$store.commit("setTaxonomyLevels", taxonomyLevels);
+        this.$store.dispatch("setTaxonomyLevels", taxonomyLevels);
       } else {
-        this.$store.commit("setTaxonomyLevels", taxonomyLevels.filter(l => l != id));
+        this.$store.dispatch("setTaxonomyLevels", taxonomyLevels.filter(l => l != id));
       }
     },
   },

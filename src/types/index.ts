@@ -83,6 +83,7 @@ export interface State {
   };
   selection: Selection;
   sortedRegionIds: RegionIds;
+  loadedTaxonomies: Set<TaxonomyLevel>;
 }
 
 export type Regions = { [key: string]: Region; };

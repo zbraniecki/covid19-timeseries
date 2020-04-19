@@ -86,6 +86,7 @@ export default new Vuex.Store({
       taxonomyLevels: [TaxonomyLevel.Country],
     },
     sortedRegionIds: [],
+    loadedTaxonomies: new Set<TaxonomyLevel>(),
   },
   getters: {
     autoNormalizedValue(state: State, getters): number {
@@ -201,7 +202,6 @@ export default new Vuex.Store({
   
       const regionIds = Object
         .values(DATASET)
-        // .filter((region: Region) => region.meta.taxonomy == "country")
         .map((region: Region) => region.id);
 
       const selection = getSelection(state);
@@ -226,9 +226,28 @@ export default new Vuex.Store({
     },
     setTaxonomyLevels(state, value) {
       state.selection.taxonomyLevels = value;
+    },
+  },
+  actions: {
+    async loadData({ commit, state }, taxonomy: TaxonomyLevel) {
+      if (state.loadedTaxonomies.has(taxonomy)) {
+        return;
+      }
+      const key: string = helpers.enums.getKey(taxonomy);
+      const data = await fetch(
+        `${__webpack_public_path__}timeseries-${key}.json`
+      );
+      const json = await data.json();
+      commit("setData", json);
+      state.loadedTaxonomies.add(taxonomy);
+    },
+    async setTaxonomyLevels(ctx, value) {
+      for (let level of value) {
+        await ctx.dispatch("loadData", level);
+      }
+      ctx.commit("setTaxonomyLevels", value);
     }
   },
-  actions: {},
   modules: {},
   strict: true
 });

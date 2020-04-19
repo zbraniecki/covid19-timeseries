@@ -14,7 +14,7 @@
 import DataTable from "@/components/DataTable.vue";
 import Chart from "@/components/Chart.vue";
 import Controls from "@/components/Controls.vue";
-import { Presentation } from "@/types";
+import { Presentation, TaxonomyLevel } from "@/types";
 
 export default {
   name: "dashboard",
@@ -23,10 +23,8 @@ export default {
     Chart,
     Controls
   },
-  async mounted() {
-    const data = await fetch(`${__webpack_public_path__}timeseries-converted.json`);
-    const json = await data.json();
-    this.$store.commit("setData", json);
+  mounted() {
+    this.$store.dispatch("loadData", TaxonomyLevel.Country);
   },
   computed: {
     presentation() {

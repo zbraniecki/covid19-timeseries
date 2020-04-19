@@ -217,11 +217,13 @@ function convert(input) {
     }
 
     let id = getLevelId(region, "feature");
-    if (ids[id]) {
-      throw new Error(`ID already exists: ${id}`);
-    } else {
-      ids[id] = true;
+    let inc = 2;
+    while (ids[id]) {
+      console.warn(`ID already exists: ${id}`);
+      id = `${id}${inc}`;
+      inc += 1;
     }
+    ids[id] = true;
 
     let entry = {
       "id": id,
@@ -251,7 +253,10 @@ function convert(input) {
       },
     };
     entry.displayName = getDisplayName(region);
-    result[id] = entry;
+    if (!result[taxonomy]) {
+      result[taxonomy] = {};
+    }
+    result[taxonomy][id] = entry;
   }
 
   return result;
@@ -260,4 +265,6 @@ function convert(input) {
 let source = readJSONFile("./data/timeseries-byLocation.json");
 let output = convert(source);
 
-writeJSON("./public/timeseries-converted.json", output);
+for (const taxonomy in output) {
+  writeJSON(`./public/timeseries-${taxonomy}.json`, output[taxonomy]);
+}
