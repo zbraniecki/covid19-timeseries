@@ -278,6 +278,13 @@
         }
       },
       {
+        "date": "2020-04-17",
+        "value": {
+          "cases": 7414,
+          "deaths": 582
+        }
+      },
+      {
         "date": "2020-04-18",
         "value": {
           "cases": 7497,
@@ -293,8 +300,8 @@
       }
     ],
     "latest": {
-      "cases": 2,
-      "deaths": 2
+      "cases": 3,
+      "deaths": 3
     },
     "highest": {
       "cases": 7604,
