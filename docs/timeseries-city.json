@@ -304,15 +304,22 @@
           "cases": 7904,
           "deaths": 728
         }
+      },
+      {
+        "date": "2020-04-22",
+        "value": {
+          "cases": 8026,
+          "deaths": 747
+        }
       }
     ],
     "latest": {
-      "cases": 4,
-      "deaths": 4
+      "cases": 5,
+      "deaths": 5
     },
     "highest": {
-      "cases": 7904,
-      "deaths": 728
+      "cases": 8026,
+      "deaths": 747
     },
     "meta": {
       "country": {
