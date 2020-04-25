@@ -306,20 +306,34 @@
         }
       },
       {
+        "date": "2020-04-22",
+        "value": {
+          "cases": 8026,
+          "deaths": 747
+        }
+      },
+      {
         "date": "2020-04-23",
         "value": {
           "cases": 8317,
           "deaths": 799
         }
+      },
+      {
+        "date": "2020-04-24",
+        "value": {
+          "cases": 8473,
+          "deaths": 830
+        }
       }
     ],
     "latest": {
-      "cases": 5,
-      "deaths": 5
+      "cases": 7,
+      "deaths": 7
     },
     "highest": {
-      "cases": 8317,
-      "deaths": 799
+      "cases": 8473,
+      "deaths": 830
     },
     "meta": {
       "country": {
