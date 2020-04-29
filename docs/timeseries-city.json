@@ -346,15 +346,22 @@
           "cases": 8679,
           "deaths": 950
         }
+      },
+      {
+        "date": "2020-04-28",
+        "value": {
+          "cases": 8811,
+          "deaths": 988
+        }
       }
     ],
     "latest": {
-      "cases": 10,
-      "deaths": 10
+      "cases": 11,
+      "deaths": 11
     },
     "highest": {
-      "cases": 8679,
-      "deaths": 950
+      "cases": 8811,
+      "deaths": 988
     },
     "meta": {
       "country": {
