@@ -1,4 +1,564 @@
 {
+  "US_RI_44007_Central Falls": {
+    "id": "US_RI_44007_Central Falls",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 5
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 6
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 15
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 15
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 26
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 26
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 76
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 392
+        }
+      }
+    ],
+    "latest": {
+      "cases": 17
+    },
+    "highest": {
+      "cases": 392
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Central Falls",
+        "name": "Central Falls"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Central Falls (RI, US)"
+  },
+  "US_RI_44007_Cranston": {
+    "id": "US_RI_44007_Cranston",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 39
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 47
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 54
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 54
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 64
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 67
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 78
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 90
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 98
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 112
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 112
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 197
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 481
+        }
+      }
+    ],
+    "latest": {
+      "cases": 17
+    },
+    "highest": {
+      "cases": 481
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Cranston",
+        "name": "Cranston"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Cranston (RI, US)"
+  },
+  "US_RI_44007_East Providence": {
+    "id": "US_RI_44007_East Providence",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 17
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 18
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 24
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 41
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 46
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 49
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 49
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 58
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 58
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 58
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 123
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 339
+        }
+      }
+    ],
+    "latest": {
+      "cases": 17
+    },
+    "highest": {
+      "cases": 339
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "East Providence",
+        "name": "East Providence"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "East Providence (RI, US)"
+  },
+  "US_RI_44007_North Providence": {
+    "id": "US_RI_44007_North Providence",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 16
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 49
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 60
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 61
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 61
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 68
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 73
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 77
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 84
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 93
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 98
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 98
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 127
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 127
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 127
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 180
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 442
+        }
+      }
+    ],
+    "latest": {
+      "cases": 17
+    },
+    "highest": {
+      "cases": 442
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "North Providence",
+        "name": "North Providence"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "North Providence (RI, US)"
+  },
   "US_RI_44007_Pawtucket": {
     "id": "US_RI_44007_Pawtucket",
     "dates": [
@@ -103,13 +663,19 @@
         "value": {
           "cases": 288
         }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 785
+        }
       }
     ],
     "latest": {
-      "cases": 16
+      "cases": 17
     },
     "highest": {
-      "cases": 288
+      "cases": 785
     },
     "meta": {
       "country": {
@@ -133,117 +699,263 @@
     },
     "displayName": "Pawtucket (RI, US)"
   },
-  "US_RI_44007_Providence": {
-    "id": "US_RI_44007_Providence",
+  "US_RI_44003_Warwick": {
+    "id": "US_RI_44003_Warwick",
     "dates": [
       {
         "date": "2020-03-29",
         "value": {
-          "cases": 63
+          "cases": 16
         }
       },
       {
         "date": "2020-03-30",
         "value": {
-          "cases": 71
+          "cases": 17
         }
       },
       {
         "date": "2020-03-31",
         "value": {
-          "cases": 83
+          "cases": 22
         }
       },
       {
         "date": "2020-04-01",
         "value": {
-          "cases": 96
+          "cases": 29
         }
       },
       {
         "date": "2020-04-02",
         "value": {
-          "cases": 102
+          "cases": 30
         }
       },
       {
         "date": "2020-04-03",
         "value": {
-          "cases": 102
+          "cases": 30
         }
       },
       {
         "date": "2020-04-04",
         "value": {
-          "cases": 136
+          "cases": 37
         }
       },
       {
         "date": "2020-04-05",
         "value": {
-          "cases": 151
+          "cases": 41
         }
       },
       {
         "date": "2020-04-06",
         "value": {
-          "cases": 178
+          "cases": 48
         }
       },
       {
         "date": "2020-04-07",
         "value": {
-          "cases": 217
+          "cases": 54
         }
       },
       {
         "date": "2020-04-08",
         "value": {
-          "cases": 283
+          "cases": 59
         }
       },
       {
         "date": "2020-04-09",
         "value": {
-          "cases": 345
+          "cases": 67
         }
       },
       {
         "date": "2020-04-10",
         "value": {
-          "cases": 345
+          "cases": 67
         }
       },
       {
         "date": "2020-04-11",
         "value": {
-          "cases": 504
+          "cases": 75
         }
       },
       {
         "date": "2020-04-12",
         "value": {
-          "cases": 504
+          "cases": 75
         }
       },
       {
         "date": "2020-04-13",
         "value": {
-          "cases": 504
+          "cases": 75
         }
       },
       {
         "date": "2020-04-14",
         "value": {
-          "cases": 766
+          "cases": 122
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 316
         }
       }
     ],
     "latest": {
-      "cases": 16
+      "cases": 17
     },
     "highest": {
-      "cases": 766
+      "cases": 316
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44003",
+        "name": "Kent County"
+      },
+      "city": {
+        "code": "Warwick",
+        "name": "Warwick"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Warwick (RI, US)"
+  },
+  "US_RI_44007_Woonsocket": {
+    "id": "US_RI_44007_Woonsocket",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 5
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 9
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 9
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 23
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 42
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 42
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 42
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 67
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 282
+        }
+      }
+    ],
+    "latest": {
+      "cases": 17
+    },
+    "highest": {
+      "cases": 282
     },
     "meta": {
       "country": {
@@ -260,12 +972,12 @@
         "name": "Providence County"
       },
       "city": {
-        "code": "Providence",
-        "name": "Providence"
+        "code": "Woonsocket",
+        "name": "Woonsocket"
       },
       "taxonomy": "city"
     },
-    "displayName": "Providence (RI, US)"
+    "displayName": "Woonsocket (RI, US)"
   },
   "US_MI_26163_Detroit City": {
     "id": "US_MI_26163_Detroit City",
@@ -353,15 +1065,22 @@
           "cases": 8811,
           "deaths": 988
         }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 8957,
+          "deaths": 1008
+        }
       }
     ],
     "latest": {
-      "cases": 11,
-      "deaths": 11
+      "cases": 12,
+      "deaths": 12
     },
     "highest": {
-      "cases": 8811,
-      "deaths": 988
+      "cases": 8957,
+      "deaths": 1008
     },
     "meta": {
       "country": {
