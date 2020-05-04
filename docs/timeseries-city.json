@@ -127,13 +127,19 @@
         "value": {
           "cases": 469
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 487
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 469
+      "cases": 487
     },
     "meta": {
       "country": {
@@ -285,13 +291,19 @@
         "value": {
           "cases": 537
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 552
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 537
+      "cases": 552
     },
     "meta": {
       "country": {
@@ -314,6 +326,170 @@
       "taxonomy": "city"
     },
     "displayName": "Cranston (RI, US)"
+  },
+  "US_RI_44007_Cumberland": {
+    "id": "US_RI_44007_Cumberland",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 10
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 15
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 19
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 25
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 32
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 75
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 182
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 188
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 190
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 197
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 201
+        }
+      }
+    ],
+    "latest": {
+      "cases": 21
+    },
+    "highest": {
+      "cases": 201
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Cumberland",
+        "name": "Cumberland"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Cumberland (RI, US)"
   },
   "US_RI_44007_East Providence": {
     "id": "US_RI_44007_East Providence",
@@ -443,13 +619,19 @@
         "value": {
           "cases": 374
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 393
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 374
+      "cases": 393
     },
     "meta": {
       "country": {
@@ -601,13 +783,19 @@
         "value": {
           "cases": 484
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 492
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 484
+      "cases": 492
     },
     "meta": {
       "country": {
@@ -759,13 +947,19 @@
         "value": {
           "cases": 903
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 928
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 903
+      "cases": 928
     },
     "meta": {
       "country": {
@@ -917,13 +1111,19 @@
         "value": {
           "cases": 364
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 381
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 364
+      "cases": 381
     },
     "meta": {
       "country": {
@@ -1075,13 +1275,19 @@
         "value": {
           "cases": 316
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 326
+        }
       }
     ],
     "latest": {
-      "cases": 20
+      "cases": 21
     },
     "highest": {
-      "cases": 316
+      "cases": 326
     },
     "meta": {
       "country": {
@@ -1219,14 +1425,21 @@
           "cases": 9280,
           "deaths": 1085
         }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 9386,
+          "deaths": 1085
+        }
       }
     ],
     "latest": {
-      "cases": 15,
-      "deaths": 15
+      "cases": 16,
+      "deaths": 16
     },
     "highest": {
-      "cases": 9280,
+      "cases": 9386,
       "deaths": 1085
     },
     "meta": {
