@@ -133,13 +133,19 @@
         "value": {
           "cases": 487
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 503
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 487
+      "cases": 503
     },
     "meta": {
       "country": {
@@ -297,13 +303,19 @@
         "value": {
           "cases": 552
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 564
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 552
+      "cases": 564
     },
     "meta": {
       "country": {
@@ -461,10 +473,16 @@
         "value": {
           "cases": 201
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 201
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
       "cases": 201
@@ -625,13 +643,19 @@
         "value": {
           "cases": 393
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 398
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 393
+      "cases": 398
     },
     "meta": {
       "country": {
@@ -789,13 +813,19 @@
         "value": {
           "cases": 492
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 496
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 492
+      "cases": 496
     },
     "meta": {
       "country": {
@@ -953,13 +983,19 @@
         "value": {
           "cases": 928
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 946
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 928
+      "cases": 946
     },
     "meta": {
       "country": {
@@ -1117,13 +1153,19 @@
         "value": {
           "cases": 381
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 384
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 381
+      "cases": 384
     },
     "meta": {
       "country": {
@@ -1281,13 +1323,19 @@
         "value": {
           "cases": 326
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 331
+        }
       }
     ],
     "latest": {
-      "cases": 21
+      "cases": 22
     },
     "highest": {
-      "cases": 326
+      "cases": 331
     },
     "meta": {
       "country": {
@@ -1432,11 +1480,18 @@
           "cases": 9386,
           "deaths": 1085
         }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 9386,
+          "deaths": 1085
+        }
       }
     ],
     "latest": {
-      "cases": 16,
-      "deaths": 16
+      "cases": 17,
+      "deaths": 17
     },
     "highest": {
       "cases": 9386,
