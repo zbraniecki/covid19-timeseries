@@ -169,13 +169,31 @@
         "value": {
           "cases": 615
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 630
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 668
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 668
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 615
+      "cases": 668
     },
     "meta": {
       "country": {
@@ -369,13 +387,31 @@
         "value": {
           "cases": 662
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 658
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 685
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 685
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 662
+      "cases": 685
     },
     "meta": {
       "country": {
@@ -569,13 +605,31 @@
         "value": {
           "cases": 231
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 230
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 238
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 238
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 231
+      "cases": 238
     },
     "meta": {
       "country": {
@@ -769,13 +823,31 @@
         "value": {
           "cases": 555
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 569
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 580
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 580
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 555
+      "cases": 580
     },
     "meta": {
       "country": {
@@ -969,13 +1041,31 @@
         "value": {
           "cases": 212
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 221
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 232
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 232
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 212
+      "cases": 232
     },
     "meta": {
       "country": {
@@ -1169,13 +1259,31 @@
         "value": {
           "cases": 587
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 595
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 608
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 608
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 587
+      "cases": 608
     },
     "meta": {
       "country": {
@@ -1369,13 +1477,31 @@
         "value": {
           "cases": 216
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 221
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 223
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 223
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 216
+      "cases": 223
     },
     "meta": {
       "country": {
@@ -1569,13 +1695,31 @@
         "value": {
           "cases": 446
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 440
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 461
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 461
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 446
+      "cases": 461
     },
     "meta": {
       "country": {
@@ -1598,6 +1742,224 @@
       "taxonomy": "city"
     },
     "displayName": "Warwick (RI, US)"
+  },
+  "US_RI_44003_West Warwick": {
+    "id": "US_RI_44003_West Warwick",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 6
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 24
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 25
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 28
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 46
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 124
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 130
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 142
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 145
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 199
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 200
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 208
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 208
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 208
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44003",
+        "name": "Kent County"
+      },
+      "city": {
+        "code": "West Warwick",
+        "name": "West Warwick"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "West Warwick (RI, US)"
   },
   "US_RI_44007_Woonsocket": {
     "id": "US_RI_44007_Woonsocket",
@@ -1769,13 +2131,31 @@
         "value": {
           "cases": 427
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 434
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 454
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 454
+        }
       }
     ],
     "latest": {
-      "cases": 27
+      "cases": 30
     },
     "highest": {
-      "cases": 427
+      "cases": 454
     },
     "meta": {
       "country": {
@@ -1962,15 +2342,50 @@
           "cases": 9851,
           "deaths": 1192
         }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 9897,
+          "deaths": 1213
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 9973,
+          "deaths": 1218
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 10164,
+          "deaths": 1236
+        }
+      },
+      {
+        "date": "2020-05-15",
+        "value": {
+          "cases": 10230,
+          "deaths": 1240
+        }
+      },
+      {
+        "date": "2020-05-16",
+        "value": {
+          "cases": 10327,
+          "deaths": 1255
+        }
       }
     ],
     "latest": {
-      "cases": 22,
-      "deaths": 22
+      "cases": 27,
+      "deaths": 27
     },
     "highest": {
-      "cases": 9851,
-      "deaths": 1192
+      "cases": 10327,
+      "deaths": 1255
     },
     "meta": {
       "country": {
