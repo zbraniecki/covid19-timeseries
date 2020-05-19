@@ -2377,15 +2377,29 @@
           "cases": 10327,
           "deaths": 1255
         }
+      },
+      {
+        "date": "2020-05-17",
+        "value": {
+          "cases": 10348,
+          "deaths": 1255
+        }
+      },
+      {
+        "date": "2020-05-18",
+        "value": {
+          "cases": 10368,
+          "deaths": 1260
+        }
       }
     ],
     "latest": {
-      "cases": 27,
-      "deaths": 27
+      "cases": 29,
+      "deaths": 29
     },
     "highest": {
-      "cases": 10327,
-      "deaths": 1255
+      "cases": 10368,
+      "deaths": 1260
     },
     "meta": {
       "country": {
