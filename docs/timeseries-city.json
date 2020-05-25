@@ -2419,15 +2419,22 @@
           "cases": 10587,
           "deaths": 1299
         }
+      },
+      {
+        "date": "2020-05-24",
+        "value": {
+          "cases": 10699,
+          "deaths": 1320
+        }
       }
     ],
     "latest": {
-      "cases": 33,
-      "deaths": 33
+      "cases": 34,
+      "deaths": 34
     },
     "highest": {
-      "cases": 10587,
-      "deaths": 1299
+      "cases": 10699,
+      "deaths": 1320
     },
     "meta": {
       "country": {
