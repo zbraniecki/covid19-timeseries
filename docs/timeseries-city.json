@@ -2421,6 +2421,13 @@
         }
       },
       {
+        "date": "2020-05-23",
+        "value": {
+          "cases": 10646,
+          "deaths": 1324
+        }
+      },
+      {
         "date": "2020-05-24",
         "value": {
           "cases": 10699,
@@ -2429,12 +2436,12 @@
       }
     ],
     "latest": {
-      "cases": 34,
-      "deaths": 34
+      "cases": 35,
+      "deaths": 35
     },
     "highest": {
       "cases": 10699,
-      "deaths": 1320
+      "deaths": 1324
     },
     "meta": {
       "country": {
