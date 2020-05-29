@@ -300,42 +300,42 @@
         "date": "2020-03-04",
         "value": {
           "cases": 219,
-          "tested": 1451
+          "tested": 1450
         }
       },
       {
         "date": "2020-03-05",
         "value": {
           "cases": 300,
-          "tested": 2155
+          "tested": 2154
         }
       },
       {
         "date": "2020-03-06",
         "value": {
           "cases": 410,
-          "tested": 3182
+          "tested": 3181
         }
       },
       {
         "date": "2020-03-07",
         "value": {
           "cases": 437,
-          "tested": 3585
+          "tested": 3584
         }
       },
       {
         "date": "2020-03-08",
         "value": {
           "cases": 502,
-          "tested": 4000
+          "tested": 3999
         }
       },
       {
         "date": "2020-03-09",
         "value": {
           "cases": 596,
-          "tested": 4515
+          "tested": 4514
         }
       },
       {
@@ -343,7 +343,7 @@
         "value": {
           "cases": 695,
           "deaths": 1,
-          "tested": 5199
+          "tested": 5198
         }
       },
       {
@@ -351,7 +351,7 @@
         "value": {
           "cases": 867,
           "deaths": 4,
-          "tested": 6120
+          "tested": 6119
         }
       },
       {
@@ -359,7 +359,7 @@
         "value": {
           "cases": 1119,
           "deaths": 5,
-          "tested": 7405
+          "tested": 7404
         }
       },
       {
@@ -367,7 +367,7 @@
         "value": {
           "cases": 1456,
           "deaths": 8,
-          "tested": 9549
+          "tested": 9547
         }
       },
       {
@@ -375,7 +375,7 @@
         "value": {
           "cases": 1635,
           "deaths": 12,
-          "tested": 11296
+          "tested": 11294
         }
       },
       {
@@ -383,7 +383,7 @@
         "value": {
           "cases": 1848,
           "deaths": 18,
-          "tested": 12346,
+          "tested": 12344,
           "hospitalized": 71
         }
       },
@@ -392,7 +392,7 @@
         "value": {
           "cases": 2234,
           "deaths": 29,
-          "tested": 13812,
+          "tested": 13811,
           "hospitalized": 161
         }
       },
@@ -401,7 +401,7 @@
         "value": {
           "cases": 2651,
           "deaths": 40,
-          "tested": 15621,
+          "tested": 15620,
           "hospitalized": 284
         }
       },
@@ -410,7 +410,7 @@
         "value": {
           "cases": 3185,
           "deaths": 61,
-          "tested": 17737,
+          "tested": 17736,
           "hospitalized": 467
         }
       },
@@ -419,7 +419,7 @@
         "value": {
           "cases": 3898,
           "deaths": 88,
-          "tested": 20293,
+          "tested": 20292,
           "hospitalized": 679
         }
       },
@@ -428,7 +428,7 @@
         "value": {
           "cases": 4561,
           "deaths": 119,
-          "tested": 22772,
+          "tested": 22770,
           "hospitalized": 974
         }
       },
@@ -437,7 +437,7 @@
         "value": {
           "cases": 5031,
           "deaths": 157,
-          "tested": 24545,
+          "tested": 24542,
           "hospitalized": 1306
         }
       },
@@ -446,7 +446,7 @@
         "value": {
           "cases": 5518,
           "deaths": 198,
-          "tested": 25636,
+          "tested": 25633,
           "hospitalized": 1596
         }
       },
@@ -455,7 +455,7 @@
         "value": {
           "cases": 6847,
           "deaths": 276,
-          "tested": 28105,
+          "tested": 28099,
           "hospitalized": 1874
         }
       },
@@ -464,7 +464,7 @@
         "value": {
           "cases": 8042,
           "deaths": 350,
-          "tested": 31105,
+          "tested": 31098,
           "hospitalized": 2308
         }
       },
@@ -473,7 +473,7 @@
         "value": {
           "cases": 9240,
           "deaths": 448,
-          "tested": 34406,
+          "tested": 34395,
           "hospitalized": 2848
         }
       },
@@ -482,7 +482,7 @@
         "value": {
           "cases": 10603,
           "deaths": 549,
-          "tested": 37584,
+          "tested": 37570,
           "hospitalized": 3338
         }
       },
@@ -491,7 +491,7 @@
         "value": {
           "cases": 12122,
           "deaths": 672,
-          "tested": 41304,
+          "tested": 41288,
           "hospitalized": 3913
         }
       },
@@ -500,7 +500,7 @@
         "value": {
           "cases": 12966,
           "deaths": 805,
-          "tested": 44249,
+          "tested": 44230,
           "hospitalized": 4542
         }
       },
@@ -509,7 +509,7 @@
         "value": {
           "cases": 13649,
           "deaths": 944,
-          "tested": 46102,
+          "tested": 46081,
           "hospitalized": 5087
         }
       },
@@ -518,7 +518,7 @@
         "value": {
           "cases": 15388,
           "deaths": 1113,
-          "tested": 49140,
+          "tested": 49117,
           "hospitalized": 5565
         }
       },
@@ -527,7 +527,7 @@
         "value": {
           "cases": 17069,
           "deaths": 1298,
-          "tested": 53830,
+          "tested": 53805,
           "hospitalized": 6118
         }
       },
@@ -536,7 +536,7 @@
         "value": {
           "cases": 18572,
           "deaths": 1545,
-          "tested": 57965,
+          "tested": 57936,
           "hospitalized": 6702
         }
       },
@@ -545,7 +545,7 @@
         "value": {
           "cases": 20032,
           "deaths": 1755,
-          "tested": 62217,
+          "tested": 62185,
           "hospitalized": 7270
         }
       },
@@ -553,8 +553,8 @@
         "date": "2020-04-03",
         "value": {
           "cases": 21723,
-          "deaths": 1987,
-          "tested": 66757,
+          "deaths": 1986,
+          "tested": 66722,
           "hospitalized": 7774
         }
       },
@@ -562,8 +562,8 @@
         "date": "2020-04-04",
         "value": {
           "cases": 22648,
-          "deaths": 2261,
-          "tested": 70531,
+          "deaths": 2260,
+          "tested": 70493,
           "hospitalized": 8273
         }
       },
@@ -571,8 +571,8 @@
         "date": "2020-04-05",
         "value": {
           "cases": 23313,
-          "deaths": 2495,
-          "tested": 72835,
+          "deaths": 2494,
+          "tested": 72794,
           "hospitalized": 8631
         }
       },
@@ -580,8 +580,8 @@
         "date": "2020-04-06",
         "value": {
           "cases": 25235,
-          "deaths": 2770,
-          "tested": 76666,
+          "deaths": 2768,
+          "tested": 76625,
           "hospitalized": 8945
         }
       },
@@ -589,8 +589,8 @@
         "date": "2020-04-07",
         "value": {
           "cases": 26734,
-          "deaths": 3074,
-          "tested": 81733,
+          "deaths": 3072,
+          "tested": 81692,
           "hospitalized": 9435
         }
       },
@@ -598,8 +598,8 @@
         "date": "2020-04-08",
         "value": {
           "cases": 28321,
-          "deaths": 3394,
-          "tested": 86862,
+          "deaths": 3393,
+          "tested": 86821,
           "hospitalized": 9894
         }
       },
@@ -607,8 +607,8 @@
         "date": "2020-04-09",
         "value": {
           "cases": 30545,
-          "deaths": 3667,
-          "tested": 92008,
+          "deaths": 3665,
+          "tested": 91963,
           "hospitalized": 10356
         }
       },
@@ -616,8 +616,8 @@
         "date": "2020-04-10",
         "value": {
           "cases": 32864,
-          "deaths": 3987,
-          "tested": 97686,
+          "deaths": 3984,
+          "tested": 97638,
           "hospitalized": 10777
         }
       },
@@ -625,8 +625,8 @@
         "date": "2020-04-11",
         "value": {
           "cases": 33887,
-          "deaths": 4278,
-          "tested": 103484,
+          "deaths": 4274,
+          "tested": 103432,
           "hospitalized": 11170
         }
       },
@@ -634,8 +634,8 @@
         "date": "2020-04-12",
         "value": {
           "cases": 34404,
-          "deaths": 4622,
-          "tested": 109033,
+          "deaths": 4617,
+          "tested": 108980,
           "hospitalized": 11440
         }
       },
@@ -643,8 +643,8 @@
         "date": "2020-04-13",
         "value": {
           "cases": 34936,
-          "deaths": 4906,
-          "tested": 114195,
+          "deaths": 4901,
+          "tested": 114140,
           "hospitalized": 11682
         }
       },
@@ -652,8 +652,8 @@
         "date": "2020-04-14",
         "value": {
           "cases": 36498,
-          "deaths": 5183,
-          "tested": 119762,
+          "deaths": 5178,
+          "tested": 119706,
           "hospitalized": 11932
         }
       },
@@ -661,8 +661,8 @@
         "date": "2020-04-15",
         "value": {
           "cases": 38112,
-          "deaths": 5458,
-          "tested": 126855,
+          "deaths": 5454,
+          "tested": 126797,
           "hospitalized": 12242
         }
       },
@@ -670,8 +670,8 @@
         "date": "2020-04-16",
         "value": {
           "cases": 39770,
-          "deaths": 5712,
-          "tested": 133636,
+          "deaths": 5708,
+          "tested": 133574,
           "hospitalized": 12562
         }
       },
@@ -679,8 +679,8 @@
         "date": "2020-04-17",
         "value": {
           "cases": 41150,
-          "deaths": 5915,
-          "tested": 141578,
+          "deaths": 5912,
+          "tested": 141515,
           "hospitalized": 12865
         }
       },
@@ -688,8 +688,8 @@
         "date": "2020-04-18",
         "value": {
           "cases": 41852,
-          "deaths": 6126,
-          "tested": 149439,
+          "deaths": 6123,
+          "tested": 149371,
           "hospitalized": 13130
         }
       },
@@ -697,98 +697,98 @@
         "date": "2020-04-19",
         "value": {
           "cases": 42300,
-          "deaths": 6340,
-          "tested": 155035,
+          "deaths": 6337,
+          "tested": 154965,
           "hospitalized": 13362
         }
       },
       {
         "date": "2020-04-20",
         "value": {
-          "cases": 43566,
-          "deaths": 6539,
-          "tested": 163707,
+          "cases": 43565,
+          "deaths": 6536,
+          "tested": 163632,
           "hospitalized": 13534
         }
       },
       {
         "date": "2020-04-21",
         "value": {
-          "cases": 44823,
-          "deaths": 6741,
-          "tested": 170783,
+          "cases": 44822,
+          "deaths": 6738,
+          "tested": 170704,
           "hospitalized": 13797
         }
       },
       {
         "date": "2020-04-22",
         "value": {
-          "cases": 45591,
-          "deaths": 6933,
-          "tested": 183080,
+          "cases": 45590,
+          "deaths": 6930,
+          "tested": 183001,
           "hospitalized": 14008
         }
       },
       {
         "date": "2020-04-23",
         "value": {
-          "cases": 46558,
-          "deaths": 7108,
-          "tested": 196580,
+          "cases": 46557,
+          "deaths": 7105,
+          "tested": 196498,
           "hospitalized": 14218
         }
       },
       {
         "date": "2020-04-24",
         "value": {
-          "cases": 47356,
-          "deaths": 7255,
-          "tested": 211898,
+          "cases": 47355,
+          "deaths": 7252,
+          "tested": 211808,
           "hospitalized": 14435
         }
       },
       {
         "date": "2020-04-25",
         "value": {
-          "cases": 47743,
-          "deaths": 7410,
-          "tested": 226156,
+          "cases": 47742,
+          "deaths": 7407,
+          "tested": 226024,
           "hospitalized": 14637
         }
       },
       {
         "date": "2020-04-26",
         "value": {
-          "cases": 47947,
-          "deaths": 7586,
-          "tested": 238020,
+          "cases": 47946,
+          "deaths": 7583,
+          "tested": 237923,
           "hospitalized": 14764
         }
       },
       {
         "date": "2020-04-27",
         "value": {
-          "cases": 48691,
-          "deaths": 7712,
-          "tested": 252566,
+          "cases": 48690,
+          "deaths": 7709,
+          "tested": 252467,
           "hospitalized": 14887
         }
       },
       {
         "date": "2020-04-28",
         "value": {
-          "cases": 49256,
-          "deaths": 7827,
-          "tested": 269151,
+          "cases": 49255,
+          "deaths": 7824,
+          "tested": 269049,
           "hospitalized": 15061
         }
       },
       {
         "date": "2020-04-29",
         "value": {
-          "cases": 49770,
-          "deaths": 7925,
-          "tested": 288700,
+          "cases": 49769,
+          "deaths": 7922,
+          "tested": 288593,
           "hospitalized": 15239
         }
       },
@@ -796,8 +796,8 @@
         "date": "2020-04-30",
         "value": {
           "cases": 50352,
-          "deaths": 8009,
-          "tested": 310082,
+          "deaths": 8006,
+          "tested": 309991,
           "hospitalized": 15391
         }
       },
@@ -805,8 +805,8 @@
         "date": "2020-05-01",
         "value": {
           "cases": 50590,
-          "deaths": 8107,
-          "tested": 331437,
+          "deaths": 8104,
+          "tested": 331345,
           "hospitalized": 15519
         }
       },
@@ -814,8 +814,8 @@
         "date": "2020-05-02",
         "value": {
           "cases": 50874,
-          "deaths": 8180,
-          "tested": 346199,
+          "deaths": 8177,
+          "tested": 346104,
           "hospitalized": 15596
         }
       },
@@ -823,8 +823,8 @@
         "date": "2020-05-03",
         "value": {
           "cases": 51015,
-          "deaths": 8276,
-          "tested": 358216,
+          "deaths": 8273,
+          "tested": 358120,
           "hospitalized": 15655
         }
       },
@@ -832,8 +832,8 @@
         "date": "2020-05-04",
         "value": {
           "cases": 51676,
-          "deaths": 8373,
-          "tested": 378834,
+          "deaths": 8370,
+          "tested": 378749,
           "hospitalized": 15739
         }
       },
@@ -841,8 +841,8 @@
         "date": "2020-05-05",
         "value": {
           "cases": 52208,
-          "deaths": 8454,
-          "tested": 396413,
+          "deaths": 8451,
+          "tested": 396356,
           "hospitalized": 15855
         }
       },
@@ -850,203 +850,212 @@
         "date": "2020-05-06",
         "value": {
           "cases": 52757,
-          "deaths": 8529,
-          "tested": 413764,
+          "deaths": 8526,
+          "tested": 413722,
           "hospitalized": 15953
         }
       },
       {
         "date": "2020-05-07",
         "value": {
-          "cases": 53180,
-          "deaths": 8608,
-          "tested": 432035,
+          "cases": 53181,
+          "deaths": 8605,
+          "tested": 431991,
           "hospitalized": 16061
         }
       },
       {
         "date": "2020-05-08",
         "value": {
-          "cases": 53659,
-          "deaths": 8678,
-          "tested": 454265,
+          "cases": 53660,
+          "deaths": 8675,
+          "tested": 454220,
           "hospitalized": 16136
         }
       },
       {
         "date": "2020-05-09",
         "value": {
-          "cases": 53897,
-          "deaths": 8748,
-          "tested": 472211,
+          "cases": 53898,
+          "deaths": 8745,
+          "tested": 472170,
           "hospitalized": 16219
         }
       },
       {
         "date": "2020-05-10",
         "value": {
-          "cases": 54014,
-          "deaths": 8821,
-          "tested": 482636,
+          "cases": 54015,
+          "deaths": 8818,
+          "tested": 482592,
           "hospitalized": 16279
         }
       },
       {
         "date": "2020-05-11",
         "value": {
-          "cases": 54473,
-          "deaths": 8883,
-          "tested": 490719,
+          "cases": 54474,
+          "deaths": 8880,
+          "tested": 490670,
           "hospitalized": 16322
         }
       },
       {
         "date": "2020-05-12",
         "value": {
-          "cases": 54867,
-          "deaths": 8931,
-          "tested": 507065,
+          "cases": 54868,
+          "deaths": 8928,
+          "tested": 507006,
           "hospitalized": 16392
         }
       },
       {
         "date": "2020-05-13",
         "value": {
-          "cases": 55183,
-          "deaths": 8985,
-          "tested": 526434,
+          "cases": 55184,
+          "deaths": 8982,
+          "tested": 526380,
           "hospitalized": 16473
         }
       },
       {
         "date": "2020-05-14",
         "value": {
-          "cases": 55473,
-          "deaths": 9031,
-          "tested": 542902,
+          "cases": 55474,
+          "deaths": 9028,
+          "tested": 542847,
           "hospitalized": 16540
         }
       },
       {
         "date": "2020-05-15",
         "value": {
-          "cases": 55812,
-          "deaths": 9068,
-          "tested": 559768,
+          "cases": 55813,
+          "deaths": 9065,
+          "tested": 559706,
           "hospitalized": 16605
         }
       },
       {
         "date": "2020-05-16",
         "value": {
-          "cases": 55958,
-          "deaths": 9096,
-          "tested": 571384,
+          "cases": 55959,
+          "deaths": 9093,
+          "tested": 571320,
           "hospitalized": 16665
         }
       },
       {
         "date": "2020-05-17",
         "value": {
-          "cases": 56038,
-          "deaths": 9131,
-          "tested": 579719,
+          "cases": 56039,
+          "deaths": 9128,
+          "tested": 579671,
           "hospitalized": 16708
         }
       },
       {
         "date": "2020-05-18",
         "value": {
-          "cases": 56341,
-          "deaths": 9167,
-          "tested": 586812,
+          "cases": 56343,
+          "deaths": 9164,
+          "tested": 586766,
           "hospitalized": 16758
         }
       },
       {
         "date": "2020-05-19",
         "value": {
-          "cases": 56624,
-          "deaths": 9196,
-          "tested": 599593,
+          "cases": 56626,
+          "deaths": 9194,
+          "tested": 599547,
           "hospitalized": 16816
         }
       },
       {
         "date": "2020-05-20",
         "value": {
-          "cases": 57006,
-          "deaths": 9228,
-          "tested": 613837,
+          "cases": 57008,
+          "deaths": 9226,
+          "tested": 613769,
           "hospitalized": 16887
         }
       },
       {
         "date": "2020-05-21",
         "value": {
-          "cases": 57071,
-          "deaths": 9257,
-          "tested": 621209,
+          "cases": 57080,
+          "deaths": 9255,
+          "tested": 621306,
           "hospitalized": 16943
         }
       },
       {
         "date": "2020-05-22",
         "value": {
-          "cases": 57312,
-          "deaths": 9290,
-          "tested": 630673,
+          "cases": 57323,
+          "deaths": 9291,
+          "tested": 630945,
           "hospitalized": 16977
         }
       },
       {
         "date": "2020-05-23",
         "value": {
-          "cases": 57423,
-          "deaths": 9312,
-          "tested": 636957,
+          "cases": 57444,
+          "deaths": 9314,
+          "tested": 637433,
           "hospitalized": 17025
         }
       },
       {
         "date": "2020-05-24",
         "value": {
-          "cases": 57454,
-          "deaths": 9332,
-          "tested": 641847,
+          "cases": 57513,
+          "deaths": 9346,
+          "tested": 642766,
           "hospitalized": 17052
         }
       },
       {
         "date": "2020-05-25",
         "value": {
-          "cases": 57455,
-          "deaths": 9334,
-          "tested": 642010,
+          "cases": 57591,
+          "deaths": 9362,
+          "tested": 648476,
           "hospitalized": 17091
         }
       },
       {
         "date": "2020-05-26",
         "value": {
-          "cases": 57455,
-          "deaths": 9334,
-          "tested": 642010,
-          "hospitalized": 17091
+          "cases": 57592,
+          "deaths": 9364,
+          "tested": 648712,
+          "hospitalized": 17127
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 57592,
+          "deaths": 9364,
+          "tested": 648712,
+          "hospitalized": 17127
         }
       }
     ],
     "latest": {
-      "cases": 125,
-      "tested": 125,
-      "deaths": 125,
-      "hospitalized": 125
+      "cases": 126,
+      "tested": 126,
+      "deaths": 126,
+      "hospitalized": 126
     },
     "highest": {
-      "cases": 57455,
-      "tested": 642010,
-      "deaths": 9334,
-      "hospitalized": 17091
+      "cases": 57592,
+      "tested": 648712,
+      "deaths": 9364,
+      "hospitalized": 17127
     },
     "meta": {
       "country": {
@@ -1406,7 +1415,7 @@
       {
         "date": "2020-03-23",
         "value": {
-          "cases": 9727,
+          "cases": 9726,
           "deaths": 144,
           "hospitalized": 1207
         }
@@ -1414,7 +1423,7 @@
       {
         "date": "2020-03-24",
         "value": {
-          "cases": 10831,
+          "cases": 10830,
           "deaths": 166,
           "hospitalized": 1365
         }
@@ -1422,7 +1431,7 @@
       {
         "date": "2020-03-25",
         "value": {
-          "cases": 11970,
+          "cases": 11969,
           "deaths": 201,
           "hospitalized": 1464
         }
@@ -1430,7 +1439,7 @@
       {
         "date": "2020-03-26",
         "value": {
-          "cases": 13054,
+          "cases": 13053,
           "deaths": 246,
           "hospitalized": 1611
         }
@@ -1438,7 +1447,7 @@
       {
         "date": "2020-03-27",
         "value": {
-          "cases": 14356,
+          "cases": 14355,
           "deaths": 283,
           "hospitalized": 1791
         }
@@ -1446,7 +1455,7 @@
       {
         "date": "2020-03-28",
         "value": {
-          "cases": 15195,
+          "cases": 15194,
           "deaths": 334,
           "hospitalized": 1878
         }
@@ -1454,7 +1463,7 @@
       {
         "date": "2020-03-29",
         "value": {
-          "cases": 15798,
+          "cases": 15797,
           "deaths": 380,
           "hospitalized": 1992
         }
@@ -1462,7 +1471,7 @@
       {
         "date": "2020-03-30",
         "value": {
-          "cases": 16920,
+          "cases": 16919,
           "deaths": 441,
           "hospitalized": 2177
         }
@@ -1470,7 +1479,7 @@
       {
         "date": "2020-03-31",
         "value": {
-          "cases": 17842,
+          "cases": 17841,
           "deaths": 506,
           "hospitalized": 2205
         }
@@ -1478,7 +1487,7 @@
       {
         "date": "2020-04-01",
         "value": {
-          "cases": 18908,
+          "cases": 18907,
           "deaths": 569,
           "hospitalized": 2285
         }
@@ -1486,7 +1495,7 @@
       {
         "date": "2020-04-02",
         "value": {
-          "cases": 19997,
+          "cases": 19996,
           "deaths": 630,
           "hospitalized": 2349
         }
@@ -1494,7 +1503,7 @@
       {
         "date": "2020-04-03",
         "value": {
-          "cases": 20965,
+          "cases": 20964,
           "deaths": 691,
           "hospitalized": 2331
         }
@@ -1502,7 +1511,7 @@
       {
         "date": "2020-04-04",
         "value": {
-          "cases": 21535,
+          "cases": 21534,
           "deaths": 756,
           "hospitalized": 2320
         }
@@ -1510,7 +1519,7 @@
       {
         "date": "2020-04-05",
         "value": {
-          "cases": 21937,
+          "cases": 21936,
           "deaths": 809,
           "hospitalized": 2305
         }
@@ -1518,7 +1527,7 @@
       {
         "date": "2020-04-06",
         "value": {
-          "cases": 22678,
+          "cases": 22677,
           "deaths": 869,
           "hospitalized": 2307
         }
@@ -1526,7 +1535,7 @@
       {
         "date": "2020-04-07",
         "value": {
-          "cases": 23335,
+          "cases": 23333,
           "deaths": 930,
           "hospitalized": 2224
         }
@@ -1534,7 +1543,7 @@
       {
         "date": "2020-04-08",
         "value": {
-          "cases": 24004,
+          "cases": 24002,
           "deaths": 997,
           "hospitalized": 2134
         }
@@ -1542,7 +1551,7 @@
       {
         "date": "2020-04-09",
         "value": {
-          "cases": 24668,
+          "cases": 24666,
           "deaths": 1049,
           "hospitalized": 2067
         }
@@ -1550,7 +1559,7 @@
       {
         "date": "2020-04-10",
         "value": {
-          "cases": 25119,
+          "cases": 25117,
           "deaths": 1100,
           "hospitalized": 2007
         }
@@ -1558,7 +1567,7 @@
       {
         "date": "2020-04-11",
         "value": {
-          "cases": 25582,
+          "cases": 25580,
           "deaths": 1138,
           "hospitalized": 1932
         }
@@ -1566,7 +1575,7 @@
       {
         "date": "2020-04-12",
         "value": {
-          "cases": 25854,
+          "cases": 25852,
           "deaths": 1194,
           "hospitalized": 1909
         }
@@ -1574,7 +1583,7 @@
       {
         "date": "2020-04-13",
         "value": {
-          "cases": 26097,
+          "cases": 26095,
           "deaths": 1226,
           "hospitalized": 1890
         }
@@ -1582,7 +1591,7 @@
       {
         "date": "2020-04-14",
         "value": {
-          "cases": 26422,
+          "cases": 26420,
           "deaths": 1264,
           "hospitalized": 1851
         }
@@ -1590,7 +1599,7 @@
       {
         "date": "2020-04-15",
         "value": {
-          "cases": 26738,
+          "cases": 26736,
           "deaths": 1318,
           "hospitalized": 1725
         }
@@ -1598,7 +1607,7 @@
       {
         "date": "2020-04-16",
         "value": {
-          "cases": 27040,
+          "cases": 27038,
           "deaths": 1366,
           "hospitalized": 1668
         }
@@ -1606,7 +1615,7 @@
       {
         "date": "2020-04-17",
         "value": {
-          "cases": 27347,
+          "cases": 27345,
           "deaths": 1415,
           "hospitalized": 1570
         }
@@ -1614,7 +1623,7 @@
       {
         "date": "2020-04-18",
         "value": {
-          "cases": 27621,
+          "cases": 27619,
           "deaths": 1456,
           "hospitalized": 1517
         }
@@ -1622,7 +1631,7 @@
       {
         "date": "2020-04-19",
         "value": {
-          "cases": 27797,
+          "cases": 27795,
           "deaths": 1481,
           "hospitalized": 1509
         }
@@ -1630,7 +1639,7 @@
       {
         "date": "2020-04-20",
         "value": {
-          "cases": 27998,
+          "cases": 27996,
           "deaths": 1524,
           "hospitalized": 1485
         }
@@ -1638,7 +1647,7 @@
       {
         "date": "2020-04-21",
         "value": {
-          "cases": 28164,
+          "cases": 28162,
           "deaths": 1565,
           "hospitalized": 1407
         }
@@ -1646,7 +1655,7 @@
       {
         "date": "2020-04-22",
         "value": {
-          "cases": 28370,
+          "cases": 28368,
           "deaths": 1594,
           "hospitalized": 1342
         }
@@ -1654,7 +1663,7 @@
       {
         "date": "2020-04-23",
         "value": {
-          "cases": 28589,
+          "cases": 28587,
           "deaths": 1624,
           "hospitalized": 1287
         }
@@ -1662,7 +1671,7 @@
       {
         "date": "2020-04-24",
         "value": {
-          "cases": 28778,
+          "cases": 28776,
           "deaths": 1653,
           "hospitalized": 1242
         }
@@ -1670,7 +1679,7 @@
       {
         "date": "2020-04-25",
         "value": {
-          "cases": 28921,
+          "cases": 28919,
           "deaths": 1677,
           "hospitalized": 1213
         }
@@ -1678,7 +1687,7 @@
       {
         "date": "2020-04-26",
         "value": {
-          "cases": 28997,
+          "cases": 28995,
           "deaths": 1694,
           "hospitalized": 1191
         }
@@ -1686,7 +1695,7 @@
       {
         "date": "2020-04-27",
         "value": {
-          "cases": 29165,
+          "cases": 29163,
           "deaths": 1716,
           "hospitalized": 1166
         }
@@ -1694,7 +1703,7 @@
       {
         "date": "2020-04-28",
         "value": {
-          "cases": 29292,
+          "cases": 29290,
           "deaths": 1742,
           "hospitalized": 1133
         }
@@ -1702,7 +1711,7 @@
       {
         "date": "2020-04-29",
         "value": {
-          "cases": 29433,
+          "cases": 29431,
           "deaths": 1750,
           "hospitalized": 1064
         }
@@ -1710,7 +1719,7 @@
       {
         "date": "2020-04-30",
         "value": {
-          "cases": 29578,
+          "cases": 29576,
           "deaths": 1768,
           "hospitalized": 986
         }
@@ -1718,7 +1727,7 @@
       {
         "date": "2020-05-01",
         "value": {
-          "cases": 29688,
+          "cases": 29686,
           "deaths": 1784,
           "hospitalized": 931
         }
@@ -1726,7 +1735,7 @@
       {
         "date": "2020-05-02",
         "value": {
-          "cases": 29768,
+          "cases": 29766,
           "deaths": 1799,
           "hospitalized": 885
         }
@@ -1734,7 +1743,7 @@
       {
         "date": "2020-05-03",
         "value": {
-          "cases": 29828,
+          "cases": 29826,
           "deaths": 1807,
           "hospitalized": 883
         }
@@ -1742,7 +1751,7 @@
       {
         "date": "2020-05-04",
         "value": {
-          "cases": 29888,
+          "cases": 29886,
           "deaths": 1814,
           "hospitalized": 855
         }
@@ -1750,7 +1759,7 @@
       {
         "date": "2020-05-05",
         "value": {
-          "cases": 29947,
+          "cases": 29945,
           "deaths": 1827,
           "hospitalized": 825
         }
@@ -1758,7 +1767,7 @@
       {
         "date": "2020-05-06",
         "value": {
-          "cases": 30030,
+          "cases": 30028,
           "deaths": 1833,
           "hospitalized": 796
         }
@@ -1766,7 +1775,7 @@
       {
         "date": "2020-05-07",
         "value": {
-          "cases": 30099,
+          "cases": 30097,
           "deaths": 1844,
           "hospitalized": 745
         }
@@ -1774,7 +1783,7 @@
       {
         "date": "2020-05-08",
         "value": {
-          "cases": 30165,
+          "cases": 30163,
           "deaths": 1853,
           "hospitalized": 699
         }
@@ -1782,7 +1791,7 @@
       {
         "date": "2020-05-09",
         "value": {
-          "cases": 30213,
+          "cases": 30211,
           "deaths": 1863,
           "hospitalized": 667
         }
@@ -1790,7 +1799,7 @@
       {
         "date": "2020-05-10",
         "value": {
-          "cases": 30244,
+          "cases": 30242,
           "deaths": 1871,
           "hospitalized": 656
         }
@@ -1798,7 +1807,7 @@
       {
         "date": "2020-05-11",
         "value": {
-          "cases": 30305,
+          "cases": 30303,
           "deaths": 1874,
           "hospitalized": 648
         }
@@ -1806,7 +1815,7 @@
       {
         "date": "2020-05-12",
         "value": {
-          "cases": 30354,
+          "cases": 30352,
           "deaths": 1880,
           "hospitalized": 645
         }
@@ -1814,7 +1823,7 @@
       {
         "date": "2020-05-13",
         "value": {
-          "cases": 30391,
+          "cases": 30389,
           "deaths": 1884,
           "hospitalized": 596
         }
@@ -1822,7 +1831,7 @@
       {
         "date": "2020-05-14",
         "value": {
-          "cases": 30433,
+          "cases": 30431,
           "deaths": 1888,
           "hospitalized": 560
         }
@@ -1830,7 +1839,7 @@
       {
         "date": "2020-05-15",
         "value": {
-          "cases": 30477,
+          "cases": 30475,
           "deaths": 1893,
           "hospitalized": 523
         }
@@ -1838,7 +1847,7 @@
       {
         "date": "2020-05-16",
         "value": {
-          "cases": 30507,
+          "cases": 30505,
           "deaths": 1893,
           "hospitalized": 509
         }
@@ -1846,7 +1855,7 @@
       {
         "date": "2020-05-17",
         "value": {
-          "cases": 30523,
+          "cases": 30521,
           "deaths": 1897,
           "hospitalized": 511
         }
@@ -1854,7 +1863,7 @@
       {
         "date": "2020-05-18",
         "value": {
-          "cases": 30559,
+          "cases": 30557,
           "deaths": 1903,
           "hospitalized": 493
         }
@@ -1862,7 +1871,7 @@
       {
         "date": "2020-05-19",
         "value": {
-          "cases": 30582,
+          "cases": 30580,
           "deaths": 1905,
           "hospitalized": 474
         }
@@ -1870,7 +1879,7 @@
       {
         "date": "2020-05-20",
         "value": {
-          "cases": 30624,
+          "cases": 30622,
           "deaths": 1906,
           "hospitalized": 459
         }
@@ -1878,7 +1887,7 @@
       {
         "date": "2020-05-21",
         "value": {
-          "cases": 30651,
+          "cases": 30649,
           "deaths": 1908,
           "hospitalized": 436
         }
@@ -1886,7 +1895,7 @@
       {
         "date": "2020-05-22",
         "value": {
-          "cases": 30670,
+          "cases": 30669,
           "deaths": 1910,
           "hospitalized": 417
         }
@@ -1894,7 +1903,7 @@
       {
         "date": "2020-05-23",
         "value": {
-          "cases": 30687,
+          "cases": 30686,
           "deaths": 1911,
           "hospitalized": 403
         }
@@ -1902,7 +1911,7 @@
       {
         "date": "2020-05-24",
         "value": {
-          "cases": 30697,
+          "cases": 30696,
           "deaths": 1912,
           "hospitalized": 409
         }
@@ -1918,21 +1927,29 @@
       {
         "date": "2020-05-26",
         "value": {
-          "cases": 30715,
+          "cases": 30721,
           "deaths": 1915,
-          "hospitalized": 393
+          "hospitalized": 391
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 30726,
+          "deaths": 1917,
+          "hospitalized": 377
         }
       }
     ],
     "latest": {
-      "cases": 125,
-      "hospitalized": 125,
-      "deaths": 125
+      "cases": 126,
+      "hospitalized": 126,
+      "deaths": 126
     },
     "highest": {
-      "cases": 30715,
+      "cases": 30726,
       "hospitalized": 2349,
-      "deaths": 1915
+      "deaths": 1917
     },
     "meta": {
       "country": {
@@ -2752,6 +2769,10 @@
       },
       {
         "date": "2020-05-26",
+        "value": {}
+      },
+      {
+        "date": "2020-05-27",
         "value": {}
       }
     ],
@@ -3846,21 +3867,31 @@
           "active": 52763,
           "tested": 3478463
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 228546,
+          "deaths": 32781,
+          "recovered": 144970,
+          "active": 50795,
+          "tested": 3545004
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125,
-      "tested": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126,
+      "tested": 126
     },
     "highest": {
-      "cases": 227962,
-      "deaths": 32664,
-      "recovered": 142535,
+      "cases": 228546,
+      "deaths": 32781,
+      "recovered": 144970,
       "active": 106697,
-      "tested": 3478463
+      "tested": 3545004
     },
     "meta": {
       "country": {
@@ -4614,7 +4645,7 @@
         "date": "2020-04-29",
         "value": {
           "cases": 20911,
-          "deaths": 2795,
+          "deaths": 2796,
           "hospitalized": 1484
         }
       },
@@ -4622,7 +4653,7 @@
         "date": "2020-04-30",
         "value": {
           "cases": 21507,
-          "deaths": 2873,
+          "deaths": 2874,
           "hospitalized": 1517
         }
       },
@@ -4630,7 +4661,7 @@
         "date": "2020-05-01",
         "value": {
           "cases": 22039,
-          "deaths": 2950,
+          "deaths": 2952,
           "hospitalized": 1532
         }
       },
@@ -4638,7 +4669,7 @@
         "date": "2020-05-02",
         "value": {
           "cases": 22337,
-          "deaths": 3022,
+          "deaths": 3024,
           "hospitalized": 1562
         }
       },
@@ -4646,7 +4677,7 @@
         "date": "2020-05-03",
         "value": {
           "cases": 22595,
-          "deaths": 3097,
+          "deaths": 3098,
           "hospitalized": 1587
         }
       },
@@ -4654,7 +4685,7 @@
         "date": "2020-05-04",
         "value": {
           "cases": 23054,
-          "deaths": 3178,
+          "deaths": 3180,
           "hospitalized": 1612
         }
       },
@@ -4662,7 +4693,7 @@
         "date": "2020-05-05",
         "value": {
           "cases": 23691,
-          "deaths": 3247,
+          "deaths": 3249,
           "hospitalized": 1632
         }
       },
@@ -4670,7 +4701,7 @@
         "date": "2020-05-06",
         "value": {
           "cases": 24420,
-          "deaths": 3320,
+          "deaths": 3322,
           "hospitalized": 1660
         }
       },
@@ -4678,7 +4709,7 @@
         "date": "2020-05-07",
         "value": {
           "cases": 25171,
-          "deaths": 3400,
+          "deaths": 3402,
           "hospitalized": 1688
         }
       },
@@ -4686,7 +4717,7 @@
         "date": "2020-05-08",
         "value": {
           "cases": 25856,
-          "deaths": 3461,
+          "deaths": 3462,
           "hospitalized": 1712
         }
       },
@@ -4694,7 +4725,7 @@
         "date": "2020-05-09",
         "value": {
           "cases": 26365,
-          "deaths": 3525,
+          "deaths": 3527,
           "hospitalized": 1726
         }
       },
@@ -4702,7 +4733,7 @@
         "date": "2020-05-10",
         "value": {
           "cases": 26643,
-          "deaths": 3597,
+          "deaths": 3599,
           "hospitalized": 1743
         }
       },
@@ -4710,7 +4741,7 @@
         "date": "2020-05-11",
         "value": {
           "cases": 27054,
-          "deaths": 3659,
+          "deaths": 3660,
           "hospitalized": 1758
         }
       },
@@ -4718,7 +4749,7 @@
         "date": "2020-05-12",
         "value": {
           "cases": 27760,
-          "deaths": 3716,
+          "deaths": 3718,
           "hospitalized": 1774
         }
       },
@@ -4726,7 +4757,7 @@
         "date": "2020-05-13",
         "value": {
           "cases": 28419,
-          "deaths": 3763,
+          "deaths": 3768,
           "hospitalized": 1792
         }
       },
@@ -4734,7 +4765,7 @@
         "date": "2020-05-14",
         "value": {
           "cases": 29045,
-          "deaths": 3805,
+          "deaths": 3812,
           "hospitalized": 1808
         }
       },
@@ -4742,7 +4773,7 @@
         "date": "2020-05-15",
         "value": {
           "cases": 29696,
-          "deaths": 3855,
+          "deaths": 3865,
           "hospitalized": 1828
         }
       },
@@ -4750,7 +4781,7 @@
         "date": "2020-05-16",
         "value": {
           "cases": 30054,
-          "deaths": 3891,
+          "deaths": 3905,
           "hospitalized": 1845
         }
       },
@@ -4758,7 +4789,7 @@
         "date": "2020-05-17",
         "value": {
           "cases": 30312,
-          "deaths": 3932,
+          "deaths": 3954,
           "hospitalized": 1866
         }
       },
@@ -4766,84 +4797,92 @@
         "date": "2020-05-18",
         "value": {
           "cases": 30703,
-          "deaths": 3976,
+          "deaths": 4010,
           "hospitalized": 1890
         }
       },
       {
         "date": "2020-05-19",
         "value": {
-          "cases": 31321,
-          "deaths": 3997,
+          "cases": 31319,
+          "deaths": 4041,
           "hospitalized": 1904
         }
       },
       {
         "date": "2020-05-20",
         "value": {
-          "cases": 32087,
-          "deaths": 4023,
+          "cases": 32084,
+          "deaths": 4072,
           "hospitalized": 1918
         }
       },
       {
         "date": "2020-05-21",
         "value": {
-          "cases": 32668,
-          "deaths": 4049,
+          "cases": 32665,
+          "deaths": 4105,
           "hospitalized": 1927
         }
       },
       {
         "date": "2020-05-22",
         "value": {
-          "cases": 33185,
-          "deaths": 4069,
+          "cases": 33179,
+          "deaths": 4130,
           "hospitalized": 1940
         }
       },
       {
         "date": "2020-05-23",
         "value": {
-          "cases": 33588,
-          "deaths": 4084,
+          "cases": 33582,
+          "deaths": 4157,
           "hospitalized": 1952
         }
       },
       {
         "date": "2020-05-24",
         "value": {
-          "cases": 33799,
-          "deaths": 4092,
+          "cases": 33792,
+          "deaths": 4174,
           "hospitalized": 1968
         }
       },
       {
         "date": "2020-05-25",
         "value": {
-          "cases": 34251,
-          "deaths": 4104,
-          "hospitalized": 1986
+          "cases": 34246,
+          "deaths": 4190,
+          "hospitalized": 1993
         }
       },
       {
         "date": "2020-05-26",
         "value": {
-          "cases": 34440,
-          "deaths": 4106,
-          "hospitalized": 1987
+          "cases": 34931,
+          "deaths": 4200,
+          "hospitalized": 2000
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 35088,
+          "deaths": 4201,
+          "hospitalized": 2002
         }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "hospitalized": 125
+      "cases": 126,
+      "deaths": 126,
+      "hospitalized": 126
     },
     "highest": {
-      "cases": 34440,
-      "deaths": 4106,
-      "hospitalized": 1987
+      "cases": 35088,
+      "deaths": 4201,
+      "hospitalized": 2002
     },
     "meta": {
       "country": {
@@ -5815,24 +5854,34 @@
       {
         "date": "2020-05-26",
         "value": {
-          "cases": 1469,
+          "cases": 1471,
           "deaths": 108,
           "recovered": 38,
-          "active": 1323,
+          "active": 1325,
           "hospitalized": 372
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1471,
+          "deaths": 108,
+          "recovered": 38,
+          "active": 1325,
+          "hospitalized": 373
         }
       }
     ],
     "latest": {
-      "cases": 125,
-      "hospitalized": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "hospitalized": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1469,
-      "hospitalized": 372,
+      "cases": 1471,
+      "hospitalized": 373,
       "deaths": 108,
       "recovered": 38,
       "active": 1326
@@ -6756,17 +6805,25 @@
           "cases": 3324,
           "deaths": 129
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3397,
+          "deaths": 129,
+          "tested": 2137
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "tested": 124
+      "cases": 126,
+      "deaths": 126,
+      "tested": 126
     },
     "highest": {
-      "cases": 3324,
+      "cases": 3397,
       "deaths": 129,
-      "tested": 2020
+      "tested": 2137
     },
     "meta": {
       "country": {
@@ -7667,17 +7724,25 @@
           "cases": 1672920,
           "deaths": 98761
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1689630,
+          "deaths": 94352,
+          "tested": 15195613
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "tested": 124
+      "cases": 126,
+      "deaths": 126,
+      "tested": 126
     },
     "highest": {
-      "cases": 1672920,
+      "cases": 1689630,
       "deaths": 98761,
-      "tested": 14608310
+      "tested": 15195613
     },
     "meta": {
       "country": {
@@ -8829,19 +8894,28 @@
           "recovered": 1128,
           "active": 10483
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 12456,
+          "deaths": 227,
+          "recovered": 1138,
+          "active": 11091
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 11831,
-      "deaths": 220,
-      "recovered": 1128,
-      "active": 10483
+      "cases": 12456,
+      "deaths": 227,
+      "recovered": 1138,
+      "active": 11091
     },
     "meta": {
       "country": {
@@ -9992,18 +10066,27 @@
           "recovered": 803,
           "active": 193
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1050,
+          "deaths": 33,
+          "recovered": 812,
+          "active": 205
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1029,
+      "cases": 1050,
       "deaths": 33,
-      "recovered": 803,
+      "recovered": 812,
       "active": 289
     },
     "meta": {
@@ -11155,18 +11238,27 @@
           "recovered": 4918,
           "active": 3162
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 8857,
+          "deaths": 623,
+          "recovered": 5129,
+          "active": 3105
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 8697,
-      "deaths": 617,
-      "recovered": 4918,
+      "cases": 8857,
+      "deaths": 623,
+      "recovered": 5129,
       "active": 3162
     },
     "meta": {
@@ -12318,13 +12410,22 @@
           "recovered": 676,
           "active": 36
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 763,
+          "deaths": 51,
+          "recovered": 676,
+          "active": 36
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 763,
@@ -13481,19 +13582,28 @@
           "recovered": 4167,
           "active": 8577
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 13933,
+          "deaths": 500,
+          "recovered": 4349,
+          "active": 9084
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 13228,
-      "deaths": 484,
-      "recovered": 4167,
-      "active": 8577
+      "cases": 13933,
+      "deaths": 500,
+      "recovered": 4349,
+      "active": 9084
     },
     "meta": {
       "country": {
@@ -14644,19 +14754,28 @@
           "recovered": 3220,
           "active": 4091
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7774,
+          "deaths": 98,
+          "recovered": 3255,
+          "active": 4421
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7402,
-      "deaths": 91,
-      "recovered": 3220,
-      "active": 4091
+      "cases": 7774,
+      "deaths": 98,
+      "recovered": 3255,
+      "active": 4421
     },
     "meta": {
       "country": {
@@ -15681,18 +15800,27 @@
           "recovered": 15182,
           "active": 732
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 16541,
+          "deaths": 638,
+          "recovered": 15228,
+          "active": 675
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 16557,
       "deaths": 643,
-      "recovered": 15182,
+      "recovered": 15228,
       "active": 5905
     },
     "meta": {
@@ -16844,19 +16972,28 @@
           "recovered": 2819,
           "active": 1532
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 4568,
+          "deaths": 54,
+          "recovered": 2897,
+          "active": 1617
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 4403,
-      "deaths": 52,
-      "recovered": 2819,
-      "active": 1532
+      "cases": 4568,
+      "deaths": 54,
+      "recovered": 2897,
+      "active": 1617
     },
     "meta": {
       "country": {
@@ -18007,18 +18144,27 @@
           "recovered": 4938,
           "active": 4414
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 9692,
+          "deaths": 15,
+          "recovered": 5152,
+          "active": 4525
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 9366,
-      "deaths": 14,
-      "recovered": 4938,
+      "cases": 9692,
+      "deaths": 15,
+      "recovered": 5152,
       "active": 4568
     },
     "meta": {
@@ -19170,19 +19316,28 @@
           "recovered": 7579,
           "active": 28650
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 38292,
+          "deaths": 544,
+          "recovered": 7925,
+          "active": 29823
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 36751,
-      "deaths": 522,
-      "recovered": 7579,
-      "active": 28650
+      "cases": 38292,
+      "deaths": 544,
+      "recovered": 7925,
+      "active": 29823
     },
     "meta": {
       "country": {
@@ -20333,19 +20488,28 @@
           "recovered": 15086,
           "active": 22765
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 38956,
+          "deaths": 214,
+          "recovered": 15923,
+          "active": 22819
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 38059,
-      "deaths": 208,
-      "recovered": 15086,
-      "active": 22765
+      "cases": 38956,
+      "deaths": 214,
+      "recovered": 15923,
+      "active": 22819
     },
     "meta": {
       "country": {
@@ -21496,18 +21660,27 @@
           "recovered": 118,
           "active": 87
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 210,
+          "deaths": 3,
+          "recovered": 134,
+          "active": 73
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 339,
       "deaths": 3,
-      "recovered": 118,
+      "recovered": 134,
       "active": 255
     },
     "meta": {
@@ -22659,19 +22832,28 @@
           "recovered": 677,
           "active": 6185
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7768,
+          "deaths": 280,
+          "recovered": 689,
+          "active": 6799
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7136,
-      "deaths": 274,
-      "recovered": 677,
-      "active": 6185
+      "cases": 7768,
+      "deaths": 280,
+      "recovered": 689,
+      "active": 6799
     },
     "meta": {
       "country": {
@@ -23822,18 +24004,27 @@
           "recovered": 1721,
           "active": 546
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2435,
+          "deaths": 151,
+          "recovered": 1744,
+          "active": 540
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2416,
-      "deaths": 149,
-      "recovered": 1721,
+      "cases": 2435,
+      "deaths": 151,
+      "recovered": 1744,
       "active": 1012
     },
     "meta": {
@@ -24899,19 +25090,28 @@
           "recovered": 158593,
           "active": 208117
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 411821,
+          "deaths": 25598,
+          "recovered": 166647,
+          "active": 219576
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 391222,
-      "deaths": 24512,
-      "recovered": 158593,
-      "active": 208117
+      "cases": 411821,
+      "deaths": 25598,
+      "recovered": 166647,
+      "active": 219576
     },
     "meta": {
       "country": {
@@ -26062,18 +26262,27 @@
           "recovered": 880,
           "active": 1433
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2460,
+          "deaths": 133,
+          "recovered": 912,
+          "active": 1415
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2443,
-      "deaths": 130,
-      "recovered": 880,
+      "cases": 2460,
+      "deaths": 133,
+      "recovered": 912,
       "active": 1513
     },
     "meta": {
@@ -27225,17 +27434,26 @@
           "recovered": 672,
           "active": 108
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 845,
+          "deaths": 53,
+          "recovered": 672,
+          "active": 120
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 832,
-      "deaths": 52,
+      "cases": 845,
+      "deaths": 53,
       "recovered": 672,
       "active": 321
     },
@@ -28388,13 +28606,22 @@
           "recovered": 155,
           "active": 231
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 390,
+          "deaths": 4,
+          "recovered": 155,
+          "active": 231
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 390,
@@ -29551,13 +29778,22 @@
           "recovered": 1996,
           "active": 3265
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 5436,
+          "deaths": 175,
+          "recovered": 1996,
+          "active": 3265
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 5436,
@@ -30714,19 +30950,28 @@
           "recovered": 22,
           "active": 648
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 702,
+          "deaths": 1,
+          "recovered": 23,
+          "active": 678
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 671,
+      "cases": 702,
       "deaths": 1,
-      "recovered": 22,
-      "active": 648
+      "recovered": 23,
+      "active": 678
     },
     "meta": {
       "country": {
@@ -31877,18 +32122,27 @@
           "recovered": 303,
           "active": 335
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 715,
+          "deaths": 64,
+          "recovered": 359,
+          "active": 292
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 700,
-      "deaths": 62,
-      "recovered": 303,
+      "cases": 715,
+      "deaths": 64,
+      "recovered": 359,
       "active": 400
     },
     "meta": {
@@ -33040,19 +33294,28 @@
           "recovered": 30915,
           "active": 46240
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 82289,
+          "deaths": 841,
+          "recovered": 33540,
+          "active": 47908
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 77961,
-      "deaths": 806,
-      "recovered": 30915,
-      "active": 46240
+      "cases": 82289,
+      "deaths": 841,
+      "recovered": 33540,
+      "active": 47908
     },
     "meta": {
       "country": {
@@ -34203,19 +34466,28 @@
           "recovered": 5511,
           "active": 16716
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 24104,
+          "deaths": 803,
+          "recovered": 6111,
+          "active": 17190
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 23003,
-      "deaths": 776,
-      "recovered": 5511,
-      "active": 16716
+      "cases": 24104,
+      "deaths": 803,
+      "recovered": 6111,
+      "active": 17190
     },
     "meta": {
       "country": {
@@ -35366,19 +35638,28 @@
           "recovered": 147,
           "active": 324
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 571,
+          "deaths": 19,
+          "recovered": 161,
+          "active": 391
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 487,
-      "deaths": 16,
-      "recovered": 147,
-      "active": 324
+      "cases": 571,
+      "deaths": 19,
+      "recovered": 161,
+      "active": 391
     },
     "meta": {
       "country": {
@@ -36529,19 +36810,28 @@
           "recovered": 340,
           "active": 1995
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2546,
+          "deaths": 68,
+          "recovered": 365,
+          "active": 2113
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2403,
+      "cases": 2546,
       "deaths": 68,
-      "recovered": 340,
-      "active": 1995
+      "recovered": 365,
+      "active": 2113
     },
     "meta": {
       "country": {
@@ -37692,18 +37982,27 @@
           "recovered": 634,
           "active": 312
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 984,
+          "deaths": 10,
+          "recovered": 639,
+          "active": 335
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 956,
+      "cases": 984,
       "deaths": 10,
-      "recovered": 634,
+      "recovered": 639,
       "active": 564
     },
     "meta": {
@@ -38855,19 +39154,28 @@
           "recovered": 1286,
           "active": 1161
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2556,
+          "deaths": 31,
+          "recovered": 1302,
+          "active": 1223
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2477,
-      "deaths": 30,
-      "recovered": 1286,
-      "active": 1172
+      "cases": 2556,
+      "deaths": 31,
+      "recovered": 1302,
+      "active": 1223
     },
     "meta": {
       "country": {
@@ -40018,18 +40326,27 @@
           "recovered": 2046,
           "active": 97
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2244,
+          "deaths": 101,
+          "recovered": 2047,
+          "active": 96
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 2244,
       "deaths": 101,
-      "recovered": 2046,
+      "recovered": 2047,
       "active": 1258
     },
     "meta": {
@@ -41181,18 +41498,27 @@
           "recovered": 1709,
           "active": 172
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1974,
+          "deaths": 82,
+          "recovered": 1724,
+          "active": 168
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1963,
+      "cases": 1974,
       "deaths": 82,
-      "recovered": 1709,
+      "recovered": 1724,
       "active": 849
     },
     "meta": {
@@ -42003,83 +42329,90 @@
       {
         "date": "2020-05-17",
         "value": {
-          "cases": 8302,
+          "cases": 8303,
           "tested": 356759
         }
       },
       {
         "date": "2020-05-18",
         "value": {
-          "cases": 8367,
+          "cases": 8368,
           "tested": 364214
         }
       },
       {
         "date": "2020-05-19",
         "value": {
-          "cases": 8447,
+          "cases": 8448,
           "tested": 372534
         }
       },
       {
         "date": "2020-05-20",
         "value": {
-          "cases": 8509,
+          "cases": 8510,
           "tested": 380050
         }
       },
       {
         "date": "2020-05-21",
         "value": {
-          "cases": 8562,
+          "cases": 8563,
           "tested": 387337
         }
       },
       {
         "date": "2020-05-22",
         "value": {
-          "cases": 8602,
+          "cases": 8603,
           "tested": 395066
         }
       },
       {
         "date": "2020-05-23",
         "value": {
-          "cases": 8666,
+          "cases": 8669,
           "tested": 400112
         }
       },
       {
         "date": "2020-05-24",
         "value": {
-          "cases": 8708,
+          "cases": 8714,
           "tested": 403722
         }
       },
       {
         "date": "2020-05-25",
         "value": {
-          "cases": 8751,
+          "cases": 8761,
           "tested": 411120
         }
       },
       {
         "date": "2020-05-26",
         "value": {
-          "cases": 8782,
+          "cases": 8808,
+          "tested": 417422
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 8834,
           "tested": 417422
         }
       }
     ],
     "latest": {
-      "cases": 125,
+      "cases": 126,
       "deaths": 4,
       "recovered": 4,
       "active": 4,
-      "tested": 125
+      "tested": 126
     },
     "highest": {
-      "cases": 8782,
+      "cases": 8834,
       "deaths": 0,
       "recovered": 0,
       "active": 0,
@@ -43234,18 +43567,27 @@
           "recovered": 10044,
           "active": 821
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 11480,
+          "deaths": 565,
+          "recovered": 10106,
+          "active": 809
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 11428,
-      "deaths": 563,
-      "recovered": 10044,
+      "cases": 11480,
+      "deaths": 565,
+      "recovered": 10106,
       "active": 3799
     },
     "meta": {
@@ -44397,19 +44739,28 @@
           "recovered": 1079,
           "active": 1375
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2697,
+          "deaths": 18,
+          "recovered": 1185,
+          "active": 1494
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2468,
-      "deaths": 14,
-      "recovered": 1079,
-      "active": 1375
+      "cases": 2697,
+      "deaths": 18,
+      "recovered": 1185,
+      "active": 1494
     },
     "meta": {
       "country": {
@@ -45560,18 +45911,27 @@
           "recovered": 8534,
           "active": 6262
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 15723,
+          "deaths": 474,
+          "recovered": 8790,
+          "active": 6459
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 15264,
-      "deaths": 468,
-      "recovered": 8534,
+      "cases": 15723,
+      "deaths": 474,
+      "recovered": 8790,
       "active": 7956
     },
     "meta": {
@@ -46723,18 +47083,27 @@
           "recovered": 18003,
           "active": 16149
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 38103,
+          "deaths": 3275,
+          "recovered": 18425,
+          "active": 16403
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 37355,
-      "deaths": 3203,
-      "recovered": 18003,
+      "cases": 38103,
+      "deaths": 3275,
+      "recovered": 18425,
       "active": 30088
     },
     "meta": {
@@ -47886,19 +48255,28 @@
           "recovered": 5027,
           "active": 12932
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 19666,
+          "deaths": 816,
+          "recovered": 5205,
+          "active": 13645
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 18756,
-      "deaths": 797,
-      "recovered": 5027,
-      "active": 12932
+      "cases": 19666,
+      "deaths": 816,
+      "recovered": 5205,
+      "active": 13645
     },
     "meta": {
       "country": {
@@ -49049,18 +49427,27 @@
           "recovered": 787,
           "active": 1219
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2109,
+          "deaths": 39,
+          "recovered": 891,
+          "active": 1179
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2042,
-      "deaths": 36,
-      "recovered": 787,
+      "cases": 2109,
+      "deaths": 39,
+      "recovered": 891,
       "active": 1247
     },
     "meta": {
@@ -50212,13 +50599,22 @@
           "recovered": 165,
           "active": 866
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1043,
+          "deaths": 12,
+          "recovered": 165,
+          "active": 866
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 1043,
@@ -51130,14 +51526,21 @@
           "cases": 1840,
           "tested": 79606
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1840,
+          "tested": 79606
+        }
       }
     ],
     "latest": {
-      "cases": 125,
+      "cases": 126,
       "deaths": 13,
       "recovered": 13,
       "active": 13,
-      "tested": 125
+      "tested": 126
     },
     "highest": {
       "cases": 1840,
@@ -52295,18 +52698,27 @@
           "recovered": 164,
           "active": 95
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 272,
+          "deaths": 2,
+          "recovered": 168,
+          "active": 102
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 261,
+      "cases": 272,
       "deaths": 2,
-      "recovered": 164,
+      "recovered": 168,
       "active": 154
     },
     "meta": {
@@ -53458,19 +53870,28 @@
           "recovered": 167,
           "active": 528
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 731,
+          "deaths": 6,
+          "recovered": 181,
+          "active": 544
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 701,
+      "cases": 731,
       "deaths": 6,
-      "recovered": 167,
-      "active": 528
+      "recovered": 181,
+      "active": 544
     },
     "meta": {
       "country": {
@@ -54621,17 +55042,26 @@
           "recovered": 5100,
           "active": 1216
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 6692,
+          "deaths": 313,
+          "recovered": 5100,
+          "active": 1279
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 6628,
-      "deaths": 312,
+      "cases": 6692,
+      "deaths": 313,
       "recovered": 5100,
       "active": 2865
     },
@@ -55743,19 +56173,19 @@
       {
         "date": "2020-05-22",
         "value": {
-          "cases": 179306,
-          "deaths": 28167,
-          "recovered": 62216,
-          "active": 88923
+          "cases": 179645,
+          "deaths": 28241,
+          "recovered": 62557,
+          "active": 88847
         }
       },
       {
         "date": "2020-05-23",
         "value": {
-          "cases": 179306,
-          "deaths": 28167,
-          "recovered": 62216,
-          "active": 88923
+          "cases": 179964,
+          "deaths": 28284,
+          "recovered": 62893,
+          "active": 88787
         }
       },
       {
@@ -55784,18 +56214,27 @@
           "recovered": 64222,
           "active": 87185
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 180044,
+          "deaths": 28546,
+          "recovered": 64503,
+          "active": 86995
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 180166,
-      "deaths": 28480,
-      "recovered": 64222,
+      "deaths": 28546,
+      "recovered": 64503,
       "active": 97979
     },
     "meta": {
@@ -56947,19 +57386,28 @@
           "recovered": 593,
           "active": 1631
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2319,
+          "deaths": 14,
+          "recovered": 631,
+          "active": 1674
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2238,
+      "cases": 2319,
       "deaths": 14,
-      "recovered": 593,
-      "active": 1631
+      "recovered": 631,
+      "active": 1674
     },
     "meta": {
       "country": {
@@ -58110,18 +58558,27 @@
           "recovered": 537,
           "active": 183
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 735,
+          "deaths": 12,
+          "recovered": 557,
+          "active": 166
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 732,
+      "cases": 735,
       "deaths": 12,
-      "recovered": 537,
+      "recovered": 557,
       "active": 367
     },
     "meta": {
@@ -59273,18 +59730,27 @@
           "recovered": 161967,
           "active": 10861
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 181524,
+          "deaths": 8428,
+          "recovered": 162820,
+          "active": 10276
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 181200,
-      "deaths": 8372,
-      "recovered": 161967,
+      "cases": 181524,
+      "deaths": 8428,
+      "recovered": 162820,
       "active": 72864
     },
     "meta": {
@@ -60436,18 +60902,27 @@
           "recovered": 2317,
           "active": 4766
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7303,
+          "deaths": 34,
+          "recovered": 2412,
+          "active": 4857
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7117,
+      "cases": 7303,
       "deaths": 34,
-      "recovered": 2317,
+      "recovered": 2412,
       "active": 4870
     },
     "meta": {
@@ -61599,16 +62074,25 @@
           "recovered": 1374,
           "active": 1345
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2903,
+          "deaths": 173,
+          "recovered": 1374,
+          "active": 1356
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2892,
+      "cases": 2903,
       "deaths": 173,
       "recovered": 1374,
       "active": 1860
@@ -62762,18 +63246,27 @@
           "recovered": 289,
           "active": 3602
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 4145,
+          "deaths": 68,
+          "recovered": 493,
+          "active": 3584
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3954,
-      "deaths": 63,
-      "recovered": 289,
+      "cases": 4145,
+      "deaths": 68,
+      "recovered": 493,
       "active": 3602
     },
     "meta": {
@@ -63925,13 +64418,22 @@
           "recovered": 1673,
           "active": 1582
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3275,
+          "deaths": 20,
+          "recovered": 1673,
+          "active": 1582
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 3275,
@@ -65088,19 +65590,28 @@
           "recovered": 22,
           "active": 1119
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1320,
+          "deaths": 34,
+          "recovered": 22,
+          "active": 1264
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1174,
-      "deaths": 33,
+      "cases": 1320,
+      "deaths": 34,
       "recovered": 29,
-      "active": 1119
+      "active": 1264
     },
     "meta": {
       "country": {
@@ -66251,19 +66762,28 @@
           "recovered": 493,
           "active": 3720
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 4640,
+          "deaths": 194,
+          "recovered": 506,
+          "active": 3940
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 4401,
-      "deaths": 188,
-      "recovered": 493,
-      "active": 3720
+      "cases": 4640,
+      "deaths": 194,
+      "recovered": 506,
+      "active": 3940
     },
     "meta": {
       "country": {
@@ -67414,18 +67934,27 @@
           "recovered": 1836,
           "active": 1436
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3793,
+          "deaths": 505,
+          "recovered": 1856,
+          "active": 1432
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3771,
-      "deaths": 499,
-      "recovered": 1836,
+      "cases": 3793,
+      "deaths": 505,
+      "recovered": 1856,
       "active": 2054
     },
     "meta": {
@@ -68577,16 +69106,25 @@
           "recovered": 1792,
           "active": 2
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1805,
+          "deaths": 10,
+          "recovered": 1792,
+          "active": 3
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1804,
+      "cases": 1805,
       "deaths": 10,
       "recovered": 1792,
       "active": 1096
@@ -69740,19 +70278,28 @@
           "recovered": 64277,
           "active": 82172
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 158086,
+          "deaths": 4534,
+          "recovered": 67749,
+          "active": 85803
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 150793,
-      "deaths": 4344,
-      "recovered": 64277,
-      "active": 82172
+      "cases": 158086,
+      "deaths": 4534,
+      "recovered": 67749,
+      "active": 85803
     },
     "meta": {
       "country": {
@@ -70903,19 +71450,28 @@
           "recovered": 5877,
           "active": 15870
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 23851,
+          "deaths": 1473,
+          "recovered": 6057,
+          "active": 16321
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 23165,
-      "deaths": 1418,
-      "recovered": 5877,
-      "active": 15870
+      "cases": 23851,
+      "deaths": 1473,
+      "recovered": 6057,
+      "active": 16321
     },
     "meta": {
       "country": {
@@ -72066,18 +72622,27 @@
           "recovered": 109437,
           "active": 22566
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 141591,
+          "deaths": 7564,
+          "recovered": 111176,
+          "active": 22851
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 139511,
-      "deaths": 7508,
-      "recovered": 109437,
+      "cases": 141591,
+      "deaths": 7564,
+      "recovered": 111176,
       "active": 34887
     },
     "meta": {
@@ -73229,19 +73794,28 @@
           "recovered": 2852,
           "active": 1827
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 5135,
+          "deaths": 175,
+          "recovered": 2904,
+          "active": 2056
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 4848,
-      "deaths": 169,
-      "recovered": 2852,
-      "active": 1827
+      "cases": 5135,
+      "deaths": 175,
+      "recovered": 2904,
+      "active": 2056
     },
     "meta": {
       "country": {
@@ -74392,18 +74966,27 @@
           "recovered": 21060,
           "active": 2060
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 24803,
+          "deaths": 1631,
+          "recovered": 22089,
+          "active": 1083
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 24735,
-      "deaths": 1615,
-      "recovered": 21060,
+      "cases": 24803,
+      "deaths": 1631,
+      "recovered": 22089,
       "active": 14888
     },
     "meta": {
@@ -75555,18 +76138,27 @@
           "recovered": 14457,
           "active": 2019
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 16793,
+          "deaths": 281,
+          "recovered": 14570,
+          "active": 1942
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 16757,
+      "cases": 16793,
       "deaths": 281,
-      "recovered": 14457,
+      "recovered": 14570,
       "active": 9808
     },
     "meta": {
@@ -76718,18 +77310,27 @@
           "recovered": 267,
           "active": 288
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 569,
+          "deaths": 9,
+          "recovered": 279,
+          "active": 281
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 564,
+      "cases": 569,
       "deaths": 9,
-      "recovered": 267,
+      "recovered": 279,
       "active": 424
     },
     "meta": {
@@ -77767,10 +78368,16 @@
           "recovered": 13810,
           "active": 1967
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 10000
+        }
       }
     ],
     "latest": {
-      "cases": 125,
+      "cases": 126,
       "deaths": 125,
       "recovered": 125,
       "active": 125
@@ -78930,16 +79537,25 @@
           "recovered": 586,
           "active": 123
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 720,
+          "deaths": 9,
+          "recovered": 586,
+          "active": 125
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 718,
+      "cases": 720,
       "deaths": 9,
       "recovered": 586,
       "active": 249
@@ -80093,19 +80709,28 @@
           "recovered": 4613,
           "active": 4319
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 9304,
+          "deaths": 37,
+          "recovered": 4768,
+          "active": 4499
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 8969,
+      "cases": 9304,
       "deaths": 37,
-      "recovered": 4613,
-      "active": 4419
+      "recovered": 4768,
+      "active": 4499
     },
     "meta": {
       "country": {
@@ -81256,19 +81881,28 @@
           "recovered": 405,
           "active": 891
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1471,
+          "deaths": 55,
+          "recovered": 408,
+          "active": 1008
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1348,
-      "deaths": 52,
-      "recovered": 405,
-      "active": 891
+      "cases": 1471,
+      "deaths": 55,
+      "recovered": 408,
+      "active": 1008
     },
     "meta": {
       "country": {
@@ -82419,18 +83053,27 @@
           "recovered": 10295,
           "active": 701
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 11344,
+          "deaths": 269,
+          "recovered": 10340,
+          "active": 735
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 11265,
+      "cases": 11344,
       "deaths": 269,
-      "recovered": 10295,
+      "recovered": 10340,
       "active": 7577
     },
     "meta": {
@@ -83582,18 +84225,27 @@
           "recovered": 7306,
           "active": 15097
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 23267,
+          "deaths": 175,
+          "recovered": 7946,
+          "active": 15146
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 22575,
-      "deaths": 172,
-      "recovered": 7306,
+      "cases": 23267,
+      "deaths": 175,
+      "recovered": 7946,
       "active": 15181
     },
     "meta": {
@@ -84745,19 +85397,28 @@
           "recovered": 1015,
           "active": 437
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1520,
+          "deaths": 16,
+          "recovered": 1043,
+          "active": 461
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1468,
+      "cases": 1520,
       "deaths": 16,
-      "recovered": 1015,
-      "active": 437
+      "recovered": 1043,
+      "active": 461
     },
     "meta": {
       "country": {
@@ -85908,17 +86569,26 @@
           "recovered": 741,
           "active": 290
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1057,
+          "deaths": 23,
+          "recovered": 741,
+          "active": 293
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1053,
-      "deaths": 22,
+      "cases": 1057,
+      "deaths": 23,
       "recovered": 741,
       "active": 646
     },
@@ -87071,18 +87741,27 @@
           "recovered": 689,
           "active": 425
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1161,
+          "deaths": 26,
+          "recovered": 692,
+          "active": 443
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1140,
+      "cases": 1161,
       "deaths": 26,
-      "recovered": 689,
+      "recovered": 692,
       "active": 684
     },
     "meta": {
@@ -88234,17 +88913,26 @@
           "recovered": 144,
           "active": 96
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 266,
+          "deaths": 27,
+          "recovered": 144,
+          "active": 95
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 266,
-      "deaths": 26,
+      "deaths": 27,
       "recovered": 144,
       "active": 106
     },
@@ -89397,18 +90085,27 @@
           "recovered": 1165,
           "active": 409
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1647,
+          "deaths": 66,
+          "recovered": 1184,
+          "active": 397
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1639,
-      "deaths": 65,
-      "recovered": 1165,
+      "cases": 1647,
+      "deaths": 66,
+      "recovered": 1184,
       "active": 1047
     },
     "meta": {
@@ -90560,18 +91257,27 @@
           "recovered": 3783,
           "active": 102
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 4001,
+          "deaths": 110,
+          "recovered": 3791,
+          "active": 100
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3995,
+      "cases": 4001,
       "deaths": 110,
-      "recovered": 3783,
+      "recovered": 3791,
       "active": 2870
     },
     "meta": {
@@ -91723,19 +92429,28 @@
           "recovered": 147,
           "active": 437
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 612,
+          "deaths": 2,
+          "recovered": 151,
+          "active": 459
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 586,
+      "cases": 612,
       "deaths": 2,
-      "recovered": 147,
-      "active": 437
+      "recovered": 151,
+      "active": 459
     },
     "meta": {
       "country": {
@@ -92886,18 +93601,27 @@
           "recovered": 6041,
           "active": 1448
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7619,
+          "deaths": 115,
+          "recovered": 6083,
+          "active": 1421
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7604,
+      "cases": 7619,
       "deaths": 115,
-      "recovered": 6041,
+      "recovered": 6083,
       "active": 2596
     },
     "meta": {
@@ -94049,19 +94773,28 @@
           "recovered": 197,
           "active": 1236
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1457,
+          "deaths": 5,
+          "recovered": 197,
+          "active": 1255
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1438,
+      "cases": 1457,
       "deaths": 5,
       "recovered": 197,
-      "active": 1236
+      "active": 1255
     },
     "meta": {
       "country": {
@@ -95212,18 +95945,27 @@
           "recovered": 485,
           "active": 120
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 612,
+          "deaths": 7,
+          "recovered": 491,
+          "active": 114
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 611,
-      "deaths": 6,
-      "recovered": 485,
+      "cases": 612,
+      "deaths": 7,
+      "recovered": 491,
       "active": 352
     },
     "meta": {
@@ -96375,19 +97117,28 @@
           "recovered": 15,
           "active": 240
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 292,
+          "deaths": 16,
+          "recovered": 15,
+          "active": 261
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 268,
-      "deaths": 13,
+      "cases": 292,
+      "deaths": 16,
       "recovered": 15,
-      "active": 240
+      "active": 261
     },
     "meta": {
       "country": {
@@ -97538,13 +98289,22 @@
           "recovered": 322,
           "active": 2
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 334,
+          "deaths": 10,
+          "recovered": 322,
+          "active": 2
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 334,
@@ -98701,19 +99461,28 @@
           "recovered": 51708,
           "active": 14718
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 78023,
+          "deaths": 8597,
+          "recovered": 53834,
+          "active": 15592
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 74560,
-      "deaths": 8134,
-      "recovered": 51708,
-      "active": 14718
+      "cases": 78023,
+      "deaths": 8597,
+      "recovered": 53834,
+      "active": 15592
     },
     "meta": {
       "country": {
@@ -99864,17 +100633,26 @@
           "recovered": 3884,
           "active": 3154
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7537,
+          "deaths": 274,
+          "recovered": 3884,
+          "active": 3379
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7305,
-      "deaths": 267,
+      "cases": 7537,
+      "deaths": 274,
       "recovered": 3884,
       "active": 3611
     },
@@ -101027,13 +101805,22 @@
           "recovered": 315,
           "active": 0
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 324,
+          "deaths": 9,
+          "recovered": 315,
+          "active": 0
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 324,
@@ -102190,18 +102977,27 @@
           "recovered": 4881,
           "active": 2494
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7601,
+          "deaths": 202,
+          "recovered": 4978,
+          "active": 2421
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7577,
+      "cases": 7601,
       "deaths": 202,
-      "recovered": 4881,
+      "recovered": 4978,
       "active": 3321
     },
     "meta": {
@@ -103353,19 +104149,28 @@
           "recovered": 155,
           "active": 613
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 886,
+          "deaths": 4,
+          "recovered": 183,
+          "active": 699
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 772,
+      "cases": 886,
       "deaths": 4,
-      "recovered": 155,
-      "active": 613
+      "recovered": 183,
+      "active": 699
     },
     "meta": {
       "country": {
@@ -104426,21 +105231,29 @@
           "deaths": 5856,
           "hospitalized": 11690
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 45768,
+          "deaths": 5871,
+          "hospitalized": 11697
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
+      "cases": 126,
+      "deaths": 126,
       "recovered": 35,
       "active": 35,
-      "hospitalized": 125
+      "hospitalized": 126
     },
     "highest": {
-      "cases": 45578,
-      "deaths": 5856,
+      "cases": 45768,
+      "deaths": 5871,
       "recovered": 0,
       "active": 0,
-      "hospitalized": 11690
+      "hospitalized": 11697
     },
     "meta": {
       "country": {
@@ -105591,18 +106404,27 @@
           "recovered": 1462,
           "active": 21
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1504,
+          "deaths": 22,
+          "recovered": 1474,
+          "active": 8
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 1504,
-      "deaths": 21,
-      "recovered": 1462,
+      "deaths": 22,
+      "recovered": 1474,
       "active": 927
     },
     "meta": {
@@ -106754,13 +107576,22 @@
           "recovered": 370,
           "active": 354
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 759,
+          "deaths": 35,
+          "recovered": 370,
+          "active": 354
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 759,
@@ -107917,13 +108748,22 @@
           "recovered": 796,
           "active": 93
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 952,
+          "deaths": 63,
+          "recovered": 796,
+          "active": 93
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 952,
@@ -109080,19 +109920,28 @@
           "recovered": 2385,
           "active": 5710
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 8733,
+          "deaths": 254,
+          "recovered": 2501,
+          "active": 5978
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 8344,
-      "deaths": 249,
-      "recovered": 2385,
-      "active": 5710
+      "cases": 8733,
+      "deaths": 254,
+      "recovered": 2501,
+      "active": 5978
     },
     "meta": {
       "country": {
@@ -110243,18 +111092,27 @@
           "recovered": 1453,
           "active": 445
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 2039,
+          "deaths": 119,
+          "recovered": 1470,
+          "active": 450
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 2014,
-      "deaths": 116,
-      "recovered": 1453,
+      "cases": 2039,
+      "deaths": 119,
+      "recovered": 1470,
       "active": 977
     },
     "meta": {
@@ -111406,16 +112264,25 @@
           "recovered": 7727,
           "active": 421
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 8401,
+          "deaths": 235,
+          "recovered": 7727,
+          "active": 439
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 8383,
+      "cases": 8401,
       "deaths": 235,
       "recovered": 7727,
       "active": 8042
@@ -112569,19 +113436,28 @@
           "recovered": 2067,
           "active": 6014
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 8373,
+          "deaths": 39,
+          "recovered": 2177,
+          "active": 6157
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 8118,
-      "deaths": 37,
-      "recovered": 2067,
-      "active": 6014
+      "cases": 8373,
+      "deaths": 39,
+      "recovered": 2177,
+      "active": 6157
     },
     "meta": {
       "country": {
@@ -113732,19 +114608,28 @@
           "recovered": 18314,
           "active": 38194
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 59151,
+          "deaths": 1225,
+          "recovered": 19142,
+          "active": 38784
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 57705,
-      "deaths": 1197,
-      "recovered": 18314,
-      "active": 38194
+      "cases": 59151,
+      "deaths": 1225,
+      "recovered": 19142,
+      "active": 38784
     },
     "meta": {
       "country": {
@@ -114925,19 +115810,28 @@
           "recovered": 6379,
           "active": 4755
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 11728,
+          "deaths": 315,
+          "recovered": 7379,
+          "active": 4034
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125,
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126,
       "hospitalized": 88
     },
     "highest": {
-      "cases": 11447,
-      "deaths": 313,
-      "recovered": 6379,
+      "cases": 11728,
+      "deaths": 315,
+      "recovered": 7379,
       "active": 6953,
       "hospitalized": 249
     },
@@ -116090,18 +116984,27 @@
           "recovered": 382,
           "active": 484
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 884,
+          "deaths": 11,
+          "recovered": 392,
+          "active": 481
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 877,
+      "cases": 884,
       "deaths": 11,
-      "recovered": 382,
+      "recovered": 392,
       "active": 588
     },
     "meta": {
@@ -117253,19 +118156,28 @@
           "recovered": 52906,
           "active": 73057
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 135905,
+          "deaths": 3983,
+          "recovered": 56169,
+          "active": 75753
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 129751,
-      "deaths": 3788,
-      "recovered": 52906,
-      "active": 73057
+      "cases": 135905,
+      "deaths": 3983,
+      "recovered": 56169,
+      "active": 75753
     },
     "meta": {
       "country": {
@@ -118416,19 +119328,28 @@
           "recovered": 3412,
           "active": 10371
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 15049,
+          "deaths": 904,
+          "recovered": 3506,
+          "active": 10639
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 14669,
-      "deaths": 886,
-      "recovered": 3412,
-      "active": 10371
+      "cases": 15049,
+      "deaths": 904,
+      "recovered": 3506,
+      "active": 10639
     },
     "meta": {
       "country": {
@@ -119419,17 +120340,24 @@
           "recovered": 10020,
           "active": 11030
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 22473,
+          "deaths": 1028
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
+      "cases": 126,
+      "deaths": 126,
       "recovered": 125,
       "active": 125
     },
     "highest": {
-      "cases": 22074,
-      "deaths": 1024,
+      "cases": 22473,
+      "deaths": 1028,
       "recovered": 10020,
       "active": 11030
     },
@@ -120582,18 +121510,27 @@
           "recovered": 18096,
           "active": 11569
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 31292,
+          "deaths": 1356,
+          "recovered": 18349,
+          "active": 11587
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 31007,
-      "deaths": 1342,
-      "recovered": 18096,
+      "cases": 31292,
+      "deaths": 1356,
+      "recovered": 18349,
       "active": 24065
     },
     "meta": {
@@ -121745,19 +122682,28 @@
           "recovered": 11844,
           "active": 35335
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 48947,
+          "deaths": 30,
+          "recovered": 13283,
+          "active": 35634
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 47207,
-      "deaths": 28,
-      "recovered": 11844,
-      "active": 35335
+      "cases": 48947,
+      "deaths": 30,
+      "recovered": 13283,
+      "active": 35634
     },
     "meta": {
       "country": {
@@ -122908,18 +123854,27 @@
           "recovered": 11874,
           "active": 5339
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 18594,
+          "deaths": 1227,
+          "recovered": 12162,
+          "active": 5205
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 18429,
-      "deaths": 1216,
-      "recovered": 11874,
+      "cases": 18594,
+      "deaths": 1227,
+      "recovered": 12162,
       "active": 7716
     },
     "meta": {
@@ -124071,18 +125026,27 @@
           "recovered": 131129,
           "active": 227406
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 370680,
+          "deaths": 3968,
+          "recovered": 142208,
+          "active": 224504
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 362342,
-      "deaths": 3807,
-      "recovered": 131129,
+      "cases": 370680,
+      "deaths": 3968,
+      "recovered": 142208,
       "active": 230996
     },
     "meta": {
@@ -125234,18 +126198,27 @@
           "recovered": 244,
           "active": 95
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 346,
+          "deaths": 0,
+          "recovered": 245,
+          "active": 101
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 339,
+      "cases": 346,
       "deaths": 0,
-      "recovered": 244,
+      "recovered": 245,
       "active": 144
     },
     "meta": {
@@ -126397,18 +127370,27 @@
           "recovered": 275,
           "active": 349
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 667,
+          "deaths": 42,
+          "recovered": 294,
+          "active": 331
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 666,
+      "cases": 667,
       "deaths": 42,
-      "recovered": 275,
+      "recovered": 294,
       "active": 475
     },
     "meta": {
@@ -127506,13 +128488,22 @@
           "recovered": 36040,
           "active": 28686
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 65077,
+          "deaths": 351,
+          "recovered": 36040,
+          "active": 28686
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 65077,
@@ -128669,19 +129660,28 @@
           "recovered": 1565,
           "active": 1560
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3253,
+          "deaths": 38,
+          "recovered": 1586,
+          "active": 1629
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3161,
-      "deaths": 36,
-      "recovered": 1565,
-      "active": 1580
+      "cases": 3253,
+      "deaths": 38,
+      "recovered": 1586,
+      "active": 1629
     },
     "meta": {
       "country": {
@@ -129832,18 +130832,27 @@
           "recovered": 6067,
           "active": 4921
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 11275,
+          "deaths": 240,
+          "recovered": 6277,
+          "active": 4758
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 11227,
-      "deaths": 239,
-      "recovered": 6067,
+      "cases": 11275,
+      "deaths": 240,
+      "recovered": 6277,
       "active": 7786
     },
     "meta": {
@@ -130995,18 +132004,27 @@
           "recovered": 16444,
           "active": 15876
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 32876,
+          "deaths": 23,
+          "recovered": 17276,
+          "active": 15577
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 32343,
+      "cases": 32876,
       "deaths": 23,
-      "recovered": 16444,
+      "recovered": 17276,
       "active": 20799
     },
     "meta": {
@@ -132158,18 +133176,27 @@
           "recovered": 1322,
           "active": 163
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1515,
+          "deaths": 28,
+          "recovered": 1327,
+          "active": 160
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1513,
+      "cases": 1515,
       "deaths": 28,
-      "recovered": 1322,
+      "recovered": 1327,
       "active": 1022
     },
     "meta": {
@@ -133321,19 +134348,28 @@
           "recovered": 253,
           "active": 1391
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1731,
+          "deaths": 67,
+          "recovered": 265,
+          "active": 1399
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1711,
+      "cases": 1731,
       "deaths": 67,
-      "recovered": 253,
-      "active": 1391
+      "recovered": 265,
+      "active": 1399
     },
     "meta": {
       "country": {
@@ -134399,23 +135435,31 @@
         "value": {
           "cases": 24264,
           "deaths": 103,
-          "tested": 596777
+          "tested": 605991
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 25937,
+          "deaths": 103,
+          "tested": 634996
         }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
+      "cases": 126,
+      "deaths": 126,
       "recovered": 42,
       "active": 42,
-      "tested": 125
+      "tested": 126
     },
     "highest": {
-      "cases": 24264,
+      "cases": 25937,
       "deaths": 103,
       "recovered": 0,
       "active": 0,
-      "tested": 596777
+      "tested": 634996
     },
     "meta": {
       "country": {
@@ -135488,6 +136532,10 @@
       },
       {
         "date": "2020-05-26",
+        "value": {}
+      },
+      {
+        "date": "2020-05-27",
         "value": {}
       }
     ],
@@ -136652,19 +137700,28 @@
           "recovered": 712,
           "active": 597
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1469,
+          "deaths": 10,
+          "recovered": 732,
+          "active": 727
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1319,
+      "cases": 1469,
       "deaths": 10,
-      "recovered": 712,
-      "active": 597
+      "recovered": 732,
+      "active": 727
     },
     "meta": {
       "country": {
@@ -137815,19 +138872,28 @@
           "recovered": 503,
           "active": 3303
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 4346,
+          "deaths": 195,
+          "recovered": 749,
+          "active": 3402
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3976,
-      "deaths": 170,
-      "recovered": 503,
-      "active": 3303
+      "cases": 4346,
+      "deaths": 195,
+      "recovered": 749,
+      "active": 3402
     },
     "meta": {
       "country": {
@@ -138996,21 +140062,31 @@
           "recovered": 416,
           "active": 18
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 441,
+          "deaths": 7,
+          "recovered": 420,
+          "active": 14,
+          "tested": 71581
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125,
-      "tested": 124
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126,
+      "tested": 126
     },
     "highest": {
       "cases": 441,
       "deaths": 7,
-      "recovered": 416,
+      "recovered": 420,
       "active": 314,
-      "tested": 71101
+      "tested": 71581
     },
     "meta": {
       "country": {
@@ -140161,13 +141237,22 @@
           "recovered": 183,
           "active": 305
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 509,
+          "deaths": 21,
+          "recovered": 183,
+          "active": 305
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 509,
@@ -141324,18 +142409,27 @@
           "recovered": 2929,
           "active": 59
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3054,
+          "deaths": 57,
+          "recovered": 2931,
+          "active": 66
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3045,
+      "cases": 3054,
       "deaths": 57,
-      "recovered": 2929,
+      "recovered": 2931,
       "active": 1451
     },
     "meta": {
@@ -142487,18 +143581,27 @@
           "recovered": 177,
           "active": 201
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 395,
+          "deaths": 13,
+          "recovered": 183,
+          "active": 199
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 391,
+      "cases": 395,
       "deaths": 13,
-      "recovered": 177,
+      "recovered": 183,
       "active": 230
     },
     "meta": {
@@ -143650,13 +144753,22 @@
           "recovered": 929,
           "active": 74
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1051,
+          "deaths": 48,
+          "recovered": 929,
+          "active": 74
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 1051,
@@ -144813,18 +145925,27 @@
           "recovered": 121507,
           "active": 32858
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 159797,
+          "deaths": 4431,
+          "recovered": 122793,
+          "active": 32573
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 158762,
-      "deaths": 4397,
-      "recovered": 121507,
+      "cases": 159797,
+      "deaths": 4431,
+      "recovered": 122793,
       "active": 80808
     },
     "meta": {
@@ -145976,19 +147097,28 @@
           "recovered": 69,
           "active": 184
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 281,
+          "deaths": 0,
+          "recovered": 69,
+          "active": 212
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 264,
+      "cases": 281,
       "deaths": 0,
       "recovered": 69,
-      "active": 199
+      "active": 212
     },
     "meta": {
       "country": {
@@ -147139,18 +148269,27 @@
           "recovered": 7575,
           "active": 13365
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 21905,
+          "deaths": 658,
+          "recovered": 7995,
+          "active": 13252
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 21584,
-      "deaths": 644,
-      "recovered": 7575,
+      "cases": 21905,
+      "deaths": 658,
+      "recovered": 7995,
       "active": 13388
     },
     "meta": {
@@ -148302,19 +149441,28 @@
           "recovered": 15982,
           "active": 14851
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 31969,
+          "deaths": 255,
+          "recovered": 16371,
+          "active": 15343
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 31086,
-      "deaths": 253,
-      "recovered": 15982,
-      "active": 14851
+      "cases": 31969,
+      "deaths": 255,
+      "recovered": 16371,
+      "active": 15343
     },
     "meta": {
       "country": {
@@ -149465,19 +150613,28 @@
           "recovered": 0,
           "active": 228179
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 267240,
+          "deaths": 37460,
+          "recovered": 0,
+          "active": 229780
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 265227,
-      "deaths": 37048,
+      "cases": 267240,
+      "deaths": 37460,
       "recovered": 344,
-      "active": 228179
+      "active": 229780
     },
     "meta": {
       "country": {
@@ -150628,18 +151785,27 @@
           "recovered": 638,
           "active": 129
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 803,
+          "deaths": 22,
+          "recovered": 650,
+          "active": 131
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 789,
+      "cases": 803,
       "deaths": 22,
-      "recovered": 638,
+      "recovered": 650,
       "active": 319
     },
     "meta": {
@@ -151791,18 +152957,27 @@
           "recovered": 2636,
           "active": 640
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3369,
+          "deaths": 14,
+          "recovered": 2668,
+          "active": 687
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3290,
+      "cases": 3369,
       "deaths": 14,
-      "recovered": 2636,
+      "recovered": 2668,
       "active": 1361
     },
     "meta": {
@@ -152954,19 +154129,28 @@
           "recovered": 302,
           "active": 898
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1245,
+          "deaths": 11,
+          "recovered": 302,
+          "active": 932
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1211,
+      "cases": 1245,
       "deaths": 16,
       "recovered": 302,
-      "active": 898
+      "active": 932
     },
     "meta": {
       "country": {
@@ -154117,18 +155301,27 @@
           "recovered": 272,
           "active": 55
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 327,
+          "deaths": 0,
+          "recovered": 278,
+          "active": 49
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 327,
       "deaths": 0,
-      "recovered": 272,
+      "recovered": 278,
       "active": 163
     },
     "meta": {
@@ -155280,18 +156473,27 @@
           "recovered": 336,
           "active": 577
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1057,
+          "deaths": 7,
+          "recovered": 779,
+          "active": 271
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 920,
+      "cases": 1057,
       "deaths": 7,
-      "recovered": 336,
+      "recovered": 779,
       "active": 628
     },
     "meta": {
@@ -156443,19 +157645,28 @@
           "recovered": 71,
           "active": 141
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 227,
+          "deaths": 1,
+          "recovered": 71,
+          "active": 155
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 213,
+      "cases": 227,
       "deaths": 1,
       "recovered": 71,
-      "active": 143
+      "active": 155
     },
     "meta": {
       "country": {
@@ -157606,16 +158817,25 @@
           "recovered": 365,
           "active": 61
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 434,
+          "deaths": 3,
+          "recovered": 365,
+          "active": 66
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 429,
+      "cases": 434,
       "deaths": 3,
       "recovered": 365,
       "active": 275
@@ -158769,19 +159989,28 @@
           "recovered": 42,
           "active": 1129
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1195,
+          "deaths": 7,
+          "recovered": 42,
+          "active": 1146
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1178,
+      "cases": 1195,
       "deaths": 7,
       "recovered": 42,
-      "active": 1129
+      "active": 1146
     },
     "meta": {
       "country": {
@@ -159932,19 +161161,28 @@
           "recovered": 617,
           "active": 390
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1116,
+          "deaths": 70,
+          "recovered": 632,
+          "active": 414
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1077,
+      "cases": 1116,
       "deaths": 70,
-      "recovered": 617,
-      "active": 390
+      "recovered": 632,
+      "active": 414
     },
     "meta": {
       "country": {
@@ -161095,18 +162333,27 @@
           "recovered": 791,
           "active": 217
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 1047,
+          "deaths": 30,
+          "recovered": 794,
+          "active": 223
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 1038,
+      "cases": 1047,
       "deaths": 30,
-      "recovered": 791,
+      "recovered": 794,
       "active": 576
     },
     "meta": {
@@ -162258,18 +163505,27 @@
           "recovered": 124,
           "active": 76
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 206,
+          "deaths": 6,
+          "recovered": 126,
+          "active": 74
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
       "cases": 206,
       "deaths": 6,
-      "recovered": 124,
+      "recovered": 126,
       "active": 131
     },
     "meta": {
@@ -163421,19 +164677,28 @@
           "recovered": 297,
           "active": 413
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 782,
+          "deaths": 45,
+          "recovered": 297,
+          "active": 440
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 754,
-      "deaths": 44,
+      "cases": 782,
+      "deaths": 45,
       "recovered": 297,
-      "active": 426
+      "active": 440
     },
     "meta": {
       "country": {
@@ -164584,19 +165849,28 @@
           "recovered": 6,
           "active": 792
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 994,
+          "deaths": 10,
+          "recovered": 6,
+          "active": 978
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 806,
-      "deaths": 8,
+      "cases": 994,
+      "deaths": 10,
       "recovered": 6,
-      "active": 792
+      "active": 978
     },
     "meta": {
       "country": {
@@ -165747,19 +167021,28 @@
           "recovered": 68,
           "active": 361
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 443,
+          "deaths": 12,
+          "recovered": 68,
+          "active": 363
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 441,
+      "cases": 443,
       "deaths": 12,
       "recovered": 68,
-      "active": 361
+      "active": 363
     },
     "meta": {
       "country": {
@@ -166910,19 +168193,28 @@
           "recovered": 10,
           "active": 190
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 256,
+          "deaths": 53,
+          "recovered": 10,
+          "active": 193
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 249,
-      "deaths": 49,
+      "cases": 256,
+      "deaths": 53,
       "recovered": 11,
-      "active": 190
+      "active": 193
     },
     "meta": {
       "country": {
@@ -168073,18 +169365,27 @@
           "recovered": 1417,
           "active": 1802
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 3424,
+          "deaths": 47,
+          "recovered": 1575,
+          "active": 1802
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 3266,
+      "cases": 3424,
       "deaths": 47,
-      "recovered": 1417,
+      "recovered": 1575,
       "active": 1836
     },
     "meta": {
@@ -168998,17 +170299,26 @@
           "recovered": 6560,
           "active": 476
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 7150,
+          "deaths": 103,
+          "recovered": 6579,
+          "active": 468
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "recovered": 125,
-      "deaths": 125,
-      "active": 125
+      "cases": 126,
+      "recovered": 126,
+      "deaths": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 7139,
-      "recovered": 6560,
+      "cases": 7150,
+      "recovered": 6579,
       "deaths": 103,
       "active": 766
     },
@@ -169334,14 +170644,14 @@
       {
         "date": "2020-03-11",
         "value": {
-          "cases": 50,
+          "cases": 103,
           "deaths": 2
         }
       },
       {
         "date": "2020-03-12",
         "value": {
-          "cases": 137,
+          "cases": 138,
           "deaths": 2
         }
       },
@@ -169869,15 +171179,22 @@
           "cases": 86636,
           "deaths": 6639
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 87508,
+          "deaths": 6765
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125
+      "cases": 126,
+      "deaths": 126
     },
     "highest": {
-      "cases": 86636,
-      "deaths": 6639
+      "cases": 87508,
+      "deaths": 6765
     },
     "meta": {
       "country": {
@@ -171028,18 +172345,27 @@
           "recovered": 78280,
           "active": 79
         }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 82995,
+          "deaths": 4634,
+          "recovered": 78288,
+          "active": 73
+        }
       }
     ],
     "latest": {
-      "cases": 125,
-      "deaths": 125,
-      "recovered": 125,
-      "active": 125
+      "cases": 126,
+      "deaths": 126,
+      "recovered": 126,
+      "active": 126
     },
     "highest": {
-      "cases": 82993,
+      "cases": 82995,
       "deaths": 4634,
-      "recovered": 78280,
+      "recovered": 78288,
       "active": 58046
     },
     "meta": {
