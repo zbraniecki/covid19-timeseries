@@ -2440,15 +2440,22 @@
           "cases": 10872,
           "deaths": 1347
         }
+      },
+      {
+        "date": "2020-05-28",
+        "value": {
+          "cases": 10903,
+          "deaths": 1351
+        }
       }
     ],
     "latest": {
-      "cases": 36,
-      "deaths": 36
+      "cases": 37,
+      "deaths": 37
     },
     "highest": {
-      "cases": 10872,
-      "deaths": 1347
+      "cases": 10903,
+      "deaths": 1351
     },
     "meta": {
       "country": {
