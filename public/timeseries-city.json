@@ -2447,15 +2447,29 @@
           "cases": 10903,
           "deaths": 1351
         }
+      },
+      {
+        "date": "2020-05-30",
+        "value": {
+          "cases": 10937,
+          "deaths": 1370
+        }
+      },
+      {
+        "date": "2020-06-01",
+        "value": {
+          "cases": 11058,
+          "deaths": 1375
+        }
       }
     ],
     "latest": {
-      "cases": 37,
-      "deaths": 37
+      "cases": 39,
+      "deaths": 39
     },
     "highest": {
-      "cases": 10903,
-      "deaths": 1351
+      "cases": 11058,
+      "deaths": 1375
     },
     "meta": {
       "country": {
