@@ -2461,15 +2461,22 @@
           "cases": 11058,
           "deaths": 1375
         }
+      },
+      {
+        "date": "2020-06-02",
+        "value": {
+          "cases": 11068,
+          "deaths": 1380
+        }
       }
     ],
     "latest": {
-      "cases": 39,
-      "deaths": 39
+      "cases": 40,
+      "deaths": 40
     },
     "highest": {
-      "cases": 11058,
-      "deaths": 1375
+      "cases": 11068,
+      "deaths": 1380
     },
     "meta": {
       "country": {
