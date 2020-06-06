@@ -94,6 +94,15 @@ const dataTypeInfo = {
   },
   hospitalized: {
     sentiment: -1
+  },
+  hospitalized_current: {
+    sentiment: -1
+  },
+  icu: {
+    sentiment: -1
+  },
+  icu_current: {
+    sentiment: -1
   }
 };
 

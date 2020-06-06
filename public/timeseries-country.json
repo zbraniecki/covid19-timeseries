@@ -383,7 +383,8 @@
         "value": {
           "cases": 1848,
           "deaths": 18,
-          "tested": 12292
+          "tested": 12292,
+          "discharged": 18
         }
       },
       {
@@ -391,7 +392,8 @@
         "value": {
           "cases": 2234,
           "deaths": 29,
-          "tested": 13747
+          "tested": 13747,
+          "discharged": 32
         }
       },
       {
@@ -399,7 +401,8 @@
         "value": {
           "cases": 2651,
           "deaths": 40,
-          "tested": 15541
+          "tested": 15541,
+          "discharged": 63
         }
       },
       {
@@ -407,7 +410,8 @@
         "value": {
           "cases": 3185,
           "deaths": 61,
-          "tested": 17641
+          "tested": 17641,
+          "discharged": 111
         }
       },
       {
@@ -415,7 +419,8 @@
         "value": {
           "cases": 3898,
           "deaths": 88,
-          "tested": 20175
+          "tested": 20175,
+          "discharged": 160
         }
       },
       {
@@ -423,7 +428,8 @@
         "value": {
           "cases": 4561,
           "deaths": 119,
-          "tested": 22646
+          "tested": 22646,
+          "discharged": 215
         }
       },
       {
@@ -431,7 +437,8 @@
         "value": {
           "cases": 5031,
           "deaths": 157,
-          "tested": 24412
+          "tested": 24412,
+          "discharged": 289
         }
       },
       {
@@ -439,7 +446,8 @@
         "value": {
           "cases": 5518,
           "deaths": 198,
-          "tested": 25496
+          "tested": 25496,
+          "discharged": 350
         }
       },
       {
@@ -447,7 +455,8 @@
         "value": {
           "cases": 6847,
           "deaths": 275,
-          "tested": 27950
+          "tested": 27950,
+          "discharged": 432
         }
       },
       {
@@ -455,7 +464,8 @@
         "value": {
           "cases": 8042,
           "deaths": 349,
-          "tested": 30931
+          "tested": 30931,
+          "discharged": 547
         }
       },
       {
@@ -463,7 +473,8 @@
         "value": {
           "cases": 9241,
           "deaths": 447,
-          "tested": 34207
+          "tested": 34207,
+          "discharged": 675
         }
       },
       {
@@ -471,7 +482,8 @@
         "value": {
           "cases": 10604,
           "deaths": 548,
-          "tested": 37360
+          "tested": 37360,
+          "discharged": 858
         }
       },
       {
@@ -479,7 +491,8 @@
         "value": {
           "cases": 12123,
           "deaths": 671,
-          "tested": 41060
+          "tested": 41060,
+          "discharged": 1063
         }
       },
       {
@@ -487,7 +500,8 @@
         "value": {
           "cases": 12967,
           "deaths": 804,
-          "tested": 43989
+          "tested": 43989,
+          "discharged": 1359
         }
       },
       {
@@ -495,7 +509,8 @@
         "value": {
           "cases": 13650,
           "deaths": 943,
-          "tested": 45833
+          "tested": 45833,
+          "discharged": 1528
         }
       },
       {
@@ -503,7 +518,8 @@
         "value": {
           "cases": 15388,
           "deaths": 1112,
-          "tested": 48856
+          "tested": 48856,
+          "discharged": 1696
         }
       },
       {
@@ -511,7 +527,8 @@
         "value": {
           "cases": 17069,
           "deaths": 1297,
-          "tested": 53510
+          "tested": 53510,
+          "discharged": 2132
         }
       },
       {
@@ -519,7 +536,8 @@
         "value": {
           "cases": 18572,
           "deaths": 1543,
-          "tested": 57595
+          "tested": 57595,
+          "discharged": 2495
         }
       },
       {
@@ -527,7 +545,8 @@
         "value": {
           "cases": 20032,
           "deaths": 1752,
-          "tested": 61820
+          "tested": 61820,
+          "discharged": 2872
         }
       },
       {
@@ -535,7 +554,8 @@
         "value": {
           "cases": 21723,
           "deaths": 1983,
-          "tested": 66320
+          "tested": 66320,
+          "discharged": 3247
         }
       },
       {
@@ -543,7 +563,8 @@
         "value": {
           "cases": 22648,
           "deaths": 2257,
-          "tested": 70057
+          "tested": 70057,
+          "discharged": 3751
         }
       },
       {
@@ -551,7 +572,8 @@
         "value": {
           "cases": 23313,
           "deaths": 2490,
-          "tested": 72344
+          "tested": 72344,
+          "discharged": 3986
         }
       },
       {
@@ -559,7 +581,8 @@
         "value": {
           "cases": 25235,
           "deaths": 2763,
-          "tested": 76141
+          "tested": 76141,
+          "discharged": 4157
         }
       },
       {
@@ -567,7 +590,8 @@
         "value": {
           "cases": 26735,
           "deaths": 3067,
-          "tested": 81182
+          "tested": 81182,
+          "discharged": 4681
         }
       },
       {
@@ -575,7 +599,8 @@
         "value": {
           "cases": 28322,
           "deaths": 3384,
-          "tested": 86285
+          "tested": 86285,
+          "discharged": 5164
         }
       },
       {
@@ -583,7 +608,8 @@
         "value": {
           "cases": 30546,
           "deaths": 3655,
-          "tested": 91407
+          "tested": 91407,
+          "discharged": 5568
         }
       },
       {
@@ -591,7 +617,8 @@
         "value": {
           "cases": 32865,
           "deaths": 3973,
-          "tested": 97075
+          "tested": 97075,
+          "discharged": 5986
         }
       },
       {
@@ -599,7 +626,8 @@
         "value": {
           "cases": 33888,
           "deaths": 4263,
-          "tested": 102882
+          "tested": 102882,
+          "discharged": 6468
         }
       },
       {
@@ -607,7 +635,8 @@
         "value": {
           "cases": 34405,
           "deaths": 4606,
-          "tested": 108445
+          "tested": 108445,
+          "discharged": 6707
         }
       },
       {
@@ -615,7 +644,8 @@
         "value": {
           "cases": 34937,
           "deaths": 4889,
-          "tested": 113624
+          "tested": 113624,
+          "discharged": 6868
         }
       },
       {
@@ -623,7 +653,8 @@
         "value": {
           "cases": 36499,
           "deaths": 5164,
-          "tested": 119192
+          "tested": 119192,
+          "discharged": 7107
         }
       },
       {
@@ -631,7 +662,8 @@
         "value": {
           "cases": 38119,
           "deaths": 5439,
-          "tested": 126280
+          "tested": 126280,
+          "discharged": 7562
         }
       },
       {
@@ -639,7 +671,8 @@
         "value": {
           "cases": 39778,
           "deaths": 5693,
-          "tested": 133040
+          "tested": 133040,
+          "discharged": 7961
         }
       },
       {
@@ -647,7 +680,8 @@
         "value": {
           "cases": 41158,
           "deaths": 5897,
-          "tested": 140989
+          "tested": 140989,
+          "discharged": 8348
         }
       },
       {
@@ -655,7 +689,8 @@
         "value": {
           "cases": 41860,
           "deaths": 6108,
-          "tested": 148870
+          "tested": 148870,
+          "discharged": 8757
         }
       },
       {
@@ -663,7 +698,8 @@
         "value": {
           "cases": 42308,
           "deaths": 6322,
-          "tested": 154467
+          "tested": 154467,
+          "discharged": 8895
         }
       },
       {
@@ -671,7 +707,8 @@
         "value": {
           "cases": 43576,
           "deaths": 6521,
-          "tested": 163126
+          "tested": 163126,
+          "discharged": 9001
         }
       },
       {
@@ -679,7 +716,8 @@
         "value": {
           "cases": 44833,
           "deaths": 6723,
-          "tested": 170144
+          "tested": 170144,
+          "discharged": 9433
         }
       },
       {
@@ -687,7 +725,8 @@
         "value": {
           "cases": 45602,
           "deaths": 6915,
-          "tested": 182481
+          "tested": 182481,
+          "discharged": 9800
         }
       },
       {
@@ -695,7 +734,8 @@
         "value": {
           "cases": 46569,
           "deaths": 7090,
-          "tested": 195978
+          "tested": 195978,
+          "discharged": 10122
         }
       },
       {
@@ -703,7 +743,8 @@
         "value": {
           "cases": 47369,
           "deaths": 7238,
-          "tested": 211291
+          "tested": 211291,
+          "discharged": 10417
         }
       },
       {
@@ -711,7 +752,8 @@
         "value": {
           "cases": 47756,
           "deaths": 7393,
-          "tested": 225523
+          "tested": 225523,
+          "discharged": 10785
         }
       },
       {
@@ -719,7 +761,8 @@
         "value": {
           "cases": 47960,
           "deaths": 7569,
-          "tested": 237449
+          "tested": 237449,
+          "discharged": 10878
         }
       },
       {
@@ -727,7 +770,8 @@
         "value": {
           "cases": 48706,
           "deaths": 7696,
-          "tested": 252050
+          "tested": 252050,
+          "discharged": 10943
         }
       },
       {
@@ -735,7 +779,8 @@
         "value": {
           "cases": 49272,
           "deaths": 7811,
-          "tested": 268640
+          "tested": 268640,
+          "discharged": 11283
         }
       },
       {
@@ -743,7 +788,8 @@
         "value": {
           "cases": 49786,
           "deaths": 7909,
-          "tested": 288167
+          "tested": 288167,
+          "discharged": 11576
         }
       },
       {
@@ -751,7 +797,8 @@
         "value": {
           "cases": 50369,
           "deaths": 7993,
-          "tested": 309540
+          "tested": 309540,
+          "discharged": 11892
         }
       },
       {
@@ -759,7 +806,8 @@
         "value": {
           "cases": 50607,
           "deaths": 8091,
-          "tested": 330899
+          "tested": 330899,
+          "discharged": 12211
         }
       },
       {
@@ -767,7 +815,8 @@
         "value": {
           "cases": 50891,
           "deaths": 8164,
-          "tested": 345633
+          "tested": 345633,
+          "discharged": 12309
         }
       },
       {
@@ -775,7 +824,8 @@
         "value": {
           "cases": 51032,
           "deaths": 8260,
-          "tested": 357613
+          "tested": 357613,
+          "discharged": 12378
         }
       },
       {
@@ -783,7 +833,8 @@
         "value": {
           "cases": 51700,
           "deaths": 8358,
-          "tested": 378190
+          "tested": 378190,
+          "discharged": 12441
         }
       },
       {
@@ -791,7 +842,8 @@
         "value": {
           "cases": 52236,
           "deaths": 8440,
-          "tested": 395683
+          "tested": 395683,
+          "discharged": 12736
         }
       },
       {
@@ -799,7 +851,8 @@
         "value": {
           "cases": 52787,
           "deaths": 8515,
-          "tested": 412968
+          "tested": 412968,
+          "discharged": 12980
         }
       },
       {
@@ -807,7 +860,8 @@
         "value": {
           "cases": 53214,
           "deaths": 8593,
-          "tested": 431136
+          "tested": 431136,
+          "discharged": 13201
         }
       },
       {
@@ -815,7 +869,8 @@
         "value": {
           "cases": 53693,
           "deaths": 8663,
-          "tested": 453217
+          "tested": 453217,
+          "discharged": 13411
         }
       },
       {
@@ -823,7 +878,8 @@
         "value": {
           "cases": 53933,
           "deaths": 8733,
-          "tested": 471080
+          "tested": 471080,
+          "discharged": 13642
         }
       },
       {
@@ -831,7 +887,8 @@
         "value": {
           "cases": 54050,
           "deaths": 8806,
-          "tested": 481405
+          "tested": 481405,
+          "discharged": 13697
         }
       },
       {
@@ -839,7 +896,8 @@
         "value": {
           "cases": 54511,
           "deaths": 8868,
-          "tested": 489438
+          "tested": 489438,
+          "discharged": 13732
         }
       },
       {
@@ -847,7 +905,8 @@
         "value": {
           "cases": 54905,
           "deaths": 8916,
-          "tested": 505694
+          "tested": 505694,
+          "discharged": 13938
         }
       },
       {
@@ -855,7 +914,8 @@
         "value": {
           "cases": 55221,
           "deaths": 8970,
-          "tested": 525006
+          "tested": 525006,
+          "discharged": 14111
         }
       },
       {
@@ -863,7 +923,8 @@
         "value": {
           "cases": 55513,
           "deaths": 9016,
-          "tested": 541393
+          "tested": 541393,
+          "discharged": 14301
         }
       },
       {
@@ -871,7 +932,8 @@
         "value": {
           "cases": 55852,
           "deaths": 9053,
-          "tested": 558197
+          "tested": 558197,
+          "discharged": 14460
         }
       },
       {
@@ -879,7 +941,8 @@
         "value": {
           "cases": 55999,
           "deaths": 9081,
-          "tested": 569802
+          "tested": 569802,
+          "discharged": 14630
         }
       },
       {
@@ -887,7 +950,8 @@
         "value": {
           "cases": 56080,
           "deaths": 9116,
-          "tested": 578114
+          "tested": 578114,
+          "discharged": 14657
         }
       },
       {
@@ -895,7 +959,8 @@
         "value": {
           "cases": 56386,
           "deaths": 9151,
-          "tested": 585269
+          "tested": 585269,
+          "discharged": 14687
         }
       },
       {
@@ -903,7 +968,8 @@
         "value": {
           "cases": 56670,
           "deaths": 9181,
-          "tested": 598044
+          "tested": 598044,
+          "discharged": 14847
         }
       },
       {
@@ -911,7 +977,8 @@
         "value": {
           "cases": 57050,
           "deaths": 9213,
-          "tested": 612286
+          "tested": 612286,
+          "discharged": 14988
         }
       },
       {
@@ -919,7 +986,8 @@
         "value": {
           "cases": 57121,
           "deaths": 9242,
-          "tested": 619786
+          "tested": 619786,
+          "discharged": 15123
         }
       },
       {
@@ -927,7 +995,8 @@
         "value": {
           "cases": 57367,
           "deaths": 9279,
-          "tested": 629490
+          "tested": 629490,
+          "discharged": 15155
         }
       },
       {
@@ -935,7 +1004,8 @@
         "value": {
           "cases": 57489,
           "deaths": 9303,
-          "tested": 636085
+          "tested": 636085,
+          "discharged": 15272
         }
       },
       {
@@ -943,7 +1013,8 @@
         "value": {
           "cases": 57563,
           "deaths": 9337,
-          "tested": 641428
+          "tested": 641428,
+          "discharged": 15297
         }
       },
       {
@@ -951,7 +1022,8 @@
         "value": {
           "cases": 57868,
           "deaths": 9361,
-          "tested": 648204
+          "tested": 648204,
+          "discharged": 15320
         }
       },
       {
@@ -959,7 +1031,8 @@
         "value": {
           "cases": 58067,
           "deaths": 9401,
-          "tested": 660317
+          "tested": 660317,
+          "discharged": 15465
         }
       },
       {
@@ -967,7 +1040,8 @@
         "value": {
           "cases": 58248,
           "deaths": 9425,
-          "tested": 674061
+          "tested": 674061,
+          "discharged": 15573
         }
       },
       {
@@ -975,7 +1049,8 @@
         "value": {
           "cases": 58405,
           "deaths": 9446,
-          "tested": 683388
+          "tested": 683388,
+          "discharged": 15682
         }
       },
       {
@@ -983,7 +1058,8 @@
         "value": {
           "cases": 58561,
           "deaths": 9459,
-          "tested": 693774
+          "tested": 693774,
+          "discharged": 15769
         }
       },
       {
@@ -991,7 +1067,8 @@
         "value": {
           "cases": 58620,
           "deaths": 9483,
-          "tested": 701065
+          "tested": 701065,
+          "discharged": 15887
         }
       },
       {
@@ -999,7 +1076,8 @@
         "value": {
           "cases": 58669,
           "deaths": 9502,
-          "tested": 706263
+          "tested": 706263,
+          "discharged": 15920
         }
       },
       {
@@ -1007,7 +1085,8 @@
         "value": {
           "cases": 58726,
           "deaths": 9522,
-          "tested": 710076
+          "tested": 710076,
+          "discharged": 15934
         }
       },
       {
@@ -1015,7 +1094,8 @@
         "value": {
           "cases": 58864,
           "deaths": 9549,
-          "tested": 716363
+          "tested": 716363,
+          "discharged": 15959
         }
       },
       {
@@ -1023,7 +1103,8 @@
         "value": {
           "cases": 58907,
           "deaths": 9564,
-          "tested": 724596
+          "tested": 724596,
+          "discharged": 16048
         }
       },
       {
@@ -1031,7 +1112,8 @@
         "value": {
           "cases": 58907,
           "deaths": 9566,
-          "tested": 724627
+          "tested": 724627,
+          "discharged": 16112
         }
       },
       {
@@ -1039,19 +1121,22 @@
         "value": {
           "cases": 58907,
           "deaths": 9566,
-          "tested": 724627
+          "tested": 724627,
+          "discharged": 16112
         }
       }
     ],
     "latest": {
       "cases": 135,
       "tested": 135,
-      "deaths": 135
+      "deaths": 135,
+      "discharged": 135
     },
     "highest": {
       "cases": 58907,
       "tested": 724627,
-      "deaths": 9566
+      "deaths": 9566,
+      "discharged": 16112
     },
     "meta": {
       "country": {
@@ -1267,654 +1352,748 @@
         "date": "2020-03-06",
         "value": {
           "cases": 197,
-          "deaths": 1
+          "deaths": 1,
+          "discharged": 1
         }
       },
       {
         "date": "2020-03-07",
         "value": {
           "cases": 257,
-          "deaths": 1
+          "deaths": 1,
+          "discharged": 1
         }
       },
       {
         "date": "2020-03-08",
         "value": {
           "cases": 303,
-          "deaths": 2
+          "deaths": 2,
+          "discharged": 1
         }
       },
       {
         "date": "2020-03-09",
         "value": {
           "cases": 396,
-          "deaths": 2
+          "deaths": 2,
+          "discharged": 3
         }
       },
       {
         "date": "2020-03-10",
         "value": {
           "cases": 542,
-          "deaths": 4
+          "deaths": 4,
+          "discharged": 4
         }
       },
       {
         "date": "2020-03-11",
         "value": {
           "cases": 766,
-          "deaths": 5
+          "deaths": 5,
+          "discharged": 8
         }
       },
       {
         "date": "2020-03-12",
         "value": {
           "cases": 1072,
-          "deaths": 9
+          "deaths": 9,
+          "discharged": 9
         }
       },
       {
         "date": "2020-03-13",
         "value": {
           "cases": 1398,
-          "deaths": 10
+          "deaths": 10,
+          "discharged": 9
         }
       },
       {
         "date": "2020-03-14",
         "value": {
           "cases": 1795,
-          "deaths": 14
+          "deaths": 14,
+          "discharged": 70
         }
       },
       {
         "date": "2020-03-15",
         "value": {
           "cases": 2071,
-          "deaths": 22
+          "deaths": 22,
+          "discharged": 73
         }
       },
       {
         "date": "2020-03-16",
         "value": {
           "cases": 2863,
-          "deaths": 31
+          "deaths": 31,
+          "discharged": 74
         }
       },
       {
         "date": "2020-03-17",
         "value": {
           "cases": 3709,
-          "deaths": 38
+          "deaths": 38,
+          "discharged": 105
         }
       },
       {
         "date": "2020-03-18",
         "value": {
           "cases": 4792,
-          "deaths": 47
+          "deaths": 47,
+          "discharged": 123
         }
       },
       {
         "date": "2020-03-19",
         "value": {
           "cases": 5780,
-          "deaths": 56
+          "deaths": 56,
+          "discharged": 134
         }
       },
       {
         "date": "2020-03-20",
         "value": {
           "cases": 7004,
-          "deaths": 79
+          "deaths": 79,
+          "discharged": 140
         }
       },
       {
         "date": "2020-03-21",
         "value": {
           "cases": 7685,
-          "deaths": 99
+          "deaths": 99,
+          "discharged": 155
         }
       },
       {
         "date": "2020-03-22",
         "value": {
           "cases": 8216,
-          "deaths": 114
+          "deaths": 114,
+          "discharged": 173
         }
       },
       {
         "date": "2020-03-23",
         "value": {
           "cases": 9724,
-          "deaths": 144
+          "deaths": 144,
+          "discharged": 194
         }
       },
       {
         "date": "2020-03-24",
         "value": {
           "cases": 10828,
-          "deaths": 166
+          "deaths": 166,
+          "discharged": 355
         }
       },
       {
         "date": "2020-03-25",
         "value": {
           "cases": 11967,
-          "deaths": 201
+          "deaths": 201,
+          "discharged": 414
         }
       },
       {
         "date": "2020-03-26",
         "value": {
           "cases": 13051,
-          "deaths": 246
+          "deaths": 246,
+          "discharged": 499
         }
       },
       {
         "date": "2020-03-27",
         "value": {
           "cases": 14353,
-          "deaths": 283
+          "deaths": 283,
+          "discharged": 584
         }
       },
       {
         "date": "2020-03-28",
         "value": {
           "cases": 15192,
-          "deaths": 334
+          "deaths": 334,
+          "discharged": 683
         }
       },
       {
         "date": "2020-03-29",
         "value": {
           "cases": 15795,
-          "deaths": 380
+          "deaths": 380,
+          "discharged": 752
         }
       },
       {
         "date": "2020-03-30",
         "value": {
           "cases": 16917,
-          "deaths": 441
+          "deaths": 441,
+          "discharged": 877
         }
       },
       {
         "date": "2020-03-31",
         "value": {
           "cases": 17836,
-          "deaths": 506
+          "deaths": 506,
+          "discharged": 1079
         }
       },
       {
         "date": "2020-04-01",
         "value": {
           "cases": 18902,
-          "deaths": 569
+          "deaths": 569,
+          "discharged": 1183
         }
       },
       {
         "date": "2020-04-02",
         "value": {
           "cases": 19991,
-          "deaths": 630
+          "deaths": 630,
+          "discharged": 1376
         }
       },
       {
         "date": "2020-04-03",
         "value": {
           "cases": 20959,
-          "deaths": 691
+          "deaths": 691,
+          "discharged": 1479
         }
       },
       {
         "date": "2020-04-04",
         "value": {
           "cases": 21529,
-          "deaths": 756
+          "deaths": 756,
+          "discharged": 1630
         }
       },
       {
         "date": "2020-04-05",
         "value": {
           "cases": 21931,
-          "deaths": 809
+          "deaths": 809,
+          "discharged": 1790
         }
       },
       {
         "date": "2020-04-06",
         "value": {
           "cases": 22671,
-          "deaths": 869
+          "deaths": 869,
+          "discharged": 1903
         }
       },
       {
         "date": "2020-04-07",
         "value": {
           "cases": 23327,
-          "deaths": 930
+          "deaths": 930,
+          "discharged": 2246
         }
       },
       {
         "date": "2020-04-08",
         "value": {
           "cases": 23996,
-          "deaths": 997
+          "deaths": 997,
+          "discharged": 2456
         }
       },
       {
         "date": "2020-04-09",
         "value": {
           "cases": 24660,
-          "deaths": 1049
+          "deaths": 1049,
+          "discharged": 2600
         }
       },
       {
         "date": "2020-04-10",
         "value": {
           "cases": 25110,
-          "deaths": 1100
+          "deaths": 1100,
+          "discharged": 2684
         }
       },
       {
         "date": "2020-04-11",
         "value": {
           "cases": 25573,
-          "deaths": 1138
+          "deaths": 1138,
+          "discharged": 2838
         }
       },
       {
         "date": "2020-04-12",
         "value": {
           "cases": 25845,
-          "deaths": 1194
+          "deaths": 1194,
+          "discharged": 2931
         }
       },
       {
         "date": "2020-04-13",
         "value": {
           "cases": 26088,
-          "deaths": 1226
+          "deaths": 1226,
+          "discharged": 3011
         }
       },
       {
         "date": "2020-04-14",
         "value": {
           "cases": 26413,
-          "deaths": 1264
+          "deaths": 1264,
+          "discharged": 3165
         }
       },
       {
         "date": "2020-04-15",
         "value": {
           "cases": 26729,
-          "deaths": 1318
+          "deaths": 1318,
+          "discharged": 3319
         }
       },
       {
         "date": "2020-04-16",
         "value": {
           "cases": 27031,
-          "deaths": 1366
+          "deaths": 1366,
+          "discharged": 3476
         }
       },
       {
         "date": "2020-04-17",
         "value": {
           "cases": 27338,
-          "deaths": 1415
+          "deaths": 1415,
+          "discharged": 3578
         }
       },
       {
         "date": "2020-04-18",
         "value": {
           "cases": 27612,
-          "deaths": 1456
+          "deaths": 1456,
+          "discharged": 3692
         }
       },
       {
         "date": "2020-04-19",
         "value": {
           "cases": 27788,
-          "deaths": 1481
+          "deaths": 1481,
+          "discharged": 3743
         }
       },
       {
         "date": "2020-04-20",
         "value": {
           "cases": 27989,
-          "deaths": 1524
+          "deaths": 1524,
+          "discharged": 3877
         }
       },
       {
         "date": "2020-04-21",
         "value": {
           "cases": 28155,
-          "deaths": 1565
+          "deaths": 1565,
+          "discharged": 3995
         }
       },
       {
         "date": "2020-04-22",
         "value": {
           "cases": 28361,
-          "deaths": 1594
+          "deaths": 1594,
+          "discharged": 4102
         }
       },
       {
         "date": "2020-04-23",
         "value": {
           "cases": 28580,
-          "deaths": 1624
+          "deaths": 1624,
+          "discharged": 4192
         }
       },
       {
         "date": "2020-04-24",
         "value": {
           "cases": 28769,
-          "deaths": 1653
+          "deaths": 1653,
+          "discharged": 4263
         }
       },
       {
         "date": "2020-04-25",
         "value": {
           "cases": 28912,
-          "deaths": 1677
+          "deaths": 1677,
+          "discharged": 4300
         }
       },
       {
         "date": "2020-04-26",
         "value": {
           "cases": 28988,
-          "deaths": 1694
+          "deaths": 1694,
+          "discharged": 4333
         }
       },
       {
         "date": "2020-04-27",
         "value": {
           "cases": 29156,
-          "deaths": 1716
+          "deaths": 1716,
+          "discharged": 4403
         }
       },
       {
         "date": "2020-04-28",
         "value": {
           "cases": 29283,
-          "deaths": 1742
+          "deaths": 1742,
+          "discharged": 4442
         }
       },
       {
         "date": "2020-04-29",
         "value": {
           "cases": 29424,
-          "deaths": 1750
+          "deaths": 1750,
+          "discharged": 4504
         }
       },
       {
         "date": "2020-04-30",
         "value": {
           "cases": 29569,
-          "deaths": 1768
+          "deaths": 1768,
+          "discharged": 4586
         }
       },
       {
         "date": "2020-05-01",
         "value": {
           "cases": 29679,
-          "deaths": 1784
+          "deaths": 1784,
+          "discharged": 4664
         }
       },
       {
         "date": "2020-05-02",
         "value": {
           "cases": 29759,
-          "deaths": 1799
+          "deaths": 1799,
+          "discharged": 4692
         }
       },
       {
         "date": "2020-05-03",
         "value": {
           "cases": 29819,
-          "deaths": 1807
+          "deaths": 1807,
+          "discharged": 4710
         }
       },
       {
         "date": "2020-05-04",
         "value": {
           "cases": 29879,
-          "deaths": 1814
+          "deaths": 1814,
+          "discharged": 4770
         }
       },
       {
         "date": "2020-05-05",
         "value": {
           "cases": 29938,
-          "deaths": 1827
+          "deaths": 1827,
+          "discharged": 4798
         }
       },
       {
         "date": "2020-05-06",
         "value": {
           "cases": 30022,
-          "deaths": 1833
+          "deaths": 1833,
+          "discharged": 4884
         }
       },
       {
         "date": "2020-05-07",
         "value": {
           "cases": 30092,
-          "deaths": 1844
+          "deaths": 1844,
+          "discharged": 4930
         }
       },
       {
         "date": "2020-05-08",
         "value": {
           "cases": 30158,
-          "deaths": 1853
+          "deaths": 1853,
+          "discharged": 4989
         }
       },
       {
         "date": "2020-05-09",
         "value": {
           "cases": 30206,
-          "deaths": 1863
+          "deaths": 1863,
+          "discharged": 5030
         }
       },
       {
         "date": "2020-05-10",
         "value": {
           "cases": 30237,
-          "deaths": 1871
+          "deaths": 1871,
+          "discharged": 5047
         }
       },
       {
         "date": "2020-05-11",
         "value": {
           "cases": 30298,
-          "deaths": 1874
+          "deaths": 1874,
+          "discharged": 5102
         }
       },
       {
         "date": "2020-05-12",
         "value": {
           "cases": 30347,
-          "deaths": 1880
+          "deaths": 1880,
+          "discharged": 5141
         }
       },
       {
         "date": "2020-05-13",
         "value": {
           "cases": 30384,
-          "deaths": 1884
+          "deaths": 1884,
+          "discharged": 5172
         }
       },
       {
         "date": "2020-05-14",
         "value": {
           "cases": 30426,
-          "deaths": 1888
+          "deaths": 1888,
+          "discharged": 5213
         }
       },
       {
         "date": "2020-05-15",
         "value": {
           "cases": 30470,
-          "deaths": 1893
+          "deaths": 1893,
+          "discharged": 5229
         }
       },
       {
         "date": "2020-05-16",
         "value": {
           "cases": 30500,
-          "deaths": 1893
+          "deaths": 1893,
+          "discharged": 5250
         }
       },
       {
         "date": "2020-05-17",
         "value": {
           "cases": 30516,
-          "deaths": 1898
+          "deaths": 1898,
+          "discharged": 5259
         }
       },
       {
         "date": "2020-05-18",
         "value": {
           "cases": 30552,
-          "deaths": 1904
+          "deaths": 1904,
+          "discharged": 5278
         }
       },
       {
         "date": "2020-05-19",
         "value": {
           "cases": 30575,
-          "deaths": 1906
+          "deaths": 1906,
+          "discharged": 5311
         }
       },
       {
         "date": "2020-05-20",
         "value": {
           "cases": 30619,
-          "deaths": 1907
+          "deaths": 1907,
+          "discharged": 5328
         }
       },
       {
         "date": "2020-05-21",
         "value": {
           "cases": 30647,
-          "deaths": 1909
+          "deaths": 1909,
+          "discharged": 5354
         }
       },
       {
         "date": "2020-05-22",
         "value": {
           "cases": 30665,
-          "deaths": 1911
+          "deaths": 1911,
+          "discharged": 5362
         }
       },
       {
         "date": "2020-05-23",
         "value": {
           "cases": 30685,
-          "deaths": 1912
+          "deaths": 1912,
+          "discharged": 5365
         }
       },
       {
         "date": "2020-05-24",
         "value": {
           "cases": 30695,
-          "deaths": 1913
+          "deaths": 1913,
+          "discharged": 5367
         }
       },
       {
         "date": "2020-05-25",
         "value": {
           "cases": 30704,
-          "deaths": 1917
+          "deaths": 1917,
+          "discharged": 5403
         }
       },
       {
         "date": "2020-05-26",
         "value": {
           "cases": 30726,
-          "deaths": 1917
+          "deaths": 1917,
+          "discharged": 5414
         }
       },
       {
         "date": "2020-05-27",
         "value": {
           "cases": 30740,
-          "deaths": 1919
+          "deaths": 1919,
+          "discharged": 5427
         }
       },
       {
         "date": "2020-05-28",
         "value": {
           "cases": 30758,
-          "deaths": 1920
+          "deaths": 1920,
+          "discharged": 5445
         }
       },
       {
         "date": "2020-05-29",
         "value": {
           "cases": 30782,
-          "deaths": 1920
+          "deaths": 1920,
+          "discharged": 5446
         }
       },
       {
         "date": "2020-05-30",
         "value": {
           "cases": 30823,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5449
         }
       },
       {
         "date": "2020-05-31",
         "value": {
           "cases": 30830,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5450
         }
       },
       {
         "date": "2020-06-01",
         "value": {
           "cases": 30842,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5450
         }
       },
       {
         "date": "2020-06-02",
         "value": {
           "cases": 30862,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5492
         }
       },
       {
         "date": "2020-06-03",
         "value": {
           "cases": 30879,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5504
         }
       },
       {
         "date": "2020-06-04",
         "value": {
           "cases": 30898,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5519
         }
       },
       {
         "date": "2020-06-05",
         "value": {
           "cases": 30912,
-          "deaths": 1921
+          "deaths": 1921,
+          "discharged": 5519
         }
       }
     ],
     "latest": {
       "cases": 135,
-      "deaths": 135
+      "deaths": 135,
+      "discharged": 135
     },
     "highest": {
       "cases": 30912,
-      "deaths": 1921
+      "deaths": 1921,
+      "discharged": 5519
     },
     "meta": {
       "country": {
@@ -5276,21 +5455,27 @@
         "date": "2020-03-11",
         "value": {
           "cases": 82,
-          "hospitalized": 27
+          "hospitalized": 27,
+          "hospitalized_current": 17,
+          "discharged": 10
         }
       },
       {
         "date": "2020-03-12",
         "value": {
           "cases": 131,
-          "hospitalized": 31
+          "hospitalized": 31,
+          "hospitalized_current": 16,
+          "discharged": 15
         }
       },
       {
         "date": "2020-03-13",
         "value": {
           "cases": 179,
-          "hospitalized": 36
+          "hospitalized": 36,
+          "hospitalized_current": 17,
+          "discharged": 19
         }
       },
       {
@@ -5298,7 +5483,9 @@
         "value": {
           "cases": 215,
           "deaths": 1,
-          "hospitalized": 44
+          "hospitalized": 44,
+          "hospitalized_current": 25,
+          "discharged": 19
         }
       },
       {
@@ -5306,7 +5493,9 @@
         "value": {
           "cases": 250,
           "deaths": 1,
-          "hospitalized": 48
+          "hospitalized": 48,
+          "hospitalized_current": 29,
+          "discharged": 19
         }
       },
       {
@@ -5314,7 +5503,9 @@
         "value": {
           "cases": 277,
           "deaths": 1,
-          "hospitalized": 49
+          "hospitalized": 49,
+          "hospitalized_current": 28,
+          "discharged": 21
         }
       },
       {
@@ -5322,7 +5513,9 @@
         "value": {
           "cases": 287,
           "deaths": 1,
-          "hospitalized": 60
+          "hospitalized": 60,
+          "hospitalized_current": 34,
+          "discharged": 26
         }
       },
       {
@@ -5330,7 +5523,9 @@
         "value": {
           "cases": 319,
           "deaths": 1,
-          "hospitalized": 69
+          "hospitalized": 69,
+          "hospitalized_current": 37,
+          "discharged": 32
         }
       },
       {
@@ -5340,7 +5535,9 @@
           "deaths": 1,
           "recovered": 1,
           "active": 340,
-          "hospitalized": 76
+          "hospitalized": 76,
+          "hospitalized_current": 41,
+          "discharged": 35
         }
       },
       {
@@ -5350,7 +5547,9 @@
           "deaths": 1,
           "recovered": 1,
           "active": 366,
-          "hospitalized": 79
+          "hospitalized": 79,
+          "hospitalized_current": 40,
+          "discharged": 39
         }
       },
       {
@@ -5360,7 +5559,9 @@
           "deaths": 1,
           "recovered": 1,
           "active": 404,
-          "hospitalized": 87
+          "hospitalized": 87,
+          "hospitalized_current": 45,
+          "discharged": 42
         }
       },
       {
@@ -5370,7 +5571,9 @@
           "deaths": 1,
           "recovered": 1,
           "active": 439,
-          "hospitalized": 89
+          "hospitalized": 89,
+          "hospitalized_current": 46,
+          "discharged": 43
         }
       },
       {
@@ -5380,7 +5583,9 @@
           "deaths": 2,
           "recovered": 1,
           "active": 474,
-          "hospitalized": 97
+          "hospitalized": 97,
+          "hospitalized_current": 51,
+          "discharged": 46
         }
       },
       {
@@ -5390,7 +5595,9 @@
           "deaths": 3,
           "recovered": 10,
           "active": 512,
-          "hospitalized": 111
+          "hospitalized": 111,
+          "hospitalized_current": 65,
+          "discharged": 46
         }
       },
       {
@@ -5400,7 +5607,9 @@
           "deaths": 4,
           "recovered": 10,
           "active": 557,
-          "hospitalized": 121
+          "hospitalized": 121,
+          "hospitalized_current": 74,
+          "discharged": 47
         }
       },
       {
@@ -5410,7 +5619,9 @@
           "deaths": 5,
           "recovered": 10,
           "active": 617,
-          "hospitalized": 128
+          "hospitalized": 128,
+          "hospitalized_current": 77,
+          "discharged": 51
         }
       },
       {
@@ -5420,7 +5631,9 @@
           "deaths": 7,
           "recovered": 10,
           "active": 667,
-          "hospitalized": 151
+          "hospitalized": 151,
+          "hospitalized_current": 100,
+          "discharged": 51
         }
       },
       {
@@ -5430,7 +5643,9 @@
           "deaths": 9,
           "recovered": 10,
           "active": 711,
-          "hospitalized": 158
+          "hospitalized": 158,
+          "hospitalized_current": 101,
+          "discharged": 57
         }
       },
       {
@@ -5440,7 +5655,9 @@
           "deaths": 11,
           "recovered": 10,
           "active": 735,
-          "hospitalized": 166
+          "hospitalized": 166,
+          "hospitalized_current": 108,
+          "discharged": 58
         }
       },
       {
@@ -5450,7 +5667,9 @@
           "deaths": 11,
           "recovered": 16,
           "active": 775,
-          "hospitalized": 176
+          "hospitalized": 176,
+          "hospitalized_current": 117,
+          "discharged": 59
         }
       },
       {
@@ -5460,7 +5679,9 @@
           "deaths": 13,
           "recovered": 16,
           "active": 812,
-          "hospitalized": 179
+          "hospitalized": 179,
+          "hospitalized_current": 111,
+          "discharged": 68
         }
       },
       {
@@ -5470,7 +5691,9 @@
           "deaths": 15,
           "recovered": 16,
           "active": 866,
-          "hospitalized": 186
+          "hospitalized": 186,
+          "hospitalized_current": 111,
+          "discharged": 75
         }
       },
       {
@@ -5480,7 +5703,9 @@
           "deaths": 16,
           "recovered": 16,
           "active": 902,
-          "hospitalized": 192
+          "hospitalized": 192,
+          "hospitalized_current": 111,
+          "discharged": 81
         }
       },
       {
@@ -5490,7 +5715,9 @@
           "deaths": 20,
           "recovered": 16,
           "active": 941,
-          "hospitalized": 202
+          "hospitalized": 202,
+          "hospitalized_current": 119,
+          "discharged": 83
         }
       },
       {
@@ -5500,7 +5727,9 @@
           "deaths": 22,
           "recovered": 26,
           "active": 949,
-          "hospitalized": 208
+          "hospitalized": 208,
+          "hospitalized_current": 115,
+          "discharged": 93
         }
       },
       {
@@ -5510,7 +5739,9 @@
           "deaths": 28,
           "recovered": 26,
           "active": 966,
-          "hospitalized": 217
+          "hospitalized": 217,
+          "hospitalized_current": 119,
+          "discharged": 98
         }
       },
       {
@@ -5520,7 +5751,9 @@
           "deaths": 30,
           "recovered": 26,
           "active": 999,
-          "hospitalized": 225
+          "hospitalized": 225,
+          "hospitalized_current": 123,
+          "discharged": 102
         }
       },
       {
@@ -5530,7 +5763,9 @@
           "deaths": 36,
           "recovered": 26,
           "active": 1029,
-          "hospitalized": 238
+          "hospitalized": 238,
+          "hospitalized_current": 123,
+          "discharged": 115
         }
       },
       {
@@ -5540,7 +5775,9 @@
           "deaths": 40,
           "recovered": 26,
           "active": 1058,
-          "hospitalized": 247
+          "hospitalized": 247,
+          "hospitalized_current": 127,
+          "discharged": 120
         }
       },
       {
@@ -5550,7 +5787,9 @@
           "deaths": 43,
           "recovered": 26,
           "active": 1091,
-          "hospitalized": 253
+          "hospitalized": 253,
+          "hospitalized_current": 125,
+          "discharged": 128
         }
       },
       {
@@ -5560,7 +5799,9 @@
           "deaths": 45,
           "recovered": 26,
           "active": 1117,
-          "hospitalized": 261
+          "hospitalized": 261,
+          "hospitalized_current": 123,
+          "discharged": 138
         }
       },
       {
@@ -5570,7 +5811,9 @@
           "deaths": 50,
           "recovered": 26,
           "active": 1129,
-          "hospitalized": 267
+          "hospitalized": 267,
+          "hospitalized_current": 114,
+          "discharged": 153
         }
       },
       {
@@ -5580,7 +5823,9 @@
           "deaths": 53,
           "recovered": 26,
           "active": 1133,
-          "hospitalized": 273
+          "hospitalized": 273,
+          "hospitalized_current": 117,
+          "discharged": 156
         }
       },
       {
@@ -5590,7 +5835,9 @@
           "deaths": 55,
           "recovered": 26,
           "active": 1139,
-          "hospitalized": 276
+          "hospitalized": 276,
+          "hospitalized_current": 118,
+          "discharged": 158
         }
       },
       {
@@ -5600,7 +5847,9 @@
           "deaths": 56,
           "recovered": 38,
           "active": 1153,
-          "hospitalized": 285
+          "hospitalized": 285,
+          "hospitalized_current": 127,
+          "discharged": 158
         }
       },
       {
@@ -5610,7 +5859,9 @@
           "deaths": 61,
           "recovered": 38,
           "active": 1169,
-          "hospitalized": 292
+          "hospitalized": 292,
+          "hospitalized_current": 121,
+          "discharged": 171
         }
       },
       {
@@ -5620,7 +5871,9 @@
           "deaths": 61,
           "recovered": 38,
           "active": 1205,
-          "hospitalized": 304
+          "hospitalized": 304,
+          "hospitalized_current": 124,
+          "discharged": 180
         }
       },
       {
@@ -5630,7 +5883,9 @@
           "deaths": 66,
           "recovered": 38,
           "active": 1213,
-          "hospitalized": 310
+          "hospitalized": 310,
+          "hospitalized_current": 122,
+          "discharged": 188
         }
       },
       {
@@ -5640,7 +5895,9 @@
           "deaths": 70,
           "recovered": 38,
           "active": 1222,
-          "hospitalized": 317
+          "hospitalized": 317,
+          "hospitalized_current": 121,
+          "discharged": 196
         }
       },
       {
@@ -5650,7 +5907,9 @@
           "deaths": 74,
           "recovered": 38,
           "active": 1223,
-          "hospitalized": 318
+          "hospitalized": 318,
+          "hospitalized_current": 120,
+          "discharged": 198
         }
       },
       {
@@ -5660,7 +5919,9 @@
           "deaths": 77,
           "recovered": 38,
           "active": 1229,
-          "hospitalized": 318
+          "hospitalized": 318,
+          "hospitalized_current": 119,
+          "discharged": 199
         }
       },
       {
@@ -5670,7 +5931,9 @@
           "deaths": 77,
           "recovered": 38,
           "active": 1238,
-          "hospitalized": 321
+          "hospitalized": 321,
+          "hospitalized_current": 118,
+          "discharged": 203
         }
       },
       {
@@ -5680,7 +5943,9 @@
           "deaths": 79,
           "recovered": 38,
           "active": 1249,
-          "hospitalized": 326
+          "hospitalized": 326,
+          "hospitalized_current": 116,
+          "discharged": 210
         }
       },
       {
@@ -5690,7 +5955,9 @@
           "deaths": 79,
           "recovered": 38,
           "active": 1256,
-          "hospitalized": 330
+          "hospitalized": 330,
+          "hospitalized_current": 114,
+          "discharged": 216
         }
       },
       {
@@ -5700,7 +5967,9 @@
           "deaths": 80,
           "recovered": 38,
           "active": 1270,
-          "hospitalized": 333
+          "hospitalized": 333,
+          "hospitalized_current": 113,
+          "discharged": 220
         }
       },
       {
@@ -5710,7 +5979,9 @@
           "deaths": 82,
           "recovered": 38,
           "active": 1276,
-          "hospitalized": 337
+          "hospitalized": 337,
+          "hospitalized_current": 113,
+          "discharged": 224
         }
       },
       {
@@ -5720,7 +5991,9 @@
           "deaths": 82,
           "recovered": 38,
           "active": 1282,
-          "hospitalized": 342
+          "hospitalized": 342,
+          "hospitalized_current": 116,
+          "discharged": 226
         }
       },
       {
@@ -5730,7 +6003,9 @@
           "deaths": 84,
           "recovered": 38,
           "active": 1287,
-          "hospitalized": 343
+          "hospitalized": 343,
+          "hospitalized_current": 117,
+          "discharged": 226
         }
       },
       {
@@ -5740,7 +6015,9 @@
           "deaths": 86,
           "recovered": 38,
           "active": 1294,
-          "hospitalized": 345
+          "hospitalized": 345,
+          "hospitalized_current": 115,
+          "discharged": 230
         }
       },
       {
@@ -5750,7 +6027,9 @@
           "deaths": 89,
           "recovered": 38,
           "active": 1302,
-          "hospitalized": 352
+          "hospitalized": 352,
+          "hospitalized_current": 109,
+          "discharged": 243
         }
       },
       {
@@ -5760,7 +6039,9 @@
           "deaths": 91,
           "recovered": 38,
           "active": 1305,
-          "hospitalized": 353
+          "hospitalized": 353,
+          "hospitalized_current": 104,
+          "discharged": 249
         }
       },
       {
@@ -5770,7 +6051,9 @@
           "deaths": 93,
           "recovered": 38,
           "active": 1308,
-          "hospitalized": 354
+          "hospitalized": 354,
+          "hospitalized_current": 100,
+          "discharged": 254
         }
       },
       {
@@ -5780,7 +6063,9 @@
           "deaths": 94,
           "recovered": 38,
           "active": 1307,
-          "hospitalized": 357
+          "hospitalized": 357,
+          "hospitalized_current": 102,
+          "discharged": 255
         }
       },
       {
@@ -5790,7 +6075,9 @@
           "deaths": 96,
           "recovered": 38,
           "active": 1305,
-          "hospitalized": 360
+          "hospitalized": 360,
+          "hospitalized_current": 103,
+          "discharged": 257
         }
       },
       {
@@ -5800,7 +6087,9 @@
           "deaths": 97,
           "recovered": 38,
           "active": 1310,
-          "hospitalized": 362
+          "hospitalized": 362,
+          "hospitalized_current": 105,
+          "discharged": 257
         }
       },
       {
@@ -5810,7 +6099,9 @@
           "deaths": 98,
           "recovered": 38,
           "active": 1312,
-          "hospitalized": 364
+          "hospitalized": 364,
+          "hospitalized_current": 104,
+          "discharged": 260
         }
       },
       {
@@ -5820,7 +6111,9 @@
           "deaths": 99,
           "recovered": 38,
           "active": 1312,
-          "hospitalized": 365
+          "hospitalized": 365,
+          "hospitalized_current": 102,
+          "discharged": 263
         }
       },
       {
@@ -5830,7 +6123,9 @@
           "deaths": 99,
           "recovered": 38,
           "active": 1313,
-          "hospitalized": 365
+          "hospitalized": 365,
+          "hospitalized_current": 101,
+          "discharged": 264
         }
       },
       {
@@ -5840,7 +6135,9 @@
           "deaths": 100,
           "recovered": 38,
           "active": 1316,
-          "hospitalized": 366
+          "hospitalized": 366,
+          "hospitalized_current": 97,
+          "discharged": 269
         }
       },
       {
@@ -5850,7 +6147,9 @@
           "deaths": 101,
           "recovered": 38,
           "active": 1318,
-          "hospitalized": 367
+          "hospitalized": 367,
+          "hospitalized_current": 95,
+          "discharged": 272
         }
       },
       {
@@ -5860,7 +6159,9 @@
           "deaths": 102,
           "recovered": 38,
           "active": 1320,
-          "hospitalized": 367
+          "hospitalized": 367,
+          "hospitalized_current": 94,
+          "discharged": 273
         }
       },
       {
@@ -5870,7 +6171,9 @@
           "deaths": 102,
           "recovered": 38,
           "active": 1321,
-          "hospitalized": 368
+          "hospitalized": 368,
+          "hospitalized_current": 95,
+          "discharged": 273
         }
       },
       {
@@ -5880,7 +6183,9 @@
           "deaths": 102,
           "recovered": 38,
           "active": 1323,
-          "hospitalized": 369
+          "hospitalized": 369,
+          "hospitalized_current": 93,
+          "discharged": 276
         }
       },
       {
@@ -5890,7 +6195,9 @@
           "deaths": 103,
           "recovered": 38,
           "active": 1323,
-          "hospitalized": 369
+          "hospitalized": 369,
+          "hospitalized_current": 92,
+          "discharged": 277
         }
       },
       {
@@ -5900,7 +6207,9 @@
           "deaths": 103,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 370
+          "hospitalized": 370,
+          "hospitalized_current": 86,
+          "discharged": 284
         }
       },
       {
@@ -5910,7 +6219,9 @@
           "deaths": 103,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 370
+          "hospitalized": 370,
+          "hospitalized_current": 83,
+          "discharged": 287
         }
       },
       {
@@ -5920,7 +6231,9 @@
           "deaths": 103,
           "recovered": 38,
           "active": 1325,
-          "hospitalized": 370
+          "hospitalized": 370,
+          "hospitalized_current": 81,
+          "discharged": 289
         }
       },
       {
@@ -5930,7 +6243,9 @@
           "deaths": 104,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 371
+          "hospitalized": 371,
+          "hospitalized_current": 81,
+          "discharged": 290
         }
       },
       {
@@ -5940,7 +6255,9 @@
           "deaths": 104,
           "recovered": 38,
           "active": 1325,
-          "hospitalized": 371
+          "hospitalized": 371,
+          "hospitalized_current": 80,
+          "discharged": 291
         }
       },
       {
@@ -5950,7 +6267,9 @@
           "deaths": 104,
           "recovered": 38,
           "active": 1326,
-          "hospitalized": 371
+          "hospitalized": 371,
+          "hospitalized_current": 79,
+          "discharged": 292
         }
       },
       {
@@ -5960,7 +6279,9 @@
           "deaths": 105,
           "recovered": 38,
           "active": 1325,
-          "hospitalized": 371
+          "hospitalized": 371,
+          "hospitalized_current": 78,
+          "discharged": 293
         }
       },
       {
@@ -5970,7 +6291,9 @@
           "deaths": 106,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 371
+          "hospitalized": 371,
+          "hospitalized_current": 76,
+          "discharged": 295
         }
       },
       {
@@ -5980,7 +6303,9 @@
           "deaths": 106,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 371
+          "hospitalized": 371,
+          "hospitalized_current": 76,
+          "discharged": 295
         }
       },
       {
@@ -5990,7 +6315,9 @@
           "deaths": 107,
           "recovered": 38,
           "active": 1323,
-          "hospitalized": 372
+          "hospitalized": 372,
+          "hospitalized_current": 75,
+          "discharged": 297
         }
       },
       {
@@ -6000,7 +6327,9 @@
           "deaths": 107,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 372
+          "hospitalized": 372,
+          "hospitalized_current": 75,
+          "discharged": 297
         }
       },
       {
@@ -6010,7 +6339,9 @@
           "deaths": 107,
           "recovered": 38,
           "active": 1324,
-          "hospitalized": 372
+          "hospitalized": 372,
+          "hospitalized_current": 73,
+          "discharged": 299
         }
       },
       {
@@ -6020,7 +6351,9 @@
           "deaths": 108,
           "recovered": 38,
           "active": 1325,
-          "hospitalized": 372
+          "hospitalized": 372,
+          "hospitalized_current": 67,
+          "discharged": 305
         }
       },
       {
@@ -6030,7 +6363,9 @@
           "deaths": 108,
           "recovered": 38,
           "active": 1327,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 66,
+          "discharged": 307
         }
       },
       {
@@ -6040,7 +6375,9 @@
           "deaths": 108,
           "recovered": 38,
           "active": 1327,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 65,
+          "discharged": 308
         }
       },
       {
@@ -6050,7 +6387,9 @@
           "deaths": 108,
           "recovered": 38,
           "active": 1327,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 65,
+          "discharged": 308
         }
       },
       {
@@ -6060,7 +6399,9 @@
           "deaths": 108,
           "recovered": 38,
           "active": 1327,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 65,
+          "discharged": 308
         }
       },
       {
@@ -6070,7 +6411,9 @@
           "deaths": 108,
           "recovered": 38,
           "active": 1327,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 64,
+          "discharged": 309
         }
       },
       {
@@ -6080,7 +6423,9 @@
           "deaths": 109,
           "recovered": 38,
           "active": 1328,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 64,
+          "discharged": 309
         }
       },
       {
@@ -6090,7 +6435,9 @@
           "deaths": 109,
           "recovered": 38,
           "active": 1330,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 64,
+          "discharged": 309
         }
       },
       {
@@ -6100,7 +6447,9 @@
           "deaths": 109,
           "recovered": 38,
           "active": 1330,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 64,
+          "discharged": 309
         }
       },
       {
@@ -6110,7 +6459,9 @@
           "deaths": 109,
           "recovered": 38,
           "active": 1332,
-          "hospitalized": 373
+          "hospitalized": 373,
+          "hospitalized_current": 64,
+          "discharged": 309
         }
       },
       {
@@ -6120,13 +6471,17 @@
           "deaths": 109,
           "recovered": 38,
           "active": 1332,
-          "hospitalized": 374
+          "hospitalized": 374,
+          "hospitalized_current": 65,
+          "discharged": 309
         }
       }
     ],
     "latest": {
       "cases": 135,
       "hospitalized": 135,
+      "hospitalized_current": 135,
+      "discharged": 135,
       "deaths": 135,
       "recovered": 135,
       "active": 135
@@ -6134,6 +6489,8 @@
     "highest": {
       "cases": 1479,
       "hospitalized": 374,
+      "hospitalized_current": 127,
+      "discharged": 309,
       "deaths": 109,
       "recovered": 38,
       "active": 1332
@@ -122906,7 +123263,8 @@
           "cases": 55,
           "deaths": 5,
           "recovered": 28,
-          "active": 22
+          "active": 22,
+          "icu": 2
         }
       },
       {
@@ -122915,7 +123273,8 @@
           "cases": 69,
           "deaths": 5,
           "recovered": 33,
-          "active": 31
+          "active": 31,
+          "icu": 3
         }
       },
       {
@@ -122924,7 +123283,8 @@
           "cases": 86,
           "deaths": 5,
           "recovered": 39,
-          "active": 42
+          "active": 42,
+          "icu": 3
         }
       },
       {
@@ -122933,7 +123293,8 @@
           "cases": 109,
           "deaths": 6,
           "recovered": 42,
-          "active": 61
+          "active": 61,
+          "icu": 3
         }
       },
       {
@@ -122943,7 +123304,8 @@
           "deaths": 6,
           "recovered": 48,
           "active": 83,
-          "hospitalized": 1
+          "hospitalized": 1,
+          "icu": 3
         }
       },
       {
@@ -122953,7 +123315,8 @@
           "deaths": 8,
           "recovered": 57,
           "active": 135,
-          "hospitalized": 2
+          "hospitalized": 2,
+          "icu": 5
         }
       },
       {
@@ -122963,7 +123326,8 @@
           "deaths": 9,
           "recovered": 60,
           "active": 175,
-          "hospitalized": 2
+          "hospitalized": 2,
+          "icu": 8
         }
       },
       {
@@ -122973,7 +123337,8 @@
           "deaths": 11,
           "recovered": 66,
           "active": 235,
-          "hospitalized": 2
+          "hospitalized": 2,
+          "icu": 10
         }
       },
       {
@@ -122983,7 +123348,8 @@
           "deaths": 16,
           "recovered": 70,
           "active": 258,
-          "hospitalized": 4
+          "hospitalized": 4,
+          "icu": 10
         }
       },
       {
@@ -122993,7 +123359,8 @@
           "deaths": 21,
           "recovered": 92,
           "active": 328,
-          "hospitalized": 6
+          "hospitalized": 6,
+          "icu": 12
         }
       },
       {
@@ -123003,7 +123370,8 @@
           "deaths": 29,
           "recovered": 113,
           "active": 412,
-          "hospitalized": 9
+          "hospitalized": 9,
+          "icu": 13
         }
       },
       {
@@ -123013,7 +123381,8 @@
           "deaths": 34,
           "recovered": 127,
           "active": 508,
-          "hospitalized": 14
+          "hospitalized": 14,
+          "icu": 16
         }
       },
       {
@@ -123023,7 +123392,8 @@
           "deaths": 39,
           "recovered": 148,
           "active": 593,
-          "hospitalized": 18
+          "hospitalized": 18,
+          "icu": 16
         }
       },
       {
@@ -123033,7 +123403,8 @@
           "deaths": 47,
           "recovered": 157,
           "active": 696,
-          "hospitalized": 20
+          "hospitalized": 20,
+          "icu": 20
         }
       },
       {
@@ -123043,7 +123414,8 @@
           "deaths": 54,
           "recovered": 170,
           "active": 764,
-          "hospitalized": 26
+          "hospitalized": 26,
+          "icu": 22
         }
       },
       {
@@ -123053,7 +123425,8 @@
           "deaths": 59,
           "recovered": 172,
           "active": 842,
-          "hospitalized": 38
+          "hospitalized": 38,
+          "icu": 24
         }
       },
       {
@@ -123063,7 +123436,8 @@
           "deaths": 67,
           "recovered": 182,
           "active": 929,
-          "hospitalized": 47
+          "hospitalized": 47,
+          "icu": 24
         }
       },
       {
@@ -123073,7 +123447,8 @@
           "deaths": 72,
           "recovered": 185,
           "active": 1045,
-          "hospitalized": 51
+          "hospitalized": 51,
+          "icu": 30
         }
       },
       {
@@ -123083,7 +123458,8 @@
           "deaths": 79,
           "recovered": 192,
           "active": 1175,
-          "hospitalized": 58
+          "hospitalized": 58,
+          "icu": 37
         }
       },
       {
@@ -123093,7 +123469,8 @@
           "deaths": 87,
           "recovered": 199,
           "active": 1368,
-          "hospitalized": 61
+          "hospitalized": 61,
+          "icu": 42
         }
       },
       {
@@ -123103,7 +123480,8 @@
           "deaths": 89,
           "recovered": 201,
           "active": 1496,
-          "hospitalized": 70
+          "hospitalized": 70,
+          "icu": 44
         }
       },
       {
@@ -123113,7 +123491,8 @@
           "deaths": 92,
           "recovered": 201,
           "active": 1694,
-          "hospitalized": 78
+          "hospitalized": 78,
+          "icu": 49
         }
       },
       {
@@ -123123,7 +123502,8 @@
           "deaths": 96,
           "recovered": 202,
           "active": 1801,
-          "hospitalized": 83
+          "hospitalized": 83,
+          "icu": 52
         }
       },
       {
@@ -123133,7 +123513,8 @@
           "deaths": 100,
           "recovered": 203,
           "active": 1946,
-          "hospitalized": 91
+          "hospitalized": 91,
+          "icu": 55
         }
       },
       {
@@ -123143,7 +123524,8 @@
           "deaths": 106,
           "recovered": 203,
           "active": 2214,
-          "hospitalized": 114
+          "hospitalized": 114,
+          "icu": 59
         }
       },
       {
@@ -123153,7 +123535,8 @@
           "deaths": 112,
           "recovered": 203,
           "active": 2432,
-          "hospitalized": 130
+          "hospitalized": 130,
+          "icu": 63
         }
       },
       {
@@ -123163,7 +123546,8 @@
           "deaths": 113,
           "recovered": 203,
           "active": 2653,
-          "hospitalized": 144
+          "hospitalized": 144,
+          "icu": 68
         }
       },
       {
@@ -123173,7 +123557,8 @@
           "deaths": 118,
           "recovered": 203,
           "active": 2899,
-          "hospitalized": 160
+          "hospitalized": 160,
+          "icu": 73
         }
       },
       {
@@ -123183,7 +123568,8 @@
           "deaths": 123,
           "recovered": 203,
           "active": 3061,
-          "hospitalized": 173
+          "hospitalized": 173,
+          "icu": 77
         }
       },
       {
@@ -123193,7 +123579,8 @@
           "deaths": 126,
           "recovered": 203,
           "active": 3138,
-          "hospitalized": 183
+          "hospitalized": 183,
+          "icu": 78
         }
       },
       {
@@ -123203,7 +123590,8 @@
           "deaths": 127,
           "recovered": 203,
           "active": 3234,
-          "hospitalized": 194
+          "hospitalized": 194,
+          "icu": 80
         }
       },
       {
@@ -123213,7 +123601,8 @@
           "deaths": 128,
           "recovered": 203,
           "active": 3402,
-          "hospitalized": 202
+          "hospitalized": 202,
+          "icu": 85
         }
       },
       {
@@ -123223,7 +123612,8 @@
           "deaths": 129,
           "recovered": 203,
           "active": 3679,
-          "hospitalized": 217
+          "hospitalized": 217,
+          "icu": 88
         }
       },
       {
@@ -123233,7 +123623,8 @@
           "deaths": 130,
           "recovered": 203,
           "active": 3863,
-          "hospitalized": 224
+          "hospitalized": 224,
+          "icu": 91
         }
       },
       {
@@ -123243,7 +123634,8 @@
           "deaths": 133,
           "recovered": 203,
           "active": 3934,
-          "hospitalized": 236
+          "hospitalized": 236,
+          "icu": 93
         }
       },
       {
@@ -123253,7 +123645,8 @@
           "deaths": 134,
           "recovered": 203,
           "active": 4113,
-          "hospitalized": 249
+          "hospitalized": 249,
+          "icu": 96
         }
       },
       {
@@ -123685,6 +124078,7 @@
       "deaths": 135,
       "recovered": 135,
       "active": 135,
+      "icu": 88,
       "hospitalized": 88
     },
     "highest": {
@@ -123692,6 +124086,7 @@
       "deaths": 370,
       "recovered": 9719,
       "active": 6953,
+      "icu": 96,
       "hospitalized": 249
     },
     "meta": {
@@ -151618,7 +152013,8 @@
           "cases": 2672,
           "deaths": 46,
           "recovered": 1593,
-          "active": 1033
+          "active": 1033,
+          "icu": 61
         }
       },
       {
@@ -151627,7 +152023,8 @@
           "cases": 2672,
           "deaths": 46,
           "recovered": 1593,
-          "active": 1033
+          "active": 1033,
+          "icu": 61
         }
       },
       {
@@ -151636,7 +152033,8 @@
           "cases": 2700,
           "deaths": 47,
           "recovered": 1689,
-          "active": 964
+          "active": 964,
+          "icu": 61
         }
       },
       {
@@ -151645,7 +152043,8 @@
           "cases": 2700,
           "deaths": 47,
           "recovered": 1787,
-          "active": 866
+          "active": 866,
+          "icu": 61
         }
       },
       {
@@ -151654,7 +152053,8 @@
           "cases": 2765,
           "deaths": 47,
           "recovered": 1928,
-          "active": 790
+          "active": 790,
+          "icu": 61
         }
       },
       {
@@ -151663,7 +152063,8 @@
           "cases": 2792,
           "deaths": 47,
           "recovered": 1999,
-          "active": 746
+          "active": 746,
+          "icu": 61
         }
       },
       {
@@ -151672,7 +152073,8 @@
           "cases": 2811,
           "deaths": 48,
           "recovered": 2108,
-          "active": 655
+          "active": 655,
+          "icu": 61
         }
       },
       {
@@ -151681,7 +152083,8 @@
           "cases": 2826,
           "deaths": 49,
           "recovered": 2352,
-          "active": 425
+          "active": 425,
+          "icu": 61
         }
       },
       {
@@ -151690,7 +152093,8 @@
           "cases": 2839,
           "deaths": 50,
           "recovered": 2430,
-          "active": 359
+          "active": 359,
+          "icu": 61
         }
       },
       {
@@ -151699,7 +152103,8 @@
           "cases": 2854,
           "deaths": 50,
           "recovered": 2490,
-          "active": 314
+          "active": 314,
+          "icu": 61
         }
       },
       {
@@ -151708,7 +152113,8 @@
           "cases": 2907,
           "deaths": 51,
           "recovered": 2547,
-          "active": 309
+          "active": 309,
+          "icu": 61
         }
       },
       {
@@ -151717,7 +152123,8 @@
           "cases": 2922,
           "deaths": 51,
           "recovered": 2594,
-          "active": 277
+          "active": 277,
+          "icu": 61
         }
       },
       {
@@ -151726,7 +152133,8 @@
           "cases": 2931,
           "deaths": 52,
           "recovered": 2609,
-          "active": 270
+          "active": 270,
+          "icu": 61
         }
       },
       {
@@ -151735,7 +152143,8 @@
           "cases": 2938,
           "deaths": 54,
           "recovered": 2652,
-          "active": 232
+          "active": 232,
+          "icu": 61
         }
       },
       {
@@ -151744,7 +152153,8 @@
           "cases": 2947,
           "deaths": 54,
           "recovered": 2665,
-          "active": 228
+          "active": 228,
+          "icu": 61
         }
       },
       {
@@ -151753,7 +152163,8 @@
           "cases": 2960,
           "deaths": 54,
           "recovered": 2719,
-          "active": 187
+          "active": 187,
+          "icu": 61
         }
       },
       {
@@ -151762,7 +152173,8 @@
           "cases": 2960,
           "deaths": 54,
           "recovered": 2719,
-          "active": 187
+          "active": 187,
+          "icu": 61
         }
       },
       {
@@ -151780,7 +152192,8 @@
           "cases": 2966,
           "deaths": 54,
           "recovered": 2732,
-          "active": 180
+          "active": 180,
+          "icu": 61
         }
       },
       {
@@ -151789,7 +152202,8 @@
           "cases": 2966,
           "deaths": 54,
           "recovered": 2732,
-          "active": 180
+          "active": 180,
+          "icu": 61
         }
       },
       {
@@ -151798,7 +152212,8 @@
           "cases": 2966,
           "deaths": 54,
           "recovered": 2732,
-          "active": 180
+          "active": 180,
+          "icu": 61
         }
       },
       {
@@ -151816,7 +152231,8 @@
           "cases": 2992,
           "deaths": 55,
           "recovered": 2772,
-          "active": 165
+          "active": 165,
+          "icu": 61
         }
       },
       {
@@ -151825,7 +152241,8 @@
           "cases": 3000,
           "deaths": 55,
           "recovered": 2784,
-          "active": 161
+          "active": 161,
+          "icu": 61
         }
       },
       {
@@ -151834,7 +152251,8 @@
           "cases": 3004,
           "deaths": 56,
           "recovered": 2787,
-          "active": 161
+          "active": 161,
+          "icu": 61
         }
       },
       {
@@ -151852,7 +152270,8 @@
           "cases": 3015,
           "deaths": 56,
           "recovered": 2796,
-          "active": 163
+          "active": 163,
+          "icu": 61
         }
       },
       {
@@ -151861,7 +152280,8 @@
           "cases": 3017,
           "deaths": 56,
           "recovered": 2798,
-          "active": 163
+          "active": 163,
+          "icu": 61
         }
       },
       {
@@ -151870,7 +152290,8 @@
           "cases": 3017,
           "deaths": 56,
           "recovered": 2844,
-          "active": 117
+          "active": 117,
+          "icu": 61
         }
       },
       {
@@ -151879,7 +152300,8 @@
           "cases": 3018,
           "deaths": 56,
           "recovered": 2850,
-          "active": 112
+          "active": 112,
+          "icu": 61
         }
       },
       {
@@ -151888,7 +152310,8 @@
           "cases": 3025,
           "deaths": 56,
           "recovered": 2854,
-          "active": 115
+          "active": 115,
+          "icu": 61
         }
       },
       {
@@ -151897,7 +152320,8 @@
           "cases": 3025,
           "deaths": 56,
           "recovered": 2855,
-          "active": 114
+          "active": 114,
+          "icu": 61
         }
       },
       {
@@ -152085,13 +152509,15 @@
       "cases": 135,
       "deaths": 135,
       "recovered": 135,
-      "active": 135
+      "active": 135,
+      "icu": 115
     },
     "highest": {
       "cases": 3102,
       "deaths": 58,
       "recovered": 2971,
-      "active": 1451
+      "active": 1451,
+      "icu": 61
     },
     "meta": {
       "country": {

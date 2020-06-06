@@ -113,7 +113,7 @@ function writeJSON(path, json) {
   fs.writeFileSync(path, string);
 }
 
-const TYPES = ["cases", "deaths", "active", "recovered", "tested", "hospitalized"];
+const TYPES = ["cases", "deaths", "active", "recovered", "tested", "hospitalized", "hospitalized_current", "discharged", "icu", "icu_current"];
 
 function intoDatesArray(dates, regionId) {
   const result = {
@@ -132,6 +132,9 @@ function intoDatesArray(dates, regionId) {
 
     for (let type in dates[date]) {
       if (!TYPES.includes(type)) {
+        if (type != "growthFactor") {
+          throw new Error(type);
+        }
         continue;
       }
       if (result.highest[type] === undefined || result.highest[type] < dates[date][type]) {

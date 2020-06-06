@@ -10,6 +10,9 @@ export enum DataType {
   Recovered = "recovered",
   Tested = "tested",
   Hospitalized = "hospitalized",
+  Hospitalized_Current = "hospitalized_current",
+  ICU = "icu",
+  ICU_Current = "icu_current",
   Population = "population"
 }
 
