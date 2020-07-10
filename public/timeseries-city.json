@@ -1,7 +1,2453 @@
 {
+  "US_RI_44007_Central Falls": {
+    "id": "US_RI_44007_Central Falls",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 5
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 6
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 15
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 15
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 26
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 26
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 76
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 392
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 429
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 449
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 469
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 487
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 503
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 503
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 503
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 503
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 503
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 615
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 630
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 668
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 668
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 668
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Central Falls",
+        "name": "Central Falls"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Central Falls (RI, US)"
+  },
+  "US_RI_44007_Cranston": {
+    "id": "US_RI_44007_Cranston",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 35
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 39
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 47
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 54
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 54
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 64
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 67
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 78
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 90
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 98
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 112
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 112
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 197
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 481
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 511
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 522
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 537
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 552
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 564
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 564
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 564
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 564
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 564
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 662
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 658
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 685
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 685
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 685
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Cranston",
+        "name": "Cranston"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Cranston (RI, US)"
+  },
+  "US_RI_44007_Cumberland": {
+    "id": "US_RI_44007_Cumberland",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 10
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 15
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 19
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 25
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 32
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 52
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 75
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 182
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 188
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 190
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 197
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 201
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 201
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 201
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 201
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 201
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 201
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 231
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 230
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 238
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 238
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 238
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Cumberland",
+        "name": "Cumberland"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Cumberland (RI, US)"
+  },
+  "US_RI_44007_East Providence": {
+    "id": "US_RI_44007_East Providence",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 17
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 18
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 24
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 41
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 46
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 49
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 49
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 58
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 58
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 58
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 123
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 339
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 350
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 363
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 374
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 393
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 398
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 398
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 398
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 398
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 398
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 555
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 569
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 580
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 580
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 580
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "East Providence",
+        "name": "East Providence"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "East Providence (RI, US)"
+  },
+  "US_RI_44007_Johnston": {
+    "id": "US_RI_44007_Johnston",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 7
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 9
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 10
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 14
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 17
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 21
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 25
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 29
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 29
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 40
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 53
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 134
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 143
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 154
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 156
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 161
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 162
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 162
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 162
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 162
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 162
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 212
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 221
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 232
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 232
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 232
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Johnston",
+        "name": "Johnston"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Johnston (RI, US)"
+  },
+  "US_RI_44007_North Providence": {
+    "id": "US_RI_44007_North Providence",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 16
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 49
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 60
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 61
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 61
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 68
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 73
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 77
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 84
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 93
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 98
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 98
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 127
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 127
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 127
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 180
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 442
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 463
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 477
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 484
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 492
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 496
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 496
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 496
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 496
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 496
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 587
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 595
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 608
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 608
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 608
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "North Providence",
+        "name": "North Providence"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "North Providence (RI, US)"
+  },
+  "US_RI_44007_Smithfield": {
+    "id": "US_RI_44007_Smithfield",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 5
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 6
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 7
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 14
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 16
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 19
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 19
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 22
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 22
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 48
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 157
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 160
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 166
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 169
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 173
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 173
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 173
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 173
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 173
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 173
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 216
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 221
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 223
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 223
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 223
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Smithfield",
+        "name": "Smithfield"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Smithfield (RI, US)"
+  },
+  "US_RI_44003_Warwick": {
+    "id": "US_RI_44003_Warwick",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 16
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 17
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 22
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 29
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 30
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 30
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 41
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 48
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 54
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 59
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 67
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 67
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 75
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 75
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 75
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 122
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 316
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 327
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 336
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 364
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 381
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 384
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 384
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 384
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 384
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 384
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 446
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 440
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 461
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 461
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 461
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44003",
+        "name": "Kent County"
+      },
+      "city": {
+        "code": "Warwick",
+        "name": "Warwick"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Warwick (RI, US)"
+  },
+  "US_RI_44003_West Warwick": {
+    "id": "US_RI_44003_West Warwick",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 6
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 11
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 24
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 25
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 28
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 31
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 34
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 37
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 46
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 124
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 130
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 136
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 142
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 145
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 147
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 199
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 200
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 208
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 208
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 208
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44003",
+        "name": "Kent County"
+      },
+      "city": {
+        "code": "West Warwick",
+        "name": "West Warwick"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "West Warwick (RI, US)"
+  },
+  "US_RI_44007_Woonsocket": {
+    "id": "US_RI_44007_Woonsocket",
+    "dates": [
+      {
+        "date": "2020-03-29",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-30",
+        "value": {
+          "cases": 3
+        }
+      },
+      {
+        "date": "2020-03-31",
+        "value": {
+          "cases": 5
+        }
+      },
+      {
+        "date": "2020-04-01",
+        "value": {
+          "cases": 8
+        }
+      },
+      {
+        "date": "2020-04-02",
+        "value": {
+          "cases": 9
+        }
+      },
+      {
+        "date": "2020-04-03",
+        "value": {
+          "cases": 9
+        }
+      },
+      {
+        "date": "2020-04-04",
+        "value": {
+          "cases": 12
+        }
+      },
+      {
+        "date": "2020-04-05",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-04-06",
+        "value": {
+          "cases": 13
+        }
+      },
+      {
+        "date": "2020-04-07",
+        "value": {
+          "cases": 20
+        }
+      },
+      {
+        "date": "2020-04-08",
+        "value": {
+          "cases": 23
+        }
+      },
+      {
+        "date": "2020-04-09",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-10",
+        "value": {
+          "cases": 27
+        }
+      },
+      {
+        "date": "2020-04-11",
+        "value": {
+          "cases": 42
+        }
+      },
+      {
+        "date": "2020-04-12",
+        "value": {
+          "cases": 42
+        }
+      },
+      {
+        "date": "2020-04-13",
+        "value": {
+          "cases": 42
+        }
+      },
+      {
+        "date": "2020-04-14",
+        "value": {
+          "cases": 67
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 282
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 295
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 304
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 316
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 326
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 331
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 331
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 331
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 331
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 331
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 427
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 434
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 454
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 454
+        }
+      }
+    ],
+    "latest": {
+      "cases": 30
+    },
+    "highest": {
+      "cases": 454
+    },
+    "meta": {
+      "country": {
+        "code": "US",
+        "name": "United States",
+        "shortName": "USA"
+      },
+      "state": {
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      "county": {
+        "code": "44007",
+        "name": "Providence County"
+      },
+      "city": {
+        "code": "Woonsocket",
+        "name": "Woonsocket"
+      },
+      "taxonomy": "city"
+    },
+    "displayName": "Woonsocket (RI, US)"
+  },
   "US_MI_26163_Detroit City": {
     "id": "US_MI_26163_Detroit City",
     "dates": [
+      {
+        "date": "2020-04-16",
+        "value": {
+          "cases": 7383,
+          "deaths": 546
+        }
+      },
+      {
+        "date": "2020-04-17",
+        "value": {
+          "cases": 7414,
+          "deaths": 582
+        }
+      },
+      {
+        "date": "2020-04-18",
+        "value": {
+          "cases": 7497,
+          "deaths": 589
+        }
+      },
+      {
+        "date": "2020-04-19",
+        "value": {
+          "cases": 7604,
+          "deaths": 618
+        }
+      },
+      {
+        "date": "2020-04-21",
+        "value": {
+          "cases": 7904,
+          "deaths": 728
+        }
+      },
+      {
+        "date": "2020-04-22",
+        "value": {
+          "cases": 8026,
+          "deaths": 747
+        }
+      },
+      {
+        "date": "2020-04-23",
+        "value": {
+          "cases": 8317,
+          "deaths": 799
+        }
+      },
+      {
+        "date": "2020-04-24",
+        "value": {
+          "cases": 8473,
+          "deaths": 830
+        }
+      },
+      {
+        "date": "2020-04-25",
+        "value": {
+          "cases": 8548,
+          "deaths": 912
+        }
+      },
+      {
+        "date": "2020-04-26",
+        "value": {
+          "cases": 8613,
+          "deaths": 922
+        }
+      },
+      {
+        "date": "2020-04-27",
+        "value": {
+          "cases": 8679,
+          "deaths": 950
+        }
+      },
+      {
+        "date": "2020-04-28",
+        "value": {
+          "cases": 8811,
+          "deaths": 988
+        }
+      },
+      {
+        "date": "2020-04-29",
+        "value": {
+          "cases": 8957,
+          "deaths": 1008
+        }
+      },
+      {
+        "date": "2020-04-30",
+        "value": {
+          "cases": 9057,
+          "deaths": 1035
+        }
+      },
+      {
+        "date": "2020-05-01",
+        "value": {
+          "cases": 9162,
+          "deaths": 1040
+        }
+      },
+      {
+        "date": "2020-05-02",
+        "value": {
+          "cases": 9280,
+          "deaths": 1085
+        }
+      },
+      {
+        "date": "2020-05-03",
+        "value": {
+          "cases": 9386,
+          "deaths": 1085
+        }
+      },
+      {
+        "date": "2020-05-04",
+        "value": {
+          "cases": 9386,
+          "deaths": 1085
+        }
+      },
+      {
+        "date": "2020-05-05",
+        "value": {
+          "cases": 9424,
+          "deaths": 1108
+        }
+      },
+      {
+        "date": "2020-05-07",
+        "value": {
+          "cases": 9566,
+          "deaths": 1147
+        }
+      },
+      {
+        "date": "2020-05-08",
+        "value": {
+          "cases": 9648,
+          "deaths": 1154
+        }
+      },
+      {
+        "date": "2020-05-09",
+        "value": {
+          "cases": 9709,
+          "deaths": 1181
+        }
+      },
+      {
+        "date": "2020-05-11",
+        "value": {
+          "cases": 9851,
+          "deaths": 1192
+        }
+      },
+      {
+        "date": "2020-05-12",
+        "value": {
+          "cases": 9897,
+          "deaths": 1213
+        }
+      },
+      {
+        "date": "2020-05-13",
+        "value": {
+          "cases": 9973,
+          "deaths": 1218
+        }
+      },
+      {
+        "date": "2020-05-14",
+        "value": {
+          "cases": 10164,
+          "deaths": 1236
+        }
+      },
+      {
+        "date": "2020-05-15",
+        "value": {
+          "cases": 10230,
+          "deaths": 1240
+        }
+      },
+      {
+        "date": "2020-05-16",
+        "value": {
+          "cases": 10327,
+          "deaths": 1255
+        }
+      },
+      {
+        "date": "2020-05-17",
+        "value": {
+          "cases": 10348,
+          "deaths": 1255
+        }
+      },
+      {
+        "date": "2020-05-18",
+        "value": {
+          "cases": 10368,
+          "deaths": 1260
+        }
+      },
+      {
+        "date": "2020-05-19",
+        "value": {
+          "cases": 10417,
+          "deaths": 1276
+        }
+      },
+      {
+        "date": "2020-05-20",
+        "value": {
+          "cases": 10499,
+          "deaths": 1280
+        }
+      },
+      {
+        "date": "2020-05-21",
+        "value": {
+          "cases": 10558,
+          "deaths": 1295
+        }
+      },
+      {
+        "date": "2020-05-22",
+        "value": {
+          "cases": 10587,
+          "deaths": 1299
+        }
+      },
+      {
+        "date": "2020-05-23",
+        "value": {
+          "cases": 10646,
+          "deaths": 1324
+        }
+      },
+      {
+        "date": "2020-05-24",
+        "value": {
+          "cases": 10699,
+          "deaths": 1320
+        }
+      },
+      {
+        "date": "2020-05-27",
+        "value": {
+          "cases": 10872,
+          "deaths": 1347
+        }
+      },
+      {
+        "date": "2020-05-28",
+        "value": {
+          "cases": 10903,
+          "deaths": 1351
+        }
+      },
       {
         "date": "2020-05-30",
         "value": {
@@ -15,29 +2461,15 @@
           "cases": 11058,
           "deaths": 1375
         }
-      },
-      {
-        "date": "2020-06-02",
-        "value": {
-          "cases": 11068,
-          "deaths": 1380
-        }
-      },
-      {
-        "date": "2020-06-04",
-        "value": {
-          "cases": 11116,
-          "deaths": 1388
-        }
       }
     ],
     "latest": {
-      "cases": 3,
-      "deaths": 3
+      "cases": 39,
+      "deaths": 39
     },
     "highest": {
-      "cases": 11116,
-      "deaths": 1388
+      "cases": 11058,
+      "deaths": 1375
     },
     "meta": {
       "country": {
