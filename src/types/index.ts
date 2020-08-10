@@ -26,7 +26,6 @@ export enum TaxonomyLevel {
   Country = "country",
   State = "state",
   County = "county",
-  City = "city"
 }
 
 export interface Selection {

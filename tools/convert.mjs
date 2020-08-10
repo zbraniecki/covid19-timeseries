@@ -9,102 +9,54 @@ function readJSONFile(path) {
 }
 
 function getLevelId(region, level) {
-  if (level === "city") {
-    if (region.cityId) {
-      if (!region.cityId.startsWith("iso1:")) {
-        throw new Error(`City id is not iso1: ${region.countryId}.`);
-      }
-      return region.cityId.substr(5);
-    }
-    return region.city;
-  }
   if (level === "country") {
-    if (!region.countryId.startsWith("iso1:")) {
-      throw new Error(`Country id is not iso1: ${region.countryId}.`);
+    if (!region.countryID.startsWith("iso1:")) {
+      throw new Error(`Country id is not iso1: ${region.countryID}.`);
     }
-    return region.countryId.substr(5);
+    return region.countryID.substr(5);
   }
   if (level === "state") {
-    if (region.stateId) {
-      if (!region.stateId.startsWith("iso2:")) {
-        throw new Error(`State id is not iso2: ${region.stateId}.`);
-      }
-      let stateId = region.stateId.substr(5);
-      let countryId = getLevelId(region, "country");
-      if (!stateId.startsWith(countryId)) {
-        throw new Error(`State id doesn't start with country id: ${stateId}.`);
-      }
-      return stateId.substr(countryId.length + 1);
+    if (!region.stateID) {
+      return undefined;
     }
-    if (region.state) {
-      return region.state;
+    if (!region.stateID.startsWith("iso2:")) {
+      throw new Error(`State id is not iso2: ${region.stateID}.`);
     }
-    return undefined;
+    let stateId = region.stateID.substr(5);
+    let countryId = getLevelId(region, "country");
+    if (!stateId.startsWith(countryId)) {
+      throw new Error(`State id doesn't start with country id: ${stateID}.`);
+    }
+    return stateId.substr(countryId.length + 1);
   }
   if (level === "county") {
-    if (region.countyId) {
-      if (!region.countyId.startsWith("fips:") &&
-          !region.countyId.startsWith("iso2:")) {
-        throw new Error(`County id is not fips/iso2: ${region.countyId}.`);
-      }
-      return region.countyId.substr(5);
+    if (!region.countyID) {
+      return undefined;
     }
-    if (region.county) {
-      return region.county;
+    if (!region.countyID.startsWith("fips:") &&
+        !region.countyID.startsWith("iso2:")) {
+      throw new Error(`County id is not fips/iso2: ${region.countyID}.`);
     }
-    return undefined;
-  }
-  if (level === "feature") {
-    if (!region.featureId) {
-      let city = getLevelId(region, "city");
-      let county = getLevelId(region, "county");
-      let state = getLevelId(region, "state");
-      let country = getLevelId(region, "country");
-      let parts = [country, state, county, city];
-      return parts.filter(part => part).join("_");
-    }
-    if (typeof region.featureId === "number") {
-      return region.featureId.toString();
-    }
-    if (region.featureId.startsWith("iso1:")) {
-      return region.featureId.substr(5);
-    }
-    if (region.featureId.startsWith("iso2:")) {
-      return region.featureId.substr(5);
-    }
-    if (region.featureId.startsWith("fips:")) {
-      return region.featureId.substr(5);
-    }
-    throw new Error(`Country id is not a proper code: ${region.featureId}.`);
+    return region.countyID.substr(5);
   }
 }
 
 let shortNames = {
-  "iso1:US": "USA",
+  "iso1:us": "USA",
 };
 
 function getRegionName(region, level, shortName) {
-  if (level === "country") {
-    if (shortName === true) {
-      if (shortNames[region.countryId]) {
-        return shortNames[region.countryId];
-      } else {
-        return undefined;
-      }
-    }
-    if (!region.country) {
-      throw new Error(`Country doesn't have a name: ${region.featureId}.`);
-    }
-    return region.country;
+  if (shortName) {
+    return shortNames[region.locationID];
   }
-  if (level === "state") {
-    return region.state;
+  if (level == "county") {
+    return region.countyName;
   }
-  if (level === "county") {
-    return region.county;
+  if (level == "state") {
+    return region.stateName;
   }
-  if (level === "city") {
-    return region.city;
+  if (level == "country") {
+    return region.countryName;
   }
 }
 
@@ -151,63 +103,24 @@ function intoDatesArray(dates, regionId) {
   return result;
 }
 
-// Workaround some US states getting `aggregate: "county"`
-function getRegionTaxonomy(region) {
-  if (!region.level) {
-    throw new Error(`Unknown level for region: ${region.name}.`);
-  }
-  return region.level;
-}
-
 function hasMoreThanXCases(dataSet, latest, x) {
   return dataSet[latest.cases].value["cases"] > x;
 }
 
 function getDisplayName(region) {
-  let cityName = getRegionName(region, "city");
-  if (cityName) {
-    let stateId = getLevelId(region, "state");
-    let countryId = getLevelId(region, "country");
-    if (stateId) {
-      return `${cityName} (${stateId}, ${countryId})`;
-    } else {
-      return `${cityName} (${countryId})`;
-    }
+  if (region.level == "country") {
+    return region.countryName;
   }
-
-  let countyName = getRegionName(region, "county");
-  if (countyName) {
-    let countryId = getLevelId(region, "country");
-    let stateId = getLevelId(region, "state");
-    if (stateId) {
-      return `${countyName} (${stateId}, ${countryId})`;
-    } else {
-      return `${countyName} (${countryId})`;
-    }
-  }
-
-  let stateName = getRegionName(region, "state");
-  if (stateName) {
-    let countryId = getLevelId(region, "country");
-    return `${stateName} (${countryId})`;
-  }
-
-  let countryName = getRegionName(region, "country", true);
-  if (!countryName) {
-    countryName = getRegionName(region, "country");
-  }
-  return countryName;
+  return region.name;
 }
-
-let ids = {};
 
 function convert(input) {
   let result = {};
 
   for (let regionCode in input) {
     let region = input[regionCode];
-    let taxonomy = getRegionTaxonomy(region);
-    if (!["country", "state", "county", "city"].includes(taxonomy)) {
+    let taxonomy = region.level;
+    if (!["country", "state", "county"].includes(taxonomy)) {
       continue;
     }
 
@@ -219,14 +132,7 @@ function convert(input) {
       continue;
     }
 
-    let id = getLevelId(region, "feature");
-    let inc = 2;
-    while (ids[id]) {
-      console.warn(`ID already exists: ${id}`);
-      id = `${id}${inc}`;
-      inc += 1;
-    }
-    ids[id] = true;
+    let id = region.slug;
 
     let entry = {
       "id": id,
@@ -246,10 +152,6 @@ function convert(input) {
         "county": {
           "code": getLevelId(region, "county"),
           "name": getRegionName(region, "county"),
-        },
-        "city": {
-          "code": getLevelId(region, "city"),
-          "name": getRegionName(region, "city"),
         },
         "population": region.population,
         "taxonomy": taxonomy,

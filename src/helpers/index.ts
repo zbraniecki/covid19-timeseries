@@ -255,7 +255,6 @@ export default {
     this.addSearchTokensForLevel(tokens, region, TaxonomyLevel.Country);
     this.addSearchTokensForLevel(tokens, region, TaxonomyLevel.State);
     this.addSearchTokensForLevel(tokens, region, TaxonomyLevel.County);
-    this.addSearchTokensForLevel(tokens, region, TaxonomyLevel.City);
 
     return Array.from(tokens).join(" ").toLowerCase();
   },
